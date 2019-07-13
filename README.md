@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 TastyIgniter
 ============
 
@@ -28,3 +29,7 @@ Visit the [TastyIgniter Community Forums](http://forum.tastyigniter.com) or [Doc
 License
 ============
 TastyIgniter is licensed under the [GNU General Public License version 3(GPLv3)](http://tastyigniter.com/licence/)
+=======
+# restaurant
+Restaurant online solution
+>>>>>>> cff7b4f7ddbda17d970de3687ffb191d393ab7a1
