@@ -255,3 +255,766 @@ Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d2430419db1c&quot;
 </pre>
 ERROR - 2019-07-09 10:18:33 --> Could not find the language line "label_site_url"
 ERROR - 2019-07-09 10:18:33 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-10 18:06:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:17 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-10 18:06:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:22 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-10 18:06:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:24 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-10 18:06:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:25 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-10 18:06:30 --> 404 Page Not Found: 
+ERROR - 2019-07-10 18:06:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:33 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-10 18:06:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:35 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-10 18:06:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-10 18:06:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 10:38:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 10:59:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:02:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:05:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:05:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:30:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:30:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:30:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:30:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:31:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:34:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:34:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:38:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:39:19 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 11:43:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:43:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:46:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:46:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:50:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:50:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:50:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:50:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 11:50:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 12:03:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 12:53:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:02:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:02:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:02:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:05:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:05:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:05:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:13:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:19:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:19:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:19:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:19:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:19:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:19:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:22:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:23:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:24:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:24:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:24:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:24:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:29:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:29:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:37:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:38:15 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:45:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:45:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:47:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:53:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:53:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 13:55:15 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:08:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:10:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:10:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:11:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:11:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:13:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:14:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:18:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:18:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:18:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:24:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:29:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:31:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:33:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:33:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:34:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:35:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:36:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 14:37:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:17:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:17:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:18:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:18:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:19:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:19:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:37:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:38:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:40:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:43:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:46:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:48:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:48:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:48:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:48:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:48:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:48:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:49:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:50:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 15:50:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 15:53:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:01:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:17:49 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:17:53 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:17:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:17:59 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:18:03 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:18:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:18:14 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:18:17 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:18:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:18:23 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-11 16:18:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:18:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:18:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:18:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:21:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:21:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:21:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:22:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:22:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:22:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:22:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:22:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:22:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:23:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:23:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:23:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:23:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:23:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:23:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:24:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:24:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:24:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:24:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:28:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:28:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:34:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:34:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:34:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:54 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 16:36:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:36:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:36:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:38:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:38:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:38:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:38:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:38:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:39:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:39:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:39:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:39:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:39:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:39:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:43:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:43:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:43:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:43:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:43:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:43:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:53:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:53:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:53:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:54:43 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:54:43 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:54:43 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:55:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:55:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:55:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:57:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 16:57:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:01:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:02:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:02:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:06:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:09:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:09:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:09:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:09:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:09:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:09:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:10:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:10:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:10:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:10:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:10:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:10:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:15:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:17:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:01 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:20 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:18:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:00 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:22:23 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:23:46 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-11 17:24:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:27:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:32:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:32:43 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-11 17:32:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:32:45 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-11 17:32:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:32:47 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
+ERROR - 2019-07-11 17:32:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:42:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:45:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:46:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-11 17:55:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:52:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:52:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:52:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:55:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:55:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:55:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:55:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:56:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:57:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 09:57:39 --> Severity: error --> Exception: Call to undefined method Security_questions_model::dropdown() D:\xampp\htdocs\out-rest\main\controllers\account\Register.php 40
+ERROR - 2019-07-13 10:06:28 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:07:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:10:43 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:11:30 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:12:57 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:39 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:13:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:14:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:16:26 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:03 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:05 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:11 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:18:12 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:20:10 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:21:24 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:31:48 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:32:44 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:33:17 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:34:19 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:40:21 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:41:25 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:42:42 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:52:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 10:57:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:04:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:06:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:13:43 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:14:50 --> Severity: Warning --> imagettftext(): Could not find/open font D:\xampp\htdocs\out-rest\system\tastyigniter\helpers\TI_captcha_helper.php 270
+ERROR - 2019-07-13 11:15:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 513

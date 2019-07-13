@@ -86,6 +86,7 @@
 	<![endif]-->
 </head>
 <body>
+	
     <div id="wrapper" class="<?php echo $wrapper_class; ?>" style="background:#fff;">
 		<nav class="navbar navbar-static-top navbar-top" role="navigation" style="margin-bottom: 0" >
 			<div class="navbar-header" style="background:#fff">

@@ -1,3 +1,17 @@
+
+<style>
+	
+    .btn-block{
+      width:auto !important;
+      margin: 0 auto !important;
+	}
+	.buttons{
+		margin:10px 0;
+	}
+	.nopad{
+		padding:0;
+	}
+	</style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 
@@ -43,18 +57,10 @@
 			<div class="content-wrap <?php echo $class; ?>">
 				<?php if (!empty($default_local)) { ?>
 					<div class="row">
-                        <div class="col-md-7 center-block bottom-spacing text-center">
-                            <div class="contact-info">
-                                <h4 class="contact-title"><?php echo lang('text_summary'); ?></h4>
-                                <ul>
-                                    <li><strong><?php echo $location_name; ?></strong></li>
-                                    <li><i class="fa fa-globe"></i><?php echo $location_address; ?></li>
-                                    <li><i class="fa fa-phone"></i><?php echo $location_telephone; ?></li>
-                                </ul>
-                            </div>
-                        </div>
+						<div class="col-md-12">
+                       
 
-                        <div id="contactForm" class="col-md-7 center-block">
+                        <div id="contactForm" class="col-md-8 ">
 							<form accept-charset="utf-8" method="POST" action="<?php echo $_action; ?>" role="form">
 								<div class="row">
 									<div class="col-sm-6 col-md-6">
@@ -88,23 +94,38 @@
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
 								<div class="form-group">
-									<div class="input-group">
-					 				<span><?php echo $captcha_image; ?></span>
+									
+									<div class="col-md-4 nopad">
+									 <span><?php echo $captcha_image;?></span>
+									</div>
+									<div class="col-md-8 nopad">
 										<input type="text" name="captcha" class="form-control" placeholder="<?php echo lang('label_captcha'); ?>" />
 									</div>
+									
 									<?php echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
 								</div>
 								<br />
 
 								<div class="row">
-									<div class="col-sm-12 col-md-12">
+									<div class="col-sm-12 col-md-12 text-center">
 										<div class="buttons">
-											<button type="submit" class="btn btn-primary btn-block"><?php echo lang('button_send'); ?></button>
+											<button type="submit" class="btn btn-primary btn-block sub_btn"><?php echo lang('button_send'); ?></button>
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
+						<div class="col-md-4  bottom-spacing">
+                            <div class="contact-info">
+                                <h4 class="contact-title"><?php echo lang('text_summary'); ?></h4>
+                                <ul>
+                                    <li><strong><?php echo $location_name; ?></strong></li>
+                                    <li><i class="fa fa-globe"></i><?php echo $location_address; ?></li>
+                                    <li><i class="fa fa-phone"></i><?php echo $location_telephone; ?></li>
+                                </ul>
+                            </div>
+                        </div>
+					</div>
 					</div>
 
 					<div class="row">
