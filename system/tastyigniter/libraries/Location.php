@@ -788,8 +788,8 @@ class Location {
 
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, true);
 		curl_setopt($ch, CURLOPT_USERAGENT, $this->CI->agent->agent_string());
 		$geocode_data = curl_exec($ch);
 		curl_close($ch);
