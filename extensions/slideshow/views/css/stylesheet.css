@@ -54,11 +54,11 @@ font-weight: 600;
 #slider .flex-direction-nav a  {
 text-align: center;
 display: block;
-border: 1px solid #62065a;
+border: 1px solid #d93848;
 width: 40px;
 height: 40px;
 line-height: 40px;
-color: #c50f6b;
+color: #000;
 margin: -20px 0 0;
 position: absolute;
 top: 50%;
