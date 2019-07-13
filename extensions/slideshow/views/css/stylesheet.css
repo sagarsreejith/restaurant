@@ -54,11 +54,11 @@ font-weight: 600;
 #slider .flex-direction-nav a  {
 text-align: center;
 display: block;
-border: 1px solid #fff;
+border: 1px solid #62065a;
 width: 40px;
 height: 40px;
 line-height: 40px;
-color: #fff;
+color: #c50f6b;
 margin: -20px 0 0;
 position: absolute;
 top: 50%;
@@ -106,6 +106,13 @@ height: 11px;
 text-indent: -9999px;
 width: 11px;
 }
+
+/*--sv-*/
+#slider .flexslider .slides img {
+    width:100%;
+    height:500px;
+}
+
 @media screen and (max-width: 990px) {
 #slider .slider-caption {
 display: none;

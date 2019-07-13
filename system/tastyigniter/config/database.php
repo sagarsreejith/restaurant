@@ -5,8 +5,8 @@ $query_builder = TRUE;
 
 $db['default']['dsn'] = '';
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'lugma';
-$db['default']['password'] = 'lugma';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'rest';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = 'dw2rtzns5_';
