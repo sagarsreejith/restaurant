@@ -1,10 +1,11 @@
 .local-box-fluid {
-background-color: #63065a;
+background-color: #000;
 margin: 25px auto 0;
 padding-bottom: 0px;
 z-index: 999;
 position: relative;
 top: 0;
+opacity:0.8;
 }
 /*.local-box-fluid .panel {
 background-color: #ED561A;
@@ -14,11 +15,11 @@ border-color: #ED561A;
 .local-box-fluid {
 margin: 0 auto;
 padding-bottom: 15px;
-border-radius: 25px;
+
 position: absolute;
-left: 10%;
+left: 33%;
 top: 300px;
-width: 80%;
+width: 40%;
 }
 }
 .local-box-fluid .container {
@@ -78,7 +79,7 @@ margin: 0 auto;
 color:#FFF;
 width: 35%;
 font-weight: bold;
-background: #c50e6b;
+background: #ff0008;
 }
 .postcode-group .postcode-control {
 /*border-radius:5px;*/
@@ -103,9 +104,13 @@ top: 5px;
 /*** Location Search ***/
 
 /*** Location Bar ***/
+.partial .panel{
+    background:#000 !important;
+    opacity:0.8;
+}
 .panel-local {
-background-color: #FFFFFF;
-border: 1px solid #dddddd;
+/*background-color: #FFFFFF;
+border: 1px solid #dddddd;*/
 box-shadow: none;
 margin-bottom: 0;
 }
@@ -189,4 +194,5 @@ margin-bottom: 0;
 padding: 0;
 border: 0 none;
 }
+
 
