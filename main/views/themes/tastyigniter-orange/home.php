@@ -138,6 +138,6 @@
         </div>
 
     </div>
-</div>      
- </div>
-<?php echo get_footer(); ?>
+
+ 
+<?php echo get_footer(); ?><div class="clearfix"></div>
