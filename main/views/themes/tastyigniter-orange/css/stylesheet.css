@@ -5,6 +5,10 @@ TastyIgniter Orange Store-front theme
 */
 
 /*** Basic ***/
+.partial .panel{
+  background:none !important;
+
+}
 html {
   position: relative;
   min-height: 100%;
@@ -1560,6 +1564,9 @@ margin-top: 0;
     }
     .contact-info {padding:0 20px;}
     .h2_col h2{
-      color:#fff !important;
+      color:#000 !important;
     }
-   
+    .background_images  img{
+      max-height:500px;
+      width:100%;
+    }
