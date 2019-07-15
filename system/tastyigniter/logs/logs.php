@@ -107,3 +107,6 @@ ERROR - 2019-07-13 17:02:09 --> 404 Page Not Found:
 ERROR - 2019-07-13 17:02:10 --> 404 Page Not Found: 
 ERROR - 2019-07-13 17:04:04 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
 ERROR - 2019-07-13 17:04:05 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-15 17:11:58 --> 404 Page Not Found: 
+ERROR - 2019-07-15 17:11:58 --> 404 Page Not Found: 
+ERROR - 2019-07-15 17:11:59 --> 404 Page Not Found: 
