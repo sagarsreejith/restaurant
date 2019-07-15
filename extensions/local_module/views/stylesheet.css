@@ -11,6 +11,7 @@ top: 0;
 background-color: #ED561A;
 border-color: #ED561A;
 }*/
+
 @media (min-width: 768px) {
 .local-box-fluid {
 margin: 0 auto;
@@ -18,7 +19,7 @@ padding-bottom: 15px;
 
 position: absolute;
 left: 33%;
-top: 300px;
+top: 211px;
 width: 40%;
 }
 }
@@ -110,12 +111,14 @@ top: 5px;
 .partial .panel{
   border:none;
     opacity:0.8;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 2px #ccc !important;
+    border:none !important;
 }
 .panel-local {
 /*background-color: #FFFFFF;
 border: 1px solid #dddddd;*/
-box-shadow: none;
-margin-bottom: 0;
+
 }
 .panel-local .panel-heading {
 border-color: #EEEEEE;
@@ -199,3 +202,4 @@ border: 0 none;
 }
 
 
+ 

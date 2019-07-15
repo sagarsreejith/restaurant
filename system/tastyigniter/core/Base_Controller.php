@@ -58,7 +58,7 @@ class Base_Controller extends MX_Controller {
 
             // Load events library
             $this->load->library('events');
-
+            //$this->db->query("SET SESSION sql_mode='';");
             // If the requested controller is a module controller then load the module config
             if (ENVIRONMENT !== 'testing') {
                 if ($this->extension AND $this->router AND $_module = $this->router->fetch_module()) {

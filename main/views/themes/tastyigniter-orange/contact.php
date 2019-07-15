@@ -11,6 +11,7 @@
 	.nopad{
 		padding:0;
 	}
+	
 	</style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>

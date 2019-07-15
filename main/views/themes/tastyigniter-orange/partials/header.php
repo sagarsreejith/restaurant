@@ -65,8 +65,17 @@
         <!--[if lt IE 7]>
             <p class="chromeframe"><?php echo lang('alert_info_outdated_browser'); ?></p>
         <![endif]-->
-
-		<header id="main-header">
+<style>
+#main-header:after {
+    background: url(assets/images/shadow.png) no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    bottom: -9px;
+    content: "";
+    height: 9px;
+    position: absolute;
+    width: 100%;
+}
+</style>
+		<header id="main-header" style="position:fixed !important; width: 100% !important;z-index: 9999 !important;">
 			<div class="container">
                 <div class="row">
                     <div class="col-sm-5">
@@ -109,6 +118,7 @@
 										</ul>
 									</li>
 								<?php } else { ?>
+									<li><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
 									<li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
 									<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>
 								<?php } ?>

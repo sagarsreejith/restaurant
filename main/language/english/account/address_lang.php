@@ -11,8 +11,8 @@ $lang['button_back'] 			        = 'Back';
 $lang['button_add'] 			        = 'Add New Address';
 $lang['button_update'] 			        = 'Update Address';
 
-$lang['label_address_1'] 		        = 'Address 1';
-$lang['label_address_2'] 		        = 'Address 2';
+$lang['label_address_1'] 		        = 'Block';
+$lang['label_address_2'] 		        = 'Street';
 $lang['label_city'] 			        = 'City';
 $lang['label_state'] 			        = 'State';
 $lang['label_postcode'] 		        = 'Postcode';

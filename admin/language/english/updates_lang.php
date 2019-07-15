@@ -1,17 +1,17 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['text_title'] 		            = 'TastyIgniter Updates';
-$lang['text_heading'] 		            = 'TastyIgniter Updates <span class="small">[BETA]</span>';
+$lang['text_title'] 		            = 'Lugma Updates';
+$lang['text_heading'] 		            = 'Lugma Updates <span class="small">[BETA]</span>';
 $lang['text_upgrade_title'] 		    = 'Update %s';
 $lang['text_upgrade_heading'] 		    = 'Update %s &nbsp;&nbsp;<i id="updateProgress" class="fa fa-spinner fa-pulse" title="Loading, please wait"></i>';
-$lang['text_tab_title_core'] 	        = 'TastyIgniter';
+$lang['text_tab_title_core'] 	        = 'Lugma';
 $lang['text_tab_title_extensions'] 	    = 'Extensions';
 $lang['text_tab_title_themes'] 		    = 'Themes';
 $lang['text_tab_title_translations']    = 'Translations';
 $lang['text_last_checked']              = '<b>Last checked:</b> %s';
 $lang['text_select_all']                = 'Select All';
-$lang['text_core_updated'] 		        = 'Yippee! You are running the latest version of TastyIgniter.';
-$lang['text_core_update_available'] 	= '<strong>There is a new version of TastyIgniter available</strong>';
+$lang['text_core_updated'] 		        = 'Yippee! You are running the latest version of Lugma.';
+$lang['text_core_update_available'] 	= '<strong>There is a new version of Lugma available</strong>';
 $lang['text_updated'] 		            = 'Yippee! Your %s are all up to date.';
 $lang['text_update_available'] 		    = 'The following %s have new versions available. Check the ones you want to update and then click “Update %s”.';
 $lang['text_maintenance_mode'] 		    = 'While your site is being updated, it will enable the maintenance mode. As soon as your updates are complete, your site will exit maintenance mode.';
@@ -45,9 +45,9 @@ $lang['button_update_translations']     = 'Update Translations';
 $lang['button_download_update']         = 'Download <b>%s</b>';
 $lang['button_skip_update']             = 'Skip Update';
 
-$lang['help_core_update'] 		        = 'You can update to TastyIgniter <b>%s</b> automatically:';
+$lang['help_core_update'] 		        = 'You can update to Lugma <b>%s</b> automatically:';
 
-$lang['alert_modification_warning']     = '<b>Warning:</b> Any modifications you have made to TastyIgniter core, extensions, themes and translations files will be lost.';
+$lang['alert_modification_warning']     = '<b>Warning:</b> Any modifications you have made to Lugma core, extensions, themes and translations files will be lost.';
 $lang['alert_updates_warning']          = '<b>Caution:</b> before updating, please back up your database and files.';
 $lang['alert_zip_warning']              = '<b>Warning:</b> ZIP extension needs to be loaded on your server! Please, ask your hosting company for further help.';
 $lang['alert_permission_warning']       = '<b>Warning:</b> You do not have the right permission to apply updates.';

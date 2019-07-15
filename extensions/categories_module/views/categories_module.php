@@ -5,7 +5,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 	$(document).ready(function() {
 		$('#category-box-collapse .list-group-item').on('click', function() {
 			if ($('#category-box-collapse.in').length > 0) $('#category-box-collapse').collapse('toggle');
@@ -16,8 +16,8 @@
 			$('#category-box-affix').css('width', sideBarWidth);
 		});
 	});
-//--></script>
-<script type="text/javascript"><!--
+</script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		$(function(){
 
@@ -77,4 +77,4 @@
 			});
 		});
 	});
-//--></script>
+</script>
