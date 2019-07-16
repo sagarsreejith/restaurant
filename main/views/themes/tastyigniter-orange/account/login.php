@@ -1,12 +1,17 @@
 <?php echo get_header(); ?>
-<div id="page-content">
+<div id="page-content" class="bg_clr">
 	<div class="container">
+		<div class="margin_st">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="heading-section">
-					<h3><?php echo lang('text_login'); ?></h3>
-					<span class="under-heading"></span>
-				</div>
+			<div class="section-title text-center">
+      <div class="title-separator">
+    
+      </div>
+        <h2> <span class="text-orange">	<?php echo lang('text_login'); ?></h2>
+		<span class="under-heading"></span>
+      </div>
+				
 			</div>
 		</div>
 
@@ -54,11 +59,13 @@
                                     </div>
 								</div>
 							</div>
+							
 						</fieldset>
 					</form>
 				</div>
  			</div>
 		</div>
 	</div>
+					</div>
 </div>
 <?php echo get_footer(); ?>

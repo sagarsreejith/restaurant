@@ -1,10 +1,4 @@
 .local-box-fluid {
-background-color: #fff;
-margin: 25px auto 0;
-padding-bottom: 0px;
-z-index: 999;
-position: relative;
-top: 0;
 
 }
 /*.local-box-fluid .panel {
@@ -109,11 +103,7 @@ top: 5px;
     color:#d2c4c4; 
 }
 .partial .panel{
-  border:none;
-    opacity:0.8;
-    background-color: #ffffff !important;
-    box-shadow: 0 2px 2px #ccc !important;
-    border:none !important;
+ 
 }
 .panel-local {
 /*background-color: #FFFFFF;
@@ -121,7 +111,7 @@ border: 1px solid #dddddd;*/
 
 }
 .panel-local .panel-heading {
-border-color: #EEEEEE;
+border-color: #929292 !important;
 overflow: visible;
 padding: 0 15px;
 display: block;

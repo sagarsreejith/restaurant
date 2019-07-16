@@ -1,4 +1,4 @@
-<div class="locations-filter col-sm-3">
+<div class="locations-filter 	col-sm-3">
 	<div class="panel panel-default panel-locations-filter">
 		<div class="panel-heading">
 			<h3 class="panel-title"><?php echo lang('text_locations_filter_title'); ?></h3>

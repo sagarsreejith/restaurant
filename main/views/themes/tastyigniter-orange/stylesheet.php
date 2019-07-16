@@ -383,43 +383,43 @@ if ( ! empty($button['info']['font']))
 $style .= "}";
 
 // Footer
-$style .= "#page-footer {";
-if (!empty($footer['background']))
-	$style .= "background-color: {$footer['background']}; background-image:linear-gradient(to bottom, {$footer['background']}, {$footer['background']});";
+//$style .= "#page-footer {";
+//if (!empty($footer['background']))
+//	$style .= "background-color: {$footer['background']}; background-image:linear-gradient(to bottom, {$footer['background']}, {$footer['background']});";
 
-if (!empty($footer['image']) AND !empty($footer['display'])) {
-	$style .= "background-image: url('".image_url($footer['image'])."');";
+//if (!empty($footer['image']) AND !empty($footer['display'])) {
+//	$style .= "background-image: url('".image_url($footer['image'])."');";
 
-	if ($footer['display'] === 'tiled') {
-		$style .= "background-repeat: repeat;";
-	} else if ($footer['display'] === 'centered') {
-		$style .= "background-repeat: no-repeat; background-position: center center;";
-	} else if ($footer['display'] === 'cover') {
-		$style .= "background-repeat: no-repeat; background-size:cover;";
-	} else {
-		$style .= "background-size: {$footer['display']};";
-	}
-}
-$style .= "}";
+//	if ($footer['display'] === 'tiled') {
+	//	$style .= "background-repeat: repeat;";
+//	} else if ($footer['display'] === 'centered') {
+	//	$style .= "background-repeat: no-repeat; background-position: center center;";
+	//} else if ($footer['display'] === 'cover') {
+	//	$style .= "background-repeat: no-repeat; background-size:cover;";
+	//} else {
+	//	$style .= "background-size: {$footer['display']};";
+//	}
+//}
+//$style .= "}";
 
-$style .= "#page-footer .bottom-footer {";
-if ( ! empty($footer['bottom_background']))
-	$style .= "background-color: {$footer['bottom_background']};";
+//$style .= "#page-footer .bottom-footer {";
+//if ( ! empty($footer['bottom_background']))
+//	$style .= "background-color: {$footer['bottom_background']};";
 
-if ( ! empty($footer['bottom_image']) AND ! empty($footer['bottom_display'])) {
-	$style .= "background-image: url('" . image_url($footer['bottom_image']) . "'); background-position: center center;background-repeat: no-repeat;";
+//if ( ! empty($footer['bottom_image']) AND ! empty($footer['bottom_display'])) {
+//	$style .= "background-image: url('" . image_url($footer['bottom_image']) . "'); background-position: center center;background-repeat: no-repeat;";
 
-	if ($footer['bottom_display'] === 'tiled') {
-		$style .= "background-repeat: repeat;";
-	} else if ($footer['bottom_display'] === 'centered') {
-		$style .= "background-repeat: no-repeat; background-position: center center;";
-	} else if ($footer['bottom_display'] === 'cover') {
-		$style .= "background-repeat: no-repeat; background-size:cover;";
-	} else {
-		$style .= "background-size: {$footer['bottom_display']};";
-	}
-}
-$style .= "}";
+//	if ($footer['bottom_display'] === 'tiled') {
+	//	$style .= "background-repeat: repeat;";
+	//} else if ($footer['bottom_display'] === 'centered') {
+	//	$style .= "background-repeat: no-repeat; background-position: center center;";
+//	} else if ($footer['bottom_display'] === 'cover') {
+//		$style .= "background-repeat: no-repeat; background-size:cover;";
+	//} else {
+	//	$style .= "background-size: {$footer['bottom_display']};";
+	//}
+//}
+//$style .= "}";
 
 if ( ! empty($footer['footer_color'])) {
 	$style .= "#page-footer .main-footer, #page-footer .main-footer a, #page-footer .main-footer .footer-title { color: {$footer['footer_color']};}";

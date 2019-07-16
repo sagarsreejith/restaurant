@@ -3,6 +3,7 @@
 <div id="page-content">
 	<div class="container">
 		<div class="row">
+			<div class="margin_st2">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -118,5 +119,6 @@
 			<?php echo get_partial('content_bottom'); ?>
 		</div>
 	</div>
+						</div>
 </div>
 <?php echo get_footer(); ?>

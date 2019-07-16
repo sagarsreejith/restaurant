@@ -31,15 +31,7 @@ padding-bottom: 250px;
 
 
 /*** CONTENT ***/
-.page-content {
-  
-}
-#content-top {
-padding-bottom: 30px;
-}
-.content-area {
-padding-bottom: 40px;
-}
+
 #local-menus #content-left {
   padding-left: 0;
   padding-right: 15px;
@@ -56,7 +48,7 @@ padding-bottom: 40px;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
-  background:#fff;
+  
 }
 @media (min-width:767px) {
   #content-right {
@@ -143,24 +135,6 @@ border-top: 1px solid #EEE !important;
 }*/
 .border-bottom {
 border-bottom: 1px solid #EEE !important;
-}
-.top-spacing {
-padding-top: 40px !important;
-}
-.bottom-spacing {
-padding-bottom: 40px !important;
-}
-.top-spacing-20 {
-padding-top: 20px !important;
-}
-.bottom-spacing-20 {
-padding-bottom: 20px !important;
-}
-.top-spacing-10 {
-padding-top: 10px !important;
-}
-.bottom-spacing-10 {
-padding-bottom: 10px !important;
 }
 
 
@@ -273,7 +247,7 @@ color:#FFF;
 }
 #main-header .navbar-nav > li > a:hover,
 #main-header .navbar-nav > li > a:focus {
-  background-color:rgb(255, 59, 77);
+  background-color:rgb(230, 1, 31);
 color: #FFF !important;
 }
 #main-header .navbar-nav > li.open > a,
@@ -328,7 +302,7 @@ background-color: rgba(0,0,0,0.1);
   font-weight: 700;
   /* text-transform: uppercase; */
   color: #fff;
-  padding: 95px 0;
+  padding: 75px 0;
   font-style: oblique;
 }
 #heading span {
@@ -339,7 +313,7 @@ text-align: center;
 margin-top: 35px;
 }
 .heading-section {
-padding: 40px 0;
+padding: 15px 0;
 text-align: center;
 }
 .heading-section h2 {
@@ -797,14 +771,15 @@ text-align: center;
 }
 
 
-.step-item .icon i {
-  border-radius: 50%;
-  border: 12px solid #f7484e;
-  color: #e0280a;
-  font-size: 28px;
-  line-height: 100px;
-  width: 120px;
-  height: 120px;
+  .step-item .icon i {
+    border-radius: 50%;
+    border: 3px solid #f7484e;
+    color: #e0280a;
+    font-size: 18px;
+    line-height: 46px;
+    width: 50px;
+    height: 50px;
+
 }
 
 .step-item h4 {
@@ -837,7 +812,7 @@ margin: 0;
 padding-bottom: 10px;
 }
 .menu-item {
-border-top: 1px dashed #eee;
+border-top: 1px dashed #8a8787;
 width: 100%;
 padding: 0 15px 0;
 }
@@ -851,6 +826,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 text-transform: uppercase;
 white-space: nowrap;
+padding:4px 0;
 }
 .menu-desc {
 line-height: 14px;
@@ -871,6 +847,9 @@ border: 0 none;
 color:#FFF;
 padding: 3px 8px;
 }
+.menu-desc{
+  font-size:95% !important;
+}
 .menu-category > p {
   font-size: 13px;
 }
@@ -890,6 +869,9 @@ outline: none;
 .menu-container .menu-toggle.collapsed .fa-angle-up,
 .menu-container .menu-toggle .fa-angle-down {
   display: none;
+}`
+.bg_clr{
+  bacckground:#000;
 }
 .menu-container .menu-toggle.collapsed .fa-angle-down,
 .menu-container .menu-toggle .fa-angle-up {
@@ -1040,10 +1022,12 @@ width: 0;
 /*** End Add to Cart State ***/
 
 .location-list .panel-local {
-border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #f5f5f5;
+  box-shadow: 0 0 6px #ccc;
 }
 .location-list .panel-local h4 {
-font-size: 16px;
+font-size: 15px;
 margin: 0 0 5px;
 }
 .location-list .panel-local .box-one dl {
@@ -1131,11 +1115,7 @@ margin-top: 30px;
 
 /*** Footer  ***/
 #page-footer {
-background-color: #EDEFF1;
-background-image: linear-gradient(to bottom, #EDEFF1, #EDEFF1);
-position: absolute;
-bottom: 0;
-width: 100%;
+
 }
 #page-footer .main-footer, #page-footer .main-footer a {
   color: #9BA1A7;
@@ -1255,8 +1235,8 @@ body .bootstrap-timepicker-widget table td a i {
 width: 100%;
 }
 .select2-container .select2-choice {
-height: 32px;
-line-height: 32px;
+height: 37px;
+line-height: 37px;
 background-image:none;
 }
 .select2-container.input-sm .select2-choice {
@@ -1542,6 +1522,7 @@ margin-top: 0;
   .input-group-addon{
     background: #e01112;
     color:#fff;
+    padding:4px 11px;
   }
   .input-group-addon i{
     font-size:20px;
@@ -1570,12 +1551,13 @@ margin-top: 0;
     }
     .list-group li a{color: #333;}
     .list-group li a:hover{
-      text-decoration:none;
+      text-decoration: none;
+      color: #ff0f17;
     }
     .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover{
-      background: #ff2323;
+      background: none;
       border: none;
-      color: #fff;
+      color: red;
   }
     
 
@@ -1586,9 +1568,10 @@ margin-top: 0;
       padding:3px;
     }
     #contactForm{
-      background: #ff5458;
-    padding: 20px;
-    border-radius: 6px;
+      background: #fffdfd;
+      padding: 35px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px #ccc;
     }
     .contact-info {padding:0 20px;}
     .h2_col h2{
@@ -1605,20 +1588,11 @@ margin-top: 0;
       margin: 100px 0 0;
     }
     .partial .panel{
-      border:none;
-        opacity:0.8;
-        background-color: #ffffff !important;
-        box-shadow: 0 0px 8px 2px #ccc !important;
-        border:none !important;
+      
     }
-    .partial .panel-default > .panel-heading{
-      border-color: #716c6c !important;
-    }
+    
     .top-spacing-10{
-      opacity: 0.8;
-      background-color: #ffffff !important;
-      box-shadow: 2px 2px 12px 2px #f2f2f2f2 !important;
-      border: none !important;
+    
     }
 
     .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover{
@@ -1632,5 +1606,5 @@ margin-top: 0;
       opacity: 0.8;
     
     }
-    .partial .panel, .partial .panel-default > .panel-heading, .partial .panel-cart, #page-content .cart-total .table td, .panel-cart .location-control, .panel-cart .cart-coupon, #local-info .panel-local, .panel-local .panel-heading{border-color: #6d5d5d !important;}
+
   
