@@ -59,14 +59,24 @@
 		<![endif]-->
         <?php $custom_script = get_theme_options('custom_script'); ?>
         <?php if (!empty($custom_script['head'])) { echo '<script type="text/javascript">'.$custom_script['head'].'</script>'; }; ?>
+		<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	</head>
 	<body class="<?php echo $body_class; ?>">
 		<div id="opaclayer" onclick="closeReviewBox();"></div>
         <!--[if lt IE 7]>
             <p class="chromeframe"><?php echo lang('alert_info_outdated_browser'); ?></p>
         <![endif]-->
-
-		<header id="main-header">
+<style>
+#main-header:after {
+    background: url(assets/images/shadow.png) no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    bottom: -9px;
+    content: "";
+    height: 9px;
+    position: absolute;
+    width: 100%;
+}
+</style>
+		<header id="main-header" style="position:fixed !important; width: 100% !important;z-index: 9999 !important;">
 			<div class="container">
                 <div class="row">
                     <div class="col-sm-5">

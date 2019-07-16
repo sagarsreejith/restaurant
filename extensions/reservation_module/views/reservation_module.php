@@ -83,7 +83,7 @@
                         <button type="submit" class="btn btn-primary btn-block"><?php echo lang('button_find_table'); ?></button>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 text-right">
+                    <div class="col-xs-2 col-sm-2 text-center">
                         <a class="btn btn-default" href="<?php echo $reset_url; ?>"><?php echo lang('button_reset'); ?></a>
                     </div>
                 </div>

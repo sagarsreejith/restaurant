@@ -46,11 +46,11 @@
 
                             <div class="form-group">
                                 <div class="row">
-                                    <div class="col-md-5 wrap-none">
-                                        <a class="btn btn-link btn-lg" href="<?php echo $reset_url; ?>"><span class="small"><small><?php echo lang('text_forgot'); ?></small></span></a>
+                                    <div class="col-md-4">
+                                        <a class="btn  " href="<?php echo $reset_url; ?>"><span class="small"><small><?php echo lang('text_forgot'); ?></small></span></a>
                                     </div>
-                                    <div class="col-md-7">
-                                        <a class="btn btn-default btn-block btn-lg" href="<?php echo $register_url; ?>"><?php echo lang('button_register'); ?></a>
+                                    <div class="col-md-8">
+                                        <a class="btn  text-right"  style="text-align:right;width:100%;color:red" href="<?php echo $register_url; ?>"><?php echo lang('button_register'); ?></a>
                                     </div>
 								</div>
 							</div>

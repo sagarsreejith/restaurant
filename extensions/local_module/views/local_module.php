@@ -5,7 +5,7 @@
 				<div id="local-search" class="col-md-12 text-center">
 					<div class="panel panel-local">
 						<div class="panel-body h2_col">
-							<h2 style="color:#fff;font-size: 27px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>
+							<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>
 							<span class="search-label sr-only"><?php echo lang('label_search_query'); ?></span>
 							<div class="col-xs-12 col-sm-6 col-md-12 center-block">
 								<?php if ($location_search_mode === 'multi') { ?>

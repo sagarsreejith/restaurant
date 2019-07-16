@@ -155,4 +155,4 @@
 	    	  $this.siblings('.fa-search').toggleClass('hidden', visible);
 		 }).trigger('propertychange');
 	});
---></script>
+</script>

@@ -1,3 +1,5 @@
+</div>
+<div class="clearfix"></div>
 <footer id="page-footer">
     <?php echo get_partial('content_footer'); ?>
 
