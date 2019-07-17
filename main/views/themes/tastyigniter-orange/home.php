@@ -30,7 +30,18 @@
 
     /*-abt-*/
  
-
+.book[data-book="book-1"] .front:before {
+    background: url(assets/images/menu-cover.png);
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 3px;
+    right: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: -6px;
+    height: 100%;
+}
 
 </style>
 <?php echo get_header(); ?>
