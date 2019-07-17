@@ -238,6 +238,9 @@
   margin-left: -20px;
   bottom: 0px;
 }
+.section-title img{
+  max-height: 30px;
+}
 .text-orange {
   color: #e93e21;
 }
@@ -392,6 +395,7 @@ font-style: normal;
     font-weight: 700;
     position: relative;
     margin-bottom: 10px;
+    margin:0;
 }
 .section-title h2:before {
     position: absolute;
@@ -491,7 +495,7 @@ h4{
   display: block;
   float: left;
   width: 100%;
-  margin: 20px 0;
+  margin: 40px 0;
   border: 1px solid #ccc;
   box-shadow: 0 0px 4px 0 #ccc;
 }
@@ -606,3 +610,73 @@ color:#000;
 #nav-tabs {
   background: #f7f6f6;
 }
+#main-header .dropdown-menu {
+  background-color: #fff !important;
+  top: 95px !important;
+}
+#main-header .dropdown-menu > li > a, .modal-header {
+  padding: 7px 12px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  color: #000 !important;
+}
+#reservation-form p b{
+  font-weight: 700;
+  color: #4c4b4b;
+}
+
+
+
+
+
+
+
+
+
+.nav-tabs.tabstab li.active a, .nav-tabs.tabstab>li>a:hover, .nav-tabs.tabstab>li>a:focus{background:none;border:none;color:#a1a1a7  !important;cursor:pointer;text-decoration:none;}
+
+.allformst{
+  margin: 0 auto;
+  position: absolute;
+  margin-top: -150px;
+    width: 100%;
+    
+}
+.nav-tabs{border:none;}
+ul.nav-tabs.tabstab li a{    font-size: 13px;
+  text-transform: uppercase;
+  padding: 25px !important;
+  line-height: 0px;
+  text-align: center;
+color:#a59e9e}
+ul.nav-tabs.tabstab li a:active{
+  color:#fff;
+}
+.nav-tabs.tabstab>li{height:50px;min-width:94px;text-align:center;}
+ul.nav-tabs.tabstab li.active{ background: rgb(255, 15, 23);}
+ul.nav-tabs.tabstab li.active a{color:#fff !important;}
+ul.nav-tabs.tabstab>li{background:#000}
+.allformst ul.nav-tabs.tabstab>li a{background-position:center 17px;background-repeat:no-repeat;background-size:28px;}
+
+ul.nav-tabs.tabstab{text-align:center;margin:0 auto 0px;float:none;display:table;}
+
+.allformst .tab-content.custmtab{margin-bottom:7px;}
+
+.allformst .secndblak {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: start;
+  padding: 20px 10px;
+  /* margin: -19px 0; */
+  z-index: 99;
+  position: relative;
+
+
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus{
+  
+  background: rgba(255, 0, 8, 0.29) !important;
+  opacity: 0.8;
+}
+
