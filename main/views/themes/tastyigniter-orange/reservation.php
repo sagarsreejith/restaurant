@@ -1,18 +1,28 @@
 <?php echo get_header(); ?>
+
 <?php echo get_partial('content_top'); ?>
+
+
 <div id="page-content">
 	<div class="container top-spacing-10">
-		<div class="row">
+		<div class="">
+		<div class="col-md-12 nopad table_st">
+		<div class="col-lg-4 col-md-4 nopad">
+			<div class="reservation-image form-image">
+			<img class="img-responsive" src="assets/images/table.jpg" alt="">
+			</div>
+      	</div>
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
-					$class = "col-sm-6 col-md-6";
+					$class = "col-sm-6 col-md-8 nopad";
 				} else if (partial_exists('content_left') OR partial_exists('content_right')) {
-					$class = "col-sm-9 col-md-9";
+					$class = "col-sm-9 col-md-8 nopad";
 				} else {
-					$class = "col-md-12";
+					$class = "col-md-8 nopad";
 				}
 			?>
+
 
 			<div class="<?php echo $class; ?>">
 				<div class="content-wrap">

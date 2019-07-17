@@ -3,8 +3,8 @@ margin-left: 0;
 }
 #cart-box-affix.affix {
 position: fixed !important;
-top: 15px;
-z-index: 99;
+top: 70px;
+z-index: 999;
 }
 #cart-box-affix .panel-cart {
 margin-left: 0;
@@ -12,6 +12,10 @@ margin-bottom: 10px;
 }
 .panel-cart .panel-heading {
     margin-bottom: 0;
+    border-color: #928e8e !important;
+}
+.panel-cart .location-control{
+    border-color: #928e8e !important;
 }
 .panel-cart .panel-body {
     padding: 10px 15px;

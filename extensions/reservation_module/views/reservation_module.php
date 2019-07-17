@@ -1,3 +1,14 @@
+
+<div class="section-title text-center">
+      <div class="title-separator">
+     <i class="glyph-icon flaticon-food-27"></i>
+      </div>
+        <h2> <span class="text-orange">Make </span> Reservation</h2>
+        <p>We provide free, secure and instantly confirmed online reservation.</p>
+      </div>
+
+
+      
 <div id="reservation-box" class="module-box">
     <div class="container top-spacing">
         <div id="reservation-alert">
@@ -83,7 +94,7 @@
                         <button type="submit" class="btn btn-primary btn-block"><?php echo lang('button_find_table'); ?></button>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 text-center">
+                    <div class="col-xs-2 col-sm-2 text-left">
                         <a class="btn btn-default" href="<?php echo $reset_url; ?>"><?php echo lang('button_reset'); ?></a>
                     </div>
                 </div>

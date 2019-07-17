@@ -277,7 +277,7 @@
 
         // When the user selects an address from the dropdown, populate the address
         // fields in the form.
-        autocomplete.setComponentRestrictions({'country': ['GB']});
+        autocomplete.setComponentRestrictions({'country': ['KW']});
         autocomplete.addListener('place_changed', searchLocal);
     }
 

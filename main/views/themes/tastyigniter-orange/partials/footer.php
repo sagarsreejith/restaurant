@@ -1,69 +1,31 @@
-</div>
+
 <div class="clearfix"></div>
-<footer id="page-footer">
-    <?php echo get_partial('content_footer'); ?>
 
-    <div class="main-footer">
-	    <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 pull-right">
-                    <?php $social_icons = get_theme_options('social'); ?>
-                    <?php if (!empty($social_icons) AND array_filter($social_icons)) { ?>
-                        <div class="social-bottom">
-                            <h4 class="footer-title"><?php echo lang('text_follow_us'); ?></h4>
-                            <ul class="social-icons">
-                                <?php if (!empty($social_icons['facebook'])) { ?>
-                                    <li><a class="fa fa-facebook" target="_blank" href="<?php echo $social_icons['facebook']; ?>"></a></li>
-                                <?php } ?>
 
-                                <?php if (!empty($social_icons['twitter'])) { ?>
-                                    <li><a class="fa fa-twitter" target="_blank" href="<?php echo $social_icons['twitter']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['google'])) { ?>
-                                    <li><a class="fa fa-google-plus" target="_blank" href="<?php echo $social_icons['google']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['youtube'])) { ?>
-                                    <li><a class="fa fa-youtube" target="_blank" href="<?php echo $social_icons['youtube']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['vimeo'])) { ?>
-                                    <li><a class="fa fa-vimeo" target="_blank" href="<?php echo $social_icons['vimeo']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['linkedin'])) { ?>
-                                    <li><a class="fa fa-linkedin" target="_blank" href="<?php echo $social_icons['linkedin']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['pinterest'])) { ?>
-                                    <li><a class="fa fa-pinterest" target="_blank" href="<?php echo $social_icons['pinterest']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['tumblr'])) { ?>
-                                    <li><a class="fa fa-tumblr" target="_blank" href="<?php echo $social_icons['tumblr']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['flickr'])) { ?>
-                                    <li><a class="fa fa-flickr" target="_blank" href="<?php echo $social_icons['flickr']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['instagram'])) { ?>
-                                    <li><a class="fa fa-instagram" target="_blank" href="<?php echo $social_icons['instagram']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['dribbble'])) { ?>
-                                    <li><a class="fa fa-dribbble" target="_blank" href="<?php echo $social_icons['dribbble']; ?>"></a></li>
-                                <?php } ?>
-
-                                <?php if (!empty($social_icons['foursquare'])) { ?>
-                                    <li><a class="fa fa-foursquare" target="_blank" href="<?php echo $social_icons['foursquare']; ?>"></a></li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                    <?php } ?>
-                </div>
-
+<footer class="footer" id="" style="background-image: url(assets/images/bg.jpg);">
+<?php echo get_partial('content_footer'); ?>
+  <div class="object-bottom">
+    <div class="object-left">
+      <img class="img-responsive bottom" src="assets/images/data/06.png" alt="">
+    </div>
+    <div class="object-right">
+      <img  class="img-responsive bottom" src="assets/images/data/16.png" alt="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row logo_section">
+    <div class="col-lg-12 col-md-12 text-center mt-60">
+        <div class="footer-logo">
+          <img id="logo-footer" class="img-responive" src="assets/images/data/logo_n.png" alt="">
+        </div>
+        <div class="col-lg-8 col-lg-offset-2">
+          <p class=" text-white mb-60">We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row col_footer">
+               
+<div class="col-md-2 offset-md-2" style=""></div>
                 <div class="col-xs-4 col-sm-3">
                     <div class="footer-links">
                         <h4 class="footer-title hidden-xs"><?php echo lang('text_my_account'); ?></h4>
@@ -101,25 +63,27 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="bottom-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 wrap-all border-top">
-                    <!-- TastyIgniter is open source software developed and maintained by a volunteer community.
-                    It would be much appreciated by the TastyIgniter community if you left the full copyright and "powered by" notice intact,
-                    to show your support for TastyIgniter.  If you choose to remove or modify the copyright below,
-                    you may be refused support on the TastyIgniter Community Forums.
-
-                    This is free software, support us and we'll support you. -->
-                    <?php echo sprintf(lang('site_copyright'), date('Y'), config_item('site_name'), lang('tastyigniter_system_name')) . lang('tastyigniter_system_powered'); ?>
-                    <!-- End powered by -->
-                </div>
+            <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
+          <div class="footer-social">
+            <ul class="list-inline">
+              <li><a href="#" data-tooltip="facebook"> <i class="fa fa-facebook"></i> </a> </li>
+              <li><a href="#" data-tooltip="twitter"> <i class="fa fa-twitter"></i> </a> </li>
+              <li><a href="#" data-tooltip="google-plus"> <i class="fa fa-google-plus"></i> </a> </li>
+              <li><a href="#" data-tooltip="instagram"> <i class="fa fa-instagram"></i> </a> </li>
+              <li><a href="#" data-tooltip="tripadvisor"> <i class="fa fa-tripadvisor"></i> </a> </li>
+            </ul>
+          </div>
+          <div class="text_ft">
+                <?php echo sprintf(lang('site_copyright'), date('Y'), config_item('site_name'), lang('tastyigniter_system_name')) . lang('tastyigniter_system_powered'); ?>
             </div>
         </div>
-	</div>
+      </div>
+    </div>
+  </div>
+
 </footer>
 <?php $custom_script = get_theme_options('custom_script'); ?>
 <?php if (!empty($custom_script['footer'])) { echo '<script type="text/javascript">'.$custom_script['footer'].'</script>'; }; ?>

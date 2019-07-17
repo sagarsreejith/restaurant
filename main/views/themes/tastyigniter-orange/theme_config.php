@@ -30,13 +30,26 @@ $theme['head_tags'] = array(
 		array(theme_url('tastyigniter-orange/css/jquery.raty.css'), 'jquery-raty-css', '15'),
 		array(theme_url('tastyigniter-orange/css/fonts.css'), 'fonts-css', '16'),
 		array(theme_url('tastyigniter-orange/css/stylesheet.css'), 'stylesheet-css', '100100100100100'),
+		array(theme_url('tastyigniter-orange/css/footer.css'), 'footer-css', '17'),
+		array(theme_url('tastyigniter-orange/css/style_new.css'), 'style_new-css', '18'),
+		array(theme_url('tastyigniter-orange/css/mega_menu.css'), 'mega_menu-css', '19'),
+		array(theme_url('tastyigniter-orange/css/owl.carousel.css'), 'owl.carousel-css', '20'),
+		array(theme_url('tastyigniter-orange/css/flaticon.css'), 'flaticon', '21'),
+		array(theme_url('tastyigniter-orange/css/compose.css'), 'compose', '22'),
+
+
 	),
 	'script'   	=> array(
 		array(theme_url('tastyigniter-orange/js/jquery-1.11.2.min.js'), 'jquery-js', '1'),
 		array(theme_url('tastyigniter-orange/js/bootstrap.min.js'), 'bootstrap-js', '10'),
+	
+		array(theme_url('tastyigniter-orange/js/mega_menu.js'), 'mega_menu', '14'),
+		array(theme_url('tastyigniter-orange/js/owl.carousel.min.js'), 'owl', '15'),
 		array(theme_url('tastyigniter-orange/js/select2.js'), 'select-2-js', '12'),
 		array(theme_url('tastyigniter-orange/js/jquery.raty.js'), 'jquery-raty-js', '13'),
-		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '100100100100100'),
+		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '14'),
+
+		
 	),
 );
 
