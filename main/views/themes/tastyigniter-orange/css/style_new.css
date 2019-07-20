@@ -683,8 +683,6 @@ border-right: 1px dotted red;
 }
 .serach_sec{
   float: left;
-  position: absolute;
-  margin: 19% 0;
   width: 100%;
   overflow: hidden;
 }

@@ -1,8 +1,8 @@
-<div id="local-box" class="col-md-12 serach_sec" <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+<div id="local-box" class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
 			<?php if ($location_search === TRUE) { ?>
-				<div id="local-search" class="col-md-12 text-center">
+				<div id="local-search " class="col-md-12 text-center">
 					<div class="panel panel-local">
 						<div class="panel-body h2_col">
 							<!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
@@ -345,11 +345,11 @@
     	var elemt;
     	var sear = "<?php echo $search_query; ?>";
     	
-    	if (sear) {
-    	    elemt = document.getElementById("panel-body");
-			if (elemt)
-    	        elemt.scrollIntoView(); // Top
-        }
+    	// if (sear) {
+    	//     elemt = document.getElementById("panel-body");
+		// 	if (elemt)
+    	//         elemt.scrollIntoView(); // Top
+        // }
     }
     
 	$(document).ready(function() {

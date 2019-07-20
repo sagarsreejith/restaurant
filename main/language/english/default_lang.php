@@ -13,7 +13,7 @@ $lang['text_follow_us'] 			                = 'Follow us on:';
 
 $lang['menu_home'] 		                            = 'Home';
 $lang['menu_menu'] 		                            = 'Menu';
-$lang['menu_reservation'] 		                    = 'Reservation';
+$lang['menu_reservation'] 		                    = 'Reserve a Table';
 $lang['menu_login'] 		                        = 'Login';
 $lang['menu_logout'] 		                        = 'Logout';
 $lang['menu_register'] 		                        = 'Register';
@@ -23,7 +23,7 @@ $lang['menu_detail'] 		                        = 'Edit Details';
 $lang['menu_address'] 		                        = 'Address Book';
 $lang['menu_recent_order'] 		                    = 'Recent Orders';
 $lang['menu_recent_reservation'] 		            = 'Recent Reservations';
-$lang['menu_locations'] 		                    = 'Our Locations';
+$lang['menu_locations'] 		                    = 'Our Branches';
 $lang['menu_contact'] 		                        = 'Contact Us';
 $lang['menu_admin'] 		                        = 'Administrator';
 
