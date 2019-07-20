@@ -323,11 +323,11 @@
     	var elemt;
     	var sear = "<?php echo $search_query; ?>";
     	
-    	if (sear) {
-    	    elemt = document.getElementById("panel-body");
-			if (elemt)
-    	        elemt.scrollIntoView(); // Top
-        }
+    	// if (sear) {
+    	//     elemt = document.getElementById("panel-body");
+		// 	if (elemt)
+    	//         elemt.scrollIntoView(); // Top
+        // }
     }
     
 	$(document).ready(function() {

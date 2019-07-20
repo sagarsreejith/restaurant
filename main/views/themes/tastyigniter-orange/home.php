@@ -1,36 +1,20 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Amatic+SC:400,700|Lilita+One" rel="stylesheet">
 
 <style>
- .download_sec{
-      display:block;
-      width:100%;
-      background:#f5f5f5;
-      padding:20px 0;
-     
-  }
-  .content_st {
-   
-    float:left;
-    width:100%;
-  }
-  .content_st h6{color:#000}
-  .content_st p{color:#000;font-size:15px;}
+
  
-  .img_sec img{
-      max-width:184px;
-  }
-  .phone_num{ padding:20px 0}
-  .btn-add-phone{margin:10px 0;width: 100%;
-    background: #e01212;
-    padding: 10px;
-    color:#fff;
-    border: 1px solid #e01112;}
-
-
-
-    /*-abt-*/
- 
-
+.book[data-book="book-1"] .front:before {
+    background: url(assets/images/menu-cover.png);
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 3px;
+    right: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: -6px;
+    height: 100%;
+}
 
 </style>
 <?php echo get_header(); ?>
@@ -110,9 +94,10 @@
         <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
             <div class="title-separator">
-              <i class="glyph-icon flaticon-food-27"></i>
+             <img src="assets/images/food_icon.png">
+             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Lugma</h2>
             </div>
-            <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Lugma</h2>
+          
             <p>Whatever your occasion, We makes it one to remember!</p>
           </div>
         </div>
@@ -603,10 +588,10 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
-            <div class="title-separator">
-              <i class="glyph-icon flaticon-food-27 white"></i>
+          <div class="title-separator">
+             <img src="assets/images/food_icon.png">
+             <h2 class="h2_sttt2"> <span class="text-orange  padin_rt">Welcome to</span>Lugma</h2>
             </div>
-            <h2 class="text-white"> <span class="text-orange">Our Today’s</span> Special Menu</h2>
             <p class="text-white">We serve a daily changing menu</p>
           </div>
         </div>
@@ -1009,6 +994,7 @@
     </div>
   </div>
 </section>
+
 
 
 
