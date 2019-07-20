@@ -3,6 +3,10 @@
 <style>
 
  
+.about-area {
+    background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat scroll center bottom / contain;
+}
+
 .book[data-book="book-1"] .front:before {
     background: url(assets/images/menu-cover.png);
     position: absolute;
@@ -15,7 +19,15 @@
     top: -6px;
     height: 100%;
 }
-
+.area-title h2:after {
+    background: rgba(0, 0, 0, 0) url((assets/images/red.png) no-repeat scroll center center / contain;
+    bottom: 0;
+    content: "";
+    height: 30px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
@@ -80,15 +92,12 @@
 
 
 <section class="about white-bg">
-  <div class="object-bottom-top">
-    <div class="object-left">
-      <img class="img-responsive" src="assets/images/01.jpg" alt="">
-    </div>
-    <div class="object-right">
-      <img class="img-responsive" src="assets/images/02.jpg" alt="">
-    </div>
-  </div>
+ 
   <div class="page-section-ptb">
+  <div class="object-right object_right_img">
+      <img class="img-responsive" src="assets/images/02.png" alt="">
+    </div>
+   
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12">
@@ -109,7 +118,13 @@
         </div>
       </div>
     </div>
+    </div>
+    
     <div class="book-menu mt-40">
+    <div class="object-left">
+      <img class="img-responsive" src="assets/images/01.png" alt="">
+    </div>
+    <div class="container">
       <div class="row">
         <div class="col-lg-7 col-md-7 col-sm-7 text-right">
           <div class="content mt-80">
@@ -577,6 +592,7 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 </section>
 
@@ -998,46 +1014,6 @@
 
 
 
-<!--<div class="download_sec">
-    <div class="container">
-        <div class="col-md-6 nopad img_st text-center">
-            <img src="assets/images/mobile3.png">
-        </div>
-        <div class="col-md-6 nopad content_st">
-            <div>
-                <h3> Download the Zomato Order App!</h4>
-                <p>Get real-time order updates, live chat support, and exclusive app-only offers.</p>
-            </div>
-            <div class="img_sec">
-                <img src="assets/images/play.png" alt="">
-                <img src="assets/images/playstore.png">
-            </div>
-            <div class="phone_num">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-sm-10">
-                            <div class="phone-list">
-                                <div class="input-group phone-input">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="type-text">+965</span> <span class="caret"></span></button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a class="changeType" href="javascript:;" data-type-value="mobile">Mobile</a></li>
-                                        </ul>
-                                    </span>
-                                    <input type="hidden" name="phone[1][type]" class="type-input" value="" />
-                                    <input type="text" name="phone[1][number]" class="form-control" placeholder=" 999 9999" />
-                                </div>
-                            </div>
-                            <button type="button" class="btn  btn-sm btn-add-phone"><span class="glyphicon glyphicon-plus"></span>Text App Link</button>
-                        </div>	
-                    </div>
-            </form>
-        </div>
-    </div>
-
-</div>
-</div>-->
-
 
 
 
@@ -1045,6 +1021,204 @@
 <div class="clearfix"></div>
 
 
+<section class="gallery white-bg page-section-ptb">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-12 col-md-12">
+       <div class="isotope-filters">
+       <button data-filter="" class="active">All</button>
+       <button data-filter=".vegetarian"> Vegetarian</button>
+       <button data-filter=".chinese">Chinese</button>
+       <button data-filter=".italian">Italian</button>
+       <button data-filter=".mexican">Mexican</button>
+       </div>
+     </div>
+   </div>
+ </div>
+<div class="container"> 
+ <div class="isotope popup-gallery columns-3">
+   <div class="grid-item chinese mexican">
+      <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/01.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+             <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>
+    </div>
+    <div class="grid-item chinese">
+      <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/02.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/02.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>
+    </div>
+     <div class="grid-item  vegetarian italian">
+        <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/03.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+           <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/03.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>  
+    </div>
+    <div class="grid-item mexican">
+      <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/04.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+           <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/04.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>
+    </div>
+    <div class="grid-item  vegetarian chinese">
+      <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/05.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+          <h3><a href="#"> Cheese Pasta </a> </h3>
+                <a href="#">Branding</a>/
+                <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/05.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>  
+    </div>
+    <div class="grid-item  vegetarian">
+      <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/06.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/06.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>
+    </div>
+    <div class="grid-item">
+      <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/07.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+           <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/07.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div> 
+    </div>
+      <div class="grid-item  vegetarian italian">
+        <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/08.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/08.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>  
+    </div>
+     <div class="grid-item chinese">
+        <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/09.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/09.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div>
+    </div>
+     <div class="grid-item chinese">
+       <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/10.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/10.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div> 
+    </div>
+    <div class="grid-item chinese">
+       <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/11.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/11.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div> 
+    </div>
+    <div class="grid-item chinese">
+       <div class="galllery-item">
+        <span><img class="img-responsive" src="assets/images/gallery/12.jpg" alt=""></span>
+         <div class="overlay">
+          <div class="overlay-content">
+            <h3><a href="#"> Cheese Pasta </a> </h3>
+              <a href="#">Branding</a>/
+              <a href="#">Identity</a>
+             <a class="portfolio-img" href="assets/images/gallery/12.jpg"><i class="fa fa-expand"></i></a>               
+              </div>
+           </div>
+        </div> 
+    </div>
+   </div>
+ </div>
+</section>
 
+<div claass="clearfix"></div>
+
+
+
+<section class="about-area section-padding" id="about">
+        <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="area-title text-center">
+                <h2> <span class="text-orange">Our </span> Story</h2>
+                    </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <img src="assets/images/about.png">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="right-about-content">
+                        <p>Quisque sit amet turpis et ipsum elementum facilisis. Quisque sed placerat libero. Pellentesque nec tellus sollicitudin, sollicitudin ligula non, tristique nibh Donec vitae turpis sagittis, cursus nunc ac, aliquet nunc. Donec viverra vel massa at posuere. Aliquam et fringilla augue consequat posuere sem, eu ornares viverra veleso massa at posuere. Aliquam et fringilla augue</p>
+                    </div>
+                </div>
+</div>
+            </div>
+        </div>
+    </section>
 
 <?php echo get_footer(); ?><div class="clearfix"></div>

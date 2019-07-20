@@ -27,7 +27,7 @@
                 </div>
 
                 <div id="page-content">
-                    <div class="container top-spacing">
+                    <div class=" top-spacing">
 
                         <div class="row">
                             <div class="margin_st2">
@@ -50,12 +50,20 @@
 				} else {
 					$class = "col-md-12";
 				}
-			?>
+            ?>
+            
+            <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div id="map" class="">
+                                                                <div id="map-holder" style="height:370px;text-align:left;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <div class="content-wrap <?php echo $class; ?>">
+                                            <div class="content-wrap cont_clr <?php echo $class; ?>">
                                                 <?php if (!empty($default_local)) { ?>
                                                     <div class="row">
-                                                        <div class="col-md-12">
+                                                        <div class="col-md-12 nopad">
 
                                                             <div class="col-md-12  bottom-spacing">
                                                                 <div class="row contact">
@@ -94,69 +102,6 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div id="contactForm" class="col-md-12 ">
-                                                                    <form accept-charset="utf-8" method="POST" action="<?php echo $_action; ?>" role="form">
-                                                                        <div class="row">
-                                                                            <div class="col-sm-6 col-md-6">
-                                                                                <div class="form-group">
-                                                                                    <select name="subject" id="subject" class="form-control">
-                                                                                        <option value="">
-                                                                                            <?php echo lang('text_select_subject'); ?>
-                                                                                        </option>
-                                                                                        <?php foreach($subjects as $subject_id => $subject) { ?>
-                                                                                            <option value="<?php echo $subject_id; ?>">
-                                                                                                <?php echo $subject; ?>
-                                                                                            </option>
-                                                                                            <?php } ?>
-                                                                                    </select>
-                                                                                    <?php echo form_error('subject', '<span class="text-danger">', '</span>'); ?>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
-                                                                                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-6 col-md-6">
-                                                                                <div class="form-group">
-                                                                                    <input type="text" name="full_name" id="full-name" class="form-control" value="<?php echo set_value('full_name'); ?>" placeholder="<?php echo lang('label_full_name'); ?>" />
-                                                                                    <?php echo form_error('full_name', '<span class="text-danger">', '</span>'); ?>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" name="telephone" id="telephone" class="form-control" value="<?php echo set_value('telephone'); ?>" placeholder="<?php echo lang('label_telephone'); ?>" />
-                                                                                    <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="<?php echo lang('label_comment'); ?>">
-                                                                                <?php echo set_value('comment'); ?>
-                                                                            </textarea>
-                                                                            <?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
-                                                                        </div>
-                                                                        <div class="form-group">
-
-                                                                            <div class="col-md-4 nopad">
-                                                                                <span><?php echo $captcha_image;?></span>
-                                                                            </div>
-                                                                            <div class="col-md-8 nopad">
-                                                                                <input type="text" name="captcha" class="form-control" placeholder="<?php echo lang('label_captcha'); ?>" />
-                                                                            </div>
-
-                                                                            <?php echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
-                                                                        </div>
-                                                                        <br />
-
-                                                                        <div class="row">
-                                                                            <div class="col-sm-12 col-md-12 text-center">
-                                                                                <div class="buttons">
-                                                                                    <button type="submit" class="btn btn-primary btn-block sub_btn">
-                                                                                        <?php echo lang('button_send'); ?>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
 
                                                             </div>
                                                         </div>
@@ -174,22 +119,9 @@
 					</div>
 					
 
-					<div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="section-title text-center">
-                                                                <h2><?php echo lang('text_find_us'); ?></h2>
-                                                                <span class="under-heading"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
 
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div id="map" class="">
-                                                                <div id="map-holder" style="height:370px;text-align:left;"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                
 
                                                     <script type="text/javascript">
                                                         //<![CDATA[

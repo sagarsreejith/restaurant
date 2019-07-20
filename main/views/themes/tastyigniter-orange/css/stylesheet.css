@@ -45,9 +45,12 @@ padding-bottom: 250px;
 }
 #page-content div.content-wrap {
   
-  padding: 15px;
-  border-radius: 4px;
-  margin-bottom: 20px;
+      /* padding: 15px; */
+    /* border-radius: 4px; */
+    /* margin-bottom: 20px; */
+    padding: 10px 0;
+    background: #fff;
+    color: #fff;
   
 }
 @media (min-width:767px) {
@@ -209,9 +212,10 @@ text-decoration: none;
 
 /*** Main Header ***/
 #main-header {
-  position: fixed !important;
+ 
   width: 100% !important;
   z-index: 999 !important; 
+  position:fixed;
 
 }
 #main-header .logo {
@@ -253,7 +257,8 @@ color: #FFF !important;
 #main-header .navbar-nav > li.open > a,
 #main-header .navbar-nav > li.open > a:hover,
 #main-header .navbar-nav > li.open > a:focus {
-background-color: rgba(0,0,0,0.05);
+background-color:#cc6060;
+color:#fff !important;
 }
 #main-header .dropdown-menu {
 background-color: #ed561a;
@@ -568,12 +573,12 @@ margin-right: 0;
 }
 .nav-tabs.nav-tabs-line > li.active > a {
 border: 0 none;
-color: #333333;
+color: #fff;
 }
 .nav-tabs-line > li.active,
 .nav-tabs-line > li.active:hover,
 .nav-tabs-line > li.active:focus {
-border-color: #dddddd #dddddd #ed561a;
+border-color: #dddddd #dddddd #c52d2a;
 border-width: 1px 1px 4px;
 border-style: solid;
 border-radius: 4px 4px 0 0;

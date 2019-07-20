@@ -15,7 +15,8 @@
 
 <div id="page-content">
     <div class="container top-spacing">
-        <div class="row">
+    <div class="row  margin_st2">
+			<div class="out_div">
             <?php echo get_partial('content_left'); ?>
             <?php
             if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -77,7 +78,7 @@
                     <div class="col-md-12">
                         <div class="buttons col-xs-6 wrap-none">
                             <a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-                            <a class="btn btn-primary" href="<?php echo $new_order_url; ?>"><?php echo lang('button_order'); ?></a>
+                            <a class="btn_add" href="<?php echo $new_order_url; ?>"><?php echo lang('button_order'); ?></a>
                         </div>
 
                         <div class="col-xs-6">

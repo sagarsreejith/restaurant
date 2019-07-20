@@ -14,8 +14,9 @@
 <?php } ?>
 
 <div id="page-content">
-	<div class="container top-spacing">
-		<div class="row">
+<div class="container top-spacing">
+    <div class="row  margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -96,9 +97,9 @@
 								<?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
 							</div>
 
-							<div class="row top-spacing-20">
+							<div class="row top-spacing-20 margin_20">
                                 <div class="col-xs-12">
-                                    <h4><?php echo lang('text_password_heading'); ?></h4>
+                                    <span class="txt_hd"><?php echo lang('text_password_heading'); ?></span>
 							    </div>
 							</div>
 
@@ -127,11 +128,12 @@
 							<br />
 							<div class="buttons">
 								<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-								<button type="submit" class="btn btn-primary btn-lg"><?php echo lang('button_save'); ?></button>
+								<button type="submit" class="btn btn-primary"><?php echo lang('button_save'); ?></button>
 							</div>
 						</div>
 					</form>
 				</div>
+			</div>
 			</div>
 			<?php echo get_partial('content_right'); ?>
 			<?php echo get_partial('content_bottom'); ?>
