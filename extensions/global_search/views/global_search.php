@@ -9,7 +9,6 @@
 							<span class="search-label sr-only"><?php echo lang('label_search_query'); ?></span>
 							<div class="col-xs-12 col-sm-6 col-md-12 center-block">
 								<?php if ($location_search_mode === 'multi') { ?>
-									<?php print_r($local_areas) ?>
 									<form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
 									<div class="col-md-10 nopad">
 										<div class="input-group  col-md-3 nopad">

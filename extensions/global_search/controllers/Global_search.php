@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct access allowed');
 
-class Local_module extends Main_Controller {
+class Global_search extends Main_Controller {
 
 	public function __construct() {
 		parent::__construct(); 																	// calls the constructor
@@ -8,14 +8,14 @@ class Local_module extends Main_Controller {
 		$this->location->initialize();
 
 		$this->load->library('currency'); 														// load the location library
-		$this->lang->load('local_module/local_module');
+		$this->lang->load('global_search/global_search');
 
 		$referrer_uri = explode('/', str_replace(site_url(), '', $this->agent->referrer()));
 		$this->referrer_uri = (!empty($referrer_uri[0]) AND $referrer_uri[0] !== 'local_module') ? $referrer_uri[0] : '';
 	}
 
 	public function index($module = array()) {
-		if ( ! file_exists(EXTPATH .'local_module/views/local_module.php')) { 								//check if file exists in views folder
+		if ( ! file_exists(EXTPATH .'global_search/views/global_search.php')) { 								//check if file exists in views folder
 			show_404(); 																		// Whoops, show 404 error page!
 		}
 
@@ -31,7 +31,7 @@ class Local_module extends Main_Controller {
 		    $data['map_key'] = '';
 		}
 
-		$this->template->setStyleTag(extension_url('local_module/views/stylesheet.css'), 'local-module-css', '100000');
+		$this->template->setStyleTag(extension_url('Global_search/views/stylesheet.css'), 'local-module-css', '100000');
 
 		$data['location_search_mode'] = 'multi';
 		if (isset($ext_data['location_search_mode']) AND $ext_data['location_search_mode'] === 'single') {
@@ -53,9 +53,9 @@ class Local_module extends Main_Controller {
 			}
 		}
 
-		$data['local_action']			= site_url('local_module/local_module/search');
+		$data['local_action']			= site_url('global_search/global_search/search');
 
-		$data['rsegment'] = $rsegment = ($this->uri->rsegment(1) === 'local_module' AND !empty($this->referrer_uri)) ? $this->referrer_uri : $this->uri->rsegment(1);
+		$data['rsegment'] = $rsegment = ($this->uri->rsegment(1) === 'global_search' AND !empty($this->referrer_uri)) ? $this->referrer_uri : $this->uri->rsegment(1);
 
 		$this->load->library('cart'); 															// load the cart library
 		$cart_total = $this->cart->total();
@@ -81,7 +81,7 @@ class Local_module extends Main_Controller {
 		$data['has_delivery']           = $this->location->hasDelivery();
 		$data['has_collection']         = $this->location->hasCollection();
 		$data['location_order']         = $this->config->item('location_order');
-		//$data['local_areas']			= $this->getLocalDirectory();
+		$data['local_areas']			= $this->getLocalDirectory();
 
 		$data['location_search'] = FALSE;
 		if ($rsegment === 'home') {
@@ -154,7 +154,6 @@ class Local_module extends Main_Controller {
 		}
 
 		$this->load->model('Reviews_model');
-		
 		$total_reviews = $this->Reviews_model->getTotalLocationReviews($this->location->getId());
 		$data['text_total_review'] = sprintf($this->lang->line('text_total_review'), $total_reviews);
 
@@ -197,14 +196,14 @@ class Local_module extends Main_Controller {
 		if ($this->input->is_ajax_request()) {
 			$this->output->set_output(json_encode($json));											// encode the json array and set final out to be sent to jQuery AJAX
 		} else {
-			if (isset($json['error'])) $this->alert->set('custom', $json['error'], 'local_module');
+			if (isset($json['error'])) $this->alert->set('custom', $json['error'], 'global_search');
 			redirect($redirect);
 		}
 	}
+
 	public function getLocalDirectory(){
-		$this->load->model('Reviews_model');
-		//$sagar = $this->Reviews_model->getAllGovernates();
-		return $this->Reviews_model->getAllGovernates();
+		$sagar = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+		return $sagar;
 	}
 }
 

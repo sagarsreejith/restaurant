@@ -296,6 +296,22 @@ class Reviews_model extends TI_Model {
 			return $this->db->affected_rows();
 		}
 	}
+	
+	public function getAllGovernates(){
+		$this->db->from('governates');
+ 
+		  $query = $this->db->get();
+			 $result = array();
+ 
+			 if ($query->num_rows() > 0) {
+				 $result = $query->result_array();
+			 }
+			 
+			 print_r($result);
+ 
+			 return $result;
+		 
+	 }
 }
 
 /* End of file reviews_model.php */
