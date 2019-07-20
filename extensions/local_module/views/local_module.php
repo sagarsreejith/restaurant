@@ -1,20 +1,42 @@
-<div id="local-box" <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+<div id="local-box" class="col-md-12 serach_sec" <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
 			<?php if ($location_search === TRUE) { ?>
 				<div id="local-search" class="col-md-12 text-center">
 					<div class="panel panel-local">
 						<div class="panel-body h2_col">
-							<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>
+							<!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
 							<span class="search-label sr-only"><?php echo lang('label_search_query'); ?></span>
 							<div class="col-xs-12 col-sm-6 col-md-12 center-block">
 								<?php if ($location_search_mode === 'multi') { ?>
 									<form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
-										<div class="input-group postcode-group">
-											<input type="text" id="search-query" class="form-control text-center postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
+									<div class="col-md-10 nopad">
+										<div class="input-group  col-md-3 nopad">
+										<span><img src="assets/images/search-loc.png" alt="search location"></span>
+											<input type="text" id="search-query" class="form-control  postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
 											
-											<a id="search" class="input-group-addon btn btn-primary" onclick="searchLocal();"><?php echo lang('text_find'); ?></a>  
+											
 										</div>
+										<div class="input-group  col-md-3 nopad">
+										<span><img src="assets/images/search-cuisines.png" alt="search cuisine"></span>
+											<input type="text" id="search-query" class="form-control postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
+											
+										
+										</div>
+										<div class="input-group  col-md-3 nopad">
+											<input type="text" id="search-query" class="form-control  postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
+											
+											
+										</div>
+										<div class="input-group  col-md-3 nopad">
+											<input type="text" id="search-query" class="form-control  postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
+											
+											
+										</div>
+								</div>
+								<div class="col-md-2 nopad">
+										<a id="search" class="search_btn_hme" onclick="searchLocal();"><?php echo lang('text_find'); ?></a> 
+								</div> 
 									</form>
 								<?php } else { ?>
 									<a class="btn btn-block btn-primary" href="<?php echo $single_location_url; ?>"><?php echo lang('text_find'); ?></a>
@@ -277,7 +299,7 @@
 
         // When the user selects an address from the dropdown, populate the address
         // fields in the form.
-        autocomplete.setComponentRestrictions({'country': ['GB']});
+        autocomplete.setComponentRestrictions({'country': ['KW']});
         autocomplete.addListener('place_changed', searchLocal);
     }
 

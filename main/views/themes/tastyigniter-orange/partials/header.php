@@ -59,6 +59,7 @@
 		<![endif]-->
         <?php $custom_script = get_theme_options('custom_script'); ?>
         <?php if (!empty($custom_script['head'])) { echo '<script type="text/javascript">'.$custom_script['head'].'</script>'; }; ?>
+		<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	</head>
 	<body class="<?php echo $body_class; ?>">
 		<div id="opaclayer" onclick="closeReviewBox();"></div>
@@ -75,7 +76,7 @@
     width: 100%;
 }
 </style>
-		<header id="main-header" style="position:fixed !important; width: 100% !important;z-index: 9999 !important;">
+		<header id="main-header">
 			<div class="container">
                 <div class="row">
                     <div class="col-sm-5">
@@ -121,15 +122,10 @@
 									<li><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
 									<li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
 									<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>
+									
 								<?php } ?>
 
-								<?php if (!empty($pages)) { ?>
-									<?php foreach ($pages as $page) { ?>
-										<?php if (is_array($page['navigation']) AND in_array('header', $page['navigation'])) { ?>
-											<li><a href="<?php echo site_url('pages?page_id='.$page['page_id']); ?>"><?php echo $page['name']; ?></a></li>
-										<?php } ?>
-									<?php } ?>
-								<?php } ?>
+								
 
 							</ul>
 						</div>

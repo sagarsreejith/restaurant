@@ -3,6 +3,7 @@
 
 
 <footer class="footer" id="" style="background-image: url(assets/images/bg.jpg);">
+
 <?php echo get_partial('content_footer'); ?>
   <div class="object-bottom">
     <div class="object-left">
@@ -25,12 +26,15 @@
     </div>
     <div class="row col_footer">
                
+
 <div class="col-md-2 offset-md-2" style=""></div>
                 <div class="col-xs-4 col-sm-3">
                     <div class="footer-links">
-                        <h4 class="footer-title hidden-xs"><?php echo lang('text_my_account'); ?></h4>
+                       <h4 class="footer-title hidden-xs"><?php echo lang('text_my_account'); ?></h4>
                         <ul>
-                            <li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
+                        <li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
+                    
+                            <li><a href="<?php echo site_url('account/gallery'); ?>">gallery</a></li>
                             <li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>
                         </ul>
                     </div>

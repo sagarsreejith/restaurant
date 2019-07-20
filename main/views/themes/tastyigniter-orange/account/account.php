@@ -15,7 +15,8 @@
 
 <div id="page-content">
 	<div class="container">
-		<div class="row top-spacing">
+		<div class="row top-spacing margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -30,7 +31,7 @@
 			<div class="content-wrap <?php echo $class; ?>">
 				<div class="row">
 					<div class="col-md-12">
-						<ul id="nav-tabs" class="nav nav-tabs nav-tabs-line">
+						<ul id="nav-tabs" class="nav nav-tabs nav-tabs-line tabs_st">
 							<li class="active"><a href="#details" data-toggle="tab"><?php echo lang('text_my_details'); ?></a></li>
 							<li><a href="#address" data-toggle="tab"><?php echo lang('text_default_address'); ?></a></li>
 							<li><a href="#cart" data-toggle="tab"><?php echo lang('text_cart'); ?></a></li>
@@ -214,6 +215,7 @@
 					</div>
 				</div>
 			</div>
+								</div>
 			<?php echo get_partial('content_right'); ?>
 			<?php echo get_partial('content_bottom'); ?>
 		</div>
