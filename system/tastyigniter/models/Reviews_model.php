@@ -311,7 +311,6 @@ class Reviews_model extends TI_Model {
 	 public function populateGovernateArryay($governates = array(), $count){
 		$count = 0;
 		foreach ($governates as $governate){
-			echo $governate['govr_id'];
 			$this->db->from('governate_areas');
 			$this->db->where('govr_id', $governate['govr_id']);
 			$query = $this->db->get();
