@@ -24,7 +24,7 @@
 .footer .opening-time li span { float: right; }
 
 /*footer-bottom*/
-.footer .footer-bottom { background: transparent; padding: 40px 0px; margin-top: 30px; position: relative; }
+.footer .footer-bottom { background: transparent; padding: 00px 0px;  position: relative; }
 .footer-bottom p a { color: #e93e21; }
 .footer .footer-social ul li a { display: block; font-size: 16px; color: #ffffff; background: rgba(0, 0, 0, 0.3); border-radius: 50%; width: 50px; height: 50px; line-height: 50px; text-align: center; }
 .footer .footer-social ul li a:hover { background: #e93e21; }

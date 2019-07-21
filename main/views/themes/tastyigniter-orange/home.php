@@ -1,61 +1,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Amatic+SC:400,700|Lilita+One" rel="stylesheet">
-<style>
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-#myInput {
-  box-sizing: border-box;
-  background-image: url('searchicon.png');
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+ 
 <style>
 
  
-.about-area {
+.about {
     background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat scroll center bottom / contain;
 }
 
@@ -80,6 +29,7 @@
     position: absolute;
     width: 100%;
 }
+
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
@@ -95,6 +45,7 @@
         </div>
     </div>
 <?php } ?>
+<div class="main_bg">
 <div id="page-content" class="icon_sec">
 	<div class="container top-spacing-10">
 	    <div class="content-wrap">
@@ -146,8 +97,8 @@
 	</div>
 </div>
 
-
-<section class="about white-bg">
+</div>
+<section class="about ">
  
   <div class="page-section-ptb">
   <div class="object-right object_right_img">
@@ -196,7 +147,49 @@
 
 
 
-
+<section class="our-menu page-section-pt parallax pb-30 bg-overlay-black-70 " style="background-image: url(assets/images/bg10.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        
+      <div class="section-title text-center">
+            <div class="title-separator">
+             
+             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Customer</span>Reviews</h2>
+            </div>
+          
+         
+          </div>
+      <div class="col-md-offset-2 col-md-8">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                    <div class="pic">
+                                <img src="assets/images/img-2.jpg">
+                            </div>
+                      
+                        <h3 class="title">Williamson</h3>
+                        <span class="post">Web Developer</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat sit vitae, consectetur adipisicing elit ipsam.
+                        </p>
+                    </div>
+                    <div class="testimonial">
+                    <div class="pic">
+                                <img src="assets/images/img-3.jpg">
+                            </div>
+                       
+                        <h3 class="title">Kristina</h3>
+                        <span class="post">Web Designer</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat sit vitae, consectetur adipisicing elit ipsam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+</div>
+</section>
 
 
 
@@ -207,6 +200,15 @@
 
 
 <section class="gallery white-bg page-section-ptb">
+<div class="col-lg-12 col-md-12">
+          <div class="section-title text-center">
+            <div class="title-separator">
+             <img src="assets/images/food_icon.png">
+             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Gallery</h2>
+            </div>
+          
+          </div>
+        </div>
   <div class="container">
     <div class="row">
      <div class="col-lg-12 col-md-12">
@@ -384,8 +386,89 @@
 
 <div claass="clearfix"></div>
 
+<section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 " style="background-image: url(assets/images/bg_banner.jpg);">
+  
+<div class=" parallax bg-overlay-black-70" style="background-image: url(assets/images/resturant_img.png);    background-position: 52% -281.631px;">
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        
+      
+      <div class="col-md-offset-2 col-md-8">
+               <img src="assets/images/img_bannn.jpg" style="max-height:500px;width:100%">
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="clearfix"></div>
 
 
+
+
+
+<section class="">
+<div class="container">
+  <div class="row">
+
+
+                                                            <div id="map" class="">
+                                                                <div id="map-holder" style="height:370px;text-align:left;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                            <div class="content-wrap cont_clr cont_clr2">
+                                              
+                                                    <div class="row">
+                                                        <div class="col-md-12 nopad">
+
+                                                            <div class="col-md-12  bottom-spacing">
+                                                                <div class="row contact cnt">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box text-center">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            <h5>Address</h5>
+                                                                            <p>
+                                                                               Kuwait
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box text-center">
+                                                                            <i class="fa fa-phone"></i>
+                                                                            <h5>Phone</h5>
+                                                                            <p>
+                                                                               96965686
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box text-center">
+                                                                            <i class="fa fa-envelope-o"></i>
+                                                                            <h5>Email</h5>
+                                                                            <p> support@website.com</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box text-center">
+                                                                            <i class="fa fa-fax"></i>
+                                                                            <h5>Fax</h5>
+                                                                            <p>(007) 123 456 7890</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+</div>
+</div>
+</section>
+<div claass="clearfix"></div>
     <section class="newsletter-section orange-bg">
   <div class="container">
     <div class="row">
@@ -417,6 +500,19 @@
 
 <?php echo get_footer(); ?><div class="clearfix"></div>
 <script>
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        transitionStyle:"backSlide",
+        autoPlay:true
+    });
+});
+</script>
+<script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -438,4 +534,6 @@ function filterFunction() {
     }
   }
 }
+
+
 </script>
