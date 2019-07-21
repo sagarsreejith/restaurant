@@ -343,7 +343,7 @@
 			<?php } ?>
 		</div>
 	</div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 
 	function toggleLocalSearch() {
 		if ($('.panel-local .panel-heading .local-search').is(":visible")) {
