@@ -14,6 +14,8 @@ class Local_module extends Main_Controller {
 		$this->referrer_uri = (!empty($referrer_uri[0]) AND $referrer_uri[0] !== 'local_module') ? $referrer_uri[0] : '';
 	}
 
+	
+
 	public function index($module = array()) {
 		if ( ! file_exists(EXTPATH .'local_module/views/local_module.php')) { 								//check if file exists in views folder
 			show_404(); 																		// Whoops, show 404 error page!
@@ -52,6 +54,7 @@ class Local_module extends Main_Controller {
 				$data['single_location_url'] = restaurant_url('local/all');
 			}
 		}
+		
 
 		$data['local_action']			= site_url('local_module/local_module/search');
 
@@ -81,7 +84,6 @@ class Local_module extends Main_Controller {
 		$data['has_delivery']           = $this->location->hasDelivery();
 		$data['has_collection']         = $this->location->hasCollection();
 		$data['location_order']         = $this->config->item('location_order');
-		//$data['local_areas']			= $this->getLocalDirectory();
 
 		$data['location_search'] = FALSE;
 		if ($rsegment === 'home') {
@@ -154,7 +156,7 @@ class Local_module extends Main_Controller {
 		}
 
 		$this->load->model('Reviews_model');
-		
+		$data['local_areas'] = json_encode($this->Reviews_model->getAllGovernates());
 		$total_reviews = $this->Reviews_model->getTotalLocationReviews($this->location->getId());
 		$data['text_total_review'] = sprintf($this->lang->line('text_total_review'), $total_reviews);
 
@@ -200,11 +202,6 @@ class Local_module extends Main_Controller {
 			if (isset($json['error'])) $this->alert->set('custom', $json['error'], 'local_module');
 			redirect($redirect);
 		}
-	}
-	public function getLocalDirectory(){
-		$this->load->model('Reviews_model');
-		//$sagar = $this->Reviews_model->getAllGovernates();
-		return $this->Reviews_model->getAllGovernates();
 	}
 }
 
