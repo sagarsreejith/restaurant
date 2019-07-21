@@ -740,11 +740,25 @@ border-right: 1px dotted red;
   background:none;
 
 }
-
+.book-menu_img{
+  max-height:350px;
+}
+.book-menu p{    font-size: 15px;
+  color: #524e4e;
+  text-align: justify;
+  margin: 80px 0;
+  padding: 0 30px;}
+.about-content p,.section-title p{
+  color: #4a4d4f;
+}
+.icon{
+  display:table;
+  margin:0 auto;
+}
 .object_right_img{
   position: absolute;
     right: 0;
-    top: 825px;
+    top: 705px;
 }
 
 .maskimg {
