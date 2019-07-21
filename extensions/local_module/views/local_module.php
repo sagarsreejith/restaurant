@@ -1,8 +1,32 @@
-<div id="local-box" class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+<style>
+  .ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+  /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+  * html .ui-autocomplete {
+    height: 100px;
+  }
+  </style>
+<div id="local-box"  style="position:absolute;margin:20% 0" class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
 			<?php if ($location_search === TRUE) { ?>
-				<div id="local-search " class="col-md-12 text-center">
+				<div id="local-search " class="col-md-offset-2 col-md-8 col-md-offset-2 text-center">
+				<div class="toggle_radio">
+										<input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+										<input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
+
+										<label for="first_toggle"><p>Delivery</p></label>
+										<label for="second_toggle"><p>Pick up</p></label>
+
+										<div class="toggle_option_slider">
+										</div>
+									</div>
 					<div class="panel panel-local">
 						<div class="panel-body h2_col">
 							<!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
@@ -73,32 +97,22 @@
 							<span class="search-label sr-only"><?php echo lang('label_search_query'); ?></span> -->
 							<div class="col-xs-12 col-sm-6 col-md-12 center-block">
 								<?php if ($location_search_mode === 'multi') { ?>
+									
 									<form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
-									<div class="col-md-10 nopad">
-										<div class="input-group  col-md-3 nopad">
-										<span><img src="assets/images/search-loc.png" alt="search location"></span>
-											<input type="text" id="search-query" class="form-control  postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
-											
-											
-										</div>
-										<div class="input-group  col-md-3 nopad">
-										<span><img src="assets/images/search-cuisines.png" alt="search cuisine"></span>
-											<input type="text" id="search-query" class="form-control postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
-											
-										
-										</div>
-										<div class="input-group  col-md-3 nopad">
-											<input type="text" id="search-query" class="form-control  postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
-											
+									
+									<div class="col-md-7 nopad">
+										<div class="input-group  col-md-12 nopad">
+										<span class="img_stt"><img src="assets/images/search-loc.png" alt="search location"></span>
+										<div class="ui-widget">
+										<span class="icon_st"><i class="fa fa-angle-down"></i></span>
+												  <input id="tags" placeholder="Enter location name">
+												 
+											</div>
 											
 										</div>
-										<div class="input-group  col-md-3 nopad">
-											<input type="text" id="search-query" class="form-control  postcode-control input-lg" name="search_query" placeholder="<?php echo lang('label_search_query'); ?>" value="<?php echo $search_query; ?>" onFocus="geolocate()">
-											
-											
-										</div>
+									
 								</div>
-								<div class="col-md-2 nopad">
+								<div class="col-md-5 nopad">
 										<a id="search" class="search_btn_hme" onclick="searchLocal();"><?php echo lang('text_find'); ?></a> 
 								</div> 
 									</form>
@@ -449,6 +463,71 @@ $(".js-example-templating").select2({
   templateResult: formatState
 });
 //--></script>
-
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+	});
+	
+  } );
+  </script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags2" ).autocomplete({
+      source: availableTags
+	});
+	
+  } );
+  </script>
 </div>
