@@ -297,33 +297,33 @@ class Reviews_model extends TI_Model {
 		}
 	}
 
-	public function getAllGovernates(){
-		$this->db->from('governates');
-		//$this->db->join('governate_areas', 'governate_areas.govr_id = governates.govr_id', 'inner');
-		  $query = $this->db->get();
-			 $result = array();
-			 if ($query->num_rows() > 0) {
-				 $result = $this->populateGovernateArryay($query->result_array(), $query->num_rows());
-			 }
-			return $result;
-	 }
+	// public function getAllGovernates(){
+	// 	$this->db->from('governates');
+	// 	//$this->db->join('governate_areas', 'governate_areas.govr_id = governates.govr_id', 'inner');
+	// 	  $query = $this->db->get();
+	// 		 $result = array();
+	// 		 if ($query->num_rows() > 0) {
+	// 			 $result = $this->populateGovernateArryay($query->result_array(), $query->num_rows());
+	// 		 }
+	// 		return $result;
+	//  }
 
-	 public function populateGovernateArryay($governates = array(), $count){
-		$count = 0;
-		foreach ($governates as $governate){
-			$this->db->from('governate_areas');
-			$this->db->where('govr_id', $governate['govr_id']);
-			$query = $this->db->get();
-			if ($query->num_rows() > 0) {
-				$governates[$count]['is_governate'] = true;
-				$governates[$count]['areas'] = $query->result_array();
-			}
-			$count++;
-		}
+	//  public function populateGovernateArryay($governates = array(), $count){
+	// 	$count = 0;
+	// 	foreach ($governates as $governate){
+	// 		$this->db->from('governate_areas');
+	// 		$this->db->where('govr_id', $governate['govr_id']);
+	// 		$query = $this->db->get();
+	// 		if ($query->num_rows() > 0) {
+	// 			$governates[$count]['is_governate'] = true;
+	// 			$governates[$count]['areas'] = $query->result_array();
+	// 		}
+	// 		$count++;
+	// 	}
 
-		return $governates;
+	// 	return $governates;
 
-	 }
+	//  }
 }
 
 /* End of file reviews_model.php */
