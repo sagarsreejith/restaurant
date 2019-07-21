@@ -5,6 +5,7 @@ class Home extends Main_Controller {
 	public function index() {
         $this->lang->load('home');
         
+        
         if ($this->config->item('maps_api_key')) {
             $map_key = '&key=' . $this->config->item('maps_api_key');
         } else {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR - 2019-07-20 13:07:10 --> 404 Page Not Found: 
 ERROR - 2019-07-20 13:07:10 --> 404 Page Not Found: 
 ERROR - 2019-07-20 13:07:10 --> 404 Page Not Found: 
@@ -5016,3 +5017,89 @@ ERROR - 2019-07-21 11:40:03 --> 404 Page Not Found:
 ERROR - 2019-07-21 11:40:03 --> 404 Page Not Found: 
 ERROR - 2019-07-21 11:40:03 --> 404 Page Not Found: 
 ERROR - 2019-07-21 11:40:03 --> 404 Page Not Found: 
+=======
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
+>>>>>>> f2cd8bbd219daba1fc2ee913671b419be8b710ea
+ERROR - 2019-07-21 12:17:40 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:41 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:44 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:44 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:45 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:45 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:47 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:47 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:51 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:51 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:51 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:51 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:53 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:53 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:17:55 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:17:55 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:18:15 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:18:15 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:18:34 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:18:34 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:18:43 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:18:43 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:19:08 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:19:09 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:19:14 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:19:14 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:19:47 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:19:47 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:19:53 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:19:53 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:20:03 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:20:03 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:20:39 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:20:39 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:20:40 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:20:40 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:20:41 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:20:41 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:20:44 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:20:44 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
+ERROR - 2019-07-21 12:20:49 --> Query error: Table 'rest.dw2rtzns5_governates' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governates`
+ERROR - 2019-07-21 12:20:49 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 305
