@@ -7,10 +7,10 @@
 	
 		<div class="row">
 			<div class="col-md-12">
-				<div class=" col-md-offset-1 col-md-5">
+				<div class=" col-md-offset-1 col-md-5 login_img">
 					<img src="assets/images/bg10.jpg" class="img_log" style="width:100%"> 
 </div>
-<div class="col-md-5">
+<div class="col-md-5  col-xs-12">
 
 				<div id="login-form" class="content-wrap col-sm-4 center-block">
 				<div class="section-title text-center">
@@ -53,11 +53,11 @@
 
                             <div class="form-group">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <a class="btn  " href="<?php echo $reset_url; ?>"><span class="small"><small><?php echo lang('text_forgot'); ?></small></span></a>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a class="forgot_btn1  " href="<?php echo $reset_url; ?>"><?php echo lang('text_forgot'); ?></a>
                                     </div>
-                                    <div class="col-md-8">
-                                        <a class="btn  text-right"  style="text-align:right;width:100%;color:red" href="<?php echo $register_url; ?>"><?php echo lang('button_register'); ?></a>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a class=" reg_btn1 text-right"  style="" href="<?php echo $register_url; ?>"><?php echo lang('button_register'); ?></a>
                                     </div>
 								</div>
 							</div>

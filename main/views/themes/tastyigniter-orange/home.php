@@ -3,7 +3,18 @@
  
 <style>
 
- 
+a.gotop {
+  background: rgba(0, 0, 0, 0.5) url(assets/images/top.png) no-repeat scroll -1px -1px;
+  border: 1px solid #3b3b3b;
+  display: block;
+  height: 36px;
+  margin-top: -18px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 50%;
+  width: 35px;
+}
 .about {
     background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat scroll center bottom / contain;
 }
@@ -124,10 +135,10 @@
    
     <div class="container">
       <div class="row">
-      <div class="col-lg-5 col-md-5 col-sm-7 text-right">
+      <div class="col-lg-5 col-md-5 col-sm-12 text-right">
             <img class="img-responsive" class="book-menu_img" src="assets/images/about.png">
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-5">
+        <div class="col-lg-7 col-md-7 col-sm-12">
             <p>
             We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -472,7 +483,7 @@
     <section class="newsletter-section orange-bg">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4 col-sm-4">
         <div class="newsletter-image">
           <img class="img-responsive center-block" src="assets/images/15.png" alt="">
         </div>
@@ -497,7 +508,9 @@
     </div>
   </div>
 </section>
+<a id="back-to-top" href="#top" class="gotop scroll" style="display: block;"></a>
 
+	    
 <?php echo get_footer(); ?><div class="clearfix"></div>
 <script>
 $(document).ready(function(){
@@ -535,5 +548,24 @@ function filterFunction() {
   }
 }
 
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
 
+});
 </script>

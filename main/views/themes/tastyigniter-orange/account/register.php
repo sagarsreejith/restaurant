@@ -1,5 +1,7 @@
 <?php echo get_header(); ?>
-<div id="page-content" class="bg_clr">
+<div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('assets/images/d2.jpg');    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;" class="bg_clr">
 	<div class="container">
 		<div class="margin_st">
 		<div class="row">
@@ -8,7 +10,7 @@
       <div class="title-separator">
     
       </div>
-        <h2> <span class="text-orange"><?php echo lang('text_register'); ?></span></h2>
+        <h2 class="reg_st"> <span class="text-orange"><?php echo lang('text_register'); ?></span></h2>
 		<span class="under-heading"></span>
       </div>
 				
