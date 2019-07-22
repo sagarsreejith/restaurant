@@ -135,7 +135,7 @@
                                                             parseFloat("<?php echo $location_lat; ?>"),
                                                             parseFloat("<?php echo $location_lng; ?>")
                                                         );
-
+alert(latlng);
                                                         function initializeMap() {
                                                             var html = "<b>" + local_name + "</b> <br/>" +
                                                                 "<?php echo $location_address; ?><br/>" +
@@ -144,8 +144,8 @@
                                                             var mapOptions = {
                                                                 scrollwheel: false,
                                                                 center: latlng,
-                                                                zoom: 14,
-                                                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                                                                zoom: 11,
+                                                                mapTypeId: google.maps.MapTypeId.ROADMAP,mapTypeControl: false
                                                             };
 
                                                             var map = new google.maps.Map(document.getElementById('map-holder'), mapOptions);
@@ -163,6 +163,7 @@
                                                             google.maps.event.addListener(marker, 'click', function() {
                                                                 infowindow.open(map, marker);
                                                             });
+                                                            
                                                         }
 
                                                         google.maps.event.addDomListener(window, 'load', initializeMap);

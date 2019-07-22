@@ -14,16 +14,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="row logo_section">
-    <div class="col-lg-12 col-md-12 text-center mt-60">
-        <div class="footer-logo">
-          <img id="logo-footer" class="img-responive" src="assets/images/data/logo_n.png" alt="">
-        </div>
-        <div class="col-lg-8 col-lg-offset-2">
-          <p class=" text-white mb-60">We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        </div>
-      </div>
-    </div>
+  
     <div class="row col_footer">
                
 

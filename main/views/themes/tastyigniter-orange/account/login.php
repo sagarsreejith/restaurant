@@ -1,23 +1,25 @@
 <?php echo get_header(); ?>
-<div id="page-content" class="bg_clr">
+<div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('assets/images/d2.jpg');    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;">
 	<div class="container">
 		<div class="margin_st">
+	
 		<div class="row">
 			<div class="col-md-12">
-			<div class="section-title text-center">
+				<div class=" col-md-offset-1 col-md-5">
+					<img src="assets/images/bg10.jpg" class="img_log" style="width:100%"> 
+</div>
+<div class="col-md-5">
+
+				<div id="login-form" class="content-wrap col-sm-4 center-block">
+				<div class="section-title text-center">
       <div class="title-separator">
     
       </div>
         <h2> <span class="text-orange">	<?php echo lang('text_login'); ?></h2>
 		<span class="under-heading"></span>
       </div>
-				
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<div id="login-form" class="content-wrap col-sm-4 center-block">
 					<?php if ($this->alert->get('', 'alert')) { ?>
 						<div id="notification">
 							<?php echo $this->alert->display('', 'alert'); ?>
@@ -63,6 +65,7 @@
 						</fieldset>
 					</form>
 				</div>
+					</div>
  			</div>
 		</div>
 	</div>

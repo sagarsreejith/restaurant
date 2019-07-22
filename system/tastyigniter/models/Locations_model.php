@@ -88,6 +88,32 @@ class Locations_model extends TI_Model {
 		return $result;
 	}
 
+	public function getGovernates() {
+		$this->db->from('governates');
+
+		$query = $this->db->get();
+		$result = array();
+
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+		}
+
+		return $result;
+	}
+
+	public function getGovernatesAreas() {
+		$this->db->from('governate_areas');
+
+		$query = $this->db->get();
+		$result = array();
+
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+		}
+
+		return $result;
+	}
+
 	public function getLocation($location_id) {
 
 		if (is_numeric($location_id)) {

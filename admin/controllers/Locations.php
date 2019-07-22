@@ -157,6 +157,9 @@ class Locations extends Admin_Controller {
 	public function edit() {
 		$location_info = $this->Locations_model->getLocation((int) $this->input->get('id'));
 
+		$governates = $this->Locations_model->getGovernates();
+		$governate_area = $this->Locations_model->getGovernatesAreas();
+
 		if ($location_info) {
 			$location_id = $location_info['location_id'];
 			$data['_action']	= site_url('locations/edit?id='. $location_id);
@@ -212,6 +215,8 @@ class Locations extends Admin_Controller {
 		$data['last_order_time'] 		= isset($location_info['last_order_time']) ? $location_info['last_order_time'] : '0';
 		$data['reservation_time_interval'] 	= $location_info['reservation_time_interval'];
 		$data['reservation_stay_time'] 		= $location_info['reservation_stay_time'];
+		$data['governates'] = $governates;
+		$data['governate_areas'] = $governate_area;
 
 		$data['permalink'] = $this->permalink->getPermalink('location_id='.$location_info['location_id']);
         $data['permalink']['url'] = root_url('local').'/';

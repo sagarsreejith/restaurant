@@ -1,76 +1,11 @@
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:05 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 10:40:06 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:45 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 12:57:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:22 --> Severity: Error --> Call to undefined method Reviews_model::getAllGovernates() D:\xampp\htdocs\out-rest\extensions\local_module\controllers\Local_module.php 159
-ERROR - 2019-07-21 13:03:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:46 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:47 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:48 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:48 --> 404 Page Not Found: 
-ERROR - 2019-07-21 13:03:48 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:57 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:58 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:59 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:59 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:59 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:59 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:59 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:27:59 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:28:00 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:28:00 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:28:00 --> 404 Page Not Found: 
-ERROR - 2019-07-21 17:28:00 --> 404 Page Not Found: 
+ERROR - 2019-07-21 20:50:49 --> Query error: Table 'rest.dw2rtzns5_governate_area' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governate_area`
+ERROR - 2019-07-21 20:50:49 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Locations_model.php 110
+ERROR - 2019-07-21 20:50:50 --> Query error: Table 'rest.dw2rtzns5_governate_area' doesn't exist - Invalid query: SELECT *
+FROM `dw2rtzns5_governate_area`
+ERROR - 2019-07-21 20:50:50 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\models\Locations_model.php 110
+ERROR - 2019-07-21 20:59:09 --> Severity: Warning --> Invalid argument supplied for foreach() D:\xampp\htdocs\out-rest\admin\views\themes\tastyigniter-blue\locations_edit.php 63
+ERROR - 2019-07-21 20:59:31 --> Severity: Warning --> Invalid argument supplied for foreach() D:\xampp\htdocs\out-rest\admin\views\themes\tastyigniter-blue\locations_edit.php 63
+ERROR - 2019-07-21 22:20:30 --> 404 Page Not Found: 
+ERROR - 2019-07-21 22:20:35 --> 404 Page Not Found: 
+ERROR - 2019-07-22 16:39:52 --> Severity: Parsing Error --> syntax error, unexpected '?>' D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 27
