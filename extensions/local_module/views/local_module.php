@@ -2,9 +2,27 @@
 <div id="local-box"  style="" class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
+			<div class="order_now">
+  					<h2 class="Banner_header">Welcome to Lugma</h2>
+					<button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
+					<button type="button" class="order_btn" data-toggle="modal" data-target="#reservation_now">Reserve Now</button>
+						<div class="modal fade" id="order_now" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<div class="section-title text-center">
+												<div class="title-separator">
+												<img src="assets/images/food_icon.png">
+												<h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Food</h2>
+												</div>
+          									</div>
+									</div>
 
+									<div class="modal-body">
+										
 		<?php if ($location_search === TRUE) { ?>
-						<div id="local-search " class="col-md-offset-2 col-md-8 col-md-offset-2 text-center">
+						<div id="local-search " class=" col-md-12 text-center">
 						<div class="toggle_radio">
 												<input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
 												<input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
@@ -109,36 +127,14 @@
 				<div class="clearfix"></div>
 			<?php } ?>
 
-			<div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-6 center-block' : 'col-sm-12' ?>">
-				<div class="local-alert"></div>
-				<?php if (!empty($local_alert)) { ?>
-					<?php echo $local_alert; ?>
-				<?php } ?>
 
-		<div class="order_now">
-  			<h2 class="Banner_header">Welcome to Lugma</h2>
- 				 <button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
-				  <button type="button" class="order_btn" data-toggle="modal" data-target="#reservation_now">Reservation</button>
-					<div class="modal fade" id="order_now" role="dialog">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<div class="section-title text-center">
-												<div class="title-separator">
-												<img src="assets/images/food_icon.png">
-												<h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Food</h2>
-												</div>
-          									</div>
 									</div>
-
-									<div class="modal-body">
-										Keep the form
-									</div>
+									<div class="modal-footer">
+        <a type="button" class="" data-dismiss="modal">Skip to Main</a>
+      </div>
 							</div>
 						</div>
-				</div>		
-		</div>
+			
 
 			<?php if ($location_search !== TRUE AND $rsegment !== 'locations') { ?>
 				<div id="local-info" class="col-md-12" style="display: <?php echo ($local_info) ? 'block' : 'none'; ?>">
