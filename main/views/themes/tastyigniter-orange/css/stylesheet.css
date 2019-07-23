@@ -1173,20 +1173,6 @@ font-size: 18px;
 
 
 
-/*** Modal ***/
-.modal-header {
-background-color: #ed561a;
-border-top-right-radius: 4px;
-border-top-left-radius: 4px;
-color: #fff;
-}
-.modal-header .close {
-font-size: 32px;
-}
-.modal-title {
-  color: #FFF;
-}
-/*** End Modal ***/
 
 
 
@@ -1674,3 +1660,5 @@ margin-top: 0;
   font-size: 15px;
 }
 }
+
+.ordernow{position: absolute;width:100%;display:block;margin:20% 0}
