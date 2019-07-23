@@ -18,7 +18,7 @@
     <div class="row col_footer">
                
 
-<div class="col-md-2 offset-md-2" style=""></div>
+<div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-sm-2 offset-sm-2" style=""></div>
                 <div class="col-xs-4 col-sm-3">
                     <div class="footer-links">
                        <h4 class="footer-title hidden-xs"><?php echo lang('text_my_account'); ?></h4>

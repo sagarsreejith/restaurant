@@ -1,6 +1,6 @@
 
   
-<div id="local-box"  style="<?php if( $rsegment !="local") { echo 'position:absolute;margin:20% 0'; } ?>" class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+<div id="local-box"  style="<?php if( $rsegment !="local") { echo 'position:absolute;margin:20% 0'; } ?>"  class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
 			<?php if ($location_search === TRUE) { ?>
@@ -32,7 +32,7 @@
 								</select>		
 									
 								</div>
-								<div class="col-md-5 nopad">
+								<div class="col-md-5 col-sm-5 col-xs-12 nopad nopad">
 										<a id="search" class="search_btn_hme" onclick="searchLocal();"><?php echo lang('text_find'); ?></a> 
 								</div> 
 									</form>

@@ -19,6 +19,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="heading-section">
+                                    
                                     <h3><?php echo lang('text_heading'); ?></h3>
                                 </div>
                             </div>
@@ -34,7 +35,7 @@
 
                                 <div class="section-title text-center">
                                     <div class="title-separator">
-                                        <i class="glyph-icon flaticon-food-27"></i>
+                                    <img src="assets/images/food_icon.png">
                                     </div>
                                     <h2> <span class="text-orange">Contact </span> Us</h2>
                                     <p>It would be great to hear from you! If you got any questions</p>

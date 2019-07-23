@@ -1,7 +1,7 @@
 
 <div class="section-title text-center">
       <div class="title-separator">
-     <i class="glyph-icon flaticon-food-27"></i>
+      <img src="assets/images/food_icon.png">
       </div>
         <h2> <span class="text-orange">Make </span> Reservation</h2>
         <p>We provide free, secure and instantly confirmed online reservation.</p>
@@ -30,7 +30,7 @@
                         <?php echo lang('text_find_msg'); ?>
                     </div>
 
-                    <div class="col-xs-12 col-sm-8">
+                    <div class="col-xs-12 col-sm-8 ht_stt">
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-3 wrap-none <?php echo (form_error('location')) ? 'has-error' : ''; ?>">
                                 <label class="sr-only" for="location"><?php echo lang('label_location'); ?></label>
