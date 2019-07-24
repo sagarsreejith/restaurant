@@ -61,10 +61,10 @@ $lang['column_gallery_image_alt'] 	    = 'Alt Text';
 $lang['column_gallery_image_status']    = 'Status';
 
 $lang['label_name'] 		            = 'Name';
-$lang['label_address_1'] 		        = 'Address 1';
-$lang['label_address_2'] 		        = 'Address 2';
-$lang['label_city'] 		            = 'City';
-$lang['label_state'] 		            = 'State';
+$lang['label_address_1'] 		        = 'BLock';
+$lang['label_address_2'] 		        = 'Street';
+$lang['label_city'] 		            = 'Districts';
+$lang['label_state'] 		            = 'Governorates';
 $lang['label_postcode'] 		        = 'Postcode';
 $lang['label_country'] 		            = 'Country';
 $lang['label_auto_lat_lng'] 		    = 'Automatically fetch lat/lng';

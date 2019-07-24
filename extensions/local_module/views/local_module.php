@@ -122,6 +122,38 @@
 											<a class="btn btn-block btn-primary" href="<?php echo $single_location_url; ?>"><?php echo lang('text_find'); ?></a>
 										<?php } ?>
 									</div>
+  
+<div id="local-box"  style="<?php if( $rsegment !="local") { echo 'position:absolute;margin:20% 0'; } ?>"  class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+	<div class="container">
+		<div class="row">
+			<?php if ($location_search === TRUE) { ?>
+				<div id="local-search " class="col-md-offset-2 col-md-8 col-md-offset-2 text-center">
+				<div class="toggle_radio">
+					<input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+					<input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
+					<label for="first_toggle"><p>Delivery</p></label>
+					<label for="second_toggle"><p>Pick up</p></label>
+					<div class="toggle_option_slider"></div>
+				</div>						
+					<div class="panel panel-local">
+						<div class="panel-body h2_col">
+							<!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php //echo lang('text_order_summary'); ?></h2>
+							<span class="search-label sr-only"><?php //echo lang('label_search_query'); ?></span> -->
+							<div class="col-xs-12 col-sm-6 col-md-12 center-block">
+								<?php if ($location_search_mode === 'multi') { ?>
+									
+									<form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
+									<div class="col-md-7 nopad">
+									<select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="-1" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
+										<?php foreach($local_areas as $area){ ?>
+										<optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
+											<?php foreach($area['areas'] as $local){ ?>
+											<option value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"><?php echo $local['govr_area_name_en']; ?></option>
+											<?php } ?>
+										</optgroup>
+										<?php } ?>
+								</select>		
+									
 								</div>
 							</div>
 						</div>
@@ -297,8 +329,10 @@
 	}
 
 	function searchLocal() {
-		var search_query = $('input[name=\'search_query\']').val();
-
+		// var search_query = $('input[name=\'search_query\']').val();
+		var search_query = $('#aioConceptName').val();
+		alert($('#aioConceptName').val());
+		
 		$.ajax({
 			url: js_site_url('local_module/local_module/search'),
 			type: 'POST',
@@ -476,6 +510,10 @@ $(".js-example-templating").select2({
   templateResult: formatState
 });
 //--></script>
+<<<<<<< HEAD
 
   
 
+=======
+</div>
+>>>>>>> fb4ce11b40f30dadcde502043e1dc0cd294b5b54
