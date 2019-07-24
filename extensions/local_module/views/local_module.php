@@ -1,5 +1,5 @@
 
-<div id="local-box"  style="" class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+<div <?php if($rsegment =="home") {?> id="local-box" <?php }?> style="" class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
 			<div class="order_now">
@@ -7,6 +7,7 @@
 					<button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
 					<button type="button" class="order_btn" data-toggle="modal" data-target="#reservation_now">Reserve Now</button>
 						<div class="modal fade" id="order_now" role="dialog">
+			
 						<div class="modal-dialog modal-lg">
 							<div class="modal-content">
 									<div class="modal-header">

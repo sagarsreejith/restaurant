@@ -181,3 +181,15 @@ ERROR - 2019-07-23 17:13:18 --> 404 Page Not Found:
 ERROR - 2019-07-23 17:13:18 --> 404 Page Not Found: 
 ERROR - 2019-07-23 17:13:18 --> 404 Page Not Found: 
 ERROR - 2019-07-23 17:13:18 --> 404 Page Not Found: 
+ERROR - 2019-07-24 09:51:50 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:51:53 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:51:55 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:51:57 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:51:58 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:52:07 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:52:08 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:54:17 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:55:17 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:55:18 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:56:43 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
+ERROR - 2019-07-24 09:56:45 --> Severity: Parsing Error --> syntax error, unexpected end of file D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 482
