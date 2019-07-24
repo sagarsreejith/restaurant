@@ -3,7 +3,8 @@
                 <input type="text" name="catsearch" id="catsearch" class="form-control text-center search" placeholder="Search" >
                 <span class="fa fa-search fa-2x form-control-feedback"></span>
                 <span class="form-control-feedback form-control-clear fa fa-times fa-2x hidden"  onClick="clearSearch();"></span>
-    </div>
+	</div>
+	
 	<div id="Container" class="menu-list">
 		<?php $category_count = 1; ?>
 		<?php foreach ($categories as $category_id => $category) { ?>

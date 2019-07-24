@@ -1,58 +1,89 @@
 
-  
-<div id="local-box"  style="<?php if( $rsegment !="local") { echo 'position:absolute;margin:20% 0'; } ?>"  class="col-md-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
-	<div class="container">
+<div <?php if( $rsegment ==="home") { ?> id="local-box" <?php }  ?>  class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+
+<div class="container">
 		<div class="row">
-			<?php if ($location_search === TRUE) { ?>
-				<div id="local-search " class="col-md-offset-2 col-md-8 col-md-offset-2 text-center">
-				<div class="toggle_radio">
-					<input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
-					<input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
-					<label for="first_toggle"><p>Delivery</p></label>
-					<label for="second_toggle"><p>Pick up</p></label>
-					<div class="toggle_option_slider"></div>
-				</div>						
-					<div class="panel panel-local">
-						<div class="panel-body h2_col">
-							<!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php //echo lang('text_order_summary'); ?></h2>
-							<span class="search-label sr-only"><?php //echo lang('label_search_query'); ?></span> -->
-							<div class="col-xs-12 col-sm-6 col-md-12 center-block">
-								<?php if ($location_search_mode === 'multi') { ?>
-									
-									<form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
-									<div class="col-md-7 nopad">
-									<select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="-1" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
-										<?php foreach($local_areas as $area){ ?>
-										<optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
-											<?php foreach($area['areas'] as $local){ ?>
-											<option value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"><?php echo $local['govr_area_name_en']; ?></option>
-											<?php } ?>
-										</optgroup>
+		<?php if( $rsegment ==="home") { ?>
+			<div class="order_now">
+					  <h2 class="Banner_header">Welcome to Lugma</h2> 
+					<button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
+					<button type="button" class="order_btn" data-toggle="modal" data-target="#reservation_now">Reserve Now</button>
+						<div class="modal fade" id="order_now" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<div class="section-title text-center">
+												<div class="title-separator">
+												<img src="assets/images/food_icon.png">
+												<h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Food</h2>
+												</div>
+          									</div>
+									</div>
+
+									<div class="modal-body">
+										
+		<?php if ($location_search === TRUE) { ?>
+						<div id="local-search " class=" col-md-12 text-center">
+						<div class="toggle_radio">
+												<input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+												<input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
+
+												<label for="first_toggle"><p>Delivery</p></label>
+												<label for="second_toggle"><p>Pick up</p></label>
+
+												<div class="toggle_option_slider">
+												</div>
+											</div>
+
+
+							<div class="panel panel-local">
+								<div class="panel-body h2_col">
+									<!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
+													
+									<div class="col-xs-12 col-sm-12 col-md-12 center-block">
+										<?php if ($location_search_mode === 'multi') { ?>
+											
+											<form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
+											
+											<div class="col-md-7 col-sm-7 col-xs-12 nopad">
+											<span><img src="assets/images/new_search.svg" alt="search location"></span>
+											<select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
+											
+											<option></option>		
+											<?php foreach($local_areas as $area){ ?>
+													<optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
+														<?php foreach($area['areas'] as $local){ ?>
+														<option value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"><?php echo $local['govr_area_name_en']; ?></option>
+														<?php } ?>
+													</optgroup>
+													<?php } ?>
+											</select>		
+											
+										</div>
+										<div class="col-md-5 col-sm-5 col-xs-12 nopad nopad">
+												<a id="search" class="search_btn_hme" onclick="searchLocal();"><?php echo lang('text_find'); ?></a> 
+										</div> 
+											</form>
+										<?php } else { ?>
+											<a class="btn btn-block btn-primary" href="<?php echo $single_location_url; ?>"><?php echo lang('text_find'); ?></a>
 										<?php } ?>
-								</select>		
-									
+									</div>
 								</div>
-								<div class="col-md-5 col-sm-5 col-xs-12 nopad nopad">
-										<a id="search" class="search_btn_hme" onclick="searchLocal();"><?php echo lang('text_find'); ?></a> 
-								</div> 
-									</form>
-								<?php } else { ?>
-									<a class="btn btn-block btn-primary" href="<?php echo $single_location_url; ?>"><?php echo lang('text_find'); ?></a>
-								<?php } ?>
 							</div>
 						</div>
-					</div>
-				</div>
 				<div class="clearfix"></div>
 			<?php } ?>
 
-			<div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-6 center-block' : 'col-sm-12' ?>">
-				<div class="local-alert"></div>
-				<?php if (!empty($local_alert)) { ?>
-					<?php echo $local_alert; ?>
-				<?php } ?>
-			</div>
 
+									</div>
+									<div class="modal-footer">
+        <a type="button" class="" data-dismiss="modal">Skip to Main</a>
+      </div>
+							</div>
+						</div>
+			
+										<?php } ?>
 			<?php if ($location_search !== TRUE AND $rsegment !== 'locations') { ?>
 				<div id="local-info" class="col-md-12" style="display: <?php echo ($local_info) ? 'block' : 'none'; ?>">
 					<div class="panel panel-local display-local">
@@ -189,6 +220,15 @@
 					</div>
 				</div>
 			<?php } ?>
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+			
 		</div>
 	</div>
 <script type="text/javascript">
@@ -354,9 +394,11 @@
     
 	$(document).ready(function() {
 		
-		
-		$('.js-example-basic-multiple').select2();
 		scrollToBody();
+		
+	$('.js-example-basic-single').select2({
+  		placeholder: 'Select an option'
+	});
 
 		apicall = $('#google-maps-js').attr('src');
 		apicall = apicall.replace("&ver=", "&callback=initAutocomplete&ver=");
@@ -367,22 +409,8 @@
 		$('.review-toggle').on('click', function() {
 			$('a[href="#reviews"]').tab('show');
 		});
-	});
+	});	
+
 	
-
-	function formatState (state) {
-  if (!state.id) {
-    return state.text;
-  }
-  var baseUrl = "/user/pages/images/flags";
-  var $state = $(
-    '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
-  );
-  return $state;
-};
-
-$(".js-example-templating").select2({
-  templateResult: formatState
-});
 //--></script>
 </div>
