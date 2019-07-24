@@ -2,6 +2,7 @@
 <div <?php if($rsegment =="home") {?> id="local-box" <?php }?> style="" class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 	<div class="container">
 		<div class="row">
+		<?php if($rsegment =="home") {?>
 			<div class="order_now">
   					<h2 class="Banner_header">Welcome to Lugma</h2>
 					<button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
@@ -167,7 +168,7 @@
       </div>
 							</div>
 						</div>
-			
+										<?php } ?>
 
 			<?php if ($location_search !== TRUE AND $rsegment !== 'locations') { ?>
 				<div id="local-info" class="col-md-12" style="display: <?php echo ($local_info) ? 'block' : 'none'; ?>">
