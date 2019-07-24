@@ -3,7 +3,7 @@ margin-left: 0;
 }
 #cart-box-affix.affix {
 position: fixed !important;
-top: 70px;
+top:100px;
 z-index: 999;
 }
 #cart-box-affix .panel-cart {
@@ -19,6 +19,9 @@ margin-bottom: 10px;
 }
 .panel-cart .panel-body {
     padding: 10px 15px;
+}
+.panel-cart .cart-coupon{
+    border-color: #dcd6d6 !important;
 }
 @media screen and (max-width: 766px) {
     #cart-box-affix .panel {

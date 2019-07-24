@@ -48,7 +48,7 @@
 				$('.alert').alert();
 				$('.dropdown-toggle').dropdown();
                 $('a[title], i[title]').tooltip({placement: 'bottom'});
-                $('select.form-control').select2();
+                $('select.form-control').select2({placeholder: 'Select an option'});
 			});
 		</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
