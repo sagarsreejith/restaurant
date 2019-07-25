@@ -6,8 +6,10 @@
 		<?php if( $rsegment ==="home") { ?>
 			<div class="order_now">
 					  <h2 class="Banner_header">Welcome to Lugma</h2> 
-					<button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
-					<button type="button" class="order_btn" data-toggle="modal" data-target="#reservation_now">Reserve Now</button>
+					  <div class="btn_sec">
+						<a type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
+						<a  href="<?php echo site_url('reservation'); ?>" type="button" class="order_btn">Reserve Now</a>
+					</div>
 						<div class="modal fade" id="order_now" role="dialog">
 						<div class="modal-dialog  modal-lg modal-dialog-centered">
 							<div class="modal-content">
@@ -397,15 +399,13 @@
 	$(document).ready(function() {
 
 
-	
+		
+		$("#order_now").click(function(){
+ 			 $("body").css("padding-right:0");
 
-
+		});
 		
 		scrollToBody();
-		
-	$('.js-example-basic-single').select2({
-  		placeholder: 'Select an option'
-	});
 
 		apicall = $('#google-maps-js').attr('src');
 		apicall = apicall.replace("&ver=", "&callback=initAutocomplete&ver=");
@@ -417,6 +417,10 @@
 			$('a[href="#reviews"]').tab('show');
 		});
 	});	
+
+	$( "body" ).click(function() {
+		$(".js-example-templating").select2("close");
+	});
 
 	
 //--></script>

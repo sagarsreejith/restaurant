@@ -227,12 +227,13 @@ text-transform: uppercase;
 text-decoration: none;
 }
 #main-header .navbar-toggle {
-color:#fff;
-right: 0;
-position: absolute;
-top: 8px;
-margin-bottom: 0;
-margin-top: 0;
+  color: #fff;
+  right: 0;
+  position: absolute;
+  top: 8px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background: #ff0f17;
 }
 #main-header .btn-navbar.navbar-toggle i:before {
 content: "\f0c9";
@@ -792,14 +793,6 @@ text-align: center;
 
 }
 
-
-
-/*** End Order Steps ***/
-
-
-
-
-/*** Menus ***/
 .menus-page .btn-menus {
 display:none;
 }
@@ -884,9 +877,9 @@ outline: none;
 .menu-container .menu-toggle.collapsed .fa-angle-up,
 .menu-container .menu-toggle .fa-angle-down {
   display: none;
-}`
+}
 .bg_clr{
-  bacckground:#000;
+  background:#000;
 }
 .menu-container .menu-toggle.collapsed .fa-angle-down,
 .menu-container .menu-toggle .fa-angle-up {
@@ -1326,7 +1319,7 @@ margin-top: 0;
 /*** RESPONSIVE ***/
 @media screen and (min-width: 768px) {
   #main-header .navbar-nav > li > a {
-	padding: 20px 15px;
+	padding: 20px 10px;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
@@ -1511,7 +1504,7 @@ padding-right:0 !important;
  #cart-box, #category-box-affix {
         -webkit-transform: translateZ(0);
     }
-    #category-box a.list-group-item.active, #category-box .list-group-item > a.active{
+#category-box a.list-group-item.active, #category-box .list-group-item > a.active{
 border-right:6px solid red;
 }
 .menu-category h3:before{
@@ -1530,6 +1523,7 @@ border-right:6px solid red;
     color: #fff;
     height: 39px;
     line-height: 29px;
+}
 }
     /*-sv--*/
     .main-footer{
@@ -1574,7 +1568,7 @@ border-right:6px solid red;
     color:#fff;
   }
   #page-footer .main-footer, #page-footer .main-footer a, #page-footer .main-footer .footer-title{color:#4a494a !important}
-  .locations-filter .panel-default{    }
+ 
 
     .list-group-item{
       background:none;
@@ -1618,13 +1612,6 @@ border-right:6px solid red;
     #module-reservation-module-1{
       margin: 130px 0 0;
     }
-    .partial .panel{
-      
-    }
-    
-    .top-spacing-10{
-    
-    }
 
     .datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled:hover:focus, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .open .dropdown-toggle.datepicker table tr td.active, .open .dropdown-toggle.datepicker table tr td.active:hover, .open .dropdown-toggle.datepicker table tr td.active.disabled, .open .dropdown-toggle.datepicker table tr td.active.disabled:hover{
       color: #ffffff;
@@ -1650,6 +1637,11 @@ border-right:6px solid red;
         margin-top: 0px;
         line-height: 30px;
       }
+
+      #main-header .navbar-nav > li > a{
+        padding: 20px 15px;
+      }
+      
     /*--responsive home page-*/
   
     @media only screen and (max-width: 1200px) {
@@ -1657,37 +1649,33 @@ border-right:6px solid red;
       .step-item h4{
         font-size: 13px;
       }
+      
+      
     }
-
   
-   @media only screen and (max-width: 768px) {
-    .step-item h4{}
-    .step-item .icon i{
-      font-size: 13px;
-      line-height: 25px;
-      width: 30px;
-      height: 30px;
-      float: left;
-      }
+
+
+@media only screen and (max-width: 960px) {
+  .step-item .icon i{
+    font-size: 13px;
+    line-height: 25px;
+    width: 35px ;
+    height: 35px;
+    float: left;
     
+    }
     .step-item h4 {
-      font-weight: 700;
-      text-transform: uppercase;
-      float: left;
-      padding: 0px 7px;
       font-size: 11px;
-      font-weight: bold;
-      color: #1e2327;
-      margin-top: 0px;
-      line-height: 31px;
+          line-height: 14px;
   }
-  
+ 
+ 
 }
-
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) {
   .icon_sec{
     display:none;
   }
+
   #main-header .navbar-toggle{
     background: red;
     color:#fff;
@@ -1705,3 +1693,4 @@ border-right:6px solid red;
 }
 
 .ordernow{position: absolute;width:100%;display:block;margin:20% 0}
+

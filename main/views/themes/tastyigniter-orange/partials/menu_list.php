@@ -1,4 +1,4 @@
-<?php if ($categories) {?>
+<?php if ($categories) { ?>
 	<div id="searchText" class="form-group has-feedback has-search has-clear">
                 <input type="text" name="catsearch" id="catsearch" class="form-control text-center search" placeholder="Search" >
                 <span class="fa fa-search fa-2x form-control-feedback"></span>
@@ -10,7 +10,8 @@
 	 
         
         <div class="item_sec" id="food_list">
-		<div class="col-md-6  popup-gallery">
+		<div class="col-md-12  popup-gallery">
+			<div class="fullout_div">
 					<div class="food_image galllery-item">
 						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
 							<div class="food_price">
@@ -36,7 +37,8 @@
 							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
 						</div>
 					</div>
-					
+			</div>	
+			<div class="fullout_div">
 					<div class="food_image galllery-item">
 						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
 							<div class="food_price">
@@ -62,6 +64,8 @@
 							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
 						</div>
 					</div>
+			</div>	
+			<div class="fullout_div">
 					<div class="food_image galllery-item">
 						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
 							<div class="food_price">
@@ -87,88 +91,70 @@
 							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
 						</div>
 					</div>
+			</div>	
+				
+
+			<div class="fullout_div">
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+			</div>	
+			<div class="fullout_div">
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+			</div>	
+
+
 		</div>
 		
 				  
 		
-			  <div class="col-md-6 isotope popup-gallery">
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>in tomatoes sauce </p> 
-						</div>
-					</div>
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-			 </div>
-				  
+			  
 		</div>
        
      

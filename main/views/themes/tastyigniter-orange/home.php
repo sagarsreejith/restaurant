@@ -109,7 +109,7 @@ a.gotop {
 </div>
 
 </div>
-<section class="about ">
+<section class="about" id="about">
  
   <div class="page-section-ptb">
   <div class="object-right object_right_img">
@@ -165,7 +165,7 @@ a.gotop {
 <div class="clearfix"></div>
 
 
-<section class="gallery white-bg page-section-ptb">
+<section class="gallery white-bg page-section-ptb" id="gallery">
 <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
             <div class="title-separator">
@@ -189,7 +189,7 @@ a.gotop {
    </div>
  </div>
 <div class="container"> 
- <div class="isotope popup-gallery columns-3">
+ <div class="isotope popup-gallery columns-4">
    <div class="grid-item chinese mexican">
       <div class="galllery-item">
         <span><img class="img-responsive" src="assets/images/gallery/01.jpg" alt=""></span>
@@ -375,65 +375,70 @@ a.gotop {
 
 
 
-<section class="">
-<div class="container">
-  <div class="row">
+          <section class="">
+            <div class="container">
+
+              <div class="row">
+                 <div id="map" class="">
+                    <div id="map-holder" style="height:370px;text-align:left;"></div>
+                  </div>
+              </div>
+            </div>
+
+              <div class="content-wrap cont_clr cont_clr2">
+              
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 nopad">
+                   
+                      <div class="contact cnt">
+
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <div class="contact-box text-center">
+                            <i class="fa fa-map-marker"></i>
+                              <div class="cont_con">
+                                 <h5>Address</h5>
+                                 <p>Kuwait</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <div class="contact-box text-center">
+                            <i class="fa fa-phone"></i>
+                              <div class="cont_con">
+                                 <h5>Phone</h5>
+                                 <p>949200202</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <div class="contact-box text-center">
+                            <i class="fa fa-envelope-o"></i>
+                              <div class="cont_con">
+                                 <h5>Email</h5>
+                                 <p>support@website.com</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <div class="contact-box text-center">
+                            <i class="fa fa-fax"></i>
+                              <div class="cont_con">
+                                 <h5>Fax</h5>
+                                 <p>(007) 123 456 7890</p>
+                              </div>
+                          </div>
+                        </div>
+
+                      </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+            </div>
+          </section>
 
 
-                                                            <div id="map" class="">
-                                                                <div id="map-holder" style="height:370px;text-align:left;"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                            <div class="content-wrap cont_clr cont_clr2">
-                                              
-                                                    <div class="row">
-                                                        <div class="col-md-12 nopad">
-
-                                                            <div class="col-md-12  bottom-spacing">
-                                                                <div class="row contact cnt">
-                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
-                                                                            <i class="fa fa-map-marker"></i>
-                                                                            <h5>Address</h5>
-                                                                            <p>
-                                                                               Kuwait
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
-                                                                            <i class="fa fa-phone"></i>
-                                                                            <h5>Phone</h5>
-                                                                            <p>
-                                                                               96965686
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
-                                                                            <i class="fa fa-envelope-o"></i>
-                                                                            <h5>Email</h5>
-                                                                            <p> support@website.com</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
-                                                                            <i class="fa fa-fax"></i>
-                                                                            <h5>Fax</h5>
-                                                                            <p>(007) 123 456 7890</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-</div>
-</div>
-</section>
 <div claass="clearfix"></div>
     
 
@@ -486,6 +491,17 @@ app.controller('switch_ctrl', ['$scope', '$element', function($, iElm){
 	}
 }]);
 $(document).ready(function(){
+
+
+
+  $("#order_now").click(function(){
+  $("body").css("padding-right:0");
+
+});
+  $('#order_now').on('shown.bs.modal', function() {
+       $("body.modal-open").removeAttr("style");
+ });
+
     $("#testimonial-slider").owlCarousel({
         items:1,
         itemsDesktop:[1000,1],
@@ -520,6 +536,10 @@ function filterFunction() {
   }
 }
 
+
+$( "#order_now" ).click(function() {
+		$(".js-example-templating").select2("close");
+	});
 
 
 </script>
