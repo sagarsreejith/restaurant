@@ -393,8 +393,8 @@ a.gotop {
                    
                       <div class="contact cnt">
 
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                          <div class="contact-box text-center">
+                        <div class="col-lg-3 col-md-3 col-sm-6 ">
+                          <div class="contact-box ">
                             <i class="fa fa-map-marker"></i>
                               <div class="cont_con">
                                  <h5>Address</h5>
@@ -402,8 +402,8 @@ a.gotop {
                               </div>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                          <div class="contact-box text-center">
+                        <div class="col-lg-3 col-md-3 col-sm-6 ">
+                          <div class="contact-box ">
                             <i class="fa fa-phone"></i>
                               <div class="cont_con">
                                  <h5>Phone</h5>
@@ -411,8 +411,8 @@ a.gotop {
                               </div>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                          <div class="contact-box text-center">
+                        <div class="col-lg-3 col-md-3 col-sm-6 ">
+                          <div class="contact-box ">
                             <i class="fa fa-envelope-o"></i>
                               <div class="cont_con">
                                  <h5>Email</h5>
@@ -420,8 +420,8 @@ a.gotop {
                               </div>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                          <div class="contact-box text-center">
+                        <div class="col-lg-3 col-md-3 col-sm-6 ">
+                          <div class="contact-box ">
                             <i class="fa fa-fax"></i>
                               <div class="cont_con">
                                  <h5>Fax</h5>

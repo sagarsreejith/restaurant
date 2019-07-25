@@ -1298,7 +1298,7 @@ box-shadow:none;
 
 
 .banner_header{
-  font-size: 35px;
+  font-size: 55px;
   color: #fff;
 }
 .order_now{display:block;width:100%;text-align: center}
@@ -1343,6 +1343,7 @@ box-shadow:none;
   }
   .modal-footer a{
     color: #e01012;
+    text-decoration:none;
   }
   .modal {
     z-index:9999;
@@ -1473,21 +1474,6 @@ box-shadow:none;
   text-decoration:none;
 }
 
-.h2_col{    padding: 35px 0;}
-.h2_sttt{    font-size:35px;}
-.about-content p, .section-title p{ font-size: 11px; font-weight: bold;}
-.object_right_img{display:none;}
-.book-menu p{margin:20px 0;padding:0 10px;}
-.book-menu{margin-bottom:0}
-.testimonial{    padding: 35px 0px;}
-.section-title .reg_st span small{
-  font-size: 10px;
-    width: 100%;
-    display: block;
-    padding:10px 0;
-}
-
-
 /*---resposive--*/
 @media only screen and (max-width: 1200px) {
  
@@ -1535,10 +1521,14 @@ padding: 0 30px;
 @media only screen and (max-width: 960px) {
 
   
+  .contact .contact-box {
+    display: block;
+    margin:0;
+  }
 }
 @media only screen and (max-width: 768px) {
   
-  
+  .object_right_img{display:none;}
   .icon_sec{display:none;}
 
 .object_right_img {
@@ -1601,9 +1591,30 @@ margin: 30px 0;
     left:0;    margin: 0 auto;
     display: table;width:100%
   }
+
+  
+
+
+.h2_col{    padding: 35px 0;}
+.h2_sttt{    font-size:35px;}
+.about-content p, .section-title p{ font-size: 11px; font-weight: bold;}
+
+.book-menu p{margin:20px 0;padding:0 10px;}
+.book-menu{margin-bottom:0}
+.testimonial{    padding: 35px 0px;}
+.section-title .reg_st span small{
+  font-size: 10px;
+    width: 100%;
+    display: block;
+    padding:10px 0;
+}
+
 }
 @media only screen and (max-width: 767px) {
-
+.contact-box {
+  width: 100%;
+  float: left;
+}
   #main-header .navbar-toggle{
     background: red;
     color:#fff;
