@@ -16,11 +16,11 @@ body {
 body {
 font-family: 'Cabin', sans-serif;
 background-color: #fff;
-padding-bottom: 200px;
+
 }
 @media (max-width:767px) {
 body {
-padding-bottom: 250px;
+
 }
 }
 

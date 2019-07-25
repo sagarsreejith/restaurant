@@ -69,37 +69,47 @@
                                                             <div class="col-md-12  bottom-spacing">
                                                                 <div class="row contact">
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
-                                                                            <i class="fa fa-map-marker"></i>
-                                                                            <h5>Address</h5>
-                                                                            <p>
-                                                                                <?php echo $location_name; ?>
-                                                                                    <?php echo $location_address; ?>
-                                                                            </p>
+                                                                        <div class="contact-box">
+                                                                                <i class="fa fa-map-marker"></i>
+                                                                                <div class="cnt_div">
+                                                                                    <h5>Address</h5>
+                                                                                    <p>
+                                                                                        <?php echo $location_name; ?>
+                                                                                            <?php echo $location_address; ?>
+                                                                                    </p>
+                                                                                </div>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
                                                                         
-                                                                        <div class="contact-box text-center">
+                                                                        <div class="contact-box">
                                                                             <i class="fa fa-phone"></i>
+                                                                            <div class="cnt_div">
                                                                             <h5>Phone</h5>
                                                                             <p>
                                                                                 <?php echo $location_telephone; ?>
                                                                             </p>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
-                                                                            <i class="fa fa-envelope-o"></i>
-                                                                            <h5>Email</h5>
-                                                                            <p> support@website.com</p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
-                                                                        <div class="contact-box text-center">
+
+                                                                        <div class="contact-box ">
+                                                                            <i class="fa fa-envelope-o"></i>
+                                                                            <div class="cnt_div">
+                                                                            <h5>Email</h5>
+                                                                            <p> support@website.com</p>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box ">
                                                                             <i class="fa fa-fax"></i>
+                                                                            <div class="cnt_div">
                                                                             <h5>Fax</h5>
                                                                             <p>(007) 123 456 7890</p>
+                                                </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

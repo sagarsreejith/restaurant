@@ -18,3 +18,10 @@ ERROR - 2019-07-25 10:10:13 --> Could not find the language line "gallery"
 ERROR - 2019-07-25 10:10:32 --> Could not find the language line "about"
 ERROR - 2019-07-25 10:10:32 --> Could not find the language line "gallery"
 ERROR - 2019-07-25 10:24:39 --> Could not find the language line "Home"
+ERROR - 2019-07-25 16:47:11 --> 404 Page Not Found: 
+ERROR - 2019-07-25 16:48:09 --> 404 Page Not Found: 
+ERROR - 2019-07-25 16:48:09 --> 404 Page Not Found: 
+ERROR - 2019-07-25 16:48:10 --> 404 Page Not Found: 
+ERROR - 2019-07-25 16:48:10 --> 404 Page Not Found: 
+ERROR - 2019-07-25 16:48:10 --> 404 Page Not Found: 
+ERROR - 2019-07-25 16:48:49 --> 404 Page Not Found: 

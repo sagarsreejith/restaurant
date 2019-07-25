@@ -103,6 +103,7 @@
 							<li><a role="presentation" href="<?php echo site_url('home'); ?>">Home</a></li>
 									<li><a href="<?php echo site_url('#about'); ?>">About</a></li>
 									<li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
+								
 								<?php if ($this->config->item('reservation_mode') === '1') { ?>
 									<li><a href="<?php echo site_url('reservation'); ?>"><?php echo lang('menu_reservation'); ?></a></li>
 								<?php } ?>
@@ -127,6 +128,7 @@
 									
 									<li><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
 									<li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
+									<li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
 									<!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
 									
 								<?php } ?>

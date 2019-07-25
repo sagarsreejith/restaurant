@@ -2,7 +2,7 @@
          footer
 *************************/
  .footer {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     background-image: url(images/bg/01.jpg);
     background: #000;
@@ -150,4 +150,7 @@
 }
 .text_ft a{
     color:red;
+}
+.cnt_div{
+    float: left;
 }
