@@ -6,6 +6,173 @@
 	</div>
 	
 	<div id="Container" class="menu-list">
+		
+	 
+        
+        <div class="item_sec" id="food_list">
+		<div class="col-md-6  popup-gallery">
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+					
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+		</div>
+		
+				  
+		
+			  <div class="col-md-6 isotope popup-gallery">
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>in tomatoes sauce </p> 
+						</div>
+					</div>
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+					<div class="food_image galllery-item">
+						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
+							<div class="food_price">
+								3<span>Kwd</span>
+							</div>
+							<div class="overlay">
+						<div class="overlay-content">
+							
+							
+							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
+							</div>
+						</div>
+					</div>
+					<div class="food_content">
+						<div class="food_title">
+							<h4>Rice</h4>
+						</div>
+				
+						<div class="food_description">
+							<span class="menu-button">
+								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
+							</span>
+							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
+						</div>
+					</div>
+			 </div>
+				  
+		</div>
+       
+     
+    
 		<?php $category_count = 1; ?>
 		<?php foreach ($categories as $category_id => $category) { ?>
 			<?php $catname_replace = array("&", ",", "'"); $category_name = strtolower(str_replace(' ', '-', str_replace($catname_replace, '_', $category['name']))); ?>
@@ -25,12 +192,17 @@
 					</div>
 
 					 <div class="menu-items">
+						 
 						<?php if (isset($menus[$category_id]) AND !empty($menus[$category_id])) { ?>
 							<?php foreach ($menus[$category_id] as $menu) { ?>
 
+
+     
+ 
 								<div id="menu<?php echo $menu['menu_id']; ?>" class="menu-item">
 									<div class="menu-item-wrapper row">
 										<?php if ($show_menu_images === '1' AND !empty($menu['menu_photo'])) { ?>
+									
 											<div class="menu-thumb col-xs-2 col-sm-2 wrap-none wrap-right">
 												<img class="img-responsive img-thumbnail" alt="<?php echo $menu['menu_name']; ?>" src="<?php echo $menu['menu_photo']; ?>">
 											</div>
@@ -65,6 +237,7 @@
 												<div class="menu-special"><?php echo $menu['end_days']; ?></div>
 											<?php }?>
 										</div>
+											
 									</div>
 								</div>
 							<?php } ?>

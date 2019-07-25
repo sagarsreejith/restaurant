@@ -23,7 +23,7 @@
             }
 
             if (partial_exists('content_left')) {
-                $menu_class = "col-sm-12 col-md-8";
+                $menu_class = "col-sm-12 col-md-8 nopad";
             } else {
                 $menu_class = "col-sm-8";
             }

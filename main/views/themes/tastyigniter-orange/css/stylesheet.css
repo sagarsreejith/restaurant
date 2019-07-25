@@ -817,15 +817,23 @@ font-weight: bold;
 margin: 0;
 padding-bottom: 10px;
 position: absolute;
+
 }
 .menu-item {
 border-top: 1px dashed #8a8787;
 width: 100%;
-padding: 20px 15px 0;
+padding: 0px 15px 0;
 }
 .menu-item:first-child {
   border-top: 0px none;
 }
+.menu-item-wrapper {
+  background: #ececec;
+  padding: 20px 10px;
+  box-shadow: 0 0 2px #ccc;
+  margin:20px 0 0;
+}
+
 .menu-name {
 display: block;
 color:#444;
@@ -1251,8 +1259,9 @@ padding:0;
 }
 .select2-search input {
 border-color: #d2dce7;
-border-left: 0 none;
-border-right: 0 none;
+font-weight: bold;
+border-radius: 3px;
+line-height: 25px;
 }
 .select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
@@ -1277,10 +1286,10 @@ border-radius: 0;
 background-color: #fff;
 }
 .select2-container .select2-choice .select2-arrow {
-background: transparent;
-border-left: 1px solid #d2dce7;
-width: 25px;
-text-align: center;
+  background: transparent;
+  border: none;
+  width: 25px;
+  text-align: center;
 }
 .select2-container .select2-choice abbr,
 .select2-container .select2-choice .select2-arrow b {
@@ -1555,7 +1564,7 @@ border-right:6px solid red;
     position: fixed;
     margin: 60px 0;
     float: left;
-    z-index: 9999;
+    z-index: 999;
   }
   #local-info {
     display: block;

@@ -1,5 +1,5 @@
 
-<div <?php if( $rsegment ==="home") { ?> id="local-box" <?php }?>  class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
+<div <?php if( $rsegment ==="home") { ?> id="local-box" <?php }  ?>  class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
 
 <div class="container">
 		<div class="row">
@@ -9,7 +9,7 @@
 					<button type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</button>
 					<button type="button" class="order_btn" data-toggle="modal" data-target="#reservation_now">Reserve Now</button>
 						<div class="modal fade" id="order_now" role="dialog">
-						<div class="modal-dialog modal-lg">
+						<div class="modal-dialog  modal-lg modal-dialog-centered">
 							<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -231,6 +231,8 @@
 			
 		</div>
 	</div>
+
+</div>
 <script type="text/javascript">
 
 	function toggleLocalSearch() {
@@ -393,6 +395,11 @@
     }
     
 	$(document).ready(function() {
+
+
+	
+
+
 		
 		scrollToBody();
 		
@@ -413,4 +420,3 @@
 
 	
 //--></script>
-</div>
