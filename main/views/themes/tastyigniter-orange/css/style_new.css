@@ -1668,3 +1668,46 @@ margin: 30px 0;
 .cnt_div{
   float: left;
 }
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  background-color: #c10804;
+  color:#fff;
+}
+
+.nav-pills>li.active>a p{
+  color: #fff;
+}
+#checkout p{color:red;}
+#checkout .form-group label{color:#333;font-weight:500}
+#checkout p a{color:#c10804;}
+#checkout .btn-primary.active{
+  background-color: #c10804;color:#fff;
+}
+#payment .form-group{
+  color:#000;
+}
+#checkout-form{
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+  padding: 10px;
+}
+.btn_chk .input-group-addon{ background:none;}
+.btn_chk .btn{background:none;border:none;}
+.btn_chk .btn:hover{background:none;border:none;color:#333;}
+.btn_chk i{color:red;}
+.clr_prog{color:#333;}.clr_prog1{color:#c10804;}
+.clr_prog tr td{color:#333;}
+.pan_head{background-color: #5d5757 !important;color:#fff !important}
+.clr_prog p{color:#333}
+.btn-menus{ background-color: #fbdfdf  !important;}
+#local-alert .alert p{    padding: 15px;
+  text-align: center;
+  font-size: 15px;}
+  #local-alert .alert button{opacity:1 !important;line-height: 0.35px;}
+  #main-header .navbar-nav > li > a.active{background:red}
+  #map_home .gm-style .gm-style-iw-c{       padding: 15px !important;
+    /* text-align: center !important; */
+    line-height: 20px;
+}
+#payment .list-group-item{padding:0}
+#payment .radio{margin:0}

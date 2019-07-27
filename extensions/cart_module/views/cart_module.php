@@ -16,6 +16,7 @@
 				<?php if ($has_delivery AND $has_collection) { ?>
 				<div class="location-control text-center text-muted">
 					<div id="my-postcode" style="display:<?php echo (empty($alert_no_postcode)) ? 'block' : 'none'; ?>">
+					
 						<div class="btn-group btn-group-md text-center order-type" data-toggle="buttons">
 							<?php if ($has_delivery) { ?>
 							<label class="btn <?php echo ($order_type === '1') ? 'btn-default btn-primary active' : 'btn-default'; ?>" data-btn="btn-primary">
@@ -56,12 +57,15 @@
 						<div id="my-postcode" style="display:<?php echo (empty($alert_no_postcode)) ? 'block' : 'none'; ?>">
 							<div class="btn-group btn-group-md text-center order-type" data-toggle="buttons">
 								<?php if ($order_type === '1') { ?>
+									
 								<label class="btn btn-default btn-primary active" data-btn="btn-primary">
-									<input type="radio" id="delivery" name="order_type" value="1" checked="checked">&nbsp;&nbsp;<strong><?php echo lang('text_delivery'); ?></strong>
+									
+									<input type="radio" class="data-toggle="modal" data-target="#order_now" id="delivery" name="order_type" value="1" checked="checked">&nbsp;&nbsp;<strong><?php echo lang('text_delivery'); ?></strong>
 									<span class="small center-block"><?php echo $delivery_time.' '.lang('text_min'); ?></span>
 								</label>
 
 								<?php } elseif ($order_type==='2') { ?>
+
 								<label class="btn btn-default" data-btn="btn-primary">
 									<input type="radio" id="delivery" name="order_type" value="1">&nbsp;&nbsp;<?php echo lang('text_delivery'); ?>
 									<span class="small center-block"><?php echo $delivery_time.' '.lang('text_min'); ?></span>

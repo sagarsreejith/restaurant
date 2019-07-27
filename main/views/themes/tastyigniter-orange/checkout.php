@@ -272,21 +272,38 @@
 
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<div class="form-group">
-											<label for=""><?php echo lang('label_customer_name'); ?></label><br /><?php echo $first_name; ?> <?php echo $last_name; ?>
+											<div class="col-sm-6 text-right">
+												<label for=""><?php echo lang('label_customer_name'); ?>  :</label>
+											</div>
+											<div class="col-sm-6 nopad">
+												<?php echo $first_name; ?> <?php echo $last_name; ?>
+											</div>
 										</div>
+										<div class="clearfix"></div>
 										<div class="form-group">
-											<label for=""><?php echo lang('label_email'); ?></label><br />
-											<?php echo $email; ?>
+											<div class="col-sm-6 text-right">
+												<label for=""><?php echo lang('label_email'); ?> :</label>
+											</div>
+											<div class="col-sm-6 nopad">
+												<?php echo $email; ?>
+											</div>
 										</div>
+										<div class="clearfix"></div>
 										<div class="form-group">
-											<label for=""><?php echo lang('label_telephone'); ?></label><br />
-											<?php echo $telephone; ?>
+											<div class="col-sm-6 text-right">
+												<label for=""><?php echo lang('label_telephone'); ?> : </label>
+											</div>
+											<div class="col-sm-6 nopad">
+												<?php echo $telephone; ?>
+											</div>
 										</div>
+										<div class="clearfix"></div>
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												<label for=""><?php echo lang('label_address'); ?></label><br />
+												
+												<label for=""><?php echo lang('label_address'); ?></label>
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
@@ -295,19 +312,35 @@
 											</div>
 										<?php } ?>
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<div class="form-group">
-											<label for=""><?php echo lang('label_order_type'); ?></label><br /><?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
+											<div class="col-sm-6 text-right">
+												<label for=""><?php echo lang('label_order_type'); ?> : </label>
+											</div>
+											<div class="col-sm-6 nopad">
+												<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
+											</div>
 										</div>
+										<div class="clearfix"></div>
 										<div class="form-group">
-											<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?></label><br /><?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?>
+											<div class="col-sm-6 text-right">
+												<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 
+											</div>
+											<div class="col-sm-6 nopad">
+												<?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?>
+											</div>
 										</div>
+										<div class="clearfix"></div>
 									</div>
 								</div>
 
 								<div class="row">
-									<div class="col-sm-6 form-group">
-										<label for=""><?php echo lang('label_payment_method'); ?></label><br />
+									<div class="col-sm-12 form-group">
+									
+									<div class="col-sm-6 text-right">
+										<label for=""><?php echo lang('label_payment_method'); ?> : </label>
+									</div>
+									<div class="col-sm-6 nopad">
 										<div class="list-group">
 											<?php foreach ($payments as $payment) { ?>
 												<?php if (!empty($payment['data'])) { ?>
@@ -315,14 +348,15 @@
 												<?php } ?>
 											<?php } ?>
 										</div>
+									</div>
 										<?php echo form_error('payment', '<span class="text-danger">', '</span>'); ?>
 									</div>
 
 									<?php if ($checkout_terms) {?>
 										<div class="col-sm-12 form-group">
-											<div class="input-group">
+											<div class="input-group btn_chk">
 												<span class="input-group-addon button-checkbox">
-													<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
+													<button type="button" class="btn " data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
 													<input type="checkbox" name="terms_condition" id="terms-condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
 												</span>
 												<span class="form-control"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>

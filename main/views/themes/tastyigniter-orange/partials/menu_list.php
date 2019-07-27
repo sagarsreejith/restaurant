@@ -9,7 +9,7 @@
 		
 	 
         
-        <div class="item_sec" id="food_list">
+      <!-- <div class="item_sec" id="food_list">
 		<div class="col-md-12  popup-gallery">
 			<div class="fullout_div">
 					<div class="food_image galllery-item">
@@ -155,7 +155,7 @@
 				  
 		
 			  
-		</div>
+		</div> -->
        
      
     

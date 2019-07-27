@@ -1,536 +1,227 @@
-ERROR - 2019-07-24 16:03:17 --> Severity: Parsing Error --> syntax error, unexpected 'id' (T_STRING) D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\local.php 20
-ERROR - 2019-07-25 09:35:44 --> Could not find the language line "about"
-ERROR - 2019-07-25 09:36:06 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:07:55 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:08:44 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:08:51 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:08:53 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:09:46 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:09:46 --> Could not find the language line "gallery"
-ERROR - 2019-07-25 10:10:00 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:10:00 --> Could not find the language line "gallery"
-ERROR - 2019-07-25 10:10:01 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:10:01 --> Could not find the language line "gallery"
-ERROR - 2019-07-25 10:10:02 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:10:02 --> Could not find the language line "gallery"
-ERROR - 2019-07-25 10:10:13 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:10:13 --> Could not find the language line "gallery"
-ERROR - 2019-07-25 10:10:32 --> Could not find the language line "about"
-ERROR - 2019-07-25 10:10:32 --> Could not find the language line "gallery"
-ERROR - 2019-07-25 10:24:39 --> Could not find the language line "Home"
-ERROR - 2019-07-25 16:47:11 --> 404 Page Not Found: 
-ERROR - 2019-07-25 16:48:09 --> 404 Page Not Found: 
-ERROR - 2019-07-25 16:48:09 --> 404 Page Not Found: 
-ERROR - 2019-07-25 16:48:10 --> 404 Page Not Found: 
-ERROR - 2019-07-25 16:48:10 --> 404 Page Not Found: 
-ERROR - 2019-07-25 16:48:10 --> 404 Page Not Found: 
-ERROR - 2019-07-25 16:48:49 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:37:59 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:37:59 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:03 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:38:44 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:45 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:46 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:46 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:46 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:46 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:38:47 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 75
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:10 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:11 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:53 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:56 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:39:56 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:46 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:46 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:51:46 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:57 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:58 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:56:59 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:00 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:00 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:00 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:02 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:57:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:03 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:04 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:05 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:06 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:06 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:16 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:17 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:18 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:22 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:22 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:22 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:22 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:23 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:24 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:30 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:30 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:30 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:30 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:31 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:32 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:33 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:58:34 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:32 --> Severity: Parsing Error --> syntax error, unexpected 'array' (T_ARRAY), expecting ')' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\theme_config.php 67
-ERROR - 2019-07-27 10:59:41 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:42 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:43 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:44 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 10:59:45 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:49 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:49 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:50 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:51 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:00:52 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:25 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
-ERROR - 2019-07-27 11:01:26 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:01:42 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:01:42 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:01:41 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c12f5a396e@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c12f5a3982&quot;
+</pre>
+ERROR - 2019-07-27 12:01:43 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:01:43 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:01:42 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c12f6ad188@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c12f6ad1ea&quot;
+</pre>
+ERROR - 2019-07-27 12:01:44 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:01:44 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:07:55 --> Severity: Error --> Class 'Cart_module' not found D:\xampp\htdocs\out-rest\system\tastyigniter\third_party\MX\Modules.php 106
+ERROR - 2019-07-27 12:15:45 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:15:45 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:15:44 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1640a5aad@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1640a5ac2&quot;
+</pre>
+ERROR - 2019-07-27 12:15:46 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:15:46 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:15:45 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1641adc9f@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1641adcd7&quot;
+</pre>
+ERROR - 2019-07-27 12:15:47 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:15:47 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:15:52 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:15:52 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:18:52 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:18:52 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:44:02 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:44:02 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:44:01 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1ce1a1346@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1ce1a1366&quot;
+</pre>
+ERROR - 2019-07-27 12:44:03 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:44:03 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:44:02 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1ce2aa3b0@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1ce2aa3d6&quot;
+</pre>
+ERROR - 2019-07-27 12:44:04 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:44:04 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:46:13 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:46:13 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:46:24 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:46:24 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:46:26 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:46:26 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:47:03 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:47:03 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:47:02 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1d96b44fd@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1d96b4519&quot;
+</pre>
+ERROR - 2019-07-27 12:47:04 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:47:04 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:47:03 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1d97b90da@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1d97b90ef&quot;
+</pre>
+ERROR - 2019-07-27 12:47:05 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:47:05 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:47:32 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:47:32 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:47:54 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:47:54 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:49:24 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:49:24 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:50:56 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:50:56 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:50:55 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1e7f6b294@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1e7f6b2aa&quot;
+</pre>
+ERROR - 2019-07-27 12:51:09 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:09 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:11 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:11 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:13 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:13 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:31 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:31 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:34 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:51:34 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:52:16 --> Could not find the language line "text_no_comment"
+ERROR - 2019-07-27 12:52:17 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:52:17 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:52:16 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c1ed0af6bb@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c1ed0af6cf&quot;
+</pre>
+ERROR - 2019-07-27 12:52:36 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:52:36 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:52:51 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:52:51 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:53:01 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:53:01 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:53:22 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:53:22 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:54:11 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:54:11 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:54:37 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:54:37 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:55:06 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:55:06 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:55:33 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:55:34 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:56:03 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:56:03 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:56:29 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:56:29 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:56:43 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:56:43 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:58:49 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:58:49 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:58:48 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c205849311@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c205849328&quot;
+</pre>
+ERROR - 2019-07-27 12:58:50 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 12:58:50 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 12:58:49 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c20594c583@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c20594c595&quot;
+</pre>
+ERROR - 2019-07-27 12:58:51 --> 404 Page Not Found: 
+ERROR - 2019-07-27 12:58:51 --> 404 Page Not Found: 
+ERROR - 2019-07-27 13:04:11 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-27 13:04:11 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-27 13:04:20 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-27 13:04:20 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-27 13:04:57 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-27 13:04:57 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-27 13:22:25 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-27 13:22:25 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-27 13:22:33 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-27 13:22:33 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-27 16:45:52 --> Severity: Parsing Error --> syntax error, unexpected ':' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\checkout.php 278
