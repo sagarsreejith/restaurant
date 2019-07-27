@@ -429,7 +429,32 @@ a.gotop {
 <?php echo get_footer(); ?><div class="clearfix"></div>
 <script>
   
+  // $(function() {
+    
+  //   $('a[href*=#]:not([href=#])').click(function() {
+  //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //       var target = $(this.hash);
+  //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //       if (target.length) {
+  //         $('html,body').animate({
+  //           scrollTop: target.offset().top
+  //         }, 1500);
+  //         return false;
+  //       }
+  //     }
+  //   });
+    
+  // });
+
+
 $(document).ready(function(){
+
+
+  $( '#main-header .navbar-nav a' ).on( 'click', function () {
+	$( '#main-header .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+  
   initMapHome();
   $("#order_now").click(function(){
       $("body").css("padding-right:0");
@@ -457,6 +482,7 @@ function myFunction() {
 }
 
 function filterFunction() {
+  
   var input, filter, ul, li, a, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
@@ -529,7 +555,7 @@ function initMapHome() {
   for (i = 0; i < locations.length; i++) {
     marker = new google.maps.Marker({
 	  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-	  icon: "assets/images/restaurant_mapmarker.png",
+	  icon: "assets/images/restaurant_mapmarker12.png",
       map: map,
     })
 

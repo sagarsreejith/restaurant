@@ -1,6 +1,6 @@
 <?php if ($categories) { ?>
 	<div id="searchText" class="form-group has-feedback has-search has-clear">
-                <input type="text" name="catsearch" id="catsearch" class="form-control text-center search" placeholder="Search" >
+                <input type="text" name="catsearch" id="catsearch" class="form-control search" placeholder="Search" >
                 <span class="fa fa-search fa-2x form-control-feedback"></span>
                 <span class="form-control-feedback form-control-clear fa fa-times fa-2x hidden"  onClick="clearSearch();"></span>
 	</div>
@@ -9,7 +9,7 @@
 		
 	 
         
-        <div class="item_sec" id="food_list">
+      <!-- <div class="item_sec" id="food_list">
 		<div class="col-md-12  popup-gallery">
 			<div class="fullout_div">
 					<div class="food_image galllery-item">
@@ -155,7 +155,7 @@
 				  
 		
 			  
-		</div>
+		</div> -->
        
      
     

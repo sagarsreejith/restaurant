@@ -23,10 +23,10 @@ if($rsegment !="home"){
                <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
                <label for="first_toggle">
                   <p>Delivery</p>
-               </label>
-               <label for="second_toggle">
+			   </label>
+			    <label for="second_toggle">
                   <p>Pick up</p>
-               </label>
+			   </label>
                <div class="toggle_option_slider"></div>
             </div>
             <div class="panel panel-local">
@@ -37,6 +37,7 @@ if($rsegment !="home"){
                      <form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
                         <div class="col-md-7 col-sm-7 col-xs-12 nopad">
                            <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span>
+                           <!-- <span><img src="assets/images/new_search.svg" alt="search location"></span> -->
                            <select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
                               <option></option>
                               <?php foreach($local_areas as $area){ ?>
@@ -59,7 +60,14 @@ if($rsegment !="home"){
                </div>
             </div>
          </div>
-         <div class="clearfix"></div>
+		 <div class="clearfix"></div>
+		 
+		 <div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-6 center-block' : 'col-sm-12' ?>">
+				<div class="local-alert"></div>
+				<?php if (!empty($local_alert)) { ?>
+					<?php echo $local_alert; ?>
+				<?php } ?>
+		</div>
       </div>
       <div class="modal-footer">
          <a type="button" class="" data-dismiss="modal">Skip to Main</a>
@@ -74,8 +82,10 @@ if($rsegment !="home"){
          <div class="order_now">
             <h2 class="Banner_header">Welcome to Lugma</h2>
             <div class="btn_sec">
-               <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
-               <a  href="<?php echo site_url('reservation'); ?>" type="button" class="order_btn">Reserve Now</a>
+			   <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
+			   <?php if ($this->config->item('reservation_mode') === '1') { ?>
+			   <a  href="<?php echo site_url('reservation'); ?>" type="button" class="order_btn">Reserve Now</a>
+			   <?php } ?>
             </div>
             
                <?php } ?>
@@ -240,7 +250,7 @@ if($rsegment !="home"){
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
    	var search_query = $('#aioConceptName').val();
-   	alert($('#aioConceptName').val());
+   	//alert($('#aioConceptName').val());
    	
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),

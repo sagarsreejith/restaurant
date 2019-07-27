@@ -27,27 +27,27 @@
 						</ul>
 					</div>
 
-					<div class="col-xs-12 content-wrap">
+					<div class="col-xs-12 content-wrap clr_prog">
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
 		                    <span class="under-heading"></span>
 						</div>
 
 			            <div class="panel panel-default">
-			                <div class="panel-heading">
+			                <div class="panel-heading pan_head">
 			                    <h3 class="panel-title"><strong><?php echo lang('text_order_details'); ?></strong></h3>
 			                </div>
 			                <div class="panel-body">
-			                    <div class="col-sm-4">
+			                    <div class="col-sm-4 clr_prog">
 			                        <p><?php echo $order_details; ?></p>
 			                    </div>
-			                    <div class="col-sm-4">
+			                    <div class="col-sm-4 clr_prog">
 									<?php if ($delivery_address) { ?>
 										<strong><?php echo lang('text_delivery_address'); ?>:</strong>
 										<address><?php echo $delivery_address; ?></address>
 									<?php } ?>
 			                    </div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 clr_prog">
 									<strong><?php echo lang('text_your_local'); ?></strong><br />
 									<strong><?php echo $location_name; ?></strong><br />
 									<address><?php echo $location_address; ?></address>
@@ -56,13 +56,13 @@
 			            </div>
 
 			            <div class="panel panel-default">
-			                <div class="panel-heading">
+			                <div class="panel-heading pan_head">
 			                    <h3 class="panel-title"><strong><?php echo lang('text_order_items'); ?></strong></h3>
 			                </div>
 			                <div class="panel-body">
 								<?php if ($menus) { ?>
 				                    <div class="table-responsive">
-										<table class="table table-condensed">
+										<table class="table table-condensed clr_prog">
 				                            <tbody>
 												<?php foreach ($menus as $menu) { ?>
 													<tr>

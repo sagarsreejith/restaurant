@@ -809,8 +809,9 @@ font-style: normal;
 font-weight: bold;
 margin: 0;
 padding-bottom: 10px;
-/* position: absolute; */
+position: relative;
 }
+
 .menu-item {
 border-top: 1px dashed #8a8787;
 width: 100%;
@@ -823,7 +824,7 @@ padding: 0px 15px 0;
   background: #ececec;
   padding: 20px 10px;
   box-shadow: 0 0 2px #ccc;
-  margin:20px 0 0;
+  margin:0px 0 0;
 }
 
 .menu-name {
@@ -1121,9 +1122,7 @@ margin-top: 30px;
 
 
 /*** Footer  ***/
-#page-footer {
 
-}
 #page-footer .main-footer, #page-footer .main-footer a {
   color: #9BA1A7;
 }
@@ -1153,8 +1152,6 @@ margin: 10px 0;
 .footer-links i {
   margin-right: 5px;
   color: #ed561a;
-}
-.main-footer .footer-links li {
 }
 .main-footer .contact-info p {
 padding-bottom: 20px;
@@ -1200,11 +1197,11 @@ body .bootstrap-timepicker-widget table td a i {
 .order-time-group .btn-group > .btn {
   width: 50%;
 }
-.order-time-group .date-input-addon,
+/* .order-time-group .date-input-addon,
 .order-time-group .time-input-addon {
   /*background-color: #EEE;*/
-  /*border: 1px solid #ddd;*/
-}
+  /*border: 1px solid #ddd;
+} */
 .order-time-group .time-input-addon .hours,
 .order-time-group .time-input-addon .minutes {
   width: 50%;
@@ -1430,10 +1427,9 @@ margin-top: 0;
 padding-right:0 !important;
 }
 #optionsModal .modal{
-  z-index: 99999 !imporatnt;
+  z-index: 99999 !important;
 }
 #catsearch {
-  border-radius: 5px;
   height: 40px;
   background: #e7e7e7;
 }
@@ -1457,7 +1453,7 @@ padding-right:0 !important;
 }
 .has-search .form-control {
     padding-right: 12px;
-    padding-left: 34px;
+    padding-left: 10px;
 }
 .sticky {
   position: fixed;
@@ -1693,3 +1689,7 @@ border-right:6px solid red;
 
 .ordernow{position: absolute;width:100%;display:block;margin:20% 0}
 
+#main-header .navbar-nav li.active > a {
+  background-color: #e01112;
+  color: #fff !important;
+}

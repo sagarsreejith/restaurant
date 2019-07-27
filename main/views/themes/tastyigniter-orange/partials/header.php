@@ -100,12 +100,12 @@
                     <div class="col-md-7 col-sm-9">
 						<div class="collapse navbar-collapse" id="main-header-menu-collapse">
 							<ul class="nav navbar-nav navbar-right">
-							<li><a role="presentation" href="<?php echo site_url('home'); ?>">Home</a></li>
-									<li><a href="<?php echo site_url('#about'); ?>">About</a></li>
+									<li class=""><a role="presentation"  href="<?php echo site_url(''); ?>"  active"#">Home</a></li>
+									<li class=""><a href="<?php echo site_url('#about'); ?>">About</a></li>
 									<li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
 								
 								<?php if ($this->config->item('reservation_mode') === '1') { ?>
-									<li><a href="<?php echo site_url('reservation'); ?>"><?php echo lang('menu_reservation'); ?></a></li>
+									<li class=""><a href="<?php echo site_url('reservation'); ?>"><?php echo lang('menu_reservation'); ?></a></li>
 								<?php } ?>
 
 								<?php if ($this->customer->isLogged()) { ?>
@@ -126,7 +126,7 @@
 									</li>
 								<?php } else { ?>
 									
-									<li><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
+									<li class=""><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
 									<li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
 									<li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
 									<!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
@@ -168,3 +168,30 @@
 	                </div>
 	            </div>
 			<?php } ?>
+<script>
+$(function(){
+    $('.nav a').filter(function(){
+    return this.href==location.href}).parent().addClass('active').siblings().removeClass('active');
+
+    $('.nav a').click(function(){
+		$(this).parent().addClass('active').siblings().removeClass('active')    
+    });
+});
+								
+$(function() {
+    $('.navbar-nav li a').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 60
+          }, 1500);
+          return false;
+        }
+      }
+    });
+    
+  });
+					
+</script>

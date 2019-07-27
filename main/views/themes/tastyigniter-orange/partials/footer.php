@@ -85,6 +85,7 @@
     var sticky = pageContent.offsetTop;
 
     function onScrollWindow() {
+        
         var selectedTab = $("ul#nav-tabs li.active");
 
         if (window.pageYOffset > sticky) {
