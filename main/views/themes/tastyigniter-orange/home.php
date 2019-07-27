@@ -498,9 +498,9 @@ $(document).ready(function(){
   $("body").css("padding-right:0");
 
 });
-  $('#order_now').on('shown.bs.modal', function() {
-       $("body.modal-open").removeAttr("style");
- });
+//   $('#order_now').on('shown.bs.modal', function() {
+//        $("body.modal-open").removeAttr("style");
+//  });
 
     $("#testimonial-slider").owlCarousel({
         items:1,

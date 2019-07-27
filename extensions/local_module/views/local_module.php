@@ -76,7 +76,12 @@
 						</div>
 				<div class="clearfix"></div>
 			<?php } ?>
-
+			<div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-6 center-block' : 'col-sm-12' ?>">
+				<div class="local-alert"></div>
+				<?php if (!empty($local_alert)) { ?>
+					<?php echo $local_alert; ?>
+				<?php } ?>
+			</div>
 
 									</div>
 									<div class="modal-footer">
@@ -258,6 +263,8 @@
 			data: 'search_query=' + search_query,
 			dataType: 'json',
 			success: function(json) {
+				alert(json);
+				console.log('err',json);
 				updateLocalBox(json);
 			}
 		});
@@ -399,6 +406,10 @@
 	$(document).ready(function() {
 
 
+		$('#order_now').on('shown.bs.modal', function () {
+		
+  			 $("body").css("padding",'0px');
+				})
 		
 		$("#order_now").click(function(){
  			 $("body").css("padding-right:0");

@@ -1431,7 +1431,7 @@ margin-top: 0;
 padding-right:0 !important;
 }
 #optionsModal .modal{
-  z-index: 99999 !imporatnt;
+  z-index: 99999 !important;
 }
 #catsearch {
   border-radius: 5px;
