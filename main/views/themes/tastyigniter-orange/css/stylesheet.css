@@ -809,8 +809,7 @@ font-style: normal;
 font-weight: bold;
 margin: 0;
 padding-bottom: 10px;
-position: absolute;
-
+/* position: absolute; */
 }
 .menu-item {
 border-top: 1px dashed #8a8787;

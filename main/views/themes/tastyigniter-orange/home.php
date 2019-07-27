@@ -529,7 +529,7 @@ function initMapHome() {
   for (i = 0; i < locations.length; i++) {
     marker = new google.maps.Marker({
 	  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-	  icon: "assets/images/icons8-pointer-48.png",
+	  icon: "assets/images/restaurant_mapmarker.png",
       map: map,
     })
 
