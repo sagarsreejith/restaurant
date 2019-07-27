@@ -79,7 +79,7 @@
 		<header id="main-header">
 			<div class="container">
                 <div class="row">
-                    <div class="col-sm-5">
+                    <div class="col-md-5 col-sm-3">
 						<button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
 							<i class="fa fa-align-justify"></i>
 						</button>
@@ -97,16 +97,22 @@
 							</a>
 						</div>
 					</div>
-                    <div class="col-sm-7">
+                    <div class="col-md-7 col-sm-9">
 						<div class="collapse navbar-collapse" id="main-header-menu-collapse">
 							<ul class="nav navbar-nav navbar-right">
+							<li><a role="presentation" href="<?php echo site_url('home'); ?>">Home</a></li>
+									<li><a href="<?php echo site_url('#about'); ?>">About</a></li>
+									<li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
+								
 								<?php if ($this->config->item('reservation_mode') === '1') { ?>
 									<li><a href="<?php echo site_url('reservation'); ?>"><?php echo lang('menu_reservation'); ?></a></li>
 								<?php } ?>
 
 								<?php if ($this->customer->isLogged()) { ?>
+
 									<li class="dropdown"><a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1"><?php echo lang('menu_my_account'); ?> <span class="caret"></span></a>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownLabel1">
+										<ul class="dropdown-menu " role="menu" aria-labelledby="dropdownLabel1">
+										<li class="hidden"><a href="#page-top"></a> </li>
                                             <li><a role="presentation" href="<?php echo site_url('account/orders'); ?>"><?php echo lang('menu_recent_order'); ?></a></li>
                                             <li><a role="presentation" href="<?php echo site_url('account/account'); ?>"><?php echo lang('menu_my_account'); ?></a></li>
                                             <li><a role="presentation" href="<?php echo site_url('account/address'); ?>"><?php echo lang('menu_address'); ?></a></li>
@@ -119,9 +125,11 @@
 										</ul>
 									</li>
 								<?php } else { ?>
+									
 									<li><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
 									<li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
-									<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>
+									<li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
+									<!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
 									
 								<?php } ?>
 
