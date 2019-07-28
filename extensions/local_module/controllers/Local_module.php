@@ -67,7 +67,9 @@ class Local_module extends Main_Controller {
 		$data['local_info'] 			= $this->location->local(); 										// retrieve local location data
 		$data['location_id'] 			= $this->location->getId(); 										// retrieve local location data
 		$data['location_name'] 			= $this->location->getName(); 										// retrieve local location data
-		$data['location_address'] 		= $this->location->getAddress(); 										// retrieve local location data
+		$data['location_address'] 		= $this->location->getAddress();
+		$data['location_city'] 			= $this->location->getRestGovCity();
+		$data['location_state'] 		= $this->location->getRestGovState(); 										// retrieve local location data
 		$data['location_image'] 		= $this->location->getImage(); 										// retrieve local location data
 		$data['is_opened'] 			    = $this->location->isOpened();
 		$data['opening_type'] 			= $this->location->workingType('opening');

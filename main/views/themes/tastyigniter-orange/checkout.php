@@ -201,8 +201,12 @@
 											<?php $address_row = 0; ?>
 
 											<?php foreach ($addresses as $address) { ?>
+												
 												<div id="address-form-<?php echo $address_row; ?>" class="col-xs-12 wrap-horizontal" style="display: <?php echo (empty($address['address_id'])) ? 'block' : 'none'; ?>">
 													<input type="hidden" name="address[<?php echo $address_row; ?>][address_id]" value="<?php echo set_value('address['.$address_row.'][address_id]', $address['address_id']); ?>">
+													<input type="hidden" name="address[<?php echo $address_row; ?>][country_id]"  class="form-control" value="114"/>
+													<input type="hidden" name="address[<?php echo $address_row; ?>][postcode]" class="form-control" value="123456<?php //echo set_value('address['.$address_row.'][postcode]', $address['postcode']); ?>" />
+
 													<div class="row">
 														<div class="col-sm-6">
 															<div class="form-group">
@@ -220,41 +224,42 @@
 														</div>
 													</div>
 													<div class="row">
-														<div class="col-sm-4">
+														<div class="col-sm-6">
 															<div class="form-group">
 																<label for=""><?php echo lang('label_city'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][city]" class="form-control" value="<?php echo set_value('address['.$address_row.'][city]', $address['city']); ?>" />
+																<input type="text" name="address[<?php echo $address_row; ?>][city]" class="form-control" value="<?php echo set_value('address['.$address_row.'][city]', $location_city); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][city]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
-														<div class="col-sm-4">
+														<div class="col-sm-6">
 															<div class="form-group">
 																<label for=""><?php echo lang('label_state'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][state]" class="form-control" value="<?php echo set_value('address['.$address_row.'][state]', $address['state']); ?>" />
+																<input type="text" name="address[<?php echo $address_row; ?>][state]" class="form-control" value="<?php echo set_value('address['.$address_row.'][state]', $location_state); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][state]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
-														<div class="col-sm-4">
+														<!-- <div class="col-sm-4">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_postcode'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][postcode]" class="form-control" value="<?php echo set_value('address['.$address_row.'][postcode]', $address['postcode']); ?>" />
-																<?php echo form_error('address['.$address_row.'][postcode]', '<span class="text-danger">', '</span>'); ?>
+																<label for=""><?php//echo lang('label_postcode'); ?></label>
+																<?php //echo form_error('address['.$address_row.'][postcode]', '<span class="text-danger">', '</span>'); ?>
 															</div>
-														</div>
+														</div> -->
 													</div>
-													<div class="form-group">
-														<label for=""><?php echo lang('label_country'); ?></label>
-														<select name="address[<?php echo $address_row; ?>][country_id]" class="form-control">
-															<?php foreach ($countries as $country) { ?>
-																<?php if ($country['country_id'] === $address['country_id']) { ?>
-																	<option value="<?php echo $country['country_id']; ?>" selected="selected"><?php echo $country['name']; ?></option>
-																<?php } else { ?>
-																	<option value="<?php echo $country['country_id']; ?>"><?php echo $country['name']; ?></option>
-																<?php } ?>
-															<?php } ?>
-														</select>
-														<?php echo form_error('address['.$address_row.'][country_id]', '<span class="text-danger">', '</span>'); ?>
-													</div>
+													<!-- <div class="form-group">
+														<label for=""><?php //echo lang('label_country'); ?></label>
+														<input type="hidden" name="address[<?php //echo $address_row; ?>][country_id]"  class="form-control" value="114"/>
+														 <select name="address[<?php //echo $address_row; ?>][country_id]" class="form-control">
+															<option value="114" selected="selected">Kuwait</option>
+															<?php //foreach ($countries as $country) { ?>
+																<?php //if ($country['country_id'] === $address['country_id']) { ?>
+																	 <option value="114" selected="selected">Kuwait</option> 
+																<?php //} else { ?>
+																	<option value="<?php //echo $country['country_id']; ?>"><?php //echo $country['name']; ?></option> 
+																<?php //} ?>
+															<?php //} ?>
+														</select> 
+														<?php //echo form_error('address['.$address_row.'][country_id]', '<span class="text-danger">', '</span>'); ?>
+													</div> -->
 												</div>
 
 												<?php $address_row++; ?>

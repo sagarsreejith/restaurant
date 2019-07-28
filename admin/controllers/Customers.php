@@ -316,7 +316,7 @@ class Customers extends Admin_Controller {
 
 		if ($this->input->post('address')) {
 			foreach ($this->input->post('address') as $key => $value) {
-				$this->form_validation->set_rules('address['.$key.'][address_1]', '['.$key.'] lang:label_address_1', 'xss_clean|trim|required|min_length[3]|max_length[128]');
+				$this->form_validation->set_rules('address['.$key.'][address_1]', '['.$key.'] lang:label_address_1', 'xss_clean|trim|required|min_length[1]|max_length[128]');
 				$this->form_validation->set_rules('address['.$key.'][city]', '['.$key.'] lang:label_city', 'xss_clean|trim|required|min_length[2]|max_length[128]');
 				$this->form_validation->set_rules('address['.$key.'][state]', '['.$key.'] lang:label_state', 'xss_clean|trim|max_length[128]');
 				$this->form_validation->set_rules('address['.$key.'][postcode]', '['.$key.'] lang:label_postcode', 'xss_clean|trim|min_length[2]|max_length[10]');
