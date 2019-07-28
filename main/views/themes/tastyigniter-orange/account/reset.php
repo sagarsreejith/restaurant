@@ -1,13 +1,28 @@
 <?php echo get_header(); ?>
 
-<div id="page-content">
+<div id="page-content " class="parallax pb-30 bg-overlay-black-70 " style="background:url('assets/images/d2.jpg');    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;">
 	<div class="container">
+	<div class="margin_st">
 		<div class="row">
+
+		
 			<div class="col-md-12">
 				<div class="heading-section">
-					<h3><?php echo lang('text_heading'); ?></h3>
-					<span class="under-heading"></span>
+					
 				</div>
+
+
+
+				<div class="section-title text-center">
+					<div class="title-separator">
+					
+					</div>
+						<h2 class="reg_st"> <span class="text-orange"><?php echo lang('text_heading'); ?></span></h2>
+						<span class="under-heading"></span>
+      			</div>
+
 			</div>
 		</div>
 
@@ -19,7 +34,7 @@
 					</div>
 				<?php } ?>
 				<p class="text-center"><?php echo lang('text_summary'); ?></p>
-				<form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
+				<form method="POST" id="password_form"  accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
 					<div class="form-group">
 						<input name="email" type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
 		    			<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?></td>
@@ -52,4 +67,5 @@
 		</div>
 	</div>
 </div>
+							</div>
 <?php echo get_footer(); ?>

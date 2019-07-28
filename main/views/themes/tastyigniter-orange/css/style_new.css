@@ -1145,6 +1145,7 @@ color:#fff;
 }
 .cont_clr2{
 background: #5d5757  !important;
+
 }
 .cnt .contact-box h5 {
 font-size: 20px;
@@ -1777,4 +1778,11 @@ font-size: 15px;}
 }
 .pad_stt{
   padding:20px !important;
+}
+#password_form{
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 0px 10px 0 #ccc;
+  padding: 20px;
 }

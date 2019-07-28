@@ -2,7 +2,7 @@
 <div class="clearfix"></div>
 
 
-<footer class="footer" id="" style="background: #000 url(assets/images/footer_bg8.png);">
+<footer class="footer" id="" style="background: #000 url(assets/images/footer_bg8.png);border-top: #e01112 1px solid;">
 
 <?php echo get_partial('content_footer'); ?>
  
