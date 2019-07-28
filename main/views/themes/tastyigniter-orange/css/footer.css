@@ -28,9 +28,13 @@
 .footer-bottom p a { color: #e93e21; }
 .footer .footer-social ul li a { display: block; font-size: 16px; color: #ffffff; background: rgba(0, 0, 0, 0.3); border-radius: 50%; width: 50px; height: 50px; line-height: 50px; text-align: center; }
 .footer .footer-social ul li a:hover { background: #ff0f17; }
-
+.footer .nav_stt ul li a { display: block ;padding:0 10px; font-size: 16px; color: #ffffff;  line-height: 50px; text-align: center;    text-decoration: none; }
 /*  Tooltip Styles */
-
+.nav_stt ul li{display:inline-block!important;font-size:14px;line-height:28px;color:#4a90e2;border-top:none!important;border-bottom:none!important}
+.nav_stt ul li:not(:last-child)::after{    content: ' |' !important;
+    position: absolute;
+    top: 11px;    color: #b75858;
+    padding: 0 32px;}
 /* Base styles for the element that has a tooltip */
 .footer-social [data-tooltip], .footer-social .tooltip { position: relative; cursor: pointer; }
 

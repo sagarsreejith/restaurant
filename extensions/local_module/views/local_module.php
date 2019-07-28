@@ -62,7 +62,7 @@ if($rsegment !="home"){
          </div>
 		 <div class="clearfix"></div>
 		 
-		 <div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-6 center-block' : 'col-sm-12' ?>">
+		 <div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-8 center-block' : 'col-sm-12' ?>">
 				<div class="local-alert"></div>
 				<?php if (!empty($local_alert)) { ?>
 					<?php echo $local_alert; ?>

@@ -2,7 +2,7 @@
 <div class="clearfix"></div>
 
 
-<footer class="footer" id="" style="background-image: url(assets/images/bg.jpg);">
+<footer class="footer" id="" style="background: #000 url(assets/images/footer_bg8.png);">
 
 <?php echo get_partial('content_footer'); ?>
  
@@ -11,6 +11,18 @@
     <div class="row col_footer">
                
 
+    <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
+          <div class="nav_stt">
+            <ul class="">
+            <li class=""><a role="presentation"  href="<?php echo site_url(''); ?>"  active"#">Home</a></li>
+			<li class=""><a href="<?php echo site_url('#about'); ?>">About</a></li>
+			<li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
+            <li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
+			<li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
+           
+             
+            </ul>
+          </div>
 <div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-sm-2 offset-sm-2" style=""></div>
               <!--  <div class="col-xs-4 col-sm-3">
                     <div class="footer-links">

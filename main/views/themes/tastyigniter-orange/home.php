@@ -120,7 +120,7 @@ a.gotop {
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
-            <div class="title-separator">
+            <div class="title-separator"> 
              <img src="assets/images/food_icon.png">
              <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Lugma</h2>
             </div>
@@ -361,7 +361,16 @@ a.gotop {
 
 
 
-          <section class="">
+          <section class="map_sec">
+          <div class="col-lg-12 col-md-12">
+          <div class="section-title text-center">
+            <div class="title-separator">
+             <img src="assets/images/food_icon.png">
+             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Locations</h2>
+            </div>
+          
+          </div>
+        </div>
             <div class="content-wrap">
                 
                 <div id="map_home" style="height:500px; width:100%"></div>
@@ -555,7 +564,7 @@ function initMapHome() {
   for (i = 0; i < locations.length; i++) {
     marker = new google.maps.Marker({
 	  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-	  icon: "assets/images/restaurant_mapmarker12.png",
+	  icon: "assets/images/restaurant_mapmarker13.png",
       map: map,
     })
 

@@ -77,7 +77,7 @@
 							<?php //echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
 						</div> -->
 						<div class="row">
-							<div class="col-xs-8 col-sm-9 col-md-9">
+							<div class="col-xs-8 col-sm-9 col-md-9  col-md-12 connt_clr">
 								<span class="button-checkbox">
 									<button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
 			                        <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
@@ -90,7 +90,7 @@
 
 						<?php if ($registration_terms) {?>
 							<div class="row">
-								<div class="col-xs-8 col-sm-9 col-md-9">
+								<div class="col-xs-8 col-sm-9 col-md-12 connt_clr">
 									<span class="button-checkbox">
 										<button id="terms-condition" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_terms_agree'); ?></button>
 				                        <input type="checkbox" name="terms_condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>

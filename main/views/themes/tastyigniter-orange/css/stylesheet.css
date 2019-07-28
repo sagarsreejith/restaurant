@@ -47,8 +47,8 @@ body {
       /* padding: 15px; */
     /* border-radius: 4px; */
     /* margin-bottom: 20px; */
-    padding: 10px 0;
-    background: #fff;
+    padding: 0px 0;
+
     color: #fff;
   
 }
@@ -821,10 +821,12 @@ padding: 0px 15px 0;
   border-top: 0px none;
 }
 .menu-item-wrapper {
-  background: #ececec;
+  background: #fff;
   padding: 20px 10px;
-  box-shadow: 0 0 2px #ccc;
-  margin:0px 0 0;
+  box-shadow: 0 0 7px rgba(173, 173, 173, 0.32);
+  margin: 0px 0 0;
+  border: 1px solid #f2f2f2;
+  min-height: 135px;
 }
 
 .menu-name {
@@ -853,7 +855,7 @@ line-height: 22px;
 .menu-button .btn-cart {
 border: 0 none;
 color:#FFF;
-padding: 3px 8px;
+padding: 0px 3px;
 }
 .menu-desc{
   font-size:15px !important;
@@ -1660,7 +1662,7 @@ border-right:6px solid red;
     
     }
     .step-item h4 {
-      font-size: 11px;
+      font-size: 10px;
           line-height: 14px;
   }
  

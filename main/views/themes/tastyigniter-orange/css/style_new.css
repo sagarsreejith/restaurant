@@ -761,7 +761,7 @@ margin:0 auto;
 .object_right_img{
 position: absolute;
   right: 0;
-  top: 705px;
+  top: 687px;
 }
 
 .maskimg {
@@ -1472,6 +1472,7 @@ box-shadow:none;
 }
 .text_ft a{
   text-decoration:none;
+  font-weight:900;
 }
 
 /*---resposive--*/
@@ -1499,7 +1500,7 @@ box-shadow:none;
   .object_right_img {
     position: absolute;
     right: 0;
-    top: 587;
+    top: 565px;
   }
 
 .book-menu p {
@@ -1525,10 +1526,11 @@ padding: 0 30px;
     display: block;
     margin:0;
   }
+  .object_right_img{display:none;}
 }
 @media only screen and (max-width: 768px) {
   
-  .object_right_img{display:none;}
+
   .icon_sec{display:none;}
 
 .object_right_img {
@@ -1703,7 +1705,7 @@ margin: 30px 0;
 #local-alert .alert p{    padding: 15px;
   text-align: center;
   font-size: 15px;}
-  #local-alert .alert button{opacity:1 !important;line-height: 0.35px;}
+  #local-alert .alert button{opacity:1 !important;line-height: 8.7px;}
   #main-header .navbar-nav > li > a.active{background:red}
   #map_home .gm-style .gm-style-iw-c{       padding: 15px !important;
     /* text-align: center !important; */
@@ -1711,3 +1713,68 @@ margin: 30px 0;
 }
 #payment .list-group-item{padding:0}
 #payment .radio{margin:0}
+.btn_chk  button{    border: none;
+  background: none;
+  color: #333;}
+  .btn_chk  .btn.active{
+    box-shadow:none;
+    color:#333;
+    border:none;
+  }
+
+.st_res b {    width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 10px;}
+  .footer:before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.map_sec{
+  position: relative;
+  padding: 20px 0 0;
+}
+.mt_st{
+  margin-bottom:40px;
+}
+
+#content-left {
+  background: rgba(245, 245, 245, 0.3803921568627451);
+  height: auto;
+  padding: 0;
+}
+#content-left .list-group  a{
+border-bottom: 1px solid #e5e5e5 !important;
+padding: 15px !important;
+font-size: 15px;}
+
+#details table{
+  color:#000;
+}
+#details table tr td:first-child{
+  text-align: right;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  border-top:none;
+}
+
+ .list-group-item{
+  color:#333 !important;
+  border:1px solid #ccc;
+}
+
+.order-lists tr td,.order-lists tr th,.reviews-list tr td,.reviews-list tr th{
+  color:#333;
+}
+.connt_clr{
+  color:#333;
+}
+.pad_stt{
+  padding:20px !important;
+}

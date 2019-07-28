@@ -147,7 +147,7 @@
                                                             parseFloat("<?php echo $location_lat; ?>"),
                                                             parseFloat("<?php echo $location_lng; ?>")
                                                         );
-alert(latlng);
+
                                                         function initializeMap() {
                                                             var html = "<b>" + local_name + "</b> <br/>" +
                                                                 "<?php echo $location_address; ?><br/>" +

@@ -1,6 +1,6 @@
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
-<div id="page-content">
+<div id="page-content" class="mt_st">
 	<div class="container">
 		<div class="row">
 			<?php echo get_partial('content_left'); ?>
@@ -8,7 +8,7 @@
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
 					$class = "col-sm-5 col-md-6";
 				} else if (partial_exists('content_left') OR partial_exists('content_right')) {
-					$class = "col-sm-8 col-md-9";
+					$class = "col-sm-8 col-md-8";
 				} else {
 					$class = "col-md-12";
 				}
@@ -361,7 +361,7 @@
 										<div class="col-sm-12 form-group">
 											<div class="input-group btn_chk">
 												<span class="input-group-addon button-checkbox">
-													<button type="button" class="btn " data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
+													<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
 													<input type="checkbox" name="terms_condition" id="terms-condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
 												</span>
 												<span class="form-control"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>
@@ -388,7 +388,7 @@
 					</div>
 				</div>
 			</div>
-			<?php echo get_partial('content_right', 'col-sm-4 col-md-3'); ?>
+			<?php echo get_partial('content_right', 'col-sm-4 col-md-4'); ?>
 			<?php echo get_partial('content_bottom'); ?>
 		</div>
 	</div>
