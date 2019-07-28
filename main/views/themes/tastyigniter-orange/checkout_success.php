@@ -42,7 +42,7 @@
 							
 			                    <div class="col-sm-12 clr_prog">
 								
-			                        <p><?php echo $order_details; ?></p>
+			                        <p class="st_res"><?php echo $order_details; ?></p>
 			                    </div>
 			                    <div class="col-sm-12 clr_prog">
 									<?php if ($delivery_address) { ?>
@@ -50,7 +50,7 @@
 										<address><?php echo $delivery_address; ?></address>
 									<?php } ?>
 			                    </div>
-								<div class="col-sm-12 clr_prog">
+								<div class="col-sm-12 clr_prog text-center">
 									<strong><?php echo lang('text_your_local'); ?></strong><br />
 									<strong><?php echo $location_name; ?></strong><br />
 									<address><?php echo $location_address; ?></address>

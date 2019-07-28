@@ -9,7 +9,7 @@
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
 					$class = "col-sm-6 col-md-6";
 				} else if (partial_exists('content_left') OR partial_exists('content_right')) {
-					$class = "col-sm-9 col-md-9";
+					$class = "col-sm-9 col-md-9 pad_stt";
 				} else {
 					$class = "col-md-12";
 				}

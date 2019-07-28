@@ -1,6 +1,6 @@
 <?php if ($categories) { ?>
 	<div id="searchText" class="form-group has-feedback has-search has-clear">
-                <input type="text" name="catsearch" id="catsearch" class="form-control text-center search" placeholder="Search" >
+                <input type="text" name="catsearch" id="catsearch" class="form-control search" placeholder="Search" >
                 <span class="fa fa-search fa-2x form-control-feedback"></span>
                 <span class="form-control-feedback form-control-clear fa fa-times fa-2x hidden"  onClick="clearSearch();"></span>
 	</div>
@@ -189,12 +189,12 @@
 									<div class="menu-item-wrapper row">
 										<?php if ($show_menu_images === '1' AND !empty($menu['menu_photo'])) { ?>
 									
-											<div class="menu-thumb col-xs-2 col-sm-2 wrap-none wrap-right">
+											<div class="menu-thumb col-xs-2 col-sm-3 wrap-none wrap-right">
 												<img class="img-responsive img-thumbnail" alt="<?php echo $menu['menu_name']; ?>" src="<?php echo $menu['menu_photo']; ?>">
 											</div>
 										<?php } ?>
 
-										<div class="menu-content <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-6 col-sm-6' : 'col-xs-8'; ?> wrap-none wrap-right">
+										<div class="menu-content <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-6 col-sm-5' : 'col-xs-8'; ?> wrap-none wrap-right">
 											<span class="menu-name"><b><?php echo character_limiter($menu['menu_name'], 80); ?></b></span>
 											<span class="menu-desc small">
 												<?php echo character_limiter($menu['menu_description'], 120); ?>

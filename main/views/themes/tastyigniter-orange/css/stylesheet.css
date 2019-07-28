@@ -47,8 +47,8 @@ body {
       /* padding: 15px; */
     /* border-radius: 4px; */
     /* margin-bottom: 20px; */
-    padding: 10px 0;
-    background: #fff;
+    padding: 0px 0;
+
     color: #fff;
   
 }
@@ -821,10 +821,12 @@ padding: 0px 15px 0;
   border-top: 0px none;
 }
 .menu-item-wrapper {
-  background: #ececec;
+  background: #fff;
   padding: 20px 10px;
-  box-shadow: 0 0 2px #ccc;
-  margin:0px 0 0;
+  box-shadow: 0 0 7px rgba(173, 173, 173, 0.32);
+  margin: 0px 0 0;
+  border: 1px solid #f2f2f2;
+  min-height: 135px;
 }
 
 .menu-name {
@@ -853,7 +855,7 @@ line-height: 22px;
 .menu-button .btn-cart {
 border: 0 none;
 color:#FFF;
-padding: 3px 8px;
+padding: 0px 3px;
 }
 .menu-desc{
   font-size:15px !important;
@@ -1122,9 +1124,7 @@ margin-top: 30px;
 
 
 /*** Footer  ***/
-#page-footer {
 
-}
 #page-footer .main-footer, #page-footer .main-footer a {
   color: #9BA1A7;
 }
@@ -1154,8 +1154,6 @@ margin: 10px 0;
 .footer-links i {
   margin-right: 5px;
   color: #ed561a;
-}
-.main-footer .footer-links li {
 }
 .main-footer .contact-info p {
 padding-bottom: 20px;
@@ -1201,11 +1199,11 @@ body .bootstrap-timepicker-widget table td a i {
 .order-time-group .btn-group > .btn {
   width: 50%;
 }
-.order-time-group .date-input-addon,
+/* .order-time-group .date-input-addon,
 .order-time-group .time-input-addon {
   /*background-color: #EEE;*/
-  /*border: 1px solid #ddd;*/
-}
+  /*border: 1px solid #ddd;
+} */
 .order-time-group .time-input-addon .hours,
 .order-time-group .time-input-addon .minutes {
   width: 50%;
@@ -1434,7 +1432,6 @@ padding-right:0 !important;
   z-index: 99999 !important;
 }
 #catsearch {
-  border-radius: 5px;
   height: 40px;
   background: #e7e7e7;
 }
@@ -1458,7 +1455,7 @@ padding-right:0 !important;
 }
 .has-search .form-control {
     padding-right: 12px;
-    padding-left: 34px;
+    padding-left: 10px;
 }
 .sticky {
   position: fixed;
@@ -1665,7 +1662,7 @@ border-right:6px solid red;
     
     }
     .step-item h4 {
-      font-size: 11px;
+      font-size: 10px;
           line-height: 14px;
   }
  

@@ -1,6 +1,6 @@
-<?php $path_image = '../';
-if($rsegment ==="home"){
-	$path_image = '';
+<?php $path_image = '';
+if($rsegment !="home"){
+	$path_image = '../';
 }
 ?>
 <div class="row">
@@ -36,7 +36,8 @@ if($rsegment ==="home"){
                      <?php if ($location_search_mode === 'multi') { ?>
                      <form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
                         <div class="col-md-7 col-sm-7 col-xs-12 nopad">
-                           <!-- <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span> -->
+                           <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span>
+                           <!-- <span><img src="assets/images/new_search.svg" alt="search location"></span> -->
                            <select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
                               <option></option>
                               <?php foreach($local_areas as $area){ ?>
@@ -61,7 +62,7 @@ if($rsegment ==="home"){
          </div>
 		 <div class="clearfix"></div>
 		 
-		 <div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-6 center-block' : 'col-sm-12' ?>">
+		 <div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-8 center-block' : 'col-sm-12' ?>">
 				<div class="local-alert"></div>
 				<?php if (!empty($local_alert)) { ?>
 					<?php echo $local_alert; ?>

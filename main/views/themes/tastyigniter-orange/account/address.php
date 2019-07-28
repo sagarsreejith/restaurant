@@ -52,7 +52,7 @@
 
 					<div class="col-md-12">
 						<div class="row">
-							<div class="buttons col-sm-6">
+							<div class="buttons col-sm-12">
 								<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
 								<a class="btn_add" href="<?php echo $continue_url; ?>"><?php echo lang('button_add'); ?></a>
 							</div>

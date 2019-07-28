@@ -120,7 +120,7 @@ a.gotop {
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="section-title text-center">
-            <div class="title-separator">
+            <div class="title-separator"> 
              <img src="assets/images/food_icon.png">
              <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Lugma</h2>
             </div>
@@ -361,7 +361,16 @@ a.gotop {
 
 
 
-          <section class="">
+          <section class="map_sec">
+          <div class="col-lg-12 col-md-12">
+          <div class="section-title text-center">
+            <div class="title-separator">
+             <img src="assets/images/food_icon.png">
+             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Locations</h2>
+            </div>
+          
+          </div>
+        </div>
             <div class="content-wrap">
                 
                 <div id="map_home" style="height:500px; width:100%"></div>
@@ -429,22 +438,22 @@ a.gotop {
 <?php echo get_footer(); ?><div class="clearfix"></div>
 <script>
   
-  $(function() {
+  // $(function() {
     
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
+  //   $('a[href*=#]:not([href=#])').click(function() {
+  //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //       var target = $(this.hash);
+  //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //       if (target.length) {
+  //         $('html,body').animate({
+  //           scrollTop: target.offset().top
+  //         }, 1500);
+  //         return false;
+  //       }
+  //     }
+  //   });
     
-  });
+  // });
 
 
 $(document).ready(function(){
