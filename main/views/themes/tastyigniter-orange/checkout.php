@@ -356,7 +356,7 @@
 										<div class="col-sm-12 form-group">
 											<div class="input-group btn_chk">
 												<span class="input-group-addon button-checkbox">
-													<button type="button" class="btn " data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
+													<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
 													<input type="checkbox" name="terms_condition" id="terms-condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
 												</span>
 												<span class="form-control"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>

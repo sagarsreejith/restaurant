@@ -1711,3 +1711,12 @@ margin: 30px 0;
 }
 #payment .list-group-item{padding:0}
 #payment .radio{margin:0}
+.btn_chk  button{    border: none;
+  background: none;
+  color: #333;}
+  .btn_chk  .btn.active{
+    box-shadow:none;
+    color:#333;
+    border:none;
+  }
+ 

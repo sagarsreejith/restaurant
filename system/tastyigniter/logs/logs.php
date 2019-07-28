@@ -225,3 +225,67 @@ ERROR - 2019-07-27 13:22:25 --> Could not find the language line "help_maps_api_
 ERROR - 2019-07-27 13:22:33 --> Could not find the language line "label_site_url"
 ERROR - 2019-07-27 13:22:33 --> Could not find the language line "help_maps_api_key"
 ERROR - 2019-07-27 16:45:52 --> Severity: Parsing Error --> syntax error, unexpected ':' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\checkout.php 278
+ERROR - 2019-07-27 17:29:22 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 17:29:22 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 17:29:21 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c5fc1167d6@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c5fc11680b&quot;
+</pre>
+ERROR - 2019-07-27 17:29:23 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-27 17:29:23 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sat, 27 Jul 2019 17:29:22 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3c5fc220a57@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3c5fc220aa4&quot;
+</pre>
+ERROR - 2019-07-27 17:29:24 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:29:24 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:23 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:23 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:27 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:27 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:32 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:32 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:58 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:31:58 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:32:08 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:32:09 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:33:31 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:33:31 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:35:30 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:35:30 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:35:55 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:35:56 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:36:12 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:36:12 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:37:26 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:37:26 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:37:38 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:37:38 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:41:55 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:41:55 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:42:01 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:42:01 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:42:20 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:42:20 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:42:45 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:42:45 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:45:31 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:45:31 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:46:08 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:46:08 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:46:41 --> 404 Page Not Found: 
+ERROR - 2019-07-27 17:46:41 --> 404 Page Not Found: 

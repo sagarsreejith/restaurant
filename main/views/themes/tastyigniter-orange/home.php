@@ -438,7 +438,7 @@ a.gotop {
         if (target.length) {
           $('html,body').animate({
             scrollTop: target.offset().top
-          }, 1500);
+          }, 1000);
           return false;
         }
       }
@@ -555,7 +555,7 @@ function initMapHome() {
   for (i = 0; i < locations.length; i++) {
     marker = new google.maps.Marker({
 	  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-	  icon: "assets/images/restaurant_mapmarker12.png",
+	  icon: "assets/images/restaurant_mapmarker13.png",
       map: map,
     })
 

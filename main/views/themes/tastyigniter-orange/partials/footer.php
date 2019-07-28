@@ -11,6 +11,17 @@
     <div class="row col_footer">
                
 
+    <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
+          <div class="nav_stt">
+            <ul class="list-inline">
+              <li><a href="#">Home  </a> </li>
+              <li><a href="#">About  </a> </li>
+              <li><a href="#">Privacy Policy  </a> </li>
+              <li><a href="#">Gallery  </a> </li>
+              <li><a href="#">Contact  </a> </li>
+             
+            </ul>
+          </div>
 <div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-sm-2 offset-sm-2" style=""></div>
               <!--  <div class="col-xs-4 col-sm-3">
                     <div class="footer-links">
