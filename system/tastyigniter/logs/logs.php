@@ -1,5 +1,11 @@
-ERROR - 2019-07-28 11:00:18 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 11:00:18 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 11:00:17 +0300
+ERROR - 2019-07-28 15:27:43 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:27:44 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:27:45 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:27:46 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:27:46 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:27:46 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:57:59 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 15:57:59 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 15:57:58 +0300
 From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
@@ -7,12 +13,12 @@ User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d561146b23@gmail.com&gt;
+Message-ID: &lt;5d3d9bd647287@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d561146b37&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9bd64729a&quot;
 </pre>
-ERROR - 2019-07-28 11:00:19 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 11:00:19 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 11:00:18 +0300
+ERROR - 2019-07-28 15:58:00 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 15:58:00 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 15:57:59 +0300
 From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
@@ -20,50 +26,26 @@ User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d5612509a0@gmail.com&gt;
+Message-ID: &lt;5d3d9bd74ef7e@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d5612509c1&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9bd74ef9e&quot;
 </pre>
-ERROR - 2019-07-28 11:00:19 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:00:20 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:03:15 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:03:15 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:05:03 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:05:03 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:05:40 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:05:40 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:06:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:06:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:06:38 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:06:38 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:08:20 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:08:20 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:25 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:25 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:25 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:26 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:26 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:26 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:31 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:32 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:32 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:34 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 11:48:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:39:06 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:39:09 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:46:36 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:46:40 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:47:02 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:47:09 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:47:27 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:49:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:49:44 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:49:54 --> 404 Page Not Found: 
-ERROR - 2019-07-28 12:50:33 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:04:01 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 13:08:21 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 13:08:21 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 13:08:20 +0300
+ERROR - 2019-07-28 15:58:01 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:58:01 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:58:46 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:58:46 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:59:00 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:59:00 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:59:35 --> 404 Page Not Found: 
+ERROR - 2019-07-28 15:59:35 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:00:02 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:00:16 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:00:17 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:00:17 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:00:23 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:00:23 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:03:54 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 16:03:54 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 16:03:53 +0300
 From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
@@ -71,12 +53,12 @@ User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d7414d87ba@gmail.com&gt;
+Message-ID: &lt;5d3d9d39de370@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d7414d87cf&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9d39de383&quot;
 </pre>
-ERROR - 2019-07-28 13:08:22 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 13:08:22 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 13:08:21 +0300
+ERROR - 2019-07-28 16:03:55 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 16:03:55 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 16:03:54 +0300
 From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
@@ -84,131 +66,85 @@ User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d7415e1809@gmail.com&gt;
+Message-ID: &lt;5d3d9d3ae78c3@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d7415e182c&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9d3ae78ea&quot;
 </pre>
-ERROR - 2019-07-28 13:08:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:08:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:08:45 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:08:45 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:10:15 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:10:15 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:29 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:30 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:38 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:38 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:47 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:47 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:50 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:50 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:55 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:22:55 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:24:51 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:24:51 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:10 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:10 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:34 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:34 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:40 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:40 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:46 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:26:47 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:29:15 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:29:15 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:30:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:30:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:31:02 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:31:02 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:32:13 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:32:13 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:32:19 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:32:19 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:32:43 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:32:44 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:20 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:20 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:31 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:31 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:41 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:41 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:56 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:33:56 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:34:16 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:34:16 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:34:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:34:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:35:32 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:35:32 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:35:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:35:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:13 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:13 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:54 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:54 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:56 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:56 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:58 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:36:58 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:37:02 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:37:02 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:38:03 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:38:04 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:38:06 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:38:06 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:38:30 --> 404 Page Not Found: 
-ERROR - 2019-07-28 13:38:30 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:14:08 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:14:08 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:16:24 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:16:25 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:16:49 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:16:49 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:17:54 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:17:54 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:17:59 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:17:59 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:14 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:14 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:28 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:28 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:30 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:31 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:45 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:45 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:49 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:18:49 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:06 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:06 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:08 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:08 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:24 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:24 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:49 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:49 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:58 --> 404 Page Not Found: 
-ERROR - 2019-07-28 14:19:58 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:30 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:30 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:32 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:32 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:33 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:33 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:34 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:34 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:36 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:05:36 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:39 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:39 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:41 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:41 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:42 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:42 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:42 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:43 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:44 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:44 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:48 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:06:48 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:03:56 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:10:40 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:11:44 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 16:11:44 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 16:11:43 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3d9f0f43a2c@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9f0f43a3f&quot;
+</pre>
+ERROR - 2019-07-28 16:11:45 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 16:11:45 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 16:11:44 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3d9f104ea32@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9f104ea51&quot;
+</pre>
+ERROR - 2019-07-28 16:11:45 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:11:45 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:11:54 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:12:01 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:12:02 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:12:04 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:13:29 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:14:13 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:14:13 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:14:30 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:14:30 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:14:59 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:16:50 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:16:54 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:17:02 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:18:26 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:20:01 --> 404 Page Not Found: 
+ERROR - 2019-07-28 16:20:33 --> 404 Page Not Found: 
+ERROR - 2019-07-28 17:06:53 --> 404 Page Not Found: 
+ERROR - 2019-07-28 17:06:53 --> 404 Page Not Found: 
+ERROR - 2019-07-28 17:51:26 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 17:51:26 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 17:51:25 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3db66d87b5c@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3db66d87b6f&quot;
+</pre>
+ERROR - 2019-07-28 17:51:27 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-28 17:51:27 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 17:51:26 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d3db66e8e943@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3db66e8e95d&quot;
+</pre>
+ERROR - 2019-07-28 17:51:28 --> 404 Page Not Found: 
+ERROR - 2019-07-28 17:51:28 --> 404 Page Not Found: 
+ERROR - 2019-07-28 17:52:09 --> 404 Page Not Found: 
+ERROR - 2019-07-28 17:52:10 --> 404 Page Not Found: 

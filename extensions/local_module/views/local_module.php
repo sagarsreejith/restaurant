@@ -12,7 +12,7 @@ if($rsegment !="home"){
          <div class="section-title text-center">
             <div class="title-separator">
                <img src="<?php echo $path_image;?>assets/images/food_icon.png">
-               <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Food</h2>
+               <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
             </div>
          </div>
       </div>

@@ -16,7 +16,7 @@
 .footer .newsletter .newsletter-input { position: relative; margin-top: 20px; }
 .footer .newsletter .newsletter-input input { background: rgba(255, 255, 255, 0.05); color: #ffffff; border: 0px; border-radius: 3px; }
 .footer .newsletter .newsletter-input input:focus { background: rgba(255, 255, 255, 0.06); }
-.footer .newsletter .newsletter-input i { color: #e93e21; position: absolute; right: 15px; top: 15px; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; }
+.footer .newsletter .newsletter-input i { color: #6f1e31; position: absolute; right: 15px; top: 15px; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; }
 .footer .newsletter .newsletter-input i:hover { color: #ffffff; }
 .footer .tweet .tweet-block .icon { display: table-cell; }
 .footer .tweet .tweet-block .content { display: table-cell; padding-left: 20px; }
@@ -25,15 +25,15 @@
 
 /*footer-bottom*/
 .footer .footer-bottom { background: transparent;     padding: 20px 0px 0;  position: relative; }
-.footer-bottom p a { color: #e93e21; }
+.footer-bottom p a { color: #6f1e31; }
 .footer .footer-social ul li a { display: block; font-size: 16px; color: #ffffff; background: rgba(0, 0, 0, 0.3); border-radius: 50%; width: 50px; height: 50px; line-height: 50px; text-align: center; }
-.footer .footer-social ul li a:hover { background: #ff0f17; }
+.footer .footer-social ul li a:hover { background: #6f1e31; }
 .footer .nav_stt ul li a { display: block ;padding:0 10px; font-size: 16px; color: #ffffff;  line-height: 50px; text-align: center;    text-decoration: none; }
 /*  Tooltip Styles */
 .nav_stt ul li{display:inline-block!important;font-size:14px;line-height:28px;color:#4a90e2;border-top:none!important;border-bottom:none!important}
 .nav_stt ul li:not(:last-child)::after{    content: ' |' !important;
     position: absolute;
-    top: 11px;    color: #b75858;
+    top: 11px;    color: #ab9da1;
     padding: 0 32px;}
 /* Base styles for the element that has a tooltip */
 .footer-social [data-tooltip], .footer-social .tooltip { position: relative; cursor: pointer; }
@@ -48,14 +48,14 @@
 .footer-social .tooltip:before, .footer-social [data-tooltip]:before { z-index: 1001; border: 6px solid transparent; background: transparent; content: ""; }
 
 /* Base styles for the tooltip's content area */
-.footer-social .tooltip:after, .footer-social [data-tooltip]:after { z-index: 1000; padding: 8px; width: 100px; text-align: center; background-color: #ff0e17; color: #fff; content: attr(data-tooltip); font-size: 14px; line-height: 1.2; border-radius: 3px; }
+.footer-social .tooltip:after, .footer-social [data-tooltip]:after { z-index: 1000; padding: 8px; width: 100px; text-align: center; background-color: #6f1e31; color: #fff; content: attr(data-tooltip); font-size: 14px; line-height: 1.2; border-radius: 3px; }
 .footer-2 .footer-social .tooltip:after, .footer-2 .footer-social [data-tooltip]:after { border-radius: 0; }
 
 /* Directions */
 
 /* Top (default) */
 .footer-social [data-tooltip]:before, .footer-social [data-tooltip]:after, .footer-social .tooltip:before, .footer-social .tooltip:after, .footer-social .tooltip-top:before, .footer-social .tooltip-top:after { bottom: 100%; left: 50%; }
-.footer-social [data-tooltip]:before, .footer-social .tooltip:before, .footer-social .tooltip-top:before { margin-left: -6px; margin-bottom: -12px; border-top-color: #ff0e17; }
+.footer-social [data-tooltip]:before, .footer-social .tooltip:before, .footer-social .tooltip-top:before { margin-left: -6px; margin-bottom: -12px; border-top-color: #6f1e31; }
 
 /* Horizontally align top/bottom tooltips */
 .footer-social [data-tooltip]:after, .footer-social .tooltip:after, .footer-social .tooltip-top:after { margin-left: -50px; }
@@ -64,7 +64,7 @@
 .footer-2 .bottom-row h4, .footer-2 .newsletter-input, .footer-2 ul.list-inline { display: inline-block; vertical-align: middle; margin-bottom: 0; }
 .footer-2 .footer-bottom { margin-top: 3px; padding-bottom: 0; border: 1px solid #dcdcdc; margin-top: 60px; padding: 22px 0; }
 .footer-2 .footer-bottom p { margin: 0; }
-.footer-2 .footer-social ul li a { background: rgba(0, 0, 0, 0.1); color: #ff0e17; }
+.footer-2 .footer-social ul li a { background: rgba(0, 0, 0, 0.1); color: #6f1e31; }
 .footer-2 .footer-social ul li a:hover { color: #fff; }
 
 /*--Footer 3 --*/
@@ -73,10 +73,10 @@
 .footer-3 .contact { margin-bottom: 40px; }
 .footer-3 .location h4 { margin-bottom: 20px; }
 .footer-3  .tags ul li a { color: #9d9d9d; border-color: #9d9d9d; }
-.footer-3  .tags ul li a:hover { color: #fff; border-color: #e93e21; }
+.footer-3  .tags ul li a:hover { color: #fff; border-color: #6f1e31; }
 .footer-3  .footer-bottom { padding: 25px 0px; margin-top: 60px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
 .footer-3  .footer-bottom a { color: #9d9d9d; }
-.footer-3  .footer-bottom a:hover { color: #e93e21; }
+.footer-3  .footer-bottom a:hover { color: #6f1e31; }
 
 /*--Footer 4 --*/
 .footer-4 { background-image: url(../images/bg/08.jpg); background-position: 0 0; }
@@ -85,7 +85,7 @@
 .footer-4 .close-day span.flaticon-closed-sign { float: none; display: inline-block; vertical-align: top; margin-right: 10px; }
 .footer-4 .close-day em { padding-top: 28px; display: inline-block; }
 .footer-4 span.flaticon-closed-sign:before { font-size: 60px; line-height: 60px; }
-.footer-4 .opening-time li { color: #e93e21; }
+.footer-4 .opening-time li { color: #6f1e31; }
 .footer-4 .opening-time li span.line { float: none; margin-left: 8px; }
 .footer-4 .opening-time li span { text-transform: uppercase; color: #fff; }
 .footer-4 .contact i { padding-right: 8px; }
@@ -100,13 +100,13 @@
 .footer-4 .blog-meta span { color: #fff; font-size: 12px; }
 .footer-4 .footer-bottom { padding-top: 0; margin-top: 80px; }
 .footer-4 .footer-social { margin-top: -25px; }
-.footer-4 .footer-social ul li a { background: #e93e21; border-radius: 50%; }
+.footer-4 .footer-social ul li a { background: #6f1e31; border-radius: 50%; }
 .footer-4 .copyright, .footer-4 .fooer-links { padding-top: 30px; }
 .footer-4 .fooer-links li { position: relative; padding-right: 15px; }
 .footer-4 .fooer-links li:after { content: "|"; display: block; margin: 0 auto; position: absolute; top: 0; right: 0; color: #fff; }
 .footer-4 .fooer-links li:last-child:after { display: none; }
 .footer-4 .fooer-links a { color: #fff; }
-.footer-4 .fooer-links a:hover { color: #e93e21; }
+.footer-4 .fooer-links a:hover { color: #6f1e31; }
 .footer-4 strong { color: #ffffff; }
 
 /*-- Footer 5 --*/
@@ -118,14 +118,14 @@
 .footer-5 .opening-time li span { color: #9d9d9d; }
 .footer-5 .footer-bg { margin-bottom: -40px; margin-right: 20px; margin-left: -20px; }
 .footer-5 .newsletter .newsletter-input input { background: rgba(0, 0, 0, 0); border: 1px solid #e5e5e5; color: #1e2327; padding-right: 70px; }
-.footer-5 .newsletter .newsletter-input i { background: #e93e21; top: 1px; right: 0; color: #ffffff; padding: 0 18px; height: 43px; line-height: 43px; border-radius: 0px 3px 3px 0px; }
+.footer-5 .newsletter .newsletter-input i { background: #6f1e31; top: 1px; right: 0; color: #ffffff; padding: 0 18px; height: 43px; line-height: 43px; border-radius: 0px 3px 3px 0px; }
 .footer.footer-5 .newsletter .newsletter-input i { color: #ffffff; }
 .footer-5 .newsletter .newsletter-input i:hover { background: #1e2327; }
-.footer-5 .newsletter .newsletter-input input:focus { background: rgba(0, 0, 0, 0); border: 1px solid #e93e21; }
+.footer-5 .newsletter .newsletter-input input:focus { background: rgba(0, 0, 0, 0); border: 1px solid #6f1e31; }
 .footer-5 .social-ico { margin-bottom: 12px; }
 .social-ico { margin-top: 20px; }
 .social-ico a { color: #9a9a9a; font-size: 16px; }
-.social-ico a:hover { color: #e93e21; }
+.social-ico a:hover { color: #6f1e31; }
 
 
 /*hack code ie 9*/
@@ -153,7 +153,7 @@
     color:#fff;
 }
 .text_ft a{
-    color:red;
+    color:#d65b78;
 }
 .cnt_div{
     float: left;

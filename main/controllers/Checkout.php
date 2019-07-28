@@ -524,8 +524,8 @@ class Checkout extends Main_Controller
 
 			foreach ($this->input->post('address') as $key => $address) {
 				$this->form_validation->set_rules('address[' . $key . '][address_id]', 'lang:label_address_id', 'xss_clean|trim');
-				$this->form_validation->set_rules('address[' . $key . '][address_1]', 'lang:label_address_1', 'xss_clean|trim|required|min_length[3]|max_length[128]');
-				$this->form_validation->set_rules('address[' . $key . '][city]', 'lang:label_city', 'xss_clean|trim|required|min_length[2]|max_length[128]');
+				$this->form_validation->set_rules('address[' . $key . '][address_1]', 'lang:label_address_1', 'xss_clean|trim|required|min_length[1]|max_length[128]');
+				$this->form_validation->set_rules('address[' . $key . '][city]', 'lang:label_city', 'xss_clean|trim|required|min_length[1]|max_length[128]');
 				$this->form_validation->set_rules('address[' . $key . '][state]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
 				$this->form_validation->set_rules('address[' . $key . '][postcode]', 'lang:label_postcode', 'xss_clean|trim|min_length[2]|max_length[10]');
 				$this->form_validation->set_rules('address[' . $key . '][country_id]', 'lang:label_country', 'xss_clean|trim|required|integer');

@@ -75,6 +75,10 @@
     position: absolute;
     width: 100%;
 }
+#main-header .logo img {
+    height: 70px !important;
+    width: 350px;
+}
 </style>
 		<header id="main-header">
 			<div class="container">
@@ -170,10 +174,10 @@
 			<?php } ?>
 <script>
 $(function(){
-    $('.nav a').filter(function(){
+    $('#main-header-menu-collapse a').filter(function(){
     return this.href==location.href}).parent().addClass('active').siblings().removeClass('active');
 
-    $('.nav a').click(function(){
+    $('#main-header-menu-collapse a').click(function(){
 		$(this).parent().addClass('active').siblings().removeClass('active')    
     });
 });

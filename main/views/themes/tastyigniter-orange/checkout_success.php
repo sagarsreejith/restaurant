@@ -1,8 +1,11 @@
 <?php echo get_header(); ?>
-<div id="page-content">
+<div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('../assets/images/d2.jpg');    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;">
 	<div class="container">
+		<div class="margin_st">
 		<div class="row">
-			<div class="col-xs-12 col-sm-9 center-block top-spacing-10">
+			<div class="col-xs-12 col-sm-9 center-block top-spacing-10 bg_payment">
 				<div class="row">
 					<div class="col-xs-12">
 						<ul class="nav nav-pills nav-justified thumbnail">
@@ -106,6 +109,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 </div>

@@ -57,25 +57,25 @@
 							<input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
 							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<select name="security_question" id="security-question" class="form-control input-lg" placeholder="<?php echo lang('label_s_question'); ?>">
 							<?php foreach ($questions as $question) { ?>
-								<option value="<?php echo $question['id']; ?>"><?php echo $question['text']; ?></option>
+								<option value="<?php //echo $question['id']; ?>"><?php echo $question['text']; ?></option>
 							<?php } ?>
 							</select>
-							<?php echo form_error('security_question', '<span class="text-danger">', '</span>'); ?>
+							<?php //echo form_error('security_question', '<span class="text-danger">', '</span>'); ?>
 						</div>
 						<div class="form-group">
-							<input type="text" id="security-answer" class="form-control input-lg" name="security_answer" value="<?php echo set_value('security_answer'); ?>" placeholder="<?php echo lang('label_s_answer'); ?>">
-							<?php echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
+							<input type="text" id="security-answer" class="form-control input-lg" name="security_answer" value="<?php //echo set_value('security_answer'); ?>" placeholder="<?php //echo lang('label_s_answer'); ?>">
+							<?php //echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
 						</div>
 						<div class="form-group">
 							<div class="input-group">
-         		 				<span><?php echo $captcha['image']; ?></span>
-								<input type="text" name="captcha" class="form-control" placeholder="<?php echo lang('label_captcha'); ?>" />
+         		 				<span><?php //echo $captcha['image']; ?></span>
+								<input type="text" name="captcha" class="form-control" placeholder="<?php //echo lang('label_captcha'); ?>" />
 							</div>
-							<?php echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
-						</div>
+							<?php //echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
+						</div> -->
 						<div class="row">
 							<div class="col-xs-8 col-sm-9 col-md-9  col-md-12 connt_clr">
 								<span class="button-checkbox">

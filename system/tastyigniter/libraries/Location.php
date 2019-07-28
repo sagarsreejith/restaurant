@@ -182,6 +182,16 @@ class Location {
 		return $address;
 	}
 
+	public function getRestGovCity($format = TRUE) {
+
+		return $this->local_info['location_city'];
+	}
+
+	public function getRestGovState($format = TRUE) {
+
+		return $this->local_info['location_state'];
+	}
+
 	public function getDefaultLocal() {
 		$main_address = $this->CI->config->item('main_address');
 
