@@ -1,6 +1,6 @@
 <?php $path_image = '';
 if($rsegment !="home"){
-	$path_image = '../';
+	$path_image = '';
 }
 ?>
 <div class="row">
