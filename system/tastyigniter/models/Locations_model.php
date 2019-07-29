@@ -101,6 +101,27 @@ class Locations_model extends TI_Model {
 		return $result;
 	}
 
+	public function getRestLocation($area, $order_type) {
+		$this->db->from('locations');
+
+		$this->db->where('location_city', $area);
+		
+		if($order_type == 'delivery'){
+			$this->db->where('offer_delivery', 1);
+		}
+		if($order_type == 'pickup'){
+			$this->db->where('offer_collection', 1);
+		}
+		$query = $this->db->get();
+		$result = array();
+
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+		}
+
+		return $result;
+	}
+
 	public function getGovernatesAreas() {
 		$this->db->from('governate_areas');
 

@@ -75,6 +75,10 @@
     position: absolute;
     width: 100%;
 }
+#main-header .logo img {
+    height: 70px !important;
+    width: 350px;
+}
 </style>
 		<header id="main-header">
 			<div class="container">

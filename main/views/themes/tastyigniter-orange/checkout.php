@@ -279,28 +279,28 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="form-group">
-											<div class="col-sm-6 text-right">
+											<div class="col-md-6 col-sm-6 col-xs-6 ">
 												<label for=""><?php echo lang('label_customer_name'); ?>  :</label>
 											</div>
-											<div class="col-sm-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
 												<?php echo $first_name; ?> <?php echo $last_name; ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<div class="form-group">
-											<div class="col-sm-6 text-right">
+											<div class="col-md-6 col-sm-6 col-xs-6 ">
 												<label for=""><?php echo lang('label_email'); ?> :</label>
 											</div>
-											<div class="col-sm-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
 												<?php echo $email; ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<div class="form-group">
-											<div class="col-sm-6 text-right">
+											<div class="col-md-6 col-sm-6 col-xs-6 ">
 												<label for=""><?php echo lang('label_telephone'); ?> : </label>
 											</div>
-											<div class="col-sm-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
 												<?php echo $telephone; ?>
 											</div>
 										</div>
@@ -319,19 +319,19 @@
 									</div>
 									<div class="col-sm-12">
 										<div class="form-group">
-											<div class="col-sm-6 text-right">
+											<div class="col-md-6 col-sm-6 col-xs-6 ">
 												<label for=""><?php echo lang('label_order_type'); ?> : </label>
 											</div>
-											<div class="col-sm-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
 												<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<div class="form-group">
-											<div class="col-sm-6 text-right">
+											<div class="col-md-6 col-sm-6 col-xs-6 ">
 												<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 
 											</div>
-											<div class="col-sm-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
 												<?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?>
 											</div>
 										</div>
@@ -342,10 +342,10 @@
 								<div class="row">
 									<div class="col-sm-12 form-group">
 									
-									<div class="col-sm-6 text-right">
+									<div class="col-md-6 col-sm-6 col-xs-12 ">
 										<label for=""><?php echo lang('label_payment_method'); ?> : </label>
 									</div>
-									<div class="col-sm-6 nopad">
+									<div class="col-md-6 col-sm-6 col-xs-12 nopad">
 										<div class="list-group">
 											<?php foreach ($payments as $payment) { ?>
 												<?php if (!empty($payment['data'])) { ?>

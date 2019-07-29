@@ -122,7 +122,7 @@ a.gotop {
           <div class="section-title text-center">
             <div class="title-separator"> 
              <img src="assets/images/food_icon.png">
-             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Lugma</h2>
+             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Zalatimo Sweets</h2>
             </div>
           
             <p>Whatever your occasion, We makes it one to remember!</p>

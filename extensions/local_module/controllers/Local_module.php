@@ -172,8 +172,9 @@ class Local_module extends Main_Controller {
 		$this->load->library('user_agent');
 		$json = array();
 
-		$result = $this->location->searchRestaurant($this->input->post('search_query'));
-
+		//$result = $this->location->searchRestaurant($this->input->post('search_query'));
+		$result = $this->location->searchRestaurantNew($this->input->post('search_query'), $this->input->post('odrer_option'));
+		//echo $this->input->post('search_query');
 		switch ($result) {
 			case 'FAILED':
 				$json['error'] = $this->lang->line('alert_unknown_error');

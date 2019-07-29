@@ -1,6 +1,17 @@
 <?php $path_image = '';
 if($rsegment !="home"){
-	$path_image = '../';
+   $path_image = '../';
+   
+   switch ($rsegment) {
+      case "home":
+            $path_image = '';
+          break;
+      case "checkout":
+            $path_image = '';
+          break;
+      default:
+      $path_image = '../';
+  }
 }
 ?>
 <div class="row">
@@ -12,15 +23,15 @@ if($rsegment !="home"){
          <div class="section-title text-center">
             <div class="title-separator">
                <img src="<?php echo $path_image;?>assets/images/food_icon.png">
-               <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Food</h2>
+               <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
             </div>
          </div>
       </div>
       <div class="modal-body">
          <div id="local-search " class=" col-md-12 text-center">
             <div class="toggle_radio">
-               <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
-               <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
+               <input type="radio" class="toggle_option" id="first_toggle" name="odrer_option" value="delivery">
+               <input type="radio" checked class="toggle_option" id="second_toggle" name="odrer_option" value="pickup"> 
                <label for="first_toggle">
                   <p>Delivery</p>
 			   </label>
@@ -249,13 +260,14 @@ if($rsegment !="home"){
    
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
-   	var search_query = $('#aioConceptName').val();
+      var search_query = $('#aioConceptName').val();
+      var order_type = $("input[name='odrer_option']:checked").val();;
    	//alert($('#aioConceptName').val());
    	
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',
-   		data: 'search_query=' + search_query,
+   		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
    		dataType: 'json',
    		success: function(json) {
    			updateLocalBox(json);
