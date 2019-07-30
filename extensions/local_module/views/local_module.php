@@ -50,7 +50,7 @@ switch ($rsegment) {
                               <?php foreach($local_areas as $area){ ?>
                               <optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
                                  <?php foreach($area['areas'] as $local){ ?>
-                                 <option value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?>><?php echo $local['govr_area_name_en']; ?></option>
+                                 <option <?php if($location_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
                                  <?php } ?>
                               </optgroup>
                               <?php } ?>
