@@ -262,7 +262,7 @@ class Settings extends Admin_Controller {
 			$this->email->from(strtolower($this->config->item('site_email')), $this->config->item('site_name'));
 			$this->email->to(strtolower($this->config->item('site_email')));
 			$this->email->subject('This a test email');
-			$this->email->message('This is a test email. If you\'ve received this, it means emails are working in Lugma.');
+			$this->email->message('This is a test email. If you\'ve received this, it means emails are working in Zalatimo Sweets.');
 
 			if ($this->email->send()) {
 				$json['success'] = sprintf($this->lang->line('alert_email_sent'), $this->config->item('site_email'));

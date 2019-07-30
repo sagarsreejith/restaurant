@@ -791,8 +791,8 @@ text-align: center;
 
   .step-item .icon i {
     border-radius: 50%;
-    border: 3px solid #6f1e30;
-    color: #6f1e30;
+    border: 3px solid #fff;
+    color: #fff;
     font-size: 18px;
     line-height: 46px;
     width: 50px;
@@ -1637,7 +1637,7 @@ border-right:6px solid #6f1e30;
       padding:10px;
         font-size:18px;
         font-weight: bold;
-        color: #1e2327;
+        color: #fff;
         margin-top: 0px;
         line-height: 30px;
       }

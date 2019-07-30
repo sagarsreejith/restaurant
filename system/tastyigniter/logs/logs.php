@@ -1,75 +1,70 @@
-ERROR - 2019-07-28 15:27:43 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:27:44 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:27:45 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:27:46 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:27:46 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:27:46 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:57:59 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 15:57:59 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 15:57:58 +0300
-From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+ERROR - 2019-07-29 21:48:02 --> 404 Page Not Found: 
+ERROR - 2019-07-29 21:48:15 --> 404 Page Not Found: 
+ERROR - 2019-07-29 21:48:16 --> 404 Page Not Found: 
+ERROR - 2019-07-29 21:48:17 --> 404 Page Not Found: 
+ERROR - 2019-07-29 21:48:18 --> 404 Page Not Found: 
+ERROR - 2019-07-29 21:49:06 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 21:49:06 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-29 21:54:29 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 21:54:29 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-29 21:55:45 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 21:55:45 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-29 21:57:07 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-29 21:57:07 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Mon, 29 Jul 2019 21:57:06 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
 User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d9bd647287@gmail.com&gt;
+Message-ID: &lt;5d3f418292ba1@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9bd64729a&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3f418292bdc&quot;
 </pre>
-ERROR - 2019-07-28 15:58:00 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 15:58:00 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 15:57:59 +0300
-From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+ERROR - 2019-07-29 21:57:08 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-29 21:57:08 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Mon, 29 Jul 2019 21:57:07 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
 User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d9bd74ef7e@gmail.com&gt;
+Message-ID: &lt;5d3f418397d14@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9bd74ef9e&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3f418397d3b&quot;
 </pre>
-ERROR - 2019-07-28 15:58:01 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:58:01 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:58:46 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:58:46 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:59:00 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:59:00 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:59:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 15:59:35 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:00:02 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:00:16 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:00:17 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:00:17 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:00:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:00:23 --> 404 Page Not Found: 
-ERROR - 2019-07-28 16:03:54 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 16:03:54 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 16:03:53 +0300
-From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+ERROR - 2019-07-29 21:57:10 --> 404 Page Not Found: 
+ERROR - 2019-07-29 22:03:07 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 22:03:07 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-29 22:04:28 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-29 22:04:28 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Mon, 29 Jul 2019 22:04:27 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
 User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d9d39de370@gmail.com&gt;
+Message-ID: &lt;5d3f433b522b8@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9d39de383&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3f433b522f3&quot;
 </pre>
-ERROR - 2019-07-28 16:03:55 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
-ERROR - 2019-07-28 16:03:55 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 28 Jul 2019 16:03:54 +0300
-From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+ERROR - 2019-07-29 22:04:29 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-29 22:04:29 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Mon, 29 Jul 2019 22:04:28 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
 Return-Path: &lt;sreejith.sagar@gmail.com&gt;
 Reply-To: &lt;sreejith.sagar@gmail.com&gt;
 User-Agent: TastyIgniter
 X-Sender: sreejith.sagar@gmail.com
 X-Mailer: TastyIgniter
 X-Priority: 3 (Normal)
-Message-ID: &lt;5d3d9d3ae78c3@gmail.com&gt;
+Message-ID: &lt;5d3f433c5790b@gmail.com&gt;
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3d9d3ae78ea&quot;
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d3f433c5793d&quot;
 </pre>
+<<<<<<< HEAD
 ERROR - 2019-07-28 16:03:56 --> 404 Page Not Found: 
 ERROR - 2019-07-28 16:10:40 --> 404 Page Not Found: 
 ERROR - 2019-07-28 16:11:44 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
@@ -802,3 +797,19 @@ ERROR - 2019-07-29 18:30:08 --> Could not find the language line "label_site_url
 ERROR - 2019-07-29 18:30:08 --> Could not find the language line "help_maps_api_key"
 ERROR - 2019-07-29 18:30:27 --> Could not find the language line "label_site_url"
 ERROR - 2019-07-29 18:30:27 --> Could not find the language line "help_maps_api_key"
+=======
+ERROR - 2019-07-29 22:04:30 --> 404 Page Not Found: 
+ERROR - 2019-07-29 22:09:40 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 22:09:40 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-29 22:09:55 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 22:09:55 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-29 23:37:11 --> Could not find the language line "label_site_url"
+ERROR - 2019-07-29 23:37:11 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-30 08:27:54 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 08:29:33 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 08:30:46 --> 404 Page Not Found: 
+>>>>>>> d22d445d0d551a7c37b4f37ae4022e02dabdaa37
+ERROR - 2019-07-30 09:54:07 --> Could not find the language line "text_filter_search"
+ERROR - 2019-07-30 09:54:07 --> Could not find the language line "text_filter_status"
+ERROR - 2019-07-30 09:54:12 --> Could not find the language line "text_filter_search"
+ERROR - 2019-07-30 09:54:12 --> Could not find the language line "text_filter_status"

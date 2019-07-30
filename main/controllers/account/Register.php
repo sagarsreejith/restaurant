@@ -91,10 +91,11 @@ class Register extends Main_Controller {
 		$this->form_validation->set_rules('password', 'lang:label_password', 'xss_clean|trim|required|min_length[6]|max_length[32]|matches[password_confirm]');
 		$this->form_validation->set_rules('password_confirm', 'lang:label_password_confirm', 'xss_clean|trim|required');
 		$this->form_validation->set_rules('telephone', 'lang:label_telephone', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_question', 'lang:label_s_question', 'xss_clean|trim|required|integer');
-		//$this->form_validation->set_rules('security_answer', 'lang:label_s_answer', 'xss_clean|trim|required|min_length[2]');
+		$this->form_validation->set_rules('security_question', 'lang:label_s_question', 'xss_clean|trim');
+		$this->form_validation->set_rules('security_answer', 'lang:label_s_answer', 'xss_clean|trim');
 		$this->form_validation->set_rules('newsletter', 'lang:label_subscribe', 'xss_clean|trim|integer');
-		//$this->form_validation->set_rules('captcha', 'lang:label_captcha', 'xss_clean|trim|required|callback__validate_captcha');
+		$this->form_validation->set_rules('captcha', 'lang:label_captcha', 'xss_clean|trim');
+		///$this->form_validation->set_rules('captcha', 'lang:label_captcha', 'xss_clean|trim|required|callback__validate_captcha');
 
 		if ($this->config->item('registration_terms') === '1') {
 			$this->form_validation->set_rules('terms_condition', 'lang:label_i_agree', 'xss_clean|trim|integer|required');

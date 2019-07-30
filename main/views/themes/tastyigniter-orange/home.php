@@ -13,7 +13,8 @@
     }
     
     .about {
-        background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat scroll center bottom / contain;
+        background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat ;
+        background-position: -306px 566px;
     }
     
     .book[data-book="book-1"] .front:before {
@@ -501,38 +502,38 @@
 
                         function initMapHome() {
                             var broadway = {
-                                info: '<strong>Chipotle on Broadway</strong><br>\
-    	5224 N Broadway St<br> Chicago, IL 60640<br>\
-    	<a href="https://goo.gl/maps/jKNEDz4SyyH2" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
-                                lat: 29.33278,
-                                long: 48.02861,
+                                info: '<strong>Zalatimo Sweets</strong><br>\
+                                Sharq, KIPCO Tower<br> Kuwait City<br>\
+    	<a href="https://www.google.com/maps/dir//KIPCO+Tower,+Al+Kuwayt/@29.3757712,47.9436413,12.7z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3fcf84966d43bf01:0xb0f7d549868e3803!2m2!1d47.9868396!2d29.3757397" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+                                lat: 29.3757,
+                                long: 47.9868,
                             }
 
                             var belmont = {
-                                info: '<strong>Chipotle on Belmont</strong><br>\
-    	1025 W Belmont Ave<br> Chicago, IL 60657<br>\
-    	<a href="https://goo.gl/maps/PHfsWTvgKa92" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
-                                lat: 29.29583,
-                                long: 48.07861,
+                                info: '<strong>Zalatimo Sweets</strong><br>\
+                                Ground Floor, Building 25, Marina Crescent<br> Salmiya<br>\
+    	<a href="https://www.google.com/maps/place/Marina+Crescent/@29.3439534,48.0604649,16.15z/data=!4m8!1m2!2m1!1sGround+Floor,+Building+25,+Marina+Crescent,+kuwait!3m4!1s0x3fcf9d9950d2a1c1:0xb80aaf80bf2223b4!8m2!3d29.3411726!4d48.0655611" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+                                lat: 29.3439534,
+                                long: 48.0633999,
                             }
 
-                            var sheridan = {
-                                info: '<strong>Chipotle on Sheridan</strong><br>\r\
-    	6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
-    	<a href="https://goo.gl/maps/QGUrqZPsYp92" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
-                                lat: 29.14583,
-                                long: 48.09472,
-                            }
+        //                     var sheridan = {
+        //                         info: '<strong>Chipotle on Sheridan</strong><br>\r\
+    	// 6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
+    	// <a href="https://goo.gl/maps/QGUrqZPsYp92" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+        //                         lat: 29.14583,
+        //                         long: 48.09472,
+        //                     }
 
                             var locations = [
                                 [broadway.info, broadway.lat, broadway.long, 0],
                                 [belmont.info, belmont.lat, belmont.long, 1],
-                                [sheridan.info, sheridan.lat, sheridan.long, 2],
+                                // [sheridan.info, sheridan.lat, sheridan.long, 2],
                             ]
 
                             var map = new google.maps.Map(document.getElementById('map_home'), {
-                                zoom: 9,
-                                center: new google.maps.LatLng(29.3140762, 47.491749),
+                                zoom: 12,
+                                center: new google.maps.LatLng(29.3759, 47.9774),
                                 mapTypeControlOptions: {
                                     mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
                                 }, // here´s the array of controls
