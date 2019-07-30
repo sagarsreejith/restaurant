@@ -509,6 +509,7 @@ margin: 30px 0;
 }
 #local-info a{
 color:#6f1e30;
+font-weight: 900;
 }
 #search{
 color:#fff !important;
@@ -835,7 +836,7 @@ background:#5d5757 !important;
 .overlay-content h3 a:hover { text-decoration: none; }
 .overlay-content a.portfolio-img { padding: 7px 20px; display: block; margin-top: 20px; margin-right: 0; }
 .overlay-content a.portfolio-img:hover { color: #323232; }
-.overlay-content a.portfolio-img i { font-size: 15px; transition: all 0.5s ease-in-out; width: 40px; height: 40px; background: #e93e21; border-radius: 50%; line-height: 40px; color: #fff; }
+.overlay-content a.portfolio-img i { font-size: 15px; transition: all 0.5s ease-in-out; width: 40px; height: 40px; background: #6f1e31; border-radius: 50%; line-height: 40px; color: #fff; }
 .overlay-content a.portfolio-img i:hover { background: #1e2327; }
 .overlay-content a { display: inline-block; padding: 0 5px; color: #1e2327; font-size: 15px; line-height: 26px; font-weight: 500; position: relative; z-index: 9; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; font-style: italic; }
 .overlay-content a:hover { text-decoration: none; color: #6f1e30; }
@@ -1153,7 +1154,7 @@ font-size: 20px;
 color: #fff;
 }
 .bg-overlay-black-70:before {
-background: rgba(0, 0, 0, 0.7);
+background: rgba(0, 0, 0, 0.6);
 content: "";
 height: 100%;
 left: 0;
@@ -1523,7 +1524,7 @@ padding: 0 30px;
 }
 
 @media only screen and (max-width: 960px) {
-
+  .about {   background-position: -257px 739px;}
   #top_head{display:none;}
   .contact .contact-box {
     display: block;
@@ -1843,3 +1844,7 @@ address{font-size:14px;}
 }
 .clr_prog2{color:#fff;}
 .clr_prog2 span{color: #ad9b9b;}
+.location-list dl  dd span{
+font-size:13px;
+}
+.box-one img{max-width:80px;}

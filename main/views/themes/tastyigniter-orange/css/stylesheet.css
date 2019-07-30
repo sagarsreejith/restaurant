@@ -17,12 +17,12 @@ body {
 font-family: 'Cabin', sans-serif;
 background-color: #fff;
 
-}
-@media (max-width:767px) {
-body {
 
 }
+body button, body a{
+  cursor: pointer;
 }
+
 
 
 .page-content {
@@ -281,7 +281,7 @@ background-color: rgba(0,0,0,0.1);
 
 /*** Heading ***/
 #heading {
-  background: url(../images/bg2.png);
+  background: url(../images/bg2.jpg);
     height: 261px;
     position: relative;
     width: 100%;
@@ -292,7 +292,7 @@ background-color: rgba(0,0,0,0.1);
     background-size: cover;
 }
 #heading:before{
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.5);
   content: "";
   height: 100%;
   left: 0;
@@ -1066,7 +1066,7 @@ float: left;
 margin-right: 10px;
 }
 .review-item .review-text {
-font-size: 12px;
+font-size: 14px;
 font-weight: 300;
 color:#444;
 }
@@ -1078,7 +1078,7 @@ font-size: 12px;
 padding: 0 15px;
 }
 .rating-row b {
-font-size: 12px;
+font-size: 14px;
 font-weight: 400;
 }
 .rating-row > div {
@@ -1086,7 +1086,7 @@ padding: 0 15px 0 0;
 /*width: 10%;*/
 }
 .review-item small {
-font-size: 70%;
+font-size: 72%;
 margin-top: 30px;
 }
 /*** End Reviews ***/
