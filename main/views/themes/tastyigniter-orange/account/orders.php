@@ -1,3 +1,16 @@
+
+<?php $path_image = '';
+switch ($rsegment) {
+      case "home":
+            $path_image = '';
+          break;
+      case "checkout":
+            $path_image = '';
+          break;
+      default:
+      $path_image = '../';
+}
+?>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 

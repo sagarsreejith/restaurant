@@ -2070,3 +2070,94 @@ Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4051e0b4328&quot;
 </pre>
 ERROR - 2019-07-30 17:19:14 --> 404 Page Not Found: 
 ERROR - 2019-07-30 17:19:14 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:28:24 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:28:25 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:28:34 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:28:34 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:04 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:04 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:15 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:15 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:38 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:39 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:41 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:29:41 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:03 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:03 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:03 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:05 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:05 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:05 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:06 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:06 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:49 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:49 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:52 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:52 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:56 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:30:57 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:31:40 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:31:41 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:32:01 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:32:01 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:32:14 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:32:14 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:34:10 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:34:10 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:41:22 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 17:41:22 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Tue, 30 Jul 2019 17:41:21 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4057118a0cb@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4057118a0df&quot;
+</pre>
+ERROR - 2019-07-30 17:41:23 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 17:41:23 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Tue, 30 Jul 2019 17:41:22 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d40571291d03@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d40571291d3b&quot;
+</pre>
+ERROR - 2019-07-30 17:41:24 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:41:24 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:48:16 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 17:48:16 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Tue, 30 Jul 2019 17:48:15 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4058af756b0@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4058af756c3&quot;
+</pre>
+ERROR - 2019-07-30 17:48:17 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 17:48:17 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Tue, 30 Jul 2019 17:48:16 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4058b07fb2c@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4058b07fb5e&quot;
+</pre>
+ERROR - 2019-07-30 17:48:18 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:48:18 --> 404 Page Not Found: 
+ERROR - 2019-07-30 17:48:49 --> 404 Page Not Found: 
