@@ -50,8 +50,8 @@ $theme['head_tags'] = array(
 		array(theme_url('tastyigniter-orange/js/magnific-popup.js'), 'magnific-popup-js', '18'),
 		array(theme_url('tastyigniter-orange/js/isotope.pkgd.min.js'), 'isotope.pkgd.min-js', '17'),
 		array(theme_url('tastyigniter-orange/js/mega_menu.js'), 'mega_menu', '14'),
-	
-	
+
+		array(theme_url('tastyigniter-orange/js/owl.carousel.min.js'), 'owl', '15'),
 		
 		array(theme_url('tastyigniter-orange/js/select2.js'), 'select-2-js', '12'),
 		array(theme_url('tastyigniter-orange/js/jquery.raty.js'), 'jquery-raty-js', '13'),
@@ -60,8 +60,9 @@ $theme['head_tags'] = array(
 	
 		array(theme_url('tastyigniter-orange/js/select2.min.js'), 'select2', '25'),
 		
-		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '16'),
-		array(theme_url('tastyigniter-orange/js/owl.carousel.min.js'), 'owl', '15')
+		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '16')
+
+	
 		
 	
 

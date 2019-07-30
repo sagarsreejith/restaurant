@@ -131,7 +131,7 @@
 											<thead>
 												<tr>
 													<th><?php echo lang('column_id'); ?></th>
-													<th width="80%" class="text-center"><?php echo lang('column_status'); ?></th>
+													<th width="60%" class="text-center"><?php echo lang('column_status'); ?></th>
 													<th><?php echo lang('column_date'); ?></th>
 												</tr>
 											</thead>
@@ -139,7 +139,7 @@
 												<?php foreach ($orders as $order) { ?>
 												<tr>
 													<td><a href="<?php echo $order['view']; ?>"><?php echo $order['order_id']; ?></a></td>
-													<td width="80%" class="text-center"><?php echo $order['status_name']; ?></td>
+													<td width="60%" class="text-center"><?php echo $order['status_name']; ?></td>
 													<td><?php echo $order['order_time']; ?> - <?php echo $order['order_date']; ?></td>
 												</tr>
 												<?php } ?>

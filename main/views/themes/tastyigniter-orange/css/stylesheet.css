@@ -214,7 +214,7 @@ text-decoration: none;
  
   width: 100% !important;
   z-index: 999 !important; 
-  position:fixed;
+ position:fixed;
 
 }
 #main-header .logo {
@@ -622,6 +622,12 @@ padding: 0;
   font-size:16px;
 }
 @media (max-width:767px) {
+  #main-header .navbar-nav > li > a{
+    padding: 10px 15px !important;
+  }#main-header .navbar-nav > li > a:hover{
+    background:#90374c !important;
+    
+  }
   .nav-justified > li {
 	display: table-cell;
 	width: 1%;
@@ -1556,7 +1562,7 @@ border-right:6px solid #6f1e30;
     position: fixed;
     margin: 90px 0;
     float: left;
-    z-index: 999;
+    z-index: 99;
   }
   #local-info {
     display: block;

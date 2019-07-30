@@ -279,56 +279,59 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 ">
+											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
 												<label for=""><?php echo lang('label_customer_name'); ?>  :</label>
 											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
 												<?php echo $first_name; ?> <?php echo $last_name; ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 ">
+											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
 												<label for=""><?php echo lang('label_email'); ?> :</label>
 											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
 												<?php echo $email; ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 ">
+											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
 												<label for=""><?php echo lang('label_telephone'); ?> : </label>
 											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
 												<?php echo $telephone; ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												
-												<label for=""><?php echo lang('label_address'); ?></label>
+												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">		
+													<label for=""><?php echo lang('label_address'); ?>:</label>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">	
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
 													<?php } ?>
+													</div>
 												<?php } ?>
 											</div>
 										<?php } ?>
 									</div>
 									<div class="col-sm-12">
 										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 ">
+											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
 												<label for=""><?php echo lang('label_order_type'); ?> : </label>
 											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
+											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
 												<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 ">
+											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
 												<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 
 											</div>
 											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
@@ -342,10 +345,10 @@
 								<div class="row">
 									<div class="col-sm-12 form-group">
 									
-									<div class="col-md-6 col-sm-6 col-xs-12 ">
+									<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
 										<label for=""><?php echo lang('label_payment_method'); ?> : </label>
 									</div>
-									<div class="col-md-6 col-sm-6 col-xs-12 nopad">
+									<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
 										<div class="list-group">
 											<?php foreach ($payments as $payment) { ?>
 												<?php if (!empty($payment['data'])) { ?>
@@ -364,7 +367,7 @@
 													<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
 													<input type="checkbox" name="terms_condition" id="terms-condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
 												</span>
-												<span class="form-control"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>
+												<span class="form-control ft_stt"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>
 											</div>
 											<?php echo form_error('terms_condition', '<span class="text-danger col-xs-12">', '</span>'); ?>
 										</div>
@@ -372,6 +375,20 @@
 											<div class="modal-dialog">
 												<div class="modal-content">
 													<div class="modal-body">
+
+												<h4>	Introduction</h4>
+<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
+
+These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+
+Minors or people below 18 years old are not allowed to use this Website.</p>
+
+<h4> Intellectual Property Rights</h4>
+<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
+
+You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+
+
 													</div>
 												</div>
 											</div>

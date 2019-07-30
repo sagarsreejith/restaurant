@@ -44,7 +44,7 @@ $lang['label_body'] 		            = 'Body';
 
 $lang['alert_set_default'] 		        = 'Mail Template set as default successfully.';
 $lang['alert_template_missing'] 	    = 'Templates will be added after you save this mail template.';
-$lang['alert_caution_edit'] 	        = '<b>CAUTION!</b> You may lose your modifications to this email template when you update Lugma.<br> Clone the default template from the add new mail template page to make changes.';
+$lang['alert_caution_edit'] 	        = '<b>CAUTION!</b> You may lose your modifications to this email template when you update Zalatimo Sweets.<br> Clone the default template from the add new mail template page to make changes.';
 
 /* End of file mail_templates_lang.php */
 /* Location: ./admin/language/english/mail_templates_lang.php */

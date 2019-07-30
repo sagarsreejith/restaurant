@@ -8,7 +8,7 @@
 */
 
 // Set a custom theme title.
-$theme['title']         = 'Lugma Admin Blue';
+$theme['title']         = 'Zalatimo Sweets Admin Blue';
 $theme['author']        = 'SamPoyigi';
 $theme['version']       = '1.1';
 $theme['description']   = 'Responsive theme for admin panel';

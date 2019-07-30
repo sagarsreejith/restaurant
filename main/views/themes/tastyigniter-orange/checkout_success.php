@@ -30,7 +30,7 @@
 						</ul>
 					</div>
 
-					<div class="col-xs-12 content-wrap clr_prog">
+					<div class="col-xs-12 content-wrap clr_prog2">
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
 		                    <span class="under-heading"></span>
@@ -47,7 +47,7 @@
 								
 			                        <p class="st_res"><?php echo $order_details; ?></p>
 			                    </div>
-			                    <div class="col-sm-12 clr_prog">
+			                    <div class="col-sm-12 clr_prog text-center">
 									<?php if ($delivery_address) { ?>
 										<strong><?php echo lang('text_delivery_address'); ?>:</strong>
 										<address><?php echo $delivery_address; ?></address>

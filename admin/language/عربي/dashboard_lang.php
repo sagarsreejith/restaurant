@@ -38,13 +38,13 @@ $lang['text_today'] 		                = 'Today';
 $lang['text_week'] 		                    = 'Week';
 $lang['text_month'] 		                = 'Month';
 $lang['text_year'] 		                    = 'Year';
-$lang['text_news'] 		                    = 'Lugmas News';
+$lang['text_news'] 		                    = 'Zalatimo Sweets News';
 $lang['text_recent_activity'] 		        = 'Recent Activity';
 $lang['text_top_customers'] 		        = 'Top Customers';
 $lang['text_latest_order'] 		            = '10 Latest Orders';
 $lang['text_reports_chart'] 		        = 'Reports Chart';
 $lang['text_select_range'] 		            = 'Select date range';
-$lang['text_last_version_check'] 		    = 'Your last <b>Lugmas core version check</b> was more than a week ago. <a href="%s"><b>Check for Updates</b></a>';
+$lang['text_last_version_check'] 		    = 'Your last <b>Zalatimo Sweets core version check</b> was more than a week ago. <a href="%s"><b>Check for Updates</b></a>';
 
 $lang['button_check_updates']       	    = '<i class="fa fa-refresh"></i> Check Updates';
 

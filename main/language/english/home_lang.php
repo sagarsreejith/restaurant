@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct access allowed');
 
-$lang['text_heading'] 			        = 'Welcome To Lugma Bytes';
+$lang['text_heading'] 			        = 'Welcome To Zalatimo Sweets';
 $lang['text_step_one'] 				    = 'Search';
 $lang['text_step_two'] 				    = 'Choose';
 $lang['text_step_three'] 				= 'Pay by cash or card';

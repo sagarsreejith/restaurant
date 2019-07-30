@@ -4,7 +4,7 @@ if($rsegment !="home"){
 }
 ?>
 
-<footer class="footer" id="" style="background: #000 url(assets/images/footer_bg8.png);border-top: #6f1e30 2px solid;">
+<footer class="footer" id="" style="background: #000 url(../assets/images/footer_bg8.png);border-top: #6f1e30 2px solid;">
 
 <?php echo get_partial('content_footer'); ?>
  

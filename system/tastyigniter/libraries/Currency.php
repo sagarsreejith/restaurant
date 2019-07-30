@@ -77,7 +77,7 @@ class Currency {
 			if ($symbol_position === '1') {
 				$string = $string . $currency_symbol;
 			} else {
-				$string = $currency_symbol . $string;
+				$string = $currency_symbol .' '. $string;
 			}
 		}
 
