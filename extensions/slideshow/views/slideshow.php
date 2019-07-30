@@ -1,7 +1,7 @@
 
 <div class="background_images">
 
-<img src="assets/images/slide2.jpg">
+<img src="assets/images/banner1.webp">
 </div>
 
 <!-- <section class="page-section-pb our-menuss">

@@ -13,7 +13,8 @@
     }
     
     .about {
-        background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat scroll center bottom / contain;
+        background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat ;
+        background-position: -306px 566px;
     }
     
     .book[data-book="book-1"] .front:before {
@@ -165,172 +166,150 @@
                             <div class="col-lg-12 col-md-12">
                                 <div class="isotope-filters">
                                     <button data-filter="" class="active">All</button>
-                                    <button data-filter=".vegetarian"> Vegetarian</button>
-                                    <button data-filter=".chinese">Chinese</button>
-                                    <button data-filter=".italian">Italian</button>
-                                    <button data-filter=".mexican">Mexican</button>
+                                    <button data-filter=".Arabic"> Arabic Sweets</button>
+                                    <button data-filter=".Mamoul">Mamoul</button>
+                                    <button data-filter=".Fresh">Fresh Sweets</button>
+                                    <button data-filter=".Manakeesh">Manakeesh</button>
+                                    <button data-filter=".Sandwiches">Sandwiches</button>
+                                    <button data-filter=".Appetizer"> Appetizer</button>
+                                 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container">
                         <div class="isotope popup-gallery columns-4">
-                            <div class="grid-item chinese mexican">
+                            <div class="grid-item Arabic mexican">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/01.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a> <span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item chinese">
+                            <div class="grid-item Mamoul">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/02.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/02.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/02.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item  vegetarian italian">
+                            <div class="grid-item   Mamoul">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/03.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/03.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid-item mexican">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/04.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/04.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/04.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item  vegetarian chinese">
+                            <div class="grid-item  Mamoul ">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/05.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/05.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/05.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item  vegetarian">
+                            <div class="grid-item  Mamoul">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/06.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/06.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/06.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item">
+                            <div class="grid-item Manakeesh">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/07.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/07.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item  vegetarian italian">
+                            <div class="grid-item  Manakeeshn">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/08.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/08.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item chinese">
+                            <div class="grid-item Sandwiches">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/09.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/09.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item chinese">
+                            <div class="grid-item Appetizer">
                                 <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/10.jpg" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
                                             <a href="#">Branding</a><span>/</span>
                                             <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/10.jpg"><i class="fa fa-expand"></i></a>
+                                            <a class="portfolio-img" href="assets/images/gallery/10.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item chinese">
-                                <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/11.jpg" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/11.jpg"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item chinese">
-                                <div class="galllery-item">
-                                    <span><img class="img-responsive" src="assets/images/gallery/12.jpg" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/12.jpg"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
                 </section>
@@ -339,7 +318,7 @@
 
                 <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 " style="background-image: url(assets/images/bg_banner.jpg);">
 
-                    <div class=" parallax bg-overlay-black-70" style="background-image: url(assets/images/resturant_img2.png);background-repeat:no-repeat;">
+                    <div class=" parallax bg-overlay-black-70" style="background-image: url(assets/images/resturant_img2.jpg);background-repeat:no-repeat;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
