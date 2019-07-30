@@ -1160,3 +1160,4 @@ ERROR - 2019-07-30 09:25:28 --> Severity: Warning --> in_array() expects paramet
 ERROR - 2019-07-30 09:25:28 --> Severity: Warning --> in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 346
 ERROR - 2019-07-30 09:25:28 --> Severity: Warning --> in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 346
 ERROR - 2019-07-30 09:25:28 --> Severity: Warning --> in_array() expects parameter 2 to be array, null given D:\xampp\htdocs\out-rest\system\tastyigniter\models\Reviews_model.php 346
+ERROR - 2019-07-30 14:15:29 --> cURL: Error --> 22: The requested URL returned error: 404 Not Found https://api.tastyigniter.com/v1/core/version/2.1.2/5.6.31/5.6.44
