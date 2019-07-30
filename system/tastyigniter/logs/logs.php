@@ -71,3 +71,6 @@ ERROR - 2019-07-29 22:09:55 --> Could not find the language line "label_site_url
 ERROR - 2019-07-29 22:09:55 --> Could not find the language line "help_maps_api_key"
 ERROR - 2019-07-29 23:37:11 --> Could not find the language line "label_site_url"
 ERROR - 2019-07-29 23:37:11 --> Could not find the language line "help_maps_api_key"
+ERROR - 2019-07-30 08:27:54 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 08:29:33 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-07-30 08:30:46 --> 404 Page Not Found: 
