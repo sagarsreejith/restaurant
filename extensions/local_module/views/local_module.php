@@ -1,13 +1,6 @@
 <?php $path_image = '';
-switch ($rsegment) {
-      case "home":
-            $path_image = '';
-          break;
-      case "checkout":
-            $path_image = '';
-          break;
-      default:
-      $path_image = '../';
+if($rsegment !="home"){
+	$path_image = '../';
 }
 ?>
 <div class="row">
@@ -19,15 +12,15 @@ switch ($rsegment) {
          <div class="section-title text-center">
             <div class="title-separator">
                <img src="<?php echo $path_image;?>assets/images/food_icon.png">
-               <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
+               <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Food</h2>
             </div>
          </div>
       </div>
       <div class="modal-body">
          <div id="local-search " class=" col-md-12 text-center">
             <div class="toggle_radio">
-               <input type="radio" checked class="toggle_option" id="first_toggle" name="odrer_option" value="delivery">
-               <input type="radio" class="toggle_option" id="second_toggle" name="odrer_option" value="pickup"> 
+               <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+               <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
                <label for="first_toggle">
                   <p>Delivery</p>
 			   </label>
@@ -50,7 +43,7 @@ switch ($rsegment) {
                               <?php foreach($local_areas as $area){ ?>
                               <optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
                                  <?php foreach($area['areas'] as $local){ ?>
-                                 <option <?php if($location_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
+                                 <option value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"><?php echo $local['govr_area_name_en']; ?></option>
                                  <?php } ?>
                               </optgroup>
                               <?php } ?>
@@ -87,7 +80,7 @@ switch ($rsegment) {
       <div class="row">
          <?php if( $rsegment ==="home") { ?>
          <div class="order_now">
-            <h2 class="Banner_header">Welcome to Zalatimo Sweets</h2>
+            <h2 class="Banner_header">Welcome to Lugma</h2>
             <div class="btn_sec">
 			   <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
 			   <?php if ($this->config->item('reservation_mode') === '1') { ?>
@@ -256,14 +249,13 @@ switch ($rsegment) {
    
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
-      var search_query = $('#aioConceptName').val();
-      var order_type = $("input[name='odrer_option']:checked").val();;
+   	var search_query = $('#aioConceptName').val();
    	//alert($('#aioConceptName').val());
    	
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',
-   		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
+   		data: 'search_query=' + search_query,
    		dataType: 'json',
    		success: function(json) {
    			updateLocalBox(json);

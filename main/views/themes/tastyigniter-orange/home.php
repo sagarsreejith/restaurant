@@ -15,6 +15,7 @@
     .about {
         background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat ;
         background-position: -306px 566px;
+        transition: all 5s cubic-bezier(0.47, 0, 0.745, 0.715);
     }
     
     .book[data-book="book-1"] .front:before {
@@ -113,11 +114,11 @@
 
                
                             
-                <section class="about" id="about">
+                <section class="about " id="about">
 
                     <div class="page-section-ptb">
                         <div class="object-right object_right_img">
-                            <img class="img-responsive" src="assets/images/02.png" alt="">
+                            <img class="img-responsive fadeInRight" src="assets/images/02.png" alt="">
                         </div>
 
                         <div class="container">
@@ -138,8 +139,8 @@
 
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-5 col-md-5 col-sm-12 text-right">
-                                            <img class="img-responsive" class="book-menu_img" src="assets/images/about.png">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 text-right ">
+                                            <img class="img-responsive book-menu_img rotateInDownLeft" src="assets/images/about.png">
                                         </div>
                                         <div class="col-lg-7 col-md-7 col-sm-12">
                                             <p>
@@ -346,7 +347,7 @@
                     </div>
                     <div class="content-wrap">
 
-                        <div id="map_home" style="height:500px; width:100%"></div>
+                        <div id="map_home" class="slideInUp" style="height:500px; width:100%"></div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="content-wrap cont_clr cont_clr2">
