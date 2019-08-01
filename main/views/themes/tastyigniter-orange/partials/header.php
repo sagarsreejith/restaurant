@@ -67,113 +67,24 @@
                                                 <?php $custom_script = get_theme_options('custom_script'); ?>
                                                     <?php if (!empty($custom_script['head'])) { echo '<script type="text/javascript">'.$custom_script['head'].'</script>'; }; ?>
                                                         <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+                                                      
         </head>
 
-        <body class="<?php echo $body_class; ?>">
+        <body class="<?php echo $body_class; ?>"  data-spy="scroll">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
             <!--[if lt IE 7]>
             <p class="chromeframe"><?php echo lang('alert_info_outdated_browser'); ?></p>
         <![endif]-->
             <style>
-                #main-header:after {
-                    background: url(assets/images/shadow.png) no-repeat scroll center bottom rgba(0, 0, 0, 0);
-                    bottom: -9px;
-                    content: "";
-                    height: 9px;
-                    position: absolute;
-                    width: 100%;
-                }
-                
-                #main-header .logo img {
-                    height: 70px !important;
-                    width: 350px;
-                }
-                
-                #main-header #drp_add {
-                    border: 1px solid rgb(143, 134, 134);
-                    padding: 0 15px;
-                    line-height: 35px;
-                    margin: 26px 0 0;
-                    border-radius: 20%;
-                }
-                
-                #main-header #drp_add_st .dropdown-menu {
-                    top: 73px !important;
-                }
-                
-                .top-arrow {
-                    display: block;
-                    position: absolute;
-                    left: calc(73% - 10px);
-                    top: -8px;
-                    width: 20px;
-                    height: 20px;
-                    background-color: #fff;
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                    -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, .2);
-                    box-shadow: -1px -1px 2px rgba(0, 0, 0, .2);
-                }
-                
-                #top_head {
-                    float: left;
-                    display: block;
-                    width: 100%;
-                    border-bottom: 1px solid #6f1e31;
-                }
+              
             </style>
 
-            <!-- <div id="top_head">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-9">
-                            <div class="collapse navbar-collapse" id="main-header-menu-collapse">
-                                <ul class="nav navbar-nav navbar-right ">
-
-                                    <li class="dropdown " id="drp_add_st">
-
-                                        <a href="#" id="drp_add" class="dropdown-toggle" data-toggle="dropdown">Enter Address <b class="caret"></b></a>
-
-                                        <ul class="dropdown-menu">
-                                            <div class="top-arrow"></div>
-                                            <div class="toggle_radio">
-                                                <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
-                                                <input type="radio" checked="" class="toggle_option" id="second_toggle" name="toggle_option">
-                                                <label for="first_toggle">
-                                                    <p>Delivery</p>
-                                                </label>
-                                                <label for="second_toggle">
-                                                    <p>Pick up</p>
-                                                </label>
-                                                <div class="toggle_option_slider"></div>
-                                            </div>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Arabic</a></li>
-                                            <li><a href="#">Italy</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Cart</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
+           
 
             <header id="main-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 col-sm-3">
+                        <div class="col-md-5 col-sm-4">
                             <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
                                 <i class="fa fa-align-justify"></i>
                             </button>
@@ -192,7 +103,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-9">
+                        <div class="col-md-7 col-sm-8">
                             <div class="collapse navbar-collapse" id="main-header-menu-collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a></li>

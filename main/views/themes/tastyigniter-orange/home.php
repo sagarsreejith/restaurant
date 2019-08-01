@@ -114,11 +114,11 @@
 
                
                             
-                <section class="about " id="about">
+                <section class="about" id="about">
 
                     <div class="page-section-ptb">
-                        <div class="object-right object_right_img">
-                            <img class="img-responsive fadeInRight" src="assets/images/02.png" alt="">
+                        <div class="object-right object_right_img animated fadeIn ">
+                            <img class="img-responsive img1 " src="assets/images/02.png" alt="">
                         </div>
 
                         <div class="container">
@@ -139,8 +139,8 @@
 
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-5 col-md-5 col-sm-12 text-right ">
-                                            <img class="img-responsive book-menu_img rotateInDownLeft" src="assets/images/about.png">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 text-right">
+                                            <img class="img-responsive book-menu_img " src="assets/images/about.png">
                                         </div>
                                         <div class="col-lg-7 col-md-7 col-sm-12">
                                             <p>
@@ -181,7 +181,7 @@
                     <div class="container">
                         <div class="isotope popup-gallery columns-4">
                             <div class="grid-item Arabic mexican">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -194,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="grid-item Mamoul">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -207,7 +207,7 @@
                                 </div>
                             </div>
                             <div class="grid-item   Mamoul">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -220,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="grid-item mexican">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -233,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="grid-item  Mamoul ">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -246,7 +246,7 @@
                                 </div>
                             </div>
                             <div class="grid-item  Mamoul">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -259,7 +259,20 @@
                                 </div>
                             </div>
                             <div class="grid-item Manakeesh">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a href="#">Branding</a><span>/</span>
+                                            <a href="#">Identity</a>
+                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item fresh">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -272,7 +285,7 @@
                                 </div>
                             </div>
                             <div class="grid-item  Manakeeshn">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -285,7 +298,7 @@
                                 </div>
                             </div>
                             <div class="grid-item Sandwiches">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -298,7 +311,7 @@
                                 </div>
                             </div>
                             <div class="grid-item Appetizer">
-                                <div class="galllery-item">
+                                <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
@@ -324,7 +337,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
 
-                                    <div class="col-md-offset-2 col-md-8">
+                                    <div class="col-md-offset-2 col-md-8 banner_sec">
                                         <img src="assets/images/banner2.png" style="max-height:500px;width:100%">
                                     </div>
                                 </div>
@@ -545,4 +558,49 @@
                             }
                         }
                     </script>
+               
+
+
                      
+<script type="text/javascript">
+
+
+$(window).scroll(function () {
+   "use strict";
+    var topOfWindow = $(window).scrollTop();
+
+    function _checkOffset(className) {
+        return function () {
+            var $this = $(this),
+                imagePos = $this.offset().top;
+
+            $this.toggleClass(className, (imagePos < topOfWindow + 900));
+        };
+    }
+    
+    $('.img1').each(_checkOffset('animated bounceInRight'));
+	$('.book-menu_img').each(_checkOffset('animated bounceInLeft'));
+    $('.banner_sec').each(_checkOffset('animated tada'));
+    $('#map_home').each(_checkOffset('animated fadeIn'));
+    $('.gal_img').each(_checkOffset('animated fadeIn'));
+
+	$('.simple').each(_checkOffset('animated bounceInLeft'));
+	$('.arrow-intuitive').each(_checkOffset('animated bounceInRight'));
+	$('.intuitive').each(_checkOffset('animated bounceInRight'));
+	$('.arrow-secure').each(_checkOffset('animated bounceInRight'));
+	$('.secure').each(_checkOffset('animated bounceInRight'));
+	$('.arrow-stable').each(_checkOffset('animated bounceInRight'));
+	$('.stable').each(_checkOffset('animated bounceInRight'));
+	$('.screen1').each(_checkOffset('animated bounceInLeft'));
+	$('.screen2').each(_checkOffset('animated bounceInLeft'));
+	$('.screen3').each(_checkOffset('animated bounceInLeft'));
+	$('.fa-icon-wrap').each(_checkOffset('animated fadeIn'));
+	$('.text-features').each(_checkOffset('animated fadeIn'));
+	$('.view').each(_checkOffset('animated fadeIn'));
+	$('.testimonials-slider').each(_checkOffset('animated fadeIn'));
+	$('.pricing_table').each(_checkOffset('animated bounceIn'));
+	$('.contact-form').each(_checkOffset('animated fadeInLeft'));
+	$('.contact-map').each(_checkOffset('animated fadeInRight'));
+});
+
+</script>

@@ -103,7 +103,7 @@
 				                        </table>
 				                    </div>
 								<?php } ?>
-								<p><?php echo lang('text_thank_you'); ?></p>
+								<p class="tq"><?php echo lang('text_thank_you'); ?></p>
 							</div>
 						</div>
 					</div>

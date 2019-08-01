@@ -1,116 +1,87 @@
 <style>
-    footer:before {
-        background: url(assets/images/shadow.png) no-repeat scroll center bottom rgba(0, 0, 0, 0);
-        content: "";
-        height: 9px;
-        position: absolute;
-        width: 100%;
-    }
+ 
 
-    
-    footer {
-        background: url(assets/images/abstract.png) no-repeat scroll center bottom #611124;
-    }
 </style>
+<?php $path_image = '';
+if($rsegment !="home"){
+	$path_image = '../';
+}
+?>
 
-<footer class="flex-rw">
+<footer class="footer" >
 
-    <ul class="footer-list-top">
-        <li>
-            <h3 class="footer-list-header">About Pavilion</h3></li>
-        <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
-        <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">PROMOS</a></li>
-        <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">BECOME A RETAILER</a></li>
+<?php echo get_partial('content_footer'); ?>
+ 
+  <div class="container">
+  
+    <div class="row col_footer">
+               
 
-        <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">JOB OPENINGS</a></li>
-
-        <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">EVENTS</a></li>
-    </ul>
-    <ul class="footer-list-top">
-        <li>
-            <h3 class="footer-list-header">The Gift Selection</h3></li>
-
-        <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">ANGEL FIGURINES</a></li>
-        <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">HOME DECOR</a></li>
-        <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">MUGS</a></li>
-        <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">PET LOVER</a></li>
-        <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">HANDBAGS & JEWELRY</a></li>
-    </ul>
-    <ul class="footer-list-top">
-        <li id='help'>
-            <h3 class="footer-list-header">Please Help Me</h3></li>
-        <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
-        <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
-        <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">STORE LOCATOR</a></li>
-        <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">NEW USERS</a></li>
-        <li id='order-tracking'><a href='/shop/order-status' itemprop="significantLink" class="generic-anchor footer-list-anchor">ORDER STATUS</a></li>
-    </ul>
-    <section class="footer-social-section flex-rw">
-        <span class="footer-social-overlap footer-social-connect">
-      CONNECT <span class="footer-social-small">with</span> US
-        </span>
-        <div class=" footer-social-overlap footer-social-connec soc">
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100012512077239"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/raj-kumar-web-designer/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
+         
+<div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-sm-2 offset-sm-2" style=""></div>
+            
+            <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
+          <div class="footer-social">
+            <ul class="list-inline ">
+              <li ><a href="#" > <i class="fa fa-facebook"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-twitter"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-google-plus"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-instagram"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-tripadvisor"></i> </a> </li>
             </ul>
+          </div>
+          <div class="text_ft">
+                <?php echo sprintf(lang('site_copyright'), date('Y'), config_item('site_name'), lang('tastyigniter_system_name')) . lang('tastyigniter_system_powered'); ?>
+            </div>
         </div>
-    </section>
-    <section class="footer-bottom-section flex-rw">
-        <div class="footer-bottom-wrapper">
-            <i class="fa fa-copyright" role="copyright">
+      </div>
+    </div>
+  </div>
 
-            </i> 2019 Pavilion in <address class="footer-address" role="company address">Bergen, NY</address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
-        </div>
-        <div class="footer-bottom-wrapper">
-            <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
-        </div>
-    </section>
 </footer>
-
 <?php $custom_script = get_theme_options('custom_script'); ?>
-    <?php if (!empty($custom_script['footer'])) { echo '<script type="text/javascript">'.$custom_script['footer'].'</script>'; }; ?>
-        <script type="text/javascript">
-            window.onscroll = onScrollWindow;
+<?php if (!empty($custom_script['footer'])) { echo '<script type="text/javascript">'.$custom_script['footer'].'</script>'; }; ?>
+<script type="text/javascript">
+    window.onscroll = onScrollWindow;
 
-            var header = document.getElementById("searchText");
-            var contentLeft = document.getElementById("category-box-affix");
-            var pageContent = document.getElementById("page-content");
-            var menuContainer = document.getElementById("Container");
-            var sticky = pageContent.offsetTop;
+    var header = document.getElementById("searchText");
+    var contentLeft = document.getElementById("category-box-affix");
+    var pageContent = document.getElementById("page-content");
+    var menuContainer = document.getElementById("Container");
+    var sticky = pageContent.offsetTop;
 
-            function onScrollWindow() {
+    function onScrollWindow() {
+        
+        var selectedTab = $("ul#nav-tabs li.active");
 
-                var selectedTab = $("ul#nav-tabs li.active");
+        if (window.pageYOffset > sticky) {
+            if (header)
+                header.classList.add("sticky");
 
-                if (window.pageYOffset > sticky) {
-                    if (header)
-                        header.classList.add("sticky");
-
-                    if (selectedTab && menuContainer && "Menu".localeCompare(selectedTab.text()) == 0) {
-                        $("#searchText").css("width", menuContainer.offsetWidth - 35);
-                    }
-
-                    var windowHeight = window.innerHeight;
-                    if (menuContainer && contentLeft && menuContainer.offsetHeight < contentLeft.offsetHeight) {
-                        $("#Container").height(contentLeft.offsetHeight + 60);
-                    }
-                } else {
-                    if (header)
-                        header.classList.remove("sticky");
-                }
+            if (selectedTab && menuContainer && "Menu".localeCompare(selectedTab.text()) == 0) {
+                $("#searchText").css("width", menuContainer.offsetWidth - 35);
             }
 
-            $(window).bind("load resize", function() {
-                var menuContainer = document.getElementById("Container");
-                var selectedTab = $("ul#nav-tabs li.active");
-                if (selectedTab && menuContainer && "Menu".localeCompare(selectedTab.text()) == 0)
-                    $("#searchText").css("width", menuContainer.offsetWidth - 35);
-            });
-        </script>
-        </body>
+            var windowHeight = window.innerHeight;
+            if (menuContainer && contentLeft && menuContainer.offsetHeight < contentLeft.offsetHeight) {
+                $("#Container").height(contentLeft.offsetHeight + 60);
+            }
+        } else {
+        if (header)
+            header.classList.remove("sticky");
+        }
+    }
 
-        </html>
+    $(window).bind("load resize", function() {
+        var menuContainer = document.getElementById("Container");
+        var selectedTab = $("ul#nav-tabs li.active");
+        if (selectedTab && menuContainer && "Menu".localeCompare(selectedTab.text()) == 0)
+        $("#searchText").css("width", menuContainer.offsetWidth - 35);
+     });
+</script>
+</body>
+</html>

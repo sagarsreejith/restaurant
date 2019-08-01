@@ -99,7 +99,7 @@ if ( ! empty($header['dropdown_background']))
 
 // Logo
 if (empty($logo_text) AND !empty($logo_height)) {
-	$style .= "#main-header .logo img {height: {$logo_height}px !important;}";
+	//$style .= "#main-header .logo img {height: {$logo_height}px !important;}";
 } else if ( ! empty($logo_height)) {
 	$style .= "#main-header .logo a {font-size: {$logo_height}px}";
 }

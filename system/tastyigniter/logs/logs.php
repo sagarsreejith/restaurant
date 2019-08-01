@@ -218,3 +218,206 @@ ERROR - 2019-07-31 16:20:15 --> An invalid name was submitted as the product nam
 ERROR - 2019-07-31 16:20:24 --> An invalid name was submitted as the product name: Kunafa Khishneh Cheese 1/2 The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
 ERROR - 2019-07-31 16:20:26 --> An invalid name was submitted as the product name: Kunafa Na'ameh Cheese 1/2 The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
 ERROR - 2019-07-31 16:20:36 --> An invalid name was submitted as the product name: Kunafa Na'ameh Cheese 1/2 The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-07-31 17:28:01 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:28:17 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:28:29 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:30:19 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:32:13 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:32:48 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:34:03 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:20 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:32 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:41 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:48 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:48 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:48 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:53 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:35:59 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:00 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:00 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:00 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:00 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:00 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:00 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:05 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:23 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:37 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:38 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:39 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:42 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:36:59 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:37:19 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:37:22 --> 404 Page Not Found: 
+ERROR - 2019-07-31 17:37:29 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:13:49 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:14:00 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:14:00 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:14:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:29 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:29 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:54 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:54 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:15:54 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:16:02 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:16:02 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:16:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:16:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:16:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:27 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:27 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:31 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:31 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:32 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:40 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:40 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:44 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:44 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:18:44 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:25:22 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:25:57 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:25:57 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:26:05 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:26:05 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:26:05 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:26:07 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:26:07 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:26:08 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:11 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:11 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:22 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:24 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:31:24 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:42:02 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:42:14 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:42:14 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:53:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:55:25 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:56:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:56:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:56:27 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:57:43 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:57:43 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:57:43 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:58:20 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:58:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:58:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:58:25 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:58:25 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:58:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:59:28 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:59:28 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:59:29 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:59:56 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:59:56 --> 404 Page Not Found: 
+ERROR - 2019-08-01 13:59:56 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:00:49 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:01:47 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:01:56 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:02:11 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:02:30 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:02:46 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:04:53 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:06:18 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:08:12 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:08:16 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:08:17 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:09:19 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:09:42 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:10:48 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:11:16 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:12:36 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:13:03 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:13:48 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:14:16 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:15:16 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:17:05 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:56:43 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:56:47 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:57:02 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:57:45 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:57:49 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:58:31 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:58:33 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:58:34 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:58:35 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:59:12 --> 404 Page Not Found: 
+ERROR - 2019-08-01 14:59:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:00:03 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:01:04 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:01:07 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:04:49 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:04:52 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:04:55 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:05:15 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:05:19 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:06:15 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:06:18 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:06:20 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:06:41 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:06:44 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:08:10 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:08:16 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:08:17 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:08:19 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:16 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:19 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:22 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:23 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:26 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:29 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:11:41 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:12:35 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:12:41 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:12:44 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:21 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:38 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:40 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:41 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:46 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:49 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:13:52 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:14:14 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:14:19 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:14:38 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:14:49 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:16:24 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:16:27 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:55:09 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:55:41 --> 404 Page Not Found: 
+ERROR - 2019-08-01 15:56:13 --> 404 Page Not Found: 
+ERROR - 2019-08-01 17:29:36 --> An invalid name was submitted as the product name: Basma Walnuts 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-01 17:29:39 --> An invalid name was submitted as the product name: Basma Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-01 17:31:46 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-01 17:31:46 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Thu, 1 Aug 2019 17:31:44 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d42f7d11281c@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d42f7d112892&quot;
+</pre>
+ERROR - 2019-08-01 17:31:47 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-01 17:31:47 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Thu, 1 Aug 2019 17:31:46 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d42f7d225496@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d42f7d2254b3&quot;
+</pre>
