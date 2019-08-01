@@ -465,35 +465,35 @@ NOTE:
   /*************************
          Progressbar
   *************************/  
-      POTENZA.progressBar = function () {
+      // POTENZA.progressBar = function () {
   
-          if ($progressBar.exists()) {
-              $progressBar.each(function (i, elem) {
-                  var $elem = $(this),
-                      percent = $elem.attr('data-percent') || "100",
-                      delay = $elem.attr('data-delay') || "100",
-                      type = $elem.attr('data-type') || "%";
+      //     if ($progressBar.exists()) {
+      //         $progressBar.each(function (i, elem) {
+      //             var $elem = $(this),
+      //                 percent = $elem.attr('data-percent') || "100",
+      //                 delay = $elem.attr('data-delay') || "100",
+      //                 type = $elem.attr('data-type') || "%";
   
-                  if (!$elem.hasClass('progress-animated')) {
-                      $elem.css({
-                          'width': '0%'
-                      });
-                  }
-                  var progressBarRun = function () {
-                      $elem.animate({
-                          'width': percent + '%'
-                      }, 'easeInOutCirc').addClass('progress-animated');
+      //             if (!$elem.hasClass('progress-animated')) {
+      //                 $elem.css({
+      //                     'width': '0%'
+      //                 });
+      //             }
+      //             var progressBarRun = function () {
+      //                 $elem.animate({
+      //                     'width': percent + '%'
+      //                 }, 'easeInOutCirc').addClass('progress-animated');
   
-                      $elem.delay(delay).append('<span class="progress-type animated fadeIn">' + type + '</span><span class="progress-number animated fadeIn">' + percent + '</span>');
-                  };
-                      $(elem).appear(function () {
-                          setTimeout(function () {
-                              progressBarRun();
-                          }, delay);
-                      });
-              });
-          }
-      };  
+      //                 $elem.delay(delay).append('<span class="progress-type animated fadeIn">' + type + '</span><span class="progress-number animated fadeIn">' + percent + '</span>');
+      //             };
+      //                 $(elem).appear(function () {
+      //                     setTimeout(function () {
+      //                         progressBarRun();
+      //                     }, delay);
+      //                 });
+      //         });
+      //     }
+      // };  
   
   /*************************
            Countdown

@@ -17,11 +17,11 @@ $(document).ready(function() {
         $('#side-menu .' + active_menu).parents('.collapse').collapse('show');
     }
 
-    if (window.location.hash) {
-        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-		$('html,body').animate({scrollTop: $('#wrapper').offset().top - 45}, 800);
-        $('#nav-tabs a[href="#'+hash+'"]').tab('show');
-    }
+    // if (window.location.hash) {
+    //     var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+	// 	$('html,body').animate({scrollTop: $('#wrapper').offset().top - 45}, 800);
+    //     $('#nav-tabs a[href="#'+hash+'"]').tab('show');
+    // }
 
     $('.btn-group input[type="radio"]:checked, .btn-group .active input[type="radio"]').trigger('change');
 });
