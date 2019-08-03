@@ -463,7 +463,7 @@ border-color: #6f1e30;
   color: #fff;
 }
 .btn-link {
-color: #11a2dc;
+color: #420917;
 }
 .btn-link.active,
 .btn-link.focus,
@@ -588,8 +588,7 @@ border-style: solid;
 border-radius: 4px 4px 0 0;
 position: relative;
 }
-.nav-tabs.nav-tabs-line > li.active > a:hover,
-.nav-tabs.nav-tabs-line > li.active > a:focus {
+.nav-tabs.nav-tabs-line > li.active > a:hover{
 border: 0 none;
 background-color: #5a5757;
 color:#fff;
@@ -793,11 +792,11 @@ text-align: center;
     border-radius: 50%;
     /* border: 3px solid #fff; */
     color: #fff;
-    font-size: 18px;
-    line-height: 46px;
-    width: 50px;
-    height: 50px;
-    float:left;
+    font-size: 25px;
+    line-height: 52px;
+    width: 35px;
+    height: 35px;
+    float: left;
 
 }
 
@@ -815,7 +814,7 @@ width: 100%;
 font-size: 20px;
 font-style: normal;
 font-weight: bold;
-margin: 0;
+margin-left:10px;
 padding-bottom: 10px;
 position: relative;
 }
@@ -1238,8 +1237,11 @@ border:none;
 height: 50px;
 line-height: 50px;
 background-image:none;
-border:none;
+border: none;
+border: 1px solid #ccc;
+
 }
+#local-search .partial .panel{border-color: #9d6a75;}
 .select2-container.input-sm .select2-choice {
 height: 28px;
 line-height: 28px;
@@ -1578,7 +1580,7 @@ border-right:6px solid #6f1e30;
       background:none;
       border:none;
     }
-    .list-group li a{color: #333;}
+    .list-group li a{color: #333;font-size:14px;}
     .list-group li a:hover{
       text-decoration: none;
       color: #6f1e30;
@@ -1661,9 +1663,9 @@ border-right:6px solid #6f1e30;
 
 @media only screen and (max-width: 960px) {
   .step-item .icon i{
-    font-size: 13px;
-    line-height: 25px;
-    width: 35px ;
+    font-size: 21px;
+    line-height: 34px;
+    width: 20px;
     height: 35px;
     float: left;
     

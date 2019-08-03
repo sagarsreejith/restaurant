@@ -1,19 +1,18 @@
 <?php $path_image = '';
-switch ($rsegment) {
-      case "home":
-            $path_image = '';
-          break;
-      case "checkout":
-            $path_image = '';
-          break;
-      default:
-      $path_image = '../';
+if($rsegment !="home"){
+	$path_image = '../';
+
 }
 ?>
-<div class="row">
+<div class="">
 <div class="modal fade" id="order_now" role="dialog">
-<div class="modal-dialog  modal-lg modal-dialog-centered">
+<div class="modal-dialog  modal-dialog-centered">
    <div class="modal-content">
+         <!-- <div class="img_log">
+				<img src="assets/images/bg10.jpg" class="" style="width:100%">
+			</div> -->
+						
+
       <div class="modal-header">
          <button type="button" class="close" data-dismiss="modal">&times;</button>
          <div class="section-title text-center">
@@ -26,8 +25,8 @@ switch ($rsegment) {
       <div class="modal-body">
          <div id="local-search " class=" col-md-12 text-center">
             <div class="toggle_radio">
-               <input type="radio" checked class="toggle_option" id="first_toggle" name="odrer_option" value="delivery">
-               <input type="radio" class="toggle_option" id="second_toggle" name="odrer_option" value="pickup"> 
+               <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
+               <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
                <label for="first_toggle">
                   <p>Delivery</p>
 			   </label>
@@ -50,7 +49,7 @@ switch ($rsegment) {
                               <?php foreach($local_areas as $area){ ?>
                               <optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
                                  <?php foreach($area['areas'] as $local){ ?>
-                                 <option <?php if($location_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
+                                    <option <?php if($location_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
                                  <?php } ?>
                               </optgroup>
                               <?php } ?>
@@ -88,8 +87,8 @@ switch ($rsegment) {
          <?php if( $rsegment ==="home") { ?>
          <div class="order_now">
             <h2 class="Banner_header">Welcome to Zalatimo Sweets</h2>
-            <div class="btn_sec">
-			   <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
+            <div class="btn_sec animated bounceIn">
+			   <a type="button" class="order_btn " data-toggle="modal" data-target="#order_now">Order Now</a>
 			   <?php if ($this->config->item('reservation_mode') === '1') { ?>
 			   <a  href="<?php echo site_url('reservation'); ?>" type="button" class="order_btn">Reserve Now</a>
 			   <?php } ?>
@@ -138,7 +137,7 @@ switch ($rsegment) {
                      <?php } ?>
                      <div class="panel-body" id="panel-body">
                         <div class="row boxes">
-                           <div class="box-one col-xs-12 col-sm-5 col-md-5">
+                           <div class="box-one col-xs-12 col-sm-12 col-md-5">
                               <?php if (!empty($location_image)) { ?>
                               <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
                               <?php } ?>
@@ -158,7 +157,7 @@ switch ($rsegment) {
                               </dl>
                            </div>
                            <div class="col-xs-12 box-divider visible-xs"></div>
-                           <div class="box-two col-xs-12 col-sm-3 col-md-3">
+                           <div class="box-two col-xs-12 col-sm-6 col-md-3">
                               <dl>
                                  <?php if ($opening_status === 'open') { ?>
                                  <dt><?php echo lang('text_is_opened'); ?></dt>
@@ -256,14 +255,13 @@ switch ($rsegment) {
    
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
-      var search_query = $('#aioConceptName').val();
-      var order_type = $("input[name='odrer_option']:checked").val();;
+   	var search_query = $('#aioConceptName').val();
    	//alert($('#aioConceptName').val());
    	
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',
-   		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
+   		data: 'search_query=' + search_query,
    		dataType: 'json',
    		success: function(json) {
    			updateLocalBox(json);
@@ -381,3 +379,4 @@ switch ($rsegment) {
    }); 
    //-->
 </script>
+                 

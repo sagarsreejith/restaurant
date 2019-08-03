@@ -1,7 +1,7 @@
 
-<div class="background_images">
+<div class="background_images fadeIn">
 
-<img src="assets/images/banner1.webp">
+<img src="assets/images/bg9.jpg">
 </div>
 
 <!-- <section class="page-section-pb our-menuss">

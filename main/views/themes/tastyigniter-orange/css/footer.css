@@ -1,15 +1,26 @@
 /*************************
          footer
 *************************/
- .footer {
-    position: relative;
-    overflow: hidden;
-    background: #000 url('../images/footer.jpg');
-        background-position: 100% 0px, 100%, 0 0, 50%, 0 20%;
-    float: left;
-    width: 100%;
-    padding:10px 0;
+.footer {
+  position: relative;
+  overflow: hidden;
+ float: left;
+  width: 100%;
+  background: url(../../../../../assets/images/abstract.png) no-repeat scroll center bottom #611124;
+  border-top: #6f2e3e 2px solid;
 }
+
+footer:before {
+  background: url(../../../../../assets/images/shadow.png) no-repeat scroll center bottom rgba(0, 0, 0, 0);
+  content: "";
+  height: 9px;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+
 .footer-logo { margin-bottom: 40px; }
 .footer-logo img, .logo-sec img { height: 60px; }
 .footer-wel { margin-bottom: 60px; margin-top: 40px; }
@@ -24,17 +35,18 @@
 .footer .opening-time li span { float: right; }
 
 /*footer-bottom*/
-.footer .footer-bottom { background: transparent;     padding: 20px 0px 0;  position: relative; }
+. }
 .footer-bottom p a { color: #6f1e31; }
 .footer .footer-social ul li a { display: block; font-size: 16px; color: #ffffff; background: rgba(0, 0, 0, 0.3); border-radius: 50%; width: 50px; height: 50px; line-height: 50px; text-align: center; }
-.footer .footer-social ul li a:hover { background: #6f1e31; }
-.footer .nav_stt ul li a { display: block ;padding:0 10px; font-size: 16px; color: #ffffff;     cursor: pointer; line-height: 50px; text-align: center;    text-decoration: none; }
+.footer .footer-social ul li a:hover {color: #eea303;
+  box-shadow: 0 0 0 3px #fff; }
+.footer .nav_stt ul li a { display: block ;padding:0 10px; font-size: 16px; color: #ffffff;  line-height: 50px; text-align: center;    text-decoration: none; }
 /*  Tooltip Styles */
 .nav_stt ul li{display:inline-block!important;font-size:14px;line-height:28px;color:#4a90e2;border-top:none!important;border-bottom:none!important}
 .nav_stt ul li:not(:last-child)::after{    content: ' |' !important;
-    position: absolute;
-    top: 11px;    color: #ab9da1;
-    padding: 0 32px;}
+  position: absolute;
+  top: 11px;    color: #ab9da1;
+  padding: 0 32px;}
 /* Base styles for the element that has a tooltip */
 .footer-social [data-tooltip], .footer-social .tooltip { position: relative; cursor: pointer; }
 
@@ -130,31 +142,31 @@
 
 /*hack code ie 9*/
 @media all and (min-width:0\0) and (min-resolution:.001dpcm) {
-    .no-csstransforms3d [data-book='book-1'].book, .no-js [data-book='book-1'].book, [data-book='book-1'].book .front { background: #1e2327 url(../images/menu/menu-cover.png); background-size: cover; }
+  .no-csstransforms3d [data-book='book-1'].book, .no-js [data-book='book-1'].book, [data-book='book-1'].book .front { background: #1e2327 url(../images/menu/menu-cover.png); background-size: cover; }
 }
 
 
 .col_footer{
-    margin:25px 0;
+  margin:25px 0;
 }
 .logo_section{
-    padding:20px 0
+  padding:20px 0
 }
 .footer-logo{
-    padding:20px 0;
+  padding:20px 0;
 }
 .footer-title {
-    color:#fff;
+  color:#fff;
 }
 .footer-links ul li a{
-    color:#fff;
+  color:#fff;
 }
 .text_ft{
-    color:#fff;
+  color:#fff;
 }
 .text_ft a{
-    color:#d65b78;
+  color:#ae838c;
 }
 .cnt_div{
-    float: left;
+  float: left;
 }

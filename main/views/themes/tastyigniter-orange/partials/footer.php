@@ -10,7 +10,7 @@ switch ($rsegment) {
       $path_image = '../';
 }
 ?>
-<footer class="footer" id="" style="background: #000 url(../assets/images/footer_bg8.png);border-top: #6f1e30 2px solid;">
+<footer class="footer" id="" >
 
 <?php echo get_partial('content_footer'); ?>
  
@@ -20,66 +20,20 @@ switch ($rsegment) {
                
 
     <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
-            <div class="nav_stt">
-                <ul class="">
-                    <li class=""><a role="presentation"  href="<?php echo site_url(''); ?>"  active"#">Home</a></li>
-                    <li class=""><a href="<?php echo site_url('#about'); ?>">About</a></li>
-                    <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
-                    <li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
-                    <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>  
-                </ul>
-            </div>
+         
 <div class="col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-sm-2 offset-sm-2" style=""></div>
-              <!--  <div class="col-xs-4 col-sm-3">
-                    <div class="footer-links">
-                       <h4 class="footer-title hidden-xs"><?php echo lang('text_my_account'); ?></h4>
-                        <ul>
-                        <li><a href="<?php echo site_url('account/login'); ?>"><?php echo lang('menu_login'); ?></a></li>
-                    
-                            <li><a href="<?php echo site_url('account/gallery'); ?>">gallery</a></li>
-                            <li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-3">
-                    <div class="footer-links">
-                        <h4 class="footer-title hidden-xs"><?php echo config_item('site_name'); ?></h4>
-                        <ul>
-                            <li><a href="<?php echo site_url('local/all'); ?>"><?php echo lang('menu_locations'); ?></a></li>
-                            <li><a href="<?php echo site_url('contact'); ?>"><?php echo lang('menu_contact'); ?></a></li>
-                            <?php if (get_theme_options('hide_admin_link') !== '1') { ?>
-                                <li><a target="_blank" href="<?php echo admin_url(); ?>"><?php echo lang('menu_admin'); ?></a></li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-3">
-                    <div class="footer-links">
-                        <h4 class="footer-title hidden-xs"><?php echo lang('text_information'); ?></h4>
-                        <ul>
-                            <?php $pages = $this->Pages_model->getPages(); ?>
-                            <?php if ($pages) { ?>
-                                <?php foreach ($pages as $page) { ?>
-                                    <?php if (in_array('footer', $page['navigation'])) { ?>
-                                        <li><a href="<?php echo site_url('pages?page_id='.$page['page_id']); ?>"><?php echo $page['name']; ?></a></li>
-                                    <?php } ?>
-                                <?php } ?>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                </div>
-            </div>-->
+            
             <div class="footer-bottom">
     <div class="container">
       <div class="row">
         <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
           <div class="footer-social">
-            <ul class="list-inline">
-              <li><a href="#" data-tooltip="facebook"> <i class="fa fa-facebook"></i> </a> </li>
-              <li><a href="#" data-tooltip="twitter"> <i class="fa fa-twitter"></i> </a> </li>
-              <li><a href="#" data-tooltip="google-plus"> <i class="fa fa-google-plus"></i> </a> </li>
-              <li><a href="#" data-tooltip="instagram"> <i class="fa fa-instagram"></i> </a> </li>
-              <li><a href="#" data-tooltip="tripadvisor"> <i class="fa fa-tripadvisor"></i> </a> </li>
+            <ul class="list-inline ">
+              <li ><a href="#" > <i class="fa fa-facebook"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-twitter"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-google-plus"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-instagram"></i> </a> </li>
+              <li><a href="#" > <i class="fa fa-tripadvisor"></i> </a> </li>
             </ul>
           </div>
           <div class="text_ft">
