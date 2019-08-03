@@ -180,6 +180,19 @@
                     </div>
                     <div class="container">
                         <div class="isotope popup-gallery columns-4">
+                        <div class="grid-item fresh">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a href="#">Branding</a><span>/</span>
+                                            <a href="#">Identity</a>
+                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="grid-item Arabic mexican">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
@@ -271,19 +284,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item fresh">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="grid-item  Manakeeshn">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
@@ -323,6 +324,7 @@
                                     </div>
                                 </div>
                             </div>
+                       
                           
                         </div>
                     </div>

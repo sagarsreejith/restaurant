@@ -8,9 +8,9 @@ if($rsegment !="home"){
 <div class="modal fade" id="order_now" role="dialog">
 <div class="modal-dialog  modal-dialog-centered">
    <div class="modal-content">
-         <div class="img_log">
+         <!-- <div class="img_log">
 				<img src="assets/images/bg10.jpg" class="" style="width:100%">
-			</div>
+			</div> -->
 						
 
       <div class="modal-header">
@@ -22,19 +22,31 @@ if($rsegment !="home"){
             </div>
          </div>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg_before">
          <div id="local-search " class=" col-md-12 text-center">
-            <div class="toggle_radio">
-               <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
-               <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
-               <label for="first_toggle">
-                  <p>Delivery</p>
-			   </label>
-			    <label for="second_toggle">
-                  <p>Pick up</p>
-			   </label>
-               <div class="toggle_option_slider"></div>
-            </div>
+           
+               <div class="toggle_radio">
+               <img src="assets/images/cook.png" style="    width: 132px;
+    position: absolute;
+    top: -94px;
+    left: 179px;">
+                        <div class="normal-container">
+                              <div class="smile-rating-container">
+                                 <div class="smile-rating-toggle-container">
+                                    <form class="submit-rating">
+                                       <input id="meh"  name="satisfaction" type="radio" /> 
+                                       <input id="fun" name="satisfaction" type="radio" /> 
+                                       <label for="meh" class="rating-label rating-label-meh">Delivery</label>
+                                       <div class="smile-rating-toggle"></div>
+                                       <div class="toggle-rating-pill"></div>
+                                       <label for="fun" class="rating-label rating-label-fun">Pick Up</label>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                  </div> 
+
+
             <div class="panel panel-local">
                <div class="panel-body h2_col">
                   <!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
