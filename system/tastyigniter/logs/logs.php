@@ -1282,3 +1282,124 @@ ERROR - 2019-08-04 12:44:51 --> 404 Page Not Found:
 ERROR - 2019-08-04 12:45:09 --> 404 Page Not Found: 
 ERROR - 2019-08-04 12:45:12 --> 404 Page Not Found: 
 ERROR - 2019-08-04 12:45:46 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:11:31 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-04 14:11:31 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 4 Aug 2019 14:11:30 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d46bd6215683@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d46bd6215698&quot;
+</pre>
+ERROR - 2019-08-04 14:11:32 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-04 14:11:32 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 4 Aug 2019 14:11:31 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d46bd633ff57@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d46bd633ff9a&quot;
+</pre>
+ERROR - 2019-08-04 14:16:53 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:16:59 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:42 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:43 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:46 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:46 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:46 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:46 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:46 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:47 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:47 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:47 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:47 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:47 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:47 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:48 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:48 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:48 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:29:49 --> 404 Page Not Found: 
+ERROR - 2019-08-04 14:30:39 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:52 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:52 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:53 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:53 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:53 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:53 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:54 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:54 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:55 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:55 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:55 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:55 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:56 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:57 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:57 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:57 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:57 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:58 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:59 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:18:59 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:01 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:48 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:49 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:49 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:50 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:50 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:19:51 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:12 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:13 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:13 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:14 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:15 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:17 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:17 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:17 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:18 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:18 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:19 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:20:24 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:33:56 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:33:56 --> 404 Page Not Found: 
+ERROR - 2019-08-04 15:33:57 --> 404 Page Not Found: 
+ERROR - 2019-08-04 16:32:56 --> An invalid name was submitted as the product name: Nabelsiya Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-04 16:32:59 --> An invalid name was submitted as the product name: Basma Walnuts 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-04 16:33:03 --> An invalid name was submitted as the product name: Basma Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-04 16:33:06 --> An invalid name was submitted as the product name: Oshvolvol Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-04 16:53:36 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-04 16:53:36 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 4 Aug 2019 16:53:35 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d46e35f6965f@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d46e35f69676&quot;
+</pre>
+ERROR - 2019-08-04 16:53:37 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-04 16:53:37 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 4 Aug 2019 16:53:36 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d46e360815af@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d46e360815c0&quot;
+</pre>
+ERROR - 2019-08-04 17:18:52 --> 404 Page Not Found: 
+ERROR - 2019-08-04 17:18:52 --> 404 Page Not Found: 
+ERROR - 2019-08-04 17:19:01 --> 404 Page Not Found: 

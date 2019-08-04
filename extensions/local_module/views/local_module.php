@@ -26,7 +26,7 @@ if($rsegment !="home"){
          <div id="local-search " class=" col-md-12 text-center">
            
                <div class="toggle_radio">
-               <img src="assets/images/cook1.png">
+               <img src="<?php echo $path_image;?>assets/images/cook1.png">
                         <div class="normal-container">
                               <div class="smile-rating-container">
                                  <div class="smile-rating-toggle-container">

@@ -16,7 +16,7 @@
 
 					
 								<div class="img_log">
-									<img src="assets/images/bg10.jpg" class="" style="width:100%">
+									<img src="assets/images/bg3.jpg" class="" style="width:100%">
 								</div>
 						
                                 <div class="section-title text-center">

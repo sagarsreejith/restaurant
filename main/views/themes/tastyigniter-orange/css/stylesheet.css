@@ -273,7 +273,9 @@ font-size: 12px;
 }
 #main-header .dropdown-menu > li > a:focus,
 #main-header .dropdown-menu > li > a:hover {
-background-color: rgba(0,0,0,0.1);
+/* background-color: rgba(0,0,0,0.1); */
+background-color: #6f1e31;
+color: #fff !important;
 }
 /*** End Main Header ***/
 
