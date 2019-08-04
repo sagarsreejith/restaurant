@@ -22,19 +22,31 @@ if($rsegment !="home"){
             </div>
          </div>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg_before">
          <div id="local-search " class=" col-md-12 text-center">
-            <div class="toggle_radio">
-               <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option">
-               <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option">
-               <label for="first_toggle">
-                  <p>Delivery</p>
-			   </label>
-			    <label for="second_toggle">
-                  <p>Pick up</p>
-			   </label>
-               <div class="toggle_option_slider"></div>
-            </div>
+           
+               <div class="toggle_radio">
+               <img src="assets/images/cook.png" style="    width: 132px;
+    position: absolute;
+    top: -94px;
+    left: 179px;">
+                        <div class="normal-container">
+                              <div class="smile-rating-container">
+                                 <div class="smile-rating-toggle-container">
+                                    <form class="submit-rating">
+                                       <input id="meh"  name="odrer_option" type="radio" value="delivery"/> 
+                                       <input id="fun" name="odrer_option" type="radio" value="pickup"/> 
+                                       <label for="meh" class="rating-label rating-label-meh">Delivery</label>
+                                       <div class="smile-rating-toggle"></div>
+                                       <div class="toggle-rating-pill"></div>
+                                       <label for="fun" class="rating-label rating-label-fun">Pick Up</label>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                  </div> 
+
+
             <div class="panel panel-local">
                <div class="panel-body h2_col">
                   <!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
@@ -256,12 +268,13 @@ if($rsegment !="home"){
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
    	var search_query = $('#aioConceptName').val();
-   	//alert($('#aioConceptName').val());
+      var order_type = $("input[name='odrer_option']:checked").val();
+   	//alert(order_type);
    	
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',
-   		data: 'search_query=' + search_query,
+   		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
    		dataType: 'json',
    		success: function(json) {
    			updateLocalBox(json);
