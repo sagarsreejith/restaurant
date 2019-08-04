@@ -17,7 +17,7 @@ if($rsegment !="home"){
          <button type="button" class="close" data-dismiss="modal">&times;</button>
          <div class="section-title text-center">
             <div class="title-separator">
-               <img src="<?php echo $path_image;?>assets/images/food_icon.png">
+               <img src="<?php echo $path_image;?>assets/images/food_icon_11.png">
                <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
             </div>
          </div>
@@ -26,10 +26,7 @@ if($rsegment !="home"){
          <div id="local-search " class=" col-md-12 text-center">
            
                <div class="toggle_radio">
-               <img src="assets/images/cook.png" style="    width: 132px;
-    position: absolute;
-    top: -94px;
-    left: 179px;">
+               <img src="assets/images/cook1.png">
                         <div class="normal-container">
                               <div class="smile-rating-container">
                                  <div class="smile-rating-toggle-container">

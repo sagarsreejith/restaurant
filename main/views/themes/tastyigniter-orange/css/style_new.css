@@ -1314,7 +1314,8 @@ box-shadow:none;
 }
 .modal-body{padding:30px 15px;}
 #order_now .modal-content{
-  background-color: #ffffff;
+  /* background:url('../../../../../assets/images/download_bg1.png'); */
+  background:#fff;
 }
 
 .h2_sttt_order{
@@ -1943,7 +1944,7 @@ margin: 30px 0;
 
 
 
-.tq{    font-size: 14px;
+.tq{ font-size: 14px;
   font-weight: normal;
   color: #6f1e31;
   font-weight: 900;
@@ -2182,7 +2183,10 @@ Toggle Changes
 
 #fun:checked ~ .smile-rating-toggle {
      left: 270px;
-     background: url(../../../../../assets/images/pickup.png);
+     background: url(../../../../../assets/images/store.png);
+     height:24px;
+     width:24px;
+  
 
 }
 
@@ -2204,8 +2208,66 @@ Toggle Changes
   background-color: #00b9ee;
 }
 
-@media only screen and (max-width: 524px) {
-  .normal-container {
+ @media only screen and (max-width: 524px) {
+  .toggle_radio img{
+    left: 120px !important;
+  }
+  .rating-label-meh{
+    left:0;
+  }
+  .rating-label-fun{
+    left: 0;
+  }
+  
+  .smile-rating-toggle{
+    left: 140px;
+  }
+  #fun:checked ~ .smile-rating-toggle {
+    left: 193px;
+  }
+}
+@media only screen and (max-width: 450px){
+  .toggle_radio img {
+    left: 103px !important;
+}
+.smile-rating-toggle {
+  left: 130px;
+}
+#fun:checked ~ .smile-rating-toggle {
+  left: 184px;
+}
+}
+@media only screen and (max-width: 400px){
+
+.toggle_radio img {
+  left: 80px !important;
+}
+.smile-rating-toggle {
+  left: 100px;
+}
+#fun:checked ~ .smile-rating-toggle {
+  left: 171px;
+}
+}
+@media only screen and (max-width: 320px){
+  .toggle_radio img {
+    left: 54px !important;
+    top: -106px;
+}
+.toggle_radio label{
+  font-size: 12px;
+}
+.toggle-rating-pill{
+  width: 113px;
+}
+.smile-rating-toggle {
+  left: 90px;
+}
+#fun:checked ~ .smile-rating-toggle {
+  left: 137px;
+}
+}
+  /*.normal-container {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -2309,12 +2371,12 @@ Toggle Changes
     top: 42px;
     left: 177px;
     transition: all 500ms;
-  }
+  } */
 
   /*
   Toggle Changes
   */
-  #meh:checked ~ .rating-label-meh {
+  /* #meh:checked ~ .rating-label-meh {
     color: #555e63;
   }
 
@@ -2357,9 +2419,30 @@ Toggle Changes
   #fun:checked ~ .rating-eye {
     background-color: #00b9ee;
   }
-}
+} */
 
 
 .bg_before{
-  padding: 90px 15px 30px !important;
+  padding: 130px 15px 30px !important;
 }
+.toggle_radio img{
+  width: 132px;
+  position: absolute;
+  top: -110px;
+  left: 203px;
+}
+
+#order_now .modal-header{
+  background-color: #6f1e31;
+}
+#order_now .h2_sttt_order, #order_now .h2_sttt_order span{
+  color:#fff;
+
+}
+
+#order_now .section-title h2:before{
+
+  background:#fff;
+}
+#order_now .modal-footer{ background: #6f1e31;padding:20px 15px;}
+#order_now  .modal-footer a{ color: #ffffff;}
