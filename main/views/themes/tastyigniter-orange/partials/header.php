@@ -210,6 +210,19 @@
                             </div>
                             <?php } ?>
                                 <script>
+                                      $(document).ready(function(){
+                                        $(document).on('click', function (e){
+                                                /* bootstrap collapse js adds "in" class to your collapsible element*/
+                                                var menu_opened = $('#main-header-menu-collapse').hasClass('in');
+                                            
+                                                if(!$(e.target).closest('main-header-menu-collapse').length &&
+                                                    !$(e.target).is('#main-header-menu-collapse') &&
+                                                    menu_opened === true){
+                                                        $('#main-header-menu-collapse').collapse('toggle');
+                                                }
+
+                                        });
+                                    });    
                                     $(function() {
                                         $('#main-header-menu-collapse a').filter(function() {
                                             return this.href == location.href
@@ -235,4 +248,7 @@
                                         });
 
                                     });
+
+                                  
+
                                 </script>
