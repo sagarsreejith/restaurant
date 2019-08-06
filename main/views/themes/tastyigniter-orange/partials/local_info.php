@@ -9,7 +9,14 @@
 	<?php } ?>
 </div>
 
+
+
 <div class="col-xs-12 wrap-none wrap-bottom">
+<div class="col-xs-6 col-md-12 heading_info">
+		<div class="h6 text-uppercase">Timings</div>
+			<div class="text-subline offset-top-15"></div>				
+	</div>
+
 	<div class="col-xs-12 col-sm-6">
 		<?php if ($working_hours) { ?>
 			<div class="panel panel-default panel-nav-tabs">
@@ -31,7 +38,7 @@
 								<div class="list-group">
 									<?php if (!empty($working_hours[$type])) { ?>
 										<?php foreach ($working_hours[$type] as $hour) { ?>
-											<div class="list-group-item">
+											<div class="list-group-item days_time">
 												<div class="row">
 													<div class="col-xs-4"><?php echo $hour['day']; ?>:</div>
 													<div class="col-xs-8">
@@ -103,9 +110,14 @@
 		<?php if ($has_delivery) { ?>
 			<div class="col-xs-12 col-sm-6">
 				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><b><?php echo lang('text_delivery_areas'); ?></b></h4>
+					
+
+					<div class="col-xs-6 col-md-12 heading_info">
+							<div class="h6 text-uppercase"><?php echo lang('text_delivery_areas'); ?></div>
+							<div class="text-subline offset-top-15"></div>				
 					</div>
+						<!-- <h4 class="panel-title"><b><?php echo lang('text_delivery_areas'); ?></b></h4> -->
+					
 					<div class="panel-body">
 						<div class="list-group">
 							<?php if (!empty($delivery_areas)) { ?>
@@ -137,10 +149,16 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6">
-				<div id="map" class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><b><?php echo lang('text_delivery_map'); ?></b></h4>
+
+			<div class="col-xs-6 col-md-12 heading_info">
+							<div class="h6 text-uppercase"><?php echo lang('text_delivery_map'); ?></div>
+							<div class="text-subline offset-top-15"></div>				
 					</div>
+
+				<div id="map" class="panel panel-default">
+					<!-- <div class="panel-heading">
+						<h4 class="panel-title"><b><?php echo lang('text_delivery_map'); ?></b></h4>
+					</div> -->
 					<div class="panel-body">
 						<div id="map-holder" style="height:300px;text-align:left;"></div>
 					</div>

@@ -17,7 +17,7 @@ if($rsegment !="home"){
          <button type="button" class="close" data-dismiss="modal">&times;</button>
          <div class="section-title text-center">
             <div class="title-separator">
-               <img src="<?php echo $path_image;?>assets/images/food_icon_11.png">
+               <img src="<?php echo $path_image;?>assets/images/food_icon.png">
                <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
             </div>
          </div>
@@ -31,10 +31,11 @@ if($rsegment !="home"){
                               <div class="smile-rating-container">
                                  <div class="smile-rating-toggle-container">
                                     <form class="submit-rating">
-                                       <input id="meh"  name="satisfaction" type="radio" /> 
-                                       <input id="fun" name="satisfaction" type="radio" /> 
+                                     <input id="meh"  name="odrer_option" type="radio" value="delivery"/> 
+                                       <input id="fun" name="odrer_option" type="radio" value="pickup"/> 
+                                       
                                        <label for="meh" class="rating-label rating-label-meh">Delivery</label>
-                                       <div class="smile-rating-toggle"></div>
+                                       <a class="smile-rating-toggle"></a>
                                        <div class="toggle-rating-pill"></div>
                                        <label for="fun" class="rating-label rating-label-fun">Pick Up</label>
                                     </form>
@@ -58,7 +59,7 @@ if($rsegment !="home"){
                               <?php foreach($local_areas as $area){ ?>
                               <optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
                                  <?php foreach($area['areas'] as $local){ ?>
-                                 <option value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"><?php echo $local['govr_area_name_en']; ?></option>
+                                    <option <?php if($location_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
                                  <?php } ?>
                               </optgroup>
                               <?php } ?>
@@ -122,20 +123,20 @@ if($rsegment !="home"){
                            </div>
                         </div>
                         <div class="row local-change" style="display: <?php echo (!empty($search_query) OR (empty($search_query) AND $location_order !== '1')) ? 'block' : 'none'; ?>">
-                           <div class="col-xs-12 col-sm-7">
+                           <div class="col-xs-12 col-sm-12 col-md-12 place_st">
                               <?php $text_location_summary = ($has_search_query AND $delivery_coverage) ? lang('text_location_summary') : lang('text_delivery_coverage'); ?>
                               <?php $text_search_query = (empty($search_query)) ? lang('text_enter_location') : sprintf($text_location_summary, lang('text_at').$search_query); ?>
                               <?php echo $text_search_query; ?>&nbsp;&nbsp;
                               <!-- <a onclick="toggleLocalSearch();" class="clickable btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                               <?php //echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
 							  </a> -->
-							  
+							      <img src ="../assets/images/icon/map_icon.png" height=30px;>
 							  <a data-toggle="modal" data-target="#order_now" class="clickable btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                               	<?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                               </a>
                            </div>
                            <?php if (!in_array($rsegment, array('local', 'locations'))) { ?>
-                           <div class="col-xs-12 col-sm-5 text-right">
+                           <div class="col-xs-12 col-sm-12 text-center">
                               <a class="btn btn-primary btn-menus" href="<?php echo site_url('local?location_id='.$location_id).'#local-menus'; ?>"><i class="fa fa-cutlery"></i>
                               <span>&nbsp;&nbsp;<?php echo lang('text_goto_menus'); ?></span>
                               </a>
@@ -265,12 +266,13 @@ if($rsegment !="home"){
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
    	var search_query = $('#aioConceptName').val();
-   	//alert($('#aioConceptName').val());
+      var order_type = $("input[name='odrer_option']:checked").val();
+   	//alert(order_type);
    	
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',
-   		data: 'search_query=' + search_query,
+   		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
    		dataType: 'json',
    		success: function(json) {
    			updateLocalBox(json);
@@ -388,4 +390,3 @@ if($rsegment !="home"){
    }); 
    //-->
 </script>
-                 

@@ -1403,3 +1403,42 @@ Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d46e360815c0&quot;
 ERROR - 2019-08-04 17:18:52 --> 404 Page Not Found: 
 ERROR - 2019-08-04 17:18:52 --> 404 Page Not Found: 
 ERROR - 2019-08-04 17:19:01 --> 404 Page Not Found: 
+ERROR - 2019-08-05 15:09:12 --> Severity: Parsing Error --> syntax error, unexpected 'hhh' (T_STRING) D:\xampp\htdocs\out-rest\extensions\local_module\views\local_module.php 127
+ERROR - 2019-08-05 16:14:33 --> 404 Page Not Found: 
+ERROR - 2019-08-05 16:14:33 --> 404 Page Not Found: 
+ERROR - 2019-08-05 16:57:13 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '123")))))
+AND `staff_status` = '1'' at line 5 - Invalid query: SELECT *
+FROM `dw2rtzns5_users`
+LEFT JOIN `dw2rtzns5_staffs` ON `dw2rtzns5_staffs`.`staff_id` = `dw2rtzns5_users`.`staff_id`
+WHERE `username` = 'admin'
+AND password = SHA1(CONCAT(salt, SHA1(CONCAT(salt, SHA1("admin"123")))))
+AND `staff_status` = '1'
+ERROR - 2019-08-05 16:57:13 --> Severity: Error --> Call to a member function num_rows() on boolean D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\User.php 94
+ERROR - 2019-08-06 09:41:44 --> An invalid name was submitted as the product name: Nabelsiya Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-06 16:26:50 --> Severity: Parsing Error --> syntax error, unexpected '}' D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\local.php 22
+ERROR - 2019-08-06 17:32:34 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-06 17:32:34 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Tue, 6 Aug 2019 17:32:33 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d498f8195c09@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d498f8195c23&quot;
+</pre>
+ERROR - 2019-08-06 17:32:35 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-06 17:32:35 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Tue, 6 Aug 2019 17:32:34 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d498f82a66b8@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d498f82a66ca&quot;
+</pre>

@@ -70,7 +70,7 @@
                                                       
         </head>
 
-        <body class="<?php echo $body_class; ?>"  data-spy="scroll">
+        <body class="<?php echo $body_class; ?>">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
             <!--[if lt IE 7]>
             <p class="chromeframe"><?php echo lang('alert_info_outdated_browser'); ?></p>
@@ -210,7 +210,7 @@
                             </div>
                             <?php } ?>
                                 <script>
-                                      $(document).ready(function(){
+                                    $(document).ready(function(){
                                         $(document).on('click', function (e){
                                                 /* bootstrap collapse js adds "in" class to your collapsible element*/
                                                 var menu_opened = $('#main-header-menu-collapse').hasClass('in');
