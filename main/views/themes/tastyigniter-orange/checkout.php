@@ -1,3 +1,10 @@
+
+<style>
+
+
+}
+
+</style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <div id="page-content" class="mt_st">
@@ -374,6 +381,17 @@
 										<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog">
 												<div class="modal-content">
+												<div class="modal-header">
+														<!-- <button type="button" class="close" data-dismiss="modal">×</button>
+														<div class="section-title text-center">
+															<div class="title-separator">
+															<img src="assets/images/food_icon.png">
+															
+															</div>
+														</div> -->
+														<button type="button" class="close" data-dismiss="modal">×</button>
+														<h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Terms and Conditions</h2>
+													</div>
 													<div class="modal-body">
 
 												<h4>	Introduction</h4>

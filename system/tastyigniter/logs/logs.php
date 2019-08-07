@@ -1442,3 +1442,59 @@ Message-ID: &lt;5d498f82a66b8@gmail.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d498f82a66ca&quot;
 </pre>
+ERROR - 2019-08-07 11:43:19 --> 404 Page Not Found: 
+ERROR - 2019-08-07 11:43:35 --> 404 Page Not Found: 
+ERROR - 2019-08-07 11:46:39 --> 404 Page Not Found: 
+ERROR - 2019-08-07 13:26:12 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-07 13:26:12 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 7 Aug 2019 13:26:11 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4aa74319a5d@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4aa74319a70&quot;
+</pre>
+ERROR - 2019-08-07 13:26:13 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-07 13:26:13 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 7 Aug 2019 13:26:12 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4aa74424957@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4aa74424975&quot;
+</pre>
+ERROR - 2019-08-07 16:31:54 --> An invalid name was submitted as the product name: Basma Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-07 16:35:01 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-07 16:35:01 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 7 Aug 2019 16:35:00 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4ad3841ad73@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4ad3841ad87&quot;
+</pre>
+ERROR - 2019-08-07 16:35:02 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-07 16:35:02 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 7 Aug 2019 16:35:01 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4ad385261de@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4ad38526212&quot;
+</pre>
