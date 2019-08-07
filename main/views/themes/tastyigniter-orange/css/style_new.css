@@ -2364,3 +2364,81 @@ Toggle Changes
 .bg_before{
   padding: 90px 15px 30px !important;
 }
+
+
+.switch-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch-container #theme-switch {
+  display: none;
+}
+.switch-container .switch-label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 140px;
+  margin: 0;
+}
+.switch-container .switch-label .switch-overlay {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  border-radius: 100px;
+  background: #c1c1c1;
+}
+.switch-container .switch-label .switch-slider {
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.switch-container .switch-label .switch-slider .theme-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  user-select: none;
+}
+.switch-container .switch-label .switch-slider .theme-icon.light-icon {
+  transition: all 0.25s ease-in-out;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.switch-container .switch-label .switch-slider .theme-icon.dark-icon {
+  width: 50px;
+  height: 50px;
+  transition: all 0.25s ease-in-out;
+  transform: translate(-50%, -200%);
+  opacity: 0;
+}
+.switch-container #theme-switch:checked + .switch-label .switch-overlay {
+  transition: all 0.25s ease-in-out;
+  background: #1f2b33;
+}
+.switch-container #theme-switch:checked + .switch-label .switch-slider {
+  transition: all 0.25s ease-in-out;
+  transform: translateX(100%);
+  background: #eee;
+}
+.switch-container #theme-switch:checked + .switch-label .switch-slider .theme-icon.light-icon {
+  transition: all 0.25s ease-in-out;
+  transform: translate(-50%, 200%);
+  opacity: 0;
+}
+.switch-container #theme-switch:checked + .switch-label .switch-slider .theme-icon.dark-icon {
+  transition: all 0.25s ease-in-out;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}

@@ -25,7 +25,7 @@ if($rsegment !="home"){
       <div class="modal-body bg_before">
          <div id="local-search " class=" col-md-12 text-center">
            
-               <div class="toggle_radio">
+               <!-- <div class="toggle_radio">
                <img src="assets/images/cook.png" style="    width: 132px;
     position: absolute;
     top: -94px;
@@ -44,8 +44,17 @@ if($rsegment !="home"){
                                  </div>
                               </div>
                            </div>
-                  </div> 
-
+                  </div>  -->
+                  <div class="switch-container">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch" class="switch-label">
+    <div class="switch-overlay"></div>
+    <div class="switch-slider">
+      <img src="https://image.flaticon.com/icons/svg/726/726455.svg" alt="" class="light-icon theme-icon">
+      <img src="https://image.flaticon.com/icons/svg/123/123403.svg" alt="" style="width:35px" class="dark-icon  theme-icon">
+    </div>
+  </label>
+</div>
 
             <div class="panel panel-local">
                <div class="panel-body h2_col">
