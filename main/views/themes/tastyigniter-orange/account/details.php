@@ -98,7 +98,7 @@
 							</div>
 
 							<div class="row top-spacing-20 margin_20">
-                                <div class="col-xs-12">
+                                <div class="col-xs-12 nopad">
                                     <span class="txt_hd"><?php echo lang('text_password_heading'); ?></span>
 							    </div>
 							</div>

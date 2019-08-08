@@ -37,7 +37,7 @@ if($rsegment !="home"){
                                        <input id="meh"  name="odrer_option" type="radio" value="delivery"/> 
                                        <input id="fun" name="odrer_option" type="radio" value="pickup"/> 
                                        <label for="meh" class="rating-label rating-label-meh">Delivery</label>
-                                       <div class="smile-rating-toggle"></div>
+                                       <a class="smile-rating-toggle"></a>
                                        <div class="toggle-rating-pill"></div>
                                        <label for="fun" class="rating-label rating-label-fun">Pick Up</label>
                                     </form>
@@ -134,20 +134,20 @@ if($rsegment !="home"){
                            </div>
                         </div>
                         <div class="row local-change" style="display: <?php echo (!empty($search_query) OR (empty($search_query) AND $location_order !== '1')) ? 'block' : 'none'; ?>">
-                           <div class="col-xs-12 col-sm-7">
+                           <div class="col-xs-12 col-sm-12 col-md-12 place_st">
                               <?php $text_location_summary = ($has_search_query AND $delivery_coverage) ? lang('text_location_summary') : lang('text_delivery_coverage'); ?>
                               <?php $text_search_query = (empty($search_query)) ? lang('text_enter_location') : sprintf($text_location_summary, lang('text_at').$search_query); ?>
                               <?php echo $text_search_query; ?>&nbsp;&nbsp;
                               <!-- <a onclick="toggleLocalSearch();" class="clickable btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                               <?php //echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
 							  </a> -->
-							  
+							      <img src ="../assets/images/icon/map_icon.png" height=30px;>
 							  <a data-toggle="modal" data-target="#order_now" class="clickable btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                               	<?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                               </a>
                            </div>
                            <?php if (!in_array($rsegment, array('local', 'locations'))) { ?>
-                           <div class="col-xs-12 col-sm-5 text-right">
+                           <div class="col-xs-12 col-sm-12 text-center">
                               <a class="btn btn-primary btn-menus" href="<?php echo site_url('local?location_id='.$location_id).'#local-menus'; ?>"><i class="fa fa-cutlery"></i>
                               <span>&nbsp;&nbsp;<?php echo lang('text_goto_menus'); ?></span>
                               </a>
@@ -401,4 +401,3 @@ if($rsegment !="home"){
    }); 
    //-->
 </script>
-                 
