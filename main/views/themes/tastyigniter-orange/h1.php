@@ -4,6 +4,470 @@ if($rsegment !="home"){
 
 }
 ?>
+<style>
+
+
+.bubble1 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  transform: translate3d(-75%, -50%, 0);
+  margin-left: -50px;
+  background: #bbbbbb;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  border-right: 0px solid #bbbbbb;
+  border-left: 0px solid #bbbbbb;
+  animation: toggle-reverse 2s 1;
+}
+#bubble1:checked + .bubble1{
+  animation: toggle 2s 1;
+  transform: translate3d(75%, -50%, 0);
+  background: #3ccc97;
+}
+.bubble1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -2px;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  transition: 500ms ease all 1.25s;
+}
+.bubble1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -2px;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  transition: 500ms ease all 1.25s;
+}
+
+#bubble1:checked + .bubble1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 5px;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(225deg);
+  border-radius: 2px;
+}
+#bubble1:checked + .bubble1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -10px;
+  height: 20px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(-215deg);
+  border-radius: 2px;
+}
+@keyframes toggle {
+  0% {
+    transform: translate3d(-75%, -50%, 0);
+    border-right: 0 solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    background: #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 100px;
+  }
+  20% {
+    border-right: 0 solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(-75%, -50%, 0);
+    height: 100px;
+  }
+  40% {
+    border-left: 0 solid #bbbbbb;
+    border-radius: 35% 65% 65% 35% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  50% {
+    transform: translate3d(0%, -50%, 0);
+    border-right: 25px solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    background: #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  75% {
+    border-left: 25px solid #3ccc97;
+    border-color: #3ccc97;
+    background: #3ccc97;
+    border-radius: 65% 35% 35% 65% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  100% {
+    border-right: 0 solid #3ccc97;
+    border-left: 0 solid #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(75%, -50%, 0);
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes toggle-reverse {
+  0% {
+    transform: translate3d(75%, -50%, 0);
+    background: #3ccc97;
+    border-right: 0 solid #3ccc97;
+    border-left: 0 solid #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 100px;
+  }
+  20% {
+    border-right: 0 solid #3ccc97;
+    border-left: 0 solid #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(75%, -50%, 0);
+    height: 100px;
+  }
+  40% {
+    border-right: 0 solid #3ccc97;
+    border-radius: 65% 35% 35% 65% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  50% {
+    transform: translate3d(0%, -50%, 0);
+    border-left: 25px solid #3ccc97;
+    border-right: 0 solid #3ccc97;
+    background: #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  75% {
+    border-right: 25px solid #bbbbbb;
+    border-color: #bbbbbb;
+    background: #bbbbbb;
+    border-radius: 35% 65% 65% 35% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  100% {
+    border-right: 0 solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(-75%, -50%, 0);
+    height: 100px;
+    width: 100px;
+  }
+}
+
+ .bubble {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  transform: translate3d(-75%, -50%, 0);
+  margin-left: -50px;
+  background: #bbbbbb;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  border-right: 0px solid #bbbbbb;
+  border-left: 0px solid #bbbbbb;
+  animation: toggle-reverse 2s 1;
+}
+#bubble:checked + .bubble {
+  animation: toggle 2s 1;
+  transform: translate3d(75%, -50%, 0);
+  background: #3ccc97;
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -2px;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  transition: 500ms ease all 1.25s;
+}
+.bubble:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -2px;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  transition: 500ms ease all 1.25s;
+}
+
+#bubble:checked + .bubble:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 5px;
+  height: 30px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(225deg);
+  border-radius: 2px;
+}
+#bubble:checked + .bubble:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -10px;
+  height: 20px;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  transform: rotate(-215deg);
+  border-radius: 2px;
+}
+@keyframes toggle {
+  0% {
+    transform: translate3d(-75%, -50%, 0);
+    border-right: 0 solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    background: #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 100px;
+  }
+  20% {
+    border-right: 0 solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(-75%, -50%, 0);
+    height: 100px;
+  }
+  40% {
+    border-left: 0 solid #bbbbbb;
+    border-radius: 35% 65% 65% 35% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  50% {
+    transform: translate3d(0%, -50%, 0);
+    border-right: 25px solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    background: #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  75% {
+    border-left: 25px solid #3ccc97;
+    border-color: #3ccc97;
+    background: #3ccc97;
+    border-radius: 65% 35% 35% 65% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  100% {
+    border-right: 0 solid #3ccc97;
+    border-left: 0 solid #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(75%, -50%, 0);
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes toggle-reverse {
+  0% {
+    transform: translate3d(75%, -50%, 0);
+    background: #3ccc97;
+    border-right: 0 solid #3ccc97;
+    border-left: 0 solid #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 100px;
+  }
+  20% {
+    border-right: 0 solid #3ccc97;
+    border-left: 0 solid #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(75%, -50%, 0);
+    height: 100px;
+  }
+  40% {
+    border-right: 0 solid #3ccc97;
+    border-radius: 65% 35% 35% 65% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  50% {
+    transform: translate3d(0%, -50%, 0);
+    border-left: 25px solid #3ccc97;
+    border-right: 0 solid #3ccc97;
+    background: #3ccc97;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  75% {
+    border-right: 25px solid #bbbbbb;
+    border-color: #bbbbbb;
+    background: #bbbbbb;
+    border-radius: 35% 65% 65% 35% / 50% 50% 50% 50%;
+    height: 90px;
+  }
+  100% {
+    border-right: 0 solid #bbbbbb;
+    border-left: 0 solid #bbbbbb;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transform: translate3d(-75%, -50%, 0);
+    height: 100px;
+    width: 100px;
+  }
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  padding: 10px 0;
+  width: 260px;
+  transform: translate3d(-50%, -50%, 0);
+}
+.form:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 100%;
+  width: 120px;
+  background-color: #243548;
+  border-radius: 50%;
+  box-shadow: 75px 0 0 #243548, 150px 0 0 #243548;
+}
+
+.form input {
+  position: absolute;
+  left: -9999px;
+}
+
+.ext-cross:before, .checkbox__checker:before, .checkbox__cross:before, .checkbox__ok:before, .ext-cross:after, .checkbox__checker:after, .checkbox__cross:after, .checkbox__ok:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  margin: 0 auto;
+  top: 20px;
+  left: 0;
+  right: 0;
+  background-color: #bf1e1e;
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+.ext-cross:before, .checkbox__checker:before, .checkbox__cross:before, .checkbox__ok:before {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.ext-cross:after, .checkbox__checker:after, .checkbox__cross:after, .checkbox__ok:after {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.ext-ok:before, .checkbox__toggle:checked + .checkbox__checker:before, .checkbox__ok:before, .ext-ok:after, .checkbox__toggle:checked + .checkbox__checker:after, .checkbox__ok:after {
+  background-color: #0cb018;
+}
+.ext-ok:before, .checkbox__toggle:checked + .checkbox__checker:before, .checkbox__ok:before {
+  width: 6px;
+  top: 23px;
+  left: -7px;
+}
+.ext-ok:after, .checkbox__toggle:checked + .checkbox__checker:after, .checkbox__ok:after {
+  width: 12px;
+  left: 5px;
+}
+
+.checkbox {
+  width: 100px;
+  margin: 0 auto 30px auto;
+}
+.checkbox__container {
+  display: block;
+  position: relative;
+  height: 42px;
+  cursor: pointer;
+}
+.checkbox__toggle {
+  display: none;
+}
+.checkbox__toggle:checked + .checkbox__checker {
+  left: calc(100% - 43px);
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+.checkbox__checker, .checkbox__cross, .checkbox__ok {
+  display: block;
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  top: -1px;
+  left: 0px;
+  z-index: 1;
+}
+.checkbox__checker {
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: .3s;
+  z-index: 2;
+}
+.checkbox__checker:before, .checkbox__checker:after {
+  transition-duration: .3s;
+}
+.checkbox__cross:before, .checkbox__cross:after, .checkbox__ok:before, .checkbox__ok:after {
+  background-color: #ddd;
+}
+.checkbox__ok {
+  left: calc(100% - 43px);
+}
+.checkbox__txt-left, .checkbox__txt-right {
+  display: block;
+  position: absolute;
+  width: 42px;
+  top: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  z-index: 1;
+}
+.checkbox__txt-right {
+  right: 0px;
+}
+.checkbox__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #aaa;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
 <div class="">
 <div class="modal fade" id="order_now" role="dialog">
 <div class="modal-dialog  modal-dialog-centered">
@@ -30,14 +494,34 @@ if($rsegment !="home"){
                         <div class="normal-container">
                               <div class="smile-rating-container">
                                  <div class="smile-rating-toggle-container">
-                                    <form class="submit-rating">
-                                     <input id="meh"  name="odrer_option" type="radio" value="delivery"/> 
-                                       <input id="fun" name="odrer_option" type="radio" value="pickup"/> 
+                                    <!-- <form class="submit-rating">
+                                     <input id="meh"  name="odrer_option" type="radio" value="delivery" /> 
+                                       <input id="fun bubble" name="odrer_option" type="radio" value="pickup"/> 
                                        
-                                       <label for="meh" class="rating-label rating-label-meh">Delivery</label>
+                                       <label for="meh" class="rating-label rating-label-meh bubble" for="bubble">Delivery</label>
                                        <a class="smile-rating-toggle"></a>
                                        <div class="toggle-rating-pill"></div>
                                        <label for="fun" class="rating-label rating-label-fun">Pick Up</label>
+                                    </form> -->
+                                    <form class="submit-rating">
+                                   
+
+
+                                          <div class='checkbox'>
+                                          <label class='checkbox__container'>
+                                           <input class='checkbox__toggle' type='checkbox'>
+                                             <span class='checkbox__checker'></span>
+                                             <span class='checkbox__cross'></span>
+                                             <span class='checkbox__ok'></span>
+                                             <svg class='checkbox__bg' space='preserve' style='enable-background:new 0 0 110 43.76;' version='1.1' viewbox='0 0 110 43.76'>
+                                                <path class='shape' d='M88.256,43.76c12.188,0,21.88-9.796,21.88-21.88S100.247,0,88.256,0c-15.745,0-20.67,12.281-33.257,12.281,S38.16,0,21.731,0C9.622,0-0.149,9.796-0.149,21.88s9.672,21.88,21.88,21.88c17.519,0,20.67-13.384,33.263-13.384,S72.784,43.76,88.256,43.76z'></path>
+                                             </svg>
+                                          </label>
+                                          </div>
+                                         
+
+
+
                                     </form>
                                  </div>
                               </div>

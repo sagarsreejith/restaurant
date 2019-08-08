@@ -29,8 +29,10 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-6">
 								<div class="form-group">
-									<input type="text" id="last-name" class="form-control input-lg" value="<?php echo set_value('last_name'); ?>" name="last_name" placeholder="<?php echo lang('label_last_name'); ?>">
-									<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
+									<!-- <input type="text" id="last-name" class="form-control input-lg" value="<?php echo set_value('last_name'); ?>" name="last_name" placeholder="<?php echo lang('label_last_name'); ?>">
+									<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?> -->
+									<input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
+									<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 								</div>
 							</div>
 						</div>
@@ -53,8 +55,8 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
-							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
+							<!-- <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
+							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?> -->
 						</div>
 						<!-- <div class="form-group">
 							<select name="security_question" id="security-question" class="form-control input-lg" placeholder="<?php echo lang('label_s_question'); ?>">

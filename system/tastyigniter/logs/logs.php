@@ -1498,3 +1498,32 @@ Message-ID: &lt;5d4ad385261de@gmail.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4ad38526212&quot;
 </pre>
+ERROR - 2019-08-08 10:58:30 --> 404 Page Not Found: 
+ERROR - 2019-08-08 10:59:32 --> 404 Page Not Found: 
+ERROR - 2019-08-08 14:04:18 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-08 14:04:18 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Thu, 8 Aug 2019 14:04:17 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4c01b16ce82@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4c01b16cea5&quot;
+</pre>
+ERROR - 2019-08-08 14:04:19 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-08 14:04:19 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Thu, 8 Aug 2019 14:04:18 +0300
+From: &quot;Lugma&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d4c01b27c500@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4c01b27c519&quot;
+</pre>
+ERROR - 2019-08-08 16:52:57 --> 404 Page Not Found: 

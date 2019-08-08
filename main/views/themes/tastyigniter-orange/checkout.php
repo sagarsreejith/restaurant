@@ -1,9 +1,108 @@
 
 <style>
 
-
+.md_add{
+	margin:0 20px;
+}
+#modal_add .modal-title{
+text-align:left;
+font-size: 25px;
+}
+#modal_add .modal-footer{
+    padding: 15px;
+	border-top: 1px solid #e5e5e5;
+	text-align:auto;
+}
+.btn_ft{
+	float: left;
 }
 
+.btn_ft button{
+	background: #fff;
+    padding: 10px 25px;
+	font-size: 15px;
+	border:1px solid #6f1e30;
+	color:#333;
+}
+
+
+.btn_ft1{
+	float: right;
+}
+
+.btn_ft1 button{
+	background: #6f1e30;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+.btn_ft1 button:hover{
+	color:#ccc;
+}
+
+#modal_add_edit .modal-title{
+text-align:left;
+font-size: 25px;
+}
+#modal_add_edit .modal-footer{
+    padding: 15px;
+	border-top: 1px solid #e5e5e5;
+	text-align:auto;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: #9a929e;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label {
+  color: #fff  !important;
+  background: #6f1e30;
+  padding:10px 28px;
+}
+
+label + input[type=radio]:checked + label{
+	border-left: none !important;
+}
+label + input[type=radio] + label {
+  border-left: solid 3px #6f1e30;
+}
+
+input[type=radio]:checked + label {
+  color: #fff  !important;
+  background: #6f1e30;
+  padding:10px 19px;
+  border-left:none !important;
+}
+
+
+
+.radio-group_add {
+	border: solid 1px #6f1e30;
+    display: inline-block;
+    /* margin: 20px; */
+    /* border-radius: 10px; */
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.radio-group_add label{
+	margin-bottom:0;
+	padding:10px 19px;
+
+}
+.head_add{
+	color:#333;
+	font-weight:600;
+}
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
@@ -203,6 +302,146 @@
 												<?php echo form_error('address_id', '<span class="text-danger">', '</span>'); ?>
 											</div>
 										</div>
+
+
+										<button type="button" class="btn btn-primary md_add" data-toggle="modal" data-target="#modal_add">Edit Address</button>
+
+										
+											<div id="modal_add" class="modal" tabindex="-1" role="dialog">
+												<div class="modal-dialog " role="document">
+													<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title">Edit</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+													<div class="content-wrap">
+
+														<div id="map_home" class="slideInUp" style="height:500px; width:100%"></div>
+													</div>
+													</div>
+													<div class="modal-footer">
+														<div class="text-left btn_ft">	<button type="button" class="btn " data-toggle="modal" data-target="#modal_add_edit" data-dismiss="modal">View Address Fields</button> </div>
+														<div class="text-right btn_ft1"><button type="button" class="btn " data-dismiss="modal">Confirm</button> </div>
+													</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div id="modal_add_edit" class="modal" tabindex="-1" role="dialog">
+												<div class="modal-dialog " role="document">
+													<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title">Add New Address</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+													
+		
+													<form method="POST" accept-charset="utf-8" action="" id="" role="form">
+															
+													<h5 class="head_add">Contact Details</h5>
+															<div class="row">
+																<div class="col-sm-6">
+																	<div class="form-group">
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Firstname">
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="form-group">
+																	
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Lastname">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-sm-6">
+																<input type="text" name="first_name" id="first-name" class="form-control" value="Phone Number">	
+																</div>
+																<div class="col-sm-6">
+																	<div class="form-group">
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Email">
+																	</div>
+																</div>
+															</div>
+
+															<h5 class="head_add">Address Details</h5>
+
+															<div class="row">
+																<div class="col-sm-6">
+																	<div class="form-group">
+																	
+																		<form>
+																			<div class="radio-group_add">
+																				<input type="radio" id="option-one" name="selector">
+																				<label for="option-one">Apartment</label>
+
+																				<input type="radio" id="option-two" name="selector">
+																				<label for="option-two">House</label>
+
+																				<input type="radio" id="option-three" name="selector">
+																				<label for="option-three">Office</label>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="form-group">
+																		
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="block 9">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-sm-6">
+																	<div class="form-group">
+																		
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Lane">
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="form-group">
+																	
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Building">
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-sm-6">
+																	<div class="form-group">
+																		
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Floor">
+																	</div>
+																</div>
+																<div class="col-sm-6">
+																	<div class="form-group">
+																	
+																		<input type="text" name="first_name" id="first-name" class="form-control" value="Apartment No">
+																	</div>
+																</div>
+															</div>
+
+														</form>
+
+							
+
+													</div>
+													<div class="modal-footer">
+														<div class="text-left btn_ft">	<button type="button" class="btn ">View Map</button> </div>
+														<div class="text-right btn_ft1"><button type="button" class="btn " data-dismiss="modal">Save Address</button> </div>
+													</div>
+													</div>
+												</div>
+											</div>
+
+										
+										
+
 
 										<div id="address-forms">
 											<?php $address_row = 0; ?>
@@ -501,5 +740,96 @@ $(document).ready(function() {
 
 	});
 });
-//--></script>
+//-->
+
+
+
+
+
+</script>
+<script>
+$(document).ready(function() {
+
+
+
+initMapHome();
+
+
+
+function initMapHome() {
+var broadway = {
+	info: '<strong>Zalatimo Sweets</strong><br>\
+	Sharq, KIPCO Tower<br> Kuwait City<br>\
+<a href="https://www.google.com/maps/dir//KIPCO+Tower,+Al+Kuwayt/@29.3757712,47.9436413,12.7z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3fcf84966d43bf01:0xb0f7d549868e3803!2m2!1d47.9868396!2d29.3757397" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+	lat: 29.3757,
+	long: 47.9868,
+}
+
+var belmont = {
+	info: '<strong>Zalatimo Sweets</strong><br>\
+	Ground Floor, Building 25, Marina Crescent<br> Salmiya<br>\
+<a href="https://www.google.com/maps/place/Marina+Crescent/@29.3439534,48.0604649,16.15z/data=!4m8!1m2!2m1!1sGround+Floor,+Building+25,+Marina+Crescent,+kuwait!3m4!1s0x3fcf9d9950d2a1c1:0xb80aaf80bf2223b4!8m2!3d29.3411726!4d48.0655611" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+	lat: 29.3439534,
+	long: 48.0633999,
+}
+
+//                     var sheridan = {
+//                         info: '<strong>Chipotle on Sheridan</strong><br>\r\
+// 6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
+// <a href="https://goo.gl/maps/QGUrqZPsYp92" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+//                         lat: 29.14583,
+//                         long: 48.09472,
+//                     }
+
+var locations = [
+	[broadway.info, broadway.lat, broadway.long, 0],
+	[belmont.info, belmont.lat, belmont.long, 1],
+	// [sheridan.info, sheridan.lat, sheridan.long, 2],
+]
+
+var map = new google.maps.Map(document.getElementById('map_home'), {
+	zoom: 12,
+	center: new google.maps.LatLng(29.3759, 47.9774),
+	mapTypeControlOptions: {
+		mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
+	}, // here´s the array of controls
+	//disableDefaultUI: true, // a way to quickly hide all controls
+	mapTypeControl: false,
+	scaleControl: true,
+	mapTypeId: google.maps.MapTypeId.ROADMAP,
+})
+
+var infowindow = new google.maps.InfoWindow({})
+
+var marker, i
+
+for (i = 0; i < locations.length; i++) {
+	marker = new google.maps.Marker({
+		position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+		icon: "assets/images/restaurant_mapmarker13.png",
+		map: map,
+	})
+
+	google.maps.event.addListener(
+		marker,
+		'click', (function(marker, i) {
+			return function() {
+				infowindow.setContent(locations[i][0])
+				infowindow.open(map, marker)
+			}
+		})(marker, i)
+	)
+}
+}
+});
+
+</script>
+<script>
+
+
+
+
+</script>
+
 <?php echo get_footer(); ?>
+

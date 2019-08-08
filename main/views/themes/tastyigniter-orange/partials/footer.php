@@ -36,7 +36,7 @@ if($rsegment !="home"){
           </div>
           <div class="text_ft">
                 <?php echo sprintf(lang('site_copyright'), date('Y'), config_item('site_name'), lang('tastyigniter_system_name')) . lang('tastyigniter_system_powered'); ?>
-            </div>
+          </div>
         </div>
       </div>
     </div>
