@@ -119,7 +119,7 @@ class Local extends Main_Controller {
 		$payment_list = '';
 		foreach ($payments as $code => $payment) {
 			if ( empty($local_payments) OR in_array($code, $local_payments)) {
-				$payment_list[] = $payment['name'];
+				//$payment_list[] = $payment['name'];
 			}
 		}
 
