@@ -49,10 +49,77 @@ font-size: 25px;
 	text-align:auto;
 }
 
-input[type=radio] {
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  padding: 10px;
+  margin-right: 10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #6f1e30;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
   position: absolute;
-  visibility: hidden;
-  display: none;
+  content: '✔';
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #6f1e30;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
 }
 
 input[type=radio]:checked + label {
@@ -75,7 +142,9 @@ input[type=radio]:checked + label {
   border-left:none !important;
 }
 
-
+.checkmark{
+	margin: 5px;
+}
 
 .radio-group_add {
 	border: solid 1px #6f1e30;
@@ -343,39 +412,29 @@ input[type=radio]:checked + label {
 															</div>
 														</div>
 													</div>
-													<div class="row apartment">
+													<div class="row  non-hse">
 														<div class="col-sm-6">
-															<div class="form-group">
+															<div class="form-group apartment">
 																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
-																<input type="text" name="address[<?php echo $address_row; ?>][apt_no]" class="form-control" value="<?php echo set_value('address['.$address_row.'][apt_no]', $address['apt_no']); ?>" placeholder="<?php echo lang('label_apt_no'); ?>"/>
+																<input type="text" name="address[<?php echo $address_row; ?>][apt_no]" class="form-control apt_no" value="<?php echo set_value('address['.$address_row.'][apt_no]', $address['apt_no']); ?>" placeholder="<?php echo lang('label_apt_no'); ?>"/>
 																<?php echo form_error('address['.$address_row.'][apt_no]', '<span class="text-danger">', '</span>'); ?>
 															
 																</div>
-														</div>
-														<div class="col-sm-6">
-															<div class="form-group">
-																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
-																<input type="text" name="address[<?php echo $address_row; ?>][floor]" class="form-control" value="<?php echo set_value('address['.$address_row.'][floor]', $address['floor']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
-																<?php echo form_error('address['.$address_row.'][floor]', '<span class="text-danger">', '</span>'); ?>
-															</div>
-														</div>
-													</div>
-													<div class="row office">
-														<div class="col-sm-6">
-															<div class="form-group">
+																<div class="form-group office">
 																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
-																<input type="text" name="address[<?php echo $address_row; ?>][office]" class="form-control" value="<?php echo set_value('address['.$address_row.'][office]', $address['office']); ?>" placeholder="<?php echo lang('label_office'); ?>"/>
+																<input type="text" name="address[<?php echo $address_row; ?>][office]" class="form-control office" value="<?php echo set_value('address['.$address_row.'][office]', $address['office']); ?>" placeholder="<?php echo lang('label_office'); ?>"/>
 																<?php echo form_error('address['.$address_row.'][office]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
 														<div class="col-sm-6">
 															<div class="form-group">
 																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
-																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
-																<?php echo form_error('address['.$address_row.'][address_2]', '<span class="text-danger">', '</span>'); ?>
+																<input type="text" name="address[<?php echo $address_row; ?>][floor]" class="form-control floor" value="<?php echo set_value('address['.$address_row.'][floor]', $address['floor']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][floor]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
 													</div>
+													
 													<div class="row">
 														<div class="col-sm-6">
 															<div class="form-group">
@@ -477,10 +536,9 @@ input[type=radio]:checked + label {
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
 												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">		
-													<label for=""><?php echo lang('label_address'); ?>: nnnn</label>
+													<label for=""><?php echo lang('label_address'); ?>: </label>
 												</div>
 												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">
-													<?php print_r($addresses); ?>	
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
@@ -670,10 +728,22 @@ $(document).ready(function() {
 		$(".apartment").hide();
 		$(".office").hide();
 		if($(this).attr('data-id') === 'apt'){
+			$(".non-hse").show();
 			$(".apartment").show();
+			$('.office').val('');
+			$('.floor').val('');
 		}
 		if($(this).attr('data-id') === 'ofc'){
+			$(".non-hse").show();
 			$(".office").show();
+			$('.apt_no').val('');
+			$('floor').val('');
+		}
+		if($(this).attr('data-id') === 'hse'){
+			$(".non-hse").hide();
+			$('.apt_no').val('');
+			$('floor').val('');
+			$('.office').val('');
 		}
 		$( ".custom-button" ).removeClass( "acivie-option" );
 		$(this).addClass( "acivie-option" );

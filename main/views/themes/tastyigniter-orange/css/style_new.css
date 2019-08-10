@@ -2611,7 +2611,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Colo
   height: 40px;
   position: absolute;
   width: 40px;
-  background-size: 30px;
+  background-size: 25px;
   background-repeat: no-repeat;
   /* top: 4px; */
   /* padding-left:30px; */
@@ -2621,4 +2621,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Colo
 }
 .map_A{
   padding-left: 18px;
+}
+#local-search  .partial .panel {
+  border:none !important;
 }

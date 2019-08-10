@@ -86,7 +86,7 @@ class Register extends Main_Controller {
 	private function validateForm() {
 		// START of form validation rules
 		$this->form_validation->set_rules('first_name', 'lang:label_first_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
-		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
+		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|min_length[2]|max_length[32]');
 		$this->form_validation->set_rules('email', 'lang:label_email', 'xss_clean|trim|required|valid_email|is_unique[customers.email]');
 		$this->form_validation->set_rules('password', 'lang:label_password', 'xss_clean|trim|required|min_length[6]|max_length[32]|matches[password_confirm]');
 		$this->form_validation->set_rules('password_confirm', 'lang:label_password_confirm', 'xss_clean|trim|required');

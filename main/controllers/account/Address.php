@@ -104,9 +104,9 @@ class Address extends Main_Controller {
 				'state' 		=> $result['state'],
 				'postcode' 		=> $result['postcode'],
 				'country_id' 	=> $result['country_id'],
-				'building' 	=> $result['building_no'],
+				'building_no' 	=> $result['building_no'],
 				'avenue' 	=> $result['avenue'],
-				'apt' 	=> $result['apt_no'],
+				'apt_no' 	=> $result['apt_no'],
 				'floor' 	=> $result['floor'],
 				'office' 	=> $result['office']
 
