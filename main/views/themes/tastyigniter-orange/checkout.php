@@ -60,7 +60,7 @@ label {
   display: inline-block;
   cursor: pointer;
   font-weight: bold;
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
 }
 
 input[type=radio]:checked + label {

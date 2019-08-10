@@ -1,8 +1,8 @@
 <?php $path_image = '';
 if($rsegment !="home"){
 	$path_image = '../';
-
 }
+
 ?>
 <div class="">
 <div class="modal fade" id="order_now" role="dialog">
@@ -130,7 +130,7 @@ if($rsegment !="home"){
                               <!-- <a onclick="toggleLocalSearch();" class="clickable btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                               <?php //echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
 							  </a> -->
-							      <img src ="../assets/images/icon/map_icon.png" height=30px;>
+							    <div class="map_icon_bg"> <img src ="../assets/images/icon/map_icon.png" height=30px;></div>
 							  <a data-toggle="modal" data-target="#order_now" class="clickable btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                               	<?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                               </a>
