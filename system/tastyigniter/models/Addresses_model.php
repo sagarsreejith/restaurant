@@ -60,6 +60,11 @@ class Addresses_model extends TI_Model {
 							'postcode'   => $result['postcode'],
 							'country_id' => $result['country_id'],
 							'country'    => $result['country_name'],
+							'building'=>$result['building_no'],
+							'avenue'   	 =>$result['avenue'],
+							'apt'     =>$result['apt_no'],
+							'floor'      =>$result['floor'],
+							'office'     =>$result['office'],
 							'iso_code_2' => $result['iso_code_2'],
 							'iso_code_3' => $result['iso_code_3'],
 							'format'     => $result['format'],
@@ -82,7 +87,6 @@ class Addresses_model extends TI_Model {
 			$this->db->where('customer_id', $customer_id);
 
 			$query = $this->db->get();
-
 			if ($query->num_rows() > 0) {
 				foreach ($query->result_array() as $result) {
 
@@ -95,6 +99,11 @@ class Addresses_model extends TI_Model {
 						'postcode'   => $result['postcode'],
 						'country_id' => $result['country_id'],
 						'country'    => $result['country_name'],
+						'building'=>$result['building_no'],
+						'avenue'   	 =>$result['avenue'],
+						'apt'     =>$result['apt_no'],
+						'floor'      =>$result['floor'],
+						'office'     =>$result['office'],
 						'iso_code_2' => $result['iso_code_2'],
 						'iso_code_3' => $result['iso_code_3'],
 						'format'     => $result['format'],
@@ -133,6 +142,11 @@ class Addresses_model extends TI_Model {
 					'postcode'   => $row['postcode'],
 					'country_id' => $row['country_id'],
 					'country'    => $row['country_name'],
+					'building'=>$result['building_no'],
+					'avenue'   	 =>$result['avenue'],
+					'apt'     =>$result['apt_no'],
+					'floor'      =>$result['floor'],
+					'office'     =>$result['office'],
 					'iso_code_2' => $row['iso_code_2'],
 					'iso_code_3' => $row['iso_code_3'],
 					'format'     => $row['format'],
@@ -165,6 +179,11 @@ class Addresses_model extends TI_Model {
 				'postcode'   => $row['postcode'],
 				'country_id' => $row['country_id'],
 				'country'    => $row['country_name'],
+				'building'	 =>$row['building_no'],
+				'avenue'   	 =>$row['avenue'],
+				'apt'    	 =>	$row['apt_no'],
+				'floor'      =>$row['floor'],
+				'office'     =>$row['office'],
 				'iso_code_2' => $row['iso_code_2'],
 				'iso_code_3' => $row['iso_code_3'],
 				'format'     => $row['format'],
@@ -235,6 +254,26 @@ class Addresses_model extends TI_Model {
 
 		if (isset($address['postcode'])) {
 			$this->db->set('postcode', $address['postcode']);
+		}
+
+		if (isset($address['building_no'])) {
+			$this->db->set('building_no', $address['building_no']);
+		}
+
+		if (isset($address['avenue'])) {
+			$this->db->set('avenue', $address['avenue']);
+		}
+
+		if (isset($address['apt_no'])) {
+			$this->db->set('apt_no', $address['apt_no']);
+		}
+
+		if (isset($address['floor'])) {
+			$this->db->set('floor', $address['floor']);
+		}
+
+		if (isset($address['office'])) {
+			$this->db->set('office', $address['office']);
 		}
 
 		if (isset($address['country'])) {

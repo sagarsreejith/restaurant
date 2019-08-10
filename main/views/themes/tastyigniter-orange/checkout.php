@@ -1,9 +1,100 @@
 
 <style>
 
-
+.md_add{
+	margin:0 20px;
+}
+#modal_add .modal-title{
+text-align:left;
+font-size: 25px;
+}
+#modal_add .modal-footer{
+    padding: 15px;
+	border-top: 1px solid #e5e5e5;
+	text-align:auto;
+}
+.btn_ft{
+	float: left;
 }
 
+.btn_ft button{
+	background: #fff;
+    padding: 10px 25px;
+	font-size: 15px;
+	border:1px solid #6f1e30;
+	color:#333;
+}
+
+
+.btn_ft1{
+	float: right;
+}
+
+.btn_ft1 button{
+	background: #6f1e30;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+.btn_ft1 button:hover{
+	color:#ccc;
+}
+
+#modal_add_edit .modal-title{
+text-align:left;
+font-size: 25px;
+}
+#modal_add_edit .modal-footer{
+    padding: 15px;
+	border-top: 1px solid #e5e5e5;
+	text-align:auto;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  color: #fff  !important;
+  background: #6f1e30;
+  padding:10px 28px;
+}
+
+label + input[type=radio]:checked + label{
+	border-left: none !important;
+}
+label + input[type=radio] + label {
+  border-left: solid 3px #6f1e30;
+}
+
+input[type=radio]:checked + label {
+  color: #fff  !important;
+  background: #6f1e30;
+  padding:10px 19px;
+  border-left:none !important;
+}
+
+
+
+.radio-group_add {
+	border: solid 1px #6f1e30;
+    display: inline-block;
+    /* margin: 20px; */
+    /* border-radius: 10px; */
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.radio-group_add label{
+	margin-bottom:0;
+	padding:10px 19px;
+
+}
+.head_add{
+	color:#333;
+	font-weight:600;
+}
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
@@ -61,22 +152,21 @@
 					<div class="col-md-12">
 						<form method="POST" accept-charset="utf-8" action="<?php echo $_action; ?>" id="checkout-form" role="form">
 							<input type="hidden" name="checkout_step" class="checkout_step" value="<?php echo set_value('checkout_step', $checkout_step); ?>">
-
 							<div id="checkout" class="content-wrap" style="display: <?php echo ($checkout_step === 'one') ? 'block' : 'none'; ?>">
 								<p class="text-info"><?php echo $text_login_register; ?></p><br />
-
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="first-name"><?php echo lang('label_first_name'); ?></label>
-											<input type="text" name="first_name" id="first-name" class="form-control" value="<?php echo set_value('first_name', $first_name); ?>" />
+											<!-- <label for="first-name"><?php //echo lang('label_first_name'); ?></label> -->
+											<input type="text" name="first_name" id="first-name" class="form-control" value="<?php echo set_value('first_name', $first_name); ?>" placeholder="<?php echo lang('label_first_name'); ?>"/>
 											<?php echo form_error('first_name', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
+									
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="last-name"><?php echo lang('label_last_name'); ?></label>
-											<input type="text" name="last_name" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" />
+											<!-- <label for="last-name"><?php //echo lang('label_last_name'); ?></label> -->
+											<input type="text" name="last_name" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" placeholder="<?php echo lang('label_last_name'); ?>"/>
 											<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
@@ -85,15 +175,15 @@
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="email"><?php echo lang('label_email'); ?></label>
-											<input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" <?php echo $is_logged ? 'disabled' : ''; ?> />
+											<!-- <label for="email"><?php //echo lang('label_email'); ?></label> -->
+											<input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" <?php echo $is_logged ? 'disabled' : ''; ?> placeholder="<?php echo lang('label_email'); ?>"/>
 											<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="telephone"><?php echo lang('label_telephone'); ?></label>
-											<input type="text" name="telephone" id="telephone" class="form-control" value="<?php echo set_value('telephone', $telephone); ?>" />
+											<!-- <label for="telephone"><?php //echo lang('label_telephone'); ?></label> -->
+											<input type="text" name="telephone" id="telephone" class="form-control" value="<?php echo set_value('telephone', $telephone); ?>" placeholder="<?php echo lang('label_telephone'); ?>"/>
 											<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
@@ -203,7 +293,6 @@
 												<?php echo form_error('address_id', '<span class="text-danger">', '</span>'); ?>
 											</div>
 										</div>
-
 										<div id="address-forms">
 											<?php $address_row = 0; ?>
 
@@ -213,19 +302,74 @@
 													<input type="hidden" name="address[<?php echo $address_row; ?>][address_id]" value="<?php echo set_value('address['.$address_row.'][address_id]', $address['address_id']); ?>">
 													<input type="hidden" name="address[<?php echo $address_row; ?>][country_id]"  class="form-control" value="114"/>
 													<input type="hidden" name="address[<?php echo $address_row; ?>][postcode]" class="form-control" value="123456<?php //echo set_value('address['.$address_row.'][postcode]', $address['postcode']); ?>" />
-
-													<div class="row">
+												<div class="row">
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_address_1'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][address_1]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_1]', $address['address_1']); ?>" />
-																<?php echo form_error('address['.$address_row.'][address_1]', '<span class="text-danger">', '</span>'); ?>
+															
+															<div class="custom-button address-opt acivie-option" data-id="apt">
+																<div class="wrap">
+																	<div class="custom-first">
+																<img src="https://image.flaticon.com/icons/svg/97/97805.svg" alt="City" class="replaced-svg">Apartment</div>
+																</div>
+															</div>
+															<div class="custom-button address-opt" data-id="hse">
+																<div class="wrap">
+																	<div class="custom-first"><img src="https://image.flaticon.com/icons/svg/149/149445.svg" alt="City" class="replaced-svg">House</div>
+																</div>
+															</div>
+															<div class="custom-button address-opt" data-id="ofc">
+																<div class="wrap">
+																	<div class="custom-first"><img src="https://image.flaticon.com/icons/svg/265/265692.svg" alt="City" class="replaced-svg">Office</div>
+																</div>
+															</div>
+																
+															</div>
+														</div>
+													</div>
+													<div class="row house">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][building_no]" class="form-control" value="<?php echo set_value('address['.$address_row.'][building_no]', $address['building_no']); ?>" placeholder="<?php echo lang('label_building'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][building_no]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_address_2'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" />
+																<input type="text" name="address[<?php echo $address_row; ?>][avenue]" class="form-control" value="<?php echo set_value('address['.$address_row.'][avenue]', $address['avenue']); ?>" placeholder="<?php echo lang('label_avenue'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][avenue]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+													</div>
+													<div class="row apartment">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][apt_no]" class="form-control" value="<?php echo set_value('address['.$address_row.'][apt_no]', $address['apt_no']); ?>" placeholder="<?php echo lang('label_apt_no'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][apt_no]', '<span class="text-danger">', '</span>'); ?>
+															
+																</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][floor]" class="form-control" value="<?php echo set_value('address['.$address_row.'][floor]', $address['floor']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][floor]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+													</div>
+													<div class="row office">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][office]" class="form-control" value="<?php echo set_value('address['.$address_row.'][office]', $address['office']); ?>" placeholder="<?php echo lang('label_office'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][office]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
 																<?php echo form_error('address['.$address_row.'][address_2]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
@@ -233,14 +377,30 @@
 													<div class="row">
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_city'); ?></label>
+																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][address_1]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_1]', $address['address_1']); ?>" placeholder="<?php echo lang('label_address_1'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][address_1]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" placeholder="<?php echo lang('label_address_2'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][address_2]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_city'); ?></label> -->
 																<input type="text" name="address[<?php echo $address_row; ?>][city]" class="form-control" value="<?php echo set_value('address['.$address_row.'][city]', $location_city); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][city]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_state'); ?></label>
+																<!-- <label for=""><?php //echo lang('label_state'); ?></label> -->
 																<input type="text" name="address[<?php echo $address_row; ?>][state]" class="form-control" value="<?php echo set_value('address['.$address_row.'][state]', $location_state); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][state]', '<span class="text-danger">', '</span>'); ?>
 															</div>
@@ -276,8 +436,8 @@
 								<?php } ?>
 
 								<div class="form-group wrap-top">
-									<label for=""><?php echo lang('label_comment'); ?></label>
-									<textarea name="comment" id="comment" rows="5" class="form-control"><?php echo set_value('comment', $comment); ?></textarea>
+									<!-- <label for=""><?php //echo lang('label_comment'); ?></label> -->
+									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
 							</div>
@@ -315,9 +475,10 @@
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
 												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">		
-													<label for=""><?php echo lang('label_address'); ?>:</label>
+													<label for=""><?php echo lang('label_address'); ?>: nnnn</label>
 												</div>
-												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">	
+												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">
+													<?php print_r($addresses); ?>	
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
@@ -430,6 +591,7 @@ You are granted limited license only for purposes of viewing the material contai
 </div>
 
 <script type="text/javascript"><!--
+$(".office").hide();
 $(document).ready(function() {
 	$("#choose-order-time select.form-control").select2({
 		minimumResultsForSearch: Infinity
@@ -501,5 +663,107 @@ $(document).ready(function() {
 
 	});
 });
-//--></script>
+//-->
+	$(".address-opt").on("click", function(){
+		$(".apartment").hide();
+		$(".office").hide();
+		if($(this).attr('data-id') === 'apt'){
+			$(".apartment").show();
+		}
+		if($(this).attr('data-id') === 'ofc'){
+			$(".office").show();
+		}
+		$( ".custom-button" ).removeClass( "acivie-option" );
+		$(this).addClass( "acivie-option" );
+  });
+
+
+
+
+</script>
+<script>
+$(document).ready(function() {
+
+
+
+initMapHome();
+
+
+
+function initMapHome() {
+var broadway = {
+	info: '<strong>Zalatimo Sweets</strong><br>\
+	Sharq, KIPCO Tower<br> Kuwait City<br>\
+<a href="https://www.google.com/maps/dir//KIPCO+Tower,+Al+Kuwayt/@29.3757712,47.9436413,12.7z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3fcf84966d43bf01:0xb0f7d549868e3803!2m2!1d47.9868396!2d29.3757397" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+	lat: 29.3757,
+	long: 47.9868,
+}
+
+var belmont = {
+	info: '<strong>Zalatimo Sweets</strong><br>\
+	Ground Floor, Building 25, Marina Crescent<br> Salmiya<br>\
+<a href="https://www.google.com/maps/place/Marina+Crescent/@29.3439534,48.0604649,16.15z/data=!4m8!1m2!2m1!1sGround+Floor,+Building+25,+Marina+Crescent,+kuwait!3m4!1s0x3fcf9d9950d2a1c1:0xb80aaf80bf2223b4!8m2!3d29.3411726!4d48.0655611" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+	lat: 29.3439534,
+	long: 48.0633999,
+}
+
+//                     var sheridan = {
+//                         info: '<strong>Chipotle on Sheridan</strong><br>\r\
+// 6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
+// <a href="https://goo.gl/maps/QGUrqZPsYp92" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
+//                         lat: 29.14583,
+//                         long: 48.09472,
+//                     }
+
+var locations = [
+	[broadway.info, broadway.lat, broadway.long, 0],
+	[belmont.info, belmont.lat, belmont.long, 1],
+	// [sheridan.info, sheridan.lat, sheridan.long, 2],
+]
+
+var map = new google.maps.Map(document.getElementById('map_home'), {
+	zoom: 12,
+	center: new google.maps.LatLng(29.3759, 47.9774),
+	mapTypeControlOptions: {
+		mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
+	}, // here´s the array of controls
+	//disableDefaultUI: true, // a way to quickly hide all controls
+	mapTypeControl: false,
+	scaleControl: true,
+	mapTypeId: google.maps.MapTypeId.ROADMAP,
+})
+
+var infowindow = new google.maps.InfoWindow({})
+
+var marker, i
+
+for (i = 0; i < locations.length; i++) {
+	marker = new google.maps.Marker({
+		position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+		icon: "assets/images/restaurant_mapmarker13.png",
+		map: map,
+	})
+
+	google.maps.event.addListener(
+		marker,
+		'click', (function(marker, i) {
+			return function() {
+				infowindow.setContent(locations[i][0])
+				infowindow.open(map, marker)
+			}
+		})(marker, i)
+	)
+}
+}
+});
+
+</script>
+<script>
+
+
+
+
+</script>
+
 <?php echo get_footer(); ?>
+

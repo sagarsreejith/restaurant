@@ -37,7 +37,12 @@ class Country {
 				'{city}',
 				'{postcode}',
 				'{state}',
-				'{country}'
+				'{country}',
+				'{building}',
+				'{avenue}',
+				'{apt}',
+				'{floor}',
+				'{office}'
 			);
 
 			$replace = array(
@@ -46,7 +51,12 @@ class Country {
 				'city'      	=> (isset($address['city'])) ? $address['city'] : '',
 				'postcode'  	=> (isset($address['postcode'])) ? $address['postcode'] : '',
 				'state'     	=> (isset($address['state'])) ? $address['state'] : '',
-				'country' 		=> (isset($address['country'])) ? $address['country'] : ''
+				'country' 		=> (isset($address['country'])) ? $address['country'] : '',
+				'building' 		=> (isset($address['building_no'])) ? $address['building_no'] : '',
+				'avenue' 		=> (isset($address['avenue'])) ? $address['avenue'] : '',
+				'apt' 		=> (isset($address['apt_no'])) ? $address['apt_no'] : '',
+				'floor' 		=> (isset($address['floor'])) ? $address['floor'] : '',
+				'office' 		=> (isset($address['office'])) ? $address['office'] : ''
 			);
 
 			return str_replace(array("\r\n", "\r", "\n"), '<br />', preg_replace(array("/\s\s+/", "/\r\r+/", "/\n\n+/"), '<br />', trim(str_replace($find, $replace, $format))));

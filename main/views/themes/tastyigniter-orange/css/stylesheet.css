@@ -656,7 +656,8 @@ padding: 0;
   #main-header .navbar-nav > li > a{
     padding: 10px 15px !important;
   }#main-header .navbar-nav > li > a:hover{
-    background:#90374c !important;
+    background: #f2ce7b !important;
+    color: #333!important;
     
   }
   .nav-justified > li {
@@ -1384,6 +1385,11 @@ margin-top: 0;
   .menu-button .btn-cart-text, .menu-button .btn-review-text {
 	display: none;
   }
+}
+@media only screen and (max-width: 850px) {
+  #main-header .navbar-nav > li > a {
+    padding: 35px 11px;
+}
 }
 
 @media screen and (max-width: 568px) {

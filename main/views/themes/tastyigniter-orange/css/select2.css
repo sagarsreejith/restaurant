@@ -86,7 +86,7 @@ html[dir="rtl"] .select2-container .select2-choice {
     text-overflow: ellipsis;
     float: none;
     width: 100%;
-    padding-left:30px !important;
+    padding-left:30px;
 }
 
 html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {

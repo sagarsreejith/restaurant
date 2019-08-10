@@ -358,6 +358,11 @@ class Checkout extends Main_Controller
 					'state'      => $address['state'],
 					'postcode'   => $address['postcode'],
 					'country_id' => $address['country_id'],
+					'building_no' => $address['building_no'],
+					'avenue' => $address['avenue'],
+					'apt_no' => $address['apt_no'],
+					'floor' => $address['floor'],
+					'office' => $address['office'],
 					'address'    => $this->country->addressFormat($address),
 				);
 			}

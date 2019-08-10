@@ -126,7 +126,7 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="section-title text-center">
                                         <div class="title-separator">
-                                            <img src="assets/images/food_icon.png">
+                                            <!-- <img src="assets/images/food_icon.png"> -->
                                             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Zalatimo Sweets</h2>
                                         </div>
 
@@ -156,7 +156,7 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="section-title text-center">
                             <div class="title-separator">
-                                <img src="assets/images/food_icon.png">
+                                <!-- <img src="assets/images/food_icon.png"> -->
                                 <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Gallery</h2>
                             </div>
 
@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item  Mamoul">
+                            <div class="grid-item Sandwiches ">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
                                     <div class="overlay">
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item Manakeesh">
+                            <!-- <div class="grid-item Manakeesh">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
                                     <div class="overlay">
@@ -283,8 +283,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            
+                            </div> -->
+<!--                             
                             <div class="grid-item  Manakeeshn">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
@@ -297,8 +297,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="grid-item Sandwiches">
+                            </div> -->
+                            <!-- <div class="grid-item Sandwiches">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
@@ -310,7 +310,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="grid-item Appetizer">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
@@ -349,21 +349,14 @@
                 </section>
 
         
-                <a class="tooltip" href="" style="color:red;float:left;display:block">
-                    Demonstration
-                    <span><img src="http://www.scriptol.com/images/apache.png">
-                    <h3>How use my site</h3>
-                        The description with an image.
-                    </span>
-                </a> 
-
+           
                 <div class="clearfix"></div>
 
                 <section class="map_sec">
                     <div class="col-lg-12 col-md-12">
                         <div class="section-title text-center">
                             <div class="title-separator">
-                                <img src="assets/images/food_icon.png">
+                                <!-- <img src="assets/images/food_icon.png"> -->
                                 <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Locations</h2>
                             </div>
 

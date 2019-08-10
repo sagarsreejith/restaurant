@@ -18,6 +18,12 @@ $lang['label_state'] 			        = 'State';
 $lang['label_postcode'] 		        = 'Postcode';
 $lang['label_country'] 			        = 'Country';
 
+$lang['label_building'] 		        = 'Building';
+$lang['label_aprtment'] 		        = 'Apartment No';
+$lang['label_avenue'] 		            = 'Avenue (optional)';
+$lang['label_floor'] 		            = 'Floor';
+
+
 $lang['alert_updated_success'] 			= '<p class="alert-success">Address added/updated successfully.</p>';
 $lang['alert_deleted_success'] 			= '<p class="alert-success">Address deleted successfully.</p>';
 

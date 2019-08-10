@@ -1351,7 +1351,7 @@ box-shadow:none;
     text-shadow: 0 0 10px #d0c9c9;
   }
 
-  .modal-footer{
+  #order_now .modal-footer{
     text-align:center;
  border-top: none ;
  padding:30px 15px;
@@ -1536,7 +1536,7 @@ box-shadow:none;
 #local-alert .alert p{    padding: 15px;
   text-align: center;
   font-size: 15px;}
-  #local-alert .alert button{opacity:1 !important;line-height: 8.7px;}
+  #local-alert .alert button{opacity: 1 !important;padding: 10px 19px;}
   #main-header .navbar-nav > li > a.active{background:#6f1e30}
   #map_home .gm-style .gm-style-iw-c{       padding: 15px !important;
     /* text-align: center !important; */
@@ -1776,7 +1776,9 @@ padding: 0 30px;
   }
   .object_right_img{display:none;}
   .book-menu p{margin:10px 0;}
+
 }
+
 @media only screen and (max-width: 768px) {
   .box-one 
 {border-bottom:1px solid #ccc;}
@@ -1813,6 +1815,11 @@ margin: 30px 0;
   }
 }
 @media only screen and (max-width: 768px) {
+  .cont_clr2 {
+    /* background: #601025!important; */
+    background: linear-gradient(to left, #c99740 0%, #fcf0a8 20%, #c6923c 10%, #fcf0a8 15%, #ecb55a 100%)!important;
+  }
+
   .about {
   
     background-position: -126px 662px;
@@ -2326,11 +2333,11 @@ Toggle Changes
   color:#6f1e31;
 
 }
-
+/* 
 #order_now .section-title h2:before{
 
   background:#fff;
-}
+} */
 #order_now .modal-footer{ background: #fff;padding:20px 15px;}
 #order_now  .modal-footer a{ color: #6f1e31;}
 
@@ -2523,3 +2530,53 @@ Toggle Changes
 #local-information p{color:#333 !important;text-align:justify}
 .btn-menus{margin-top:10px;}
 .cnt_div p{color:#fff}
+
+/*--btn--*/
+
+
+
+.custom-button {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100px;
+  height: 50px;
+  cursor:pointer;
+  display:inline-block;
+  border-radius: 5px;
+  border: 1px solid #6f1e30;
+  margin-right:5px;
+}
+
+.wrap {
+  width: 100%;
+  height: 50px;
+}
+.custom-first img{
+  width: 20px;
+  margin-right: 5px;
+}
+.custom-first{
+  color: #686868;
+  text-align: center;
+  line-height: 50px;
+}
+.acivie-option {
+  border: 2px solid green !important;
+-moz-box-shadow: 0px 2px 7px rgba(0,0,0,0.25);
+-webkit-box-shadow: 0px 2px 7px rgba(0,0,0,0.25);
+box-shadow: 0px 2px 7px rgba(0,0,0,0.25);
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#333333')";
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Color='#333333');
+}
+
+.hours .select2-container .select2-choice > .select2-chosen{
+       padding-left: 0px !important;
+}
+
+.order-later .select2-container .select2-choice{
+  height: 30px;
+  line-height: 30px;
+}
