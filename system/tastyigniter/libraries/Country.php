@@ -52,9 +52,9 @@ class Country {
 				'postcode'  	=> (isset($address['postcode'])) ? $address['postcode'] : '',
 				'state'     	=> (isset($address['state'])) ? $address['state'] : '',
 				'country' 		=> (isset($address['country'])) ? $address['country'] : '',
-				'building' 		=> (isset($address['building_no'])) ? $address['building_no'] : '',
+				'building_no' 		=> (isset($address['building_no'])) ? $address['building_no'] : '',
 				'avenue' 		=> (isset($address['avenue'])) ? $address['avenue'] : '',
-				'apt' 		=> (isset($address['apt_no'])) ? $address['apt_no'] : '',
+				'apt_no' 		=> (isset($address['apt_no'])) ? $address['apt_no'] : '',
 				'floor' 		=> (isset($address['floor'])) ? $address['floor'] : '',
 				'office' 		=> (isset($address['office'])) ? $address['office'] : ''
 			);
