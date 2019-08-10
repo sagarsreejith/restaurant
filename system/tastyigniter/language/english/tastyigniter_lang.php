@@ -15,7 +15,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['tastyigniter_system_name']       = 'TastyIgniter';
-$lang['tastyigniter_system_powered']    = '<a target="_blank" href="#">Powered by Zalatimo Sweets</a>';
+$lang['tastyigniter_system_powered']    = '<a target="_blank" href="#">Powered by Lugma</a>';
 $lang['tastyigniter_copyright']         = 'Thank you for using <a target="_blank" href="#">Zalatimo Sweets</a>';
 $lang['tastyigniter_version']           = 'Version %s';
 

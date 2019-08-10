@@ -60,6 +60,13 @@ $lang['label_terms']                    = 'By clicking I Agree, you agree to the
 $lang['label_comment']                  = 'Add Comments';
 $lang['label_ip']                       = 'IP Address';
 
+$lang['label_building'] 		        = 'Building / House';
+$lang['label_aprtment'] 		        = 'Apartment No';
+$lang['label_avenue'] 		            = 'Avenue (optional)';
+$lang['label_floor'] 		            = 'Floor';
+$lang['label_apt_no'] 		            = 'Apartment No';
+$lang['label_office'] 		            = 'Office';
+
 $lang['button_agree_terms']             = 'I Agree';
 
 $lang['error_delivery_unavailable']     = 'Delivery is unavailable at the selected restaurant!';

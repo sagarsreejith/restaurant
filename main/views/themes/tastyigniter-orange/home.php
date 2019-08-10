@@ -404,10 +404,10 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-6 ">
                                             <div class="contact-box ">
-                                                <i class="fa fa-fax"></i>
+                                                <i class="fa fa-mobile"></i>
                                                 <div class="cont_con">
-                                                    <h5>Fax</h5>
-                                                    <p>(007) 123 456 7890</p>
+                                                    <h5>Whatsapp</h5> 
+                                                    <p>949200202</p>
                                                 </div>
                                             </div>
                                         </div>

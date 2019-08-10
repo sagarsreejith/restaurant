@@ -15,9 +15,9 @@
                             <div id="login-form" class="content-wrap col-sm-4 center-block">
 
 					
-								<div class="img_log">
-									<img src="assets/images/bg4.jpg" class="" style="width:100%">
-								</div>
+								<!-- <div class="img_log">
+									<img src="assets/images/bg10.jpg" class="" style="width:100%">
+								</div> -->
 						
                                 <div class="section-title text-center">
                                     <div class="title-separator">

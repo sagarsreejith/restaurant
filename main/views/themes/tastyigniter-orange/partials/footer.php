@@ -1,14 +1,16 @@
-<style>
- 
-
-</style>
 <?php $path_image = '';
-if($rsegment !="home"){
-	$path_image = '../';
+switch ($rsegment) {
+      case "home":
+            $path_image = '';
+          break;
+      case "checkout":
+            $path_image = '';
+          break;
+      default:
+      $path_image = '../';
 }
 ?>
-
-<footer class="footer" >
+<footer class="footer" id="" >
 
 <?php echo get_partial('content_footer'); ?>
  

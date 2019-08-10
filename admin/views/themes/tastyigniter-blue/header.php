@@ -86,7 +86,13 @@
 	<![endif]-->
 </head>
 <body>
-	
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
     <div id="wrapper" class="<?php echo $wrapper_class; ?>" style="background:#fff;">
 		<nav class="navbar navbar-static-top navbar-top" role="navigation" style="margin-bottom: 0" >
 			<div class="navbar-header" style="background:#fff">

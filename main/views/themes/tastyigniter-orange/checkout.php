@@ -55,14 +55,6 @@ input[type=radio] {
   display: none;
 }
 
-label {
-  color: #9a929e;
-  display: inline-block;
-  cursor: pointer;
-  font-weight: bold;
-  /* padding: 5px 20px; */
-}
-
 input[type=radio]:checked + label {
   color: #fff  !important;
   background: #6f1e30;
@@ -160,42 +152,43 @@ input[type=radio]:checked + label {
 					<div class="col-md-12">
 						<form method="POST" accept-charset="utf-8" action="<?php echo $_action; ?>" id="checkout-form" role="form">
 							<input type="hidden" name="checkout_step" class="checkout_step" value="<?php echo set_value('checkout_step', $checkout_step); ?>">
-
 							<div id="checkout" class="content-wrap" style="display: <?php echo ($checkout_step === 'one') ? 'block' : 'none'; ?>">
 								<p class="text-info"><?php echo $text_login_register; ?></p><br />
-
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="first-name"><?php echo lang('label_first_name'); ?></label>
-											<input type="text" name="first_name" id="first-name" class="form-control" value="<?php echo set_value('first_name', $first_name); ?>" />
+											<!-- <label for="first-name"><?php //echo lang('label_first_name'); ?></label> -->
+											<input type="text" name="first_name" id="first-name" class="form-control" value="<?php echo set_value('first_name', $first_name); ?>" placeholder="<?php echo lang('label_first_name'); ?>"/>
 											<?php echo form_error('first_name', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
-									<div class="col-sm-6">
+									
+									<!-- <div class="col-sm-6">
 										<div class="form-group">
-											<label for="last-name"><?php echo lang('label_last_name'); ?></label>
-											<input type="text" name="last_name" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" />
+											<!-- <label for="last-name"><?php //echo lang('label_last_name'); ?></label> 
+											<input type="text" name="last_name" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" placeholder="<?php echo lang('label_last_name'); ?>"/>
 											<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
 										</div>
-									</div>
-								</div>
-
-								<div class="row">
+									</div> -->
 									<div class="col-sm-6">
 										<div class="form-group">
-											<label for="email"><?php echo lang('label_email'); ?></label>
-											<input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" <?php echo $is_logged ? 'disabled' : ''; ?> />
-											<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-group">
-											<label for="telephone"><?php echo lang('label_telephone'); ?></label>
-											<input type="text" name="telephone" id="telephone" class="form-control" value="<?php echo set_value('telephone', $telephone); ?>" />
+											<!-- <label for="telephone"><?php //echo lang('label_telephone'); ?></label> -->
+											<input type="text" name="telephone" id="telephone" class="form-control" value="<?php echo set_value('telephone', $telephone); ?>" placeholder="<?php echo lang('label_telephone'); ?>"/>
 											<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<!-- <label for="email"><?php //echo lang('label_email'); ?></label> -->
+											<input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" <?php echo $is_logged ? 'disabled' : ''; ?> placeholder="<?php echo lang('label_email'); ?>"/>
+											<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+										</div>
+									</div>
+								
 								</div>
 
 								<div class="row">
@@ -302,147 +295,6 @@ input[type=radio]:checked + label {
 												<?php echo form_error('address_id', '<span class="text-danger">', '</span>'); ?>
 											</div>
 										</div>
-
-
-										<button type="button" class="btn btn-primary md_add" data-toggle="modal" data-target="#modal_add">Edit Address</button>
-
-										
-											<div id="modal_add" class="modal" tabindex="-1" role="dialog">
-												<div class="modal-dialog " role="document">
-													<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title">Edit</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-														<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-													<div class="content-wrap">
-
-														<div id="map_home" class="slideInUp" style="height:500px; width:100%"></div>
-													</div>
-													</div>
-													<div class="modal-footer">
-														<div class="text-left btn_ft">	<button type="button" class="btn " data-toggle="modal" data-target="#modal_add_edit" data-dismiss="modal">View Address Fields</button> </div>
-														<div class="text-right btn_ft1"><button type="button" class="btn " data-dismiss="modal">Confirm</button> </div>
-													</div>
-													</div>
-												</div>
-											</div>
-
-
-											<div id="modal_add_edit" class="modal" tabindex="-1" role="dialog">
-												<div class="modal-dialog " role="document">
-													<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title">Add New Address</h5>
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-														<span aria-hidden="true">&times;</span>
-														</button>
-													</div>
-													<div class="modal-body">
-													
-		
-													<form method="POST" accept-charset="utf-8" action="" id="" role="form">
-															
-													<h5 class="head_add">Contact Details</h5>
-															<div class="row">
-																<div class="col-sm-6">
-																	<div class="form-group">
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Firstname">
-																	</div>
-																</div>
-																<div class="col-sm-6">
-																	<div class="form-group">
-																	
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Lastname">
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-sm-6">
-																<input type="text" name="first_name" id="first-name" class="form-control" value="Phone Number">	
-																</div>
-																<div class="col-sm-6">
-																	<div class="form-group">
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Email">
-																	</div>
-																</div>
-															</div>
-
-															<h5 class="head_add">Address Details</h5>
-
-															<div class="row">
-																<div class="col-sm-6">
-																	<div class="form-group">
-																	
-																		<form>
-																			<div class="radio-group_add">
-																				<input type="radio" id="option-one" name="selector">
-																				<label for="option-one">Apartment</label>
-
-																				<input type="radio" id="option-two" name="selector">
-																				<label for="option-two">House</label>
-
-																				<input type="radio" id="option-three" name="selector">
-																				<label for="option-three">Office</label>
-																			</div>
-																		</form>
-																	</div>
-																</div>
-																<div class="col-sm-6">
-																	<div class="form-group">
-																		
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="block 9">
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-sm-6">
-																	<div class="form-group">
-																		
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Lane">
-																	</div>
-																</div>
-																<div class="col-sm-6">
-																	<div class="form-group">
-																	
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Building">
-																	</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-sm-6">
-																	<div class="form-group">
-																		
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Floor">
-																	</div>
-																</div>
-																<div class="col-sm-6">
-																	<div class="form-group">
-																	
-																		<input type="text" name="first_name" id="first-name" class="form-control" value="Apartment No">
-																	</div>
-																</div>
-															</div>
-
-														</form>
-
-							
-
-													</div>
-													<div class="modal-footer">
-														<div class="text-left btn_ft">	<button type="button" class="btn ">View Map</button> </div>
-														<div class="text-right btn_ft1"><button type="button" class="btn " data-dismiss="modal">Save Address</button> </div>
-													</div>
-													</div>
-												</div>
-											</div>
-
-										
-										
-
-
 										<div id="address-forms">
 											<?php $address_row = 0; ?>
 
@@ -452,19 +304,74 @@ input[type=radio]:checked + label {
 													<input type="hidden" name="address[<?php echo $address_row; ?>][address_id]" value="<?php echo set_value('address['.$address_row.'][address_id]', $address['address_id']); ?>">
 													<input type="hidden" name="address[<?php echo $address_row; ?>][country_id]"  class="form-control" value="114"/>
 													<input type="hidden" name="address[<?php echo $address_row; ?>][postcode]" class="form-control" value="123456<?php //echo set_value('address['.$address_row.'][postcode]', $address['postcode']); ?>" />
-
-													<div class="row">
+												<div class="row">
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_address_1'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][address_1]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_1]', $address['address_1']); ?>" />
-																<?php echo form_error('address['.$address_row.'][address_1]', '<span class="text-danger">', '</span>'); ?>
+															
+															<div class="custom-button address-opt acivie-option" data-id="apt">
+																<div class="wrap">
+																	<div class="custom-first">
+																<img src="https://image.flaticon.com/icons/svg/97/97805.svg" alt="City" class="replaced-svg">Apartment</div>
+																</div>
+															</div>
+															<div class="custom-button address-opt" data-id="hse">
+																<div class="wrap">
+																	<div class="custom-first"><img src="https://image.flaticon.com/icons/svg/149/149445.svg" alt="City" class="replaced-svg">House</div>
+																</div>
+															</div>
+															<div class="custom-button address-opt" data-id="ofc">
+																<div class="wrap">
+																	<div class="custom-first"><img src="https://image.flaticon.com/icons/svg/265/265692.svg" alt="City" class="replaced-svg">Office</div>
+																</div>
+															</div>
+																
+															</div>
+														</div>
+													</div>
+													<div class="row house">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][building_no]" class="form-control" value="<?php echo set_value('address['.$address_row.'][building_no]', $address['building_no']); ?>" placeholder="<?php echo lang('label_building'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][building_no]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_address_2'); ?></label>
-																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" />
+																<input type="text" name="address[<?php echo $address_row; ?>][avenue]" class="form-control" value="<?php echo set_value('address['.$address_row.'][avenue]', $address['avenue']); ?>" placeholder="<?php echo lang('label_avenue'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][avenue]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+													</div>
+													<div class="row apartment">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][apt_no]" class="form-control" value="<?php echo set_value('address['.$address_row.'][apt_no]', $address['apt_no']); ?>" placeholder="<?php echo lang('label_apt_no'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][apt_no]', '<span class="text-danger">', '</span>'); ?>
+															
+																</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][floor]" class="form-control" value="<?php echo set_value('address['.$address_row.'][floor]', $address['floor']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][floor]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+													</div>
+													<div class="row office">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][office]" class="form-control" value="<?php echo set_value('address['.$address_row.'][office]', $address['office']); ?>" placeholder="<?php echo lang('label_office'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][office]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" placeholder="<?php echo lang('label_floor'); ?>"/>
 																<?php echo form_error('address['.$address_row.'][address_2]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
@@ -472,14 +379,30 @@ input[type=radio]:checked + label {
 													<div class="row">
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_city'); ?></label>
+																<!-- <label for=""><?php //echo lang('label_address_1'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][address_1]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_1]', $address['address_1']); ?>" placeholder="<?php echo lang('label_address_1'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][address_1]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_address_2'); ?></label> -->
+																<input type="text" name="address[<?php echo $address_row; ?>][address_2]" class="form-control" value="<?php echo set_value('address['.$address_row.'][address_2]', $address['address_2']); ?>" placeholder="<?php echo lang('label_address_2'); ?>"/>
+																<?php echo form_error('address['.$address_row.'][address_2]', '<span class="text-danger">', '</span>'); ?>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-sm-6">
+															<div class="form-group">
+																<!-- <label for=""><?php //echo lang('label_city'); ?></label> -->
 																<input type="text" name="address[<?php echo $address_row; ?>][city]" class="form-control" value="<?php echo set_value('address['.$address_row.'][city]', $location_city); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][city]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>
 														<div class="col-sm-6">
 															<div class="form-group">
-																<label for=""><?php echo lang('label_state'); ?></label>
+																<!-- <label for=""><?php //echo lang('label_state'); ?></label> -->
 																<input type="text" name="address[<?php echo $address_row; ?>][state]" class="form-control" value="<?php echo set_value('address['.$address_row.'][state]', $location_state); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][state]', '<span class="text-danger">', '</span>'); ?>
 															</div>
@@ -515,8 +438,8 @@ input[type=radio]:checked + label {
 								<?php } ?>
 
 								<div class="form-group wrap-top">
-									<label for=""><?php echo lang('label_comment'); ?></label>
-									<textarea name="comment" id="comment" rows="5" class="form-control"><?php echo set_value('comment', $comment); ?></textarea>
+									<!-- <label for=""><?php //echo lang('label_comment'); ?></label> -->
+									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
 							</div>
@@ -554,9 +477,10 @@ input[type=radio]:checked + label {
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
 												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">		
-													<label for=""><?php echo lang('label_address'); ?>:</label>
+													<label for=""><?php echo lang('label_address'); ?>: nnnn</label>
 												</div>
-												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">	
+												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">
+													<?php print_r($addresses); ?>	
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
@@ -669,6 +593,7 @@ You are granted limited license only for purposes of viewing the material contai
 </div>
 
 <script type="text/javascript"><!--
+$(".office").hide();
 $(document).ready(function() {
 	$("#choose-order-time select.form-control").select2({
 		minimumResultsForSearch: Infinity
@@ -741,7 +666,18 @@ $(document).ready(function() {
 	});
 });
 //-->
-
+	$(".address-opt").on("click", function(){
+		$(".apartment").hide();
+		$(".office").hide();
+		if($(this).attr('data-id') === 'apt'){
+			$(".apartment").show();
+		}
+		if($(this).attr('data-id') === 'ofc'){
+			$(".office").show();
+		}
+		$( ".custom-button" ).removeClass( "acivie-option" );
+		$(this).addClass( "acivie-option" );
+  });
 
 
 
