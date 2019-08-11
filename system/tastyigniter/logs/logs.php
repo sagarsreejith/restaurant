@@ -630,3 +630,55 @@ Message-ID: &lt;5d4eafe35d903@gmail.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d4eafe35d91e&quot;
 </pre>
+ERROR - 2019-08-11 18:00:19 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-11 18:00:19 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 11 Aug 2019 18:00:18 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d502d82b4f81@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d502d82b4fb5&quot;
+</pre>
+ERROR - 2019-08-11 18:00:20 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-11 18:00:20 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 11 Aug 2019 18:00:19 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d502d83e3de7@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d502d83e3e2f&quot;
+</pre>
+ERROR - 2019-08-11 18:13:29 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-11 18:13:29 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 11 Aug 2019 18:13:28 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d503098801ee@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d50309880223&quot;
+</pre>
+ERROR - 2019-08-11 18:13:30 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-11 18:13:30 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 11 Aug 2019 18:13:29 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d50309986c62@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d50309986ca6&quot;
+</pre>

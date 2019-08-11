@@ -347,7 +347,7 @@ input[type=radio]:checked + label {
 											<div class="btn-group btn-group-md col-xs-12" data-toggle="buttons">
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id'])) { ?>
-														<label class="btn btn-default wrap-all col-xs-12 col-sm-3 <?php echo ($address_id == $address['address_id']) ? 'btn-primary active' : ''; ?>" data-btn="btn-primary">
+														<label class="btn btn-default wrap-all col-xs-12 col-sm-4 <?php echo ($address_id == $address['address_id']) ? 'btn-primary active' : ''; ?>" data-btn="btn-primary">
 															<span class="edit-address pull-right" data-form="#address-form-<?php echo $address_row; ?>"><?php echo lang('text_edit'); ?></span>
 															<input type="radio" name="address_id" value="<?php echo $address['address_id']; ?>" <?php echo ($address['address_id'] == $address_id) ? 'checked="checked"' : ''; ?> />
 															<address class="text-left"><?php echo $address['address']; ?></address>
