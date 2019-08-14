@@ -29,7 +29,9 @@ class Country {
 				$format = $address['format'];
 			} else {
 				
-				if(empty($address['apt_no']) && empty($address['office'])){
+				if($address['is_rest'] === TRUE){
+					$format = '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
+				} elseif(empty($address['apt_no']) && empty($address['office'])){
 					$format = '<b>Address Type : </b> House'. "\n" .'<b>House No:</b> {building_no}'. "\n" . '<b>Avenue: </b>{avenue}'. "\n" . '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
 				} elseif (!empty($address['apt_no']) && empty($address['office'])){
 					$format = '<b>Address Type : </b> Apartment'. "\n" .'<b>Building No: </b> {building_no}'. "\n" . '<b>Avenue: </b>{avenue}'. "\n" . '<b>Apartment No: </b> {apt_no}'. "\n" . '<b>Floor: </b> {floor}'. "\n" . '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';

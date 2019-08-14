@@ -1311,10 +1311,10 @@ box-shadow:none;
 }
 .order_now{display:block;width:100%;text-align: center}
 .order_btn {
-  background: #fff;
+  background: #6f1e31;
   padding: 20px 50px;
   margin: 10px;
-  color: #333;
+  color: #fff;
   border-radius: 3px;
   border: none;
   font-size: 15px;
@@ -1478,8 +1478,8 @@ box-shadow:none;
 }
 .btn_sec a:hover{
   text-decoration:none;
-  color: #fff;
-    background: #6f1e31;
+  color: #333;
+    background: #fff;
 }
 .text_ft a{
   text-decoration:none;
@@ -1823,7 +1823,7 @@ margin: 30px 0;
 @media only screen and (max-width: 768px) {
   .cont_clr2 {
     /* background: #601025!important; */
-    background: linear-gradient(to left, #c99740 0%, #fcf0a8 20%, #c6923c 10%, #fcf0a8 15%, #ecb55a 100%)!important;
+    background:linear-gradient(to left, #c99740 -2%, #fcf0a8 105%, #c6923c 0%, #fcf0a8 0%, #ecb55a -0%)!important;
   }
 
   .about {
@@ -1985,7 +1985,7 @@ margin: 30px 0;
 }
 @media only screen and (max-width: 400px){
 .about {
-  background-position: -282px 828px;
+  background-position: -334px 828px;
 }
 }
 .tq{ font-size: 14px;
@@ -2454,7 +2454,7 @@ Toggle Changes
   padding: 4px 15px;
 }
 
-.select2-results .select2-result-selectable{
+ #location-form .select2-results .select2-result-selectable{
   background: #6f1e30;
   color: #fff;
 }
@@ -2603,6 +2603,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Colo
   padding: 0 10px;
   font-size: 15px;
   color: #6f1e30;
+  cursor: pointer;
 }
 .map_icon_bg{
   background: url(../../../../../assets/images/new_search.svg);
@@ -2626,3 +2627,9 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Colo
 #local-search  .partial .panel {
   border:none !important;
 }
+#payment .form-group{
+      margin-bottom:30px;
+}
+
+
+

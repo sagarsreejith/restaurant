@@ -116,7 +116,7 @@ if($rsegment !="home"){
 ?>
 <div class="">
 <div class="modal fade" id="order_now" role="dialog">
-<div class="modal-dialog  modal-dialog-centered  modal_order_now">
+<div class="modal-dialog  modal-dialog-centered modal_order_now">
    <div class="modal-content">
          <!-- <div class="img_log">
 				<img src="assets/images/bg10.jpg" class="" style="width:100%">
@@ -170,8 +170,9 @@ if($rsegment !="home"){
 
                   <!-- New Design Strts Here -->
                   <div class="switch-container">
-                     <label class="head_lbl"> Delivery</label>
+                     <label class="head_lbl" for="theme-switch"> Delivery</label>
                      <input type="checkbox" name="odrer_option" id="theme-switch">
+                     
                      <label for="theme-switch" class="switch-label">
                         <div class="switch-overlay"></div>
                         <div class="switch-slider">
@@ -179,7 +180,7 @@ if($rsegment !="home"){
                            <img src="https://image.flaticon.com/icons/svg/123/123403.svg" alt="" class="dark-icon  theme-icon">
                         </div>
                      </label>
-                     <label class="head_lbl"> pickup</label>
+                     <label class="head_lbl" for="theme-switch"> pickup</label>
                   </div>
                   <!-- New Design Ends Here -->
 

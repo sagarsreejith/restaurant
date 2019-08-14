@@ -349,7 +349,7 @@ input[type=radio]:checked + label {
 											<div class="btn-group btn-group-md col-xs-12" data-toggle="buttons">
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id'])) { ?>
-														<label class="btn btn-default wrap-all col-xs-12 col-sm-3 <?php echo ($address_id == $address['address_id']) ? 'btn-primary active' : ''; ?>" data-btn="btn-primary">
+														<label class="btn btn-default wrap-all col-xs-12 col-sm-4 <?php echo ($address_id == $address['address_id']) ? 'btn-primary active' : ''; ?>" data-btn="btn-primary">
 															<span class="edit-address pull-right" data-form="#address-form-<?php echo $address_row; ?>"><?php echo lang('text_edit'); ?></span>
 															<input type="radio" name="address_id" value="<?php echo $address['address_id']; ?>" <?php echo ($address['address_id'] == $address_id) ? 'checked="checked"' : ''; ?> />
 															<address class="text-left"><?php echo $address['address']; ?></address>
@@ -380,17 +380,17 @@ input[type=radio]:checked + label {
 															<div class="custom-button address-opt acivie-option" data-id="apt">
 																<div class="wrap">
 																	<div class="custom-first">
-																<img src="https://image.flaticon.com/icons/svg/97/97805.svg" alt="City" class="replaced-svg">Apartment</div>
+																<img src="assets/images/icon/apartment.svg" alt="City" class="replaced-svg">Apartment</div>
 																</div>
 															</div>
 															<div class="custom-button address-opt" data-id="hse">
 																<div class="wrap">
-																	<div class="custom-first"><img src="https://image.flaticon.com/icons/svg/149/149445.svg" alt="City" class="replaced-svg">House</div>
+																	<div class="custom-first"><img src="assets/images/icon/home.svg" alt="City" class="replaced-svg">House</div>
 																</div>
 															</div>
 															<div class="custom-button address-opt" data-id="ofc">
 																<div class="wrap">
-																	<div class="custom-first"><img src="https://image.flaticon.com/icons/svg/265/265692.svg" alt="City" class="replaced-svg">Office</div>
+																	<div class="custom-first"><img src="assets/images/icon/office.svg" alt="City" class="replaced-svg">Office</div>
 																</div>
 															</div>
 																
@@ -506,36 +506,43 @@ input[type=radio]:checked + label {
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">
-										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
-												<label for=""><?php echo lang('label_customer_name'); ?>  :</label>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
-												<?php echo $first_name; ?> <?php echo $last_name; ?>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
-												<label for=""><?php echo lang('label_email'); ?> :</label>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
-												<?php echo $email; ?>
+										<div class="col-md-4 col-sm-12 nopad">
+											<div class="form-group">
+												<div class="col-md-7 col-sm-6 col-xs-6 ">
+													<label for=""><?php echo lang('label_customer_name'); ?>  :</label>
+													
+												</div>
+												<div class="col-md-5 col-sm-6 col-xs-6 nopad">
+													<?php echo $first_name; ?> <?php echo $last_name; ?>
+												</div>
 											</div>
 										</div>
-										<div class="clearfix"></div>
-										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
-												<label for=""><?php echo lang('label_telephone'); ?> : </label>
+										
+										<div class="col-md-4 col-sm-12 nopad">
+											<div class="form-group">
+												<div class="col-md-4 col-sm-6 col-xs-6  ">
+													<label for=""><?php echo lang('label_email'); ?> :</label>
+												</div>
+												<div class="col-md-8 col-sm-6 col-xs-6 nopad">
+													<?php echo $email; ?>
+												</div>
 											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
-												<?php echo $telephone; ?>
+										</div>
+									
+										<div class="col-md-4 col-sm-12 nopad">
+											<div class="form-group">
+												<div class="col-md-6 col-sm-6 col-xs-6 ">
+													<label for=""><?php echo lang('label_telephone'); ?> : </label>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 nopad ">
+													<?php echo $telephone; ?>
+												</div>
 											</div>
 										</div>
 										<div class="clearfix"></div>
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">		
+												<div class="col-md-12 col-sm-6 col-xs-6  text-center">		
 													<label for=""><?php echo lang('label_address'); ?>: </label>
 												</div>
 												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">
@@ -549,24 +556,26 @@ input[type=radio]:checked + label {
 										<?php } ?>
 									</div>
 									<div class="col-sm-12">
-										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
-												<label for=""><?php echo lang('label_order_type'); ?> : </label>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
-												<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
-											</div>
-										</div>
-										<div class="clearfix"></div>
-										<div class="form-group">
-											<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
-												<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6 nopad">
-												<?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?>
+										<div class="col-md-4 col-sm-12 nopad">
+											<div class="form-group">
+												<div class="col-md-7 col-sm-6 col-xs-6 ">
+													<label for=""><?php echo lang('label_order_type'); ?> : </label>
+												</div>
+												<div class="col-md-5 col-sm-6 col-xs-6 nopad ">
+													<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
+												</div>
 											</div>
 										</div>
-										<div class="clearfix"></div>
+										<div class="col-md-5 col-sm-12 nopad">
+											<div class="form-group">
+												<div class="col-md-5 col-sm-6 col-xs-6 ">
+													<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 
+												</div>
+												<div class="col-md-7 col-sm-6 col-xs-6 nopad">
+													<?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 

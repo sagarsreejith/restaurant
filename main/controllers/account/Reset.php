@@ -55,8 +55,8 @@ class Reset extends Main_Controller {
 
 	private function validateForm() {
 		$this->form_validation->set_rules('email', 'lang:label_email', 'xss_clean|trim|required|valid_email|callback__check_reset');	//validate form
-		$this->form_validation->set_rules('security_question', 'lang:label_s_question', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_answer', 'lang:label_s_answer', 'xss_clean|trim|required|min_length[2]');
+		//$this->form_validation->set_rules('security_question', 'lang:label_s_question', 'xss_clean|trim|required|integer');
+		//$this->form_validation->set_rules('security_answer', 'lang:label_s_answer', 'xss_clean|trim|required|min_length[2]');
 
 		if ($this->form_validation->run() === TRUE) {										// checks if form validation routines ran successfully
             return TRUE;
@@ -71,15 +71,17 @@ class Reset extends Main_Controller {
             $this->form_validation->set_message('_check_reset', $this->lang->line('alert_no_email_match'));
 
             return FALSE;
-        } else if ($customer_data['security_question_id'] !== $this->input->post('security_question')) {
-            $this->form_validation->set_message('_check_reset', $this->lang->line('alert_no_s_question_match'));
+        }
+        // } else if ($customer_data['security_question_id'] !== $this->input->post('security_question')) {
+        //     $this->form_validation->set_message('_check_reset', $this->lang->line('alert_no_s_question_match'));
 
-            return FALSE;
-        } else if ($customer_data['security_answer'] !== $this->input->post('security_answer')) {
-            $this->form_validation->set_message('_check_reset', $this->lang->line('alert_no_s_answer_match'));
+        //     return FALSE;
+        // } else if ($customer_data['security_answer'] !== $this->input->post('security_answer')) {
+        //     $this->form_validation->set_message('_check_reset', $this->lang->line('alert_no_s_answer_match'));
 
-            return FALSE;
-        } else {
+        //     return FALSE;
+        // } 
+        else {
             $_POST['customer_id'] = $customer_data['customer_id'];
 
             return TRUE;

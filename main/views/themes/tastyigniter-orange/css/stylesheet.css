@@ -1555,6 +1555,8 @@ padding-right:0 !important;
     }
 #category-box a.list-group-item.active, #category-box .list-group-item > a.active{
 border-right:6px solid #6f1e30;
+color: #640016;
+font-weight: 900;
 }
 .menu-category h3:before{
   position: absolute;
