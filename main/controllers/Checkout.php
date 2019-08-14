@@ -503,7 +503,7 @@ class Checkout extends Main_Controller
 	protected function validateForm() {
 		// START of form validation rules
 		$this->form_validation->set_rules('first_name', 'lang:label_first_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
-		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
+		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|min_length[2]|max_length[32]');
 		$this->form_validation->set_rules('email', 'lang:label_email', 'xss_clean|trim|required|valid_email|max_length[96]');
 
 		if (strtolower($this->input->post('email')) !== $this->customer->getEmail()) {

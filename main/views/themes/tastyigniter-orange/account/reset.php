@@ -39,20 +39,20 @@
 						<input name="email" type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
 		    			<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?></td>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<select name="security_question" id="security-question" class="form-control input-lg">
-                            <?php foreach ($questions as $question) { ?>
-                                <option value="<?php echo $question['id']; ?>"><?php echo $question['text']; ?></option>
-                            <?php } ?>
+                            <?php //foreach ($questions as $question) { ?>
+                                <option value="<?php //echo $question['id']; ?>"><?php //echo $question['text']; ?></option>
+                            <?php //} ?>
 						</select>
-						<?php echo form_error('security_question', '<span class="text-danger">', '</span>'); ?>
+						<?php //echo form_error('security_question', '<span class="text-danger">', '</span>'); ?>
 					</div>
 					<div class="form-group">
 						<label for="security-answer"></label>
 						<input type="text" name="security_answer" id="security-answer" class="form-control input-lg" placeholder="<?php echo lang('label_s_answer'); ?>" />
-						<?php echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
+						<?php //echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
 					</div>
-					<br />
+					<br /> -->
 
 					<div class="row text-center">
 						<div class="col-xs-12 col-md-6">

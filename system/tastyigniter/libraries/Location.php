@@ -165,6 +165,7 @@ class Location {
 
 	public function getAddress($format = TRUE) {
 		$location_address = array(
+			'is_rest'  		 => TRUE,
 			'address_1'      => $this->local_info['location_address_1'],
 			'address_2'      => $this->local_info['location_address_2'],
 			'city'           => $this->local_info['location_city'],
@@ -209,6 +210,7 @@ class Location {
 	public function formatAddress($address = array(), $format = TRUE) {
 		if (!empty($address) AND is_array($address)) {
 			$location_address = array(
+				'is_rest'  		 => TRUE,
 				'address_1'      => isset($address['location_address_1']) ? $address['location_address_1'] : $address['address_1'],
 				'address_2'      => isset($address['location_address_2']) ? $address['location_address_2'] : $address['address_2'],
 				'city'           => isset($address['location_city']) ? $address['location_city'] : $address['city'],

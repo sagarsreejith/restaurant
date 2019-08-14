@@ -94,7 +94,7 @@ font-size: 25px;
   background: #9faab7;
 }
 .option-input:checked {
-  background: #40e0d0;
+  background: #6f1e30;
 }
 .option-input:checked::before {
   height: 20px;
@@ -109,7 +109,7 @@ font-size: 25px;
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
-  background: #40e0d0;
+  background: #6f1e30;
   content: '';
   display: block;
   position: relative;
@@ -232,23 +232,13 @@ input[type=radio]:checked + label {
 										</div>
 									</div>
 									
-									<div class="col-sm-6">
+									<!-- <div class="col-sm-6">
 										<div class="form-group">
-											<!-- <label for="last-name"><?php //echo lang('label_last_name'); ?></label> -->
+											<!-- <label for="last-name"><?php //echo lang('label_last_name'); ?></label> 
 											<input type="text" name="last_name" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" placeholder="<?php echo lang('label_last_name'); ?>"/>
 											<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
 										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="form-group">
-											<!-- <label for="email"><?php //echo lang('label_email'); ?></label> -->
-											<input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" <?php echo $is_logged ? 'disabled' : ''; ?> placeholder="<?php echo lang('label_email'); ?>"/>
-											<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-										</div>
-									</div>
+									</div> -->
 									<div class="col-sm-6">
 										<div class="form-group">
 											<!-- <label for="telephone"><?php //echo lang('label_telephone'); ?></label> -->
@@ -256,6 +246,18 @@ input[type=radio]:checked + label {
 											<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 										</div>
 									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<!-- <label for="email"><?php //echo lang('label_email'); ?></label> -->
+											<input type="text" name="email" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" <?php echo $is_logged ? 'disabled' : ''; ?> placeholder="<?php echo lang('label_email'); ?>"/>
+											<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+										</div>
+									</div>
+								
 								</div>
 
 								<div class="row">

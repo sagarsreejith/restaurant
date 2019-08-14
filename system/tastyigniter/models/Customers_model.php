@@ -221,10 +221,10 @@ class Customers_model extends TI_Model {
 			$this->db->where('customer_id', $customer_id);
 			$this->db->where('email', strtolower($reset['email']));
 
-			if ( ! empty($reset['security_question_id']) AND ! empty($reset['security_answer'])) {
-				$this->db->where('security_question_id', $reset['security_question_id']);
-				$this->db->where('security_answer', $reset['security_answer']);
-			}
+			// if ( ! empty($reset['security_question_id']) AND ! empty($reset['security_answer'])) {
+			// 	$this->db->where('security_question_id', $reset['security_question_id']);
+			// 	$this->db->where('security_answer', $reset['security_answer']);
+			// }
 
 			$this->db->where('status', '1');
 			$query = $this->db->get();

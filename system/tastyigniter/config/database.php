@@ -4,9 +4,9 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default']['dsn'] = '';
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['hostname'] = 'lugambyte-mysqldbserver.mysql.database.azure.com';
+$db['default']['username'] = 'mysqldbuser@lugambyte-mysqldbserver';
+$db['default']['password'] = 'SagarGMT12$!';
 $db['default']['database'] = 'rest';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = 'dw2rtzns5_';
