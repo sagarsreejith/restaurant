@@ -542,10 +542,10 @@ input[type=radio]:checked + label {
 										<div class="clearfix"></div>
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												<div class="col-md-12 col-sm-6 col-xs-6  text-center">		
+												<div class="col-md-12 col-sm-6 col-xs-6">		
 													<label for=""><?php echo lang('label_address'); ?>: </label>
 												</div>
-												<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl1">
+												<div class="col-md-12 col-sm-6 col-xs-6 txt_lbl1">
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
@@ -556,7 +556,7 @@ input[type=radio]:checked + label {
 										<?php } ?>
 									</div>
 									<div class="col-sm-12">
-										<div class="col-md-4 col-sm-12 nopad">
+										<div class="col-md-6 col-sm-12 nopad">
 											<div class="form-group">
 												<div class="col-md-7 col-sm-6 col-xs-6 ">
 													<label for=""><?php echo lang('label_order_type'); ?> : </label>
@@ -565,8 +565,8 @@ input[type=radio]:checked + label {
 													<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
 												</div>
 											</div>
-										</div>
-										<div class="col-md-5 col-sm-12 nopad">
+										</div> 
+										<div class="col-md-6 col-sm-12 nopad">
 											<div class="form-group">
 												<div class="col-md-5 col-sm-6 col-xs-6 ">
 													<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 

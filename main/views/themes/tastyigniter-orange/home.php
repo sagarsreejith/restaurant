@@ -186,8 +186,6 @@
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
                                             <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -199,8 +197,6 @@
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a> <span>/</span>
-                                            <a href="#">Identity</a>
                                             <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -211,9 +207,7 @@
                                     <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
+                                            <h3><a href="#">Diamond</a> </h3>
                                             <a class="portfolio-img" href="assets/images/gallery/02.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -224,9 +218,7 @@
                                     <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
+                                            <h3><a href="#">Mann Wa Salwa</a> </h3>
                                             <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -238,8 +230,6 @@
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
                                             <a class="portfolio-img" href="assets/images/gallery/04.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -251,8 +241,6 @@
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
                                             <a class="portfolio-img" href="assets/images/gallery/05.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -263,62 +251,19 @@
                                     <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
+                                            <h3><a href="#"> Bassma </a> </h3>
                                             <a class="portfolio-img" href="assets/images/gallery/06.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="grid-item Manakeesh">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-<!--                             
-                            <div class="grid-item  Manakeeshn">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="grid-item Sandwiches">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
-                                            <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                       
                             <div class="grid-item Appetizer">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
                                             <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a href="#">Branding</a><span>/</span>
-                                            <a href="#">Identity</a>
                                             <a class="portfolio-img" href="assets/images/gallery/10.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
@@ -404,7 +349,7 @@
                                         </div>
                                         <div class="col-lg-3 col-md-3 col-sm-6 ">
                                             <div class="contact-box ">
-                                                <i class="fa fa-mobile"></i>
+                                                <i class="fa fa-whatsapp"></i>
                                                 <div class="cont_con">
                                                     <h5>Whatsapp</h5> 
                                                     <p>949200202</p>
@@ -587,22 +532,6 @@ $(window).scroll(function () {
     $('.banner_sec').each(_checkOffset('animated tada'));
     $('#map_home').each(_checkOffset('animated fadeIn'));
     $('.gal_img').each(_checkOffset('animated fadeIn'));
-
-	$('.simple').each(_checkOffset('animated bounceInLeft'));
-	$('.arrow-intuitive').each(_checkOffset('animated bounceInRight'));
-	$('.intuitive').each(_checkOffset('animated bounceInRight'));
-	$('.arrow-secure').each(_checkOffset('animated bounceInRight'));
-	$('.secure').each(_checkOffset('animated bounceInRight'));
-	$('.arrow-stable').each(_checkOffset('animated bounceInRight'));
-	$('.stable').each(_checkOffset('animated bounceInRight'));
-	$('.screen1').each(_checkOffset('animated bounceInLeft'));
-	$('.screen2').each(_checkOffset('animated bounceInLeft'));
-	$('.screen3').each(_checkOffset('animated bounceInLeft'));
-	$('.fa-icon-wrap').each(_checkOffset('animated fadeIn'));
-	$('.text-features').each(_checkOffset('animated fadeIn'));
-	$('.view').each(_checkOffset('animated fadeIn'));
-	$('.testimonials-slider').each(_checkOffset('animated fadeIn'));
-	$('.pricing_table').each(_checkOffset('animated bounceIn'));
 	$('.contact-form').each(_checkOffset('animated fadeInLeft'));
 	$('.contact-map').each(_checkOffset('animated fadeInRight'));
 });

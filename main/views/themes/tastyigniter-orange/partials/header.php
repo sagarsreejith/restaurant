@@ -72,129 +72,126 @@
 
         <body class="<?php echo $body_class; ?>">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
-            <!--[if lt IE 7]>
-            <p class="chromeframe"><?php echo lang('alert_info_outdated_browser'); ?></p>
-        <![endif]-->
-            <style>
-              
-            </style>
+                                                    
+                <header id="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-4">
+                                <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
+                                    <i class="fa fa-align-justify"></i>
+                                </button>
+                                <div class="logo">
+                                    <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
+                                        <?php if (get_theme_options( 'logo_image')) { ?>
+                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>" height="40">
 
-           
-
-            <header id="main-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-4">
-                            <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
-                                <i class="fa fa-align-justify"></i>
-                            </button>
-                            <div class="logo">
-                                <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
-                                    <?php if (get_theme_options('logo_image')) { ?>
-										<img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>" height="40">
-										
-                                        <?php } else if (get_theme_options('logo_text')) { ?>
-                                            <?php echo get_theme_options('logo_text'); ?>
-                                                <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
-                                                    <?php echo $this->config->item('site_name'); ?>
-                                                        <?php } else { ?>
-                                                            <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>" height="40">
-                                                            <?php } ?>
-                                </a>
+                                        <?php } else if (get_theme_options( 'logo_text')) { ?>
+                                        <?php echo get_theme_options( 'logo_text'); ?>
+                                        <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
+                                        <?php echo $this->config->item('site_name'); ?>
+                                        <?php } else { ?>
+                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>" height="40">
+                                        <?php } ?>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-7 col-sm-8">
-                            <div class="collapse navbar-collapse" id="main-header-menu-collapse">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a></li>
-                                    <li class=""><a href="<?php echo site_url('#about'); ?>">About</a></li>
-                                    <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
+                            <div class="col-md-7 col-sm-8">
+                                <div class="collapse navbar-collapse" id="main-header-menu-collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a>
+                                        </li>
+                                        <li class=""><a href="<?php echo site_url('#about'); ?>">About</a>
+                                        </li>
+                                        <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
+                                        </li>
 
-                                    <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                        <?php if ($this->config->item('reservation_mode') === '1') { ?>
                                         <li class="">
                                             <a href="<?php echo site_url('reservation'); ?>">
-                                                <?php echo lang('menu_reservation'); ?>
+                                                <?php echo lang( 'menu_reservation'); ?>
                                             </a>
                                         </li>
                                         <?php } ?>
 
-                                            <?php if ($this->customer->isLogged()) { ?>
+                                        <?php if ($this->customer->isLogged()) { ?>
 
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
-                                                        <?php echo lang('menu_my_account'); ?> <span class="caret"></span></a>
-                                                    <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownLabel1">
-													<div class="top-arrow"></div>
-                                                        <li class="hidden">
-                                                            <a href="#page-top"></a>
-                                                        </li>
-                                                        <li>
-                                                            <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
-                                                                <?php echo lang('menu_recent_order'); ?>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a role="presentation" href="<?php echo site_url('account/account'); ?>">
-                                                                <?php echo lang('menu_my_account'); ?>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a role="presentation" href="<?php echo site_url('account/address'); ?>">
-                                                                <?php echo lang('menu_address'); ?>
-                                                            </a>
-                                                        </li>
-
-                                                        <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                            <li>
-                                                                <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
-                                                                    <?php echo lang('menu_recent_reservation'); ?>
-                                                                </a>
-                                                            </li>
-                                                            <?php } ?>
-
-                                                                <li>
-                                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
-                                                                        <?php echo lang('menu_logout'); ?>
-                                                                    </a>
-                                                                </li>
-                                                    </ul>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
+                                                <?php echo lang( 'menu_my_account'); ?> <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownLabel1">
+                                                <div class="top-arrow"></div>
+                                                <li class="hidden">
+                                                    <a href="#page-top"></a>
                                                 </li>
-                                                <?php } else { ?>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
+                                                        <?php echo lang( 'menu_recent_order'); ?>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
+                                                        <?php echo lang( 'menu_my_account'); ?>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
+                                                        <?php echo lang( 'menu_address'); ?>
+                                                    </a>
+                                                </li>
 
-                                                    <li class="">
-                                                        <a href="<?php echo site_url('local/all'); ?>">
-                                                            <?php echo lang('menu_locations'); ?>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="<?php echo site_url('account/login'); ?>">
-                                                            <?php echo lang('menu_login'); ?>
-                                                        </a>
-                                                    </li>
-                                                    <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
-                                                    <!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
+                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
+                                                        <?php echo lang( 'menu_recent_reservation'); ?>
+                                                    </a>
+                                                </li>
+                                                <?php } ?>
 
-                                                    <?php } ?>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
+                                                        <?php echo lang( 'menu_logout'); ?>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <?php } else { ?>
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+                                        <li class="">
+                                            <a href="<?php echo site_url('local/all'); ?>">
+                                                <?php echo lang( 'menu_locations'); ?>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo site_url('account/login'); ?>">
+                                                <?php echo lang( 'menu_login'); ?>
+                                            </a>
+                                        </li>
+                                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
+                                        </li>
+                                        <!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
 
-            <div id="page-wrapper" class="content-area">
-                <?php if (get_theme_options('display_crumbs') === '1' AND ($breadcrumbs = get_breadcrumbs()) !== '') { ?>
-                    <div id="breadcrumb">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <?php echo $breadcrumbs; ?>
+                                        <?php } ?>
+
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <?php } ?>
+                </header>
+
+                <div id="page-wrapper" class="content-area">
+                    <?php if (get_theme_options('display_crumbs') === '1' AND ($breadcrumbs = get_breadcrumbs()) !== '') { ?>
+                        <div id="breadcrumb">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <?php echo $breadcrumbs; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>
 
                         <?php if ($page_heading = get_heading()) { ?>
                             <div id="heading">
@@ -208,7 +205,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php } ?>
+                        <?php } ?>
+                    </div>
+
+
                                 <script>
                                     $(document).ready(function(){
                                         $(document).on('click', function (e){

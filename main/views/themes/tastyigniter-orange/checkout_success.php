@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-9 center-block top-spacing-10 bg_payment">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-12 nopad">
 						<ul class="nav nav-pills nav-justified thumbnail">
 							<li class="disabled">
 								<a href="#checkout">
@@ -31,13 +31,19 @@
 					</div>
 
 					<div class="col-xs-12 content-wrap clr_prog2">
+							<div class="cust_head">
+								<p> ZALATIMO Receipt</p>
+								<img class="img_logo" src="../assets/images/icon/logo_1.png">
+							</div>
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
 		                    <span class="under-heading"></span>
 						</div>
 
-			            <div class="panel panel-default">
-			                <div class="panel-heading pan_head">
+						
+
+			            <div class="">
+			                <div class="head_sec">
 			                    <h3 class="panel-title"><strong><?php echo lang('text_order_details'); ?></strong></h3>
 			                </div>
 			                <div class="panel-body">
@@ -61,11 +67,11 @@
 			                </div>
 			            </div>
 
-			            <div class="panel panel-default">
-			                <div class="panel-heading pan_head">
+			            <div class="">
+			                <div class="head_sec1">
 			                    <h3 class="panel-title"><strong><?php echo lang('text_order_items'); ?></strong></h3>
 			                </div>
-			                <div class="panel-body">
+			                <div class="panel-body payment_sec">
 								<?php if ($menus) { ?>
 				                    <div class="table-responsive">
 										<table class="table table-condensed clr_prog">

@@ -108,7 +108,7 @@
 
 	<div class="col-xs-12 wrap-none">
 		<?php if ($has_delivery) { ?>
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6 nopad">
 				<div class="panel panel-default">
 					
 
@@ -148,7 +148,7 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6 nopad">
 
 			<div class="col-xs-6 col-md-12 heading_info">
 							<div class="h6 text-uppercase"><?php echo lang('text_delivery_map'); ?></div>

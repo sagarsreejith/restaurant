@@ -105,11 +105,11 @@
                                                                     </div>
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
                                                                         <div class="contact-box ">
-                                                                            <i class="fa fa-fax"></i>
+                                                                            <i class="fa fa-whatsapp"></i>
                                                                             <div class="cnt_div">
-                                                                            <h5>Fax</h5>
-                                                                            <p>(007) 123 456 7890</p>
-                                                </div>
+                                                                                <h5>Whatsapp</h5>
+                                                                                <p>949200202</p>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

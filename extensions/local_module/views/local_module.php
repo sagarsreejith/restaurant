@@ -244,7 +244,7 @@ if($rsegment !="home"){
             
                <?php } ?>
                <?php if ($location_search !== TRUE AND $rsegment !== 'locations') { ?>
-               <div id="local-info" class="col-md-12" style="display: <?php echo ($local_info) ? 'block' : 'none'; ?>">
+               <div id="local-info" class="col-md-12 nopad" style="display: <?php echo ($local_info) ? 'block' : 'none'; ?>">
                   <div class="panel panel-local display-local">
                      <?php if ($location_search_mode === 'multi') { ?>
                      <div class="panel-heading">
