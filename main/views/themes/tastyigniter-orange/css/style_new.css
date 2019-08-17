@@ -1055,69 +1055,69 @@ right: 3px;
 
 
 
-#select2-results-267::-webkit-scrollbar {
+.select2-results::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
-#select2-results-267::-webkit-scrollbar-track {
+.select2-results::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
 /* Handle */
-#select2-results-267::-webkit-scrollbar-thumb {
+.select2-results::-webkit-scrollbar-thumb {
   background: #6f1e30; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
-#select2-results-267::-webkit-scrollbar-thumb:hover {
+.select2-results::-webkit-scrollbar-thumb:hover {
   background: #6f1e30;
 
 }
 
-#select2-results-268::-webkit-scrollbar {
+.select2-results::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
-#select2-results-268::-webkit-scrollbar-track {
+.select2-results::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
 /* Handle */
-#select2-results-268::-webkit-scrollbar-thumb {
+.select2-results::-webkit-scrollbar-thumb {
   background: #6f1e30; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
-#select2-results-268::-webkit-scrollbar-thumb:hover {
+.select2-results::-webkit-scrollbar-thumb:hover {
   background: #6f1e30;
 
 }
 
 
-#select2-results-269::-webkit-scrollbar {
+.select2-results::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
-#select2-results-269::-webkit-scrollbar-track {
+.select2-results::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
 /* Handle */
-#select2-results-269::-webkit-scrollbar-thumb {
+.select2-results::-webkit-scrollbar-thumb {
   background: #6f1e30; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
-#select2-results-269::-webkit-scrollbar-thumb:hover {
+.select2-results::-webkit-scrollbar-thumb:hover {
   background: #6f1e30;
 
 }
@@ -1609,7 +1609,7 @@ box-shadow:none;
     line-height: 20px;
 }
 #payment .list-group-item{padding:0}
-#payment .radio{margin:0}
+#payment .radio{margin:0;z-index: 9;}
 .btn_chk  button{    border: none;
   background: none;
   color: #333;}
@@ -2818,6 +2818,16 @@ a.gotop {
 .bg_payment .thumbnail{
   background-color: #6d1f30;
 }
-.select2-drop{
+#s2id_order-date  .select2-drop{
   z-index: 9 !important;
+}
+.gmnoprint{
+  display:none;
+}
+.select2-results .select2-drop{
+  z-index: 9;
+}
+#address-labels label{
+  background: #6f1e30e6;
+  width: 50%;
 }
