@@ -308,8 +308,8 @@ class Customers extends Admin_Controller {
 		}
 
 		$this->form_validation->set_rules('telephone', 'lang:label_telephone', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_question_id', 'lang:label_security_question', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_answer', 'lang:label_security_answer', 'xss_clean|trim|required|min_length[2]');
+		$this->form_validation->set_rules('security_question_id', 'lang:label_security_question', 'xss_clean|trim|integer');
+		$this->form_validation->set_rules('security_answer', 'lang:label_security_answer', 'xss_clean|trim|min_length[2]');
 		$this->form_validation->set_rules('newsletter', 'lang:label_newsletter', 'xss_clean|trim|required|integer');
 		$this->form_validation->set_rules('customer_group_id', 'lang:label_customer_group', 'xss_clean|trim|required|integer');
 		$this->form_validation->set_rules('status', 'lang:label_status', 'xss_clean|trim|required|integer');

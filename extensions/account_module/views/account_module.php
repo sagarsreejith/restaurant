@@ -15,7 +15,7 @@
 					<a href="<?php echo site_url('account/reviews'); ?>" class="list-group-item <?php echo ($page === 'reviews') ? 'active' : ''; ?>"><span class="fa fa-star"></span>&nbsp;&nbsp;&nbsp;<?php echo lang('text_reviews'); ?></a>
 				<?php } ?>
 
-				<a href="<?php echo site_url('account/inbox'); ?>" class="list-group-item <?php echo ($page === 'inbox') ? 'active' : ''; ?>"><span class="fa fa-inbox"></span>&nbsp;&nbsp;&nbsp;<?php echo sprintf(lang('text_inbox'), $inbox_total); ?></a>
+				<!-- <a href="<?php echo site_url('account/inbox'); ?>" class="list-group-item <?php echo ($page === 'inbox') ? 'active' : ''; ?>"><span class="fa fa-inbox"></span>&nbsp;&nbsp;&nbsp;<?php echo sprintf(lang('text_inbox'), $inbox_total); ?></a> -->
 				<a href="<?php echo site_url('account/logout'); ?>" class="list-group-item  list-group-item-danger" ><span class="fa fa-ban"></span>&nbsp;&nbsp;&nbsp;<?php echo lang('text_logout'); ?></a>
 			</div>
 		</div>

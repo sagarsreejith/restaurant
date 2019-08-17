@@ -14,7 +14,7 @@
 
 <div >
     <div class="container">
-        <div class="row">
+        <div class="row out_div_mar">
 
             <?php
             if (partial_exists('content_right')) {

@@ -15,7 +15,8 @@
 
 <div id="page-content">
 	<div class="container top-spacing">
-		<div class="row">
+		<div class="row margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -27,9 +28,9 @@
 				}
 			?>
 
-			<div class="content-wrap <?php echo $class; ?>">
+			<div class="content-wrap <?php echo $class; ?> pad_stt">
 				<div class="row">
-					<form method="POST" accept-charset="utf-8" action="<?php echo $_action; ?>" role="form">
+					<form method="POST" accept-charset="utf-8" action="<?php echo $_action; ?>" role="form" class="review_form">
 						<div class="col-md-12">
 							<div class="form-group">
 								<label for="location"><?php echo lang('label_restaurant'); ?></label>
@@ -68,11 +69,12 @@
 						<div class="col-md-12">
 							<div class="buttons">
 								<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-								<button type="submit" class="btn btn-success"><?php echo lang('button_review'); ?></button>
+								<button type="submit" class="btn_add"><?php echo lang('button_review'); ?></button>
 							</div>
 						</div>
 					</form>
 				</div>
+			</div>
 			</div>
 			<?php echo get_partial('content_right'); ?>
 			<?php echo get_partial('content_bottom'); ?>

@@ -23,7 +23,7 @@ $lang['column_date_added'] 		        = 'Date Registered';
 $lang['column_status'] 		            = 'Status';
 $lang['column_id'] 		                = 'ID';
 
-$lang['label_first_name'] 		        = 'First Name';
+$lang['label_first_name'] 		        = 'Full Name';
 $lang['label_last_name'] 		        = 'Last Name';
 $lang['label_email'] 		            = 'Email';
 $lang['label_password'] 		        = 'Password';

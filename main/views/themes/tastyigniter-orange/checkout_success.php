@@ -76,8 +76,14 @@
 				                    <div class="table-responsive">
 										<table class="table table-condensed clr_prog">
 				                            <tbody>
+												<tr class="item_details">
+													<td>Quantity</td>
+													<td width="65%"> Item Name</td>
+													<td> Item Price</td>
+													<td> Total Price</td>
+												</tr>
 												<?php foreach ($menus as $menu) { ?>
-													<tr>
+													<tr class="item_details1">
 														<td><?php echo $menu['quantity']; ?> x</td>
 														<td class="text-left" width="65%">
 															<?php echo $menu['name']; ?>
@@ -97,11 +103,11 @@
 													<tr>
 														<td class="no-line" colspan="2"></td>
 														<?php if ($total['code'] === 'order_total') { ?>
-															<td class="text-right thick-line"><b><?php echo $total['title']; ?></b></td>
-															<td class="text-right thick-line"><b><?php echo $total['value']; ?></b></td>
+															<td class="text-center thick-line"><b><?php echo $total['title']; ?></b></td>
+															<td class="text-center thick-line"><b><?php echo $total['value']; ?></b></td>
 														<?php } else { ?>
-															<td class="text-right no-line"><?php echo $total['title']; ?></td>
-															<td class="text-right no-line"><?php echo $total['value']; ?></td>
+															<td class="text-center no-line"><?php echo $total['title']; ?></td>
+															<td class="text-center no-line"><?php echo $total['value']; ?></td>
 														<?php } ?>
 													</tr>
 												<?php } ?>

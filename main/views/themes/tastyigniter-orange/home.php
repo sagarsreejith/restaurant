@@ -312,7 +312,7 @@
                         <div id="map_home" class="slideInUp" style="height:500px; width:100%"></div>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="content-wrap cont_clr cont_clr2">
+                    <!-- <div class="content-wrap cont_clr cont_clr2">
 
                         <div class="container">
                             <div class="row">
@@ -361,8 +361,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
+                    </div> -->
+                 </div>
                 </section>
 
                 <div claass="clearfix"></div>

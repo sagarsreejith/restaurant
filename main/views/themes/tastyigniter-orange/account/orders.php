@@ -65,7 +65,7 @@ switch ($rsegment) {
                                 <?php if ($orders) { ?>
                                     <?php foreach ($orders as $order) { ?>
                                         <tr>
-                                            <td><a href="<?php echo $order['view']; ?>"><?php echo $order['order_id']; ?></a></td>
+                                            <td><a href="<?php echo $order['view']; ?>" class="order_id"><?php echo $order['order_id']; ?></a></td>
                                             <td><?php echo $order['status_name']; ?></td>
                                             <td><?php echo $order['location_name']; ?></td>
                                             <td><?php echo $order['order_time']; ?> - <?php echo $order['order_date']; ?></td>
@@ -89,7 +89,7 @@ switch ($rsegment) {
                     </div>
 
                     <div class="col-md-12">
-                        <div class="buttons col-xs-6 wrap-none">
+                        <div class="buttons col-xs-12 wrap-none">
                             <a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
                             <a class="btn_add" href="<?php echo $new_order_url; ?>"><?php echo lang('button_order'); ?></a>
                         </div>

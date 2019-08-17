@@ -77,17 +77,8 @@
 							</div>
 							<?php //echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
 						</div> -->
-						<div class="row">
-							<div class="col-xs-8 col-sm-9 col-md-9  col-md-12 connt_clr">
-								<span class="button-checkbox">
-									<button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
-			                        <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
-								</span>
-								 <?php echo lang('label_newsletter'); ?>
-							</div>
-							<?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
-						</div>
-						<br />
+						
+					
 
 						<?php if ($registration_terms) {?>
 							<div class="row">
@@ -132,6 +123,17 @@ You are granted limited license only for purposes of viewing the material contai
 							<div class="col-xs-12 col-md-6">
 								<a href="<?php echo $login_url; ?>" class="btn btn-default btn-block btn-lg"><?php echo lang('button_login'); ?></a>
 							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-8 col-sm-12 col-md-12  col-md-12 connt_clr subscribe">
+								<span class="button-checkbox">
+									<button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
+			                        <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
+								</span>
+								 <?php echo lang('label_newsletter'); ?>
+							</div>
+							<?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</form>
 				</div>

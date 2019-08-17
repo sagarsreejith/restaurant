@@ -15,7 +15,7 @@
 
 <div id="page-content">
 	<div class="container">
-		<div class="row">
+		<div class="row out_div_mar">
 			<?php
                 if (partial_exists('content_right')) {
                     $class = "col-sm-8 col-md-8";

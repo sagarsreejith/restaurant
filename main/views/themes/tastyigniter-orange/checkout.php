@@ -169,7 +169,7 @@ input[type=radio]:checked + label {
 <?php echo get_partial('content_top'); ?>
 <div id="page-content" class="mt_st">
 	<div class="container">
-		<div class="row">
+		<div class="row out_div_mar">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {

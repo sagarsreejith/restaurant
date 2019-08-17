@@ -1,17 +1,15 @@
 <?php echo get_header(); ?>
 
-<div id="page-content " class="parallax pb-30 bg-overlay-black-70 " style="background:url('assets/images/d2.jpg');    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;">
+<div id="page-content " class="parallax pb-30 bg-overlay-black-70 forgot_background">
 	<div class="container">
 	<div class="margin_st">
-		<div class="row">
-
 		
+
+		<div class="row">
+			<div class="content-wrap col-md-6 center-block  forgot_bg">
+				
 			<div class="col-md-12">
-				<div class="heading-section">
-					
-				</div>
+				
 
 
 
@@ -19,15 +17,11 @@
 					<div class="title-separator">
 					
 					</div>
-						<h2 class="reg_st"> <span class="text-orange"><?php echo lang('text_heading'); ?></span></h2>
+						<h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_heading'); ?></span></h2>
 						<span class="under-heading"></span>
       			</div>
 
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="content-wrap col-md-6 center-block">
 				<?php if ($this->alert->get('', 'alert')) { ?>
 					<div id="notification">
 						<?php echo $this->alert->display('', 'alert'); ?>

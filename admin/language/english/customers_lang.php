@@ -23,7 +23,7 @@ $lang['column_date_added'] 		        = 'Date Registered';
 $lang['column_status'] 		            = 'Status';
 $lang['column_id'] 		                = 'ID';
 
-$lang['label_first_name'] 		        = 'First Name';
+$lang['label_first_name'] 		        = 'Full Name';
 $lang['label_last_name'] 		        = 'Last Name';
 $lang['label_email'] 		            = 'Email';
 $lang['label_password'] 		        = 'Password';
@@ -36,7 +36,7 @@ $lang['label_customer_group'] 		    = 'Customer Group';
 $lang['label_status'] 		            = 'Status';
 $lang['label_address_1'] 		        = 'Block';
 $lang['label_address_2'] 		        = 'Street';
-$lang['label_city'] 		            = 'City';
+$lang['label_city'] 		            = 'City1';
 $lang['label_state'] 		            = 'State';
 $lang['label_postcode'] 		        = 'Postcode';
 $lang['label_country'] 		            = 'Country';

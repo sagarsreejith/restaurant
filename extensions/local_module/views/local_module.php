@@ -1,5 +1,5 @@
 <style>
-.ext-cross:before, .checkbox__checker:before, .checkbox__cross:before, .checkbox__ok:before, .ext-cross:after, .checkbox__checker:after, .checkbox__cross:after, .checkbox__ok:after {
+/* .ext-cross:before, .checkbox__checker:before, .checkbox__cross:before, .checkbox__ok:before, .ext-cross:after, .checkbox__checker:after, .checkbox__cross:after, .checkbox__ok:after {
 
   display: block;
   position: absolute;
@@ -104,7 +104,7 @@
   fill: #aaa;
   width: 100%;
   height: 100%;
-}
+} */
 
 </style>
 
@@ -380,7 +380,12 @@ if($rsegment !="home"){
                         </div>
                      </div>
                   </div>
+                  <div class="full_out">
+                         hiii 
                </div>
+               </div>
+
+               
                <?php } ?>
             </div>
          </div>

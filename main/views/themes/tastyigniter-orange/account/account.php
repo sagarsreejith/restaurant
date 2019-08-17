@@ -36,8 +36,8 @@
 							<li><a href="#address" data-toggle="tab"><?php echo lang('text_default_address'); ?></a></li>
 							<li><a href="#cart" data-toggle="tab"><?php echo lang('text_cart'); ?></a></li>
 							<li><a href="#orders" data-toggle="tab"><?php echo lang('text_orders'); ?></a></li>
-							<li><a href="#reservations" data-toggle="tab"><?php echo lang('text_reservations'); ?></a></li>
-							<li><a href="#inbox" data-toggle="tab"><?php echo sprintf(lang('text_inbox'), $inbox_total); ?></a></li>
+							<!-- <li><a href="#reservations" data-toggle="tab"><?php echo lang('text_reservations'); ?></a></li>
+							<li><a href="#inbox" data-toggle="tab"><?php echo sprintf(lang('text_inbox'), $inbox_total); ?></a></li> -->
 						</ul>
 					</div>
 
@@ -52,41 +52,41 @@
 												<td><b><?php echo lang('label_first_name'); ?></b></td>
 												<td><?php echo $customer_info['first_name']; ?></td>
 											</tr>
-											<tr>
+											<!-- <tr>
 												<td><b><?php echo lang('label_last_name'); ?></b></td>
 												<td><?php echo $customer_info['last_name']; ?></td>
-											</tr>
+											</tr> -->
 											<tr>
 												<td><b><?php echo lang('label_email'); ?></b></td>
 												<td><?php echo $customer_info['email']; ?></td>
 											</tr>
 											<tr>
 												<td><b><?php echo lang('label_password'); ?></b></td>
-												<td><a class="btn btn-default" href="<?php echo $password_url; ?>"><?php echo lang('text_change_password'); ?></a></td>
+												<td><a class="btn pass_btn" href="<?php echo $password_url; ?>"><?php echo lang('text_change_password'); ?></a></td>
 											</tr>
 											<tr>
 												<td><b><?php echo lang('label_telephone'); ?></b></td>
 												<td><?php echo $customer_info['telephone']; ?></td>
 											</tr>
-											<tr>
+											<!-- <tr>
 												<td><b><?php echo lang('label_s_question'); ?></b></td>
 												<td><?php echo $customer_info['security_question']; ?></td>
 											</tr>
 											<tr>
 												<td><b><?php echo lang('label_s_answer'); ?></b></td>
 												<td><?php echo $customer_info['security_answer']; ?></td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>
 								</div>
 								<?php } ?>
 							</div>
 
-							<div id="address" class="tab-pane">
+							<div id="address" class="tab-pane ">
 								<div class="">
 									<?php if ($address_info) { ?>
                                     <div class="btn-group btn-group-md col-md-12">
-                                        <label class="btn btn-default wrap-all col-xs-3">
+                                        <label class="wrap-all col-xs-3 address_account">
                                             <a class="edit-address pull-right" href="<?php echo $address_info_edit; ?>" data-original-title="" title=""><?php echo lang('text_edit'); ?></a>
                                             <address class="text-left"><?php echo $address_info; ?></address>
                                         </label>
@@ -97,7 +97,7 @@
 								</div>
 							</div>
 
-							<div id="cart" class="tab-pane">
+							<div id="cart" class="tab-pane cart_tab">
 								<?php if ($cart_items > 0) { ?>
 									<div class="table-responsive">
 										<table class="table table-none">
@@ -112,7 +112,7 @@
 												<tr>
 													<td><?php echo $cart_items; ?></td>
 													<td><?php echo $cart_total; ?></td>
-													<td><a class="btn btn-primary" href="<?php echo $checkout_url; ?>"><?php echo lang('text_checkout'); ?></a></td>
+													<td><a class="btn_add_chk" href="<?php echo $checkout_url; ?>"><?php echo lang('text_checkout'); ?></a></td>
 												</tr>
 											</tbody>
 										</table>

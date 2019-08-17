@@ -513,7 +513,7 @@ class Location {
 	public function setOrderType($order_type) {
 		if (is_numeric($order_type)) {
 			$local_info = $this->CI->session->userdata('local_info');
-
+			//$ordeType = "<script>document.write(window.localStorage.getItem('order_type'));</script>
 			$this->order_type = $local_info['order_type'] = $order_type;
 			$this->CI->session->set_userdata('local_info', $local_info);
 		}

@@ -13,7 +13,7 @@ $lang['text_subject'] 			= 'Account created!';
 $lang['text_success_message'] 	= 'Your account has been created.';
 $lang['text_signature'] 		= 'Regards, <br />%s';
 
-$lang['label_first_name'] 		= 'First Name';
+$lang['label_first_name'] 		= 'Full Name';
 $lang['label_last_name'] 		= 'Last Name';
 $lang['label_email'] 			= 'Email Address';
 $lang['label_password'] 		= 'Password';

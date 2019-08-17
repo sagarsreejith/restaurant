@@ -1,5 +1,9 @@
+
+<?php $ordeType = "<script>document.write(window.localStorage.getItem('order_type'));</script>";?>
 <div class="<?php echo ($is_mobile OR $is_checkout) ? '' : 'hidden-xs'; ?>" <?php echo $fixed_cart; ?>>
 	<div id="cart-box" class="module-box">
+
+	<?php echo "SKJhkjhkjh" .$ordeType; ?>
 		<div class="panel panel-default panel-cart <?php echo ($is_checkout) ? 'hidden-xs' : ''; ?>">
 			<div class="panel-heading">
 				<h3 class="panel-title"><?php echo lang('text_heading'); ?></h3>
@@ -215,6 +219,7 @@ $(document).on('ready', function() {
 });
 
 $(document).on('change', 'input[name="order_type"]', function() {
+	alert(window.localStorage.getItem('order_type'));
 	if (typeof this.value !== 'undefined') {
 		var order_type = this.value;
 
@@ -233,6 +238,9 @@ $(document).on('change', 'input[name="order_type"]', function() {
 });
 
 $(document).ready(function(){
+	if(window.localStorage.getItem('order_type')==2){
+
+	}
 	$('#delivery').trigger('click');
 	$('#collection').trigger('click');
 });

@@ -163,7 +163,7 @@ class Cart_module extends Main_Controller {
 
 	public function order_type() {																// _updateModule() method to update cart
 		$json = array();
-
+print_r($json);
 		$order_type = (is_numeric($this->input->post('order_type'))) ? $this->input->post('order_type') : NULL;
 
 		if (!$json AND $order_type) {

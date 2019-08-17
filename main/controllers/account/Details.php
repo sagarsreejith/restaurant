@@ -93,10 +93,10 @@ class Details extends Main_Controller {
 	private function validateForm() {
 		// START of form validation rules
 		$this->form_validation->set_rules('first_name', 'lang:label_first_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
-		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
+		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|min_length[2]|max_length[32]');
 		$this->form_validation->set_rules('telephone', 'lang:label_telephone', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_question_id', 'lang:label_s_question', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_answer', 'lang:label_s_answer', 'xss_clean|trim|required|min_length[2]');
+		$this->form_validation->set_rules('security_question_id', 'lang:label_s_question', 'xss_clean|trim|integer');
+		$this->form_validation->set_rules('security_answer', 'lang:label_s_answer', 'xss_clean|trim|min_length[2]');
 
 		if ($this->input->post('old_password')) {
 			$this->form_validation->set_rules('old_password', 'lang:label_old_password', 'xss_clean|trim|required|min_length[6]|max_length[32]|callback__check_old_password');

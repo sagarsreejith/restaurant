@@ -649,7 +649,7 @@ display: block;
   margin-bottom: 20px;
 }
 .tabs_st{
-background: #fff8f8;
+background: #ebebeb;
 }
 .tabs_st li a{
 color:#000;
@@ -663,9 +663,14 @@ color:#fff !important;
 
 .btn_add{
 background:#6f1e30;
-padding: 23PX;
+padding: 8px !important;
 color:#fff !important;
 border-radius:3PX;
+border:none;
+}
+.btn_add:hover{
+  color:#ccc;
+  text-decoration:none;
 }
 .txt_hd{
 font-size:25px;
@@ -1432,6 +1437,7 @@ box-shadow:none;
 
   .partial .text-muted i{
     color: #6f1e30;
+    font-size: 16px;
   }
  #local-box {
     margin:18% 0;
@@ -1666,13 +1672,7 @@ font-size: 15px;}
 .pad_stt{
   padding:20px !important;
 }
-#password_form{
-  border-radius: 4px;
-  margin-bottom: 20px;
-  background: #fff;
-  box-shadow: 0 0px 10px 0 #ccc;
-  padding: 20px;
-}
+
 address{font-size:14px;}
 .bg_payment{
   /* background: #fff; */
@@ -2713,7 +2713,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Colo
   /* top: 4px; */
   /* padding-left:30px; */
   margin-left: 4px;
-  left: 618px;
+  left: 616px;
   top: 0;
 }
 .map_A{
@@ -2830,4 +2830,126 @@ a.gotop {
 #address-labels label{
   background: #6f1e30e6;
   width: 50%;
+}
+.place_st .text-danger .map_icon_bg {
+  left: 712px !important;
+}
+.box-two dl dd,.box-three dl dd {
+  display: list-item;
+  list-style-type: disc;
+
+}
+.forgot_bg{
+  border-radius: 4px;
+
+  background: #fff;
+  box-shadow: 0 0px 10px 0 #ccc;
+  padding: 30px 20px;
+  margin-top: 90px;
+}
+.forgot_bg p{
+  color:#333;
+}
+.forgot_background{
+  background:url('../../../../../assets/images/d2.jpg');    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.review-item p{
+  color:#333;
+  text-align:center;
+}
+.cart_tab{
+  color:#333;
+}
+.chk_bx .btn-info.active{
+background:none;
+border:none;
+color:#333;
+box-shadow:none;
+}
+.chk_bx  button{
+  background:none;
+  border:none;
+}
+.pass_btn{
+  background:none;
+  border:none;
+  color:#6f1e30;
+  padding:0;
+  font-weight:900;
+}
+.subscribe{
+  text-align: center;
+  margin-top: 30px;
+}
+.add_review{
+      /* text-align: center; */
+      display: table;
+      background: #621628;
+      /* float: left; */
+      position: relative;
+      color: #fff;
+      padding: 10px 20px;
+      position: relative;
+      margin: 0 auto;
+}
+.add_review:hover{
+  color:#ccc;
+  text-decoration:none;
+}
+.item_details{
+  background: #ccc;
+  box-shadow: 0 1px 7px 0 #dfdddd;
+}
+.item_details td{
+  text-align:center;
+}
+.item_details1 td{
+  text-align:center;
+}
+.address_account{
+  width:100%;
+  background:none;
+  border:none;
+}
+.btn_add_chk{
+  padding:5px;
+  background-color: #6f1e30;
+  border-color: #6f1e30;
+  color:#fff;
+  font-size:13px;
+  text-transform:none;
+}
+.btn_add_chk:hover{color:#ccc;text-decoration:none;}
+.address_account address{
+  color:#333;
+}
+.order_id{
+  color: #6f1e30;
+
+  font-weight: 900;
+}
+.order_id:hover{
+  color:#333;
+  text-decoration: none;
+}
+.review_form label{
+color:#333;
+font-size:14px;
+font-weight:normal;
+
+}
+.out_div_mar{
+  margin:0 -30px;
+}
+
+.full_out{
+  background:#fff;
+  float: left;
+  width:100%;
+  box-shadow:0 0 10px 0 #ccc;
+ 
+  padding:20px;
+
 }

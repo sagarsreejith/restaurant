@@ -74,7 +74,7 @@
 
 					<div class="col-md-12">
 						<div class="buttons col-xs-6 wrap-none">
-							<a class="btn_add" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
+							<!-- <a class="btn_add" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a> -->
 						</div>
 
 						<div class="col-xs-6 wrap-none">

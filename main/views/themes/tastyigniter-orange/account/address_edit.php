@@ -3,7 +3,8 @@
 
 <div id="page-content">
 	<div class="container top-spacing">
-		<div class="row">
+		<div class="row margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -22,7 +23,7 @@
 							<div class="col-md-12">
 								<div class="form-group">
 									<label for=""><?php echo lang('label_address_1'); ?></label>
-									<input type="text" name="address[address_1]" class="form-control" value="<?php echo set_value('address[address_1]', $address['address_1']); ?>" />
+									<input type="text" name="address[address_1]" class="form-control" value="<?php echo set_value('address[address_1]', $address['address_1']); ?>" placeholder="<?php echo lang('label_city'); ?>"/>
 									<?php echo form_error('address[address_1]', '<span class="text-danger">', '</span>'); ?>
 								</div>
 
@@ -129,6 +130,7 @@
 						</div>
 					</form>
 					</div>
+				</div>
 				</div>
 			</div>
 			<?php echo get_partial('content_right'); ?>
