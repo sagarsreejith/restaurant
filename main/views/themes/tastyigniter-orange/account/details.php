@@ -14,14 +14,15 @@
 <?php } ?>
 
 <div id="page-content">
-	<div class="container top-spacing">
-		<div class="row">
+<div class="container top-spacing">
+    <div class="row  margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
 					$class = "col-sm-6 col-md-6";
 				} else if (partial_exists('content_left') OR partial_exists('content_right')) {
-					$class = "col-sm-9 col-md-9";
+					$class = "col-sm-9 col-md-9 pad_stt";
 				} else {
 					$class = "col-md-12";
 				}
@@ -38,28 +39,29 @@
 										<?php echo form_error('first_name', '<span class="text-danger">', '</span>'); ?>
 									</div>
 								</div>
-								<div class="col-xs-12 col-sm-6 col-md-6">
+								<!-- <div class="col-xs-12 col-sm-6 col-md-6">
 									<div class="form-group">
 										<input type="text" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" name="last_name" placeholder="<?php echo lang('label_last_name'); ?>">
 										<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
 									</div>
-								</div>
-							</div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-6">
+								</div> -->
+								<div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <input type="text" id="telephone" class="form-control" value="<?php echo set_value('telephone', $telephone); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
                                         <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
+							</div>
+                            <div class="row">
+                             
+                                <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <input type="text" id="email" class="form-control" value="<?php echo set_value('email', $email); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>" disabled>
                                         <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
                                     </div>
                                 </div>
 							</div>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <select name="security_question_id" id="security-question" class="form-control" placeholder="<?php echo lang('label_s_question'); ?>">
@@ -80,10 +82,10 @@
                                         <?php echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="row">
 								<div class="col-xs-9 col-sm-10 col-md-10">
-									<span class="button-checkbox">
+									<span class="button-checkbox chk_bx">
 										<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_subscribe'); ?></button>
 										<?php if ($newsletter === '1') { ?>
 											<input type="checkbox" name="newsletter" id="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1', TRUE); ?>>
@@ -96,9 +98,9 @@
 								<?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
 							</div>
 
-							<div class="row top-spacing-20">
-                                <div class="col-xs-12">
-                                    <h4><?php echo lang('text_password_heading'); ?></h4>
+							<div class="row top-spacing-20 margin_20">
+                                <div class="col-xs-12 nopad">
+                                    <span class="txt_hd"><?php echo lang('text_password_heading'); ?></span>
 							    </div>
 							</div>
 
@@ -127,11 +129,12 @@
 							<br />
 							<div class="buttons">
 								<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-								<button type="submit" class="btn btn-primary btn-lg"><?php echo lang('button_save'); ?></button>
+								<button type="submit" class="btn btn-primary"><?php echo lang('button_save'); ?></button>
 							</div>
 						</div>
 					</form>
 				</div>
+			</div>
 			</div>
 			<?php echo get_partial('content_right'); ?>
 			<?php echo get_partial('content_bottom'); ?>

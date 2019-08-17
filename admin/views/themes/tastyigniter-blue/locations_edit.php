@@ -58,14 +58,30 @@
 					<div class="form-group">
 						<label for="input-city" class="col-sm-3 control-label"><?php echo lang('label_city'); ?></label>
 						<div class="col-sm-5">
-							<input type="text" name="address[city]" id="input-city" class="form-control" value="<?php echo set_value('address[city]', $location_city); ?>" />
+						<select name="address[city]" id="input-city" class="form-control">
+								<?php foreach ($governate_areas as $governate_area) { ?>
+								<?php if ($governate_area['govr_area_name_en'] === $location_city) { ?>
+									<option value="<?php echo $location_city; ?>" selected="selected"><?php echo $location_city; ?></option>
+								<?php } else { ?>
+									<option value="<?php echo $governate_area['govr_area_name_en']; ?>"><?php echo $governate_area['govr_area_name_en']; ?></option>
+								<?php } ?>
+								<?php } ?>
+							</select>
 							<?php echo form_error('address[city]', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="input-state" class="col-sm-3 control-label"><?php echo lang('label_state'); ?></label>
 						<div class="col-sm-5">
-							<input type="text" name="address[state]" id="input-state" class="form-control" value="<?php echo set_value('address[state]', $location_state); ?>" />
+							<select name="address[state]" id="input-state" class="form-control">
+								<?php foreach ($governates as $governate) { ?>
+								<?php if ($governate['govr_name_en'] === $location_state) { ?>
+									<option value="<?php echo $location_state; ?>" selected="selected"><?php echo $location_state; ?></option>
+								<?php } else { ?>
+									<option value="<?php echo $governate['govr_name_en']; ?>"><?php echo$governate['govr_name_en']; ?></option>
+								<?php } ?>
+								<?php } ?>
+							</select>
 							<?php echo form_error('address[state]', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>

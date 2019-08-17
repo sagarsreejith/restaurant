@@ -16,7 +16,7 @@ $lang['text_no_orders'] 	            = 'There are no orders available to show.';
 $lang['text_no_reservations'] 	        = 'There are no reservations available to show.';
 $lang['text_no_inbox'] 	                = 'There are no messages available to show';
 
-$lang['label_first_name'] 		        = 'First Name:';
+$lang['label_first_name'] 		        = 'Full Name:';
 $lang['label_last_name'] 		        = 'Last Name:';
 $lang['label_email'] 			        = 'Email Address:';
 $lang['label_password'] 		        = 'Password:';

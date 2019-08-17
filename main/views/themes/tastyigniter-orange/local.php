@@ -12,32 +12,34 @@
     </div>
 <?php } ?>
 
-<div id="page-content">
+<div >
     <div class="container">
-        <div class="row">
+        <div class="row out_div_mar">
+
             <?php
             if (partial_exists('content_right')) {
-                $class = "col-sm-8 col-md-9";
+                $class = "col-sm-8 col-md-8 ";
+                
             } else {
                 $class = "col-sm-12";
             }
 
             if (partial_exists('content_left')) {
-                $menu_class = "col-sm-12 col-md-9";
+                $menu_class = "col-sm-12 col-md-8 nopad";
             } else {
-                $menu_class = "col-sm-9";
+                $menu_class = "col-sm-8";
             }
             ?>
 
             <div class="<?php echo $class; ?>">
 
                 <div class="row wrap-vertical">
-                    <ul id="nav-tabs" class="nav nav-tabs nav-tabs-line nav-menus">
-                        <li class="active"><a href="#local-menus" data-toggle="tab"><?php echo lang('text_tab_menu'); ?></a></li>
+                    <ul id="nav-tabs" class="nav nav-tabs nav-tabs-line nav-menus menu_tabs">
+                        <li class="active"><a href="#local-menus" data-toggle="tab"><img src="../assets/images/icon/5aa.png" class="icon_cl1" ><img src="../assets/images/icon/6.png" class="icon_cl" style="display:none"><?php echo lang('text_tab_menu'); ?></a></li>
                         <?php if (config_item('allow_reviews') !== '1') { ?>
-                        <li><a href="#local-reviews" data-toggle="tab"><?php echo lang('text_tab_review'); ?></a></li>
+                        <li><a href="#local-reviews" data-toggle="tab"><img src="../assets/images/icon/4.png" class="icon_cl1" ><img src="../assets/images/icon/3.png" class="icon_cl" style="display:none"><?php echo lang('text_tab_review'); ?></a></li>
                         <?php } ?>
-                        <li><a href="#local-information" data-toggle="tab"><?php echo lang('text_tab_info'); ?></a></li>
+                        <li><a href="#local-information" data-toggle="tab"><img src="../assets/images/icon/2.png" class="icon_cl1" ><img src="../assets/images/icon/1.png" class="icon_cl" style="display:none"><?php echo lang('text_tab_info'); ?></a></li>
                         <?php if (!empty($local_gallery)) { ?>
                             <li><a href="#local-gallery" data-toggle="tab"><?php echo lang('text_tab_gallery'); ?></a></li>
                         <?php } ?>
@@ -47,7 +49,7 @@
                 <div class="tab-content tab-content-line content">
                     <div id="local-menus" class="tab-pane row wrap-all active">
 
-                        <?php echo get_partial('content_left', 'col-md-3 hidden-xs hidden-sm'); ?>
+                        <?php echo get_partial('content_left', 'col-md-4 nopad hidden-xs hidden-sm'); ?>
 
                         <div class="<?php echo $menu_class; ?>">
                             <?php echo load_partial('menu_list', $menu_list); ?>
@@ -78,7 +80,7 @@
                     <?php } ?>
                 </div>
             </div>
-            <?php echo get_partial('content_right', 'col-sm-4 col-md-3'); ?>
+            <?php echo get_partial('content_right', 'col-sm-4 col-md-4'); ?>
             <?php echo get_partial('content_bottom'); ?>
         </div>
     </div>

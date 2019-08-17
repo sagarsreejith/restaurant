@@ -14,14 +14,15 @@
 <?php } ?>
 
 <div id="page-content">
-	<div class="container top-spacing">
-		<div class="row">
+<div class="container top-spacing">
+    <div class="row  margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
 					$class = "col-sm-6 col-md-6";
 				} else if (partial_exists('content_left') OR partial_exists('content_right')) {
-					$class = "col-sm-9 col-md-9";
+					$class = "col-sm-9 col-md-9 pad_stt";
 				} else {
 					$class = "col-md-12";
 				}
@@ -47,7 +48,7 @@
 								<?php } ?>
 							</div>
 						<?php } else { ?>
-							<p><?php echo lang('text_empty'); ?></p>
+							<p class=""><?php echo lang('text_empty'); ?></p>
 						<?php } ?>
 					</div>
 				</div>
@@ -66,6 +67,7 @@
 				</div>
 			</div>
 
+						</div>
 			<?php echo get_partial('content_right'); ?>
 			<?php echo get_partial('content_bottom'); ?>
 		</div>

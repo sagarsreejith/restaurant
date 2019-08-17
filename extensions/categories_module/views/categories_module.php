@@ -1,23 +1,12 @@
-<div id="category-box-affix" <?php echo $fixed_categories; ?>>
+<div >
 	<div id="category-box" class="module-box">
 		<div class="panel panel-default">
 			<?php echo $category_tree; ?>
 		</div>
 	</div>
 </div>
-<script type="text/javascript"><!--
-	$(document).ready(function() {
-		$('#category-box-collapse .list-group-item').on('click', function() {
-			if ($('#category-box-collapse.in').length > 0) $('#category-box-collapse').collapse('toggle');
-		});
 
-		$(window).bind("load resize", function() {
-			var sideBarWidth = $('#content-left .side-bar').width();
-			$('#category-box-affix').css('width', sideBarWidth);
-		});
-	});
-//--></script>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 	$(document).ready(function() {
 		$(function(){
 
@@ -77,4 +66,4 @@
 			});
 		});
 	});
-//--></script>
+</script>

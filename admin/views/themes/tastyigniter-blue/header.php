@@ -86,6 +86,13 @@
 	<![endif]-->
 </head>
 <body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
     <div id="wrapper" class="<?php echo $wrapper_class; ?>" style="background:#fff;">
 		<nav class="navbar navbar-static-top navbar-top" role="navigation" style="margin-bottom: 0" >
 			<div class="navbar-header" style="background:#fff">
@@ -154,8 +161,7 @@
 						<ul class="dropdown-menu dropdown-settings">
 							<li><a href="<?php echo site_url('pages'); ?>"><?php echo lang('menu_page'); ?></a></li>
 							<li><a href="<?php echo site_url('banners'); ?>"><?php echo lang('menu_banner'); ?></a></li>
-							<li><a href="<?php echo site_url('layouts'); ?>"><?php echo lang('menu_layout'); ?></a></li>
-<!--						<li><a href="--><?php //echo site_url('uri_routes'); ?><!--">--><?php //echo lang('menu_uri_route'); ?><!--</a></li>-->
+						<!-- <li><a href="#"><?php //echo site_url('uri_routes'); ?><?php //echo lang('menu_uri_route'); ?> -->
 							<li><a href="<?php echo site_url('error_logs'); ?>"><?php echo lang('menu_error_log'); ?></a></li>
 							<li><a href="<?php echo site_url('settings'); ?>"><?php echo lang('menu_setting'); ?></a></li>
 							<li class="menu-footer"></li>

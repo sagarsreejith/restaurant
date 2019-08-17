@@ -23,20 +23,66 @@ $theme['head_tags'] = array(
 		array('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', 'type' => 'name'),
 	),
 	'style'    	=> array(
+		array(theme_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'), 'bootstrap-css', '10'),
 		array(theme_url('tastyigniter-orange/css/bootstrap.min.css'), 'bootstrap-css', '10'),
-		array(theme_url('tastyigniter-orange/css/font-awesome.min.css'), 'font-awesome-css', '11'),
+		array(theme_url('tastyigniter-orange/css/flaticon.css'), 'flaticon', '11'),
+		array(theme_url('tastyigniter-orange/css/font-awesome.min.css'), 'font-awesome-css', '21'),
 		array(theme_url('tastyigniter-orange/css/select2.css'), 'select2-css', '13'),
 		array(theme_url('tastyigniter-orange/css/select2-bootstrap.css'), 'select2-bootstrap-css', '14'),
 		array(theme_url('tastyigniter-orange/css/jquery.raty.css'), 'jquery-raty-css', '15'),
 		array(theme_url('tastyigniter-orange/css/fonts.css'), 'fonts-css', '16'),
 		array(theme_url('tastyigniter-orange/css/stylesheet.css'), 'stylesheet-css', '100100100100100'),
+	
+		array(theme_url('tastyigniter-orange/css/footer.css'), 'footer-css', '17'),
+		array(theme_url('tastyigniter-orange/css/style_new.css'), 'style_new-css', '18'),
+		array(theme_url('tastyigniter-orange/css/mega_menu.css'), 'mega_menu-css', '19'),
+		array(theme_url('tastyigniter-orange/css/owl.carousel.css'), 'owl.carousel-css', '20'),
+		array(theme_url('tastyigniter-orange/css/compose.css'), 'compose', '22'),
+		array(theme_url('tastyigniter-orange/css/magnific_popup.css'), 'magnific', '23'),
+		array(theme_url('tastyigniter-orange/css/select2.min.css'), 'select2', '24'),
+		array(theme_url('tastyigniter-orange/css/animate.css'), 'animate', '25'),	
+		array(theme_url('tastyigniter-orange/revolution/css/settings.css'), 'settings', '26'),
+		array(theme_url('tastyigniter-orange/revolution/css/navigation.css'), 'navigation', '27')
+		
 	),
 	'script'   	=> array(
 		array(theme_url('tastyigniter-orange/js/jquery-1.11.2.min.js'), 'jquery-js', '1'),
 		array(theme_url('tastyigniter-orange/js/bootstrap.min.js'), 'bootstrap-js', '10'),
+		array(theme_url('tastyigniter-orange/js/magnific-popup.js'), 'magnific-popup-js', '18'),
+		array(theme_url('tastyigniter-orange/js/isotope.pkgd.min.js'), 'isotope.pkgd.min-js', '17'),
+		array(theme_url('tastyigniter-orange/js/mega_menu.js'), 'mega_menu', '14'),
+
+		array(theme_url('tastyigniter-orange/js/owl.carousel.min.js'), 'owl', '15'),
+		
 		array(theme_url('tastyigniter-orange/js/select2.js'), 'select-2-js', '12'),
 		array(theme_url('tastyigniter-orange/js/jquery.raty.js'), 'jquery-raty-js', '13'),
-		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '100100100100100'),
+
+	
+	
+		array(theme_url('tastyigniter-orange/js/select2.min.js'), 'select2', '25'),
+		
+		array(theme_url('tastyigniter-orange/revolution/js/jquery.themepunch.tools.min.js'), 'jquery.themepunch.tools.min', '26'),
+		
+		array(theme_url('tastyigniter-orange/revolution/js/jquery.themepunch.revolution.min.js'), 'jquery.themepunch.revolution.min', '27'),
+		
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.actions.min.js'), 'revolution.extension.actions.min', '28'),
+		
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.carousel.min.js'), 'revolution.extension.carousel.min', '29'),
+		
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.kenburn.min.js'), 'revolution.extension.kenburn.min', '30'),
+		
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.layeranimation.min.js'), 'revolution.extension.layeranimation.min', '31'),
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.migration.min.js'), 'revolution.extension.migration.min', '32'),
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.migration.min.js'), 'revolution.extension.migration.min', '33'),
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.navigation.min.js'), 'revolution.extension.layeranimation.min', '34'),
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.parallax.min.js'), 'revolution.extension.layeranimation.min', '35'),
+		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.slideanims.min.js'), 'revolution.extension.layeranimation.min', '36'),
+		array(theme_url('tastyigniter-orange/revolution/js/revolution-custom.js'), 'revolution.extension.layeranimation.min', '37'),
+		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '38')
+
+
+
+		
 	),
 );
 

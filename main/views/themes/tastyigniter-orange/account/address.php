@@ -14,8 +14,9 @@
 <?php } ?>
 
 <div id="page-content">
-	<div class="container top-spacing-20">
-		<div class="row">
+	<div class="container top-spacing-20 ">
+		<div class="row margin_st2">
+		<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -51,9 +52,9 @@
 
 					<div class="col-md-12">
 						<div class="row">
-							<div class="buttons col-sm-6">
+							<div class="buttons col-sm-12">
 								<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-								<a class="btn btn-primary btn-lg" href="<?php echo $continue_url; ?>"><?php echo lang('button_add'); ?></a>
+								<a class="btn_add" href="<?php echo $continue_url; ?>"><?php echo lang('button_add'); ?></a>
 							</div>
 
 							<div class="col-sm-6">
@@ -71,6 +72,7 @@
 		</div>
 	</div>
 </div>
+					</div>
 <script type="text/javascript"><!--
 $(document).ready(function() {
 	$('#add-address').on('click', function() {

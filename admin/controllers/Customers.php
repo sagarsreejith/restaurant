@@ -296,7 +296,7 @@ class Customers extends Admin_Controller {
 
 	private function validateForm($customer_email = FALSE) {
 		$this->form_validation->set_rules('first_name', 'lang:label_first_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
-		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
+		$this->form_validation->set_rules('last_name', 'lang:label_last_name', 'xss_clean|trim|min_length[2]|max_length[32]');
 
 		if ($customer_email !== $this->input->post('email')) {
 			$this->form_validation->set_rules('email', 'lang:label_email', 'xss_clean|trim|required|valid_email|max_length[96]|is_unique[customers.email]');
@@ -308,15 +308,15 @@ class Customers extends Admin_Controller {
 		}
 
 		$this->form_validation->set_rules('telephone', 'lang:label_telephone', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_question_id', 'lang:label_security_question', 'xss_clean|trim|required|integer');
-		$this->form_validation->set_rules('security_answer', 'lang:label_security_answer', 'xss_clean|trim|required|min_length[2]');
+		$this->form_validation->set_rules('security_question_id', 'lang:label_security_question', 'xss_clean|trim|integer');
+		$this->form_validation->set_rules('security_answer', 'lang:label_security_answer', 'xss_clean|trim|min_length[2]');
 		$this->form_validation->set_rules('newsletter', 'lang:label_newsletter', 'xss_clean|trim|required|integer');
 		$this->form_validation->set_rules('customer_group_id', 'lang:label_customer_group', 'xss_clean|trim|required|integer');
 		$this->form_validation->set_rules('status', 'lang:label_status', 'xss_clean|trim|required|integer');
 
 		if ($this->input->post('address')) {
 			foreach ($this->input->post('address') as $key => $value) {
-				$this->form_validation->set_rules('address['.$key.'][address_1]', '['.$key.'] lang:label_address_1', 'xss_clean|trim|required|min_length[3]|max_length[128]');
+				$this->form_validation->set_rules('address['.$key.'][address_1]', '['.$key.'] lang:label_address_1', 'xss_clean|trim|required|min_length[1]|max_length[128]');
 				$this->form_validation->set_rules('address['.$key.'][city]', '['.$key.'] lang:label_city', 'xss_clean|trim|required|min_length[2]|max_length[128]');
 				$this->form_validation->set_rules('address['.$key.'][state]', '['.$key.'] lang:label_state', 'xss_clean|trim|max_length[128]');
 				$this->form_validation->set_rules('address['.$key.'][postcode]', '['.$key.'] lang:label_postcode', 'xss_clean|trim|min_length[2]|max_length[10]');

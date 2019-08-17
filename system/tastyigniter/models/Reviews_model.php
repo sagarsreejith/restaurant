@@ -296,6 +296,60 @@ class Reviews_model extends TI_Model {
 			return $this->db->affected_rows();
 		}
 	}
+
+	public function getAllBranchLocation(){
+		$this->db->from('locations');
+		$this->db->select('location_city');
+		$this->db->where('location_status', 1);
+		$query = $this->db->get();
+		$result = array();
+
+		if ($query->num_rows() > 0) {
+			$result = $query->result_array();
+		}
+
+		return $result;
+	 }
+
+	public function getAllGovernates(){
+		$this->db->from('governates');
+		//$this->db->join('governate_areas', 'governate_areas.govr_id = governates.govr_id', 'inner');
+		  $query = $this->db->get();
+			 $result = array();
+			 if ($query->num_rows() > 0) {
+				 $result = $this->populateGovernateArryay($query->result_array(), $query->num_rows());
+			 }
+			return $result;
+	 }
+
+	 public function populateGovernateArryay($governates = array(), $count){
+		$count = 0;
+		$brnaches_location = $this->getAllBranchLocation();
+		foreach ($governates as $governate){
+			$this->db->from('governate_areas');
+			$this->db->where('govr_id', $governate['govr_id']);
+			$query = $this->db->get();
+			if ($query->num_rows() > 0) {
+				$governates[$count]['is_governate'] = true;
+				$governates[$count]['areas'] = $this->updateAreas($query->result_array(), $brnaches_location);
+			}
+			$count++;
+		}
+
+		return $governates;
+
+	 }
+
+	 public function updateAreas($areas_array, $branch_locations){
+		 $final_Array = [];
+		foreach ($areas_array as $area){
+			// $branches = array_column($branch_locations, 'location_city');
+			// $disable_status = array_search($area['govr_area_name_en'], $branches);
+			$area['is_disabled'] = in_array($area['govr_area_name_en'], array_column($branch_locations, 'location_city'));
+			array_push($final_Array, $area);
+		}
+		return $final_Array;
+	 }
 }
 
 /* End of file reviews_model.php */

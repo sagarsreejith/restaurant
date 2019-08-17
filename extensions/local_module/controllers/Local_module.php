@@ -14,6 +14,8 @@ class Local_module extends Main_Controller {
 		$this->referrer_uri = (!empty($referrer_uri[0]) AND $referrer_uri[0] !== 'local_module') ? $referrer_uri[0] : '';
 	}
 
+	
+
 	public function index($module = array()) {
 		if ( ! file_exists(EXTPATH .'local_module/views/local_module.php')) { 								//check if file exists in views folder
 			show_404(); 																		// Whoops, show 404 error page!
@@ -52,6 +54,7 @@ class Local_module extends Main_Controller {
 				$data['single_location_url'] = restaurant_url('local/all');
 			}
 		}
+		
 
 		$data['local_action']			= site_url('local_module/local_module/search');
 
@@ -64,7 +67,9 @@ class Local_module extends Main_Controller {
 		$data['local_info'] 			= $this->location->local(); 										// retrieve local location data
 		$data['location_id'] 			= $this->location->getId(); 										// retrieve local location data
 		$data['location_name'] 			= $this->location->getName(); 										// retrieve local location data
-		$data['location_address'] 		= $this->location->getAddress(); 										// retrieve local location data
+		$data['location_address'] 		= $this->location->getAddress();
+		$data['location_city'] 			= $this->location->getRestGovCity();
+		$data['location_state'] 		= $this->location->getRestGovState(); 										// retrieve local location data
 		$data['location_image'] 		= $this->location->getImage(); 										// retrieve local location data
 		$data['is_opened'] 			    = $this->location->isOpened();
 		$data['opening_type'] 			= $this->location->workingType('opening');
@@ -153,6 +158,7 @@ class Local_module extends Main_Controller {
 		}
 
 		$this->load->model('Reviews_model');
+		$data['local_areas'] = $this->Reviews_model->getAllGovernates();
 		$total_reviews = $this->Reviews_model->getTotalLocationReviews($this->location->getId());
 		$data['text_total_review'] = sprintf($this->lang->line('text_total_review'), $total_reviews);
 
@@ -166,8 +172,9 @@ class Local_module extends Main_Controller {
 		$this->load->library('user_agent');
 		$json = array();
 
-		$result = $this->location->searchRestaurant($this->input->post('search_query'));
-
+		//$result = $this->location->searchRestaurant($this->input->post('search_query'));
+		$result = $this->location->searchRestaurantNew($this->input->post('search_query'), $this->input->post('odrer_option'));
+		//echo $this->input->post('search_query');
 		switch ($result) {
 			case 'FAILED':
 				$json['error'] = $this->lang->line('alert_unknown_error');

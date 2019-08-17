@@ -157,6 +157,9 @@ class Locations extends Admin_Controller {
 	public function edit() {
 		$location_info = $this->Locations_model->getLocation((int) $this->input->get('id'));
 
+		$governates = $this->Locations_model->getGovernates();
+		$governate_area = $this->Locations_model->getGovernatesAreas();
+
 		if ($location_info) {
 			$location_id = $location_info['location_id'];
 			$data['_action']	= site_url('locations/edit?id='. $location_id);
@@ -182,7 +185,7 @@ class Locations extends Admin_Controller {
 			$data['map_key'] = '';
 		}
 
-		$this->template->setScriptTag('https://maps.googleapis.com/maps/api/js?v=3' . $data['map_key'] .'&sensor=false&region=GB&libraries=geometry', 'google-maps-js', '104330');
+		$this->template->setScriptTag('https://maps.googleapis.com/maps/api/js?v=3' . $data['map_key'] .'&sensor=false&region=KW&libraries=geometry', 'google-maps-js', '104330');
 
 		if ($this->input->post() AND $location_id = $this->_saveLocation()) {
 			if ($this->input->post('save_close') === '1') {
@@ -212,6 +215,8 @@ class Locations extends Admin_Controller {
 		$data['last_order_time'] 		= isset($location_info['last_order_time']) ? $location_info['last_order_time'] : '0';
 		$data['reservation_time_interval'] 	= $location_info['reservation_time_interval'];
 		$data['reservation_stay_time'] 		= $location_info['reservation_stay_time'];
+		$data['governates'] = $governates;
+		$data['governate_areas'] = $governate_area;
 
 		$data['permalink'] = $this->permalink->getPermalink('location_id='.$location_info['location_id']);
         $data['permalink']['url'] = root_url('local').'/';
@@ -543,7 +548,7 @@ class Locations extends Admin_Controller {
 		$this->form_validation->set_rules('location_name', 'lang:label_name', 'xss_clean|trim|required|min_length[2]|max_length[32]');
 	    $this->form_validation->set_rules('email', 'lang:label_email', 'xss_clean|trim|required|valid_email');
 	    $this->form_validation->set_rules('telephone', 'lang:label_telephone', 'xss_clean|trim|required|min_length[2]|max_length[15]');
-	    $this->form_validation->set_rules('address[address_1]', 'lang:label_address_1', 'xss_clean|trim|required|min_length[2]|max_length[128]');
+	    $this->form_validation->set_rules('address[address_1]', 'lang:label_address_1', 'xss_clean|trim|required|min_length[1]|max_length[128]');
 		$this->form_validation->set_rules('address[address_2]', 'lang:label_address_2', 'xss_clean|trim|max_length[128]');
 		$this->form_validation->set_rules('address[city]', 'lang:label_city', 'xss_clean|trim|required|min_length[2]|max_length[128]');
 		$this->form_validation->set_rules('address[state]', 'lang:label_state', 'xss_clean|trim|max_length[128]');

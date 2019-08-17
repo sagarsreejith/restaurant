@@ -14,8 +14,9 @@
 <?php } ?>
 
 <div id="page-content">
-	<div class="container top-spacing">
-		<div class="row">
+<div class="container top-spacing">
+    <div class="row  margin_st2">
+			<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -69,7 +70,7 @@
 					<div class="col-md-12">
 						<div class="buttons col-xs-6 wrap-none">
 							<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-							<a class="btn btn-primary btn-lg" href="<?php echo $new_reservation_url; ?>"><?php echo lang('button_reserve'); ?></a>
+							<a class="btn_add" href="<?php echo $new_reservation_url; ?>"><?php echo lang('button_reserve'); ?></a>
 						</div>
 
 						<div class="col-xs-6 wrap-none">
@@ -81,6 +82,7 @@
 					</div>
 				</div>
 			</div>
+							</div>
 			<?php echo get_partial('content_right'); ?>
 			<?php echo get_partial('content_bottom'); ?>
 		</div>

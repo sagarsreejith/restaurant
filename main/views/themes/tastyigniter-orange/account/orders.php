@@ -1,3 +1,16 @@
+
+<?php $path_image = '';
+switch ($rsegment) {
+      case "home":
+            $path_image = '';
+          break;
+      case "checkout":
+            $path_image = '';
+          break;
+      default:
+      $path_image = '../';
+}
+?>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 
@@ -15,13 +28,14 @@
 
 <div id="page-content">
     <div class="container top-spacing">
-        <div class="row">
+    <div class="row  margin_st2">
+			<div class="out_div">
             <?php echo get_partial('content_left'); ?>
             <?php
             if (partial_exists('content_left') AND partial_exists('content_right')) {
                 $class = "col-sm-6 col-md-6";
             } else if (partial_exists('content_left') OR partial_exists('content_right')) {
-                $class = "col-sm-9 col-md-9";
+                $class = "col-sm-9 col-md-9 pad_stt";
             } else {
                 $class = "col-md-12";
             }
@@ -51,7 +65,7 @@
                                 <?php if ($orders) { ?>
                                     <?php foreach ($orders as $order) { ?>
                                         <tr>
-                                            <td><a href="<?php echo $order['view']; ?>"><?php echo $order['order_id']; ?></a></td>
+                                            <td><a href="<?php echo $order['view']; ?>" class="order_id"><?php echo $order['order_id']; ?></a></td>
                                             <td><?php echo $order['status_name']; ?></td>
                                             <td><?php echo $order['location_name']; ?></td>
                                             <td><?php echo $order['order_time']; ?> - <?php echo $order['order_date']; ?></td>
@@ -75,9 +89,9 @@
                     </div>
 
                     <div class="col-md-12">
-                        <div class="buttons col-xs-6 wrap-none">
+                        <div class="buttons col-xs-12 wrap-none">
                             <a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-                            <a class="btn btn-primary" href="<?php echo $new_order_url; ?>"><?php echo lang('button_order'); ?></a>
+                            <a class="btn_add" href="<?php echo $new_order_url; ?>"><?php echo lang('button_order'); ?></a>
                         </div>
 
                         <div class="col-xs-6">

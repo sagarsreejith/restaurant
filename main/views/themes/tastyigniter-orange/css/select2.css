@@ -85,7 +85,8 @@ html[dir="rtl"] .select2-container .select2-choice {
 
     text-overflow: ellipsis;
     float: none;
-    width: auto;
+    width: 100%;
+    padding-left:30px;
 }
 
 html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
@@ -240,7 +241,7 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
 }
 
 .select2-search input {
-    width: 100%;
+    /* width: 100%; */
     height: auto !important;
     min-height: 26px;
     padding: 4px 20px 4px 5px;
@@ -255,12 +256,14 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
 
     -webkit-box-shadow: none;
             box-shadow: none;
-
-    background: #fff url('../images/select2.png') no-repeat 100% -22px;
-    background: url('../images/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+    width: 96%;
+    margin: 2%;
+    border: 2px solid #333;
+    /* background: #fff url('../images/select2.png') no-repeat 100% -22px; */
+    /* background: url('../images/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
     background: url('../images/select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
     background: url('../images/select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
-    background: url('../images/select2.png') no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
+    background: url('../images/select2.png') no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; */
 }
 
 html[dir="rtl"] .select2-search input {
@@ -352,7 +355,7 @@ html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow b {
 
 /* results */
 .select2-results {
-    max-height: 200px;
+    max-height: 125px;
     padding: 0 0 0 4px;
     margin: 4px 4px 4px 0;
     position: relative;
@@ -444,6 +447,11 @@ disabled look for disabled choices in the results dropdown
   background: #f4f4f4;
   display: list-item;
   cursor: default;
+      color: #c9c4c4;
+}
+#select2-results-1 .select2-results .select2-result-selectable{
+    background: #6f1e30;
+    color:#fff;
 }
 
 .select2-results .select2-selected {

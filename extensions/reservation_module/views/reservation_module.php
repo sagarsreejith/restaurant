@@ -1,3 +1,14 @@
+
+<div class="section-title text-center">
+      <div class="title-separator">
+      <img src="assets/images/food_icon.png">
+      </div>
+        <h2> <span class="text-orange">Make </span> Reservation</h2>
+        <p>We provide free, secure and instantly confirmed online reservation.</p>
+      </div>
+
+
+      
 <div id="reservation-box" class="module-box">
     <div class="container top-spacing">
         <div id="reservation-alert">
@@ -19,7 +30,7 @@
                         <?php echo lang('text_find_msg'); ?>
                     </div>
 
-                    <div class="col-xs-12 col-sm-8">
+                    <div class="col-xs-12 col-sm-8 ht_stt">
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-3 wrap-none <?php echo (form_error('location')) ? 'has-error' : ''; ?>">
                                 <label class="sr-only" for="location"><?php echo lang('label_location'); ?></label>
@@ -83,7 +94,7 @@
                         <button type="submit" class="btn btn-primary btn-block"><?php echo lang('button_find_table'); ?></button>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 text-right">
+                    <div class="col-xs-2 col-sm-2 text-left">
                         <a class="btn btn-default" href="<?php echo $reset_url; ?>"><?php echo lang('button_reset'); ?></a>
                     </div>
                 </div>

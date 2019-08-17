@@ -1,10 +1,13 @@
 <?php echo get_header(); ?>
-<div id="page-content">
+<div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('../assets/images/d2.jpg');    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;">
 	<div class="container">
+		<div class="margin_st">
 		<div class="row">
-			<div class="col-xs-12 col-sm-9 center-block top-spacing-10">
+			<div class="col-xs-12 col-sm-9 center-block top-spacing-10 bg_payment">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-12 nopad">
 						<ul class="nav nav-pills nav-justified thumbnail">
 							<li class="disabled">
 								<a href="#checkout">
@@ -27,27 +30,36 @@
 						</ul>
 					</div>
 
-					<div class="col-xs-12 content-wrap">
+					<div class="col-xs-12 content-wrap clr_prog2">
+							<div class="cust_head">
+								<p> ZALATIMO Receipt</p>
+								<img class="img_logo" src="../assets/images/icon/logo_1.png">
+							</div>
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
 		                    <span class="under-heading"></span>
 						</div>
 
-			            <div class="panel panel-default">
-			                <div class="panel-heading">
+						
+
+			            <div class="">
+			                <div class="head_sec">
 			                    <h3 class="panel-title"><strong><?php echo lang('text_order_details'); ?></strong></h3>
 			                </div>
 			                <div class="panel-body">
-			                    <div class="col-sm-4">
-			                        <p><?php echo $order_details; ?></p>
+								
+							
+			                    <div class="col-sm-12 clr_prog">
+								
+			                        <p class="st_res"><?php echo $order_details; ?></p>
 			                    </div>
-			                    <div class="col-sm-4">
+			                    <div class="col-sm-12 clr_prog text-center">
 									<?php if ($delivery_address) { ?>
 										<strong><?php echo lang('text_delivery_address'); ?>:</strong>
 										<address><?php echo $delivery_address; ?></address>
 									<?php } ?>
 			                    </div>
-								<div class="col-sm-4">
+								<div class="col-sm-12 clr_prog text-center">
 									<strong><?php echo lang('text_your_local'); ?></strong><br />
 									<strong><?php echo $location_name; ?></strong><br />
 									<address><?php echo $location_address; ?></address>
@@ -55,17 +67,23 @@
 			                </div>
 			            </div>
 
-			            <div class="panel panel-default">
-			                <div class="panel-heading">
+			            <div class="">
+			                <div class="head_sec1">
 			                    <h3 class="panel-title"><strong><?php echo lang('text_order_items'); ?></strong></h3>
 			                </div>
-			                <div class="panel-body">
+			                <div class="panel-body payment_sec">
 								<?php if ($menus) { ?>
 				                    <div class="table-responsive">
-										<table class="table table-condensed">
+										<table class="table table-condensed clr_prog">
 				                            <tbody>
+												<tr class="item_details">
+													<td>Quantity</td>
+													<td width="65%"> Item Name</td>
+													<td> Item Price</td>
+													<td> Total Price</td>
+												</tr>
 												<?php foreach ($menus as $menu) { ?>
-													<tr>
+													<tr class="item_details1">
 														<td><?php echo $menu['quantity']; ?> x</td>
 														<td class="text-left" width="65%">
 															<?php echo $menu['name']; ?>
@@ -85,11 +103,11 @@
 													<tr>
 														<td class="no-line" colspan="2"></td>
 														<?php if ($total['code'] === 'order_total') { ?>
-															<td class="text-right thick-line"><b><?php echo $total['title']; ?></b></td>
-															<td class="text-right thick-line"><b><?php echo $total['value']; ?></b></td>
+															<td class="text-center thick-line"><b><?php echo $total['title']; ?></b></td>
+															<td class="text-center thick-line"><b><?php echo $total['value']; ?></b></td>
 														<?php } else { ?>
-															<td class="text-right no-line"><?php echo $total['title']; ?></td>
-															<td class="text-right no-line"><?php echo $total['value']; ?></td>
+															<td class="text-center no-line"><?php echo $total['title']; ?></td>
+															<td class="text-center no-line"><?php echo $total['value']; ?></td>
 														<?php } ?>
 													</tr>
 												<?php } ?>
@@ -97,12 +115,13 @@
 				                        </table>
 				                    </div>
 								<?php } ?>
-								<p><?php echo lang('text_thank_you'); ?></p>
+								<p class="tq"><?php echo lang('text_thank_you'); ?></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 </div>

@@ -9,8 +9,15 @@
 	<?php } ?>
 </div>
 
+
+
 <div class="col-xs-12 wrap-none wrap-bottom">
-	<div class="col-xs-12 col-sm-6">
+<div class="col-xs-6 col-md-12 heading_info">
+		<div class="h6 text-uppercase">Timings</div>
+			<div class="text-subline offset-top-15"></div>				
+	</div>
+
+	<!-- <div class="col-xs-12 col-sm-6">
 		<?php if ($working_hours) { ?>
 			<div class="panel panel-default panel-nav-tabs">
 				<div class="panel-heading">
@@ -31,7 +38,7 @@
 								<div class="list-group">
 									<?php if (!empty($working_hours[$type])) { ?>
 										<?php foreach ($working_hours[$type] as $hour) { ?>
-											<div class="list-group-item">
+											<div class="list-group-item days_time">
 												<div class="row">
 													<div class="col-xs-4"><?php echo $hour['day']; ?>:</div>
 													<div class="col-xs-8">
@@ -53,17 +60,17 @@
 				</div>
 			</div>
 		<?php } ?>
-	</div>
+	</div> -->
 
-	<div class="col-xs-12 col-sm-6">
+	<div class="col-xs-12 col-sm-12">
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="list-group">
 					<?php if (!empty($working_type['opening']) AND $working_type['opening'] == '24_7') { ?>
-						<div class="list-group-item"><?php echo lang('text_opens_24_7'); ?></div>
+						<div class="list-group-item col-md-12"><?php echo lang('text_opens_24_7'); ?></div>
 					<?php } ?>
 					<?php if ($has_delivery) { ?>
-						<div class="list-group-item"><i class="fa fa-clock-o fa-fw"></i>&nbsp;<b><?php echo lang('text_delivery_time'); ?></b><br />
+						<div class="list-group-item col-md-4 col-sm-12"><i class="fa fa-clock-o fa-fw"></i>&nbsp;<b><?php echo lang('text_delivery_time'); ?></b><br />
 							<?php if ($delivery_status === 'open') { ?>
 								<?php echo sprintf(lang('text_in_minutes'), $delivery_time); ?>
 							<?php } else if ($delivery_status === 'opening') { ?>
@@ -74,7 +81,7 @@
 						</div>
 					<?php } ?>
 					<?php if ($has_collection) { ?>
-						<div class="list-group-item"><i class="fa fa-clock-o fa-fw"></i>&nbsp;<b><?php echo lang('text_collection_time'); ?></b><br />
+						<div class="list-group-item col-md-4 col-sm-12"><i class="fa fa-clock-o fa-fw"></i>&nbsp;<b><?php echo lang('text_collection_time'); ?></b><br />
 							<?php if ($collection_status === 'open') { ?>
 								<?php echo sprintf(lang('text_in_minutes'), $collection_time); ?>
 							<?php } else if ($collection_status === 'opening') { ?>
@@ -85,12 +92,12 @@
 						</div>
 					<?php } ?>
 					<?php if ($has_delivery) { ?>
-						<div class="list-group-item"><i class="fa fa-clock-o fa-fw"></i>&nbsp;<b><?php echo lang('text_last_order_time'); ?></b><br />
+						<div class="list-group-item col-md-4 col-sm-12"><i class="fa fa-clock-o fa-fw"></i>&nbsp;<b><?php echo lang('text_last_order_time'); ?></b><br />
 							<?php echo $last_order_time; ?>
 						</div>
 					<?php } ?>
 					<?php if ($payments) { ?>
-						<div class="list-group-item"><i class="fa fa-paypal fa-fw"></i>&nbsp;<b><?php echo lang('text_payments'); ?></b><br />
+						<div class="list-group-item col-md-4 col-sm-12"><i class="fa fa-paypal fa-fw"></i>&nbsp;<b><?php echo lang('text_payments'); ?></b><br />
 							<?php echo $payments; ?>.
 						</div>
 					<?php } ?>
@@ -101,11 +108,16 @@
 
 	<div class="col-xs-12 wrap-none">
 		<?php if ($has_delivery) { ?>
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6 nopad">
 				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><b><?php echo lang('text_delivery_areas'); ?></b></h4>
+					
+
+					<div class="col-xs-6 col-md-12 heading_info">
+							<div class="h6 text-uppercase"><?php echo lang('text_delivery_areas'); ?></div>
+							<div class="text-subline offset-top-15"></div>				
 					</div>
+						<!-- <h4 class="panel-title"><b><?php echo lang('text_delivery_areas'); ?></b></h4> -->
+					
 					<div class="panel-body">
 						<div class="list-group">
 							<?php if (!empty($delivery_areas)) { ?>
@@ -136,11 +148,17 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-6">
-				<div id="map" class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title"><b><?php echo lang('text_delivery_map'); ?></b></h4>
+			<div class="col-xs-12 col-sm-6 nopad">
+
+			<div class="col-xs-6 col-md-12 heading_info">
+							<div class="h6 text-uppercase"><?php echo lang('text_delivery_map'); ?></div>
+							<div class="text-subline offset-top-15"></div>				
 					</div>
+
+				<div id="map" class="panel panel-default">
+					<!-- <div class="panel-heading">
+						<h4 class="panel-title"><b><?php echo lang('text_delivery_map'); ?></b></h4>
+					</div> -->
 					<div class="panel-body">
 						<div id="map-holder" style="height:300px;text-align:left;"></div>
 					</div>

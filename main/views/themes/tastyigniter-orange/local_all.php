@@ -3,6 +3,7 @@
 <div id="page-content">
 	<div class="container">
 		<div class="row">
+			<div class="margin_st2">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -18,7 +19,7 @@
 				<div class="row">
 					<?php echo load_partial('locations_filter', $locations_filter); ?>
 
-					<div class="location-list col-sm-9">
+					<div class="location-list col-sm-8">
 						<?php if ($locations) {?>
 							<?php foreach ($locations as $location) { ?>
 								<div class="panel panel-local">
@@ -44,7 +45,7 @@
 											</div>
 											<div class="clearfix visible-xs wrap-bottom"></div>
 											<div class="clearfix visible-xs border-top wrap-bottom"></div>
-											<div class="col-xs-6 col-sm-4">
+											<div class="col-xs-6 col-sm-3">
 												<dl>
 													<dd class="text-info">
 														<?php if ($location['opening_status'] === 'open') { ?>
@@ -78,7 +79,7 @@
 													</dd>
 												</dl>
 											</div>
-											<div class="col-xs-6 col-sm-3 text-right">
+											<div class="col-xs-6 col-sm-4 text-right">
 												<dl>
 													<dd><a class="btn btn-primary" href="<?php echo $location['href']; ?>"><?php echo lang('button_view_menu'); ?></a></dd>
 													<dd class="text-muted small">
@@ -118,5 +119,6 @@
 			<?php echo get_partial('content_bottom'); ?>
 		</div>
 	</div>
+						</div>
 </div>
 <?php echo get_footer(); ?>

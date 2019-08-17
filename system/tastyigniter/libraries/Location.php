@@ -165,6 +165,7 @@ class Location {
 
 	public function getAddress($format = TRUE) {
 		$location_address = array(
+			'is_rest'  		 => TRUE,
 			'address_1'      => $this->local_info['location_address_1'],
 			'address_2'      => $this->local_info['location_address_2'],
 			'city'           => $this->local_info['location_city'],
@@ -180,6 +181,16 @@ class Location {
 		}
 
 		return $address;
+	}
+
+	public function getRestGovCity($format = TRUE) {
+
+		return $this->local_info['location_city'];
+	}
+
+	public function getRestGovState($format = TRUE) {
+
+		return $this->local_info['location_state'];
 	}
 
 	public function getDefaultLocal() {
@@ -199,6 +210,7 @@ class Location {
 	public function formatAddress($address = array(), $format = TRUE) {
 		if (!empty($address) AND is_array($address)) {
 			$location_address = array(
+				'is_rest'  		 => TRUE,
 				'address_1'      => isset($address['location_address_1']) ? $address['location_address_1'] : $address['address_1'],
 				'address_2'      => isset($address['location_address_2']) ? $address['location_address_2'] : $address['address_2'],
 				'city'           => isset($address['location_city']) ? $address['location_city'] : $address['city'],
@@ -501,7 +513,7 @@ class Location {
 	public function setOrderType($order_type) {
 		if (is_numeric($order_type)) {
 			$local_info = $this->CI->session->userdata('local_info');
-
+			//$ordeType = "<script>document.write(window.localStorage.getItem('order_type'));</script>
 			$this->order_type = $local_info['order_type'] = $order_type;
 			$this->CI->session->set_userdata('local_info', $local_info);
 		}
@@ -539,7 +551,7 @@ class Location {
 			$local_info['location_id'] = $delivery_area['location_id'];
 			$local_info['area_id'] = $delivery_area['area_id'];
 			$local_info['geocode'] = $output;
-
+			//echo $delivery_area['location_id'];
 			$this->CI->session->set_userdata('local_info', $local_info);
 
 			$this->initialize($local_info);
@@ -547,6 +559,73 @@ class Location {
 
 		return $delivery_area;
 	}
+	public function searchRestaurantNew($search_query = FALSE, $order_type) {																// method to perform regular expression match on postcode string and return latitude and longitude
+		$output = $this->getDataFromDb($search_query, $order_type);
+
+		if (is_string($output)) {
+			return $output;
+		}
+
+		//$delivery_area = $this->checkDeliveryArea($output);
+		// if ($delivery_area !== 'outside' AND count($delivery_area) == 2) {
+		// 	$local_info = $this->CI->session->userdata('local_info');
+
+		// 	$local_info['location_id'] = $delivery_area['location_id'];
+		// 	$local_info['area_id'] = $delivery_area['area_id'];
+		// 	$local_info['geocode'] = $output;
+		// 	//echo $delivery_area['location_id'];
+		// 	$this->CI->session->set_userdata('local_info', $local_info);
+
+		// 	$this->initialize($local_info);
+		// }
+
+		//return $delivery_area;
+		return $output;
+	}
+
+
+	public function getDataFromDb($search_query = FALSE, $order_type) {																// method to perform regular expression match on postcode string and return latitude and longitude
+		if (empty($search_query)) {
+			return "NO_SEARCH_QUERY";
+		}
+
+		$this->CI->load->model('Locations_model');
+		$locations = $this->CI->Locations_model->getRestLocation($search_query, $order_type);
+
+		
+
+		if($locations){
+			//$delivery_area = array('location_id' => $location_id, 'area_id' => $area_id);
+
+			$output = $this->getLatLng($search_query);
+
+			
+			if (is_string($output)) {
+				return $output;
+			}
+			$delivery_area = $this->checkDeliveryArea($output);
+			if ($delivery_area !== 'outside' AND count($delivery_area) == 2) {
+				$local_info = $this->CI->session->userdata('local_info');
+	
+				$local_info['location_id'] = $delivery_area['location_id'];
+				$local_info['area_id'] = $delivery_area['area_id'];
+				$local_info['geocode'] = $output;
+				//echo $delivery_area['location_id'];
+				$this->CI->session->set_userdata('local_info', $local_info);
+	
+				$this->initialize($local_info);
+			}
+	
+			return $delivery_area;
+
+		}
+
+		if(!$locations){
+			return "outside";
+		}
+
+		return "FAILED";
+    }
 
 	public function checkOrderTime($time, $type = 'delivery') {
         $index = date('w', strtotime($time)) - 1;
@@ -788,8 +867,8 @@ class Location {
 
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, true);
 		curl_setopt($ch, CURLOPT_USERAGENT, $this->CI->agent->agent_string());
 		$geocode_data = curl_exec($ch);
 		curl_close($ch);

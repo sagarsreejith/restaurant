@@ -11,12 +11,18 @@ $lang['button_back'] 			        = 'Back';
 $lang['button_add'] 			        = 'Add New Address';
 $lang['button_update'] 			        = 'Update Address';
 
-$lang['label_address_1'] 		        = 'Address 1';
-$lang['label_address_2'] 		        = 'Address 2';
+$lang['label_address_1'] 		        = 'Block';
+$lang['label_address_2'] 		        = 'Street';
 $lang['label_city'] 			        = 'City';
 $lang['label_state'] 			        = 'State';
 $lang['label_postcode'] 		        = 'Postcode';
 $lang['label_country'] 			        = 'Country';
+
+$lang['label_building'] 		        = 'Building';
+$lang['label_aprtment'] 		        = 'Apartment No';
+$lang['label_avenue'] 		            = 'Avenue (optional)';
+$lang['label_floor'] 		            = 'Floor';
+
 
 $lang['alert_updated_success'] 			= '<p class="alert-success">Address added/updated successfully.</p>';
 $lang['alert_deleted_success'] 			= '<p class="alert-success">Address deleted successfully.</p>';

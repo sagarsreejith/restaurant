@@ -103,7 +103,13 @@ class Address extends Main_Controller {
 				'city' 			=> $result['city'],
 				'state' 		=> $result['state'],
 				'postcode' 		=> $result['postcode'],
-				'country_id' 	=> $result['country_id']
+				'country_id' 	=> $result['country_id'],
+				'building_no' 	=> $result['building_no'],
+				'avenue' 	=> $result['avenue'],
+				'apt_no' 	=> $result['apt_no'],
+				'floor' 	=> $result['floor'],
+				'office' 	=> $result['office']
+
 			);
 			$data['button_update'] 			= $this->lang->line('button_update');
 		} else {
@@ -156,6 +162,11 @@ class Address extends Main_Controller {
 		$this->form_validation->set_rules('address[state]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
 		$this->form_validation->set_rules('address[postcode]', 'lang:label_postcode', 'xss_clean|trim|min_length[2]|max_length[11]');
 		$this->form_validation->set_rules('address[country]', 'lang:label_country', 'xss_clean|trim|required|integer');
+		$this->form_validation->set_rules('address[building_no]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
+		$this->form_validation->set_rules('address[avenue]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
+		$this->form_validation->set_rules('address[apt_no]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
+		$this->form_validation->set_rules('address[floor]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
+		$this->form_validation->set_rules('address[office]', 'lang:label_state', 'xss_clean|trim|max_length[128]');
 		// END of form validation rules
 
   		if ($this->form_validation->run() === TRUE) {											// checks if form validation routines ran successfully

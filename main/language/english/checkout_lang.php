@@ -26,23 +26,23 @@ $lang['text_order_items']               = 'What you\'ve ordered:';
 $lang['text_delivery_address']          = 'Your Delivery Address';
 $lang['text_your_local']                = 'Your local restaurant';
 $lang['text_thank_you']                 = 'We hope to see you again soon';
-$lang['text_success_message']           = 'Your order  %s has been received and will be with you shortly. <br /><a href="%s">Click here</a> to view your order progress. <br />Thanks for shopping with us online!';
+$lang['text_success_message']           = 'Your order  %s has been received and will be with you shortly. <br /><a href="%s" class="clr_prog1">Click here</a> <span class="clr_prog"> to view your order progress.</span> <br />Thanks for shopping with us online!';
 $lang['text_order_info']                = 'This is a %s order. <br /><br /><b>Order Date:</b> %s <br /><b>%s Time:</b> %s <br /><b>Payment Method:</b> %s ';
 $lang['text_order_total']               = 'Order Total: <b>%s.</b>';
 $lang['text_collection_order_type'] 	= 'This is a pick-up order';
 $lang['text_no_payment'] 	            = 'No payment method selected';
 
 $lang['label_customer_name']            = 'Customer Name';
-$lang['label_first_name']               = 'First Name';
+$lang['label_first_name']               = 'Full Name';
 $lang['label_last_name']                = 'Last Name';
 $lang['label_email']                    = 'Email';
 $lang['label_telephone']                = 'Telephone';
 $lang['label_address']                  = 'Delivery Address';
 $lang['label_address_id']               = 'Address Id';
-$lang['label_address_1']                = 'Address 1';
-$lang['label_address_2']                = 'Address 2';
-$lang['label_city']                     = 'City';
-$lang['label_state']                    = 'State';
+$lang['label_address_1']                = 'Block';
+$lang['label_address_2']                = 'Street';
+$lang['label_city']                     = 'Governate';
+$lang['label_state']                    = 'Area';
 $lang['label_postcode']                 = 'Postcode';
 $lang['label_country']                  = 'Country';
 $lang['label_order_type']               = 'Order Type';
@@ -59,6 +59,13 @@ $lang['label_payment_method']           = 'Payment Method';
 $lang['label_terms']                    = 'By clicking I Agree, you agree to the <a href="%s" data-toggle="modal" data-target="#terms-modal">Terms and Conditions</a> set out by this site, including our Cookie Use.';
 $lang['label_comment']                  = 'Add Comments';
 $lang['label_ip']                       = 'IP Address';
+
+$lang['label_building'] 		        = 'Building / House';
+$lang['label_aprtment'] 		        = 'Apartment No';
+$lang['label_avenue'] 		            = 'Avenue (optional)';
+$lang['label_floor'] 		            = 'Floor';
+$lang['label_apt_no'] 		            = 'Apartment No';
+$lang['label_office'] 		            = 'Office';
 
 $lang['button_agree_terms']             = 'I Agree';
 

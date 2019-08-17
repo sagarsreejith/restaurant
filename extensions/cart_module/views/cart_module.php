@@ -1,5 +1,9 @@
+
+<?php $ordeType = "<script>document.write(window.localStorage.getItem('order_type'));</script>";?>
 <div class="<?php echo ($is_mobile OR $is_checkout) ? '' : 'hidden-xs'; ?>" <?php echo $fixed_cart; ?>>
 	<div id="cart-box" class="module-box">
+
+	<?php echo "SKJhkjhkjh" .$ordeType; ?>
 		<div class="panel panel-default panel-cart <?php echo ($is_checkout) ? 'hidden-xs' : ''; ?>">
 			<div class="panel-heading">
 				<h3 class="panel-title"><?php echo lang('text_heading'); ?></h3>
@@ -16,6 +20,7 @@
 				<?php if ($has_delivery AND $has_collection) { ?>
 				<div class="location-control text-center text-muted">
 					<div id="my-postcode" style="display:<?php echo (empty($alert_no_postcode)) ? 'block' : 'none'; ?>">
+					
 						<div class="btn-group btn-group-md text-center order-type" data-toggle="buttons">
 							<?php if ($has_delivery) { ?>
 							<label class="btn <?php echo ($order_type === '1') ? 'btn-default btn-primary active' : 'btn-default'; ?>" data-btn="btn-primary">
@@ -56,12 +61,15 @@
 						<div id="my-postcode" style="display:<?php echo (empty($alert_no_postcode)) ? 'block' : 'none'; ?>">
 							<div class="btn-group btn-group-md text-center order-type" data-toggle="buttons">
 								<?php if ($order_type === '1') { ?>
+									
 								<label class="btn btn-default btn-primary active" data-btn="btn-primary">
-									<input type="radio" id="delivery" name="order_type" value="1" checked="checked">&nbsp;&nbsp;<strong><?php echo lang('text_delivery'); ?></strong>
+									
+									<input type="radio" class="data-toggle="modal" data-target="#order_now" id="delivery" name="order_type" value="1" checked="checked">&nbsp;&nbsp;<strong><?php echo lang('text_delivery'); ?></strong>
 									<span class="small center-block"><?php echo $delivery_time.' '.lang('text_min'); ?></span>
 								</label>
 
 								<?php } elseif ($order_type==='2') { ?>
+
 								<label class="btn btn-default" data-btn="btn-primary">
 									<input type="radio" id="delivery" name="order_type" value="1">&nbsp;&nbsp;<?php echo lang('text_delivery'); ?>
 									<span class="small center-block"><?php echo $delivery_time.' '.lang('text_min'); ?></span>
@@ -188,7 +196,7 @@
 </div>
 <div id="cart-buttons" class="<?php echo (!$is_mobile AND !$is_checkout) ? 'visible-xs' : 'hide'; ?>">
 	<a class="btn btn-default cart-toggle" href="<?php echo site_url('cart') ?>" style="text-overflow:ellipsis; overflow:hidden;">
-		<?php echo lang('text_heading'); ?>
+		<!-- <?php echo lang('text_heading'); ?> --><i class="fa fa-step-forward" aria-hidden="true"></i>
 		<span class="order-total"><?php echo (!empty($order_total)) ? '&nbsp;&nbsp;-&nbsp;&nbsp;'.$order_total : ''; ?></span>
 	</a>
 </div>
@@ -211,6 +219,7 @@ $(document).on('ready', function() {
 });
 
 $(document).on('change', 'input[name="order_type"]', function() {
+	alert(window.localStorage.getItem('order_type'));
 	if (typeof this.value !== 'undefined') {
 		var order_type = this.value;
 
@@ -229,6 +238,9 @@ $(document).on('change', 'input[name="order_type"]', function() {
 });
 
 $(document).ready(function(){
+	if(window.localStorage.getItem('order_type')==2){
+
+	}
 	$('#delivery').trigger('click');
 	$('#collection').trigger('click');
 });
