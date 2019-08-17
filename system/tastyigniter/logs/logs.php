@@ -369,3 +369,6 @@ Message-ID: &lt;5d28f5e380f53@gmail.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d28f5e380f65&quot;
 </pre>
+ERROR - 2019-08-17 15:50:01 --> Unable to connect to the database
+ERROR - 2019-08-17 15:50:01 --> Unable to connect to the database
+ERROR - 2019-08-17 15:50:01 --> Unable to connect to the database
