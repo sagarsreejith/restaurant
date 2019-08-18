@@ -62,3 +62,35 @@ ERROR - 2019-08-18 21:06:13 --> Could not find the language line "label_customer
 ERROR - 2019-08-18 21:12:31 --> Could not find the language line "label_customer"
 ERROR - 2019-08-18 21:12:48 --> Could not find the language line "label_customer"
 ERROR - 2019-08-18 21:16:54 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 22:03:52 --> Severity: Parsing Error --> syntax error, unexpected '}' D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 906
+ERROR - 2019-08-18 22:04:33 --> Severity: Warning --> Invalid argument supplied for foreach() D:\xampp\htdocs\out-rest\system\tastyigniter\libraries\Location.php 809
+ERROR - 2019-08-18 22:46:05 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 22:48:29 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 22:48:47 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 22:49:14 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 22:49:39 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-18 22:49:39 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 18 Aug 2019 22:49:38 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d59abd24ebb8@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d59abd24ebca&quot;
+</pre>
+ERROR - 2019-08-18 22:49:40 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-18 22:49:40 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Sun, 18 Aug 2019 22:49:39 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d59abd3514b8@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d59abd3514ca&quot;
+</pre>

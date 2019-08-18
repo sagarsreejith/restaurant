@@ -389,7 +389,7 @@
 
                         $(document).ready(function() {
                             if(getCookie('order_type') === ""){
-                                document.cookie = "order_type=1";
+                                document.cookie = "order_type=1; path=/";
                             }
                             $('#main-header .navbar-nav a').on('click', function() {
                                 $('#main-header .navbar-nav').find('li.active').removeClass('active');

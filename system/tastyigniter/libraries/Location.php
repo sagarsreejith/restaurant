@@ -29,6 +29,7 @@ class Location {
 	private $location_telephone;
 	private $local_options;
 	private $local_info;
+	private $selected_city;
 	private $geocode;
 	private $search_query;
 	private $area_id;
@@ -73,6 +74,7 @@ class Location {
 				break;
 			}
 		}
+		isset($_COOKIE['selected_city']) ? $this->selected_city = $_COOKIE['selected_city'] : '';
 
 		if (!$is_loaded) {
 			if (!isset($local_info['location_id']) OR empty($this->locations[$local_info['location_id']])) {
@@ -183,9 +185,9 @@ class Location {
 		return $address;
 	}
 
-	public function getRestGovCity($format = TRUE) {
+	public function getRestGovCity() {
 
-		return $this->local_info['location_city'];
+		return $this->selected_city;
 	}
 
 	public function getRestGovState($format = TRUE) {

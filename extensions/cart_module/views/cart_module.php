@@ -221,7 +221,7 @@ $(document).on('ready', function() {
 $(document).on('change', 'input[name="order_type"]', function() {
 	if (typeof this.value !== 'undefined') {
 		var order_type = this.value;
-		document.cookie = "order_type =" + this.value;
+		document.cookie = "order_type =" + this.value + "; path=/";
 		$.ajax({
 			url: js_site_url('cart_module/cart_module/order_type'),
 			type: 'post',
