@@ -453,9 +453,8 @@ if($rsegment !="home"){
    	// var search_query = $('input[name=\'search_query\']').val();
    	var search_query = $('#aioConceptName').val();
       var order_type = $("input[name='odrer_option']:checked").is(":checked");
+      order_type == false ? document.cookie = "order_type=1" : document.cookie = "order_type=2";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
-
-      order_type == false ? document.cookie = "order_type =1" : document.cookie = "order_type =2";
    	//alert(order_type);
    	//return false;
    	$.ajax({

@@ -237,7 +237,7 @@ $(document).on('change', 'input[name="order_type"]', function() {
 });
 
 $(document).ready(function(){
-	
+	updateOderType();
 	$('#delivery').trigger('click');
 	$('#collection').trigger('click');
 });
@@ -371,6 +371,32 @@ function updateCartBox(json) {
 			updateCartAlert(alert_message);
 		});
 	}
+}
+
+function updateOderType(){
+	var order_type = getCookie('order_type') ? getCookie('order_type') : 1;
+	$.ajax({
+			url: js_site_url('cart_module/cart_module/order_type'),
+			type: 'post',
+			data: 'order_type=' + order_type,
+			dataType: 'json'
+		});
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 
 function updateCartAlert(alert_message) {
