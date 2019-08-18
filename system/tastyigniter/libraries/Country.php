@@ -32,11 +32,168 @@ class Country {
 				if($address['is_rest'] === TRUE){
 					$format = '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
 				} elseif(empty($address['apt_no']) && empty($address['office'])){
-					$format = '<b>Address Type : </b> House'. "\n" .'<b>House No:</b> {building_no}'. "\n" . '<b>Avenue: </b>{avenue}'. "\n" . '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
+					$format = '
+							<div class="col-md-6">
+									<table class="table table-hover table-dark_addr">
+										<tbody>
+											<tr>
+												<th scope="row"> Address Type :</th>
+												<td>House</td>
+											</tr>
+											<tr>
+												<th scope="row"> House No :</th>
+												<td>{building_no}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Avenue :</th>
+												<td>{avenue}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Block:</th>
+												<td>{address_1}</td>
+											</tr>
+										
+										</tbody>
+									</table>
+							</div>
+
+							<div class="col-md-6">
+									<table class="table table-hover table-dark_addr">
+										<tbody>
+											<tr>
+												<th scope="row"> Street:</th>
+												<td>{address_2}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Area :</th>
+												<td>{city}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Governate :</th>
+												<td>{state}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Country :</th>
+												<td>{country}</td>
+											</tr>
+											
+										</tbody>
+									</table>
+							</div> ';
 				} elseif (!empty($address['apt_no']) && empty($address['office'])){
-					$format = '<b>Address Type : </b> Apartment'. "\n" .'<b>Building No: </b> {building_no}'. "\n" . '<b>Avenue: </b>{avenue}'. "\n" . '<b>Apartment No: </b> {apt_no}'. "\n" . '<b>Floor: </b> {floor}'. "\n" . '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
+					$format = '	<div class="col-md-6">
+									<table class="table table-hover table-dark_addr">
+										<tbody>
+											<tr>
+												<th scope="row"> Address Type :</th>
+												<td>Apartment</td>
+											</tr>
+											<tr>
+												<th scope="row"> Building No :</th>
+												<td>{building_no}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Avenue :</th>
+												<td>{avenue}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Apartment No:</th>
+												<td>{apt_no}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Floor:</th>
+												<td>{floor}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+										
+								<div class="col-md-6">
+									<table class="table table-hover table-dark_addr">
+										<tbody>
+											<tr>
+												<th scope="row"> Block:</th>
+												<td>{address_1}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Street:</th>
+												<td>{address_2}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Area:</th>
+												<td>{city}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Governate :</th>
+												<td>{state}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Country :</th>
+												<td>{country}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>';
 				} else {
-					$format = '<b>Address Type : </b> Office'. "\n" .'<b>Building No:</b> {building_no}'. "\n" . '<b>Avenue: </b>{avenue}'. "\n" . '<b>Floor: </b> {floor}'. "\n" . '<b>Office: </b> {office}'. "\n" . '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
+					$format = '
+					
+					<div class="col-md-6">
+									<table class="table table-hover table-dark_addr">
+										<tbody>
+											<tr>
+												<th scope="row"> Address Type :</th>
+												<td>Office</td>
+											</tr>
+											<tr>
+												<th scope="row"> Building No :</th>
+												<td>{building_no}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Avenue :</th>
+												<td>{avenue}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Apartment No:</th>
+												<td>{apt_no}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Floor:</th>
+												<td>{floor}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+										
+								<div class="col-md-6">
+									<table class="table table-hover table-dark_addr">
+										<tbody>
+											<tr>
+												<th scope="row"> Office:</th>
+												<td>{office}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Block:</th>
+												<td>{address_1}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Street:</th>
+												<td>{address_2}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Area:</th>
+												<td>{city}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Governate :</th>
+												<td>{state}</td>
+											</tr>
+											<tr>
+												<th scope="row"> Country :</th>
+												<td>{country}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>';
 				}
 				
 			}
@@ -69,7 +226,7 @@ class Country {
 				'country' 		=> (isset($address['country'])) ? $address['country'] : ''
 			);
 
-			return str_replace(array("\r\n", "\r", "\n"), '<br />', preg_replace(array("/\s\s+/", "/\r\r+/", "/\n\n+/"), '<br />', trim(str_replace($find, $replace, $format))));
+			return str_replace(array("\r\n", "\r", "\n"), '', preg_replace(array("/\s\s+/", "/\r\r+/", "/\n\n+/"), '', trim(str_replace($find, $replace, $format))));
 		}
 	}
 }

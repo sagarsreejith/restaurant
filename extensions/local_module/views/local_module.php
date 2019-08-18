@@ -176,8 +176,8 @@ if($rsegment !="home"){
                      <label for="theme-switch" class="switch-label">
                         <div class="switch-overlay"></div>
                         <div class="switch-slider">
-                           <img src="https://image.flaticon.com/icons/svg/726/726455.svg" alt="" class="light-icon theme-icon">
-                           <img src="https://image.flaticon.com/icons/svg/123/123403.svg" alt="" class="dark-icon  theme-icon">
+                           <span class="light-icon theme-icon delivery_icon"></span>
+                           <span class="dark-icon  theme-icon resturant_icon"></span>
                         </div>
                      </label>
                      <label class="head_lbl" for="theme-switch"> pickup</label>
@@ -191,7 +191,8 @@ if($rsegment !="home"){
                      <?php if ($location_search_mode === 'multi') { ?>
                      <form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
                         <div class="col-md-7 col-sm-7 col-xs-12 nopad">
-                           <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span>
+                        <div class="map_icon_bg1"> </div>
+                           <!-- <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span> -->
                            <!-- <span><img src="assets/images/new_search.svg" alt="search location"></span> -->
                            <select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
                               
@@ -285,33 +286,31 @@ if($rsegment !="home"){
                      <?php } ?>
                      <div class="panel-body" id="panel-body">
                         <div class="row boxes">
-                           <div class="box-one col-xs-12 col-sm-12 col-md-5">
-                              <?php if (!empty($location_image)) { ?>
-                              <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
-                              <?php } ?>
+                           <div class="box-one col-xs-12 col-sm-12 col-md-6">
+                              <div class="col-xs-12 col-sm-12 col-md-4">
+                                 <?php if (!empty($location_image)) { ?>
+                                 <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
+                                 <?php } ?>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-md-8">
                               <dl <?php echo (!empty($location_image)) ? 'class="box-image"' : ''; ?>>
                                  <dd>
-                                    <h4><?php echo $location_name; ?></h4>
+                                    <h4 class="loc_name_display"><?php echo $location_name; ?></h4>
                                  </dd>
-                                 <?php if (config_item('allow_reviews') !== '1') { ?>
-                                 <dd class="text-muted">
-                                    <div class="rating rating-sm">
-                                       <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
-                                       <span class="small"><?php echo $text_total_review; ?></span>
-                                    </div>
-                                 </dd>
-                                 <?php } ?>
-                                 <dd><span class="text-muted"><?php echo str_replace('<br />', ', ', $location_address); ?></span></dd>
+                                
+                                 <dd><span class="text-muted add_b"><?php echo str_replace('<br />', ', ', $location_address); ?></span></dd>
                               </dl>
+                              </div>
                            </div>
-                           <div class="col-xs-12 box-divider visible-xs"></div>
-                           <div class="box-two col-xs-12 col-sm-6 col-md-3">
+                           <!-- <div class="col-xs-12 box-divider visible-xs"></div> -->
+                           <div class="box-two col-xs-12 col-sm-6 col-md-6 right_sec">
                               <dl>
                                  <?php if ($opening_status === 'open') { ?>
                                  <dt><?php echo lang('text_is_opened'); ?></dt>
                                  <?php } else if ($opening_status === 'opening') { ?>
                                  <dt class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></dt>
                                  <?php } else { ?>
+
                                  <dt class="text-muted"><?php echo lang('text_closed'); ?></dt>
                                  <?php } ?>
                                  <?php if ($opening_status !== 'closed') { ?>
@@ -323,7 +322,15 @@ if($rsegment !="home"){
                                     <?php } ?>
                                  </dd>
                                  <?php } ?>
+                                 <?php if (config_item('allow_reviews') !== '1') { ?>
                                  <dd class="text-muted">
+                                    <div class="rating rating-sm">
+                                       <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
+                                       <span class="small"><?php echo $text_total_review; ?></span>
+                                    </div>
+                                 </dd>
+                                 <?php } ?>
+                                 <!-- <dd class="text-muted">
                                     <?php if ($has_delivery) { ?>
                                     <?php if ($delivery_status === 'open') { ?>
                                     <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $delivery_time)); ?>
@@ -344,13 +351,9 @@ if($rsegment !="home"){
                                     <?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
                                     <?php } ?>
                                     <?php } ?>
-                                 </dd>
-                              </dl>
-                           </div>
-                           <div class="col-xs-12 box-divider visible-xs"></div>
-                           <div class="box-three col-xs-12 col-sm-4 col-md-4">
-                              <dl>
-                                 <?php if ($opening_status !== 'closed') { ?>
+                                 </dd> -->
+                             
+                                 <!-- <?php if ($opening_status !== 'closed') { ?>
                                  <dd class="hidden-xs">
                                     <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
                                     <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
@@ -358,7 +361,7 @@ if($rsegment !="home"){
                                     <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
                                     <?php } ?>
                                  </dd>
-                                 <?php } ?>
+                                 <?php } ?> -->
                                  <dd class="text-muted">
                                     <?php if (!$has_delivery AND $has_collection) { ?>
                                     <?php echo lang('text_collection_only'); ?>
@@ -370,19 +373,58 @@ if($rsegment !="home"){
                                     <?php echo lang('text_no_types'); ?>
                                     <?php } ?>
                                  </dd>
+                                 <dd class="text-muted"><?php echo lang('text_min_total'); ?> : <?php echo currency_format($min_total); ?></dd>
                                  <?php if ($has_delivery) { ?>
                                  <dd class="text-muted"><?php echo $text_delivery_condition; ?></dd>
                                  <!--                                            <dd class="text-muted">--><?php //echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?><!--</dd>-->
                                  <?php } ?>
-                                 <!--                                        <dd class="text-muted">--><?php //echo lang('text_min_total'); ?><!--: --><?php //echo currency_format($min_total); ?><!--</dd>-->
+                             
+                                                                        
                               </dl>
                            </div>
+                           <!-- <div class="col-xs-12 box-divider visible-xs"></div>
+                           <div class="box-three col-xs-12 col-sm-4 col-md-4">
+                              
+                           </div> -->
                         </div>
                      </div>
+                     <div class="full_out">
+                     
+                                <div class="col-md-12 nopad">
+
+                                    <div class="contact cnt">
+                                       <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                             <div class="contact-box ">
+                                                   <i class="fa fa-phone"></i>
+                                                   <div class="cont_con">
+                                                      <!-- <h5>Phone</h5> -->
+                                                      <p>949200202</p>
+                                                   </div>
+                                             </div>
+                                       </div>
+                                       <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="contact-box ">
+                                                <i class="fa fa-envelope-o"></i>
+                                                <div class="cont_con">
+                                                    <!-- <h5>Email</h5> -->
+                                                    <p>support@website.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                            <div class="contact-box ">
+                                                <i class="fa fa-whatsapp"></i>
+                                                <div class="cont_con">
+                                                    <!-- <h5>Whatsapp</h5>  -->
+                                                    <p>949200202</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                 </div>
+                              </div>
+                     
                   </div>
-                  <div class="full_out">
-                         hiii 
-               </div>
+                  
                </div>
 
                

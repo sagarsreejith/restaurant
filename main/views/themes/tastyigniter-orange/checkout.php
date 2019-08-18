@@ -1,170 +1,4 @@
 
-<style>
-
-.md_add{
-	margin:0 20px;
-}
-#modal_add .modal-title{
-text-align:left;
-font-size: 25px;
-}
-#modal_add .modal-footer{
-    padding: 15px;
-	border-top: 1px solid #e5e5e5;
-	text-align:auto;
-}
-.btn_ft{
-	float: left;
-}
-
-.btn_ft button{
-	background: #fff;
-    padding: 10px 25px;
-	font-size: 15px;
-	border:1px solid #6f1e30;
-	color:#333;
-}
-
-
-.btn_ft1{
-	float: right;
-}
-
-.btn_ft1 button{
-	background: #6f1e30;
-    padding: 10px 25px;
-    font-size: 15px;
-}
-.btn_ft1 button:hover{
-	color:#ccc;
-}
-
-#modal_add_edit .modal-title{
-text-align:left;
-font-size: 25px;
-}
-#modal_add_edit .modal-footer{
-    padding: 15px;
-	border-top: 1px solid #e5e5e5;
-	text-align:auto;
-}
-
-@keyframes click-wave {
-  0% {
-    height: 40px;
-    width: 40px;
-    opacity: 0.35;
-    position: relative;
-  }
-  100% {
-    height: 200px;
-    width: 200px;
-    margin-left: -80px;
-    margin-top: -80px;
-    opacity: 0;
-  }
-}
-
-.option-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  position: relative;
-  padding: 10px;
-  margin-right: 10px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  transition: all 0.15s ease-out 0s;
-  background: #cbd1d8;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 0.5rem;
-  outline: none;
-  position: relative;
-  z-index: 1000;
-}
-.option-input:hover {
-  background: #9faab7;
-}
-.option-input:checked {
-  background: #6f1e30;
-}
-.option-input:checked::before {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  content: '✔';
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-}
-.option-input:checked::after {
-  -webkit-animation: click-wave 0.65s;
-  -moz-animation: click-wave 0.65s;
-  animation: click-wave 0.65s;
-  background: #6f1e30;
-  content: '';
-  display: block;
-  position: relative;
-  z-index: 100;
-}
-.option-input.radio {
-  border-radius: 50%;
-}
-.option-input.radio::after {
-  border-radius: 50%;
-}
-
-input[type=radio]:checked + label {
-  color: #fff  !important;
-  background: #6f1e30;
-  padding:10px 28px;
-}
-
-label + input[type=radio]:checked + label{
-	border-left: none !important;
-}
-label + input[type=radio] + label {
-  border-left: solid 3px #6f1e30;
-}
-
-input[type=radio]:checked + label {
-  color: #fff  !important;
-  background: #6f1e30;
-  padding:10px 19px;
-  border-left:none !important;
-}
-
-.checkmark{
-	margin: 5px;
-}
-
-.radio-group_add {
-	border: solid 1px #6f1e30;
-    display: inline-block;
-    /* margin: 20px; */
-    /* border-radius: 10px; */
-	overflow: hidden;
-	border-radius: 5px;
-}
-
-.radio-group_add label{
-	margin-bottom:0;
-	padding:10px 19px;
-
-}
-.head_add{
-	color:#333;
-	font-weight:600;
-}
-</style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <div id="page-content" class="mt_st">
@@ -346,10 +180,10 @@ input[type=radio]:checked + label {
 									<div id="checkout-delivery" class="row wrap-bottom" style="display:<?php echo ($order_type === '1') ? 'block' : 'none'; ?>">
 										<?php $address_row = 0; ?>
 										<div id="address-labels">
-											<div class="btn-group btn-group-md col-xs-12" data-toggle="buttons">
+											<div class="btn-group btn-group-md col-xs-12 " data-toggle="buttons">
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id'])) { ?>
-														<label class="btn btn-default wrap-all col-xs-12 col-sm-4 <?php echo ($address_id == $address['address_id']) ? 'btn-primary active' : ''; ?>" data-btn="btn-primary">
+														<label class="btn btn-default wrap-all col-xs-12 col-sm-4 addr_edit <?php echo ($address_id == $address['address_id']) ? 'btn-primary active' : ''; ?>" data-btn="btn-primary">
 															<span class="edit-address pull-right" data-form="#address-form-<?php echo $address_row; ?>"><?php echo lang('text_edit'); ?></span>
 															<input type="radio" name="address_id" value="<?php echo $address['address_id']; ?>" <?php echo ($address['address_id'] == $address_id) ? 'checked="checked"' : ''; ?> />
 															<address class="text-left"><?php echo $address['address']; ?></address>
@@ -506,44 +340,45 @@ input[type=radio]:checked + label {
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">
-										<div class="col-md-4 col-sm-12 nopad">
-											<div class="form-group">
-												<div class="col-md-7 col-sm-6 col-xs-6 ">
-													<label for=""><?php echo lang('label_customer_name'); ?>  :</label>
+											<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
+												<!-- <label for=""><?php echo lang('label_customer'); ?> </label> -->
+												<label for="" class="">Customer Details </label>
+												<div class="text-subline offset-top-15"></div>
+											</div>
+
+
+											<div class="col-md-12">
+												<table class="table table-hover table-dark_cust">
+													<tbody>
+														<tr>
+															<th scope="row"> <?php echo lang('label_customer_name'); ?></th>
 													
-												</div>
-												<div class="col-md-5 col-sm-6 col-xs-6 nopad">
-													<?php echo $first_name; ?> <?php echo $last_name; ?>
-												</div>
+															<th scope="row"> <?php echo lang('label_email'); ?></th>
+														
+															<th scope="row"><?php echo lang('label_telephone'); ?> </th>
+												
+														</tr>
+														<tr>
+														
+															<td><?php echo $first_name; ?> </td>
+														
+															<td><?php echo $email; ?></td>
+													
+															<td><?php echo $telephone; ?></td>
+														</tr>
+													
+													</tbody>
+												</table>
 											</div>
-										</div>
-										
-										<div class="col-md-4 col-sm-12 nopad">
-											<div class="form-group">
-												<div class="col-md-4 col-sm-6 col-xs-6  ">
-													<label for=""><?php echo lang('label_email'); ?> :</label>
-												</div>
-												<div class="col-md-8 col-sm-6 col-xs-6 nopad">
-													<?php echo $email; ?>
-												</div>
-											</div>
-										</div>
+
+								
 									
-										<div class="col-md-4 col-sm-12 nopad">
-											<div class="form-group">
-												<div class="col-md-6 col-sm-6 col-xs-6 ">
-													<label for=""><?php echo lang('label_telephone'); ?> : </label>
-												</div>
-												<div class="col-md-6 col-sm-6 col-xs-6 nopad ">
-													<?php echo $telephone; ?>
-												</div>
-											</div>
-										</div>
 										<div class="clearfix"></div>
 										<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												<div class="col-md-12 col-sm-6 col-xs-6">		
-													<label for=""><?php echo lang('label_address'); ?>: </label>
+												<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
+												<label for=""><?php echo lang('label_address'); ?>: </label>
+												<div class="text-subline offset-top-15"></div>
 												</div>
 												<div class="col-md-12 col-sm-6 col-xs-6 txt_lbl1">
 												<?php foreach ($addresses as $address) { ?>
@@ -556,46 +391,56 @@ input[type=radio]:checked + label {
 										<?php } ?>
 									</div>
 									<div class="col-sm-12">
-										<div class="col-md-6 col-sm-12 nopad">
-											<div class="form-group">
-												<div class="col-md-7 col-sm-6 col-xs-6 ">
-													<label for=""><?php echo lang('label_order_type'); ?> : </label>
-												</div>
-												<div class="col-md-5 col-sm-6 col-xs-6 nopad ">
-													<?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?>
-												</div>
+											<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
+												
+												<label for="" class="">Order Details </label>
+												<div class="text-subline offset-top-15"></div>
 											</div>
-										</div> 
-										<div class="col-md-6 col-sm-12 nopad">
-											<div class="form-group">
-												<div class="col-md-5 col-sm-6 col-xs-6 ">
-													<label for=""><?php echo sprintf(lang('label_order_time'), $order_type_text); ?> : </label> 
-												</div>
-												<div class="col-md-7 col-sm-6 col-xs-6 nopad">
-													<?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?>
-												</div>
+
+
+											<div class="col-md-12">
+												<table class="table table-hover table-dark_cust">
+													<tbody>
+														<tr>
+															<th scope="row"> <?php echo lang('label_order_type'); ?> </th>
+													
+															<th scope="row"> <?php echo sprintf(lang('label_order_time'), $order_type_text); ?> </th>
+														
+															<th scope="row"><label for=""><?php echo lang('label_payment_method'); ?></th>
+												
+														</tr>
+														<tr>
+														
+															<td><?php echo ($order_type === '1') ? lang('label_delivery') : lang('label_collection'); ?> </td>
+														
+															<td>	<?php echo mdate(lang('text_date_format') .' '. config_item('time_format'), strtotime($order_time)); ?></td>
+													
+															<td>
+																<div class="list-group">
+																	<?php foreach ($payments as $payment) { ?>
+																		<?php if (!empty($payment['data'])) { ?>
+																			<div class="list-group-item"><?php echo $payment['data']; ?></div>
+																		<?php } ?>
+																	<?php } ?>
+																</div>
+																<?php echo form_error('payment', '<span class="text-danger">', '</span>'); ?>
+															</td>
+														</tr>
+													
+													</tbody>
+												</table>
 											</div>
-										</div>
+
 									</div>
+
+										
 								</div>
+							</div>
 
 								<div class="row">
 									<div class="col-sm-12 form-group">
 									
-									<div class="col-md-6 col-sm-6 col-xs-6 txt_lbl">
-										<label for=""><?php echo lang('label_payment_method'); ?> : </label>
-									</div>
-									<div class="col-md-6 col-sm-6 col-xs-6 nopad txt_lbl1">
-										<div class="list-group">
-											<?php foreach ($payments as $payment) { ?>
-												<?php if (!empty($payment['data'])) { ?>
-													<div class="list-group-item"><?php echo $payment['data']; ?></div>
-												<?php } ?>
-											<?php } ?>
-										</div>
-									</div>
-										<?php echo form_error('payment', '<span class="text-danger">', '</span>'); ?>
-									</div>
+									
 
 									<?php if ($checkout_terms) {?>
 										<div class="col-sm-12 form-group">
@@ -650,6 +495,8 @@ You are granted limited license only for purposes of viewing the material contai
 								</div>
 							</div>
 						</form>
+
+
 					</div>
 				</div>
 			</div>
