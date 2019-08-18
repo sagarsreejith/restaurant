@@ -25,27 +25,23 @@
 								<div class="panel panel-local">
 									<div class="panel-body">
 										<div class="row">
-											<div class="box-one col-xs-12 col-sm-5">
+											<div class="box-one col-xs-12 col-sm-7">
+											<div class="col-xs-12 col-sm-4">
 												<?php if (!empty($location['location_image'])) { ?>
-													<img class="img-responsive pull-left" src="<?php echo $location['location_image']; ?>">
+													<img class="img-responsive pull-left branch_img" src="<?php echo $location['location_image']; ?>">
 												<?php } ?>
+											</div>
+											<div class=" col-xs-12 col-sm-8">
 												<dl>
 													<dd><h4><?php echo $location['location_name']; ?></h4></dd>
-													<?php if (config_item('allow_reviews') !== '1') { ?>
-													<dd>
-														<div class="rating rating-sm text-muted">
-															<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
-															<span><?php echo sprintf(lang('text_total_review'), $location['total_reviews']); ?></span>
-														</div>
-													</dd>
-													<?php } ?>
+													
 													<dd><span class="text-muted"><?php echo $location['address']; ?></span></dd>
 													<dd><span class="text-muted"><?php echo $location['distance']; ?> <?php echo $location['distance_unit']; ?></span></dd>
 												</dl>
 											</div>
-											<div class="clearfix visible-xs wrap-bottom"></div>
-											<div class="clearfix visible-xs border-top wrap-bottom"></div>
-											<div class="col-xs-6 col-sm-3">
+										</div>
+									
+											<div class="col-xs-6 col-sm-5 right_sec">
 												<dl>
 													<dd class="text-info">
 														<?php if ($location['opening_status'] === 'open') { ?>
@@ -54,6 +50,14 @@
 														<dt class="text-muted"><?php echo sprintf(lang('text_opening_time'), $location['opening_time']); ?></dt>
 													<?php } else { ?>
 														<dt class="text-muted"><?php echo lang('text_closed'); ?></dt>
+													<?php } ?>
+													<?php if (config_item('allow_reviews') !== '1') { ?>
+													<dd>
+														<div class="rating rating-sm text-muted">
+															<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
+															<span><?php echo sprintf(lang('text_total_review'), $location['total_reviews']); ?></span>
+														</div>
+													</dd>
 													<?php } ?>
 													<dd class="text-muted">
 														<?php if ($location['has_delivery']) { ?>
@@ -66,6 +70,8 @@
 															<?php } ?>
 														<?php } ?>
 													</dd>
+													
+													
 													<dd class="text-muted">
 														<?php if ($location['has_collection']) { ?>
 															<?php if ($location['collection_status'] === 'open') { ?>
@@ -77,12 +83,8 @@
 															<?php } ?>
 														<?php } ?>
 													</dd>
-												</dl>
-											</div>
-											<div class="col-xs-6 col-sm-4 text-right">
-												<dl>
-													<dd><a class="btn btn-primary" href="<?php echo $location['href']; ?>"><?php echo lang('button_view_menu'); ?></a></dd>
-													<dd class="text-muted small">
+													
+													<dd class="text-muted">
 														<?php if (!$location['has_delivery'] AND $location['has_collection']) { ?>
 															<?php echo lang('text_only_collection_is_available'); ?>
 														<?php } else if ($location['has_delivery'] AND !$location['has_collection']) { ?>
@@ -93,8 +95,11 @@
 															<?php echo lang('text_offers_no_types'); ?>
 														<?php } ?>
 													</dd>
+													<dd><a class="btn btn-primary" href="<?php echo $location['href']; ?>"><?php echo lang('button_view_menu'); ?></a></dd>
+													
 												</dl>
 											</div>
+									
 											<div class="clearfix"></div>
 										</div>
 									</div>

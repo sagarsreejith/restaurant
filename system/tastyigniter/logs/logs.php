@@ -1,4 +1,6 @@
-ERROR - 2019-08-17 17:51:53 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
-ERROR - 2019-08-17 17:53:09 --> Severity: error --> Exception: [] operator not supported for strings D:\xampp\htdocs\out-rest\main\controllers\Local.php 122
-ERROR - 2019-08-18 14:42:40 --> An invalid name was submitted as the product name: Basma Walnuts 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
-ERROR - 2019-08-18 14:42:44 --> An invalid name was submitted as the product name: Oshvolvol Pistahio 1/2 kg The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+ERROR - 2019-08-18 19:28:35 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 19:29:09 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 19:29:18 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 19:30:29 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 19:30:34 --> Could not find the language line "label_customer"
+ERROR - 2019-08-18 19:30:48 --> Could not find the language line "label_customer"
