@@ -116,7 +116,6 @@ class Local extends Main_Controller {
 		$local_payments = $this->location->payments();
 		$payments = $this->extension->getAvailablePayments(FALSE);
 
-		$payment_list = '';
 		foreach ($payments as $code => $payment) {
 			if ( empty($local_payments) OR in_array($code, $local_payments)) {
 				$payment_list[] = $payment['name'];

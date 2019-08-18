@@ -397,6 +397,7 @@ if($rsegment !="home"){
 </div>
 <script type="text/javascript">
    function toggleLocalSearch() {
+     
    	if ($('.panel-local .panel-heading .local-search').is(":visible")) {
    		$('.panel-local .panel-heading .local-search').slideUp();
    		$('.panel-local .panel-heading .local-change').slideDown();
@@ -411,6 +412,8 @@ if($rsegment !="home"){
    	var search_query = $('#aioConceptName').val();
       var order_type = $("input[name='odrer_option']:checked").is(":checked");
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
+
+      order_type == false ? document.cookie = "order_type =1" : document.cookie = "order_type =2";
    	//alert(order_type);
    	//return false;
    	$.ajax({
@@ -516,6 +519,10 @@ if($rsegment !="home"){
       }
       
    $(document).ready(function() {
+      if(getCookie('order_type') === '2' ){
+         $("input[name='odrer_option']").prop("checked", true);
+      }
+      
    	$("#order_now").click(function(){
    		$("body").css("padding-right:0");
    
@@ -532,5 +539,20 @@ if($rsegment !="home"){
    $( "body" ).click(function() {
    	$(".js-example-templating").select2("close");
    }); 
+
+   function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+         var c = ca[i];
+         while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+         }
+         if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+         }
+      }
+      return "";
+   }
    //-->
 </script>
