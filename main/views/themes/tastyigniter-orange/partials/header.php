@@ -54,7 +54,7 @@
                                                             placement: 'bottom'
                                                         });
                                                         $('select.form-control').select2({
-                                                            placeholder: 'Select an option'
+                                                            placeholder: 'Select an Area'
                                                         });
                                                     });
                                                 </script>

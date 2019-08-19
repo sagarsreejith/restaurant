@@ -195,12 +195,12 @@ if($rsegment !="home"){
                            <!-- <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span> -->
                            <!-- <span><img src="assets/images/new_search.svg" alt="search location"></span> -->
                            <select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
-                              
+                             
                               <option></option>
                               <?php foreach($local_areas as $area){ ?>
                               <optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
                                  <?php foreach($area['areas'] as $local){ ?>
-                                    <option <?php if($location_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
+                                    <option <?php if($selected_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
                                  <?php } ?>
                               </optgroup>
                               <?php } ?>
@@ -439,6 +439,7 @@ if($rsegment !="home"){
 </div>
 <script type="text/javascript">
    function toggleLocalSearch() {
+     
    	if ($('.panel-local .panel-heading .local-search').is(":visible")) {
    		$('.panel-local .panel-heading .local-search').slideUp();
    		$('.panel-local .panel-heading .local-change').slideDown();
@@ -451,7 +452,9 @@ if($rsegment !="home"){
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
    	var search_query = $('#aioConceptName').val();
+      document.cookie = "selected_city=" + search_query + "; path=/";
       var order_type = $("input[name='odrer_option']:checked").is(":checked");
+      order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
    	//alert(order_type);
    	//return false;
@@ -558,6 +561,10 @@ if($rsegment !="home"){
       }
       
    $(document).ready(function() {
+      if(getCookie('order_type') === '2' ){
+         $("input[name='odrer_option']").prop("checked", true);
+      }
+      
    	$("#order_now").click(function(){
    		$("body").css("padding-right:0");
    
@@ -574,5 +581,20 @@ if($rsegment !="home"){
    $( "body" ).click(function() {
    	$(".js-example-templating").select2("close");
    }); 
+
+   function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+         var c = ca[i];
+         while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+         }
+         if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+         }
+      }
+      return "";
+   }
    //-->
 </script>

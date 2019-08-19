@@ -68,7 +68,7 @@
 									
 									<!-- <div class="col-sm-6">
 										<div class="form-group">
-											<!-- <label for="last-name"><?php //echo lang('label_last_name'); ?></label> 
+											<label for="last-name"><?php //echo lang('label_last_name'); ?></label> 
 											<input type="text" name="last_name" id="last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" placeholder="<?php echo lang('label_last_name'); ?>"/>
 											<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
 										</div>
@@ -289,7 +289,7 @@
 														<div class="col-sm-6">
 															<div class="form-group">
 																<!-- <label for=""><?php //echo lang('label_city'); ?></label> -->
-																<input type="text" name="address[<?php echo $address_row; ?>][city]" class="form-control" value="<?php echo set_value('address['.$address_row.'][city]', $location_city); ?>" readonly/>
+																<input type="text" name="address[<?php echo $address_row; ?>][city]" class="form-control" value="<?php echo set_value('address['.$address_row.'][city]', $selected_city); ?>" readonly/>
 																<?php echo form_error('address['.$address_row.'][city]', '<span class="text-danger">', '</span>'); ?>
 															</div>
 														</div>

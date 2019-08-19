@@ -1,9 +1,8 @@
 
-<?php $ordeType = "<script>document.write(window.localStorage.getItem('order_type'));</script>";?>
 <div class="<?php echo ($is_mobile OR $is_checkout) ? '' : 'hidden-xs'; ?>" <?php echo $fixed_cart; ?>>
 	<div id="cart-box" class="module-box">
 
-	<?php echo "SKJhkjhkjh" .$ordeType; ?>
+	<?php $order_type =  $_COOKIE['order_type'];?>
 		<div class="panel panel-default panel-cart <?php echo ($is_checkout) ? 'hidden-xs' : ''; ?>">
 			<div class="panel-heading">
 				<h3 class="panel-title"><?php echo lang('text_heading'); ?></h3>
@@ -25,6 +24,7 @@
 							<?php if ($has_delivery) { ?>
 							<label class="btn <?php echo ($order_type === '1') ? 'btn-default btn-primary active' : 'btn-default'; ?>" data-btn="btn-primary">
 								<input type="radio" name="order_type" value="1" <?php echo ($order_type === '1') ? 'checked="checked"' : ''; ?>>&nbsp;&nbsp;<strong><?php echo lang('text_delivery'); ?></strong>
+								
 								<span class="small center-block">
 									<?php if ($delivery_status === 'open') { ?>
 									<?php echo sprintf(lang('text_in_minutes'), $delivery_time); ?>
@@ -219,10 +219,9 @@ $(document).on('ready', function() {
 });
 
 $(document).on('change', 'input[name="order_type"]', function() {
-	alert(window.localStorage.getItem('order_type'));
 	if (typeof this.value !== 'undefined') {
 		var order_type = this.value;
-
+		document.cookie = "order_type =" + this.value + "; path=/";
 		$.ajax({
 			url: js_site_url('cart_module/cart_module/order_type'),
 			type: 'post',
@@ -238,9 +237,7 @@ $(document).on('change', 'input[name="order_type"]', function() {
 });
 
 $(document).ready(function(){
-	if(window.localStorage.getItem('order_type')==2){
-
-	}
+	updateOderType();
 	$('#delivery').trigger('click');
 	$('#collection').trigger('click');
 });
@@ -374,6 +371,32 @@ function updateCartBox(json) {
 			updateCartAlert(alert_message);
 		});
 	}
+}
+
+function updateOderType(){
+	var order_type = getCookie('order_type') ? getCookie('order_type') : 1;
+	$.ajax({
+			url: js_site_url('cart_module/cart_module/order_type'),
+			type: 'post',
+			data: 'order_type=' + order_type,
+			dataType: 'json'
+		});
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 
 function updateCartAlert(alert_message) {

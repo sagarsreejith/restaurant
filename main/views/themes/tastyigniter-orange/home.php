@@ -388,7 +388,9 @@
                         // });
 
                         $(document).ready(function() {
-
+                            if(getCookie('order_type') === ""){
+                                document.cookie = "order_type=1; path=/";
+                            }
                             $('#main-header .navbar-nav a').on('click', function() {
                                 $('#main-header .navbar-nav').find('li.active').removeClass('active');
                                 $(this).parent('li').addClass('active');
@@ -512,7 +514,21 @@
 
                      
 <script type="text/javascript">
-
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
 $(window).scroll(function () {
    "use strict";
