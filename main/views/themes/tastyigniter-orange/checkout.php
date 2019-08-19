@@ -323,11 +323,13 @@
 														<?php //echo form_error('address['.$address_row.'][country_id]', '<span class="text-danger">', '</span>'); ?>
 													</div> -->
 												</div>
+															
 
 												<?php $address_row++; ?>
 											<?php } ?>
 										</div>
 									</div>
+									
 								<?php } ?>
 
 								<div class="form-group wrap-top">
@@ -335,8 +337,8 @@
 									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
+								
 							</div>
-
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">
@@ -372,9 +374,9 @@
 											</div>
 
 								
-									
-										<div class="clearfix"></div>
-										<?php if ($order_type === '1' AND $addresses) { ?>
+
+
+											<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
 												<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
 												<label for=""><?php echo lang('label_address'); ?>: </label>
@@ -390,13 +392,17 @@
 											</div>
 										<?php } ?>
 									</div>
+
+
+											
+
+
 									<div class="col-sm-12">
 											<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
 												
 												<label for="" class="">Order Details </label>
 												<div class="text-subline offset-top-15"></div>
 											</div>
-
 
 											<div class="col-md-12">
 												<table class="table table-hover table-dark_cust">
@@ -432,16 +438,14 @@
 											</div>
 
 									</div>
-
-										
 								</div>
-							</div>
-
+						
+							
+										
 								<div class="row">
 									<div class="col-sm-12 form-group">
 									
 									
-
 									<?php if ($checkout_terms) {?>
 										<div class="col-sm-12 form-group">
 											<div class="input-group btn_chk">
@@ -456,17 +460,6 @@
 										<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog">
 												<div class="modal-content">
-												<div class="modal-header">
-														<!-- <button type="button" class="close" data-dismiss="modal">×</button>
-														<div class="section-title text-center">
-															<div class="title-separator">
-															<img src="assets/images/food_icon.png">
-															
-															</div>
-														</div> -->
-														<button type="button" class="close" data-dismiss="modal">×</button>
-														<h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Terms and Conditions</h2>
-													</div>
 													<div class="modal-body">
 
 												<h4>	Introduction</h4>
@@ -486,7 +479,9 @@ You are granted limited license only for purposes of viewing the material contai
 												</div>
 											</div>
 										</div>
+										</div>
 									<?php } ?>
+
 
 									<div class="col-sm-12 form-group">
 										<label for=""><?php echo lang('label_ip'); ?></label>
@@ -495,8 +490,6 @@ You are granted limited license only for purposes of viewing the material contai
 								</div>
 							</div>
 						</form>
-
-
 					</div>
 				</div>
 			</div>

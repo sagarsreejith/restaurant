@@ -1609,7 +1609,7 @@ padding-right:0 !important;
     background: #6f1e30;
     width: 100%;
     position: fixed;
-    margin: 90px 0;
+    margin-top: 120px;
     float: left;
     z-index: 99;
   }

@@ -15,7 +15,9 @@
 
 <div id="page-content">
 	<div class="container top-spacing">
-		<div class="row">
+
+		<div class="row margin_st2">
+		<div class="out_div">
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
@@ -27,11 +29,11 @@
 				}
 			?>
 
-			<div class="content-wrap <?php echo $class; ?>">
+			<div class="content-wrap <?php echo $class; ?> pad_stt">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="table-responsive">
-						<table class="table table-none">
+						<table class="table table-none review_table">
 							<tr>
 								<td><b><?php echo lang('column_restaurant'); ?></b></td>
 								<td><?php echo $location_name; ?></td>
@@ -83,6 +85,7 @@
 			<?php echo get_partial('content_bottom'); ?>
 		</div>
 	</div>
+			</div>
 </div>
 <script type="text/javascript"><!--
 $(document).ready(function() {

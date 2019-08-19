@@ -137,7 +137,7 @@ class Country {
 				} else {
 					$format = '
 					
-					<div class="col-md-6">
+								<div class="col-md-6">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>
