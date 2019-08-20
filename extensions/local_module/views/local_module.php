@@ -1,112 +1,3 @@
-<style>
-/* .ext-cross:before, .checkbox__checker:before, .checkbox__cross:before, .checkbox__ok:before, .ext-cross:after, .checkbox__checker:after, .checkbox__cross:after, .checkbox__ok:after {
-
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  margin: 0 auto;
-  top: 20px;
-  left: 0;
-  right: 0;
-  background:url('https://image.flaticon.com/icons/svg/726/726455.svg');
-  border-radius: 5px;
-  transition-duration: .3s;
-}
-.ext-cross:before, .checkbox__checker:before, .checkbox__cross:before, .checkbox__ok:before {
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-}
-.ext-cross:after, .checkbox__checker:after, .checkbox__cross:after, .checkbox__ok:after {
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
-}
-
-.ext-ok:before, .checkbox__toggle:checked + .checkbox__checker:before, .checkbox__ok:before, .ext-ok:after, .checkbox__toggle:checked + .checkbox__checker:after, .checkbox__ok:after {
-  background-color: #0cb018;
-  
-}
-.ext-ok:before, .checkbox__toggle:checked + .checkbox__checker:before, .checkbox__ok:before {
-  width: 6px;
-  top: 23px;
-  left: -7px;
-}
-.ext-ok:after, .checkbox__toggle:checked + .checkbox__checker:after, .checkbox__ok:after {
-  width: 12px;
-  left: 5px;
-}
-
-.checkbox {
-  width: 100px;
-  margin: 0 auto 30px auto;
-}
-.checkbox__container {
-  display: block;
-  position: relative;
-  height: 42px;
-  cursor: pointer;
-}
-.checkbox__toggle {
-  display: none;
-}
-.checkbox__toggle:checked + .checkbox__checker {
-  left: calc(100% - 43px);
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-          background: url('https://image.flaticon.com/icons/svg/123/123403.svg') #fff;
-
-}
-.checkbox__checker, .checkbox__cross, .checkbox__ok {
-  display: block;
-  position: absolute;
-  height: 43px;
-  width: 43px;
-  top: -1px;
-  left: 0px;
-  z-index: 1;
-
-}
-.checkbox__checker {
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-  transition: .3s;
-  z-index: 2;
-
-  background:url('https://image.flaticon.com/icons/svg/726/726455.svg') #fff;
-}
-.checkbox__checker:before, .checkbox__checker:after {
-  transition-duration: .3s;
-}
-.checkbox__cross:before, .checkbox__cross:after, .checkbox__ok:before, .checkbox__ok:after {
-  background-color: #ddd;
-}
-.checkbox__ok {
-  left: calc(100% - 43px);
-}
-.checkbox__txt-left, .checkbox__txt-right {
-  display: block;
-  position: absolute;
-  width: 42px;
-  top: 15px;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-  z-index: 1;
-}
-.checkbox__txt-right {
-  right: 0px;
-}
-.checkbox__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: #aaa;
-  width: 100%;
-  height: 100%;
-} */
-
-</style>
 
 <?php $path_image = '';
 if($rsegment !="home"){
@@ -134,38 +25,7 @@ if($rsegment !="home"){
       <div class="modal-body bg_before">
          <div id="local-search " class=" col-md-12 text-center">
            
-               <!-- <div class="toggle_radio">
-               <img src="assets/images/cook.png" style="    width: 132px;
-    position: absolute;
-    top: -94px;
-    left: 179px;">
-                        <div class="normal-container">
-                              <div class="smile-rating-container">
-                                 <div class="smile-rating-toggle-container">
-                                    <form class="submit-rating">
-                                       <input id="meh"  name="odrer_option" type="radio" value="delivery"/> 
-                                       <input id="fun" name="odrer_option" type="radio" value="pickup"/> 
-                                       <label for="meh" class="rating-label rating-label-meh">Delivery</label>
-                                       <a class="smile-rating-toggle"></a>
-                                       <div class="toggle-rating-pill"></div>
-                                       <label for="fun" class="rating-label rating-label-fun">Pick Up</label>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                  </div>  -->
-
-                     <!-- <div class='checkbox'>
-                     <label class='checkbox__container'>
-                        <input class='checkbox__toggle' type='checkbox'>
-                        <span class='checkbox__checker'></span>
-                        <span class='checkbox__txt-left'>Delivery</span>
-                        <span class='checkbox__txt-right'>Pickup</span>
-                        <svg class='checkbox__bg' space='preserve' style='enable-background:new 0 0 110 43.76;width:300px' version='1.1' viewbox='0 0 110 43.76'>
-                           <path class='shape'  d='M88.256,43.76c12.188,0,21.88-9.796,21.88-21.88S100.247,0,88.256,0c-15.745,0-20.67,12.281-33.257,12.281,S38.16,0,21.731,0C9.622,0-0.149,9.796-0.149,21.88s9.672,21.88,21.88,21.88c17.519,0,20.67-13.384,33.263-13.384,S72.784,43.76,88.256,43.76z'></path>
-                        </svg>
-                     </label>
-                     </div> -->
+               
 
                   <!-- New Design Strts Here -->
                   <div class="switch-container">
@@ -194,7 +54,7 @@ if($rsegment !="home"){
                         <div class="map_icon_bg1"> </div>
                            <!-- <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span> -->
                            <!-- <span><img src="assets/images/new_search.svg" alt="search location"></span> -->
-                           <select class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
+                           <select  class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
                              
                               <option></option>
                               <?php foreach($local_areas as $area){ ?>
@@ -285,146 +145,145 @@ if($rsegment !="home"){
                         </div>
                      </div>
                      <?php } ?>
-                     <div class="panel-body" id="panel-body">
+                     <!-- <div class="panel-body" id="panel-body">
                         <div class="row boxes">
-                           <div class="box-one col-xs-12 col-sm-12 col-md-6">
-                              <div class="col-xs-12 col-sm-12 col-md-4">
-                                 <?php if (!empty($location_image)) { ?>
-                                 <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
-                                 <?php } ?>
+                              <div class="box-one col-xs-12 col-sm-12 col-md-6">
+                                 <div class="col-xs-12 col-sm-12 col-md-4">
+                                    <?php if (!empty($location_image)) { ?>
+                                    <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
+                                    <?php } ?>
+                                 </div>
+                                 <div class="col-xs-12 col-sm-12 col-md-8">
+                                 <dl <?php echo (!empty($location_image)) ? 'class="box-image"' : ''; ?>>
+                                    <dd>
+                                       <h4 class="loc_name_display"><?php echo $location_name; ?></h4>
+                                    </dd>
+                                 
+                                    <dd><span class="text-muted add_b"><?php echo str_replace('<br />', ', ', $location_address); ?></span></dd>
+                                 </dl>
+                                 </div>
                               </div>
-                              <div class="col-xs-12 col-sm-12 col-md-8">
-                              <dl <?php echo (!empty($location_image)) ? 'class="box-image"' : ''; ?>>
-                                 <dd>
-                                    <h4 class="loc_name_display"><?php echo $location_name; ?></h4>
-                                 </dd>
-                                
-                                 <dd><span class="text-muted add_b"><?php echo str_replace('<br />', ', ', $location_address); ?></span></dd>
-                              </dl>
-                              </div>
-                           </div>
-                           <!-- <div class="col-xs-12 box-divider visible-xs"></div> -->
-                           <div class="box-two col-xs-12 col-sm-6 col-md-6 right_sec">
-                              <dl>
-                                 <?php if ($opening_status === 'open') { ?>
-                                 <dt><?php echo lang('text_is_opened'); ?></dt>
-                                 <?php } else if ($opening_status === 'opening') { ?>
-                                 <dt class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></dt>
-                                 <?php } else { ?>
+                        
+                              <div class="box-two col-xs-12 col-sm-6 col-md-6 right_sec">
+                                 <dl>
+                                    <?php if ($opening_status === 'open') { ?>
+                                    <dt><?php echo lang('text_is_opened'); ?></dt>
+                                    <?php } else if ($opening_status === 'opening') { ?>
+                                    <dt class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></dt>
+                                    <?php } else { ?>
 
-                                 <dt class="text-muted"><?php echo lang('text_closed'); ?></dt>
-                                 <?php } ?>
-                                 <?php if ($opening_status !== 'closed') { ?>
-                                 <dd class="visible-xs">
-                                    <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
-                                    <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
-                                    <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
-                                    <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
+                                    <dt class="text-muted"><?php echo lang('text_closed'); ?></dt>
                                     <?php } ?>
-                                 </dd>
-                                 <?php } ?>
-                                 <?php if (config_item('allow_reviews') !== '1') { ?>
-                                 <dd class="text-muted">
-                                    <div class="rating rating-sm">
-                                       <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
-                                       <span class="small"><?php echo $text_total_review; ?></span>
-                                    </div>
-                                 </dd>
-                                 <?php } ?>
-                                 <!-- <dd class="text-muted">
-                                    <?php if ($has_delivery) { ?>
-                                    <?php if ($delivery_status === 'open') { ?>
-                                    <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $delivery_time)); ?>
-                                    <?php } else if ($delivery_status === 'opening') { ?>
-                                    <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_starts'), $delivery_time)); ?>
-                                    <?php } else { ?>
-                                    <?php echo sprintf(lang('text_delivery_time_info'), lang('text_is_closed')); ?>
+                                    <?php if ($opening_status !== 'closed') { ?>
+                                    <dd class="visible-xs">
+                                       <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
+                                       <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
+                                       <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
+                                       <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
+                                       <?php } ?>
+                                    </dd>
                                     <?php } ?>
+                                    <?php if (config_item('allow_reviews') !== '1') { ?>
+                                    <dd class="text-muted">
+                                       <div class="rating rating-sm">
+                                          <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
+                                          <span class="small"><?php echo $text_total_review; ?></span>
+                                       </div>
+                                    </dd>
                                     <?php } ?>
-                                 </dd>
-                                 <dd class="text-muted">
-                                    <?php if ($has_collection) { ?>
-                                    <?php if ($collection_status === 'open') { ?>
-                                    <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $collection_time)); ?>
-                                    <?php } else if ($collection_status === 'opening') { ?>
-                                    <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $collection_time)); ?>
-                                    <?php } else { ?>
-                                    <?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
-                                    <?php } ?>
-                                    <?php } ?>
-                                 </dd> -->
-                             
-                                 <!-- <?php if ($opening_status !== 'closed') { ?>
-                                 <dd class="hidden-xs">
-                                    <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
-                                    <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
-                                    <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
-                                    <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
-                                    <?php } ?>
-                                 </dd>
-                                 <?php } ?> -->
-                                 <dd class="text-muted">
-                                    <?php if (!$has_delivery AND $has_collection) { ?>
-                                    <?php echo lang('text_collection_only'); ?>
-                                    <?php } else if ($has_delivery AND !$has_collection) { ?>
-                                    <?php echo lang('text_delivery_only'); ?>
-                                    <?php } else if ($has_delivery AND $has_collection) { ?>
-                                    <?php echo lang('text_both_types'); ?>
-                                    <?php } else { ?>
-                                    <?php echo lang('text_no_types'); ?>
-                                    <?php } ?>
-                                 </dd>
-                                 <dd class="text-muted"><?php echo lang('text_min_total'); ?> : <?php echo currency_format($min_total); ?></dd>
-                                 <?php if ($has_delivery) { ?>
-                                 <dd class="text-muted"><?php echo $text_delivery_condition; ?></dd>
-                                 <!--                                            <dd class="text-muted">--><?php //echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?><!--</dd>-->
-                                 <?php } ?>
-                             
-                                                                        
-                              </dl>
-                           </div>
-                           <!-- <div class="col-xs-12 box-divider visible-xs"></div>
-                           <div class="box-three col-xs-12 col-sm-4 col-md-4">
+                                    <!-- <dd class="text-muted">
+                                       <?php if ($has_delivery) { ?>
+                                       <?php if ($delivery_status === 'open') { ?>
+                                       <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $delivery_time)); ?>
+                                       <?php } else if ($delivery_status === 'opening') { ?>
+                                       <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_starts'), $delivery_time)); ?>
+                                       <?php } else { ?>
+                                       <?php echo sprintf(lang('text_delivery_time_info'), lang('text_is_closed')); ?>
+                                       <?php } ?>
+                                       <?php } ?>
+                                    </dd>
+                                    <dd class="text-muted">
+                                       <?php if ($has_collection) { ?>
+                                       <?php if ($collection_status === 'open') { ?>
+                                       <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $collection_time)); ?>
+                                       <?php } else if ($collection_status === 'opening') { ?>
+                                       <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $collection_time)); ?>
+                                       <?php } else { ?>
+                                       <?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
+                                       <?php } ?>
+                                       <?php } ?>
+                                    </dd> -->
                               
-                           </div> -->
+                                    <!-- <?php if ($opening_status !== 'closed') { ?>
+                                    <dd class="hidden-xs">
+                                       <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
+                                       <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
+                                       <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
+                                       <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
+                                       <?php } ?>
+                                    </dd>
+                                    <?php } ?> -->
+                                    <!-- <dd class="text-muted">
+                                       <?php if (!$has_delivery AND $has_collection) { ?>
+                                       <?php echo lang('text_collection_only'); ?>
+                                       <?php } else if ($has_delivery AND !$has_collection) { ?>
+                                       <?php echo lang('text_delivery_only'); ?>
+                                       <?php } else if ($has_delivery AND $has_collection) { ?>
+                                       <?php echo lang('text_both_types'); ?>
+                                       <?php } else { ?>
+                                       <?php echo lang('text_no_types'); ?>
+                                       <?php } ?>
+                                    </dd>
+                                    <dd class="text-muted"><?php echo lang('text_min_total'); ?> : <?php echo currency_format($min_total); ?></dd>
+                                    <?php if ($has_delivery) { ?>
+                                    <dd class="text-muted"><?php echo $text_delivery_condition; ?></dd>
+                                     <dd class="text-muted">--><?php //echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?><!--</dd>-->
+                                    <?php } ?>
+                              
+<!--                                                                            
+                                 </dl>
+                              </div>
+                         
                         </div>
-                     </div>
-                     <div class="full_out">
+                     </div>  -->
+                           <!-- <div class="full_out">
                      
                                 <div class="col-md-12 nopad">
 
-                                    <div class="contact cnt">
-                                       <div class="col-lg-4 col-md-4 col-sm-6 ">
-                                             <div class="contact-box ">
-                                                   <i class="fa fa-phone"></i>
-                                                   <div class="cont_con">
-                                                      <!-- <h5>Phone</h5> -->
-                                                      <p>949200202</p>
+                                       <div class="contact cnt">
+                                             <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                                   <div class="contact-box ">
+                                                         <i class="fa fa-phone"></i>
+                                                         <div class="cont_con">
+                                                            
+                                                         <a href="tel:+965 67678956"><p>949200202</p></a> 
+                                                         </div>
                                                    </div>
                                              </div>
+                                             <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                                <div class="contact-box ">
+                                                      <i class="fa fa-envelope-o"></i>
+                                                      <div class="cont_con">
+                                                         
+                                                         <p>support@website.com</p>
+                                                      </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                                <div class="contact-box ">
+                                                      <i class="fa fa-whatsapp"></i>
+                                                      <div class="cont_con">
+                                                      
+                                                         <a  class="cont_link_app" href="//api.whatsapp.com/send?phone=96597425684&text=WHATEVER_TEXT_YOU_WANT_TO_SEND" class="applyinfo-btn">
+                                                         <p>949200202</p>	</a>
+                                                         
+                                                      </div>
+                                                </div>
+                                             </div>
                                        </div>
-                                       <div class="col-lg-4 col-md-4 col-sm-6 ">
-                                            <div class="contact-box ">
-                                                <i class="fa fa-envelope-o"></i>
-                                                <div class="cont_con">
-                                                    <!-- <h5>Email</h5> -->
-                                                    <p>support@website.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-6 ">
-                                            <div class="contact-box ">
-                                                <i class="fa fa-whatsapp"></i>
-                                                <div class="cont_con">
-                                                    <!-- <h5>Whatsapp</h5>  -->
-                                                    <p>949200202</p>
-                                                </div>
-                                            </div>
-                                        </div>
                                  </div>
-                              </div>
                      
-                  </div>
+                               </div> -->
                   
                </div>
 

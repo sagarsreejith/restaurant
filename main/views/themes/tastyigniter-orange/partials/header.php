@@ -72,11 +72,35 @@
 
         <body class="<?php echo $body_class; ?>">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
-                                                    
+                                         
                 <header id="main-header">
+                <div class="header-2">
+            <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 nopad">
+          <div class="topbar-right text-right">
+            <ul>
+              <li><i class="fa fa-phone"></i> (01) 123 456 7890 </li>
+            
+            </ul>
+          </div>
+        </div>
+  
+               
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+           
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 col-sm-4">
+                            <div class="col-md-5 col-sm-4 nopad">
                                 <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
                                     <i class="fa fa-align-justify"></i>
                                 </button>
@@ -95,7 +119,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-7 col-sm-8">
+                            <div class="col-md-7 col-sm-8 nopad">
                                 <div class="collapse navbar-collapse" id="main-header-menu-collapse">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a>

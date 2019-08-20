@@ -53,9 +53,10 @@
 								
 			                        <p class="st_res"><?php echo $order_details; ?></p>
 			                    </div>
-			                    <div class="col-sm-12 clr_prog text-center">
+			                    <div class="col-sm-12 clr_prog ">
 									<?php if ($delivery_address) { ?>
-										<strong><?php echo lang('text_delivery_address'); ?>:</strong>
+										<span  class="heading_info"><?php echo lang('text_delivery_address'); ?>:</span>
+										<div class="text-subline offset-top-15"></div>
 										<address><?php echo $delivery_address; ?></address>
 									<?php } ?>
 			                    </div>

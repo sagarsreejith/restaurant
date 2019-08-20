@@ -28,7 +28,7 @@
 				}
 			?>
 
-			<div class="content-wrap <?php echo $class; ?>">
+			<div class="content-wrap <?php echo $class; ?> pad_stt">
 				<div class="row">
 					<?php if ($addresses) { ?>
 						<?php $address_row = 0; ?>
@@ -36,8 +36,8 @@
 							<?php foreach ($addresses as $address) { ?>
 								<div class="list-group-item border-none border-top border-bottom <?php echo ($address_id == $address['address_id']) ? 'list-group-item-info' : ''; ?>">
 									<address class="text-left"><?php echo $address['address']; ?></address>
-									<span class="">
-										<a class="edit-address" href="<?php echo $address['edit']; ?>"><?php echo lang('text_edit'); ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+									<span class="edit_address_account">
+										<a class="edit-address" href="<?php echo $address['edit']; ?>"><?php echo lang('text_edit'); ?></a>
 										<a class="delete-address text-danger" href="<?php echo $address['delete']; ?>"  onclick="if (confirm('<?php echo lang('alert_warning_confirm'); ?>')) {  return true; } else { return false;}"><?php echo lang('text_delete'); ?></a>
 									</span>
 								</div>

@@ -312,56 +312,7 @@
                         <div id="map_home" class="slideInUp" style="height:500px; width:100%"></div>
                     </div>
                     <div class="clearfix"></div>
-                    <!-- <div class="content-wrap cont_clr cont_clr2">
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 nopad">
-
-                                    <div class="contact cnt">
-
-                                        <div class="col-lg-3 col-md-3 col-sm-6 ">
-                                            <div class="contact-box ">
-                                                <i class="fa fa-map-marker"></i>
-                                                <div class="cont_con">
-                                                    <h5>Address</h5>
-                                                    <p>Kuwait</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6 ">
-                                            <div class="contact-box ">
-                                                <i class="fa fa-phone"></i>
-                                                <div class="cont_con">
-                                                    <h5>Phone</h5>
-                                                    <p>949200202</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6 ">
-                                            <div class="contact-box ">
-                                                <i class="fa fa-envelope-o"></i>
-                                                <div class="cont_con">
-                                                    <h5>Email</h5>
-                                                    <p>support@website.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-6 ">
-                                            <div class="contact-box ">
-                                                <i class="fa fa-whatsapp"></i>
-                                                <div class="cont_con">
-                                                    <h5>Whatsapp</h5> 
-                                                    <p>949200202</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                 
                  </div>
                 </section>
 
