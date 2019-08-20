@@ -46,29 +46,36 @@ class Locations_model extends TI_Model {
 
 		if ($this->db->limit($filter['limit'], $filter['page'])) {
 			$this->db->from('locations');
+			//echo gettype(intval($this->input->get('offer_collection')));
+			//exit;
+			
 
 			if ( ! empty($filter['sort_by']) AND ! empty($filter['order_by'])) {
 				$this->db->order_by($filter['sort_by'], $filter['order_by']);
 			}
 
 			if ( ! empty($filter['filter_search'])) {
-				$this->db->like('location_name', $filter['filter_search']);
+				//$this->db->like('location_name', $filter['filter_search']);
 				$this->db->or_like('location_city', $filter['filter_search']);
-				$this->db->or_like('location_state', $filter['filter_search']);
-				$this->db->or_like('location_postcode', $filter['filter_search']);
+				//$this->db->or_like('location_state', $filter['filter_search']);
+				//$this->db->or_like('location_postcode', $filter['filter_search']);
+				
 			}
-
+			
 			if (isset($filter['filter_status']) AND is_numeric($filter['filter_status'])) {
 				$this->db->where('location_status', $filter['filter_status']);
 			}
-
+			$collection = $this->input->get('offer_collection');
+			if (isset($collection)) {
+				$this->db->where('offer_collection', $this->input->get('offer_collection'));
+				
+			}
 			$query = $this->db->get();
 			$result = array();
 
 			if ($query->num_rows() > 0) {
 				$result = $query->result_array();
 			}
-
 			return $result;
 		}
 	}
@@ -102,14 +109,17 @@ class Locations_model extends TI_Model {
 	}
 
 	public function getRestLocation($area, $order_type) {
+		
 		$this->db->from('locations');
 
 		$this->db->where('location_city', $area);
 		
-		if($order_type == 'delivery'){
+		$this->db->where('location_status', '1');
+
+		if($order_type === "1"){
 			$this->db->where('offer_delivery', 1);
 		}
-		if($order_type == 'pickup'){
+		if($order_type === "2"){
 			$this->db->where('offer_collection', 1);
 		}
 		$query = $this->db->get();

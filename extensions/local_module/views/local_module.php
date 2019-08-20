@@ -354,9 +354,7 @@ if($rsegment !="home"){
 
    	if (json['redirect']) {
          if(getCookie('order_type') === "2"){
-            alert(getCookie('order_type'));
-            var redirect = site_url + 'locations?search=' + json['search_query'];
-            alert(redirect);
+            var redirect = site_url + 'locations?search=' + json['search_query'] + '&offer_collection=1';
             window.location.href = redirect;
             return false;
          }

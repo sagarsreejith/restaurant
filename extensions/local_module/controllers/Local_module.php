@@ -173,7 +173,7 @@ class Local_module extends Main_Controller {
 		$json = array();
 
 		//$result = $this->location->searchRestaurant($this->input->post('search_query'));
-		$result = $this->location->searchRestaurantNew($this->input->post('search_query'), $this->input->post('odrer_option'));
+		$result = $this->location->searchRestaurantNew($this->input->post('search_query'), $this->input->post('order_type'));
 		//echo $this->input->post('search_query');
 		switch ($result) {
 			case 'FAILED':
