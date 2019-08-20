@@ -9,7 +9,7 @@ if (APPDIR === ADMINDIR) {
     $route['404_override'] = '';
 } else {
     $default_controller = 'home';
-    $controller_exceptions = array('home', 'menus', 'reservation', 'contact', 'local', 'cart', 'checkout', 'pages');
+    $controller_exceptions = array('home', 'menus', 'reservation', 'contact', 'local', 'cart', 'checkout', 'pages', 'track');
 
     $route['default_controller'] = $default_controller;
     $route['menus/(.+)'] = 'menus';
@@ -23,6 +23,7 @@ if (APPDIR === ADMINDIR) {
     $route['forgot-password'] = 'account/reset';
     $route['checkout/success'] = 'checkout/success';
     $route['reservation/success'] = 'reservation/success';
+    $route['track-order'] = 'track';
     $route["^(" . implode('|', $controller_exceptions) . ")?$"] = '$1';
     $route["^(" . implode('|', $controller_exceptions) . ")?/([^/]+)$"] = '$1';
     $route["^(" . implode('|', $controller_exceptions) . ")?/([^/]+)$"] = '$1/$2';
