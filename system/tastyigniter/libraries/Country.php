@@ -30,7 +30,7 @@ class Country {
 			} else {
 				
 				if($address['is_rest'] === TRUE){
-					$format = '<b> Block: </b> {address_1}' . "\n" . '<b>Street: </b>{address_2}' . "\n" . '<b>Area: </b> {city}'. "\n" . '<b>Governate: </b> {state}' . "\n" . '{country}';
+					$format = '{address_1}' . "\n" . '{address_2}' . "\n" . ' {city}'. "\n" . '{state}' . "\n" . '{country}';
 				} elseif(empty($address['apt_no']) && empty($address['office'])){
 					$format = '
 							<div class="col-md-6">

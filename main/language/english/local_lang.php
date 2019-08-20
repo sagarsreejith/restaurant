@@ -14,7 +14,7 @@ $lang['text_collection_hours'] 	            = 'Pick-up Hours';
 $lang['text_opens_24_7'] 			        = '<strong>Opens:</strong> 24 hours a day & 7 days a week';
 $lang['text_closed'] 			            = 'CLOSED';
 $lang['text_24h'] 				            = '24 hours a day';
-$lang['text_is_opened'] 			        = '<span class="text-success">We are open</span>';
+$lang['text_is_opened'] 			        = '<span class="text-success"> open</span>';
 $lang['text_closed'] 			            = '<span class="text-close text-danger">CLOSED</span>';
 $lang['text_is_closed'] 			        = '<span class="text-close text-danger">is CLOSED</span>';
 $lang['text_opening_time'] 			        = '<span class="text-close text-danger">Opening %s</span>';
@@ -72,7 +72,7 @@ $lang['column_area_charge'] 	            = 'Delivery Charge';
 $lang['column_area_min_total'] 			    = 'Min Total';
 $lang['column_area_name'] 			        = 'Name';
 
-$lang['button_view_menu'] 		            = 'View Menu';
+$lang['button_view_menu'] 		            = 'Go to Menu';
 
 /* End of file local_lang.php */
 /* Location: ./main/language/english/main/local_lang.php */

@@ -1,3 +1,25 @@
+<style>
+	
+
+	input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+	
+</style>
+
+
 <?php echo get_header(); ?>
 <div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('../assets/images/d2.jpg');    background-size: cover;
     background-attachment: fixed;
@@ -8,7 +30,31 @@
 			<div class="col-xs-12 col-sm-9 center-block top-spacing-10 bg_payment">
 				<div class="row">
 					<div class="col-xs-12 nopad">
-						<ul class="nav nav-pills nav-justified thumbnail">
+
+
+					<ul class="progressbar">
+							<li class="step-one <?php if ($checkout_step === 'one') { echo 'active'; } else if ($checkout_step === 'two') { echo 'link'; } else { echo 'disabled'; }; ?>">
+								<a href ="#checkout">
+									
+								 <span class="list-group-item-heading"><i class="fa fa-user"></i></span>
+									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
+								</a>
+							</li>
+							<li class="disabled">
+								<a  href="#payment">
+								<span class="list-group-item-heading"><i class="fa fa-money"></i></span>
+									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
+								</a>
+							</li>
+							<li class="step-three active">
+								<a href="#confirmation">
+								<span class="list-group-item-heading"><i class="fa fa-check"></i></span>
+									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_three_summary'); ?></p>
+								</a>
+							</li>
+						</ul>
+
+						<!-- <ul class="nav nav-pills nav-justified thumbnail">
 							<li class="disabled">
 								<a href="#checkout">
 									<h4 class="list-group-item-heading"><?php echo lang('text_step_one'); ?></h4>
@@ -27,7 +73,7 @@
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_three_summary'); ?></p>
 								</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 
 					<div class="col-xs-12 content-wrap clr_prog2">
@@ -53,16 +99,23 @@
 								
 			                        <p class="st_res"><?php echo $order_details; ?></p>
 			                    </div>
-			                    <div class="col-sm-12 clr_prog ">
+			                    <div class="col-sm-12 clr_prog heading_info_st nopad ">
 									<?php if ($delivery_address) { ?>
-										<span  class="heading_info"><?php echo lang('text_delivery_address'); ?>:</span>
+										<span class="heading_info "><?php echo lang('text_delivery_address'); ?>:</span>
 										<div class="text-subline offset-top-15"></div>
 										<address><?php echo $delivery_address; ?></address>
 									<?php } ?>
 			                    </div>
-								<div class="col-sm-12 clr_prog text-center">
-									<strong><?php echo lang('text_your_local'); ?></strong><br />
-									<strong><?php echo $location_name; ?></strong><br />
+								<div class="col-sm-12 clr_prog heading_info_st nopad">
+								<span class="heading_info ">Order Details</span>
+										<div class="text-subline offset-top-15"></div>
+
+										<div class="col-md-6 nopad text-right">
+											 <strong class="location_name_rest"><?php echo lang('text_your_local'); ?> : </strong><br />
+										</div>
+										<div class="col-md-6 nopad">
+											<strong class="location_name_rest"><?php echo $location_name; ?></strong><br /> 
+										</div>
 									<address><?php echo $location_address; ?></address>
 								</div>
 			                </div>
@@ -117,6 +170,35 @@
 				                    </div>
 								<?php } ?>
 								<p class="tq"><?php echo lang('text_thank_you'); ?></p>
+									<section class="track">
+										<div class="track_part">
+											<div class="track_head"><img src="../assets/images/icon/track_order.png"></div>
+											<form action="" id="tract_sec">
+												<div class="col-md-4"><label class="head_name" for="fname">Order Number</label></div>
+												<div class="col-md-8">
+													<input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number..">
+												</div>
+													
+											
+										<button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
+										
+										<div class="track_part">
+
+<div  id="myDIV">
+	<ul class="progressbar">
+		<li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+		<li >  <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
+		<li>  <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span>  Delivery</li>
+	</ul>
+</div>
+</div>
+									
+									
+									</form>
+										</div>
+									
+									</section>
+								
 							</div>
 						</div>
 					</div>
@@ -125,5 +207,17 @@
 		</div>
 		</div>
 	</div>
+
+
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 <?php echo get_footer(); ?>
