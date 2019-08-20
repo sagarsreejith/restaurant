@@ -112,7 +112,6 @@
 if($rsegment !="home"){
 	$path_image = '../';
 }
-
 ?>
 <div class="">
 <div class="modal fade" id="order_now" role="dialog">
@@ -186,6 +185,7 @@ if($rsegment !="home"){
 
             <div class="panel panel-local">
                <div class="panel-body h2_col">
+                  
                   <!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
                   <div class="col-xs-12 col-sm-12 col-md-12 center-block">
                      <?php if ($location_search_mode === 'multi') { ?>
@@ -230,6 +230,7 @@ if($rsegment !="home"){
    </div>
 </div>
 </div>
+
 <div <?php if( $rsegment ==="home") { ?> id="local-box" <?php }  ?>  class="col-md-12 col-sm-12 col-xs-12 " <?php echo ($location_search === TRUE) ? 'class="local-box-fluid"' : ''; ?>>
    <div class="container">
       <div class="row">
@@ -464,6 +465,7 @@ if($rsegment !="home"){
    		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
    		dataType: 'json',
    		success: function(json) {
+            json['search_query'] = search_query;
    			updateLocalBox(json);
    		}
    	});
@@ -489,8 +491,16 @@ if($rsegment !="home"){
    	var alert_close = '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
    	var local_alert = $('#local-alert .local-alert');
    	var alert_message = '';
-   
+      var site_url = '<?php echo site_url(); ?>';
+
    	if (json['redirect']) {
+         if(getCookie('order_type') === "2"){
+            alert(getCookie('order_type'));
+            var redirect = site_url + 'locations?search=' + json['search_query'];
+            alert(redirect);
+            window.location.href = redirect;
+            return false;
+         }
    		window.location.href = json['redirect'];
    	}
    
