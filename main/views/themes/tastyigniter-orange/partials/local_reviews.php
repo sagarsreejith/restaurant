@@ -35,9 +35,9 @@
     </div>
 </div>
 
-<div class=" wrap-horizontal">
+<!-- <div class=" wrap-horizontal">
    <a class="add_review">Add Review</a>
-</div>
+</div> -->
 <script type="text/javascript"><!--
 $(document).ready(function() {
     var ratings = <?php echo json_encode(array_values($ratings)); ?>;

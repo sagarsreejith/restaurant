@@ -145,7 +145,8 @@ if($rsegment !="home"){
                         </div>
                      </div>
                      <?php } ?>
-                     <!-- <div class="panel-body" id="panel-body">
+               <?php if($_COOKIE['order_type'] === '2') { ?>     
+                 <div class="panel-body" id="panel-body">
                         <div class="row boxes">
                               <div class="box-one col-xs-12 col-sm-12 col-md-6">
                                  <div class="col-xs-12 col-sm-12 col-md-4">
@@ -165,33 +166,35 @@ if($rsegment !="home"){
                               </div>
                         
                               <div class="box-two col-xs-12 col-sm-6 col-md-6 right_sec">
-                                 <dl>
+                                 <ul class="location_list1">
+                                 <div class="open_off">
                                     <?php if ($opening_status === 'open') { ?>
-                                    <dt><?php echo lang('text_is_opened'); ?></dt>
+                                    <span><?php echo lang('text_is_opened'); ?></span>
                                     <?php } else if ($opening_status === 'opening') { ?>
-                                    <dt class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></dt>
+                                    <span class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></span>
                                     <?php } else { ?>
 
-                                    <dt class="text-muted"><?php echo lang('text_closed'); ?></dt>
+                                    <span class="text-muted"><?php echo lang('text_closed'); ?></span>
                                     <?php } ?>
                                     <?php if ($opening_status !== 'closed') { ?>
-                                    <dd class="visible-xs">
+                                    </div>
+                                    <li class="visible-xs">
                                        <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
                                        <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
                                        <?php } ?>
-                                    </dd>
+                                    </li>
                                     <?php } ?>
                                     <?php if (config_item('allow_reviews') !== '1') { ?>
-                                    <dd class="text-muted">
+                                    <li class="text-muted">
                                        <div class="rating rating-sm">
                                           <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
                                           <span class="small"><?php echo $text_total_review; ?></span>
                                        </div>
-                                    </dd>
+                                    </li>
                                     <?php } ?>
-                                    <!-- <dd class="text-muted">
+                                 <!-- <li class="text-muted">
                                        <?php if ($has_delivery) { ?>
                                        <?php if ($delivery_status === 'open') { ?>
                                        <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $delivery_time)); ?>
@@ -201,8 +204,8 @@ if($rsegment !="home"){
                                        <?php echo sprintf(lang('text_delivery_time_info'), lang('text_is_closed')); ?>
                                        <?php } ?>
                                        <?php } ?>
-                                    </dd>
-                                    <dd class="text-muted">
+                                 </li> -->
+                                    <!-- <li class="text-muted">
                                        <?php if ($has_collection) { ?>
                                        <?php if ($collection_status === 'open') { ?>
                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $collection_time)); ?>
@@ -212,18 +215,18 @@ if($rsegment !="home"){
                                        <?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
                                        <?php } ?>
                                        <?php } ?>
-                                    </dd> -->
+                                    </li> -->
                               
-                                    <!-- <?php if ($opening_status !== 'closed') { ?>
-                                    <dd class="hidden-xs">
+                               <!-- <?php if ($opening_status !== 'closed') { ?>
+                                    <li class="hidden-xs">
                                        <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
                                        <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
                                        <?php } ?>
-                                    </dd>
-                                    <?php } ?> -->
-                                    <!-- <dd class="text-muted">
+                                       </li>
+                                    <?php } ?>  -->
+                               <!-- <li class="text-muted">
                                        <?php if (!$has_delivery AND $has_collection) { ?>
                                        <?php echo lang('text_collection_only'); ?>
                                        <?php } else if ($has_delivery AND !$has_collection) { ?>
@@ -233,20 +236,20 @@ if($rsegment !="home"){
                                        <?php } else { ?>
                                        <?php echo lang('text_no_types'); ?>
                                        <?php } ?>
-                                    </dd>
-                                    <dd class="text-muted"><?php echo lang('text_min_total'); ?> : <?php echo currency_format($min_total); ?></dd>
+                                 </li> -->
+                                    <li class="text-muted"><?php echo lang('text_min_total'); ?> : <?php echo currency_format($min_total); ?></li>
                                     <?php if ($has_delivery) { ?>
-                                    <dd class="text-muted"><?php echo $text_delivery_condition; ?></dd>
-                                     <dd class="text-muted">--><?php //echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?><!--</dd>-->
+                                    <li class="text-muted"><?php echo $text_delivery_condition; ?></li>
+                                     <!-- <li class="text-muted"><?php echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?></li> -->
                                     <?php } ?>
                               
-<!--                                                                            
-                                 </dl>
+                                                                           
+                                    </ul>
                               </div>
                          
                         </div>
-                     </div>  -->
-                           <!-- <div class="full_out">
+                     </div> 
+                           <div class="full_out">
                      
                                 <div class="col-md-12 nopad">
 
@@ -264,8 +267,8 @@ if($rsegment !="home"){
                                                 <div class="contact-box ">
                                                       <i class="fa fa-envelope-o"></i>
                                                       <div class="cont_con">
-                                                         
-                                                         <p>support@website.com</p>
+                                                      <a href="mailto:support@website.com"><p>support@website.com</p></a> 
+                                                        
                                                       </div>
                                                 </div>
                                              </div>
@@ -283,10 +286,10 @@ if($rsegment !="home"){
                                        </div>
                                  </div>
                      
-                               </div> -->
+                               </div> 
                   
                </div>
-
+               <?php }?>                        
                
                <?php } ?>
             </div>
@@ -464,4 +467,16 @@ if($rsegment !="home"){
       return "";
    }
    //-->
+</script>
+<script>
+
+$('#theme-switch').click(function(){
+
+   if($(this).is(':checked')){
+      $('.select2-drop ').hide(); 
+   }else
+   {
+      $('.select2-drop ').show(); 
+   }
+});
 </script>

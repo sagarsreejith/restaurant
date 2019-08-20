@@ -10,7 +10,7 @@ $lang['text_goto_menus'] 		            = 'Go to Menu';
 $lang['text_location_summary'] 			    = 'We can deliver to you %s';
 $lang['text_enter_location'] 			    = 'Check if we can deliver to you';
 $lang['text_delivery_coverage'] 			= '<span class="text-danger">Sorry, but this restaurant does not deliver to your location</span>';
-$lang['text_is_opened'] 			        = '<span class="text-success">We are open</span>';
+$lang['text_is_opened'] 			        = '<span class="text-success">open</span>';
 $lang['text_closed'] 			            = '<span class="text-close text-danger">CLOSED</span>';
 $lang['text_is_closed'] 			        = '<span class="text-close text-danger">is CLOSED</span>';
 $lang['text_opening_time'] 			        = '<span class="text-close text-danger">Opening %s</span>';

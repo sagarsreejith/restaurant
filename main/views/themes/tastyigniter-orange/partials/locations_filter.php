@@ -12,7 +12,7 @@
 				<div class="input-group">
 					<input type="text" class="form-control" name="search" value="<?php echo $search; ?>" placeholder="<?php echo lang('text_filter_search'); ?>" />
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+						<button class="btn btn_filter" type="submit"><i class="fa fa-search"></i></button>
 					</span>
 				</div>
 			</form>

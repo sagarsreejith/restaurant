@@ -74,29 +74,27 @@
             <div id="opaclayer" onclick="closeReviewBox();"></div>
                                          
                 <header id="main-header">
-                <div class="header-2">
-            <div class="topbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 nopad">
-          <div class="topbar-right text-right">
-            <ul>
-              <li><i class="fa fa-phone"></i> (01) 123 456 7890 </li>
+                        <div class="header-2">
+                            <div class="topbar">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 nopad">
+                                        <div class="topbar-right text-right">
+                                            <ul>
+                                            <li><span class="phone_bg"></span>949200202 </li>
+                                            
+                                            </ul>
+                                        </div>
+                                        </div>
             
-            </ul>
-          </div>
-        </div>
-  
-               
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+                        
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
            
                     <div class="container">
                         <div class="row">

@@ -18,22 +18,23 @@
 			<div class="<?php echo $class; ?>">
 				<div class="row">
 					<div class="col-xs-12">
-						<ul class="nav nav-pills nav-justified thumbnail">
+						<ul class="progressbar">
 							<li class="step-one <?php if ($checkout_step === 'one') { echo 'active'; } else if ($checkout_step === 'two') { echo 'link'; } else { echo 'disabled'; }; ?>">
 								<a>
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_one'); ?></h4>
+									
+								 <span class="list-group-item-heading"><i class="fa fa-user"></i></span>
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
 								</a>
 							</li>
 							<li class="step-two <?php echo ($checkout_step === 'two') ? 'active' : 'disabled'; ?>">
 								<a>
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_two'); ?></h4>
+								<span class="list-group-item-heading"><i class="fa fa-money"></i></span>
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
 								</a>
 							</li>
 							<li class="step-three disabled">
 								<a>
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_three'); ?></h4>
+								<span class="list-group-item-heading"><i class="fa fa-check"></i></span>
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_three_summary'); ?></p>
 								</a>
 							</li>
