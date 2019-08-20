@@ -457,3 +457,15 @@ if($rsegment !="home"){
    }
    //-->
 </script>
+<script>
+
+$('#theme-switch').click(function(){
+
+   if($(this).is(':checked')){
+      $('.select2-drop ').hide(); 
+   }else
+   {
+      $('.select2-drop ').show(); 
+   }
+});
+</script>
