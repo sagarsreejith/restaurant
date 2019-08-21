@@ -117,7 +117,8 @@ class Checkout extends Main_Controller
 
 		$this->template->setTitle($this->lang->line('text_success_heading'));
 
-		$data['text_success_message'] = sprintf($this->lang->line('text_success_message'), $order_info['order_id'], site_url('account/orders'));
+		$track_url = site_url('track-order') . "?ordernumber=" . $order_info['order_id'];
+		$data['text_success_message'] = sprintf($this->lang->line('text_success_message'), $order_info['order_id'], $track_url);
 
 		// checks if order type is delivery or collection
 		$order_type = ($order_info['order_type'] === '1') ? 'delivery' : 'collection';
