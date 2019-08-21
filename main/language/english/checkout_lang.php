@@ -26,7 +26,7 @@ $lang['text_order_items']               = 'What you\'ve ordered:';
 $lang['text_delivery_address']          = 'Your Delivery Address';
 $lang['text_your_local']                = 'Your local restaurant';
 $lang['text_thank_you']                 = 'We hope to see you again soon';
-$lang['text_success_message']           = 'Your order  %s has been received and will be with you shortly. <br /><a href="%s" class="clr_prog1">Click here</a> <span class="clr_prog"> to view your order progress.</span> <br />Thanks for shopping with us online!';
+$lang['text_success_message']           = 'Your order  %s has been received and will be with you shortly.';
 $lang['text_order_info']                = 'This is a %s order. <br /><br /><b>Order Date:</b> %s <br /><b>%s Time:</b> %s <br /><b>Payment Method:</b> %s ';
 $lang['text_order_total']               = 'Order Total: <b>%s.</b>';
 $lang['text_collection_order_type'] 	= 'This is a pick-up order';
@@ -85,3 +85,5 @@ $lang['alert_delivery_area_changed']    = '<p class="alert-info">Your delivery a
 
 /* End of file checkout_lang.php */
 /* Location: ./main/language/english/main/checkout_lang.php */
+
+

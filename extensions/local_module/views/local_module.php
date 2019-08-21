@@ -468,7 +468,7 @@ if($rsegment !="home"){
    }
    //-->
 </script>
-<script>
+<!-- <script>
 
 $('#theme-switch').click(function(){
 
@@ -479,4 +479,4 @@ $('#theme-switch').click(function(){
       $('.select2-drop ').show(); 
    }
 });
-</script>
+</script> -->

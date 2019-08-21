@@ -83,6 +83,9 @@ input[type=submit]:hover {
 							</div>
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
+
+						
+							<button type="button" class="clr_prog1" data-toggle="modal" data-target="#myModal3">Click here</button> to view your order progress.
 		                    <span class="under-heading"></span>
 						</div>
 
@@ -170,35 +173,39 @@ input[type=submit]:hover {
 				                    </div>
 								<?php } ?>
 								<p class="tq"><?php echo lang('text_thank_you'); ?></p>
-									<section class="track">
-										<div class="track_part">
-											<div class="track_head"><img src="../assets/images/icon/track_order.png"></div>
-											<form action="" id="tract_sec">
-												<div class="col-md-4"><label class="head_name" for="fname">Order Number</label></div>
+									
+								
+									<div id="myModal3" class="modal fade" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title" > Thanking You For Your Order</h4>
+										</div>
+										<div class="modal-body">
+
+										<h4 class="modal-title" > Track your Order</h4>
+											<form action="track-order" id="tract_sec">
+												<div class="col-md-4">
+													<label class="head_name" for="fname">Order Number</label>
+												</div>
 												<div class="col-md-8">
 													<input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number..">
 												</div>
-													
-											
-										<button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
-										
-										<div class="track_part">
 
-<div  id="myDIV">
-	<ul class="progressbar">
-		<li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
-		<li >  <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
-		<li>  <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span>  Delivery</li>
-	</ul>
-</div>
-</div>
-									
-									
-									</form>
+												<button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
+
+											
+
+											</form>
 										</div>
-									
-									</section>
-								
+										
+										</div>
+
+									</div>
+									</div>
 							</div>
 						</div>
 					</div>
@@ -210,14 +217,5 @@ input[type=submit]:hover {
 
 
 </div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+
 <?php echo get_footer(); ?>

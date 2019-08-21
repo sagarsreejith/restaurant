@@ -25,7 +25,7 @@ input[type=submit]:hover {
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-section">                    
-                    <h3><?php echo lang('text_heading'); ?></h3>
+                    <!-- <h3><?php echo lang('text_heading'); ?></h3> -->
             </div>
             </div>
         </div>
@@ -34,31 +34,49 @@ input[type=submit]:hover {
 <div class="container">
 <section class="track">
     <div class="track_part">
-        <div class="track_head"><img src="../assets/images/icon/track_order.png"></div>
-        <form action="" id="tract_sec">
-            <div class="col-md-4">
-                <label class="head_name" for="fname">Order Number</label>
+        <div class="track_head"><img src="assets/images/icon/track_order.png"></div>
+        
+
+        <div class="track_part">
+
+            <div id="myDIV">
+                <ul class="progressbar">
+                    <li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+                    <li> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
+                    <li> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
+                </ul>
             </div>
-            <div class="col-md-8">
-                <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number..">
-            </div>
-
-            <button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
-
-            <div class="track_part">
-
-                <div id="myDIV">
-                    <ul class="progressbar">
-                        <li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
-                        <li> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
-                        <li> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
-                    </ul>
-                </div>
-            </div>
-
-        </form>
+        </div>
     </div>
 </section>
 </div>
+
+
+
+
+<form action="track-order.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+ 
+}
+</script>
 
 <?php echo get_footer(); ?>
