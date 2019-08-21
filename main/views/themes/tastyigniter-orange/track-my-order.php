@@ -49,7 +49,6 @@ input[type=submit]:hover {
             <div class="track_part">
                 <div id="myDIV">
                     <ul class="progressbar">
-                    <?php echo $result['status_id'] ?>
                         <li <?php if($result['status_id'] === '11') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
                         <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
                         <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
