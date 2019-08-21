@@ -1,23 +1,3 @@
-<style>
-	
-
-	input[type=number]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-	
-</style>
 
 
 <?php echo get_header(); ?>
@@ -54,26 +34,7 @@ input[type=submit]:hover {
 							</li>
 						</ul>
 
-						<!-- <ul class="nav nav-pills nav-justified thumbnail">
-							<li class="disabled">
-								<a href="#checkout">
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_one'); ?></h4>
-									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
-								</a>
-							</li>
-							<li class="disabled">
-								<a href="#payment">
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_two'); ?></h4>
-									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
-								</a>
-							</li>
-							<li class="active">
-								<a href="#confirmation">
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_three'); ?></h4>
-									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_three_summary'); ?></p>
-								</a>
-							</li>
-						</ul> -->
+					
 					</div>
 
 					<div class="col-xs-12 content-wrap clr_prog2">
@@ -85,7 +46,11 @@ input[type=submit]:hover {
 							<?php echo $text_success_message; ?>
 
 						
-							<button type="button" class="clr_prog1" data-toggle="modal" data-target="#myModal3">Click here</button> to view your order progress.
+						
+
+							<a role="presentation" class="clr_prog1"  href="<?php echo site_url('track-order'); ?>">
+                                                        <?php echo lang( 'menu_recent_order'); ?> <span>to view your order progress.</span>
+                                                    </a>
 		                    <span class="under-heading"></span>
 						</div>
 
@@ -113,11 +78,11 @@ input[type=submit]:hover {
 								<span class="heading_info ">Order Details</span>
 										<div class="text-subline offset-top-15"></div>
 
-										<div class="col-md-6 nopad text-right">
+										<div class="col-md-5 nopad text-right">
 											 <strong class="location_name_rest"><?php echo lang('text_your_local'); ?> : </strong><br />
 										</div>
-										<div class="col-md-6 nopad">
-											<strong class="location_name_rest"><?php echo $location_name; ?></strong><br /> 
+										<div class="col-md-7 nopad">
+											<strong class="location_name_rest nm_rs"><?php echo $location_name; ?></strong><br /> 
 										</div>
 									<address><?php echo $location_address; ?></address>
 								</div>
@@ -173,37 +138,7 @@ input[type=submit]:hover {
 				                    </div>
 								<?php } ?>
 								<p class="tq"><?php echo lang('text_thank_you'); ?></p>
-									
 								
-									<div id="myModal3" class="modal fade" role="dialog">
-									<div class="modal-dialog">
-
-										<!-- Modal content-->
-										<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title" > Thanking You For Your Order</h4>
-										</div>
-										<div class="modal-body">
-
-										<h4 class="modal-title" > Track your Order</h4>
-											<form action="track-order" id="tract_sec">
-												<div class="col-md-4">
-													<label class="head_name" for="fname">Order Number</label>
-												</div>
-												<div class="col-md-8">
-													<input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number..">
-												</div>
-
-												<button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
-
-											
-
-											</form>
-										</div>
-										
-										</div>
-
 									</div>
 									</div>
 							</div>

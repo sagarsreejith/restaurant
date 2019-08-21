@@ -78,7 +78,7 @@
                             <div class="topbar">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 nopad">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
                                         <div class="topbar-right text-right">
                                             <ul>
                                             <li><span class="phone_bg"></span>949200202 </li>
@@ -98,7 +98,7 @@
            
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 col-sm-4 nopad">
+                            <div class="col-md-5 col-sm-4 ">
                                 <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
                                     <i class="fa fa-align-justify"></i>
                                 </button>

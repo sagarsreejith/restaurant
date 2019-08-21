@@ -17,7 +17,7 @@
 
 			<div class="<?php echo $class; ?>">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-12" id="checkout_progress">
 						<ul class="progressbar">
 							<li class="step-one <?php if ($checkout_step === 'one') { echo 'active'; } else if ($checkout_step === 'two') { echo 'link'; } else { echo 'disabled'; }; ?>">
 								<a>
@@ -343,7 +343,7 @@
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">
-											<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
+											<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
 												<!-- <label for=""><?php echo lang('label_customer'); ?> </label> -->
 												<label for="" class="">Customer Details </label>
 												<div class="text-subline offset-top-15"></div>
@@ -358,7 +358,7 @@
 													
 															<th scope="row"> <?php echo lang('label_email'); ?></th>
 														
-															<th scope="row"><?php echo lang('label_telephone'); ?> </th>
+															<th scope="row" width=30%><?php echo lang('label_telephone'); ?> </th>
 												
 														</tr>
 														<tr>
@@ -379,11 +379,11 @@
 
 											<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
+												<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
 												<label for=""><?php echo lang('label_address'); ?>: </label>
 												<div class="text-subline offset-top-15"></div>
 												</div>
-												<div class="col-md-12 col-sm-6 col-xs-6 txt_lbl1">
+												<div class="col-md-12 col-sm-12 col-xs-12 txt_lbl1">
 												<?php foreach ($addresses as $address) { ?>
 													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
 														<address class="text-left"><?php echo $address['address']; ?></address>
@@ -399,7 +399,7 @@
 
 
 									<div class="col-sm-12">
-											<div class="col-md-12 col-sm-6 col-xs-6 main_head_addr">		
+											<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
 												
 												<label for="" class="">Order Details </label>
 												<div class="text-subline offset-top-15"></div>

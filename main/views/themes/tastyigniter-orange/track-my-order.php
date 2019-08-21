@@ -1,22 +1,6 @@
 <style>
 	
 
-	input[type=number]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-	
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
@@ -35,48 +19,46 @@ input[type=submit]:hover {
 <section class="track">
     <div class="track_part">
         <div class="track_head"><img src="assets/images/icon/track_order.png"></div>
-        
-
-        <div class="track_part">
-
-            <div id="myDIV">
-                <ul class="progressbar">
-                    <li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
-                    <li> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
-                    <li> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
-                </ul>
+        <form action="" id="tract_sec">
+            <div class="div_part">
+                 <div class="col-md-7 col-sm-7 col-xs-7">
+                    <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5">
+                    <!-- <label class="head_name" for="fname">Order Number</label> -->
+                    <button type="submit" value="Submit" class="track_btn" >Submit </button>
+                </div>
+               
             </div>
-        </div>
+           
+            
+            <?php if(isset($result) && $status) { ?>
+            <div class="track_part">
+                <div id="myDIV">
+                    <ul class="progressbar">
+                        <li <?php if($result['status_id'] === '11') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+                        <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
+                        <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <?php } ?>
+            <?php if(isset($status) && !$status) { ?> 
+                <h4 class="notification_track">No record Found</h1>
+            <?php } ?>
+        </form>
+        <p class="tq">We hope to see you again soon</p>
     </div>
 </section>
+<!-- <?php //if($status) { ?>
+<div>
+<h1>Success</h1>
+<pre><?php //print_r($result);?></pre>
+ Printing invidulal Item 
+<?php //echo $result['status_name']; ?>
 </div>
+<?php //} ?> -->
 
-
-
-
-<form action="track-order.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
- 
-}
-</script>
+</div>
 
 <?php echo get_footer(); ?>

@@ -163,9 +163,11 @@ footer:before {
 }
 .text_ft{
   color:#fff;
+  font-size:15px;
 }
 .text_ft a{
   color:#cb9c47;
+  font-size:13px;
 }
 .cnt_div{
   float: left;
