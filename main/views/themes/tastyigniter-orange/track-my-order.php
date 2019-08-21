@@ -40,25 +40,38 @@ input[type=submit]:hover {
                 <label class="head_name" for="fname">Order Number</label>
             </div>
             <div class="col-md-8">
-                <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number..">
+                <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
             </div>
 
             <button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
-
+            
+            <?php if(isset($result) && $status) { ?>
             <div class="track_part">
-
                 <div id="myDIV">
                     <ul class="progressbar">
-                        <li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
-                        <li> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
-                        <li> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
+                    <?php echo $result['status_id'] ?>
+                        <li <?php if($result['status_id'] === '11') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+                        <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
+                        <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
                     </ul>
                 </div>
             </div>
-
+            <?php } ?>
+            <?php if(isset($status) && !$status) { ?> 
+                <h1>No record Found</h1>
+            <?php } ?>
         </form>
     </div>
 </section>
+<!-- <?php //if($status) { ?>
+<div>
+<h1>Success</h1>
+<pre><?php //print_r($result);?></pre>
+ Printing invidulal Item 
+<?php //echo $result['status_name']; ?>
+</div>
+<?php //} ?> -->
+
 </div>
 
 <?php echo get_footer(); ?>
