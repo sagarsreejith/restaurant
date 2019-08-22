@@ -299,7 +299,7 @@ class Reviews_model extends TI_Model {
 
 	public function getAllBranchLocation(){
 		$this->db->from('locations');
-		$this->db->select('location_city');
+		$this->db->select(['location_city','offer_collection', 'offer_delivery']);
 		$this->db->where('location_status', 1);
 		$query = $this->db->get();
 		$result = array();
@@ -335,22 +335,67 @@ class Reviews_model extends TI_Model {
 			}
 			$count++;
 		}
-
 		return $governates;
 
 	 }
 
 	 public function updateAreas($areas_array, $branch_locations){
+		 
 		 $final_Array = [];
 		foreach ($areas_array as $area){
 			// $branches = array_column($branch_locations, 'location_city');
 			// $disable_status = array_search($area['govr_area_name_en'], $branches);
 			$area['is_disabled'] = in_array($area['govr_area_name_en'], array_column($branch_locations, 'location_city'));
+			$area['is_delivery'] = "0";
+			$area['is_pickup'] = "0";
+			if($area['is_disabled']){
+				$offer_delivery = $this->dsearch($branch_locations, array("location_city" => $area['govr_area_name_en'], "offer_delivery" => "1"));
+				$offer_collection = $this->dsearch($branch_locations, array("location_city" => $area['govr_area_name_en'], "offer_collection" => "1"));
+				if(count($offer_delivery) > 0) {
+					$area['is_delivery'] = "1";
+				}
+				if(count($offer_collection) > 0) {
+					$area['is_pickup'] = "1";
+				}
+			}
+			//area['is_disabled'] = in_array($area['govr_area_name_en'], array_column($branch_locations, 'location_city'));
 			array_push($final_Array, $area);
 		}
 		return $final_Array;
 	 }
+	 
+public function dsearch($array, $search_list) { 
+  
+    // Create the result array 
+    $result = array(); 
+  
+    // Iterate over each array element 
+    foreach ($array as $key => $value) { 
+  
+        // Iterate over each search condition 
+        foreach ($search_list as $k => $v) { 
+      
+            // If the array element does not meet 
+            // the search condition then continue 
+            // to the next element 
+            if (!isset($value[$k]) || $value[$k] != $v) 
+            { 
+                  
+                // Skip two loops 
+                continue 2; 
+            } 
+        } 
+      
+        // Append array element's key to the 
+        //result array 
+        $result[] = $value; 
+    } 
+  
+    // Return result  
+    return $result; 
+} 
 }
+
 
 /* End of file reviews_model.php */
 /* Location: ./system/tastyigniter/models/reviews_model.php */

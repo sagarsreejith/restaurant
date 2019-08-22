@@ -33,7 +33,7 @@ class Country {
 					$format = '{address_1}' . "\n" . '{address_2}' . "\n" . ' {city}'. "\n" . '{state}' . "\n" . '{country}';
 				} elseif(empty($address['apt_no']) && empty($address['office'])){
 					$format = '
-							<div class="col-md-6">
+							<div class="col-md-6 col-sm-12 col-xs-12">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>
@@ -57,7 +57,7 @@ class Country {
 									</table>
 							</div>
 
-							<div class="col-md-6">
+							<div class="col-md-6 col-sm-12 col-xs-12">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>
@@ -81,7 +81,7 @@ class Country {
 									</table>
 							</div> ';
 				} elseif (!empty($address['apt_no']) && empty($address['office'])){
-					$format = '	<div class="col-md-6">
+					$format = '	<div class="col-md-6 col-sm-12 col-xs-12">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>
@@ -107,8 +107,8 @@ class Country {
 										</tbody>
 									</table>
 								</div>
-										
-								<div class="col-md-6">
+										 
+								<div class="col-md-6 col-sm-12 col-xs-12">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>
@@ -137,7 +137,7 @@ class Country {
 				} else {
 					$format = '
 					
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-12 col-xs-12">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>
@@ -164,7 +164,7 @@ class Country {
 									</table>
 								</div>
 										
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-12 col-xs-12">
 									<table class="table table-hover table-dark_addr">
 										<tbody>
 											<tr>

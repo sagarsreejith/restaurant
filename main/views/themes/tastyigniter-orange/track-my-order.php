@@ -1,22 +1,6 @@
 <style>
 	
 
-	input[type=number]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-	
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
@@ -25,7 +9,7 @@ input[type=submit]:hover {
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-section">                    
-                    <h3><?php echo lang('text_heading'); ?></h3>
+                    <!-- <h3><?php echo lang('text_heading'); ?></h3> -->
             </div>
             </div>
         </div>
@@ -34,16 +18,19 @@ input[type=submit]:hover {
 <div class="container">
 <section class="track">
     <div class="track_part">
-        <div class="track_head"><img src="../assets/images/icon/track_order.png"></div>
+        <div class="track_head"><img src="assets/images/icon/track_order.png"></div>
         <form action="" id="tract_sec">
-            <div class="col-md-4">
-                <label class="head_name" for="fname">Order Number</label>
+            <div class="div_part">
+                 <div class="col-md-7 col-sm-7 col-xs-7">
+                    <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5">
+                    <!-- <label class="head_name" for="fname">Order Number</label> -->
+                    <button type="submit" value="Submit" class="track_btn" >Submit </button>
+                </div>
+               
             </div>
-            <div class="col-md-8">
-                <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
-            </div>
-
-            <button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
+           
             
             <?php if(isset($result) && $status) { ?>
             <div class="track_part">
@@ -57,9 +44,10 @@ input[type=submit]:hover {
             </div>
             <?php } ?>
             <?php if(isset($status) && !$status) { ?> 
-                <h1>No record Found</h1>
+                <h4 class="notification_track">No record Found</h1>
             <?php } ?>
         </form>
+        <p class="tq">We hope to see you again soon</p>
     </div>
 </section>
 <!-- <?php //if($status) { ?>

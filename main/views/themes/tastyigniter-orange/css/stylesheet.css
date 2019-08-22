@@ -1610,7 +1610,7 @@ padding-right:0 !important;
     background: #6f1e30;
     width: 100%;
     position: fixed;
-    margin-top: 120px;
+    margin-top: 118px;
     float: left;
     z-index: 99;
   }
@@ -1627,6 +1627,7 @@ padding-right:0 !important;
     .list-group-item{
       background:none;
       border:none;
+      FONT-SIZE:13PX;
     }
     .list-group li a{color: #333;font-size:14px;}
     .list-group li a:hover{

@@ -1,23 +1,3 @@
-<style>
-	
-
-	input[type=number]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-	
-</style>
 
 
 <?php echo get_header(); ?>
@@ -54,26 +34,7 @@ input[type=submit]:hover {
 							</li>
 						</ul>
 
-						<!-- <ul class="nav nav-pills nav-justified thumbnail">
-							<li class="disabled">
-								<a href="#checkout">
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_one'); ?></h4>
-									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
-								</a>
-							</li>
-							<li class="disabled">
-								<a href="#payment">
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_two'); ?></h4>
-									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
-								</a>
-							</li>
-							<li class="active">
-								<a href="#confirmation">
-									<h4 class="list-group-item-heading"><?php echo lang('text_step_three'); ?></h4>
-									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_three_summary'); ?></p>
-								</a>
-							</li>
-						</ul> -->
+					
 					</div>
 
 					<div class="col-xs-12 content-wrap clr_prog2">
@@ -83,6 +44,13 @@ input[type=submit]:hover {
 							</div>
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
+
+						
+						
+
+							<a role="presentation" class="clr_prog1"  href="<?php echo site_url('track-order'); ?>">
+                                                        <?php echo lang( 'menu_recent_order'); ?> <span>to view your order progress.</span>
+                                                    </a>
 		                    <span class="under-heading"></span>
 						</div>
 
@@ -110,11 +78,11 @@ input[type=submit]:hover {
 								<span class="heading_info ">Order Details</span>
 										<div class="text-subline offset-top-15"></div>
 
-										<div class="col-md-6 nopad text-right">
+										<div class="col-md-5 nopad text-right">
 											 <strong class="location_name_rest"><?php echo lang('text_your_local'); ?> : </strong><br />
 										</div>
-										<div class="col-md-6 nopad">
-											<strong class="location_name_rest"><?php echo $location_name; ?></strong><br /> 
+										<div class="col-md-7 nopad">
+											<strong class="location_name_rest nm_rs"><?php echo $location_name; ?></strong><br /> 
 										</div>
 									<address><?php echo $location_address; ?></address>
 								</div>
@@ -170,35 +138,9 @@ input[type=submit]:hover {
 				                    </div>
 								<?php } ?>
 								<p class="tq"><?php echo lang('text_thank_you'); ?></p>
-									<section class="track">
-										<div class="track_part">
-											<div class="track_head"><img src="../assets/images/icon/track_order.png"></div>
-											<form action="" id="tract_sec">
-												<div class="col-md-4"><label class="head_name" for="fname">Order Number</label></div>
-												<div class="col-md-8">
-													<input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number..">
-												</div>
-													
-											
-										<button type="submit" value="Submit" class="track_btn" onclick="myFunction()">Submit </button>
-										
-										<div class="track_part">
-
-<div  id="myDIV">
-	<ul class="progressbar">
-		<li class="active"> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
-		<li >  <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
-		<li>  <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span>  Delivery</li>
-	</ul>
-</div>
-</div>
-									
-									
-									</form>
-										</div>
-									
-									</section>
 								
+									</div>
+									</div>
 							</div>
 						</div>
 					</div>
@@ -210,14 +152,5 @@ input[type=submit]:hover {
 
 
 </div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+
 <?php echo get_footer(); ?>

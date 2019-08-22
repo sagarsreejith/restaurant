@@ -1,9 +1,9 @@
-
-<?php $path_image = '';
-if($rsegment !="home"){
-	$path_image = '../';
+<style>
+.gbh{
+   display:none !important;
 }
-?>
+
+</style>
 <div class="">
 <div class="modal fade" id="order_now" role="dialog">
 <div class="modal-dialog  modal-dialog-centered modal_order_now">
@@ -30,7 +30,7 @@ if($rsegment !="home"){
                   <!-- New Design Strts Here -->
                   <div class="switch-container">
                      <label class="head_lbl" for="theme-switch"> Delivery</label>
-                     <input type="checkbox" name="odrer_option" id="theme-switch">
+                     <input type="checkbox" class="toggle-order" name="odrer_option" id="theme-switch">
                      
                      <label for="theme-switch" class="switch-label">
                         <div class="switch-overlay"></div>
@@ -54,17 +54,28 @@ if($rsegment !="home"){
                         <div class="map_icon_bg1"> </div>
                            <!-- <span><img src="<?php echo $path_image;?>assets/images/new_search.svg" alt="search location"></span> -->
                            <!-- <span><img src="assets/images/new_search.svg" alt="search location"></span> -->
-                           <select  class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptName" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
-                             
+                           <div class="delivery-toggle">
+                           <select  class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptDelivery" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
                               <option></option>
                               <?php foreach($local_areas as $area){ ?>
                               <optgroup label="<?php echo $area['govr_name_en']; ?>" data-select2-id="<?php echo $area['govr_id']; ?>">
                                  <?php foreach($area['areas'] as $local){ ?>
-                                    <option <?php if($selected_city == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if($local['is_disabled'] != 1) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
+                                    <option <?php if($_COOKIE['del_search'] == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>" <?php if(($local['is_disabled'] != 1) OR ($local['is_delivery'] === "0")) { ?> disabled <?php } ?> ><?php echo $local['govr_area_name_en']; ?></option>
                                  <?php } ?>
                               </optgroup>
                               <?php } ?>
                            </select>
+                           </div>
+                           <div class="collection-toggle">
+                           <select  class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptPickup" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
+                              <option></option>
+                              <?php foreach($local_areas as $area){ ?>
+                                 <?php foreach($area['areas'] as $local){ ?>
+                                    <option <?php if($_COOKIE['pic_search'] == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  class="<?php if(($local['is_disabled'] != 1) OR ($local['is_pickup'] === "0")) { echo 'gbh';} ?>"  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"  ><?php echo $local['govr_area_name_en']; ?></option>
+                                 <?php } ?>
+                              <?php } ?>
+                           </select>
+                           </div>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-12 nopad nopad">
                            <a id="search" class="search_btn_hme" onclick="searchLocal();"><?php echo lang('text_find'); ?></a> 
@@ -286,11 +297,9 @@ if($rsegment !="home"){
                                        </div>
                                  </div>
                      
-                               </div> 
-                  
+                               </div>                  
                </div>
-               <?php }?>                        
-               
+               <?php }?>                                      
                <?php } ?>
             </div>
          </div>
@@ -311,12 +320,25 @@ if($rsegment !="home"){
    		$('.panel-local .panel-heading .local-change').slideUp();
    	}
    }
+
+  //toggle class
+   $( ".toggle-order" ).click(function() {
+      if($("input[name='odrer_option']:checked").is(":checked")){
+         $( ".collection-toggle" ).css("display", "block");
+         $( ".delivery-toggle" ).css("display", "none");
+      } else {
+         $( ".delivery-toggle" ).css("display", "block");
+         $( ".collection-toggle" ).css("display", "none");
+      }   
+   });
    
    function searchLocal() {
    	// var search_query = $('input[name=\'search_query\']').val();
-   	var search_query = $('#aioConceptName').val();
+      var search_query = '';
       document.cookie = "selected_city=" + search_query + "; path=/";
       var order_type = $("input[name='odrer_option']:checked").is(":checked");
+      order_type == false ? search_query = $('#aioConceptDelivery').val() : search_query = $('#aioConceptPickup').val();
+      order_type == false ? document.cookie = "del_search="+search_query+"; path=/" : document.cookie = "pic_search="+search_query+"; path=/";
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
    	//alert(order_type);
@@ -425,14 +447,22 @@ if($rsegment !="home"){
       	
       	// if (sear) {
       	//     elemt = document.getElementById("panel-body");
-   	// 	if (elemt)
+   		// if (elemt)
       	//         elemt.scrollIntoView(); // Top
-          // }
+         //  }
       }
       
    $(document).ready(function() {
       if(getCookie('order_type') === '2' ){
          $("input[name='odrer_option']").prop("checked", true);
+      }
+
+      if($("input[name='odrer_option']:checked").is(":checked")){
+         $( ".collection-toggle" ).css("display", "block");
+         $( ".delivery-toggle" ).css("display", "none");
+      } else {
+         $( ".delivery-toggle" ).css("display", "block");
+         $( ".collection-toggle" ).css("display", "none");
       }
       
    	$("#order_now").click(function(){
@@ -440,10 +470,6 @@ if($rsegment !="home"){
    
    	});
    	scrollToBody();
-   	// apicall = $('#google-maps-js').attr('src');
-   	// apicall = apicall.replace("&ver=", "&callback=initAutocomplete&ver=");
-   	// $('#google-maps-js').attr('src' , apicall);
-   	// initAutocomplete();
    	$('.review-toggle').on('click', function() {
    		$('a[href="#reviews"]').tab('show');
    	});
@@ -467,16 +493,4 @@ if($rsegment !="home"){
       return "";
    }
    //-->
-</script>
-<script>
-
-$('#theme-switch').click(function(){
-
-   if($(this).is(':checked')){
-      $('.select2-drop ').hide(); 
-   }else
-   {
-      $('.select2-drop ').show(); 
-   }
-});
 </script>

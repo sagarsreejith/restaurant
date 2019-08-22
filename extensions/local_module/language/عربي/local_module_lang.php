@@ -31,7 +31,7 @@ $lang['text_multi'] 		                = 'Multi';
 $lang['text_at'] 		                    = 'at ';
 $lang['text_starts'] 		                = '<span class="text-danger"> starts %s</span>';
 $lang['text_in_minutes'] 			        = '<span class="text-success">in %s min</span>';
-$lang['text_no_search_query'] 		        = '<span class="text-muted">Please type in a postcode/address to check if we can deliver to you.</span>';
+$lang['text_no_search_query'] 		        = '<span class="text-muted">Please select an area to check.</span>';
 $lang['text_no_min_total'] 		            = 'No Min. Order Amount';
 $lang['text_condition_all_orders'] 		    = '%s on all orders';
 $lang['text_condition_above_total'] 		= '%s above %s';
@@ -57,7 +57,7 @@ $lang['help_use_location'] 		            = 'You can choose which location the vi
 
 $lang['alert_unknown_error'] 			    = '<p class="alert-danger">Error occurred, please check and try again.</p>';
 $lang['alert_no_search_setting'] 		    = '<p class="alert-danger">Location Search By setting has not been specified.</p>';
-$lang['alert_no_search_query'] 		        = '<p class="alert-danger">Please type in a postcode/address to check if we can deliver to you.</p>';
+$lang['alert_no_search_query'] 		        = '<p class="alert-danger">Please select an area to check.</p>';
 $lang['alert_invalid_search_query'] 	    = '<p class="alert-danger">We couldn\'t locate the entered address/postcode, please enter a valid address/postcode.</p>';
 $lang['alert_no_found_restaurant'] 	        = '<p class="alert-danger">We do not have any local restaurant near you.</p>';
 

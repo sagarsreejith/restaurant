@@ -20,7 +20,7 @@
 				<div class="row">
 					<?php echo load_partial('locations_filter', $locations_filter); ?>
 
-					<div class="location-list col-sm-8">
+					<div class="location-list col-sm-12 col-md-8">
 						<?php if ($locations) {?>
 							<?php foreach ($locations as $location) { ?>
 								<div class="panel panel-local">
@@ -30,11 +30,11 @@
 							
 								
 
-										<section class="">
+										<section class="loc_sec_st">
 
 										
 										<div class="location_address_top">
-											<div class=" col-xs-12 col-sm-10">
+											<div class=" col-xs-12 col-sm-10 col-md-10">
 												
 													<div class="location_head_top"><h4><?php echo $location['location_name']; ?></h4> <div class="distance_location"> (<span class="text-muted"><?php echo $location['distance']; ?> <?php echo $location['distance_unit']; ?></span>)</div></div>
 													
@@ -43,7 +43,7 @@
 													
 												
 											</div>
-											<div class=" col-xs-2 col-sm-2">
+											<div class=" col-xs-12 col-sm-2 col-md-2">
 
 											<div class="open_off">
 														<?php if ($location['opening_status'] === 'open') { ?>
@@ -148,7 +148,7 @@
 											
 											</div>
 									
-											<div class="col-xs-6 col-sm-2 goto_menu">
+											<div class="col-xs-12 col-sm-2 goto_menu">
 											<a class="" href="<?php echo $location['href']; ?>"><?php echo lang('button_view_menu'); ?> <i class="fa fa-chevron-circle-right"></i></a>
 											</div>
 									
@@ -168,10 +168,11 @@
 					</div>
 				</div>
 
+				
 			<?php echo get_partial('content_right', 'col-sm-3'); ?>
 			<?php echo get_partial('content_bottom'); ?>
 		</div>
 	</div>
-						</div>
+</div>
 </div>
 <?php echo get_footer(); ?>

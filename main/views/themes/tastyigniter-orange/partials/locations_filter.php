@@ -1,4 +1,4 @@
-<div class="locations-filter col-sm-4">
+<div class="locations-filter col-sm-12 col-md-4">
 	<div class=" panel-locations-filter">
 
 		<div class="panel-heading side_head">
@@ -17,7 +17,7 @@
 				</div>
 			</form>
 		</div>
-		<ul class="list-group list-group-responsive wrap-bottom bottom_ul">
+		<ul class="list-group list-group-responsive wrap-bottom bottom_ul responsive_ul">
 			<?php foreach ($filters as $key => $filter) { ?>
 				<li class="list-group-item  <?php echo ($key === $sort_by) ? 'disabled' : '' ?>">
 					<a class="btn-block" <?php echo ($key === $sort_by) ? 'disabled' : 'href="'.$filter['href'].'"'; ?>><i class="fa fa-angle-right"></i>&nbsp;&nbsp;<?php echo $filter['name']; ?></a>
@@ -26,3 +26,4 @@
 		</ul>
 	</div>
 </div>
+
