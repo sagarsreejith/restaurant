@@ -59,3 +59,4 @@ Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d5da6c66fafe&quot;
 </pre>
 ERROR - 2019-08-21 23:23:21 --> Could not find the language line "label_customer"
 ERROR - 2019-08-21 23:37:50 --> Could not find the language line "label_customer"
+ERROR - 2019-08-22 14:14:16 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888

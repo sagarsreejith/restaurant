@@ -15,7 +15,7 @@ $lang['text_subscribe'] 		        = 'Subscribe';
 $lang['text_un_subscribe'] 		        = 'Un-subscribe';
 $lang['text_login_as_customer'] 	    = 'Login as Customer';
 
-$lang['column_first_name'] 		        = 'First Name';
+$lang['column_first_name'] 		        = 'Full Name';
 $lang['column_last_name'] 		        = 'Last Name';
 $lang['column_email'] 		            = 'Email';
 $lang['column_telephone'] 		        = 'Telephone';

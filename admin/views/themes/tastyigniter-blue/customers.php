@@ -63,7 +63,7 @@
 								</div>
 							</th>
 							<th><a class="sort" href="<?php echo $sort_first_name; ?>"><?php echo lang('column_first_name'); ?><i class="fa fa-sort-<?php echo ($sort_by == 'first_name') ? $order_by_active : $order_by; ?>"></i></a></th>
-							<th><a class="sort" href="<?php echo $sort_last_name; ?>"><?php echo lang('column_last_name'); ?><i class="fa fa-sort-<?php echo ($sort_by == 'last_name') ? $order_by_active : $order_by; ?>"></i></a></th>
+							<!-- <th><a class="sort" href="<?php //echo $sort_last_name; ?>"><?php //echo lang('column_last_name'); ?><i class="fa fa-sort-<?php //echo ($sort_by == 'last_name') ? $order_by_active : $order_by; ?>"></i></a></th> -->
 							<th><a class="sort" href="<?php echo $sort_email; ?>"><?php echo lang('column_email'); ?><i class="fa fa-sort-<?php echo ($sort_by == 'email') ? $order_by_active : $order_by; ?>"></i></a></th>
 							<th><?php echo lang('column_telephone'); ?></th>
 							<th><a class="sort" href="<?php echo $sort_date_added; ?>"><?php echo lang('column_date_added'); ?><i class="fa fa-sort-<?php echo ($sort_by == 'date_added') ? $order_by_active : $order_by; ?>"></i></a></th>
@@ -84,11 +84,11 @@
 							<a class="btn btn-info <?php echo empty($access_customer_account) ? 'disabled' : ''; ?>" title="<?php echo lang('text_login_as_customer'); ?>" href="<?php echo $customer['login']; ?>" target="_blank"><i class="fa fa-user"></i>&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
 						</td>
 						<td><?php echo $customer['first_name']; ?></td>
-						<td><?php echo $customer['last_name']; ?></td>
+						<!-- <td><?php //echo $customer['last_name']; ?></td> -->
 						<td><?php echo $customer['email']; ?></td>
 						<td><?php echo $customer['telephone']; ?></td>
 						<td><?php echo $customer['date_added']; ?></td>
-						<td class="text-center"><?php echo ($customer['status'] === '1') ? lang('text_enabled') : lang('text_disabled'); ?></td>
+						<td class="text-center"><?php echo ($customer['status'] === 'Enabled') ? lang('text_enabled') : lang('text_disabled');?></td>
 						<td class="id"><?php echo $customer['customer_id']; ?></td>
 					</tr>
 					<?php } ?>
