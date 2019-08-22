@@ -116,7 +116,7 @@
 									<td><?php echo $staff['location_name']; ?></td>
 								<?php } ?>
 								<td><?php echo $staff['date_added']; ?></td>
-								<td class="text-center"><?php echo ($staff['staff_status'] === '1') ? lang('text_enabled') : lang('text_disabled'); ?></td>
+								<td class="text-center"><?php echo ($staff['staff_status'] === 'Enabled') ? lang('text_enabled') : lang('text_disabled'); ?></td>
 								<td class="id"><?php echo $staff['staff_id']; ?></td>
 							</tr>
 							<?php } ?>

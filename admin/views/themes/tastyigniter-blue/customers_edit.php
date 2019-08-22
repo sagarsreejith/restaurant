@@ -18,13 +18,13 @@
 							<?php echo form_error('first_name', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
-					<div class="form-group">
-						<label for="input-last-name" class="col-sm-3 control-label"><?php echo lang('label_last_name'); ?></label>
+					<!-- <div class="form-group">
+						<label for="input-last-name" class="col-sm-3 control-label"><?php //echo lang('label_last_name'); ?></label>
 						<div class="col-sm-5">
-							<input type="text" name="last_name" id="input-last-name" class="form-control" value="<?php echo set_value('last_name', $last_name); ?>" />
+							<input type="text" name="last_name" id="input-last-name" class="form-control" value="<?php //echo set_value('last_name', $last_name); ?>" />
 							<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?>
 						</div>
-					</div>
+					</div> -->
 					<div class="form-group">
 						<label for="input-email" class="col-sm-3 control-label"><?php echo lang('label_email'); ?></label>
 						<div class="col-sm-5">
@@ -55,7 +55,7 @@
 							<?php echo form_error('confirm_password', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="input-security-question" class="col-sm-3 control-label"><?php echo lang('label_security_question'); ?></label>
 						<div class="col-sm-5">
 							<select name="security_question_id" id="input-security-question" class="form-control">
@@ -77,7 +77,7 @@
 							<input type="text" name="security_answer" id="input-security-answer" class="form-control" value="<?php echo set_value('security_answer', $security_answer); ?>" />
 							<?php echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
 						</div>
-					</div>
+					</div> -->
 					<div class="form-group">
 						<label for="input-customer-group-id" class="col-sm-3 control-label"><?php echo lang('label_customer_group'); ?></label>
 						<div class="col-sm-5">

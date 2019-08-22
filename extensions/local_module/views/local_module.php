@@ -38,12 +38,12 @@
     margin-right: 45px;
 }
 
-  span {
+  .svg_span {
     -webkit-transform: skewX(15deg);
             transform: skewX(15deg) 
   }
 
-  span:nth-child(2) {
+  .svg_span:nth-child(2) {
     width: 20px;
     margin-left: 30px;
     position: relative;
@@ -222,7 +222,7 @@ path.two {
             <div class="btn_sec animated bounceIn">
             <a type="button" class="order_btn cta" data-toggle="modal" data-target="#order_now"><span> </span>
          
-            <span>
+            <span class="svg_span">
             Order Now
       <svg width="43px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
