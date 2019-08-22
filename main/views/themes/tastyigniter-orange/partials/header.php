@@ -80,10 +80,13 @@
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12">
                                         <div class="topbar-right text-right">
-                                            <ul>
-                                            <li><span class="phone_bg"></span>949200202 </li>
+                                            <ul class="topbar_ul">
+                                            <li class="track_li"><a href="<?php echo site_url('track-order'); ?>"> Track Order </li>
+                                            <li><span class="phone_bg"></span> <a href="tel:+965 67678956" target="_blank"><p>949200202</p></a></li>
+                                            
                                             
                                             </ul>
+                                            
                                         </div>
                                         </div>
             

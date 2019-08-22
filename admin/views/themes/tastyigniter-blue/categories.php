@@ -20,7 +20,7 @@
 									<a class="btn btn-grey" onclick="filterList();" title="<?php echo lang('text_search'); ?>"><i class="fa fa-search"></i></a>
 								</div>
 								<div class="col-md-8 pull-left">
-									<div class="form-group">
+									<div class="form-group" style="width:200px;">
 										<select name="filter_status" class="form-control input-sm">
 											<option value=""><?php echo lang('text_filter_status'); ?></option>
 											<?php if ($filter_status === '1') { ?>

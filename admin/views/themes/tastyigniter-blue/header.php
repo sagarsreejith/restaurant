@@ -93,16 +93,16 @@
     <div class="loader-section section-right"></div>
  
 </div>
-    <div id="wrapper" class="<?php echo $wrapper_class; ?>" style="background:#fff;">
+    <div id="wrapper" class="<?php echo $wrapper_class; ?>">
 		<nav class="navbar navbar-static-top navbar-top" role="navigation" style="margin-bottom: 0" >
 			<div class="navbar-header" style="background:#fff">
 				<div class="navbar-brand">
-					<div class="navbar-logo col-xs-3">
+					<div class="navbar-logo col-xs-12">
 						<img class="logo-image" alt="<?php echo $system_name; ?>" title="<?php echo $system_name; ?>" src="<?php echo $tastyigniter_logo; ?>"/>
 					</div>
-					<div class="navbar-logo col-xs-9">
-						<!-- <img class="logo-text" alt="<?php echo $system_name; ?>" title="<?php echo $system_name; ?>" src="<?php echo $site_logo; ?>"/> -->
-<!--						<a class="logo-text" href="--><?php //echo site_url('dashboard'); ?><!--">--><?php //echo $site_name; ?><!--</a>-->
+					<div class="">
+					<!-- <img class="logo-text" alt="<?php echo $system_name; ?>" title="<?php echo $system_name; ?>" src="<?php echo $site_logo; ?>"/> 
+					<a class="logo-text" href="<?php echo site_url('dashboard'); ?>"><?php echo $site_name; ?></a> -->
 					</div>
 				</div>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -114,7 +114,7 @@
             </div>
 
 			<?php if ($isLogged) { ?>
-				<div class="navbar-default sidebar" role="navigation" style="background:#fff;">
+				<div class="navbar-default sidebar" role="navigation">
 					<div class="sidebar-nav navbar-collapse">
 						<?php echo get_nav_menu(array(
 							'container_open'    => '<ul class="nav" id="side-menu">',
@@ -196,7 +196,7 @@
 				</ul>
 
 				<h1 class="navbar-heading">
-					<?php echo get_heading(); ?>
+					<!-- <?php echo get_heading(); ?> -->
 
 					<?php if (!empty($context_help)) { ?>
 						<a class="btn btn-help" role="button" data-toggle="collapse" href="#context-help-wrap" title="<?php echo lang('text_help'); ?>">

@@ -7,11 +7,11 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-xs-4 stat-icon">
-                                <span class="bg-red"><i class="fa fa-line-chart fa-2x"></i></span>
+                                <span class=""><i class="fa fa-line-chart fa-2x"></i></span>
                             </div>
                             <div class="col-xs-8 stat-content">
-                                <span class="stat-text text-red sales"><?php echo lang('text_dash_dash'); ?></span>
-                                <span class="stat-heading text-red"><?php echo lang('text_total_sale'); ?></span>
+                                <span class="stat-text  sales"><?php echo lang('text_dash_dash'); ?></span>
+                                <span class="stat-heading "><?php echo lang('text_total_sale'); ?></span>
                             </div>
                         </div>
                     </div>

@@ -68,7 +68,7 @@ $lang['text_filter_collection'] 	        = 'Collection';
 $lang['text_filter_search'] 	            = 'Search by name, city or state';
 $lang['text_filter_no_match'] 			    = 'No location found';
 
-$lang['column_area_charge'] 	            = 'Delivery Charge';
+$lang['column_area_charge'] 	            = 'Delivery Charge' ;
 $lang['column_area_min_total'] 			    = 'Min Total';
 $lang['column_area_name'] 			        = 'Name';
 

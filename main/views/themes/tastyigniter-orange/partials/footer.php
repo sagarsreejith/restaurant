@@ -30,15 +30,11 @@ switch ($rsegment) {
                                         <li>
                                             <a href="#"> <i class="fa fa-twitter"></i> </a>
                                         </li>
-                                        <li>
-                                            <a href="#"> <i class="fa fa-google-plus"></i> </a>
-                                        </li>
+                                     
                                         <li>
                                             <a href="#"> <i class="fa fa-instagram"></i> </a>
                                         </li>
-                                        <li>
-                                            <a href="#"> <i class="fa fa-tripadvisor"></i> </a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                                 <div class="text_ft">

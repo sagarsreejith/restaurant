@@ -3559,8 +3559,12 @@ color:#fff;
 .header-2 .topbar {background: #6f1e31;; }
 
 .topbar { position: relative;z-index: 1000;padding: 5px 0; }
-.topbar ul li { display: inline-block; color: #fff; font-size: 13px; font-weight: normal;  }
-.topbar ul{margin:0;}
+.topbar ul li { display: inline-block; color: #fff; font-size: 16px; font-weight: normal; padding-left:40px; }
+.topbar-right ul li a{font-size: 16px !important; font-weight: normal;text-decoration:none;color:#fff};
+.topbar .topbar-right ul{margin:0 !important;float: left;}
+.topbar_ul{
+  margin:0 !important;
+}
 .topbar ul li a { color: #fff; font-size: 13px; font-weight: normal; font-style: normal; }
 .topbar-left { transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; }
 .topbar-left ul li i { margin-right: 5px; color: #fff; }
@@ -3729,15 +3733,14 @@ color: #6f6767;
 .phone_bg{
   background: url(../../../../../assets/images/icon/phone.svg);
   content: "";
-  height: 40px;
+  height: 30px;
   position: absolute;
-  width: 40px;
+  width: 30px;
   background-size: 25px;
   background-repeat: no-repeat;
   margin-left: 4px;
-  right:75px;
+  right: 90px;
   top: -2px;
-
 }
 
 /*--*/
@@ -3854,4 +3857,49 @@ background-color: #45a049;
 }
 .responsive_cart{
   padding: 60px 15px !important;
+}
+.contact_page .contact-box .cnt_div i{
+ padding: 4px 7px;
+  color: #fff;
+}
+.contact_page .cnt_div h4{
+  margin-bottom: 0px ;
+  text-align:center;
+
+}
+.contact_page .cnt_div p{
+
+text-align:center;
+
+}
+.contact_page .cnt_div{
+  float:none;
+}
+.cont_clr_contact{
+  float:left;
+}
+
+#order_now .modal-backdrop.in{
+  opacity: .1;
+}
+#order_now  .modal-backdrop{
+  background-color: #6f1e30;
+}
+#order_now .modal-dialog{
+  margin: 190px auto;
+}
+#order_now .modal-content{
+border-radius: 0px; 
+}
+.topbar-right p{
+  margin-bottom: 0;
+
+    color: #fff;
+}
+.track_li a{
+  border: 1px dotted #fff;
+  padding: 4px;
+}
+.banner_img_st img{
+  padding: 20px 0;
 }

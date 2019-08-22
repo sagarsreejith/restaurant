@@ -106,7 +106,7 @@
 									</td>
 									<td class="left"><?php echo $menu['category_name']; ?></td>
 									<td class="left"><?php echo ($menu['stock_qty'] < 1) ? '<span class="red">' . $menu['stock_qty'] . '</span>' : $menu['stock_qty']; ?></td>
-									<td class="text-center"><?php echo ($menu['menu_status'] === '1') ? lang('text_enabled') : lang('text_disabled'); ?></td>
+									<td class="text-center"><?php echo ($menu['menu_status'] === 'Enabled') ? lang('text_enabled') : lang('text_disabled'); ?></td>
 									<td class="id"><?php echo $menu['menu_id']; ?></td>
 								</tr>
 							<?php } ?>
