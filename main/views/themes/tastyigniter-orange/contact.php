@@ -63,16 +63,16 @@
 
                                             <div class="content-wrap cont_clr <?php echo $class; ?>">
                                                 <?php if (!empty($default_local)) { ?>
-                                                    <div class="row">
-                                                        <div class="col-md-12 nopad">
+                                                    <div class="">
+                                                        <div class="col-md-12">
 
                                                             <div class="col-md-12  bottom-spacing">
-                                                                <div class="row contact">
+                                                                <div class="contact_page">
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
                                                                         <div class="contact-box">
-                                                                                <i class="fa fa-map-marker"></i>
+                                                                                
                                                                                 <div class="cnt_div">
-                                                                                    <h5>Address</h5>
+                                                                                    <h4><i class="fa fa-map-marker"></i> Address</h4>
                                                                                     <p>
                                                                                         <?php echo $location_name; ?>
                                                                                             <?php echo $location_address; ?>
@@ -84,9 +84,9 @@
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
                                                                         
                                                                         <div class="contact-box">
-                                                                            <i class="fa fa-phone"></i>
+                                                                          
                                                                             <div class="cnt_div">
-                                                                            <h5>Phone</h5>
+                                                                            <h3>   <i class="fa fa-phone"></i> Phone</h3>
                                                                             <p>
                                                                                 <?php echo $location_telephone; ?>
                                                                             </p>
@@ -96,18 +96,18 @@
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
 
                                                                         <div class="contact-box ">
-                                                                            <i class="fa fa-envelope-o"></i>
+                                                                           
                                                                             <div class="cnt_div">
-                                                                            <h5>Email</h5>
+                                                                            <h3>  <i class="fa fa-envelope-o"></i> Email</h3>
                                                                             <p> support@website.com</p>
                                                                         </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-3 col-md-3 col-sm-3">
                                                                         <div class="contact-box ">
-                                                                            <i class="fa fa-whatsapp"></i>
+                                                                           
                                                                             <div class="cnt_div">
-                                                                                <h5>Whatsapp</h5>
+                                                                                <h3>  <i class="fa fa-whatsapp"></i>Whatsapp</h3>
                                                                                 <p>949200202</p>
                                                                             </div>
                                                                         </div>

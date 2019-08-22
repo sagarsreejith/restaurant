@@ -4,27 +4,28 @@
 </style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
-<div id="heading">
+<!-- <div id="heading">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-section">                    
-                    <!-- <h3><?php echo lang('text_heading'); ?></h3> -->
+                     <h3><?php echo lang('text_heading'); ?></h3>
             </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<div class="clearfix"></div>
 <div class="container">
 <section class="track">
     <div class="track_part">
         <div class="track_head"><img src="assets/images/icon/track_order.png"></div>
         <form action="" id="tract_sec">
-            <div class="div_part">
-                 <div class="col-md-7 col-sm-7 col-xs-7">
+            <div class=" col-md-12 div_part">
+                 <div class="col-md-7 col-sm-9 col-xs-10 nopad">
                     <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
                 </div>
-                <div class="col-md-5 col-sm-5 col-xs-5">
+                <div class="col-md-5 col-sm-3 col-xs-2 nopad">
                     <!-- <label class="head_name" for="fname">Order Number</label> -->
                     <button type="submit" value="Submit" class="track_btn" >Submit </button>
                 </div>
@@ -36,9 +37,10 @@
             <div class="track_part">
                 <div id="myDIV">
                     <ul class="progressbar">
-                        <li <?php if($result['status_id'] === '11') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+                        <li <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
                         <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
                         <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
+                        <li <?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Completed</li>
                     </ul>
                 </div>
             </div>

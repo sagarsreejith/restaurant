@@ -105,3 +105,68 @@ Message-ID: &lt;5d5d49f7562e5@gmail.com&gt;
 Mime-Version: 1.0
 Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d5d49f7562f7&quot;
 </pre>
+ERROR - 2019-08-21 16:43:26 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 16:43:46 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 16:43:53 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-21 16:43:53 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 21 Aug 2019 16:43:52 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d5d4a98a1748@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d5d4a98a175e&quot;
+</pre>
+ERROR - 2019-08-21 16:43:54 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-21 16:43:54 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 21 Aug 2019 16:43:53 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d5d4a99aaac4@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d5d4a99aaae5&quot;
+</pre>
+ERROR - 2019-08-21 16:44:03 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 16:44:28 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 16:53:41 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-21 16:53:41 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 21 Aug 2019 16:53:40 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d5d4ce490513@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d5d4ce490528&quot;
+</pre>
+ERROR - 2019-08-21 16:53:42 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() D:\xampp\htdocs\out-rest\system\libraries\Email.php 1888
+ERROR - 2019-08-21 16:53:42 --> Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br /><pre>Date: Wed, 21 Aug 2019 16:53:41 +0300
+From: &quot;Zalatimo Sweets&quot; &lt;sreejith.sagar@gmail.com&gt;
+Return-Path: &lt;sreejith.sagar@gmail.com&gt;
+Reply-To: &lt;sreejith.sagar@gmail.com&gt;
+User-Agent: TastyIgniter
+X-Sender: sreejith.sagar@gmail.com
+X-Mailer: TastyIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;5d5d4ce59b69f@gmail.com&gt;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_5d5d4ce59b6e6&quot;
+</pre>
+ERROR - 2019-08-21 17:07:06 --> Severity: Parsing Error --> syntax error, unexpected '||' (T_BOOLEAN_OR) D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\track-my-order.php 39
+ERROR - 2019-08-21 17:07:09 --> Severity: Parsing Error --> syntax error, unexpected '||' (T_BOOLEAN_OR) D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\track-my-order.php 39
+ERROR - 2019-08-21 17:07:10 --> Severity: Parsing Error --> syntax error, unexpected '||' (T_BOOLEAN_OR) D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\track-my-order.php 39
+ERROR - 2019-08-21 17:12:28 --> Severity: Parsing Error --> syntax error, unexpected '||' (T_BOOLEAN_OR) D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\track-my-order.php 39
+ERROR - 2019-08-21 17:12:32 --> Severity: Parsing Error --> syntax error, unexpected '||' (T_BOOLEAN_OR) D:\xampp\htdocs\out-rest\main\views\themes\tastyigniter-orange\track-my-order.php 39
+ERROR - 2019-08-21 17:28:31 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 17:28:47 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 17:28:50 --> Could not find the language line "label_customer"
+ERROR - 2019-08-21 17:28:53 --> Could not find the language line "label_customer"
