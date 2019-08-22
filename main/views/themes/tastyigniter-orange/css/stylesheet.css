@@ -230,10 +230,11 @@ text-decoration: none;
   color: #fff;
   right: 0;
   position: absolute;
-  top: 8px;
+  top: 21px;
   margin-bottom: 0;
   margin-top: 0;
   background: #6f1e30;
+
 }
 #main-header .btn-navbar.navbar-toggle i:before {
 content: "\f0c9";
@@ -1776,5 +1777,7 @@ background:#f8f8f8;
 }
 
 
-
+.align_span{
+  margin-left: -189px;
+}
 

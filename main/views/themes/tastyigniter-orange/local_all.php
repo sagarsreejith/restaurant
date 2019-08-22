@@ -88,16 +88,16 @@
 													<?php } ?> 
 													 
 													<li class="hidden-xs">
-                                    <?php if ($opening_status !== 'closed') { ?>
-                                   
-                                       <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
-                                       <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
-                                       <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
-                                       <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
-                                       <?php } ?>
-                                     
-                                    <?php } ?> 
-                                    </li>
+														<?php if ($opening_status !== 'closed') { ?>
+													
+														<?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
+														<span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
+														<?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
+														<span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
+														<?php } ?>
+														
+														<?php } ?> 
+                                   					 </li>
 
 													<li class="text-muted">
 													<i class="fa fa-motorcycle"></i>
@@ -115,11 +115,13 @@
 												
 													
 													<li class="text-muted">
-													<i class="fa fa-user"></i>
+												
 														<?php if ($location['has_collection']) { ?>
 															<?php if ($location['collection_status'] === 'open') { ?>
+																<i class="fa fa-user"></i>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $location['collection_time'])); ?>
 															<?php } else if ($location['collection_status'] === 'opening') { ?>
+																<i class="fa fa-user"></i>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $location['collection_time'])); ?>
 															<?php } else { ?>
 																<?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
