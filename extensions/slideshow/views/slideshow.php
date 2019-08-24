@@ -23,7 +23,7 @@
 </style>
 <div class="background_images fadeIn">
 
-<img src="assets/images/baoli.jpg">
+<img src="assets/images/icon/slider_image2.webp">
 
 <!-- <img src="assets/images/d2.jpg"> -->
 </div>

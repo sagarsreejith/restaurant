@@ -126,14 +126,14 @@ class Local_module extends Main_Controller {
 
 			$delivery = (isset($condition[0]) AND $condition[0] > 0) ? $this->currency->format($condition[0]) : $this->lang->line('text_free_delivery');
 			$con = (isset($condition[1])) ? $condition[1] : 'above';
-			$total = (isset($condition[2]) AND $condition[2] > 0) ? $this->currency->format($condition[2]) : $this->lang->line('text_no_min_total');
+		$total = (isset($condition[2]) AND $condition[2] > 0) ? $this->currency->format($condition[2]) : $this->lang->line('text_no_min_total');
 
 			if ($count === 1 AND isset($condition[0]) AND $condition[0] > 0) {
-				$data['text_delivery_condition'] .= sprintf($this->lang->line('text_delivery_charge'), '');
+				$data['text_delivery_condition'] .= sprintf($this->lang->line('text_delivery_charge'), ' '). " ";
 			}
 
 			if ($con === 'all') {
-				$data['text_delivery_condition'] .= sprintf($conditions['all'], $delivery);
+				$data['text_delivery_condition'] .= sprintf($conditions['all'], $delivery) . "</br>";
 			} else if ($con === 'above') {
 				$data['text_delivery_condition'] .= sprintf($conditions[$con], $delivery, $total) . ', ';
 			} else if ($con === 'below') {

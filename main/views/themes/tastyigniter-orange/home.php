@@ -279,7 +279,7 @@
 
                 <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 " style="background-image: url(assets/images/bg_banner.jpg);">
 
-                    <div class=" parallax bg-overlay-black-70" style="background-image: url(assets/images/resturant_img2.jpg);background-repeat:no-repeat;">
+                    <div class=" parallax bg-overlay-black-70" style="background-image: url(assets/images/icon/slider_image1.jpg);background-repeat:no-repeat;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
