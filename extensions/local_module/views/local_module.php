@@ -219,17 +219,18 @@
                                        <?php } ?>
                                     </li>
                                     <?php } ?>
-                                    <!-- <?php if (config_item('allow_reviews') !== '1') { ?>
+                                   <!-- <?php if (config_item('allow_reviews') !== '1') { ?>
                                     <li class="text-muted">
                                        <div class="rating rating-sm">
                                           <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
                                           <span class="small"><?php echo $text_total_review; ?></span>
                                        </div>
                                     </li>
-                                    <?php } ?> -->
-                                 <!-- <li class="text-muted">
+                                    <?php } ?>  -->
+                                 <li class="text-muted">
                                        <?php if ($has_delivery) { ?>
                                        <?php if ($delivery_status === 'open') { ?>
+                                          <i class="fa fa-motorcycle"></i>
                                        <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $delivery_time)); ?>
                                        <?php } else if ($delivery_status === 'opening') { ?>
                                        <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_starts'), $delivery_time)); ?>
@@ -237,10 +238,11 @@
                                        <?php echo sprintf(lang('text_delivery_time_info'), lang('text_is_closed')); ?>
                                        <?php } ?>
                                        <?php } ?>
-                                 </li> -->
-                                    <!-- <li class="text-muted">
+                                 </li> 
+                                    <li class="text-muted">
                                        <?php if ($has_collection) { ?>
                                        <?php if ($collection_status === 'open') { ?>
+                                          <i class="fa fa-user"></i>
                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $collection_time)); ?>
                                        <?php } else if ($collection_status === 'opening') { ?>
                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $collection_time)); ?>
@@ -248,9 +250,9 @@
                                        <?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
                                        <?php } ?>
                                        <?php } ?>
-                                    </li> -->
+                                    </li> 
                               
-                               <!-- <?php if ($opening_status !== 'closed') { ?>
+                                   <?php if ($opening_status !== 'closed') { ?>
                                     <li class="hidden-xs">
                                        <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
@@ -258,8 +260,10 @@
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo $opening_time; ?> - <?php echo $closing_time; ?></span>
                                        <?php } ?>
                                        </li>
-                                    <?php } ?>  -->
-                               <!-- <li class="text-muted">
+                                    <?php } ?>  
+
+
+                           <li class="text-muted">
                                        <?php if (!$has_delivery AND $has_collection) { ?>
                                        <?php echo lang('text_collection_only'); ?>
                                        <?php } else if ($has_delivery AND !$has_collection) { ?>
@@ -269,11 +273,15 @@
                                        <?php } else { ?>
                                        <?php echo lang('text_no_types'); ?>
                                        <?php } ?>
-                                 </li> -->
+                                 </li> 
+
+
+
+                                 
                                     <li class="text-muted"><?php echo lang('text_min_total'); ?> : <?php echo currency_format($min_total); ?></li>
                                     <?php if ($has_delivery) { ?>
                                     <li class="text-muted"><?php echo $text_delivery_condition; ?></li>
-                                     <!-- <li class="text-muted"><?php echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?></li> -->
+                                    <li class="text-muted"><?php echo ($delivery_charge > 0) ? sprintf(lang('text_delivery_charge'), currency_format($delivery_charge)) : lang('text_free_delivery'); ?></li>
                                     <?php } ?>
                               
                                                                            

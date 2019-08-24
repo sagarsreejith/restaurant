@@ -2329,19 +2329,19 @@ margin: 30px 0;
 }
 
 .list-inline>li{
-  padding-left:0;
+  padding-left:0; 
 }
 .alert-danger{
   float: left;
 }
 .cart-items ul li .name{
-  float: left;
+  float: left;  
   font-size: 12px;
 }
  .open_off{
 
-float:left;
-
+    float:left;
+    margin: 10px 0 !important;
 }
 .location_address_top .rating{
   padding: 0px 10px;

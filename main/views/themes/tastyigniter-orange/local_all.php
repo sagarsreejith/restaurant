@@ -59,10 +59,10 @@
 													</div>
 													<?php } ?>
 
-														<div class="rating rating-sm text-muted">
+														<!-- <div class="rating rating-sm text-muted">
 															<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
 															<span><?php echo sprintf(lang('text_total_review'), $location['total_reviews']); ?></span>
-														</div>
+														</div> -->
 
 											</div>
 										</div>
@@ -86,7 +86,8 @@
 													<?php } ?>
 													</li>
 													<?php } ?> 
-													 
+											
+
 													<li class="hidden-xs">
 														<?php if ($opening_status !== 'closed') { ?>
 													
@@ -129,6 +130,7 @@
 														<?php } ?>
 													</li>
 													
+
 													<li class="text-muted">
 													<i class="fa fa-dice-two"></i>
 													
