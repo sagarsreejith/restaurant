@@ -37,10 +37,10 @@
             <div class="track_part">
                 <div id="myDIV">
                     <ul class="progressbar">
-                        <li <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+                        <li <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-forward"></i></span> Order Placed</li>
                         <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
                         <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
-                        <li <?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Completed</li>
+                        <li <?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Completed</li>
                     </ul>
                 </div>
             </div>
