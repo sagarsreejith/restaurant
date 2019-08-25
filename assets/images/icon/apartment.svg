@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="Layer" style="filter: url(#flt1)">
+		<g id="Layer">
+			<path id="Layer" class="shp0" d="M28,48h-8v-8h8zM60,40h-8v-8h8zM76,40h-8v-8h8zM92,40h-8v-8h8zM60,24h-8v-8h8zM76,24h-8v-8h8zM92,24h-8v-8h8zM60,72h-8v-8h8zM76,72h-8v-8h8zM92,72h-8v-8h8zM60,88h-8v-8h8zM92,88h-8v-8h8zM60,104h-8v-8h8zM92,104h-8v-8h8zM60,56h-8v-8h8zM76,56h-8v-8h8zM92,56h-8v-8h8zM28,64h-8v-8h8zM28,80h-8v-8h8zM28,96h-8v-8h8zM28,112h-8v-8h8zM76,88h-8v-8h8zM124,64v56c0,4.42 -3.58,8 -8,8h-104c-4.42,0 -8,-3.58 -8,-8v-88c0,-4.42 3.58,-8 8,-8h24v-16c0,-4.42 3.58,-8 8,-8h56c4.42,0 8,3.58 8,8v48h8c4.42,0 8,3.58 8,8zM36,32h-24v88h24zM100,8h-56v112h24v-24h8v24h24zM116,112h-8v8h8zM116,96h-8v8h8zM116,80h-8v8h8zM116,64h-8v8h8z" />
+		</g>
+	</g>
+</svg>
