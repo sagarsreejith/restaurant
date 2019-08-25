@@ -61,23 +61,26 @@ $theme['head_tags'] = array(
 	
 		array(theme_url('tastyigniter-orange/js/select2.min.js'), 'select2', '25'),
 		
-		array(theme_url('tastyigniter-orange/revolution/js/jquery.themepunch.tools.min.js'), 'jquery.themepunch.tools.min', '26'),
+	//	array(theme_url('tastyigniter-orange/revolution/js/jquery.themepunch.tools.min.js'), 'jquery.themepunch.tools.min', '26'),
 		
-		array(theme_url('tastyigniter-orange/revolution/js/jquery.themepunch.revolution.min.js'), 'jquery.themepunch.revolution.min', '27'),
+	//	array(theme_url('tastyigniter-orange/revolution/js/jquery.themepunch.revolution.min.js'), 'jquery.themepunch.revolution.min', '27'),
 		
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.actions.min.js'), 'revolution.extension.actions.min', '28'),
+	//	array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.actions.min.js'), 'revolution.extension.actions.min', '28'),
 		
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.carousel.min.js'), 'revolution.extension.carousel.min', '29'),
+	//	array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.carousel.min.js'), 'revolution.extension.carousel.min', '29'),
 		
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.kenburn.min.js'), 'revolution.extension.kenburn.min', '30'),
+	//	array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.kenburn.min.js'), 'revolution.extension.kenburn.min', '30'),
 		
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.layeranimation.min.js'), 'revolution.extension.layeranimation.min', '31'),
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.migration.min.js'), 'revolution.extension.migration.min', '32'),
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.migration.min.js'), 'revolution.extension.migration.min', '33'),
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.navigation.min.js'), 'revolution.extension.layeranimation.min', '34'),
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.parallax.min.js'), 'revolution.extension.layeranimation.min', '35'),
-		array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.slideanims.min.js'), 'revolution.extension.layeranimation.min', '36'),
-		array(theme_url('tastyigniter-orange/revolution/js/revolution-custom.js'), 'revolution.extension.layeranimation.min', '37'),
+		// array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.layeranimation.min.js'), 'revolution.extension.layeranimation.min', '31'),
+		// array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.migration.min.js'), 'revolution.extension.migration.min', '32'),
+		// array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.migration.min.js'), 'revolution.extension.migration.min', '33'),
+		// array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.navigation.min.js'), 'revolution.extension.layeranimation.min', '34'),
+		// array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.parallax.min.js'), 'revolution.extension.layeranimation.min', '35'),
+		// array(theme_url('tastyigniter-orange/revolution/js/extensions/revolution.extension.slideanims.min.js'), 'revolution.extension.layeranimation.min', '36'),
+		// array(theme_url('tastyigniter-orange/revolution/js/revolution-custom.js'), 'revolution.extension.layeranimation.min', '37'),
+		
+		array(theme_url('tastyigniter-orange/js/fontawesome.min.js'), 'fontawesome.min-js', '37'),
+		
 		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '38')
 
 

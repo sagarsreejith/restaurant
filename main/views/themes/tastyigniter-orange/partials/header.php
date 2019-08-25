@@ -151,7 +151,7 @@
                                                 </li>
                                                 <li>
                                                     <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
-                                                        <?php echo lang( 'menu_recent_order'); ?>
+                                                        <?php echo lang( 'menu_recent_order1'); ?>
                                                     </a>
                                                 </li>
                                                 <li>

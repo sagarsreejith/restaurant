@@ -674,7 +674,7 @@ padding: 0;
   }
   .nav-menus > li {
 	display: table-cell !important;
-	/* width: 1%; */
+	width: 1%;
 	float: none;
 	text-align: center;
   }
@@ -1776,8 +1776,4 @@ background:#f8f8f8;
   width: 100%;
 }
 
-
-.align_span{
-  margin-left: -189px;
-}
 

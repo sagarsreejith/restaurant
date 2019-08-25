@@ -125,7 +125,7 @@ h1.block-heading, h2.block-heading, h3.block-heading, h4.block-heading, h5.block
 }
 /** WRAPPER **/
 #wrapper {
-	background-color: #6f1e31;
+	background-color: #fff;
 	width: 100%;
 	padding-left: 0;
 }
@@ -560,9 +560,7 @@ h1.block-heading, h2.block-heading, h3.block-heading, h4.block-heading, h5.block
 	background-color: #6f1e31;
 }
 /** SIDE NAV **/
-.sidebar {
-	background-color: #6f1e31;
-}
+
 .sidebar .sidebar-nav.navbar-collapse {
 	border-color: #EEEEEE;
 	border-style: solid;
@@ -583,21 +581,21 @@ h1.block-heading, h2.block-heading, h3.block-heading, h4.block-heading, h5.block
 	user-select: none;
 }
 .sidebar .nav > li > a {
-	color: #fff;
+	color: #6f1e31;
 	cursor: pointer;
 	font-weight: normal;
 	transition: all 0.4s ease-in-out 0s;
 }
 .sidebar .nav > li > a:hover,
 .sidebar .nav > li > a:focus {
-	background-color: #e5e5e5;
-	border-left: 0px solid #93ABC6;
-	color: #4C4C4C;
+	background-color: #dddddd;
+	border-left: 0px solid #6f1e31;
+	color: #333 !important;
 }
 .sidebar ul > li.active > a,
 .sidebar ul > li > a.active {
-	background-color: #e5e5e5;
-	color: #4C4C4C;
+	background-color: #6f1e31;
+    color: #fff;
 }
 .sidebar .nav-second-level > li > a:hover, .sidebar .nav-third-level > li > a:hover,
 .sidebar .nav-second-level > li > a:focus, .sidebar .nav-third-level > li > a:focus,
@@ -1521,7 +1519,7 @@ a:focus {
 }
 .mini-statistics .panel .panel-body {
 	padding: 20px;
-	    background: #6f1e31;
+	    background: #fff;
 }
 .dashboard .row {
 	padding-right: 5px;
@@ -3009,11 +3007,11 @@ body .error-php {
 /** End Awesome Checkbox **/
 
 .stat-icon span{
-	background:#fff;
-	color:#6f1e31;
+    background: #6f1e31;
+    color: #fff;
 }
 .stat-content span{
-	color:#fff;
+	color:#6f1e31;
 }
 .text-primary{
 	color:#af3350;
@@ -3156,6 +3154,10 @@ body{
     height: 113px;
 }
 .input-group .input-group-addon{
-	 background-color: #ECF0F5; 
-   border: 1px solid #ECF0F5; 
+	 background-color: #6f1e31; 
+   border: 1px solid #6f1e31; 
+}
+.text-sm{
+	background-color: #ECF0F5 !important;
+    border: 1px solid #D2DCE7 !important;
 }

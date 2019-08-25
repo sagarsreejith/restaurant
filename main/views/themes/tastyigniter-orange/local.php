@@ -35,12 +35,12 @@
 
                 <div class="row wrap-vertical">
                     <ul id="nav-tabs" class="nav nav-tabs nav-tabs-line nav-menus menu_tabs">
-                        <li class="active"><a href="#local-menus" data-toggle="tab"><img src="../assets/images/icon/5aa.png" class="icon_cl1" ><img src="../assets/images/icon/6.png" class="icon_cl" style="display:none"><?php echo lang('text_tab_menu'); ?></a></li>
+                        <li class="active" id="menu"><a href="#local-menus" data-toggle="tab"><span class="icon_cl1" ></span><?php echo lang('text_tab_menu'); ?></a></li>
                         <!-- <?php if (config_item('allow_reviews') !== '1') { ?>
                         <li><a href="#local-reviews" data-toggle="tab"><img src="../assets/images/icon/4.png" class="icon_cl1" ><img src="../assets/images/icon/3.png" class="icon_cl" style="display:none"><?php echo lang('text_tab_review'); ?></a></li>
                         <?php } ?> -->
                         
-                        <li><a href="#local-information" data-toggle="tab"><img src="../assets/images/icon/2.png" class="icon_cl1" ><img src="../assets/images/icon/1.png" class="icon_cl" style="display:none"><?php echo lang('text_tab_info'); ?></a></li>
+                        <li id="info"><a href="#local-information" data-toggle="tab"><span  class="icon_cl2" ></span><?php echo lang('text_tab_info'); ?></a></li>
                         <?php if (!empty($local_gallery)) { ?>
                             <li><a href="#local-gallery" data-toggle="tab"><?php echo lang('text_tab_gallery'); ?></a></li>
                         <?php } ?>
