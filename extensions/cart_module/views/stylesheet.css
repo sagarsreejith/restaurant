@@ -249,16 +249,41 @@
     }
     #cart-buttons .btn {
         padding: 12px 15px;
-        */: ;
         position: absolute;
-        top: -33px;
-        padding: 5px 10px;
+        top: 2px;
+        padding: 0px 10px;
         margin: 10px 0;
         display: table;
         margin: 0px auto;
         text-align: center;
         color: #5c0f22;
         position: absolute;
+        background: none;
+        border: 2px solid #6f1e30;
+        color: #6f1e30;
+        font-size: 25px;
+        right: 11px;
+     
+    }
+
+    #cart-buttons .btn_cart{
+        padding: 12px 15px;
+    position: absolute;
+    top: -19px;
+    padding: 0px 10px;
+    margin: 10px 0;
+    display: table;
+    margin: 0px auto !important;
+    text-align: center;
+    color: #5c0f22;
+    position: relative;
+    background: none;
+    border: 2px solid #6f1e30;
+    color: #6f1e30;
+    font-size: 25px;
+ 
+    left:0;
+
     }
     #cart-buttons .order-total {
     font-weight: bold;

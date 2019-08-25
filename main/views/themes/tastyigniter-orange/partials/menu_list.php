@@ -193,12 +193,12 @@
 									<div class="menu-item-wrapper row">
 										<?php if ($show_menu_images === '1' AND !empty($menu['menu_photo'])) { ?>
 									
-											<div class="menu-thumb col-xs-12 col-sm-3 col-md-3 wrap-none wrap-right">
+											<div class="menu-thumb col-xs-12 col-sm-3 col-md-3 wrap-none wrap-right menu_img">
 												<img class="img-responsive img-thumbnail" alt="<?php echo $menu['menu_name']; ?>" src="<?php echo $menu['menu_photo']; ?>">
 											</div>
 										<?php } ?>
 
-										<div class="menu-content <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-12 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
+										<div class="menu-content menu_name <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-12 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
 											<span class="menu-name"><b><?php echo character_limiter($menu['menu_name'], 80); ?></b></span>
 											<span class="menu-desc small">
 												<?php echo character_limiter($menu['menu_description'], 120); ?>

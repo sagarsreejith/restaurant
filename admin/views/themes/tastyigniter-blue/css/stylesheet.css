@@ -132,8 +132,8 @@ h1.block-heading, h2.block-heading, h3.block-heading, h4.block-heading, h5.block
 #page-wrapper {
 	padding: 0 15px 15px;
 	min-height: 568px;
-	background-color: #E8ECF0;
-	border-bottom: 1px solid #E8ECF0;
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
 }
 @media (min-width: 768px) {
 	#page-wrapper {
@@ -1605,6 +1605,7 @@ a:focus {
 	border-color: #D2DCE7;
 }
 .panel-table .panel-heading .btn-filter > .fa {
+	color: #6f1e31 !important;
 	font-size: 16px;
 }
 .page-action .btn-filter > .fa-filter::after,
@@ -3160,4 +3161,15 @@ body{
 .text-sm{
 	background-color: #ECF0F5 !important;
     border: 1px solid #D2DCE7 !important;
+}
+.sidebar .nav-second-level > li > a:hover, .sidebar .nav-third-level > li > a:hover, .sidebar .nav-second-level > li > a:focus,.nav-second-level > li > a:hover, .sidebar .nav-third-level > li > a:focus
+{
+	color: #333 !important;
+	background-color: #dddddd;
+}
+
+
+.sidebar .nav-second-level > li.active > a, .sidebar .nav-third-level > li.active > a, .sidebar .nav-second-level > li > a.active, .sidebar .nav-third-level > li > a.active{
+	color: #fff !important;
+    background-color: #6c182acc;
 }

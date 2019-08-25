@@ -378,20 +378,20 @@
 
 
 											<?php if ($order_type === '1' AND $addresses) { ?>
-											<div class="form-group">
-												<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
-												<label for=""><?php echo lang('label_address'); ?>: </label>
-												<div class="text-subline offset-top-15"></div>
-												</div>
-												<div class="col-md-12 col-sm-12 col-xs-12 txt_lbl1">
-												<?php foreach ($addresses as $address) { ?>
-													<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
-														<address class="text-left"><?php echo $address['address']; ?></address>
-													<?php } ?>
+												<div class="form-group">
+													<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
+													<label for=""><?php echo lang('label_address'); ?>: </label>
+													<div class="text-subline offset-top-15"></div>
 													</div>
-												<?php } ?>
-											</div>
-										<?php } ?>
+													<div class="col-md-12 col-sm-12 col-xs-12 txt_lbl1">
+													<?php foreach ($addresses as $address) { ?>
+														<?php if (!empty($address['address_id']) AND $address_id == $address['address_id']) { ?>
+															<address class="text-left"><?php echo $address['address']; ?></address>
+														<?php } ?>
+														</div>
+													<?php } ?>
+												</div>
+											<?php } ?>
 									</div>
 
 
@@ -439,61 +439,68 @@
 											</div>
 
 									</div>
-								</div>
-						
-							
-										
-								<div class="row">
-									<div class="col-sm-12 form-group">
-									
-									
-									<?php if ($checkout_terms) {?>
+
+									<div class="row">
 										<div class="col-sm-12 form-group">
-											<div class="input-group btn_chk">
-												<span class="input-group-addon button-checkbox">
-													<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
-													<input type="checkbox" name="terms_condition" id="terms-condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
-												</span>
-												<span class="form-control ft_stt"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>
-											</div>
-											<?php echo form_error('terms_condition', '<span class="text-danger col-xs-12">', '</span>'); ?>
-										</div>
-										<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-body">
+										
+											
+											<?php if ($checkout_terms) {?>
+												<div class="col-sm-12 form-group">
+													<div class="input-group btn_chk">
+														<span class="input-group-addon button-checkbox">
+															<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_agree_terms'); ?></button>
+															<input type="checkbox" name="terms_condition" id="terms-condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
+														</span>
+														<span class="form-control ft_stt"><?php echo sprintf(lang('label_terms'), $checkout_terms); ?></span>
+													</div>
+													<?php echo form_error('terms_condition', '<span class="text-danger col-xs-12">', '</span>'); ?>
+												</div>
 
-												<h4>	Introduction</h4>
-<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
+												<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-body">
 
-These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+																	<h4>Introduction</h4>
+																	<p>These Website Standard Terms and Conditions written on this webpage
+																		shall manage your use of our website, Webiste Name accessible at Website.com.
+																		These Terms will be applied fully and affect to your use of this Website. 
+																		By using this Website, you agreed to accept all terms and conditions written in here.
+																		You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+																		Minors or people below 18 years old are not allowed to use this Website.
+																	</p>
 
-Minors or people below 18 years old are not allowed to use this Website.</p>
+																	<h4> Intellectual Property Rights</h4>
+																		<p>
+																			Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual
+																			property rights and materials contained in this Website.
+																			You are granted limited license only for purposes of viewing the material contained on this Website.
+																	</p>
 
-<h4> Intellectual Property Rights</h4>
-<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
 
-You are granted limited license only for purposes of viewing the material contained on this Website.</p>
-
-
+															</div>
+														</div>
 													</div>
 												</div>
+
+												</div>
+											<?php } ?>
+											
+
+											<div class="col-sm-12 form-group">
+												<label for=""><?php echo lang('label_ip'); ?></label>
+												<?php echo $ip_address; ?><br /><small><?php echo lang('text_ip_warning'); ?></small>
 											</div>
 										</div>
-										</div>
-									<?php } ?>
-
-
-									<div class="col-sm-12 form-group">
-										<label for=""><?php echo lang('label_ip'); ?></label>
-										<?php echo $ip_address; ?><br /><small><?php echo lang('text_ip_warning'); ?></small>
 									</div>
 								</div>
-							</div>
+							</div>			
+							
 						</form>
+					
 					</div>
 				</div>
-			</div>
+										
 			<?php echo get_partial('content_right', 'col-sm-4 col-md-4'); ?>
 			<?php echo get_partial('content_bottom'); ?>
 		</div>

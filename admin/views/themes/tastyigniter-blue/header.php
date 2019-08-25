@@ -117,7 +117,7 @@
 				<div class="navbar-default sidebar" role="navigation">
 					<div class="sidebar-nav navbar-collapse">
 						<?php echo get_nav_menu(array(
-							'container_open'    => '<ul class="nav" id="side-menu">',
+							'container_open'    => '<ul class="nav" id="side-menu" style="background:#fff;">',
 							'container_close'   => '</ul>',
 						)); ?>
 					</div>

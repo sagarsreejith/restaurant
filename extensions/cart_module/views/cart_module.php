@@ -195,8 +195,8 @@
 	</div>
 </div>
 <div id="cart-buttons" class="<?php echo (!$is_mobile AND !$is_checkout) ? 'visible-xs' : 'hide'; ?>">
-	<a class="btn btn-default cart-toggle" href="<?php echo site_url('cart') ?>" style="text-overflow:ellipsis; overflow:hidden;">
-		<!-- <?php echo lang('text_heading'); ?> --><i class="fa fa-step-forward" aria-hidden="true"></i>
+	<a class="btn btn_cart cart-toggle" href="<?php echo site_url('cart') ?>" style="text-overflow:ellipsis; overflow:hidden;">
+		<!-- <?php echo lang('text_heading'); ?> --><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 		<span class="order-total"><?php echo (!empty($order_total)) ? '&nbsp;&nbsp;-&nbsp;&nbsp;'.$order_total : ''; ?></span>
 	</a>
 </div>

@@ -2158,7 +2158,7 @@ margin: 30px 0;
   font-size: 30px;
 }
 #local-info .box-image dd{text-align:center;}
-
+#local-info{font-size: 13px; margin: 160px 0 0 !important;}
 
 }
 @media only screen and (max-width: 767px) {
@@ -2204,7 +2204,7 @@ margin: 30px 0;
   #main-header .navbar-nav > li > a{
     padding: 10px 15px;
   }
-  #local-info{font-size: 13px;}
+  #local-info{font-size: 13px; margin: 160px 0 0;}
 .contact-box {
   width: 100%;
   float: left;
@@ -2323,7 +2323,7 @@ margin: 30px 0;
 .location-list .panel-local .box-one dl {
   text-align: center;
 }
-#arabic-sweets img,#arabic-sweets .menu-name{margin:0 auto;display:table;}
+.menu_img img, .menu_name .menu-name{margin:0 auto;display:table;}
 .about {
   background-position: -256px 767px !important;
 }
