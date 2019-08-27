@@ -9,7 +9,7 @@
   box-shadow:0px 15px 10px -15px #c3bdbd;
   float: left;
   padding:10px;
-  background:#6f1e31;
+  
 }
 .step-item p{
   font-size: 14px;
@@ -208,8 +208,21 @@ border: 1px solid #6f1e30;}
 .white-bg {
 background: #ffffff;
 }
-
-
+.section-title1 h2:before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #6f1e30;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 0px;
+  }
+  .section-title1 {
+    margin-bottom: 10px;
+    padding:0;
+    margin: 70px 0;
+  }
 .section-title {
 margin-bottom: 10px;
 padding: 0 100px;
@@ -766,8 +779,8 @@ max-height:350px;
 .book-menu p{    font-size: 15px;
 color: #524e4e;
 text-align: center;
-margin: 80px 0;
-padding: 0 30px;}
+padding-top:80px;
+}
 .about-content p,.section-title p{
 color: #4a4d4f;
 }
@@ -778,7 +791,7 @@ margin:0 auto;
 .object_right_img{
   position: absolute;
   right: 0;
-  top: 686px;
+  top: 1037px;
 }
 
 .maskimg {
@@ -828,7 +841,7 @@ background:#601025 !important;
 *************************/
 .gallery { position: relative; }
 .isotope-filters { display: table; margin: 0 auto 50px; }
-.isotope-filters  button { border: none; margin: 2px; cursor: pointer; background: #f5f5f5; color: #626262; padding: 10px 15px; border-radius: 3px; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; font-size: 14px; padding: 10px 30px; margin-right: 10px; }
+.isotope-filters  button { border: none; margin: 2px; cursor: pointer;   background: linear-gradient(25deg,#e1e1e1,#ffffff); color: #626262; padding: 10px 15px; border-radius: 3px; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; font-size: 14px; padding: 10px 30px; margin-right: 10px; }
 .isotope-filters  button:focus { outline: none; outline-style: none; outline-offset: 0; }
 .isotope-filters  button.active, .isotope-filters  button:hover { background: #6f1e30; color: #ffffff; }
 .gallery .container-fluid { padding-left: 0; padding-right: 0; position: relative; }
@@ -1243,6 +1256,8 @@ position: absolute;
 top: 0;
 width: 100%;
 z-index: -1;
+background: linear-gradient(25deg,#6c182a,#6c182a);
+opacity: 0.5;
 }
 #login-form form{
 padding:18px;
@@ -2818,9 +2833,6 @@ Toggle Changes
   padding-left:0;
 }
 
-
-
-
 .menu_tabs>li>a .icon_cl{
   display: block !important;
   float: left;
@@ -3160,11 +3172,7 @@ a.gotop {
   top: 50%;
   width: 35px;
 }
-.about {
-  background: rgba(0, 0, 0, 0) url(../../../../../assets/images/abt.png) no-repeat;
-  background-position: -306px 566px;
-  transition: all 5s cubic-bezier(0.47, 0, 0.745, 0.715);
-}
+
 .book[data-book="book-1"] .front:before {
   background: url(../../../../../assets/images/menu-cover.png);
   position: absolute;
@@ -3600,7 +3608,7 @@ color:#fff;
 .edit_address_account{
   display: table;
   margin: 0px auto;
-  padding-top:80px;
+  padding-top:10px;
 }
 .edit_address_account a{
 
@@ -3664,9 +3672,7 @@ color:#fff;
   }
   .location_list li .fa{
   color: #6f1e30;
-  font-size: 20px;
-  margin-right: 5px;
-  width: 21px;
+  font-size: 16px; 
   }
   
   .goto_menu{       margin: 44px 0px;
@@ -4188,18 +4194,13 @@ li.active a span.icon_cl2{
   background: transparent;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 5px;
   font-weight: 300;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 20px auto;
-  width: 200px;
-  height: 20px;
-  padding: 25px 0;
+  /* width: 100%; */
+  /* height: 20px; */
+  padding: 16px;
   border: 3px solid #fff;
   overflow: hidden;
   display: inline-block;
@@ -4208,15 +4209,16 @@ li.active a span.icon_cl2{
   border-radius: 4px;
   box-shadow: 0 2px 25px rgb(111, 30, 48);
   background: #fff;
+  color: #692133;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 .order_btn:hover, .order_btn:active {
   text-decoration: none;
   color: #fff;
-  border-color: #6f1e30;
-  background: #6f1e30 !important;
+  border-color: #fff;
+  background: none !important;
 
-  box-shadow: 0 2px 25px rgb(255, 255, 255);
 }
 
 .order_btn-label {
@@ -4261,4 +4263,25 @@ li.active a span.icon_cl2{
 
 .align_span{
   margin-left: -77px;
+}
+.li_class:before {
+  content: '';
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   background-size: 20px;
+   background-image: url(../../../../../assets/images/icon/bag.png);
+   background-repeat: no-repeat;
+ 
+}
+.li_class{
+  margin-top:-7px;
+}
+
+
+.order-lists tr:nth-child(even){background: #f1f1f1;}
+.order-lists tr:nth-child(odd) {background: #FFF}
+
+.order-lists table{
+  border:1px solid #ccc;
 }

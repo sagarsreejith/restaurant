@@ -1516,7 +1516,7 @@ padding-right:0 !important;
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: 12px 0;
+  /* padding: 12px 0; */
 }
 
 .sticky .fa {
@@ -1611,9 +1611,10 @@ padding-right:0 !important;
     background: #6f1e30;
     width: 100%;
     position: fixed;
-    margin-top: 118px;
+    margin-top: 73px;
     float: left;
     z-index: 99;
+    box-shadow: 0 -2px 0 #e7ab5a;
   }
   #local-info {
     display: block;

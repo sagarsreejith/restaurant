@@ -1,23 +1,10 @@
-<style>
-.li_class:before {
-   content: '';
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background-size: 20px;
-    background-image: url(assets/images/icon/bag.png);
-    background-repeat: no-repeat;
-  
-}
-.li_class{
-   margin-top:-7px;
-}
-
-</style>
 
 <div class="">
 <div class="modal fade" id="order_now" role="dialog">
 <div class="modal-dialog  modal-dialog-centered modal_order_now">
+
+
+
    <div class="modal-content">
          <!-- <div class="img_log">
 				<img src="assets/images/bg10.jpg" class="" style="width:100%">
@@ -99,6 +86,7 @@
                </div>
             </div>
          </div>
+      
 		 <div class="clearfix"></div>
 		 
 		 <div id="local-alert" class="<?php echo ($location_search === TRUE) ? 'col-xs-12 col-sm-8 center-block' : 'col-sm-12' ?>">
@@ -118,21 +106,21 @@
       <div class="row">
          <?php if( $rsegment ==="home") { ?>
          <div class="order_now">
-           <div class="banner_img_st">  
+           <!-- <div class="banner_img_st">  
            
                <h4 class="Banner_header animated"><span class="wel_hd">Welcome to Zalatimo Sweets</span></h4>
-               <!-- <span class="line_banner"></span> -->
-               <img src="assets/images/icon/lin-img.png">
+            <span class="line_banner"></span> 
+              <img src="assets/images/icon/lin-img.png">
               
-         </div>
+         </div> -->
             <div class="btn_sec animated bounceIn">
-                  <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now"><span> </span>
+                  <!-- <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now"><span> </span>
                
                   <span class="order_btn-label">  Order Now</span>
 
                
                
-               </a>
+               </a> -->
             
             
 			   <?php if ($this->config->item('reservation_mode') === '1') { ?>
@@ -187,13 +175,13 @@
                <?php if($_COOKIE['order_type'] === '2') { ?>     
                  <div class="panel-body" id="panel-body">
                         <div class="row boxes">
-                              <div class="box-one col-xs-12 col-sm-12 col-md-6">
-                                 <div class="col-xs-12 col-sm-12 col-md-4">
+                              <div class="box-one col-xs-12 col-sm-6 col-md-6">
+                                 <div class="col-xs-12 col-sm-4 col-md-4">
                                     <?php if (!empty($location_image)) { ?>
                                     <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
                                     <?php } ?>
                                  </div>
-                                 <div class="col-xs-12 col-sm-12 col-md-8">
+                                 <div class="col-xs-12 col-sm-8 col-md-8">
                                  <dl <?php echo (!empty($location_image)) ? 'class="box-image"' : ''; ?>>
                                     <dd>
                                        <h4 class="loc_name_display"><?php echo $location_name; ?></h4>
@@ -219,7 +207,7 @@
                                           <span class="text-muted"><?php echo lang('text_closed'); ?></span>
                                           <?php } ?>
                                           <?php if ($opening_status !== 'closed') { ?>
-                                    <li class="hidden-xs">
+                                    <li class="">
                                        <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
                                        <?php } else if (!empty($opening_time) AND !empty($closing_time)) { ?>
@@ -302,7 +290,7 @@
                                 <div class="col-md-12 nopad">
 
                                        <div class="contact cnt">
-                                             <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
                                                    <div class="contact-box ">
                                                          <i class="fa fa-phone"></i>
                                                          <div class="cont_con">
@@ -311,7 +299,7 @@
                                                          </div>
                                                    </div>
                                              </div>
-                                             <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="contact-box ">
                                                       <i class="fa fa-envelope-o"></i>
                                                       <div class="cont_con">
@@ -320,7 +308,7 @@
                                                       </div>
                                                 </div>
                                              </div>
-                                             <div class="col-lg-4 col-md-4 col-sm-6 ">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="contact-box ">
                                                       <i class="fa fa-whatsapp"></i>
                                                       <div class="cont_con">

@@ -100,10 +100,28 @@
 														<?php } ?> 
                                    					 </li>
 
+														<li class="text-muted">
+													<i class="fa fa-dice-two"></i>
+													
+														<?php if (!$location['has_delivery'] AND $location['has_collection']) { ?>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+															<?php echo lang('text_only_collection_is_available'); ?>
+														<?php } else if ($location['has_delivery'] AND !$location['has_collection']) { ?>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+															<?php echo lang('text_only_delivery_is_available'); ?>
+														<?php } else if ($location['has_delivery'] AND $location['has_collection']) { ?>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+															<?php echo lang('text_offers_both_types'); ?>
+														<?php } else { ?>
+															<?php echo lang('text_offers_no_types'); ?>
+														<?php } ?>
+														
+													</li>
 													<li class="text-muted">
-													<i class="fa fa-motorcycle"></i>
+												
 														<?php if ($location['has_delivery']) { ?>
 															<?php if ($location['delivery_status'] === 'open') { ?>
+																<i class="fa fa-motorcycle"></i>
 																<?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $location['delivery_time'])); ?>
 															<?php } else if ($location['delivery_status'] === 'opening') { ?>
 																<?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_starts'), $location['delivery_time'])); ?>
@@ -113,13 +131,13 @@
 														<?php } ?>
 													</li>
 													
-												
+											
 													
-													<li class="text-muted">
+													<li class="text-muted li_class">
 												
 														<?php if ($location['has_collection']) { ?>
 															<?php if ($location['collection_status'] === 'open') { ?>
-																<i class="fa fa-user"></i>
+																<i class="fa fa-shopping-bag"></i>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $location['collection_time'])); ?>
 															<?php } else if ($location['collection_status'] === 'opening') { ?>
 																<i class="fa fa-user"></i>
@@ -131,20 +149,7 @@
 													</li>
 													
 
-													<li class="text-muted">
-													<i class="fa fa-dice-two"></i>
-													
-														<?php if (!$location['has_delivery'] AND $location['has_collection']) { ?>
-															<?php echo lang('text_only_collection_is_available'); ?>
-														<?php } else if ($location['has_delivery'] AND !$location['has_collection']) { ?>
-															<?php echo lang('text_only_delivery_is_available'); ?>
-														<?php } else if ($location['has_delivery'] AND $location['has_collection']) { ?>
-															<?php echo lang('text_offers_both_types'); ?>
-														<?php } else { ?>
-															<?php echo lang('text_offers_no_types'); ?>
-														<?php } ?>
-														
-													</li>
+					
 													
 													
 												</ul>
