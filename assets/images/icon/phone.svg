@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" width="33" height="33">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 1 0" /> </filter>
+		<image width="33" height="33" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAAAAXNSR0IB2cksfwAAAE5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxKKmWQAAABp0Uk5TADB/v//fr18QQOCgUCBgsJ/QgPDvz3DAkD+OZVaBAAABU0lEQVR4nH2S27aDIAxEEccWUPCG4vn/Hz2ESBXs6jx4gU3CJBHiUiPbFuja11uJb5IdLrX6sf+O+6YftBJWu5GYpgQmYL4dU8sK7277asO6l0dUD8jrd4OpYkY54HNqguHLqxoZ8tfasJetRBZ4XujgUqaopUwUcDA5pyfJl4QFbApBNj1XqipUT0EaGKaTKksaHYXvyQVtj89SrzFNYEtEDA9AjNFF4NzUCv9s6RLtAYozRm0PhAn+PhJiK8IhCINzdU4FqcxQjJBroBLSUSIlpc0F2dNtT2TNd9nj+5Xu5GOFHMYcsmGkScbSsqNyqtPMhXiJk4iTRb0Mt44ywtrJXxocfa+UnTOwKhpedhEwXfZoPhOg33Fi3Cf0fay1yWHMp5MOBSKGka4z77ceHMXkf1UsUVu3pNIQ405/PxFFvfWTlD8we5hvw1xBbln6eor+AdH1Dq0bFp+KAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="telephone-auricular-with-cable-svg.psd" style="filter: url(#flt1)" href="#img1" x="0" y="0" />
+</svg>
