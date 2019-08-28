@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt2"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt3"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt4"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt5"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt6"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt7"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt8"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt9"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt10"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt11"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt12"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt13"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+		<filter id="flt14"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.435   0 0 0 0 0.118   0 0 0 0 0.188   0 0 0 1 0" /> </filter>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { filter: url(#flt1);fill: #6f1e30 } 
+		.shp1 { filter: url(#flt2);fill: #6f1e30 } 
+		.shp2 { fill: #c7cfe2 } 
+		.shp3 { fill: #afb9d2 } 
+		.shp4 { fill: #8f96ac } 
+		.shp5 { fill: #9fa7bf } 
+		.shp6 { filter: url(#flt8);fill: #6f1e30 } 
+		.shp7 { filter: url(#flt9);fill: #6f1e30 } 
+		.shp8 { filter: url(#flt10);fill: #6f1e30 } 
+		.shp9 { fill: #707487 } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="shp0" d="M353.1,44.14v0c-4.87,0 -8.83,3.95 -8.83,8.83v97.1h17.66v-97.1c0,-4.88 -3.95,-8.83 -8.83,-8.83z" />
+		<path id="Layer" class="shp1" d="M388.41,79.45v0c-4.87,0 -8.83,3.95 -8.83,8.83v97.1h17.65v-97.1c0,-4.87 -3.95,-8.83 -8.83,-8.83z" />
+	</g>
+	<path id="Layer" class="shp2" d="M326.62,132.41h114.76c4.88,0 8.83,3.95 8.83,8.83v361.93h-123.59z" />
+	<g id="Layer" style="filter: url(#flt3)">
+		<path id="Layer" class="shp3" d="M326.62,503.17h123.59v-35.31h-123.59z" />
+		<path id="Layer" class="shp3" d="M317.79,450.21h132.41v-17.65h-132.41z" />
+	</g>
+	<g id="Layer" style="filter: url(#flt4)">
+		<path id="Layer" class="shp4" d="M414.9,450.21h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp4" d="M344.28,450.21h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp4" d="M379.59,450.21h17.65v-17.65h-17.65z" />
+	</g>
+	<path id="Layer" class="shp3" d="M317.79,414.9h132.41v-17.65h-132.41z" />
+	<g id="Layer" style="filter: url(#flt5)">
+		<path id="Layer" class="shp4" d="M414.9,414.9h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp4" d="M344.28,414.9h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp4" d="M379.59,414.9h17.65v-17.65h-17.65z" />
+	</g>
+	<path id="Layer" class="shp3" d="M317.79,379.59h132.41v-17.66h-132.41z" />
+	<g id="Layer" style="filter: url(#flt6)">
+		<path id="Layer" class="shp4" d="M414.9,379.59h17.66v-17.66h-17.66z" />
+		<path id="Layer" class="shp4" d="M344.28,379.59h17.66v-17.66h-17.66z" />
+		<path id="Layer" class="shp4" d="M379.59,379.59h17.65v-17.66h-17.65z" />
+	</g>
+	<path id="Layer" class="shp3" d="M317.79,344.28h132.41v-17.65h-132.41z" />
+	<path id="Layer" class="shp3" d="M317.79,308.97h132.41v-17.66h-132.41z" />
+	<path id="Layer" class="shp3" d="M317.79,273.65h132.41v-17.65h-132.41z" />
+	<path id="Layer" class="shp3" d="M317.79,238.35h132.41v-17.65h-132.41z" />
+	<path id="Layer" class="shp3" d="M317.79,203.03h132.41v-17.65h-132.41z" />
+	<path id="Layer" class="shp3" d="M317.79,167.72h132.41v-17.65h-132.41z" />
+	<path id="Layer" class="shp3" d="M326.62,503.17h-264.83v-494.34c0,-4.87 3.95,-8.83 8.83,-8.83h247.17c4.88,0 8.83,3.95 8.83,8.83z" />
+	<path id="Layer" class="shp4" d="M88.28,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<path id="Layer" class="shp5" d="M61.79,503.17h264.83v-70.62h-264.83z" />
+	<path id="Layer" class="shp6" d="M97.1,494.35v-35.31c0,-4.87 -3.95,-8.83 -8.83,-8.83c-4.87,0 -8.83,3.95 -8.83,8.83v35.31z" />
+	<path id="Layer" class="shp4" d="M123.59,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<path id="Layer" class="shp7" d="M132.41,494.35v-35.31c0,-4.87 -3.95,-8.83 -8.83,-8.83c-4.87,0 -8.83,3.95 -8.83,8.83v35.31z" />
+	<path id="Layer" class="shp4" d="M158.9,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<path id="Layer" class="shp8" d="M167.72,494.35v-35.31c0,-4.87 -3.95,-8.83 -8.83,-8.83c-4.87,0 -8.83,3.95 -8.83,8.83v35.31z" />
+	<path id="Layer" class="shp4" d="M194.21,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<path id="Layer" class="shp4" d="M229.52,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<path id="Layer" class="shp4" d="M264.83,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<path id="Layer" class="shp4" d="M300.14,414.9v0c-4.87,0 -8.83,-3.95 -8.83,-8.83v-353.1c0,-4.87 3.95,-8.83 8.83,-8.83v0c4.88,0 8.83,3.95 8.83,8.83v353.1c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	<g id="Layer" style="filter: url(#flt12)">
+		<path id="Layer" class="shp9" d="M308.97,494.35v-35.31c0,-4.87 -3.95,-8.83 -8.83,-8.83c-4.87,0 -8.83,3.95 -8.83,8.83v35.31z" />
+		<path id="Layer" class="shp9" d="M79.45,397.24h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,397.24h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,397.24h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,397.24h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,397.24h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,397.24h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,397.24h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp9" d="M79.45,344.28h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,344.28h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,344.28h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,344.28h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,344.28h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,344.28h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,344.28h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp9" d="M79.45,291.31h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,291.31h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,291.31h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,291.31h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,291.31h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,291.31h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,291.31h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp9" d="M79.45,238.35h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,238.35h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,238.35h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,238.35h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,238.35h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,238.35h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,238.35h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp9" d="M79.45,185.38h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,185.38h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,185.38h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,185.38h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,185.38h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,185.38h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,185.38h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp9" d="M79.45,132.41h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,132.41h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,132.41h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,132.41h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,132.41h17.66v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,132.41h17.65v-17.65h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,132.41h17.66v-17.65h-17.66z" />
+		<path id="Layer" class="shp9" d="M79.45,79.45h17.66v-17.66h-17.65z" />
+		<path id="Layer" class="shp9" d="M114.76,79.45h17.65v-17.66h-17.65z" />
+		<path id="Layer" class="shp9" d="M150.07,79.45h17.66v-17.66h-17.65z" />
+		<path id="Layer" class="shp9" d="M185.38,79.45h17.66v-17.66h-17.65z" />
+		<path id="Layer" class="shp9" d="M220.69,79.45h17.66v-17.66h-17.65z" />
+		<path id="Layer" class="shp9" d="M256,79.45h17.65v-17.66h-17.65z" />
+		<path id="Layer" class="shp9" d="M291.31,79.45h17.66v-17.66h-17.66z" />
+	</g>
+	<g id="Layer" style="filter: url(#flt13)">
+		<path id="Layer" class="shp4" d="M326.62,26.48h-264.83v-17.65c0,-4.87 3.95,-8.83 8.83,-8.83h247.17c4.88,0 8.83,3.95 8.83,8.83z" />
+		<path id="Layer" class="shp4" d="M459.03,512h-406.07c-4.87,0 -8.83,-3.95 -8.83,-8.83v0c0,-4.87 3.95,-8.83 8.83,-8.83h406.07c4.88,0 8.83,3.95 8.83,8.83v0c0,4.88 -3.95,8.83 -8.83,8.83z" />
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer" style="filter: url(#flt14)">
+	</g>
+</svg>
