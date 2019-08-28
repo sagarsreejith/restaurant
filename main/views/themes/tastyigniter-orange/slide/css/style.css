@@ -314,19 +314,7 @@
     color: #fff;
     background: #6f1e31;
 }
-.section-hero2 .phone-carousel .phone .header-slider:before{
-    background: rgba(0, 0, 0, 0) url(../../../../../assets/images/img/mockup_top.html) no-repeat scroll center center / cover;
-    border-radius: 0 0 50px 50px;
-    content: "";
-    height: 16px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    width: 50%;
-    z-index: 9;
-}
+
 /* Mobile slider css */
 .mobile-slider-area{
     position: relative;
@@ -351,23 +339,7 @@
     width: 60%;
 	z-index:111;
 }
-.mobile-slider::before {
-	background-image: url('../../../../../assets/images/img/mockup_top.png');
-	border-radius: 0 0 50px 50px;
-	content: "";
-	height: 18px;
-	left: 0;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 50%;
-	z-index: 9;
-	/* left: -20px; */
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+
 .mobile-slider.owl-carousel .owl-item img {
     max-width: 100%;
     width: auto;
@@ -397,7 +369,7 @@
 }
 
 .river-wave {
-    background: url('../../../../../../assets/images/img/wave.svg') repeat-x;
+    background: url('../../../../../../assets/images/icon/wave.svg') repeat-x;
     position: absolute;
     top: -100px;
     width: 6400px;

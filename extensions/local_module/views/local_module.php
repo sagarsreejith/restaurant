@@ -67,11 +67,12 @@
                            <div class="collection-toggle">
                            <select  class="js-example-templating js-states form-control select2-hidden-accessible form-control postcode-control input-lg" id="aioConceptPickup" data-select2-id="1" tabindex="8" aria-hidden="true" style="text-align:left; border-top-left-radius: 5px; border-top-right-radius: 5px;" name="search_query">
                               <option></option>
-                              <?php foreach($local_areas as $area){ ?>
-                                 <?php foreach($area['areas'] as $local){ ?>
-                                    <option <?php if($_COOKIE['pic_search'] == $local['govr_area_name_en']) { ?> selected="selected" <?php } ?>  class="<?php if(($local['is_disabled'] != 1) OR ($local['is_pickup'] === "0")) { echo 'gbh';} ?>"  value="<?php echo $local['govr_area_name_en']; ?>" data-select2-id="<?php echo $local['id']; ?>"  ><?php echo $local['govr_area_name_en']; ?></option>
+                                 <?php foreach($pickup_areas as $local){ ?>
+                                    <option value="<?php echo $local['location_id']; ?>" data-id="<?php echo $local['permalink']; ?>" 
+                                    <?php if($_COOKIE['pic_search'] == $local['location_id']) { ?> selected="selected" <?php } ?>  value="<?php echo $local['govr_area_name_en']; ?>">
+                                       <?php echo "<b>". $local['location_city']. " - </b>". $local['location_name']; ?>
+                                    </option>
                                  <?php } ?>
-                              <?php } ?>
                            </select>
                            </div>
                         </div>
@@ -162,7 +163,13 @@
                               </a>
                      </div>
                            </div>
-                          
+                           <?php if (!in_array($rsegment, array('local', 'locations'))) { ?>
+                           <div class="col-xs-12 col-sm-12 text-center">
+                              <a class="btn btn-primary btn-menus" href="<?php echo site_url('local?location_id='.$location_id).'#local-menus'; ?>"><i class="fa fa-cutlery"></i>
+                              <span>&nbsp;&nbsp;<?php echo lang('text_goto_menus'); ?></span>
+                              </a>
+                           </div>
+                           <?php } ?>
                         </div>
                      </div>
                      <?php } ?>
@@ -360,6 +367,11 @@
       order_type == false ? document.cookie = "del_search="+search_query+"; path=/" : document.cookie = "pic_search="+search_query+"; path=/";
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
+      if(order_type === 'pickup'){
+         //alert($("#aioConceptPickup").find(':selected').data("id"));
+         window.location.href = $("#aioConceptPickup").find(':selected').data("id");
+         return false;
+      }
    	//alert(order_type);
    	//return false;
    	$.ajax({

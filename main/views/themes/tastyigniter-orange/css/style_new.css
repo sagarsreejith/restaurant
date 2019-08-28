@@ -2840,7 +2840,6 @@ Toggle Changes
 }
 
 
-
 .menu_tabs>li.active>a .icon_cl, .menu_tabs>li.active>a:focus .icon_cl {
   display:none !important;
   }
@@ -3172,7 +3171,6 @@ a.gotop {
   top: 50%;
   width: 35px;
 }
-
 .book[data-book="book-1"] .front:before {
   background: url(../../../../../assets/images/menu-cover.png);
   position: absolute;

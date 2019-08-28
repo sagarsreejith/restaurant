@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-TastyIgniter
-============
 
 [TastyIgniter](http://tastyigniter.com/) is a free open source restaurant ordering and management system. TastyIgniter provides a professional and reliable platform for restaurants wanting to offer online ordering to their customers.
 
@@ -32,4 +29,3 @@ TastyIgniter is licensed under the [GNU General Public License version 3(GPLv3)]
 =======
 # restaurant
 Restaurant online solution
->>>>>>> cff7b4f7ddbda17d970de3687ffb191d393ab7a1

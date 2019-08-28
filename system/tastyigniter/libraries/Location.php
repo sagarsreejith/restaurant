@@ -74,7 +74,9 @@ class Location {
 				break;
 			}
 		}
-		isset($_COOKIE['selected_city']) ? $this->selected_city = $_COOKIE['selected_city'] : '';
+		//isset($_COOKIE['selected_city']) ? $this->selected_city = $_COOKIE['selected_city'] : '';
+
+		$this->selected_city = $_COOKIE['order_type'] == '1' ? $_COOKIE['del_search'] : $_COOKIE['pic_search'];
 
 		if (!$is_loaded) {
 			if (!isset($local_info['location_id']) OR empty($this->locations[$local_info['location_id']])) {
@@ -593,8 +595,6 @@ class Location {
 
 		$this->CI->load->model('Locations_model');
 		$locations = $this->CI->Locations_model->getRestLocation($search_query, $order_type);
-
-		
 
 		if($locations){
 			//$delivery_area = array('location_id' => $location_id, 'area_id' => $area_id);

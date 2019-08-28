@@ -311,6 +311,33 @@ class Reviews_model extends TI_Model {
 		return $result;
 	 }
 
+	 public function GetAllPickUpLoactions(){
+		$this->db->from('locations');
+		$this->db->select(['location_id', 'location_name' , 'location_address_1', 'location_address_2', 'location_city','offer_collection', 'offer_delivery']);
+		$this->db->where('offer_collection', 1);
+		$this->db->where('location_status', 1);
+		$query = $this->db->get();
+		$result = array();
+
+		if ($query->num_rows() > 0) {
+			$result = $this->addPermalink($query->result_array());
+			//$result = $query->result_array();
+		}
+		
+		return $result;
+	 }
+
+	public function addPermalink($array){
+		$final_Array = [];
+		foreach ($array as $area){
+			$perma_link = $this->permalink->getPermalink('location_id='.$area['location_id']);
+			$area['permalink'] = root_url('local').'/'. $perma_link['slug'];
+			//area['is_disabled'] = in_array($area['govr_area_name_en'], array_column($branch_locations, 'location_city'));
+			array_push($final_Array, $area);
+		}
+		return $final_Array;
+	}
+
 	public function getAllGovernates(){
 		$this->db->from('governates');
 		//$this->db->join('governate_areas', 'governate_areas.govr_id = governates.govr_id', 'inner');
@@ -341,7 +368,7 @@ class Reviews_model extends TI_Model {
 
 	 public function updateAreas($areas_array, $branch_locations){
 		 
-		 $final_Array = [];
+		$final_Array = [];
 		foreach ($areas_array as $area){
 			// $branches = array_column($branch_locations, 'location_city');
 			// $disable_status = array_search($area['govr_area_name_en'], $branches);

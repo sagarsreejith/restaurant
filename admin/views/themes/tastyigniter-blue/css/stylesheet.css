@@ -560,7 +560,6 @@ h1.block-heading, h2.block-heading, h3.block-heading, h4.block-heading, h5.block
 	background-color: #6f1e31;
 }
 /** SIDE NAV **/
-
 .sidebar .sidebar-nav.navbar-collapse {
 	border-color: #EEEEEE;
 	border-style: solid;
@@ -1518,7 +1517,7 @@ a:focus {
 	color: #A94442;
 }
 .mini-statistics .panel .panel-body {
-	padding: 20px;
+		padding: 20px;
 	    background: #fff;
 }
 .dashboard .row {
@@ -1538,14 +1537,6 @@ a:focus {
 	padding: 15px;
 	text-align: center;
 }
-.stat-content {
-}
-.stat-icon .fa {
-	/*transform: rotate(-15deg);*/
-	/*position: absolute;*/
-	/*right: 14px;*/
-	/*top: -25px;*/
-}
 .stat-content .stat-heading {
 	display: block;
 }
@@ -1555,8 +1546,6 @@ a:focus {
 	line-height: 36px;
 }
 /** DASHBOARD CHART PANEL **/
-.panel-chart .panel-heading {
-}
 .chart-responsive {
 	width: 100%;
 }
