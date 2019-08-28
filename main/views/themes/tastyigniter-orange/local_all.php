@@ -59,10 +59,10 @@
 													</div>
 													<?php } ?>
 
-														<div class="rating rating-sm text-muted">
+														<!-- <div class="rating rating-sm text-muted">
 															<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
 															<span><?php echo sprintf(lang('text_total_review'), $location['total_reviews']); ?></span>
-														</div>
+														</div> -->
 
 											</div>
 										</div>
@@ -86,7 +86,8 @@
 													<?php } ?>
 													</li>
 													<?php } ?> 
-													 
+											
+
 													<li class="hidden-xs">
 														<?php if ($opening_status !== 'closed') { ?>
 													
@@ -99,10 +100,28 @@
 														<?php } ?> 
                                    					 </li>
 
+														<li class="text-muted">
+													<i class="fa fa-dice-two"></i>
+													
+														<?php if (!$location['has_delivery'] AND $location['has_collection']) { ?>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+															<?php echo lang('text_only_collection_is_available'); ?>
+														<?php } else if ($location['has_delivery'] AND !$location['has_collection']) { ?>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+															<?php echo lang('text_only_delivery_is_available'); ?>
+														<?php } else if ($location['has_delivery'] AND $location['has_collection']) { ?>
+															<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+															<?php echo lang('text_offers_both_types'); ?>
+														<?php } else { ?>
+															<?php echo lang('text_offers_no_types'); ?>
+														<?php } ?>
+														
+													</li>
 													<li class="text-muted">
-													<i class="fa fa-motorcycle"></i>
+												
 														<?php if ($location['has_delivery']) { ?>
 															<?php if ($location['delivery_status'] === 'open') { ?>
+																<i class="fa fa-motorcycle"></i>
 																<?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $location['delivery_time'])); ?>
 															<?php } else if ($location['delivery_status'] === 'opening') { ?>
 																<?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_starts'), $location['delivery_time'])); ?>
@@ -112,16 +131,16 @@
 														<?php } ?>
 													</li>
 													
-												
+											
 													
-													<li class="text-muted">
+													<li class="text-muted ">
 												
 														<?php if ($location['has_collection']) { ?>
 															<?php if ($location['collection_status'] === 'open') { ?>
-																<i class="fa fa-user"></i>
+																<span class="li_class"></span>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $location['collection_time'])); ?>
 															<?php } else if ($location['collection_status'] === 'opening') { ?>
-																<i class="fa fa-user"></i>
+																<i class="fa fa-shopping-bag"></i>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $location['collection_time'])); ?>
 															<?php } else { ?>
 																<?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
@@ -129,20 +148,8 @@
 														<?php } ?>
 													</li>
 													
-													<li class="text-muted">
-													<i class="fa fa-dice-two"></i>
-													
-														<?php if (!$location['has_delivery'] AND $location['has_collection']) { ?>
-															<?php echo lang('text_only_collection_is_available'); ?>
-														<?php } else if ($location['has_delivery'] AND !$location['has_collection']) { ?>
-															<?php echo lang('text_only_delivery_is_available'); ?>
-														<?php } else if ($location['has_delivery'] AND $location['has_collection']) { ?>
-															<?php echo lang('text_offers_both_types'); ?>
-														<?php } else { ?>
-															<?php echo lang('text_offers_no_types'); ?>
-														<?php } ?>
-														
-													</li>
+
+					
 													
 													
 												</ul>

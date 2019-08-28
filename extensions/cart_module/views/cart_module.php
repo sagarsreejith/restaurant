@@ -4,8 +4,16 @@
 
 	<?php $order_type =  $_COOKIE['order_type'];?>
 		<div class="panel panel-default panel-cart <?php echo ($is_checkout) ? 'hidden-xs' : ''; ?>">
-			<div class="panel-heading">
+			<div class="panel-heading head_checkout">
 				<h3 class="panel-title"><?php echo lang('text_heading'); ?></h3>
+				<?php if (!in_array($rsegment, array('local', 'locations'))) { ?>
+                          
+                              <a class="btn btn-primary btn-menus" href="<?php echo site_url('local?location_id='.$location_id).'#local-menus'; ?>"><i class="fa fa-cutlery"></i>
+                              <span>&nbsp;&nbsp;<?php echo lang('text_goto_menus'); ?></span>
+                              </a>
+                          
+                           <?php } ?>
+				
 			</div>
 
 			<div class="panel-body">
@@ -195,8 +203,8 @@
 	</div>
 </div>
 <div id="cart-buttons" class="<?php echo (!$is_mobile AND !$is_checkout) ? 'visible-xs' : 'hide'; ?>">
-	<a class="btn btn-default cart-toggle" href="<?php echo site_url('cart') ?>" style="text-overflow:ellipsis; overflow:hidden;">
-		<!-- <?php echo lang('text_heading'); ?> --><i class="fa fa-step-forward" aria-hidden="true"></i>
+	<a class="btn btn_cart cart-toggle" href="<?php echo site_url('cart') ?>" style="text-overflow:ellipsis; overflow:hidden;">
+		<!-- <?php echo lang('text_heading'); ?> --><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 		<span class="order-total"><?php echo (!empty($order_total)) ? '&nbsp;&nbsp;-&nbsp;&nbsp;'.$order_total : ''; ?></span>
 	</a>
 </div>

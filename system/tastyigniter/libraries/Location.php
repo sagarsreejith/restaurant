@@ -596,6 +596,8 @@ class Location {
 		$this->CI->load->model('Locations_model');
 		$locations = $this->CI->Locations_model->getRestLocation($search_query, $order_type);
 
+		
+
 		if($locations){
 			//$delivery_area = array('location_id' => $location_id, 'area_id' => $area_id);
 

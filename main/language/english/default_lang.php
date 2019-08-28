@@ -22,9 +22,10 @@ $lang['menu_account'] 		                        = 'Main';
 $lang['menu_detail'] 		                        = 'Edit Details';
 $lang['menu_address'] 		                        = 'Address Book';
 $lang['menu_recent_order'] 		                    = 'Click Here';
+$lang['menu_recent_order1'] 		                = 'Orders';
 $lang['track_recent_order'] 		                = 'Track Orders';
 $lang['menu_recent_reservation'] 		            = 'Recent Reservations';
-$lang['menu_locations'] 		                    = 'Our Branches';
+$lang['menu_locations'] 		                    = 'Branches';
 $lang['menu_contact'] 		                        = 'Contact Us';
 $lang['menu_admin'] 		                        = 'Administrator';
 

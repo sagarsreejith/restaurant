@@ -452,15 +452,16 @@ disabled look for disabled choices in the results dropdown
 } */
 .select2-results .select2-disabled {
     /* text-decoration: line-through; */
-    background: #f4f4f4;
+background: #ffffff;
     display: list-item;
     cursor: default;
     color: #c9c4c4;
     /* text-decoration-color: rgba(255, 128, 128, 0.8); */
 }
 #select2-results-1 .select2-results .select2-result-selectable{
-    background: #6f1e30 !important;
-    color:#fff !important;
+    background:none !important;
+    color:#6f1e30 !important;
+    font-weight:800;
 }
 
 .select2-results .select2-selected {

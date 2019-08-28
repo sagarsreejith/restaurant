@@ -1,45 +1,27 @@
 <style>
-    a.gotop {
-        background: rgba(0, 0, 0, 0.5) url(assets/images/top.png) no-repeat scroll -1px -1px;
-        border: 1px solid #3b3b3b;
-        display: block;
-        height: 36px;
-        margin-top: -18px;
-        position: absolute;
-        right: 10px;
-        text-align: center;
-        top: 50%;
-        width: 35px;
-    }
-    
-    .about {
-        background: rgba(0, 0, 0, 0) url(assets/images/abt.png) no-repeat ;
-        background-position: -306px 566px;
-        transition: all 5s cubic-bezier(0.47, 0, 0.745, 0.715);
-    }
-    
-    .book[data-book="book-1"] .front:before {
-        background: url(assets/images/menu-cover.png);
-        position: absolute;
-        content: "";
-        width: 100%;
-        left: 3px;
-        right: 0px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        top: -6px;
-        height: 100%;
-    }
-    
-    .area-title h2:after {
-        background: rgba(0, 0, 0, 0) url((assets/images/red.png) no-repeat scroll center center / contain;
-        bottom: 0;
-        content: "";
-        height: 30px;
-        left: 0;
-        position: absolute;
-        width: 100%;
-    }
+  
+.header .main-menu {
+	background:#6f1e30;
+	z-index:999;
+	position:absolute !important;
+	width:100%;
+}
+.header .main-menu{
+    background:transparent !important;
+}
+.header .sticky {
+position: fixed;
+width: 100%;
+top: 0;
+animation: fadeInDown 0.8s both 0s;
+background: linear-gradient(5deg,#7a2c3d,#6f1e30) !important;
+}
+.box-icon-svg .icon-inner{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%)
+}
 </style>
 <?php echo get_header(); ?>
 
@@ -59,79 +41,87 @@
                 <div class="main_bg">
                     <div id="page-content" class="icon_sec">
                         <div class="container top-spacing-10">
-                            <div class="content-wrap">
-                                <div id="order-steps" class="row">
-                                    <div class="col-md-3 col-sm-3 col-xs-6">
-                                        <div class="step-item">
-                                            <div class="icon">
-                                                <i class="fa fa-search"></i>
-                                                <h4><?php echo lang('text_step_one'); ?></h4>
-                                            </div>
-
-                                            <!--  <p><?php echo lang('text_step_search'); ?></p>-->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-3 col-xs-6">
-                                        <div class="step-item">
-                                            <div class="icon">
-                                                <i class="fa fa-mouse-pointer"></i>
-                                                <h4><?php echo lang('text_step_two'); ?></h4>
-                                            </div>
-
-                                            <!-- <p><?php echo lang('text_step_choose'); ?></p>-->
-                                        </div>
-                                    </div>
-                                    <div class="clearfix visible-xs"></div>
-                                    <div class="col-md-3 col-sm-3 col-xs-6">
-                                        <div class="step-item">
-                                            <div class="icon">
-                                                <i class="fa fa-credit-card"></i>
-                                                <h4><?php echo lang('text_step_three'); ?></h4>
-                                            </div>
-
-                                            <!--  <p><?php echo lang('text_step_pay'); ?></p>-->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-3 col-xs-6">
-                                        <div class="step-item">
-                                            <div class="icon">
-                                                <i class="fa fa-heart"></i>
-                                                <h4><?php echo lang('text_step_four'); ?></h4>
-                                            </div>
-
-                                            <!-- <p><?php echo lang('text_step_enjoy'); ?></p>-->
-                                        </div>
-                                    </div>
+                            
+                                            
+                            <div class="col-md-6 col-lg-3 icon-box">
+                            
+                                <div class="box-icon-svg">
+                                <div class="box-icon-svg-inner">
+                                    <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                    </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-search"></i></span>
                                 </div>
-                                <?php echo get_partial('content_bottom'); ?>
+                                <div class="box-icon-svg-caption">
+                                    <h4><?php echo lang('text_step_one'); ?></h4>
+                                   
+                                </div>
+                                </div>
+                            
                             </div>
+                            <div class="col-md-6 col-lg-3 wow-outer">
+                            
+                                <div class="box-icon-svg">
+                                <div class="box-icon-svg-inner">
+                                    <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                    </svg><span class="icon-lg-2 icon-inner icon-white">  <i class="fa fa-mouse-pointer"></i></span>
+                                </div>
+                                <div class="box-icon-svg-caption">
+                                    <h4><?php echo lang('text_step_two'); ?></h4>
+                                
+                                </div>
+                                </div>
+                        
+                            </div>
+                                <div class="col-md-6 col-lg-3 wow-outer">
+                                
+                                    <div class="box-icon-svg">
+                                    <div class="box-icon-svg-inner">
+                                        <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                        <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                        </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                    <div class="box-icon-svg-caption">
+                                        <h4><?php echo lang('text_step_three'); ?></h4>
+                                       
+                                    </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                
+                                    <div class="box-icon-svg">
+                                    <div class="box-icon-svg-inner">
+                                        <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                        <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                        </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-heart"></i></span>
+                                    </div>
+                                    <div class="box-icon-svg-caption">
+                                        <h4><?php echo lang('text_step_four'); ?></h4>
+                                        
+                                    </div>
+                                    </div>
+                                
+                                </div>
+                     
                         </div>
                     </div>
 
                 </div>
 
 
-
-               
-                            
+       
                 <section class="about" id="about">
-
-                    <div class="page-section-ptb">
-                        <div class="object-right object_right_img animated fadeIn ">
+                <div class="object-right object_right_img animated fadeIn ">
                             <img class="img-responsive img1 " src="assets/images/02.png" alt="">
                         </div>
-
+                    <div class="">
+                       
+                        <div >  <img class="img-responsive book-menu_img " src="assets/images/abtt.png" style="position:absolute;opacity: 0.9;"> </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
-                                    <div class="section-title text-center">
-                                        <div class="title-separator">
-                                            <!-- <img src="assets/images/food_icon.png"> -->
-                                            <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Welcome to</span>Zalatimo Sweets</h2>
-                                        </div>
-
-                                        <p>Whatever your occasion, We makes it one to remember!</p>
-                                    </div>
+                                   
                                 </div>
                             </div>
 
@@ -139,12 +129,22 @@
 
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-5 col-md-5 col-sm-12 text-right">
-                                            <img class="img-responsive book-menu_img " src="assets/images/about.png">
+                                        <div class="col-lg-4 col-md-4 col-sm-12 ">
+                                        <div class="section-title1 text-center">
+                                        <div class="title-separator">
+                                            <!-- <img src="assets/images/food_icon.png"> -->
+                                            <h2 class="h2_sttt"> <span class="text-orange  padin_rt">About</span>Us</h2>
                                         </div>
-                                        <div class="col-lg-7 col-md-7 col-sm-12">
+
+                                        <span style="      color: #7e3545;
+    font-weight: 800;
+    font-size: 15px;
+">Whatever your occasion, We makes it one to remember!</span>
+                                    </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-12 col-md-offset-right-1 ">
                                             <p>
-                                                We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, 
 
                                             </p>
                                         </div>
@@ -173,6 +173,8 @@
                                     <button data-filter=".Manakeesh">Manakeesh</button>
                                     <button data-filter=".Sandwiches">Sandwiches</button>
                                     <button data-filter=".Appetizer"> Appetizer</button>
+                                    <button data-filter=".emb"> Embains</button>
+
                                  
                                 </div>
                             </div>
@@ -279,13 +281,121 @@
 
                 <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 " style="background-image: url(assets/images/bg_banner.jpg);">
 
-                    <div class=" parallax bg-overlay-black-70" style="background-image: url(assets/images/resturant_img2.jpg);background-repeat:no-repeat;">
+                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background-image: url(assets/images/icon/slider_image1.jpg);background-repeat:no-repeat;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
 
                                     <div class="col-md-offset-2 col-md-8 banner_sec">
-                                        <img src="assets/images/banner2.png" style="max-height:500px;width:100%">
+                                        <div id="offer" style="max-height:500px;width:100%">
+                                                                                        <div class="ui">
+                                                <div class="ui_inner">
+                                                    <div class="ui_fruit">
+                                                    <img src="assets/images/icon/abt_bggg.png">
+                                                    </div>
+                                                
+                                                    <div class="ui_inner__selection">
+                                                    <input checked="checked" id="lovely" name="selection" type="radio">
+                                                    <label for="lovely">
+                                                        <div class="selected l">Offer</div>
+                                                        <div class="ui_inner__slider">
+                                                        <div class="sb">
+                                                            <img src="assets/images/icon/starburst2.png">
+                                                        </div>
+                                                        <div class="slide">
+                                                            <div class="slide_inner">
+                                                            <div class="slide_inner__left">
+                                                                <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                            
+                                                            </div>
+                                                            <div class="slide_inner__right">
+                                                                <h2>Offer Sweets</h2>
+                                                                <h3>$4.99 <span> Pack of 10</span></h3>
+                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                                                                
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </label>
+                                                    <input id="super" name="selection" type="radio">
+                                                    <label for="super">
+                                                        <div class="selected s">Happy Hours</div>
+                                                        <div class="ui_inner__slider">
+                                                        <div class="sb">
+                                                        <img src="assets/images/icon/starburst2.png">
+                                                        </div>
+                                                        <div class="slide">
+                                                            <div class="slide_inner">
+                                                            <div class="slide_inner__left">
+                                                            <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                            
+                                                            </div>
+                                                            <div class="slide_inner__right">
+                                                                <h2>Happy Hours</h2>
+                                                                <h3>$4.99 <span> Pack of 10</span></h3>
+                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                                                            
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </label>
+                                                    <input id="mega" name="selection" type="radio">
+                                                    <label for="mega">
+                                                        <div class="selected m">Eid Offer</div>
+                                                        <div class="ui_inner__slider">
+                                                        <div class="sb">
+                                                        <img src="assets/images/icon/starburst2.png">
+                                                        </div>
+                                                        <div class="slide">
+                                                            <div class="slide_inner">
+                                                            <div class="slide_inner__left">
+                                                            <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                                <div class="firework">
+                                                            
+                                                                </div>
+                                                            </div>
+                                                            <div class="slide_inner__right">
+                                                                <h2>Eid Offer</h2>
+                                                                <h3>$4.99 <span> Pack of 10</span></h3>
+                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                                                                
+                                                            
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </label>
+                                                    <input id="huge" name="selection" type="radio">
+                                                    <label for="huge">
+                                                        <div class="selected h">Special Sweets</div>
+                                                        <div class="ui_inner__slider">
+                                                        <div class="sb">
+                                                            <img src="assets/images/icon/starburst2.png">
+                                                        </div>
+                                                        <div class="slide">
+                                                            <div class="slide_inner">
+                                                            <div class="slide_inner__left">
+                                                                <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                                <div class="firework">
+                                                                
+                                                                </div>
+                                                            </div>
+                                                            <div class="slide_inner__right">
+                                                                <h2>Special Sweets</h2>
+                                                                <h3>$9.99 <span> Pack of 10</span></h3>
+                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
+                                                            
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -296,6 +406,41 @@
         
            
                 <div class="clearfix"></div>
+
+
+                <!--Modal: Login with Avatar Form-->
+<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" alt="avatar" class="rounded-circle img-responsive">
+      </div>
+      <!--Body-->
+      <div class="modal-body text-center mb-1">
+
+        <h5 class="mt-1 mb-2">Maria Doe</h5>
+
+        <div class="md-form ml-0 mr-0">
+          <input type="password" type="text" id="form29" class="form-control form-control-sm validate ml-0">
+          <label data-error="wrong" data-success="right" for="form29" class="ml-0">Enter password</label>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-cyan mt-1">Login <i class="fas fa-sign-in ml-1"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login with Avatar Form-->
+
+
 
                 <section class="map_sec">
                     <div class="col-lg-12 col-md-12">
@@ -500,7 +645,20 @@ $(window).scroll(function () {
     $('#map_home').each(_checkOffset('animated fadeIn'));
     $('.gal_img').each(_checkOffset('animated fadeIn'));
 	$('.contact-form').each(_checkOffset('animated fadeInLeft'));
-	$('.contact-map').each(_checkOffset('animated fadeInRight'));
+  $('.contact-map').each(_checkOffset('animated fadeInRight'));
+  
+
+	
+	
+	
+	jQuery(window).on('scroll', function() {
+		if ($(this).scrollTop() > 100) {
+			$('.header .main-menu').addClass("sticky");
+		} else {
+			$('.header .main-menu').removeClass("sticky");
+		}
+		});
+
 });
 
 </script>

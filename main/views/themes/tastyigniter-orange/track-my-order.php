@@ -15,10 +15,7 @@
 <div class="container">
 <section class="track">
     <div class="track_part">
-        <div class="track_head">
-            <!-- <img src="assets/images/icon/track_order.png"> -->
-            <h3>Track Order</h3>
-        </div>
+        <div class="track_head"><img src="assets/images/icon/track_order.png"></div>
         <form action="" id="tract_sec">
             <div class=" col-md-12 div_part">
                  <div class="col-md-7 col-sm-9 col-xs-10 nopad">
@@ -36,10 +33,10 @@
             <div class="track_part">
                 <div id="myDIV">
                     <ul class="progressbar">
-                        <li <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Order Placed</li>
+                        <li <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-forward"></i></span> Order Placed</li>
                         <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
                         <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
-                        <li <?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Completed</li>
+                        <li <?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Completed</li>
                     </ul>
                 </div>
             </div>

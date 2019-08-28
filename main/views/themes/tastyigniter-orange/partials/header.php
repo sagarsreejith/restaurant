@@ -72,9 +72,133 @@
 
         <body class="<?php echo $body_class; ?>">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
-                                         
-                <header id="main-header">
-                        <div class="header-2">
+            
+                                
+            <header class="header" >
+			<!-- Header Inner -->
+			<div class="main-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12">						
+							<!-- Logo -->
+							<div class="logo">
+                                    <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
+                                        <?php if (get_theme_options( 'logo_image')) { ?>
+                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>" >
+
+                                        <?php } else if (get_theme_options( 'logo_text')) { ?>
+                                        <?php echo get_theme_options( 'logo_text'); ?>
+                                        <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
+                                        <?php echo $this->config->item('site_name'); ?>
+                                        <?php } else { ?>
+                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>" >
+                                        <?php } ?>
+                                    </a>
+                                </div>
+							<!--/ End Logo -->
+							<div class="mobile-nav"></div>
+						</div>
+						<div class="col-md-9 col-sm-9">
+							<nav class="navbar menu navbar-default">
+								<div class="collapse navbar-collapse">
+									<!-- <ul id="nav" class="nav mobile-menu navbar-nav">
+										<li class="active"><a href="#hero-area">Home</a></li>
+										<li><a href="#features">Features</a></li>
+										<li><a href="#screenshot-area">Screenshots</a></li>
+										<li><a href="#team">Team</a></li>
+										<li><a href="#pricing">Pricing</a></li>
+										<li><a href="#faq">Faq</a></li>
+										<li><a href="#blog">News</a></li>
+										<li><a href="#contact">Contact</a></li>
+                                    </ul> -->
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a>
+                                        </li>
+                                        <li class=""><a href="<?php echo site_url('#about'); ?>">About</a>
+                                        </li>
+                                        <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
+                                        </li>
+
+                                        <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                        <li class="">
+                                            <a href="<?php echo site_url('reservation'); ?>">
+                                                <?php echo lang( 'menu_reservation'); ?>
+                                            </a>
+                                        </li>
+                                        <?php } ?>
+
+                                        <?php if ($this->customer->isLogged()) { ?>
+
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
+                                                <?php echo lang( 'menu_my_account'); ?> <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownLabel1">
+                                                <div class="top-arrow"></div>
+                                                <li class="hidden">
+                                                    <a href="#page-top"></a>
+                                                </li>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
+                                                        <?php echo lang( 'menu_recent_order1'); ?>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
+                                                        <?php echo lang( 'menu_my_account'); ?>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
+                                                        <?php echo lang( 'menu_address'); ?>
+                                                    </a>
+                                                </li>
+
+                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
+                                                        <?php echo lang( 'menu_recent_reservation'); ?>
+                                                    </a>
+                                                </li>
+                                                <?php } ?>
+
+                                                <li>
+                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
+                                                        <?php echo lang( 'menu_logout'); ?>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <?php } else { ?>
+
+                                        <li class="">
+                                            <a href="<?php echo site_url('local/all'); ?>">
+                                                <?php echo lang( 'menu_locations'); ?>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a  data-toggle="modal" data-target="#modalLoginAvatar">
+                                                <?php echo lang( 'menu_login'); ?>
+                                            </a>
+                                        </li>
+                                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
+                                        </li>
+                                        <!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
+
+                                        <?php } ?>
+
+                                    </ul>
+								</div> 
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+
+                <header id="">
+                        <!-- <div class="header-2">
                             <div class="topbar">
                                 <div class="container">
                                     <div class="row">
@@ -96,10 +220,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
            
-                    <div class="container">
+                    <!-- <div class="container">
                         <div class="row">
                             <div class="col-md-5 col-sm-4 ">
                                 <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
@@ -151,7 +275,7 @@
                                                 </li>
                                                 <li>
                                                     <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
-                                                        <?php echo lang( 'menu_recent_order'); ?>
+                                                        <?php echo lang( 'menu_recent_order1'); ?>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -194,15 +318,15 @@
                                         </li>
                                         <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
                                         </li>
-                                        <!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
+                                        <li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
 
-                                        <?php } ?>
+                                        <!-- <?php } ?>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --> 
                 </header>
 
                 <div id="page-wrapper" class="content-area">
@@ -234,6 +358,9 @@
                     </div>
 
 
+
+
+
                                 <script>
                                     $(document).ready(function(){
                                         $(document).on('click', function (e){
@@ -245,6 +372,13 @@
                                                     menu_opened === true){
                                                         $('#main-header-menu-collapse').collapse('toggle');
                                                 }
+                                                $('.toggle').on('click', function() {
+  $('.container').stop().addClass('active');
+});
+
+$('.close').on('click', function() {
+  $('.container').stop().removeClass('active');
+});
 
                                         });
                                     });    
