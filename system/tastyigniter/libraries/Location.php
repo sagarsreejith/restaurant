@@ -74,7 +74,9 @@ class Location {
 				break;
 			}
 		}
-		isset($_COOKIE['selected_city']) ? $this->selected_city = $_COOKIE['selected_city'] : '';
+		//isset($_COOKIE['selected_city']) ? $this->selected_city = $_COOKIE['selected_city'] : '';
+
+		$this->selected_city = $_COOKIE['order_type'] == '1' ? $_COOKIE['del_search'] : $_COOKIE['pic_search'];
 
 		if (!$is_loaded) {
 			if (!isset($local_info['location_id']) OR empty($this->locations[$local_info['location_id']])) {

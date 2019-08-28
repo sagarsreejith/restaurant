@@ -159,6 +159,7 @@ class Local_module extends Main_Controller {
 
 		$this->load->model('Reviews_model');
 		$data['local_areas'] = $this->Reviews_model->getAllGovernates();
+		$data['pickup_areas'] =  $this->Reviews_model->GetAllPickUpLoactions();
 		$total_reviews = $this->Reviews_model->getTotalLocationReviews($this->location->getId());
 		$data['text_total_review'] = sprintf($this->lang->line('text_total_review'), $total_reviews);
 

@@ -1,7 +1,3 @@
-<style>
-	
-
-</style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <!-- <div id="heading">
