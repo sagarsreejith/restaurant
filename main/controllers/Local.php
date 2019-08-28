@@ -399,8 +399,8 @@ class Local extends Main_Controller {
 		$filters['newest']['name'] = lang('text_filter_newest');
 		$filters['newest']['href'] = site_url('local/all?'.$url.'sort_by=newest');
 
-		$filters['rating']['name'] = lang('text_filter_rating');
-		$filters['rating']['href'] = site_url('local/all?'.$url.'sort_by=rating');
+		//$filters['rating']['name'] = lang('text_filter_rating');
+		//$filters['rating']['href'] = site_url('local/all?'.$url.'sort_by=rating');
 
 		$filters['name']['name'] = lang('text_filter_name');
 		$filters['name']['href'] = site_url('local/all?'.$url.'sort_by=name');

@@ -360,6 +360,7 @@
       order_type == false ? document.cookie = "del_search="+search_query+"; path=/" : document.cookie = "pic_search="+search_query+"; path=/";
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
+      alert(search_query);
       if(order_type === 'pickup'){
          //alert($("#aioConceptPickup").find(':selected').data("id"));
          window.location.href = $("#aioConceptPickup").find(':selected').data("id");
