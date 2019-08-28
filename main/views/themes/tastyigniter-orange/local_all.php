@@ -133,14 +133,14 @@
 													
 											
 													
-													<li class="text-muted li_class">
+													<li class="text-muted ">
 												
 														<?php if ($location['has_collection']) { ?>
 															<?php if ($location['collection_status'] === 'open') { ?>
-																<i class="fa fa-shopping-bag"></i>
+																<span class="li_class"></span>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $location['collection_time'])); ?>
 															<?php } else if ($location['collection_status'] === 'opening') { ?>
-																<i class="fa fa-user"></i>
+																<i class="fa fa-shopping-bag"></i>
 																<?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $location['collection_time'])); ?>
 															<?php } else { ?>
 																<?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>

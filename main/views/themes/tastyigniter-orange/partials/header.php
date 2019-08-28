@@ -177,7 +177,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="<?php echo site_url('account/login'); ?>">
+                                            <a  data-toggle="modal" data-target="#modalLoginAvatar">
                                                 <?php echo lang( 'menu_login'); ?>
                                             </a>
                                         </li>

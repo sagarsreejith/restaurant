@@ -6,7 +6,7 @@ $lang['text_tab_texts'] 		            = 'Text';
 
 $lang['text_find'] 				            = 'View menu';
 $lang['text_order_summary'] 	            = 'Order delicious food online';
-$lang['text_goto_menus'] 		            = 'Go to Menu';
+$lang['text_goto_menus'] 		            = 'Menu';
 $lang['text_location_summary'] 			    = 'We can deliver to you %s';
 $lang['text_enter_location'] 			    = 'Check if we can deliver to you';
 $lang['text_delivery_coverage'] 			= '<span class="text-danger align_span"></span>';
