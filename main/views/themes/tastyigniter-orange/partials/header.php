@@ -177,12 +177,88 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a  data-toggle="modal" data-target="#modalLoginAvatar">
-                                                <?php echo lang( 'menu_login'); ?>
-                                            </a>
+                                                <a href="<?php echo site_url('account/login'); ?>">
+                                                                    <?php echo lang('menu_login'); ?>
+                                                </a>
                                         </li>
-                                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
+                                        <li>
+                                                <a data-toggle="modal" data-target="#exampleModal"> login2</a>
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    
+
+                                                                <?php if ($this->alert->get('', 'alert')) { ?>
+                                    <div id="notification">
+                                        <?php echo $this->alert->display('', 'alert'); ?>
+                                    </div>
+                                    <?php } ?>
+                                        <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('label_email'); ?>" autofocus="" />
+                                                        <span class="input-group-addon">@</span>
+                                                    </div>
+                                                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
+                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                    </div>
+                                                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                                                <?php echo lang('button_login'); ?>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <a class="forgot_btn1  " href="<?php echo $reset_url; ?>">
+                                                                <?php echo lang('text_forgot'); ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                            <a class=" reg_btn1 text-right" style="" href="<?php echo $register_url; ?>">
+                                                                <?php echo lang('button_register'); ?>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </form>
+                                                                    
+
+                                                                </div>
+                                                                <!-- <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                               
                                         </li>
+                                        <!-- <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
+                                        </li> -->
                                         <!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
 
                                         <?php } ?>
@@ -197,137 +273,9 @@
 			<!--/ End Header Inner -->
 		</header>
 
-                <header id="">
-                        <!-- <div class="header-2">
-                            <div class="topbar">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                        <div class="topbar-right text-right">
-                                            <ul class="topbar_ul">
-                                            <li class="track_li"><a href="<?php echo site_url('track-order'); ?>"> Track Order </li>
-                                            <li><span class="phone_bg"></span> <a href="tel:+965 67678956" target="_blank"><p>949200202</p></a></li>
-                                            
-                                            
-                                            </ul>
-                                            
-                                        </div>
-                                        </div>
-            
-                        
-                                        </div>
-                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+               
+   
 
-           
-                    <!-- <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 col-sm-4 ">
-                                <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
-                                    <i class="fa fa-align-justify"></i>
-                                </button>
-                                <div class="logo">
-                                    <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
-                                        <?php if (get_theme_options( 'logo_image')) { ?>
-                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>" height="40">
-
-                                        <?php } else if (get_theme_options( 'logo_text')) { ?>
-                                        <?php echo get_theme_options( 'logo_text'); ?>
-                                        <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
-                                        <?php echo $this->config->item('site_name'); ?>
-                                        <?php } else { ?>
-                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>" height="40">
-                                        <?php } ?>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-sm-8 nopad">
-                                <div class="collapse navbar-collapse" id="main-header-menu-collapse">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a>
-                                        </li>
-                                        <li class=""><a href="<?php echo site_url('#about'); ?>">About</a>
-                                        </li>
-                                        <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
-                                        </li>
-
-                                        <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                        <li class="">
-                                            <a href="<?php echo site_url('reservation'); ?>">
-                                                <?php echo lang( 'menu_reservation'); ?>
-                                            </a>
-                                        </li>
-                                        <?php } ?>
-
-                                        <?php if ($this->customer->isLogged()) { ?>
-
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
-                                                <?php echo lang( 'menu_my_account'); ?> <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownLabel1">
-                                                <div class="top-arrow"></div>
-                                                <li class="hidden">
-                                                    <a href="#page-top"></a>
-                                                </li>
-                                                <li>
-                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
-                                                        <?php echo lang( 'menu_recent_order1'); ?>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
-                                                        <?php echo lang( 'menu_my_account'); ?>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
-                                                        <?php echo lang( 'menu_address'); ?>
-                                                    </a>
-                                                </li>
-
-                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                <li>
-                                                    <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
-                                                        <?php echo lang( 'menu_recent_reservation'); ?>
-                                                    </a>
-                                                </li>
-                                                <?php } ?>
-
-                                                <li>
-                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
-                                                        <?php echo lang( 'menu_logout'); ?>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <?php } else { ?>
-
-                                        <li class="">
-                                            <a href="<?php echo site_url('local/all'); ?>">
-                                                <?php echo lang( 'menu_locations'); ?>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="<?php echo site_url('account/login'); ?>">
-                                                <?php echo lang( 'menu_login'); ?>
-                                            </a>
-                                        </li>
-                                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
-                                        </li>
-                                        <li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
-
-                                        <!-- <?php } ?>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --> 
-                </header>
 
                 <div id="page-wrapper" class="content-area">
                     <?php if (get_theme_options('display_crumbs') === '1' AND ($breadcrumbs = get_breadcrumbs()) !== '') { ?>
@@ -352,12 +300,16 @@
                                             </div>
                                         </div>
                                     </div>
+                                  
+                                </div>
+                                <div class="pattern">
+                                    <img alt="" src="assets/images/white-pattern.png">
                                 </div>
                             </div>
                         <?php } ?>
                     </div>
 
-
+                   
 
 
 

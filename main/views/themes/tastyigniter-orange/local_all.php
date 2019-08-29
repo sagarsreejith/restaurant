@@ -177,6 +177,21 @@
 					</div>
 				</div>
 
+				<nav aria-label="Page navigation nav_branch">
+  <ul class="pagination pg-blue">
+    <li class="page-item ">
+      <a class="page-link" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link">1</a></li>
+    <li class="page-item active">
+      <a class="page-link">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link">3</a></li>
+    <li class="page-item ">
+      <a class="page-link">Next</a>
+    </li>
+  </ul>
+</nav>
 				
 			<?php echo get_partial('content_right', 'col-sm-3'); ?>
 			<?php echo get_partial('content_bottom'); ?>
@@ -184,4 +199,67 @@
 	</div>
 </div>
 </div>
+
+<div class="content-wrap cont_clr  cont_clr_contact col-md-12">
+                                                                                                    <div class="">
+                                                        <div class="col-md-12">
+
+                                                            <div class="col-md-12  bottom-spacing">
+                                                                <div class="contact_page">
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box">
+                                                                                
+                                                                                <div class="cnt_div">
+                                                                                    <h4><i class="fa fa-map-marker"></i> Address</h4>
+                                                                                    <p>
+                                                                                        Zalatimo Sweets - Kipco Branch                                                                                            Sharq Khaled Bin Al Waleed st, Shop No.6 ,,Sharq ,Kuwait City (Capital) ,                                                                                    </p>
+                                                                                </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        
+                                                                        <div class="contact-box">
+                                                                          
+                                                                            <div class="cnt_div">
+                                                                            <h4>   <i class="fa fa-phone"></i> Phone</h4>
+                                                                            <p>
+                                                                                +965 50392340                                                                            </p>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+
+                                                                        <div class="contact-box ">
+                                                                           
+                                                                            <div class="cnt_div">
+                                                                            <h4>  <i class="fa fa-envelope-o"></i> Email</h4>
+                                                                            <p> support@website.com</p>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                                        <div class="contact-box ">
+                                                                           
+                                                                            <div class="cnt_div">
+                                                                                <h4>  <i class="fa fa-whatsapp"></i>Whatsapp</h4>
+                                                                                <p>949200202</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                 
+                                                                                                </div>				
+
 <?php echo get_footer(); ?>
+<script>
+	$('li').click(function() {
+  $(this).addClass('active').siblings().removeClass('active');
+});
+	</script>

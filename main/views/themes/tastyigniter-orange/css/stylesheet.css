@@ -284,7 +284,7 @@ color: #fff !important;
 
 /*** Heading ***/
 #heading {
-  background: url(../images/bg2.jpg);
+  background: url(../../../../../assets/images/common_1.png);
     height: 261px;
     position: relative;
     width: 100%;
@@ -295,7 +295,7 @@ color: #fff !important;
     background-size: cover;
 }
 #heading:before{
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(109, 83, 89, 0.22);
   content: "";
   height: 100%;
   left: 0;
@@ -701,20 +701,23 @@ border-radius: 0 !important;
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-background-color: #ed561a;
-border-color: #ed561a;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  transition: all .2s linear;
+  border-radius: .125rem;
+  background-color: #6f1e30;
+  color: #fff;
 }
 
 .pagination > li > a, .pagination > li > span {
-border: 1px solid #ed561a;
-color: #ed561a;
+border: none;
+color: #6f1e30;
 }
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-border-color: #ed561a;
-color: #ed561a;
+border-color: #6f1e30;
+color: #6f1e30;
 }
 .pagination-bar .info {
 font-size: 12px;
@@ -1610,13 +1613,12 @@ padding-right:0 !important;
     font-size:20px;
   }
   #breadcrumb{
-    background: #6f1e30;
+    background: linear-gradient(5deg, #851c34, #741a2e);
     width: 100%;
     position: fixed;
     margin-top: 73px;
     float: left;
     z-index: 99;
-    box-shadow: 0 -2px 0 #e7ab5a;
   }
   #local-info {
     display: block;

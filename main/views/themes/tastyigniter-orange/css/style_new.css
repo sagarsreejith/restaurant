@@ -221,7 +221,7 @@ background: #ffffff;
   .section-title1 {
     margin-bottom: 10px;
     padding:0;
-    margin: 70px 0;
+    margin: 0px 0;
   }
 .section-title {
 margin-bottom: 10px;
@@ -779,7 +779,7 @@ max-height:350px;
 .book-menu p{    font-size: 15px;
 color: #524e4e;
 text-align: center;
-padding-top:80px;
+padding-top:20px;
 }
 .about-content p,.section-title p{
 color: #4a4d4f;
@@ -791,7 +791,7 @@ margin:0 auto;
 .object_right_img{
   position: absolute;
   right: 0;
-  top: 1037px;
+  top: 910px;
 }
 
 .maskimg {
@@ -1256,8 +1256,8 @@ position: absolute;
 top: 0;
 width: 100%;
 z-index: -1;
-background: linear-gradient(25deg,#6c182a,#6c182a);
-opacity: 0.5;
+background: linear-gradient(25deg,#e28631,#6c182a);
+    opacity: 0.4;
 }
 #login-form form{
 padding:18px;
@@ -3078,19 +3078,16 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=180, Colo
 }
 .map_icon_bg{
   background: url(../../../../../assets/images/new_search.svg);
-  /* float: left; */
-  /* bottom: -9px; */
+  float: left;
   content: "";
-  height: 40px;
-  position: absolute;
-  width: 40px;
+  height: 30px;
+  position: relative;
+  width: 30px;
   background-size: 25px;
   background-repeat: no-repeat;
-  /* top: 4px; */
-  /* padding-left:30px; */
-  margin-left: 4px;
-  left: 616px;
-  top: 0;
+  top: 4px;
+
+}
 }
 .map_icon_bg1{
   background: url(../../../../../assets/images/new_search.svg);
@@ -3686,7 +3683,7 @@ input[type=radio]:checked + label {
   font-size: 16px; 
   }
   
-  .goto_menu{       margin: 44px 0px;
+  .goto_menu{       margin: 34px 0px;
     float: left;}
   .goto_menu a{
     background: none;
@@ -4318,3 +4315,30 @@ li.active a span.icon_cl2{
     .head_checkout a:hover{ background: none;
     color: #333;}
     
+.order_type{
+  display:table;
+  margin:0 auto;
+
+}
+.head_b{
+  font-weight: 900;
+  text-align: right;
+}
+.pagination{
+  float:right !important;
+}
+.navbar-default .navbar-nav>li>a:focus{
+  color:#fff;
+}
+.pattern img{
+  width: 100% !important;
+  margin-top: -29px !important;
+}
+.pattern1{
+  position: absolute;
+  margin-top: -5px;
+}
+.pattern1 img{
+  width: 100% !important;
+  margin-top: -29px !important;
+}

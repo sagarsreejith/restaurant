@@ -12,9 +12,12 @@ switch ($rsegment) {
 ?>
 
 
-
+<!-- <div class="pattern1">
+                                    <img alt="" src="assets/images/white-pattern1.png">
+                                </div> -->
 <footer class="footer" id="">
     <?php echo get_partial( 'content_footer'); ?>
+ 
     <div class="container">
         <div class="row col_footer">
             <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">

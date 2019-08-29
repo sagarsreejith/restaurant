@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct access allowed');
 
-$lang['text_heading'] 			            = 'Restaurants';
+$lang['text_heading'] 			            = 'Zalatimo';
 $lang['text_tab_menu'] 		                = 'Menu';
 $lang['text_tab_review'] 		            = 'Reviews';
 $lang['text_tab_info'] 			            = 'Info';

@@ -129,21 +129,20 @@ transform:translate(-50%,-50%)
 
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 ">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 ">
+                                  
+                                        </div>
+                                        <div class="col-md-7 col-sm-12 col-md-offset-right-2 ">
                                         <div class="section-title1 text-center">
                                         <div class="title-separator">
                                             <!-- <img src="assets/images/food_icon.png"> -->
                                             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">About</span>Us</h2>
                                         </div>
 
-                                        <span style="      color: #7e3545;
-    font-weight: 800;
-    font-size: 15px;
-">Whatever your occasion, We makes it one to remember!</span>
-                                    </div>
+                                        <span style="color: #7e3545;font-weight: 800; font-size: 15px;">Whatever your occasion, We makes it one to remember!</span>
                                         </div>
-                                        <div class="col-md-7 col-sm-12 col-md-offset-right-1 ">
                                             <p>
+
                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, 
 
                                             </p>
@@ -291,7 +290,7 @@ transform:translate(-50%,-50%)
                                                                                         <div class="ui">
                                                 <div class="ui_inner">
                                                     <div class="ui_fruit">
-                                                    <img src="assets/images/icon/abt_bggg.png">
+                                                    <img src="assets/images/icon/p.png">
                                                     </div>
                                                 
                                                     <div class="ui_inner__selection">
@@ -304,12 +303,13 @@ transform:translate(-50%,-50%)
                                                         </div>
                                                         <div class="slide">
                                                             <div class="slide_inner">
+                                                               
                                                             <div class="slide_inner__left">
                                                                 <img src="assets/images/icon/baklawa_sweet_1.png">
                                                             
                                                             </div>
                                                             <div class="slide_inner__right">
-                                                                <h2>Offer Sweets</h2>
+                                                            <h2>Offer Sweets</h2>
                                                                 <h3>$4.99 <span> Pack of 10</span></h3>
                                                                 <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
                                                                 
@@ -407,39 +407,98 @@ transform:translate(-50%,-50%)
            
                 <div class="clearfix"></div>
 
-
-                <!--Modal: Login with Avatar Form-->
-<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
-    <!--Content-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-
-      <!--Header-->
       <div class="modal-header">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" alt="avatar" class="rounded-circle img-responsive">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <!--Body-->
-      <div class="modal-body text-center mb-1">
+      <div class="modal-body">
+      
+      <div id="login-form" class="content-wrap col-sm-4 center-block">
 
-        <h5 class="mt-1 mb-2">Maria Doe</h5>
+					
+<!-- <div class="img_log">
+    <img src="assets/images/bg10.jpg" class="" style="width:100%">
+</div> -->
 
-        <div class="md-form ml-0 mr-0">
-          <input type="password" type="text" id="form29" class="form-control form-control-sm validate ml-0">
-          <label data-error="wrong" data-success="right" for="form29" class="ml-0">Enter password</label>
-        </div>
+<div id="login-form" class="content-wrap col-sm-4 center-block">
 
-        <div class="text-center mt-4">
-          <button class="btn btn-cyan mt-1">Login <i class="fas fa-sign-in ml-1"></i></button>
-        </div>
-      </div>
+					
+<!-- <div class="img_log">
+    <img src="assets/images/bg10.jpg" class="" style="width:100%">
+</div> -->
+
+<div class="section-title text-center">
+    <div class="title-separator">
 
     </div>
-    <!--/.Content-->
+    <h2> <span class="text-orange">	<?php echo lang('text_login'); ?></h2>
+    <span class="under-heading"></span>
+</div>
+<?php if ($this->alert->get('', 'alert')) { ?>
+    <div id="notification">
+        <?php echo $this->alert->display('', 'alert'); ?>
+    </div>
+    <?php } ?>
+        <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
+            <fieldset>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('label_email'); ?>" autofocus="" />
+                        <span class="input-group-addon">@</span>
+                    </div>
+                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    </div>
+                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                <?php echo lang('button_login'); ?>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <a class="forgot_btn1  " href="<?php echo $reset_url; ?>">
+                                <?php echo lang('text_forgot'); ?>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <a class=" reg_btn1 text-right" style="" href="<?php echo $register_url; ?>">
+                                <?php echo lang('button_register'); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
   </div>
 </div>
-<!--Modal: Login with Avatar Form-->
-
 
 
                 <section class="map_sec">

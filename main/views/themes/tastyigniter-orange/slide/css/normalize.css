@@ -106,14 +106,14 @@ position: relative;
 
 }
 #offer .ui_fruit {
-position: absolute;
-z-index: 34;
-right: -93px;
-pointer-events: none;
-top: 235px;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    /* pointer-events: none; */
+    top: 0;
 }
 #offer .ui_fruit img {
-width: 344px;
+  width: 296px;
 }
 
 #offer .ui_inner {
@@ -123,12 +123,12 @@ padding: 40px;
 box-shadow: 0px 2px 40px 0px #dbd6d6, 0px 6px 26px 0px #ffffff, 0px 3px 0px -2px #ad455c inset, 0px 22px 60px 70px #f1d4b4 inset, 0px 8px 18px -7px #ffffff00, 30px 13px 30px 28px #ffffff inset;
 }
 #offer .ui_inner .sb {
-overflow: hidden;
-left: -39px;
-position: absolute;
--webkit-animation: spin 14s infinite linear;
-animation: spin 14s infinite linear;
-top: 110px;
+    overflow: hidden;
+    left: -108px;
+    position: absolute;
+    -webkit-animation: spin 14s infinite linear;
+    animation: spin 14s infinite linear;
+    top: 177px;
 }
 #offer .ui_inner .sb img {
 width: 300px;
@@ -247,9 +247,10 @@ transition: all 1s 0.2s;
 }
 #offer .ui_inner__selection input[type="radio"]:checked + label .ui_inner__slider .slide_inner__left {
 opacity: 1;
-left: -100px;
+left: -155px;
 -webkit-transition: all 0.5s 0.35s cubic-bezier(0.175, 1.605, 0.455, 0.92);
 transition: all 0.5s 0.35s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+top: 155px;
 }
 #offer .ui_inner__selection input[type="radio"]:checked + label .ui_inner__slider .slide_inner__right h2 {
 opacity: 1;
@@ -291,9 +292,9 @@ transition: all 0.5s 0.6s cubic-bezier(0.175, 1.605, 0.455, 0.92);
 pointer-events: none;
 }
 #offer .ui_inner .ui_inner__slider .slide_inner {
-position: absolute;
-top: 54px;
-text-align: right;
+    position: absolute;
+    top: 79px;
+    text-align: right;
 }
 #offer .ui_inner .ui_inner__slider .slide_inner__left {
 display: inline-block;
@@ -320,7 +321,7 @@ top: -150px;
 
 #offer .ui_inner .ui_inner__slider .slide_inner__right {
 display: inline-block;
-width: 70%;
+width: 77%;
 padding: 0px 40px 0px 0px;
 text-align: left;
 position: relative;
@@ -356,17 +357,17 @@ transition: all 0.5s 0.25s cubic-bezier(0.175, 1.605, 0.455, 0.92);
 font-size: 11px;
 }
 #offer .ui_inner .ui_inner__slider .slide_inner__right p {
-margin: 0;
-font-family: 'Bad Script', cursive;
-line-height: 22px;
-color: #9e9da7;
-font-size: 12px;
-position: relative;
-opacity: 0;
-left: -90px;
--webkit-transition: all 0.5s 0.3s cubic-bezier(0.175, 1.605, 0.455, 0.92);
-transition: all 0.5s 0.3s cubic-bezier(0.175, 1.605, 0.455, 0.92);
-padding-right:70px;
+    margin: 0;
+    /* font-family: 'Bad Script', cursive; */
+    line-height: 24px;
+    color: #752637;
+    font-size: 14px;
+    position: relative;
+    opacity: 0;
+    left: -90px;
+    -webkit-transition: all 0.5s 0.3s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    transition: all 0.5s 0.3s cubic-bezier(0.175, 1.605, 0.455, 0.92);
+    padding-right: 70px;
 }
 
 

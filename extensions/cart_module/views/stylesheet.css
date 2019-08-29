@@ -44,6 +44,7 @@
     padding: 0;
     position: relative;
     border: 0;
+    float: left;
     }
     .cart-alert-wrap .alert > p {
     padding: 10px 15px;
