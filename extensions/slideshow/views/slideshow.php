@@ -37,11 +37,13 @@
                             <div class="phone">
                            
                                 <div class="mobile-slider owl-carousel owl-theme">
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
+                                    <?php if (!empty($slides)) { ?>
+                                      <?php foreach ($slides as $slide) { ?>
+                                        <?php if (isset($slide['image_src'])) { ?>
+                                            <img src="<?php echo $slide['image_src']; ?>" />
+                                        <?php } ?>
+                                      <?php } ?>
+                                    <?php } ?>
                                </div>
                                  
                             </div>
