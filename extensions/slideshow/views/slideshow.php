@@ -34,6 +34,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="mobile-slider-area">
+                        
                             <div class="phone">
                            
                                 <div class="mobile-slider owl-carousel owl-theme">

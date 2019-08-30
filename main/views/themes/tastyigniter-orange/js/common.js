@@ -316,7 +316,7 @@ NOTE:
                   margin:$space,
                   nav: $navarrow,
                   navText:["<i class='fa fa-angle-left fa-2x'></i>","<i class='fa fa-angle-right fa-2x'></i>"],
-                  autoplay: $autoplay,
+                  autoplay: true,
                   autoplayHoverPause: true   
               }); 
       }); 
