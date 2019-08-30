@@ -43,7 +43,7 @@ $lang['column_replace'] 		            = 'Replace with';
 $lang['button_view_map'] 		            = 'View Map';
 $lang['button_change_location']             = 'Change Location';
 $lang['button_search_location']             = 'GO';
-$lang['button_enter_location']              = 'Enter Location';
+$lang['button_enter_location']              = 'Change Location';
 
 $lang['label_location_search_mode'] 		= 'Display Location Search';
 $lang['label_use_location'] 		        = 'Use Location';

@@ -176,18 +176,18 @@
                                                 <?php echo lang( 'menu_locations'); ?>
                                             </a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                                 <a href="<?php echo site_url('account/login'); ?>">
                                                                     <?php echo lang('menu_login'); ?>
                                                 </a>
-                                        </li>
+                                        </li> -->
                                         <li>
-                                                <a data-toggle="modal" data-target="#exampleModal"> login2</a>
+                                                <a data-toggle="modal" data-target="#exampleModal"> login</a>
                                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog" role="document">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                    <h2> <span class="text-orange">	Log In</span></h2>
                                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                     </button>
@@ -200,7 +200,6 @@
                                         <?php echo $this->alert->display('', 'alert'); ?>
                                     </div>
                                     <?php } ?>
-                                        <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
                                             <fieldset>
                                                 <div class="form-group">
                                                     <div class="input-group">
@@ -216,13 +215,14 @@
                                                         <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                                                     </div>
                                                     <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                                    <span class="text-danger" id="login-error"></span>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <div class="row">
                                                         <div class="col-md-12">
-                                                            <button type="submit" class="btn btn-primary btn-block btn-lg">
-                                                                <?php echo lang('button_login'); ?>
+                                                            <button class="btn btn-primary btn-block btn-lg" onclick="login()">
+                                                               Login
                                                             </button>
                                                         </div>
                                                     </div>
@@ -231,20 +231,19 @@
                                                 <div class="form-group">
                                                     <div class="row">
                                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                                            <a class="forgot_btn1  " href="<?php echo $reset_url; ?>">
-                                                                <?php echo lang('text_forgot'); ?>
+                                                            <a class="forgot_btn1  " href="<?php echo site_url('forgot-password'); ?>" style="color:#6f1e30;text-transform: none;">
+                                                                Forgot Passowrd?
                                                             </a>
                                                         </div>
                                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                                            <a class=" reg_btn1 text-right" style="" href="<?php echo $register_url; ?>">
-                                                                <?php echo lang('button_register'); ?>
+                                                            <a class=" reg_btn1 text-right"  href="<?php echo site_url('register'); ?>" style="color:#6f1e30;text-transform: none;">
+                                                                Sign Up
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                             </fieldset>
-                                        </form>
                                                                     
 
                                                                 </div>
@@ -360,6 +359,45 @@ $('.close').on('click', function() {
 
                                     });
 
-                                  
+  //Login Ajax call
+  function login(){
+    var password  = $("#login-password").val();
+    var email = $("#login-email").val();
+    if(loginValidate(email, password) === false){
+        return false;
+    }
+    $.ajax({
+   	    url: js_site_url('login'),
+   		type: 'POST',
+   		data: 'email=' + email + '&password='+ password,
+   		dataType: 'json',
+        success: function(json) {
+            if(json['success'] == true){
+                $(location).attr('href', js_site_url('account/account'));
+            }
+            if(json['success'] == false){
+                $('#login-error').text("Invalid user name or password");
+            }
+        }
+   	});
+  }
+  function loginValidate(email, password){
+    var isValid = true;
+    $("#login-email").removeAttr( 'style' );
+    $("#login-password").removeAttr( 'style' );
+    if(validateEmail(email) === false) {
+        $("#login-email").css("border", "3px solid red");
+        isValid = false;
+    }
+    if(password == '') {
+        $("#login-password").css("border", "3px solid red");
+        isValid = false;
+    }
+    return isValid;
+  }
 
-                                </script>
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}                            
+</script>
