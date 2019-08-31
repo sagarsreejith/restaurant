@@ -57,12 +57,16 @@ filter:drop-shadow(0 5px 0 #8b2b41)
 position:relative;
 display:inline-block
 }
-.box-icon-svg-inner:hover{
-/* -webkit-transition: all 0.3s ease-in-out; */
--moz-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-/* transition: all 0.3s ease-in-out; */
-}
+
+
+ 
+  .box-icon-svg-inner {
+    -webkit-transform: translateZ(100px);
+            transform: translateZ(100px);
+  }
+ 
+  
+
 .box-icon-svg-text{
 line-height:1.8em;
 color:rgba(55,56,62,.7)

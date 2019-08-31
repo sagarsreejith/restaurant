@@ -58,12 +58,7 @@
                                                         });
                                                     });
                                                 </script>
-                                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-                                                <!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+                                              
                                                 <?php $custom_script = get_theme_options('custom_script'); ?>
                                                     <?php if (!empty($custom_script['head'])) { echo '<script type="text/javascript">'.$custom_script['head'].'</script>'; }; ?>
                                                         <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
@@ -101,18 +96,9 @@
 						<div class="col-md-9 col-sm-9">
 							<nav class="navbar menu navbar-default">
 								<div class="collapse navbar-collapse">
-									<!-- <ul id="nav" class="nav mobile-menu navbar-nav">
-										<li class="active"><a href="#hero-area">Home</a></li>
-										<li><a href="#features">Features</a></li>
-										<li><a href="#screenshot-area">Screenshots</a></li>
-										<li><a href="#team">Team</a></li>
-										<li><a href="#pricing">Pricing</a></li>
-										<li><a href="#faq">Faq</a></li>
-										<li><a href="#blog">News</a></li>
-										<li><a href="#contact">Contact</a></li>
-                                    </ul> -->
+									
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active "#">Home</a>
+                                        <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a>
                                         </li>
                                         <li class=""><a href="<?php echo site_url('#about'); ?>">About</a>
                                         </li>
@@ -176,90 +162,13 @@
                                                 <?php echo lang( 'menu_locations'); ?>
                                             </a>
                                         </li>
+                                       
                                         <li>
-                                                <a href="<?php echo site_url('account/login'); ?>">
-                                                                    <?php echo lang('menu_login'); ?>
-                                                </a>
+                                                <a class="log" data-toggle="modal" data-target="#login"> login</a>
+                                              
                                         </li>
-                                        <li>
-                                                <a data-toggle="modal" data-target="#exampleModal"> login2</a>
-                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    
-
-                                                                <?php if ($this->alert->get('', 'alert')) { ?>
-                                    <div id="notification">
-                                        <?php echo $this->alert->display('', 'alert'); ?>
-                                    </div>
-                                    <?php } ?>
-                                        <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
-                                            <fieldset>
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('label_email'); ?>" autofocus="" />
-                                                        <span class="input-group-addon">@</span>
-                                                    </div>
-                                                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
-                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                    </div>
-                                                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <button type="submit" class="btn btn-primary btn-block btn-lg">
-                                                                <?php echo lang('button_login'); ?>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                                            <a class="forgot_btn1  " href="<?php echo $reset_url; ?>">
-                                                                <?php echo lang('text_forgot'); ?>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                                            <a class=" reg_btn1 text-right" style="" href="<?php echo $register_url; ?>">
-                                                                <?php echo lang('button_register'); ?>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </fieldset>
-                                        </form>
-                                                                    
-
-                                                                </div>
-                                                                <!-- <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                               
-                                        </li>
-                                        <!-- <li><a href="<?php echo site_url('contact'); ?>">Contact</a>
-                                        </li> -->
-                                        <!--<li><a href="<?php echo site_url('account/register'); ?>"><?php echo lang('menu_register'); ?></a></li>-->
+                                      
+                                       
 
                                         <?php } ?>
 
@@ -273,7 +182,74 @@
 			<!--/ End Header Inner -->
 		</header>
 
-               
+        <div class="modal fade" id="login" tabindex="-1" data-dismiss="modal"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h2> <span class="text-orange">	Log In</span></h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    
+
+                                                                    <?php if ($this->alert->get('', 'alert')) { ?>
+                                                                        <div id="notification">
+                                                                            <?php echo $this->alert->display('', 'alert'); ?>
+                                                                        </div>
+                                                                    <?php } ?>
+                                                                            <fieldset>
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('emailid'); ?>" autofocus=""/>
+                                                                                        <span class="input-group-addon">@</span>
+                                                                                    </div>
+                                                                                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <div class="input-group">
+                                                                                        <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
+                                                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                                                    </div>
+                                                                                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                                                                    <span class="text-danger" id="login-error"></span>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-12">
+                                                                                            <button class="btn btn-primary btn-block btn-lg" onclick="login()">
+                                                                                            Login
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="form-group">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                            <a class="forgot_btn1  " href="<?php echo site_url('forgot-password'); ?>" style="color:#6f1e30;text-transform: none;">
+                                                                                                Forgot Passowrd?
+                                                                                            </a>
+                                                                                            <!-- <a class="forgot_btn1"  data-toggle="modal" data-target="#forgot_password"> Forgot Password</a> -->
+                                                                                        </div>
+                                                                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                                            <a class=" reg_btn1 text-right"  href="<?php echo site_url('register'); ?>" style="color:#6f1e30;text-transform: none;">
+                                                                                                Sign Up
+                                                                                            </a>
+                                                                                            <!-- <a class=" reg_btn1 text-right"  data-toggle="modal" data-target="#register"> Register</a> -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </fieldset>
+                                                                </div>
+                                                                                               
+                                                           </div>
+                                                        </div>
+ </div>
    
 
 
@@ -307,59 +283,85 @@
                                 </div>
                             </div>
                         <?php } ?>
-                    </div>
-
-                   
+                    </div>                 
 
 
+<script>
+$(document).ready(function(){
+    $(document).on('click', function (e){
+            /* bootstrap collapse js adds "in" class to your collapsible element*/
+        var menu_opened = $('#main-header-menu-collapse').hasClass('in');
+            if(!$(e.target).closest('main-header-menu-collapse').length &&
+                !$(e.target).is('#main-header-menu-collapse') &&
+                    menu_opened === true){
+                     $('#main-header-menu-collapse').collapse('toggle');
+                }
+            });
+        });    
+$(function() {
+    $('#main-header-menu-collapse a').filter(function() {
+       return this.href == location.href
+    }).parent().addClass('active').siblings().removeClass('active');
+    $('#main-header-menu-collapse a').click(function() {
+        $(this).parent().addClass('active').siblings().removeClass('active')
+    });
+}); 
 
-                                <script>
-                                    $(document).ready(function(){
-                                        $(document).on('click', function (e){
-                                                /* bootstrap collapse js adds "in" class to your collapsible element*/
-                                                var menu_opened = $('#main-header-menu-collapse').hasClass('in');
-                                            
-                                                if(!$(e.target).closest('main-header-menu-collapse').length &&
-                                                    !$(e.target).is('#main-header-menu-collapse') &&
-                                                    menu_opened === true){
-                                                        $('#main-header-menu-collapse').collapse('toggle');
-                                                }
-                                                $('.toggle').on('click', function() {
-  $('.container').stop().addClass('active');
+$(function() {
+    $('.navbar-nav li a').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+    $('html,body').animate({
+    scrollTop: target.offset().top - 80
+    }, 1500);
+    return false;
+    }
+    }
+    });
+
 });
 
-$('.close').on('click', function() {
-  $('.container').stop().removeClass('active');
-});
+  //Login Ajax call
+  function login(){
+    var password  = $("#login-password").val();
+    var email = $("#login-email").val();
+    if(loginValidate(email, password) === false){
+        return false;
+    }
+    $.ajax({
+   	    url: js_site_url('login'),
+   		type: 'POST',
+   		data: 'email=' + email + '&password='+ password,
+   		dataType: 'json',
+        success: function(json) {
+            if(json['success'] == true){
+                $(location).attr('href', js_site_url('account/account'));
+            }
+            if(json['success'] == false){
+                $('#login-error').text("Invalid user name or password");
+            }
+        }
+   	});
+  }
+  function loginValidate(email, password){
+    var isValid = true;
+    $("#login-email").removeAttr( 'style' );
+    $("#login-password").removeAttr( 'style' );
+    if(validateEmail(email) === false) {
+        $("#login-email").css("border", "1px solid #f47d59");
+        isValid = false;
+    }
+    if(password == '') {
+        $("#login-password").css("border", "1px solid #f47d59");
+        isValid = false;
+    }
+    return isValid;
+  }
 
-                                        });
-                                    });    
-                                    $(function() {
-                                        $('#main-header-menu-collapse a').filter(function() {
-                                            return this.href == location.href
-                                        }).parent().addClass('active').siblings().removeClass('active');
-
-                                        $('#main-header-menu-collapse a').click(function() {
-                                            $(this).parent().addClass('active').siblings().removeClass('active')
-                                        });
-                                    });
-
-                                    $(function() {
-                                        $('.navbar-nav li a').click(function() {
-                                            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                                                var target = $(this.hash);
-                                                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                                                if (target.length) {
-                                                    $('html,body').animate({
-                                                        scrollTop: target.offset().top - 80
-                                                    }, 1500);
-                                                    return false;
-                                                }
-                                            }
-                                        });
-
-                                    });
-
-                                  
-
-                                </script>
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}                            
+</script>

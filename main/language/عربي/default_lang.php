@@ -27,6 +27,12 @@ $lang['menu_locations'] 		                    = 'Our Branches';
 $lang['menu_contact'] 		                        = 'Contact Us';
 $lang['menu_admin'] 		                        = 'Administrator';
 
+
+
+$lang['emailid'] 		                            = 'Email';
+$lang['label_password'] 		                    = 'Password';
+$lang['label_confirm_password'] 		            = 'Confirm Password';
+
 $lang['alert_success'] 		                        = '%s successfully.';
 $lang['alert_error'] 		                        = 'An error occurred, %s.';
 $lang['alert_error_nothing'] 		                = 'An error occurred, nothing %s.';

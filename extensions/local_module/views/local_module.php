@@ -317,6 +317,7 @@
 </div>
 </div>
 </div>
+
 <script type="text/javascript">
    function toggleLocalSearch() {
      
@@ -490,6 +491,20 @@
    $( "body" ).click(function() {
    	$(".js-example-templating").select2("close");
    }); 
+   // //set button id on click to hide first modal
+   //    $(".fp").on( "click", function() {
+   //          $('#login').modal('hide');
+   //          $('#register').modal('hide');
+   //          $('#forgot_password').modal('show');  
+   //    });
+   //    //trigger next modal
+   //    $(".reg").on( "click", function() {
+   //          $('#login').modal('hide');
+   //          $('#forgot_password').modal('hide');
+   //          $('#register').modal('show');  
+
+   //    });
+     
 
    function getCookie(cname) {
       var name = cname + "=";

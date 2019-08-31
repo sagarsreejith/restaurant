@@ -4,10 +4,11 @@ class Login extends Main_Controller
 {
 
 	public function index() {
+		$data['success'] = FALSE;
 		if ($this->customer->islogged()) {                                                        // checks if customer is logged in then redirect to account page.
 			redirect('account/account');
 		}
-
+		
 		$this->load->model('Pages_model');
 		$this->lang->load('account/login_register');
 
@@ -20,7 +21,7 @@ class Login extends Main_Controller
 		$data['reset_url'] = site_url('account/reset' . $prepend);
 		$data['register_url'] = site_url('account/register' . $prepend);
 
-		if ($this->input->post()) {                                                                // checks if $_POST data is set
+		if ($this->input->post()) {                                                           // checks if $_POST data is set
 			if ($this->validateForm() === TRUE) {
 				$email = $this->input->post('email');                                            // retrieves email value from $_POST data if set
 				$password = $this->input->post('password');                                        // retrieves password value from $_POST data if set
@@ -37,13 +38,27 @@ class Login extends Main_Controller
 					if ($redirect_url = $this->input->get('redirect')) {
 						redirect($redirect_url);
 					}
-
-					redirect('account/account');
+					if ($this->input->is_ajax_request()) {
+						$data['success'] = TRUE;
+						$this->output->set_output(json_encode($data));											// encode the json array and set final out to be sent to jQuery AJAX
+					} else {
+						redirect('account/account');
+					}
 				}
 			}
 		}
 
-		$this->template->render('account/login', $data);
+		if ($this->input->is_ajax_request()) {
+			$this->output->set_output(json_encode($data));											// encode the json array and set final out to be sent to jQuery AJAX
+		} else {
+			$this->template->render('account/login', $data);
+		}
+		
+	}
+
+	public function ajaxLogin() {
+		$json = array();
+		return json_encode($json);
 	}
 
 	protected function validateForm() {

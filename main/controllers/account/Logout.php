@@ -24,7 +24,7 @@ class Logout extends Main_Controller {
 			redirect($redirect_url);
 		}
 
-		redirect('account/login');
+		redirect('home');
 	}
 }
 

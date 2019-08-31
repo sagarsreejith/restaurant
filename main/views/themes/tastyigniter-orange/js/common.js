@@ -308,15 +308,15 @@ NOTE:
                   responsive: {
                     0:{items: $this.data('xx-items') ? $this.data('xx-items') : 1},
                     480:{items: $this.data('xs-items') ? $this.data('xs-items') : 1},
-                    768:{items: $this.data('sm-items') ? $this.data('sm-items') : 2},
-                    992:{items: $this.data('md-items') ? $this.data('md-items') : 3},
+                    768:{items: $this.data('sm-items') ? $this.data('sm-items') : 1},
+                    992:{items: $this.data('md-items') ? $this.data('md-items') : 1},
                     1200:{items: $items}
                   },
                   dots: $navdots,
                   margin:$space,
                   nav: $navarrow,
                   navText:["<i class='fa fa-angle-left fa-2x'></i>","<i class='fa fa-angle-right fa-2x'></i>"],
-                  autoplay: $autoplay,
+                  autoplay: true,
                   autoplayHoverPause: true   
               }); 
       }); 
@@ -462,38 +462,6 @@ NOTE:
           });
     }
   
-  /*************************
-         Progressbar
-  *************************/  
-      // POTENZA.progressBar = function () {
-  
-      //     if ($progressBar.exists()) {
-      //         $progressBar.each(function (i, elem) {
-      //             var $elem = $(this),
-      //                 percent = $elem.attr('data-percent') || "100",
-      //                 delay = $elem.attr('data-delay') || "100",
-      //                 type = $elem.attr('data-type') || "%";
-  
-      //             if (!$elem.hasClass('progress-animated')) {
-      //                 $elem.css({
-      //                     'width': '0%'
-      //                 });
-      //             }
-      //             var progressBarRun = function () {
-      //                 $elem.animate({
-      //                     'width': percent + '%'
-      //                 }, 'easeInOutCirc').addClass('progress-animated');
-  
-      //                 $elem.delay(delay).append('<span class="progress-type animated fadeIn">' + type + '</span><span class="progress-number animated fadeIn">' + percent + '</span>');
-      //             };
-      //                 $(elem).appear(function () {
-      //                     setTimeout(function () {
-      //                         progressBarRun();
-      //                     }, delay);
-      //                 });
-      //         });
-      //     }
-      // };  
   
   /*************************
            Countdown

@@ -43,7 +43,7 @@ transform:translate(-50%,-50%)
                         <div class="container top-spacing-10">
                             
                                             
-                            <div class="col-md-6 col-lg-3 icon-box">
+                            <div class="col-md-3 col-sm-3 col-xs-6 icon-box">
                             
                                 <div class="box-icon-svg">
                                 <div class="box-icon-svg-inner">
@@ -58,7 +58,7 @@ transform:translate(-50%,-50%)
                                 </div>
                             
                             </div>
-                            <div class="col-md-6 col-lg-3 wow-outer">
+                            <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
                             
                                 <div class="box-icon-svg">
                                 <div class="box-icon-svg-inner">
@@ -73,7 +73,7 @@ transform:translate(-50%,-50%)
                                 </div>
                         
                             </div>
-                                <div class="col-md-6 col-lg-3 wow-outer">
+                                <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
                                 
                                     <div class="box-icon-svg">
                                     <div class="box-icon-svg-inner">
@@ -88,7 +88,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 
                                 </div>
-                                <div class="col-md-6 col-lg-3">
+                                <div class="col-md-3 col-sm-3 col-xs-6">
                                 
                                     <div class="box-icon-svg">
                                     <div class="box-icon-svg-inner">
@@ -115,17 +115,17 @@ transform:translate(-50%,-50%)
                         <div class="object-right object_right_img animated fadeIn ">
                             <img class="img-responsive img1 " src="assets/images/icon/swt1.png" alt="">
                         </div>
-                        <div >
+                        <!-- <div class=" " >
                             <img class="img-responsive book-menu_img " src="assets/images/icon/swt2.png" style="position:absolute;opacity: 0.9;">
-                         </div>
-                        <div class="container">
+                         </div> -->
+                        <div class="">
                         
                             <div class="book-menu">
 
-                                <div class="container">
+                                <div class="">
                                     <div class="row">
                                         
-                                        <div class="col-md-offset-3 col-md-7 col-sm-12 col-md-offset-right-3 ">
+                                        <div class=" col-md-7 col-sm-12 col-md-offset-right-4 col-sm-10 ">
                                         <div class="section-title1 text-center">
                                         <div class="title-separator">
                                             <!-- <img src="assets/images/food_icon.png"> -->
@@ -139,19 +139,22 @@ transform:translate(-50%,-50%)
                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, 
 
                                             </p>
-                                        </div>
-                                    </div>
+                                      
+                                 
                              
                 </section>
                 <div class="clearfix"></div>
                 <section class="gallery white-bg page-section-ptb" id="gallery">
-                <div class="object-right object_right_img animated fadeIn ">
-                            <img class="img-responsive img1 " src="assets/images/icon/sec-img-1.png" alt="">
+                <div class="obj_right">
+                            <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-1.png" alt="">
                         </div>
-                        <div >
-                            <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-2.png" style="position:absolute;opacity: 0.9;bottom:0">
+                        <div class="obj_left" >
+                            <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-2.png" >
                          </div>
-                    <div class="col-lg-12 col-md-12">
+                
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-lg-12 col-md-12">
                         <div class="section-title text-center">
                             <div class="title-separator">
                                 <!-- <img src="assets/images/food_icon.png"> -->
@@ -160,8 +163,6 @@ transform:translate(-50%,-50%)
 
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="row">
                             <div class="col-lg-12 col-md-12">
                                 <div class="isotope-filters">
                                     <button data-filter="" class="active">All</button>
@@ -279,123 +280,26 @@ transform:translate(-50%,-50%)
 
                 <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 ">
 
-                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background-image: url(assets/images/icon/wrap.png);background-size: cover;background-repeat:no-repeat;">
+                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background: url(assets/images/wrap.png) !important;background-size: cover;background-repeat:no-repeat;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
 
-                                    <div class="col-md-offset-2 col-md-8 banner_sec">
-                                        <div id="offer" style="max-height:500px;width:100%">
-                                                                                        <div class="ui">
-                                                <div class="ui_inner">
-                                                    <div class="ui_fruit">
-                                                    <img src="assets/images/icon/p.png">
-                                                    </div>
-                                                
-                                                    <div class="ui_inner__selection">
-                                                    <input checked="checked" id="lovely" name="selection" type="radio">
-                                                    <label for="lovely">
-                                                        <div class="selected l">Offer</div>
-                                                        <div class="ui_inner__slider">
-                                                        <div class="sb">
-                                                            <img src="assets/images/icon/starburst2.png">
-                                                        </div>
-                                                        <div class="slide">
-                                                            <div class="slide_inner">
-                                                               
-                                                            <div class="slide_inner__left">
-                                                                <img src="assets/images/icon/baklawa_sweet_1.png">
-                                                            
-                                                            </div>
-                                                            <div class="slide_inner__right">
-                                                            <h2>Offer Sweets</h2>
-                                                                <h3>$4.99 <span> Pack of 10</span></h3>
-                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
-                                                                
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </label>
-                                                    <input id="super" name="selection" type="radio">
-                                                    <label for="super">
-                                                        <div class="selected s">Happy Hours</div>
-                                                        <div class="ui_inner__slider">
-                                                        <div class="sb">
-                                                        <img src="assets/images/icon/starburst2.png">
-                                                        </div>
-                                                        <div class="slide">
-                                                            <div class="slide_inner">
-                                                            <div class="slide_inner__left">
-                                                            <img src="assets/images/icon/abt_bggg.png">
-                                                            
-                                                            </div>
-                                                            <div class="slide_inner__right">
-                                                                <h2>Happy Hours</h2>
-                                                                <h3>$4.99 <span> Pack of 10</span></h3>
-                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
-                                                            
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </label>
-                                                    <input id="mega" name="selection" type="radio">
-                                                    <label for="mega">
-                                                        <div class="selected m">Eid Offer</div>
-                                                        <div class="ui_inner__slider">
-                                                        <div class="sb">
-                                                        <img src="assets/images/icon/starburst2.png">
-                                                        </div>
-                                                        <div class="slide">
-                                                            <div class="slide_inner">
-                                                            <div class="slide_inner__left">
-                                                            <img src="assets/images/icon/swt4.webp">
-                                                                <div class="firework">
-                                                            
-                                                                </div>
-                                                            </div>
-                                                            <div class="slide_inner__right">
-                                                                <h2>Eid Offer</h2>
-                                                                <h3>$4.99 <span> Pack of 10</span></h3>
-                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
-                                                                
-                                                            
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </label>
-                                                    <input id="huge" name="selection" type="radio">
-                                                    <label for="huge">
-                                                        <div class="selected h">Special Sweets</div>
-                                                        <div class="ui_inner__slider">
-                                                        <div class="sb">
-                                                            <img src="assets/images/icon/starburst2.png">
-                                                        </div>
-                                                        <div class="slide">
-                                                            <div class="slide_inner">
-                                                            <div class="slide_inner__left">
-                                                                <img src="assets/images/icon/banner-1.png">
-                                                                <div class="firework">
-                                                                
-                                                                </div>
-                                                            </div>
-                                                            <div class="slide_inner__right">
-                                                                <h2>Special Sweets</h2>
-                                                                <h3>$9.99 <span> Pack of 10</span></h3>
-                                                                <p>Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.</p>
-                                                            
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </label>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                        </div>
+                                <div class="mobile-slider2 owl-carousel owl-theme">
+                                    <div class="owl-item">
+                                            <img src="assets/images/banner2.png" />
                                     </div>
+                                    <div class="owl-item">
+                                            <img src="assets/images/banner2.png" />
+                                    </div>
+                                    <div class="owl-item">
+                                            <img src="assets/images/banner2.png" />
+                                    </div>
+                                    <div class="owl-item">
+                                            <img src="assets/images/banner2.png" />
+                                    </div>
+                                      
+                               </div>  
                                 </div>
                             </div>
                         </div>
@@ -706,7 +610,8 @@ $(window).scroll(function () {
   $('.contact-map').each(_checkOffset('animated fadeInRight'));
   
 
-	
+
+
 	
 	
 	jQuery(window).on('scroll', function() {

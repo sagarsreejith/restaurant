@@ -13,45 +13,48 @@
     height: 370px;
     width: 100%;
   }
-  .mobile-slider .item{
+  .phone .owl-carousel .owl-item{
     background: #f1f1f1;
-    height: 370px;
+    height: 360px;
     border-radius: 30px;
-    padding: 80px 30px;
+ 
   }  
-  .mobile-slider .item img{
-    max-height: 250px;
+  .phone .owl-carousel .owl-item img{
+    min-height: 360px !important;
   }
   </style>
 
-<section id="hero-area" class="section-hero2 section overlay1">
+        <section id="hero-area" class="section-hero2 section overlay1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="hero-content-wrap">
                             <div class="hero-content">
-                                <h1>Welcome toZalatimo Sweets</h1>
+                                <h1>Welcome to Zalatimo Sweets</h1>
                                 <p>Our software platform and custom development allow healthcare institutions to create
                                     comprehensive cross-platform solutions that ensure positive patient experiences.</p>
-                             <div class="slider-action-btn">
-                               <a href="#" class="btn order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
-                                   
-                               </div> 
+                                <div class="slider-action-btn">
+                                  <a href="#" class="btn order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
+                                      
+                                </div> 
                             </div>
-						</div>
+					        	    </div>
 						
                     </div>
-                    <div class="col-md-4">
+                 
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="mobile-slider-area">
+                        
                             <div class="phone">
                            
                                 <div class="mobile-slider owl-carousel owl-theme">
-                                    <div class="item"><img src="assets/images/icon/abt_bg2.png" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_2.png" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/abt_bggg.png" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/swt4.webp" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/swt5.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/swt6.webp" alt="Screen 3"></div>
+                                    <?php if (!empty($slides)) { ?>
+                                      <?php foreach ($slides as $slide) { ?>
+                                        <?php if (isset($slide['image_src'])) { ?>
+                                            <img src="<?php echo $slide['image_src']; ?>" />
+                                        <?php } ?>
+                                      <?php } ?>
+                                    <?php } ?>
                                </div>
                                  
                             </div>
@@ -64,13 +67,13 @@
                                         <i class="fa fa-angle-right"></i>
                                       </li>
                                     </ul>
-                                  </div>
+                            </div>
                             
-						</div>
-					</div>
-				</div>
+					            	</div>
+					          </div>
+				        </div>
             </div>
-			<div class="section-shape">
+		      	<div class="section-shape">
                 <div class="river-wave"></div>
                 <div class="river-wave"></div>
             </div>
