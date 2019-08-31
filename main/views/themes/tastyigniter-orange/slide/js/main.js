@@ -10,10 +10,10 @@
 		
 		//Mobile slider
 		$('.mobile-slider')['owlCarousel']({
-			loop: true,
-			margin: 30,
-			autoplay: true,
-			dots: false,
+			loop:true,
+			margin:30,
+			autoplay:true,
+			dots:false,
 			items: 1
 		});
 		var u = $(".mobile-slider"),

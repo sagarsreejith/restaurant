@@ -1640,8 +1640,9 @@ padding-right:0 !important;
       text-decoration: none;
       color: #6f1e30;
     }
+ 
     .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover{
-      background: none;
+      background: none !important;
       border: none;
       color: #6f1e30;
   }

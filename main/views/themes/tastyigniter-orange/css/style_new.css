@@ -791,7 +791,8 @@ margin:0 auto;
 .object_right_img{
   position: absolute;
   right: 0;
-  top: 910px;
+  /* top: 910px; */
+  max-width: 430px;
 }
 
 .maskimg {

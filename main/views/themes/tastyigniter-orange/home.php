@@ -112,27 +112,20 @@ transform:translate(-50%,-50%)
 
        
                 <section class="about" id="about">
-                <div class="object-right object_right_img animated fadeIn ">
-                            <img class="img-responsive img1 " src="assets/images/02.png" alt="">
+                        <div class="object-right object_right_img animated fadeIn ">
+                            <img class="img-responsive img1 " src="assets/images/icon/swt1.png" alt="">
                         </div>
-                    <div class="">
-                       
-                        <div >  <img class="img-responsive book-menu_img " src="assets/images/abtt.png" style="position:absolute;opacity: 0.9;"> </div>
+                        <div >
+                            <img class="img-responsive book-menu_img " src="assets/images/icon/swt2.png" style="position:absolute;opacity: 0.9;">
+                         </div>
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                   
-                                </div>
-                            </div>
-
-                            <div class="book-menu mt-40">
+                        
+                            <div class="book-menu">
 
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-3 col-sm-12 ">
-                                  
-                                        </div>
-                                        <div class="col-md-7 col-sm-12 col-md-offset-right-2 ">
+                                        
+                                        <div class="col-md-offset-3 col-md-7 col-sm-12 col-md-offset-right-3 ">
                                         <div class="section-title1 text-center">
                                         <div class="title-separator">
                                             <!-- <img src="assets/images/food_icon.png"> -->
@@ -148,10 +141,16 @@ transform:translate(-50%,-50%)
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                             
                 </section>
                 <div class="clearfix"></div>
                 <section class="gallery white-bg page-section-ptb" id="gallery">
+                <div class="object-right object_right_img animated fadeIn ">
+                            <img class="img-responsive img1 " src="assets/images/icon/sec-img-1.png" alt="">
+                        </div>
+                        <div >
+                            <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-2.png" style="position:absolute;opacity: 0.9;bottom:0">
+                         </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="section-title text-center">
                             <div class="title-separator">
@@ -278,9 +277,9 @@ transform:translate(-50%,-50%)
 
                 <div claass="clearfix"></div>
 
-                <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 " style="background-image: url(assets/images/bg_banner.jpg);">
+                <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 ">
 
-                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background-image: url(assets/images/icon/slider_image1.jpg);background-repeat:no-repeat;">
+                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background-image: url(assets/images/icon/wrap.png);background-size: cover;background-repeat:no-repeat;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
@@ -328,7 +327,7 @@ transform:translate(-50%,-50%)
                                                         <div class="slide">
                                                             <div class="slide_inner">
                                                             <div class="slide_inner__left">
-                                                            <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                            <img src="assets/images/icon/abt_bggg.png">
                                                             
                                                             </div>
                                                             <div class="slide_inner__right">
@@ -351,7 +350,7 @@ transform:translate(-50%,-50%)
                                                         <div class="slide">
                                                             <div class="slide_inner">
                                                             <div class="slide_inner__left">
-                                                            <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                            <img src="assets/images/icon/swt4.webp">
                                                                 <div class="firework">
                                                             
                                                                 </div>
@@ -377,7 +376,7 @@ transform:translate(-50%,-50%)
                                                         <div class="slide">
                                                             <div class="slide_inner">
                                                             <div class="slide_inner__left">
-                                                                <img src="assets/images/icon/baklawa_sweet_1.png">
+                                                                <img src="assets/images/icon/banner-1.png">
                                                                 <div class="firework">
                                                                 
                                                                 </div>
@@ -513,7 +512,7 @@ transform:translate(-50%,-50%)
                     </div>
                     <div class="content-wrap">
 
-                        <div id="map_home" class="slideInUp" style="height:500px; width:100%"></div>
+                        <div id="map_home" class="slideInUp" style="height:400px; width:100%"></div>
                     </div>
                     <div class="clearfix"></div>
                  

@@ -13,6 +13,15 @@
     height: 370px;
     width: 100%;
   }
+  .mobile-slider .item{
+    background: #f1f1f1;
+    height: 370px;
+    border-radius: 30px;
+    padding: 80px 30px;
+  }  
+  .mobile-slider .item img{
+    max-height: 250px;
+  }
   </style>
 
 <section id="hero-area" class="section-hero2 section overlay1">
@@ -37,11 +46,12 @@
                             <div class="phone">
                            
                                 <div class="mobile-slider owl-carousel owl-theme">
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
-                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_1.jpg" alt="Screen 3"></div>
+                                    <div class="item"><img src="assets/images/icon/abt_bg2.png" alt="Screen 3"></div>
+                                    <div class="item"><img src="assets/images/icon/baklawa_sweet_2.png" alt="Screen 3"></div>
+                                    <div class="item"><img src="assets/images/icon/abt_bggg.png" alt="Screen 3"></div>
+                                    <div class="item"><img src="assets/images/icon/swt4.webp" alt="Screen 3"></div>
+                                    <div class="item"><img src="assets/images/icon/swt5.jpg" alt="Screen 3"></div>
+                                    <div class="item"><img src="assets/images/icon/swt6.webp" alt="Screen 3"></div>
                                </div>
                                  
                             </div>
