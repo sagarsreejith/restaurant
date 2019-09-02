@@ -29,6 +29,8 @@ $lang['menu_admin'] 		                        = 'Administrator';
 
 
 
+$lang['button_reset'] 		                        = 'Email';
+$lang['label_email'] 		                        = 'Email';
 $lang['emailid'] 		                            = 'Email';
 $lang['label_password'] 		                    = 'Password';
 $lang['label_confirm_password'] 		            = 'Confirm Password';
