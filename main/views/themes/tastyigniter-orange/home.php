@@ -46,18 +46,20 @@ transform:translate(-50%,-50%)
                             <div class="col-md-3 col-sm-3 col-xs-6 icon-box">
                             
                                 <div class="box-icon-svg">
-                                <div class="box-icon-svg-inner">
-                                    <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
-                                    </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-search"></i></span>
-                                </div>
-                                <div class="box-icon-svg-caption">
-                                    <h4><?php echo lang('text_step_one'); ?></h4>
-                                   
-                                </div>
+                                    <div class="box-icon-svg-inner">
+                                        <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                        <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                        </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-search"></i></span>
+                                    </div>
+                                    <div class="box-icon-svg-caption">
+                                        <h4><?php echo lang('text_step_one'); ?></h4>
+                                    
+                                    </div>
+                                  
                                 </div>
                             
                             </div>
+                            
                             <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
                             
                                 <div class="box-icon-svg">
@@ -103,6 +105,8 @@ transform:translate(-50%,-50%)
                                     </div>
                                 
                                 </div>
+                              
+                            </div>
                      
                         </div>
                     </div>
@@ -280,26 +284,51 @@ transform:translate(-50%,-50%)
 
                 <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 ">
 
-                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background: url(assets/images/wrap.png) !important;background-size: cover;background-repeat:no-repeat;">
+                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background: url(assets/images/icon/slider_image1.jpg) !important;background-size: cover;background-repeat:no-repeat;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
 
-                                <div class="mobile-slider2 owl-carousel owl-theme">
-                                    <div class="owl-item">
-                                            <img src="assets/images/banner2.png" />
-                                    </div>
-                                    <div class="owl-item">
-                                            <img src="assets/images/banner2.png" />
-                                    </div>
-                                    <div class="owl-item">
-                                            <img src="assets/images/banner2.png" />
-                                    </div>
-                                    <div class="owl-item">
-                                            <img src="assets/images/banner2.png" />
-                                    </div>
-                                      
-                               </div>  
+                                <div class="cont">
+                                                 
+                                                    <div class="app">
+                                                        <div class="app__bgimg">
+                                                            <div class="app__bgimg-image app__bgimg-image--1">
+                                                            <div class="app__img">
+                                                                <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+                                                             </div>
+                                                             <div class="app__text app__text--1">
+                                                                <div class="app__text-line app__text-line--4">Eid Special </div>
+                                                                <div class="app__text-line app__text-line--3">25% offer</div>
+                                                             </div>
+                                                            </div>
+                                                            <div class="app__bgimg-image app__bgimg-image--2">
+
+                                                                <div class="app__img">
+                                                                    <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+                                                                </div>
+                                                                <div class="app__text app__text--2">
+                                                                    <div class="app__text-line app__text-line--4">Best Offer</div>
+                                                                    <div class="app__text-line app__text-line--3">Get free </div>
+                                                                </div>
+                                                        
+                                                            </div>
+                                                          
+                                                        </div>
+                                                      
+                                                       
+                                                        
+                                                       
+                                                        
+                                                    </div>
+                                                    <div class="pages">
+                                                        <ul class='pages__list'>
+                                                            <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+                                                            <li data-target='2' class='pages__item pages__item--2'></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
                                 </div>
                             </div>
                         </div>
@@ -425,26 +454,184 @@ transform:translate(-50%,-50%)
 
                 <div claass="clearfix"></div>
 
+
+
+                <div class="modal fade" id="login" tabindex="-1" data-dismiss="modal"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2> <span class="text-orange">Log In</span></h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <?php if ($this->alert->get('', 'alert')) { ?>
+                        <div id="notification">
+                        <?php echo $this->alert->display('', 'alert'); ?>
+                        </div>
+                        <?php } ?>
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('emailid'); ?>" autofocus=""/>
+                                     <span class="input-group-addon">@</span>
+                                </div>
+                                <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                <span class="text-danger" id="login-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary btn-block btn-lg" onclick="login()">
+                                            Login
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a class="forgot_btn1  " href="<?php echo site_url('forgot-password'); ?>" style="color:#6f1e30;text-transform: none;">
+                                            Forgot Passowrd?
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a class=" reg_btn1 text-right" data-dismiss="modal" data-toggle="modal" data-target="#register"> Register</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="modal fade" id="register" tabindex="-1" data-dismiss="modal"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                    <div id="register-form" class="content-wrap col-sm-12 center-block">
+					<div class="section-title text-center">
+						<div class="title-separator"></div>
+						<h2 class="reg_st"> <span class="text-orange"><?php echo lang('text_register'); ?></span></h2>
+						<span class="under-heading"></span>
+					</div>
+				
+					<form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form" class="">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="form-group">
+									<input type="text" id="first-name" class="form-control input-lg" value="<?php echo set_value('first_name'); ?>" name="first_name" placeholder="<?php echo lang('label_first_name'); ?>" autofocus="">
+									<?php echo form_error('first_name', '<span class="text-danger">', '</span>'); ?>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="form-group">
+									<!-- <input type="text" id="last-name" class="form-control input-lg" value="<?php echo set_value('last_name'); ?>" name="last_name" placeholder="<?php echo lang('label_last_name'); ?>">
+									<?php echo form_error('last_name', '<span class="text-danger">', '</span>'); ?> -->
+									<input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
+									<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
+							<?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="form-group">
+									<input type="password" id="password" class="form-control input-lg" value="" name="password" placeholder="<?php echo lang('label_password'); ?>">
+									<?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="form-group">
+									<input type="password" id="password-confirm" class="form-control input-lg" name="password_confirm" value="" placeholder="<?php echo lang('label_password_confirm'); ?>">
+									<?php echo form_error('password_confirm', '<span class="text-danger">', '</span>'); ?>
+								</div>
+							</div>
+						</div>
+				
+					
+
+						<?php if ($registration_terms) {?>
+							<div class="row">
+								<div class="col-xs-8 col-sm-9 col-md-12 connt_clr">
+									<span class="button-checkbox">
+										<button id="terms-condition" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_terms_agree'); ?></button>
+				                        <input type="checkbox" name="terms_condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
+									</span>
+									<?php echo sprintf(lang('label_terms'), $registration_terms); ?>
+								</div>
+								<?php echo form_error('terms_condition', '<span class="text-danger">', '</span>'); ?>
+							</div>
+							<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											
+											
+										<h4>	Introduction</h4>
+												<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
+
+												These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+
+												Minors or people below 18 years old are not allowed to use this Website.</p>
+
+												<h4> Intellectual Property Rights</h4>
+												<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
+
+												You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						<?php } ?>
+						
+
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<button type="submit" class="btn btn-primary btn-block btn-lg"><?php echo lang('button_register'); ?></button>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<a href="<?php echo $login_url; ?>" class="btn btn-default btn-block btn-lg"><?php echo lang('button_login'); ?></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-8 col-sm-12 col-md-12  col-md-12 connt_clr subscribe">
+								<span class="button-checkbox">
+									<button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
+			                        <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
+								</span>
+								 <?php echo lang('label_newsletter'); ?>
+							</div>
+							<?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
+						</div>
+					</form>
+				</div>
+                    </div>
+                </div>
+            </div>
+        </div>                                           
+
+
+
                 <?php echo get_footer(); ?>
                     <div class="clearfix"></div>
                     <script>
-                        // $(function() {
-
-                        //   $('a[href*=#]:not([href=#])').click(function() {
-                        //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                        //       var target = $(this.hash);
-                        //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                        //       if (target.length) {
-                        //         $('html,body').animate({
-                        //           scrollTop: target.offset().top
-                        //         }, 1500);
-                        //         return false;
-                        //       }
-                        //     }
-                        //   });
-
-                        // });
-
+                  
                         $(document).ready(function() {
                             if(getCookie('order_type') === ""){
                                 document.cookie = "order_type=1; path=/";
@@ -625,3 +812,70 @@ $(window).scroll(function () {
 });
 
 </script>
+<script>
+    $(document).ready(function() {
+	const $app = $('.app');
+	const $img = $('.app__img');
+	const $pageNav1 = $('.pages__item--1');
+	const $pageNav2 = $('.pages__item--2');
+	let animation = true;
+	let curSlide = 1;
+	let scrolledUp, nextSlide;
+	
+	let pagination = function(slide, target) {
+		animation = true;
+		if (target === undefined) {
+			nextSlide = scrolledUp ? slide - 1 : slide + 1;
+		} else {
+			nextSlide = target;
+		}
+		
+		$('.pages__item--' + nextSlide).addClass('page__item-active');
+		$('.pages__item--' + slide).removeClass('page__item-active');
+		
+		$app.toggleClass('active');
+		setTimeout(function() {
+			animation = false;
+		}, 3000)
+	}
+	
+	let navigateDown = function() {
+		if (curSlide > 1) return;
+		scrolledUp = false;
+		pagination(curSlide);
+		curSlide++;
+	}
+
+	let navigateUp = function() {
+		if (curSlide === 1) return;
+		scrolledUp = true;
+		pagination(curSlide);
+		curSlide--;
+	}
+
+	setTimeout(function() {
+		$app.addClass('initial');
+	}, 1500);
+
+	setTimeout(function() {
+		animation = false;
+	}, 4500);
+	
+	$(document).on('mousewheel DOMMouseScroll', function(e) {
+		var delta = e.originalEvent.wheelDelta;
+		if (animation) return;
+		if (delta > 0 || e.originalEvent.detail < 0) {
+			navigateUp();
+		} else {
+			navigateDown();
+		}
+	});
+
+	$(document).on("click", ".pages__item:not(.page__item-active)", function() {
+		if (animation) return;
+		let target = +$(this).attr('data-target');
+		pagination(curSlide, target);
+		curSlide = target;
+	});
+});
+    </script>

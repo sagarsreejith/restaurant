@@ -13,11 +13,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div id="register-form" class="content-wrap col-sm-6 center-block">
-				<div class="section-title text-center">
-					<div class="title-separator"></div>
-					<h2 class="reg_st"> <span class="text-orange"><?php echo lang('text_register'); ?></span></h2>
-					<span class="under-heading"></span>
-				</div>
+					<div class="section-title text-center">
+						<div class="title-separator"></div>
+						<h2 class="reg_st"> <span class="text-orange"><?php echo lang('text_register'); ?></span></h2>
+						<span class="under-heading"></span>
+					</div>
 				
 					<form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form" class="">
 						<div class="row">
@@ -55,29 +55,10 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<!-- <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
+						
 							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?> -->
 						</div>
-						<!-- <div class="form-group">
-							<select name="security_question" id="security-question" class="form-control input-lg" placeholder="<?php echo lang('label_s_question'); ?>">
-							<?php foreach ($questions as $question) { ?>
-								<option value="<?php //echo $question['id']; ?>"><?php echo $question['text']; ?></option>
-							<?php } ?>
-							</select>
-							<?php //echo form_error('security_question', '<span class="text-danger">', '</span>'); ?>
-						</div>
-						<div class="form-group">
-							<input type="text" id="security-answer" class="form-control input-lg" name="security_answer" value="<?php //echo set_value('security_answer'); ?>" placeholder="<?php //echo lang('label_s_answer'); ?>">
-							<?php //echo form_error('security_answer', '<span class="text-danger">', '</span>'); ?>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-         		 				<span><?php //echo $captcha['image']; ?></span>
-								<input type="text" name="captcha" class="form-control" placeholder="<?php //echo lang('label_captcha'); ?>" />
-							</div>
-							<?php //echo form_error('captcha', '<span class="text-danger">', '</span>'); ?>
-						</div> -->
-						
+					
 					
 
 						<?php if ($registration_terms) {?>
@@ -98,23 +79,22 @@
 											
 											
 										<h4>	Introduction</h4>
-<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
+												<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
 
-These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+												These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
 
-Minors or people below 18 years old are not allowed to use this Website.</p>
+												Minors or people below 18 years old are not allowed to use this Website.</p>
 
-<h4> Intellectual Property Rights</h4>
-<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
+												<h4> Intellectual Property Rights</h4>
+												<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
 
-You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+												You are granted limited license only for purposes of viewing the material contained on this Website.</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						<?php } ?>
-						<br />
-						<br />
+						
 
 						<div class="row">
 							<div class="col-xs-12 col-md-6">

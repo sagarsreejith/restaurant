@@ -5,8 +5,31 @@
 		
 	
 		
+		jQuery(window).on('scroll', function() {
+			if ($(this).scrollTop() > 100) {
+				$('.header .main-menu').addClass("sticky");
+			} else {
+				$('.header .main-menu').removeClass("sticky");
+			}
+			});
+			
+			// Mobile Menu JS  //
+			$('.mobile-menu').slicknav({
+				prependTo:".mobile-nav",
+			});
 	
+
 	
+			var typed = $(".typed");
+			$(function() {
+				typed.typed({
+					strings: ["Zalatimo provides.", "Best Offer.", "Valuable Price.", "Best Quality"],
+					typeSpeed: 150,
+					loop: true
+				});
+			});
+	
+
 		
 		//Mobile slider
 		$('.mobile-slider')['owlCarousel']({
@@ -26,9 +49,7 @@
 		});
 		
 		
-		
 	
-
 
 	});
 	

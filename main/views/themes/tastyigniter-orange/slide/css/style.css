@@ -32,10 +32,31 @@
 	height: 0px;
 	min-height: 0px;
 }
-.header .nav{
+/* .header .nav{
 	overflow:hidden;
 	float:right;
+} */
+.header_drp li {
+    width: 100%;
 }
+.header_drp li a{
+    color: #333 !important;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    padding:10px !important;
+}
+.header_drp li a:hover {
+  
+    background: #6f1e30 !important;
+    color: #fff !important;
+}
+.navbar-default .navbar-nav>.open>a{
+    background: #6f1e30 !important;
+    color: #fff !important;
+}
+
+
 .header .nav li {
 	float: left;
 	position: relative;
@@ -430,135 +451,33 @@
 /*=============================
 	/End Hero Section 2 CSS 
 ===============================*/
-
+.slicknav_menu{
+display:none;
+}
 @media only screen and (max-width: 768px) {
-   
-    
-    .header .sticky {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        animation: fadeInDown 0.8s both 0s;
-    }
-    .header .nav li.current a,
-    .header .nav li:hover a,
-    .header .nav li:focus a {
-        color: #755ce4;
-        background: #fff;
-    }
-    .mobile-nav{
+    .slicknav_menu{
         display:block;
-    }
-    .header .mobile-nav{
-        display:block;
-        position:relative;
-    }
-    .header .slicknav_menu {
-        background: transparent;
-        padding: 0;
-        padding-bottom: 22px;
-    }
-    .header .slicknav_btn {
-        background: #fff;
-        color: #755ce4;
-        padding: 8px 9px;
-        margin: -31px 0px 0 0px;
-        border: none;
-        border-radius: 0px;
-        text-shadow: none;
-    }
-    .header .drop-down .slicknav_nav .slicknav_arrow {
-        display: block;
-    }
-    .header .slicknav_menu .mega-widget p {
-        color: #fff;
-        margin: 10px 0;
-    }
-    .header .slicknav_menu .mega-widget img{
-        width:100%;
-    }
-    .header .slicknav_menu .mega-widget .image a{
-        display:none;
-    }
-    .header .slicknav_menu .list-menu span{
-        margin-right:10px;
-    }
-    .header .slicknav_menu .list-menu{
-        display:block;
-    }
-    .header .slicknav_menutxt {
-        text-shadow:none;
-    }
-    .header .slicknav_nav .slicknav_arrow {
-        float: right;
-    }
-    .header .slicknav_nav li{
-        -webkit-transition:all 0.2s ease;
-        -moz-transition:all 0.2s ease;
-        transition:all 0.2s ease;
-    }
-    .header .slicknav_nav a {
-        margin: 0;
-        color: #333;
-        background: transparent;
-        overflow: hidden;
-        -webkit-transition:all 0.2s ease;
-        -moz-transition:all 0.2s ease;
-        transition:all 0.2s ease;
-        background:transparent;
-    }
-    .header .slicknav_nav a:hover,
-    .header .slicknav_nav a:focus,
-    .header .slicknav_nav a:active{
-        color:#333;
-        background:#fff;
-    }
-    .header .slicknav_nav li:hover a{
-        color:#755ce4;
-    }
-    .header .slicknav_nav a i {
-        display:none;
-    }
-    .header .slicknav_nav {
-        padding: 5px;
-        background: #fff;
-        padding: 15px 10px;
-        margin-top: 10px;
-    }
-    .header .slicknav_nav .mega-inner a h4 {
+        }
+    .header .logo img{
+        width: 240px;
         float: left;
-        font-weight: 500;
     }
-    .header .nav li {
-        margin-right: 2px;
+    .slicknav_nav{
+        text-align: center;
     }
-    .header .nav li a {
-        font-size: 13px;
-        padding: 25px 6px 20px 6px;
-        font-size: 12px;
-    }
-    .hero-section1{
-        height:500px;
-        width:100%;
-    }
-    .hero-section1.section {
-        padding: 20px 0px 130px 0px;
-    }
-    .hero-section1 .hero-content {
-        margin-top: 0px;
-    }
-    .hero-section1 .hero-content h1 {
-        font-size: 27px;
-        line-height: 34px;
-    }
-    .hero-section1 .hero-content p {
+  
+    .slicknav_nav li a{
         font-size: 14px;
-        /* letter-spacing: 0.5px; */
-        line-height: 24px;
-        margin-bottom: 30px;
-        color: #fff;
+        color: #792b3c;
     }
-    .hero-section1 .hero-image{
-        display:none;
+    .slicknav_nav, .slicknav_nav ul{
+        overflow:visible !important;
     }
+    .slicknav_nav ul {
+        margin: 11px 4px 0 20px;
     }
+    .top-arrow {
+        left: calc(50% - -33px);
+        top: -8px;
+    }
+}

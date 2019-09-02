@@ -30,13 +30,16 @@
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="hero-content-wrap">
                             <div class="hero-content">
-                                <h1>Welcome to Zalatimo Sweets</h1>
-                                <p>Our software platform and custom development allow healthcare institutions to create
+                            <div class="hero-content typed-strings">
+                               <h1>Welcome to Zalatimo Sweets <span class="typed"></span></h1>
+                                 
+                               <p>Our software platform and custom development allow healthcare institutions to create
                                     comprehensive cross-platform solutions that ensure positive patient experiences.</p>
-                                <div class="slider-action-btn">
-                                  <a href="#" class="btn order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>
-                                      
-                                </div> 
+                                
+                            </div>
+                              <div class="slider-action-btn">
+                                  <a href="#" class="btn order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>    
+                              </div> 
                             </div>
 					        	    </div>
 						

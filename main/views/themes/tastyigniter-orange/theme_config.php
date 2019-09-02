@@ -47,14 +47,15 @@ $theme['head_tags'] = array(
 	
 		array(theme_url('tastyigniter-orange/slide/css/normalize.css'), 'normalize', '27'),
 		array(theme_url('tastyigniter-orange/slide/css/style.css'), 'style', '28'),
-	//	array(theme_url('tastyigniter-orange/slide/css/responsive.css'), 'responsive', '29')
+		array(theme_url('tastyigniter-orange/slide/css/responsive.css'), 'responsive', '29'),
+		array(theme_url('tastyigniter-orange/slide/css/slicknav.min.css'), 'slicknav', '30')
 
 
 
 		
 		
 	),
-	'script'   	=> array(
+	'script' => array(
 		array(theme_url('tastyigniter-orange/js/jquery-1.11.2.min.js'), 'jquery-js', '1'),
 		array(theme_url('tastyigniter-orange/js/bootstrap.min.js'), 'bootstrap-js', '2'),
 		array(theme_url('tastyigniter-orange/slide/js/owl.carousel.min.js'), 'owl', '6'),
@@ -69,19 +70,21 @@ $theme['head_tags'] = array(
 
 	
 		array(theme_url('tastyigniter-orange/slide/js/jquery.slicknav.min.js'), 'slicknav-min', '9'),
-		//array(theme_url('tastyigniter-orange/slide/js/jquery.scrollUp.min.js'), 'scrollUp-min', '10'),
-	//	array(theme_url('tastyigniter-orange/slide/js/jquery.counterup.min.js'), 'counterup-js', '11'),
-		//array(theme_url('tastyigniter-orange/slide/js/jquery.stellar.min.js'), 'stellar.min-js', '12'),
+		array(theme_url('tastyigniter-orange/slide/js/jquery.scrollUp.min.js'), 'scrollUp-min', '10'),
+		
+		array(theme_url('tastyigniter-orange/slide/js/jquery.stellar.min.js'), 'stellar.min-js', '12'),
 		array(theme_url('tastyigniter-orange/slide/js/onepage-nav.min.js'), 'onepage-js', '13'),
+		array(theme_url('tastyigniter-orange/slide/js/typed.min.js'), 'typed-js', '11'),
 		array(theme_url('tastyigniter-orange/slide/js/main.js'), 'main', '14'),
 
 
 		
 		array(theme_url('tastyigniter-orange/js/fontawesome.min.js'), 'fontawesome-js', '38'),
 		
-		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '39')
+		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '39'),
+	
 
-
+	
 
 		
 	),

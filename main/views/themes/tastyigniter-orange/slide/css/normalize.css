@@ -64,7 +64,11 @@ display:inline-block
     -webkit-transform: translateZ(100px);
             transform: translateZ(100px);
   }
- 
+  .icon-white:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg) !important;
+}
   
 
 .box-icon-svg-text{
@@ -80,16 +84,6 @@ margin-top:18px
 .icon-white i{
 font-size: 18px;
 color: #fff;
-}
-.icon-box:hover {
--webkit-box-shadow: 0 4px 40px 0 rgba(22, 52, 75, 0.08);
--moz-box-shadow: 0 4px 40px 0 rgba(22, 52, 75, 0.08);
-box-shadow: 0 4px 40px 0 rgba(22, 52, 75, 0.08);
-transform: translateY(-5px);
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
 }
 
 .hg_bg{
