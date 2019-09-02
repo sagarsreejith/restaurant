@@ -4623,7 +4623,7 @@ height:auto !important;
   position: absolute;
   -webkit-transform: translate3d(0, -750px, 0);
           transform: translate3d(0, -750px, 0);
-  width: 850px;
+  width: 100%;
   height: 100%;
   transition: -webkit-transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
   transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
@@ -4854,4 +4854,13 @@ height:auto !important;
 .icon-link--twitter {
   left: auto;
   right: 5px;
+}
+#about{
+  background-image: url(https://preview.ait-themes.club/theme/sushi/wp-content/uploads/sites/6/background.png);
+background-repeat: repeat;
+background-attachment: scroll;
+background-position: top center;
+margin-top: px;
+padding-bottom: 0px;
+margin-bottom: 0px;
 }

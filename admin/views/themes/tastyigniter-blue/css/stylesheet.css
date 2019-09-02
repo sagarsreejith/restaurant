@@ -3136,10 +3136,10 @@ background-color: #e4e4e4;
 .input-group-addon i{
 	color: #fff;
 }
-.input-group-addon {
+/* .input-group-addon {
     background-color: #6f1e31;
 	border: 1px solid #6f1e31;
-}
+} */
 body{
  background-color: #fff;
 }
@@ -3154,8 +3154,8 @@ body{
     height: 113px;
 }
 .input-group .input-group-addon{
-	 background-color: #6f1e31; 
-   border: 1px solid #6f1e31; 
+	 /* background-color: #6f1e31; 
+   border: 1px solid #6f1e31;  */
 }
 .text-sm{
 	background-color: #ECF0F5 !important;

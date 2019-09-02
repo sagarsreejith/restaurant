@@ -1,4 +1,3 @@
-
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <div id="page-content" class="mt_st">
@@ -338,8 +337,8 @@
 									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
-				<!--prob-->		</div>
-					
+								
+							</div>
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">
@@ -439,7 +438,11 @@
 											</div>
 
 									</div>
-									<div class="row">
+								</div>
+						
+							
+										
+								<div class="row">
 									<div class="col-sm-12 form-group">
 									
 									
@@ -459,17 +462,17 @@
 												<div class="modal-content">
 													<div class="modal-body">
 
-														<h4>	Introduction</h4>
-														<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
+												<h4>	Introduction</h4>
+<p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.
 
-														These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
+These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.
 
-														Minors or people below 18 years old are not allowed to use this Website.</p>
+Minors or people below 18 years old are not allowed to use this Website.</p>
 
-														<h4> Intellectual Property Rights</h4>
-														<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
+<h4> Intellectual Property Rights</h4>
+<p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.
 
-														You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+You are granted limited license only for purposes of viewing the material contained on this Website.</p>
 
 
 													</div>
@@ -485,11 +488,6 @@
 										<?php echo $ip_address; ?><br /><small><?php echo lang('text_ip_warning'); ?></small>
 									</div>
 								</div>
-								</div>
-						
-							
-										
-								
 							</div>
 						</form>
 					</div>
@@ -507,53 +505,41 @@ $(document).ready(function() {
 	$("#choose-order-time select.form-control").select2({
 		minimumResultsForSearch: Infinity
 	});
-
 	$('input[name="order_time_type"]').on('change', function() {
 		$('#choose-order-time').fadeOut();
-
 		if (this.value === 'later') {
 			$('#choose-order-time').fadeIn();
 		}
 	});
-
 	$('select[name="order_date"]').on('change', function() {
 		$('#choose-order-time .time-input-addon .input-group').css("display", "none");
-
 		var timeAddonId = "#order-time-" + this.value;
 		if ($(timeAddonId).length) {
 			$(timeAddonId).css("display", "table");
 			$(timeAddonId + ' select.hours, ' + timeAddonId + ' select.minutes:not(.hide)').trigger("change");
 		}
 	});
-
 	$('select.hours').on('change', function() {
 		var minutesAddonId = ".minutes-for-" + this.value;
-
 		$('#choose-order-time .time-input-addon .minutes').addClass("hide");
 		$('input[name="order_hour"]').val(this.value);
-
 		if ($(this).parent().find(minutesAddonId).length) {
 			$(minutesAddonId).removeClass("hide");
 			$(minutesAddonId).css("display", "table-cell");
 			$(minutesAddonId).trigger("change");
 		}
 	});
-
 	$('select.minutes').on('change', function() {
 		$('input[name="order_minute"]').val(this.value);
 	});
-
 	$('#address-labels input[name="address_id"]').on('change', function() {
 		var formToggle = $(this).parent().parent().find('.edit-address');
 		formToggle.text('<?php echo lang('text_edit'); ?>');
 		$('#address-forms > div').slideUp();
 	});
-
-
 	$('#address-labels .edit-address').on('click', function() {
 		var formDiv = $(this).attr('data-form');
 		$('#address-forms > div').slideUp();
-
 		if ($(formDiv).is(':visible')) {
 			$(this).text('<?php echo lang('text_edit'); ?>');
 			$(formDiv).slideUp();
@@ -562,7 +548,6 @@ $(document).ready(function() {
 			$(formDiv).slideDown();
 		}
 	});
-
 	$('.step-one.link a').on('click', function() {
 		$(this).removeClass('link');
 		$('.step-two').removeClass('active').addClass('disabled');
@@ -571,7 +556,6 @@ $(document).ready(function() {
 		$('#checkout').fadeIn();
 		$('#payment').fadeOut();
 		$('#cart-box .btn-order').text('<?php echo lang('button_payment'); ?>');
-
 	});
 });
 //-->
@@ -599,20 +583,10 @@ $(document).ready(function() {
 		$( ".custom-button" ).removeClass( "acivie-option" );
 		$(this).addClass( "acivie-option" );
   });
-
-
-
-
 </script>
 <script>
 $(document).ready(function() {
-
-
-
 initMapHome();
-
-
-
 function initMapHome() {
 var broadway = {
 	info: '<strong>Zalatimo Sweets</strong><br>\
@@ -621,7 +595,6 @@ var broadway = {
 	lat: 29.3757,
 	long: 47.9868,
 }
-
 var belmont = {
 	info: '<strong>Zalatimo Sweets</strong><br>\
 	Ground Floor, Building 25, Marina Crescent<br> Salmiya<br>\
@@ -629,7 +602,6 @@ var belmont = {
 	lat: 29.3439534,
 	long: 48.0633999,
 }
-
 //                     var sheridan = {
 //                         info: '<strong>Chipotle on Sheridan</strong><br>\r\
 // 6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
@@ -637,13 +609,11 @@ var belmont = {
 //                         lat: 29.14583,
 //                         long: 48.09472,
 //                     }
-
 var locations = [
 	[broadway.info, broadway.lat, broadway.long, 0],
 	[belmont.info, belmont.lat, belmont.long, 1],
 	// [sheridan.info, sheridan.lat, sheridan.long, 2],
 ]
-
 var map = new google.maps.Map(document.getElementById('map_home'), {
 	zoom: 12,
 	center: new google.maps.LatLng(29.3759, 47.9774),
@@ -655,18 +625,14 @@ var map = new google.maps.Map(document.getElementById('map_home'), {
 	scaleControl: true,
 	mapTypeId: google.maps.MapTypeId.ROADMAP,
 })
-
 var infowindow = new google.maps.InfoWindow({})
-
 var marker, i
-
 for (i = 0; i < locations.length; i++) {
 	marker = new google.maps.Marker({
 		position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 		icon: "assets/images/restaurant_mapmarker13.png",
 		map: map,
 	})
-
 	google.maps.event.addListener(
 		marker,
 		'click', (function(marker, i) {
@@ -679,14 +645,10 @@ for (i = 0; i < locations.length; i++) {
 }
 }
 });
-
 </script>
 <script>
-
-
-
-
 </script>
 
 <?php echo get_footer(); ?>
+
 
