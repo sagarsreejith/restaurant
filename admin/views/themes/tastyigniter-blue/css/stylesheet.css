@@ -3172,3 +3172,7 @@ body{
 	color: #fff !important;
     background-color: #6c182acc;
 }
+#edit-form .input-group-addon{
+	background-color: #6c182acc !important;
+	
+}
