@@ -28,6 +28,7 @@
 					</div>
 				<?php } ?>
 				<p class="text-center"><?php echo lang('text_summary'); ?></p>
+				<?php echo current_url(); ?>
 				<form method="POST" id="password_form"  accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
 					<div class="form-group">
 						<input name="email" type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />

@@ -39,10 +39,11 @@ $lang['alert_no_search_query'] 		                = '<p class="alert-danger">Plea
 $lang['alert_info_outdated_browser'] 		        = 'You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.';
 
 //Modal Box
-$lang['button_reset'] 		                        = 'Reset Password';
-$lang['label_email'] 		                        = 'Email Address';
-$lang['button_login'] 		                        = 'Login';
-$lang['text_summary'] 			    = 'Email address you use to log in to your account We\'ll send you an email with a new password.';
+$lang['emailid'] 		        = 'User Email';
+$lang['button_reset'] 		    = 'Reset Password';
+$lang['label_email'] 		    = 'Email Address';
+$lang['button_login'] 		    = 'Login';
+$lang['text_summary'] 		    = 'Email address you use to log in to your account We\'ll send you an email with a new password.';
 
 $lang['text_heading'] 			= 'Login';
 $lang['text_register_heading'] 	= 'Register';

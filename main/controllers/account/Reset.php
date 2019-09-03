@@ -30,10 +30,19 @@ class Reset extends Main_Controller {
 		}
 
 		if ($this->input->post() AND $this->_resetPassword() === TRUE) {
-            redirect('account/login');
-		}
-
-		$this->template->render('account/reset', $data);
+            if ($this->input->is_ajax_request()) {
+                $data['success'] = TRUE;
+                return $this->output->set_output(json_encode($data));
+            } else {
+                redirect('account/login');
+            }
+        }
+        if ($this->input->is_ajax_request()) {
+            $data['success'] = FALSE;
+            $this->output->set_output(json_encode($data));											// encode the json array and set final out to be sent to jQuery AJAX
+        } else { 
+		    $this->template->render('account/reset', $data);
+        }
 	}
 
 	private function _resetPassword() {															// method to validate password reset
