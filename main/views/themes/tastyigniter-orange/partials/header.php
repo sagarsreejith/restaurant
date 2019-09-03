@@ -274,38 +274,53 @@
                                 <?php } ?>
                                 <div id="register-form" class="content-wrap col-sm-12 center-block">
                                 <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_register'); ?></span></h2>
-                            <span class="under-heading"></span>
+                                <span class="under-heading"></span>
                                     <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form" class="">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
+                                                    <div class="input-group">
                                                     <input type="text" id="fullname" class="form-control input-lg" value="<?php echo set_value('fullname'); ?>" name="first_name" placeholder="<?php echo lang('label_first_name'); ?>" autofocus="">
                                                     <?php echo form_error('fullname', '<span class="text-danger">', '</span>'); ?>
+                                                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                </div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
-                                                    
-                                                    <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
-                                                    <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
+                                                    <div class="input-group">
+                                                        <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
+                                                        <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
+                                                        <span class="input-group-addon">   <i class="fa fa-phone" aria-hidden="true"></i> </span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                         </div>
+
                                         <div class="form-group">
-                                            <input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
-                                            <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                                            <div class="input-group">
+                                                <input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
+                                                <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                                                <span class="input-group-addon">   @ </span>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
-                                                    <input type="password" id="password" class="form-control input-lg" value="" name="password" placeholder="<?php echo lang('label_password'); ?>">
-                                                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                                    <div class="input-group">
+                                                        <input type="password" id="password" class="form-control input-lg" value="" name="password" placeholder="<?php echo lang('label_password'); ?>">
+                                                        <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                                        <span class="input-group-addon">  <i class="fa fa-key" aria-hidden="true"></i> </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
-                                                    <input type="password" id="confirmpassword" class="form-control input-lg" name="password_confirm" value="" placeholder="<?php echo lang('label_password_confirm'); ?>">
-                                                    <?php echo form_error('confirmpassword', '<span class="text-danger">', '</span>'); ?>
+                                                    <div class="input-group">
+                                                        <input type="password" id="confirmpassword" class="form-control input-lg" name="password_confirm" value="" placeholder="<?php echo lang('label_password_confirm'); ?>">
+                                                        <?php echo form_error('confirmpassword', '<span class="text-danger">', '</span>'); ?>
+                                                        <span class="input-group-addon">  <i class="fa fa-key" aria-hidden="true"></i> </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -371,7 +386,7 @@
                             </div>
                             <div class="col-md-6">
                             <div class="object-right object_right_img">
-                                <img class="img-responsive img1" src="assets/images/icon/Banner-new-3.jpg" alt="">
+                                <img class="img-responsive img1" src="assets/images/icon/Swt2.png" alt="">
                             </div>
                             </div>
                         </div>

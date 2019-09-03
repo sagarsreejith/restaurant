@@ -72,7 +72,7 @@ $lang['column_area_charge'] 	            = 'Delivery Charge';
 $lang['column_area_min_total'] 			    = 'Min Total';
 $lang['column_area_name'] 			        = 'Name';
 
-$lang['button_view_menu'] 		            = 'Go to Menu';
+$lang['button_view_menu'] 		            = ' Go to Menu';
 
 /* End of file local_lang.php */
 /* Location: ./main/language/english/main/local_lang.php */
