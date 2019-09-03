@@ -399,21 +399,19 @@
                             </div>
                         <?php } ?>
                          <p class="text-center"><?php echo lang('text_summary'); ?></p>
-                        <form method="POST" id="password_form"  accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
                             <div class="form-group">
-                                <input name="email" type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
+                                <input name="email" type="text" id="reset-email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
                                 <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?></td>
                             </div>
-                        
+                            <div class="row text-center" id="rest-msg"></div>
                             <div class="row text-center">
                                 <div class="col-xs-12 col-md-6">
-                                    <button type="submit" class="btn btn-primary btn-lg btn-block"><?php echo lang('button_reset'); ?></button>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="rest_password()"><?php echo lang('button_reset'); ?></button>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <a class="btn btn-default btn-lg btn-block" href="<?php echo $login_url; ?>"><?php echo lang('button_login'); ?></a>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -511,6 +509,34 @@ $(function() {
         }
    	});
   }
+
+  //Reset Password Ajax call
+  function rest_password(){
+    $("#reset-email").removeAttr( 'style' );
+    var email = $("#reset-email").val();
+    
+    if(validateEmail(email) === false){
+        $("#reset-email").css("border", "1px solid #f47d59");
+        return false;
+    }
+
+    $.ajax({
+   	    url: js_site_url('forgot-password'),
+   		type: 'POST',
+   		data: 'email=' + email,
+   		dataType: 'json',
+        success: function(json) {
+            if(json['success'] == true){
+                $("#rest-msg").html("<span class='text-success ajax-success'>Password reset successfully, please check your email for your new password.!</span>");
+            }
+            if(json['success'] == false){
+                $("#rest-msg").html("<span class='text-danger ajax-error'>No matching email address</span>");
+
+            }
+        }
+   	});
+  }
+
   function loginValidate(email, password){
     var isValid = true;
     $("#login-email").removeAttr( 'style' );
