@@ -351,18 +351,22 @@
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
       if(order_type === 'pickup'){
-         //alert($("#aioConceptPickup").find(':selected').data("id"));
+         alert($("#aioConceptPickup").find(':selected').data("id"));
          window.location.href = $("#aioConceptPickup").find(':selected').data("id");
          return false;
       }
+      alert(search_query);
+      alert(getCookie('order_type'));
+
    	//alert(order_type);
    	//return false;
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',
-   		data: 'search_query=' + search_query + '&odrer_option='+ order_type,
+   		data: 'search_query=' + search_query + '&odrer_type=' + getCookie('order_type'),
    		dataType: 'json',
    		success: function(json) {
+            console.log(json);
             json['search_query'] = search_query;
    			updateLocalBox(json);
    		}
@@ -392,11 +396,11 @@
       var site_url = '<?php echo site_url(); ?>';
 
    	if (json['redirect']) {
-         if(getCookie('order_type') === "2"){
-            var redirect = site_url + 'locations?search=' + json['search_query'] + '&offer_collection=1';
-            window.location.href = redirect;
-            return false;
-         }
+         // if(getCookie('order_type') === "2"){
+         //    var redirect = site_url + 'locations?search=' + json['search_query'] + '&offer_collection=1';
+         //    window.location.href = redirect;
+         //    return false;
+         // }
    		window.location.href = json['redirect'];
    	}
    
