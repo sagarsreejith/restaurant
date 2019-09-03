@@ -30,7 +30,12 @@
     }
     
     @media screen and (max-width: 768px) {
+        #cart-box{
+            margin-top:30px;
+        }
+        
     .cart-alert-affix {
+        
     position: fixed;
     top: 0;
     left: 0;
@@ -299,9 +304,6 @@
     .visible-xs {
         display: block!important;
         margin: 0 auto;
-    }
-     #cart-box{
-        margin-top:30px;
     }
     
     }

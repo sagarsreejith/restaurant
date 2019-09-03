@@ -1877,7 +1877,7 @@ font-size:13px;
   .bg_payment .progressbar span.list-group-item-heading{
     left: 110px !important;
   }
-  .map_icon_bg{    left: 517px !important;}
+ 
   .about{background-position: -498px 546px !important}
   .step-item h4 {
     font-weight: 700;
@@ -1983,10 +1983,10 @@ left: -37%;
     background: rgb(242, 242, 242);
     margin-bottom: 10px;
   }
-  .box_st{
+  /* .box_st{
     float:left;
     width:100%;
-  }
+  } */
   .location-list{
     float: left;
     width: 100%;
@@ -2105,18 +2105,13 @@ margin: 30px 0;
   padding: 0 30px;
   }
 
-  .map_icon_bg{
-    left: 400px!important;
-    top: 0px !important;
-    background-size:25px !important;
-  }
 
 
   #local-box{
     margin: 27% 0 !important;
   }
   .goto_menu a{
-    padding: 5px 15px !important;
+    padding: 5px 5px !important;
   }
   .rating .fa{
     font-size: 15px !important;
@@ -2299,6 +2294,7 @@ margin: 30px 0;
   padding:8px 0 !important;
   text-align:left;
 }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -2331,11 +2327,7 @@ margin: 30px 0;
     display: table;
   } 
   
-  .map_icon_bg{
-    left: 80px !important;
-    top: 23px !important;
-    background-size:25px !important;
-  }
+  
   .top-arrow{    left: calc(50% - 10px);
     top: 32px;}
 .banner_header {
@@ -2419,7 +2411,7 @@ margin: 30px 0;
   background-position: -334px 828px !important;
 }
 .text_ft{
-font-size:13px;
+font-size:12px;
 }
 .text_ft a{
   color:#cb9c47;
@@ -2780,9 +2772,7 @@ Toggle Changes
 .list-inline li a i{  line-height: 40px;}
 
 
-.map_icon_bg{
-  left: 58px !important;
-}
+
 .custom-button{
   margin-right:0 !important;
   width: 88px !important;
@@ -2856,10 +2846,6 @@ Toggle Changes
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c15f6b1611c3d8f83698d48772ba3362ad41682c
 .menu_tabs>li.active>a .icon_cl, .menu_tabs>li.active>a:focus .icon_cl {
   display:none !important;
   }
@@ -3226,14 +3212,8 @@ a.gotop {
   background: #6f1e30e6;
   width: 50%;
 }
-.place_st .text-danger .map_icon_bg {
-  left: 712px !important;
-}
-/* .box-two dl dd,.box-three dl dd {
-  display: list-item;
-  list-style-type: disc;
 
-} */
+
 .forgot_bg{
   border-radius: 4px;
 
@@ -3702,12 +3682,13 @@ input[type=radio]:checked + label {
     background: none;
     color: #6f1e30;
     font-weight: 900;
-    /* text-align: center; */
+   text-align: center; 
     border: 1px solid #6f1e30;
     padding: 5px 2px;
     float: left;
     background: #fff;
     color: #692133;
+    width: 100%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgb(111, 30, 48), 0 1px 5px 0 rgba(0,0,0,.12);
   }
     .goto_menu a:hover{
@@ -4346,7 +4327,7 @@ li.active a span.icon_cl2{
 }
 .pattern img{
   width: 100% !important;
-  margin-top: -29px !important;
+  margin-top: 0px !important;
 }
 .pattern1{
   position: absolute;
@@ -4915,7 +4896,8 @@ margin-bottom: 0px;
 }
 #register .object-right img{
 height:440px;
-clip-path: circle(99% at 89.53% 0.85%);
+clip-path: circle(135% at 89.53% 0.85%);
+
 }
 #register .modal-body{
   float: left;
@@ -4925,16 +4907,62 @@ clip-path: circle(99% at 89.53% 0.85%);
   height: 440px;
 }
 #register .object-right:before{
-  background: linear-gradient(to right, #e28631 0%, #6c182a 100%);
+
+  clip-path: circle(135% at 89.53% 0.85%);
   opacity: 0.7;
-  z-index: 5;
-  clip-path: circle(99% at 89.53% 0.85%);
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+
 }
 
 #register h2  { text-align:center;}
+@media only screen and (max-width: 1200px) {
+#cart-box-affix.affix{
+  top: 111px !important;
+}
+}
+@media only screen and (max-width: 768px) {
+.pages{
+  display:none !important;
+}
+.app__text--2 {
+  top: 161px;
+  left: 115px;
+}
+.app__img img{
+  width:100%;
+}
+.head_checkout h3{
+
+  padding: 10px;
+}
+}
+
+@media only screen and (max-width: 650px) {
+.app__text{
+  right: 344px;
+  top: 100px;
+}
+.app__text--2{
+  left: 340px;
+  top: 176px;
+}
+.app__text-line--3{
+  font-size: 26px;
+}
+.app__text-line--4{
+  font-size: 33px;
+}
+.app{
+  height:300px;
+}
+}
+
+@media only screen and (max-width: 550px) {
+  .map_icon_bg{
+    left: 57px;
+  }
+
+@media only screen and (max-width: 450px) {
+  .map_icon_bg{
+  left: 21px;
+  top: 0;
+  }}

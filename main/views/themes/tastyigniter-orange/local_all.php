@@ -67,7 +67,7 @@
 											</div>
 										</div>
 											<div class="box_st">
-											<div class="box-one col-xs-12 col-sm-10">
+											<div class="box-one col-xs-12 col-sm-9">
 												<div class="col-xs-12 col-sm-4">
 													<?php if (!empty($location['location_image'])) { ?>
 														<img class="img-responsive pull-left branch_img" src="<?php echo $location['location_image']; ?>">
@@ -157,7 +157,7 @@
 											
 											</div>
 									
-											<div class="col-xs-12 col-sm-2 goto_menu">
+											<div class="col-xs-12 col-sm-3 goto_menu">
 											<a class="" href="<?php echo $location['href']; ?>"><?php echo lang('button_view_menu'); ?> <i class="fa fa-chevron-circle-right"></i></a>
 											</div>
 									
