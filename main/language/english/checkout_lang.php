@@ -26,7 +26,7 @@ $lang['text_order_items']               = 'What you\'ve ordered:';
 $lang['text_delivery_address']          = 'Your Delivery Address';
 $lang['text_your_local']                = 'Restaurant';
 $lang['text_thank_you']                 = 'We hope to see you again soon';
-$lang['text_success_message']           = 'Your order  %s has been received and will be with you shortly.';
+$lang['text_success_message']           = 'Your order  <b class="order_num_track"> %s</b> has been received and will be with you shortly.';
 $lang['text_order_info']                = '<table class="table table-hover table-dark_cust">
 													<tbody>
 														<tr>

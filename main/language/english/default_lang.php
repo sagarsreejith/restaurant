@@ -44,20 +44,20 @@ $lang['button_reset'] 		    = 'Reset Password';
 $lang['label_email'] 		    = 'Email Address';
 $lang['button_login'] 		    = 'Login';
 $lang['text_summary'] 		    = 'Email address you use to log in to your account We\'ll send you an email with a new password.';
-
+$lang['text_track'] 		    = 'Track Order';
 $lang['text_modal_login'] 		= 'Login';
 $lang['text_register_heading'] 	= 'Register';
 $lang['text_logout_heading'] 	= 'Logged Out';
 $lang['text_login'] 			= 'Log In';
-$lang['text_register'] 			= 'Please Register <small>It\'s easy and always will be.</small>';
+$lang['text_register'] 			= 'Please Register';
 $lang['text_forgot'] 			= 'Forgot password?';
 $lang['text_required'] 			= '*** All Required fields.';
 $lang['text_login_register'] 	= 'Already registered? <a href="%s">Login</a>';
-
+$lang['text_goto_menus'] 		= 'Menu';
 $lang['text_subject'] 			= 'Account created!';
 $lang['text_success_message'] 	= 'Your account has been created.';
 $lang['text_signature'] 		= 'Regards, <br />%s';
-
+$lang['terms_condition']        =  'Terms and Condition';
 $lang['label_first_name'] 		= 'Full Name';
 $lang['label_last_name'] 		= 'Last Name';
 $lang['label_email'] 			= 'Email Address';

@@ -107,12 +107,12 @@ padding: 15px !important;
 .wrap-none {
 padding: 0 !important;
 }
-.wrap-top {
+/* .wrap-top {
 padding-top: 15px !important;
 }
 .wrap-bottom {
 padding-bottom: 15px !important;
-}
+} */
 .wrap-left {
 padding-left: 15px !important;
 }
@@ -323,7 +323,7 @@ text-align: center;
 margin-top: 35px;
 }
 .heading-section {
-padding: 15px 0;
+padding: 25px 0;
 text-align: center;
 color:#333;
 }
@@ -1620,7 +1620,7 @@ padding-right:0 !important;
     background: linear-gradient(5deg, #851c34, #741a2e);
     width: 100%;
     position: fixed;
-    margin-top: 73px;
+    margin-top: 72px;
     float: left;
     z-index: 99;
   }

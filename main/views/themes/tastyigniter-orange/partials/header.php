@@ -171,7 +171,7 @@
                                                             </li>
 
                                                             <li class="">
-                                                                <a href="<?php echo site_url('track-order'); ?>">
+                                                                <a  data-toggle="modal" data-target="#track-modal">
                                                                     <?php echo lang( 'track_recent_order'); ?>
                                                                 </a>
                                                             </li>
@@ -192,9 +192,23 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
 
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-header">
+
+                            <div class="section-title text-center">
+                                <div class="title-separator">
+                                    <!-- <img src="assets/images/food_icon.png"> -->
+                                    
+                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_modal_login'); ?></span></h2>
+                                    <span class="under-heading"></span>
+                                </div>
+
+                            </div>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                            </button>
+                        </div>
+                        
                         <div class="modal-body">
 
                             <?php if ($this->alert->get('', 'alert')) { ?>
@@ -203,7 +217,7 @@
                                 </div>
                                 <?php } ?>
                                     <fieldset>
-                                        <h2> <span class="text-orange"><?php echo lang('text_modal_login')?></span></h2>
+                                       
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('emailid'); ?>" autofocus="" />
@@ -251,9 +265,21 @@
                 <div class="modal-dialog " role="document">
                     <div class="modal-content">
 
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
+                         <div class="modal-header">
+
+                            <div class="section-title text-center">
+                                <div class="title-separator">
+                                    <!-- <img src="assets/images/food_icon.png"> -->
+                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_register'); ?></span></h2>
+                                    <span class="under-heading"></span>
+                                </div>
+
+                            </div>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
 
                         <div class="modal-body">
 
@@ -264,8 +290,7 @@
                                 <?php } ?>
 
                                     <div id="register-form" class="content-wrap col-sm-12 center-block">
-                                        <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_register'); ?></span></h2>
-                                        <span class="under-heading"></span>
+                                      
                                         <form method="POST" accept-charset="utf-8" action="" role="form" class="">
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -292,7 +317,7 @@
                                                 <div class="input-group">
                                                     <input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
                                                     <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-                                                        <span class="input-group-addon">   @ </span>
+                                                        <span class="input-group-addon">@</span>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -359,9 +384,9 @@
                                                     <div class="row">
                                                         <div class="col-xs-8 col-sm-12 col-md-12  col-md-12 connt_clr subscribe nopad">
                                                             <span class="button-checkbox">
-                                                    <button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
-                                                    <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
-                                                </span>
+                                                                <button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
+                                                                <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
+                                                         </span>
                                                             <?php echo lang('label_newsletter'); ?>
                                                         </div>
                                                         <?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
@@ -378,11 +403,21 @@
             <div class="modal fade" id="reset" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
+                      
+
                         <div class="modal-header">
-                            <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_heading'); ?></span></h2>
-                            <span class="under-heading"></span>
+
+                            <div class="section-title text-center">
+                                <div class="title-separator">
+                                    <!-- <img src="assets/images/food_icon.png"> -->
+                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_heading'); ?></span></h2>
+                                    <span class="under-heading"></span>
+                                </div>
+
+                            </div>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
@@ -416,6 +451,70 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Button trigger modal -->
+              
+
+                <!-- Modal -->
+                <div class="modal fade" id="track-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+
+                        <div class="section-title text-center">
+                            <div class="title-separator">
+                                <!-- <img src="assets/images/food_icon.png"> -->
+                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_track'); ?></span></h2>
+                                <span class="under-heading"></span>
+                            </div>
+
+                        </div>
+                      
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                                
+                            <form action="" id="tract_sec">
+                                <div class=" col-md-12 div_part">
+                                    <div class="col-md-7 col-sm-9 col-xs-10 nopad">
+                                        <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
+                                    </div>
+                                    <div class="col-md-5 col-sm-3 col-xs-2 nopad">
+                                        <!-- <label class="head_name" for="fname">Order Number</label> -->
+                                        <button type="submit" value="Submit" class="track_btn" >Submit </button>
+                                    </div>
+                                
+                                </div>
+                            
+                                
+                                <?php if(isset($result) && $status) { ?>
+                                <div class="track_part">
+                                    <div id="myDIV">
+                                        <ul class="progressbar">
+                                            <li <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-forward"></i></span> Order Placed</li>
+                                            <li <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
+                                            <li <?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
+                                            <li <?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Completed</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <?php } ?>
+                                <?php if(isset($status) && !$status) { ?> 
+                                    <h4 class="notification_track">No record Found</h1>
+                                <?php } ?>
+                            </form>
+                           
+                        </div>
+                 
+                    <div class="modal-footer">
+                    <p class="tq">We hope to see you again soon</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
             <div id="page-wrapper" class="content-area">
                 <?php if (get_theme_options('display_crumbs') === '1' AND ($breadcrumbs = get_breadcrumbs()) !== '') { ?>

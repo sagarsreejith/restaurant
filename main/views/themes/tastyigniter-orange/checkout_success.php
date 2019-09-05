@@ -1,7 +1,7 @@
 
 
 <?php echo get_header(); ?>
-<div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('../assets/images/d2.jpg');    background-size: cover;
+<div id="page-content" class="parallax pb-30 bg-overlay-black-70 " style="background:url('../assets/images/icon/slider_image1.jpg');    background-size: cover;
     background-attachment: fixed;
     background-position: center center;">
 	<div class="container">
@@ -39,8 +39,8 @@
 
 					<div class="col-xs-12 content-wrap clr_prog2">
 							<div class="cust_head">
-								<p> ZALATIMO Receipt</p>
-								<img class="img_logo" src="../assets/images/icon/logo_1.png">
+								
+								<img class="img_logo" src="../assets/images/logo_1.png">
 							</div>
 						<div class="heading-section">
 							<?php echo $text_success_message; ?>
@@ -48,7 +48,7 @@
 						
 						
 
-							<a role="presentation" class="clr_prog1"  href="<?php echo site_url('track-order'); ?>">
+							<a role="presentation" class="clr_prog1"  data-toggle="modal" data-target="#track-modal">
                                                         <?php echo lang( 'menu_recent_order'); ?> <span>to view your order progress.</span>
                                                     </a>
 		                    <span class="under-heading"></span>
@@ -75,7 +75,8 @@
 									<?php } ?>
 			                    </div>
 								<div class="col-sm-12 clr_prog heading_info_st nopad">
-								<span class="heading_info ">Order Details</span>
+								<?php if ($collection) { ?>
+										<span class="heading_info ">Order Details</span>
 										<div class="text-subline offset-top-15"></div>
 
 										<div class="col-md-5 nopad text-right">
@@ -85,6 +86,7 @@
 											<strong class="location_name_rest nm_rs"><?php echo $location_name; ?></strong><br /> 
 										</div>
 									<address><?php echo $location_address; ?></address>
+									<?php } ?>
 								</div>
 			                </div>
 			            </div>

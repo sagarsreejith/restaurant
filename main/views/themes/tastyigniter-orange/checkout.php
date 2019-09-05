@@ -457,6 +457,22 @@
 										<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog">
 												<div class="modal-content">
+													
+													<div class="modal-header">
+
+														<div class="section-title text-center">
+															<div class="title-separator">
+																<!-- <img src="assets/images/food_icon.png"> -->
+																<h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('terms_condition'); ?></span></h2>
+																<span class="under-heading"></span>
+															</div>
+
+														</div>
+
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
 													<div class="modal-body">
 
 														<h4>	Introduction</h4>

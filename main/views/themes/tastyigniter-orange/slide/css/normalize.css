@@ -57,20 +57,10 @@ filter:drop-shadow(0 5px 0 #8b2b41)
 position:relative;
 display:inline-block
 }
-
-
- 
-  .box-icon-svg-inner {
+.box-icon-svg-inner {
     -webkit-transform: translateZ(100px);
             transform: translateZ(100px);
-  }
-  .icon-white:hover {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg) !important;
-}
-  
-
+ }
 .box-icon-svg-text{
 line-height:1.8em;
 color:rgba(55,56,62,.7)

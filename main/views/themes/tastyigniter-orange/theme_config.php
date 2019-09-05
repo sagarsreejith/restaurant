@@ -49,6 +49,7 @@ $theme['head_tags'] = array(
 		array(theme_url('tastyigniter-orange/slide/css/style.css'), 'style', '28'),
 		array(theme_url('tastyigniter-orange/slide/css/responsive.css'), 'responsive', '29'),
 		array(theme_url('tastyigniter-orange/slide/css/slicknav.min.css'), 'slicknav', '30')
+		
 
 
 
