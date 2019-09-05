@@ -275,7 +275,7 @@
                                 <div id="register-form" class="content-wrap col-sm-12 center-block">
                                 <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_register'); ?></span></h2>
                                 <span class="under-heading"></span>
-                                    <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form" class="">
+                                    <form>
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-12 col-md-12">
                                                 <div class="form-group">
@@ -364,7 +364,7 @@
 
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                                <button type="submit" class="btn btn-primary btn-block btn-lg" onclick="register()" ><?php echo lang('button_register'); ?></button>
+                                                <button type="submit" class="btn btn-primary btn-block btn-lg" id="register_form_submit" ><?php echo lang('button_register'); ?></button>
                                             </div>
                                             <div class="col-xs-12 col-md-6">
                                                 <a href="<?php echo $login_url; ?>" class="btn btn-default btn-block btn-lg"><?php echo lang('button_login'); ?></a>
@@ -568,24 +568,22 @@ $(function() {
   }
 
   function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re = '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
     return re.test(String(email).toLowerCase());
-}   
-
-
-
-
+    }   
 
 
   //Login Ajax call
-  function register(){
+  $(function() {
+    $("#register_form_submit").click(function(event) {
+        event.preventDefault();
     var fullname=$("#fullname").val();
     var telephone=$("#telephone").val();
     var email = $("#email").val();
     var password  = $("#password").val();
     var confirmpassword = $("#confirmpassword").val();
-    
-    if(registerValidate(fullname,telephone,email,password,confirmpassword) === false){
+    alert(fullname);
+    if(registerFormValidate(fullname,telephone,email,password,confirmpassword) === false){
         return false;
     }
     $.ajax({
@@ -601,9 +599,10 @@ $(function() {
                 $('#reg-error').text("Invalid user name or password");
             }
         }
-   	});
-  }
-  function registerValidate(fullname,telephone,email,password,confirmpassword){
+       });
+    });
+});
+  function registerFormValidate(fullname,telephone,email,password,confirmpassword){
     var isValid = true;
     $("#fullname").removeAttr( 'style' );
     $("#telephone").removeAttr( 'style' );
@@ -611,16 +610,16 @@ $(function() {
     $("#password").removeAttr( 'style' );
     $("#confirmpassword").removeAttr( 'style' );
 
-    if(validateEmail(fullname) === false) {
-        $("#login-email").css("border", "1px solid #f47d59");
+    if(registerValidate(email) === false) {
+        $("#fullname").css("border", "1px solid #f47d59");
         isValid = false;
     }
-    if(validateEmail(telephone) === false) {
-        $("#login-email").css("border", "1px solid #f47d59");
+    if(telephone == '') {
+        $("#telephone").css("border", "1px solid #f47d59");
         isValid = false;
     }
-    if(validateEmail(email) === false) {
-        $("#login-email").css("border", "1px solid #f47d59");
+    if(fullname == '') {
+        $("#fullname").css("border", "1px solid #f47d59");
         isValid = false;
     }
   
@@ -628,7 +627,7 @@ $(function() {
         $("#password").css("border", "1px solid #f47d59");
         isValid = false;
     }
-    if(password == '') {
+    if(confirmpassword == '') {
         $("#confirmpassword").css("border", "1px solid #f47d59");
         isValid = false;
     }

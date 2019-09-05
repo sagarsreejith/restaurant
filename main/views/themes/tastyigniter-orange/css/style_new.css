@@ -3393,7 +3393,7 @@ font-weight:normal;
 .edit-address{
     color: #333;
     font-weight: 600;
-    position: absolute;
+    /* position: absolute; */
     right: 18px;
     /* z-index: 999999; */
     

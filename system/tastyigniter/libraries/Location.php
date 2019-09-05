@@ -596,19 +596,19 @@ class Location {
 		$this->CI->load->model('Locations_model');
 		$locations = $this->CI->Locations_model->getRestLocation($search_query, $order_type);
 
-		
+		//return $locations;
 
 		if($locations){
 			//$delivery_area = array('location_id' => $location_id, 'area_id' => $area_id);
 
-			$output = $this->getLatLng($search_query);
+			//$output = $this->getLatLng($search_query);
 
 			
-			if (is_string($output)) {
-				return $output;
-			}
-			$delivery_area = $this->checkDeliveryArea($output);
-			if ($delivery_area !== 'outside' AND count($delivery_area) == 2) {
+			// if (is_string($output)) {
+			// 	return $output;
+			// }
+			// $delivery_area = $this->checkDeliveryArea($output);
+			// if ($delivery_area !== 'outside' AND count($delivery_area) == 2) {
 				$local_info = $this->CI->session->userdata('local_info');
 	
 				$local_info['location_id'] = $delivery_area['location_id'];
@@ -618,7 +618,7 @@ class Location {
 				$this->CI->session->set_userdata('local_info', $local_info);
 	
 				$this->initialize($local_info);
-			}
+			// }
 	
 			return $delivery_area;
 

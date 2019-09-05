@@ -526,8 +526,8 @@ class Checkout extends Main_Controller
 		}
 
 		if ($this->location->orderType() === '1' AND $this->input->post('address')) {
-			$this->form_validation->set_rules('address_id', 'lang:label_address', 'xss_clean|trim|integer|callback__validate_address');
-
+			//$this->form_validation->set_rules('address_id', 'lang:label_address', 'xss_clean|trim|integer|callback__validate_address');
+			$this->form_validation->set_rules('address_id', 'lang:label_address', 'xss_clean|trim|integer');
 			foreach ($this->input->post('address') as $key => $address) {
 				$this->form_validation->set_rules('address[' . $key . '][address_id]', 'lang:label_address_id', 'xss_clean|trim');
 				$this->form_validation->set_rules('address[' . $key . '][address_1]', 'lang:label_address_1', 'xss_clean|trim|required|min_length[1]|max_length[128]');

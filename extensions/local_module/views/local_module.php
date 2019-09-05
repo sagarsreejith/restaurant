@@ -2,25 +2,16 @@
 <div class="modal fade" id="order_now" role="dialog">
 <div class="modal-dialog  modal-dialog-centered modal_order_now">
    <div class="modal-content">
-         <!-- <div class="img_log">
-				<img src="assets/images/bg10.jpg" class="" style="width:100%">
-			</div> -->
-						
-
       <div class="modal-header">
          <button type="button" class="close" data-dismiss="modal">&times;</button>
          <div class="section-title text-center">
             <div class="title-separator">
-               <!-- <img src="<?php echo $path_image;?>assets/images/food_icon.png"> -->
                <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
             </div>
          </div>
       </div>
       <div class="modal-body bg_before">
          <div id="local-search " class=" col-md-12 text-center">
-           
-               
-
                   <!-- New Design Strts Here -->
                   <div class="switch-container">
                      <label class="head_lbl" for="theme-switch"> Delivery</label>
@@ -112,14 +103,8 @@
          </div> -->
             <div class="btn_sec animated bounceIn">
                   <!-- <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now"><span> </span>
-               
                   <span class="order_btn-label">  Order Now</span>
-
-               
-               
                </a> -->
-            
-            
 			   <?php if ($this->config->item('reservation_mode') === '1') { ?>
 			   <a  href="<?php echo site_url('reservation'); ?>" type="button" class="order_btn">Reserve Now</a>
 			   <?php } ?>
@@ -342,7 +327,8 @@
    });
    
    function searchLocal() {
-   	// var search_query = $('input[name=\'search_query\']').val();
+      // var search_query = $('input[name=\'search_query\']').val();
+      
       var search_query = '';
       document.cookie = "selected_city=" + search_query + "; path=/";
       var order_type = $("input[name='odrer_option']:checked").is(":checked");
@@ -350,16 +336,15 @@
       order_type == false ? document.cookie = "del_search="+search_query+"; path=/" : document.cookie = "pic_search="+search_query+"; path=/";
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
+      if(search_query === ''){
+         updateLocalBox({error: 'Please select an input'});
+         return false;
+      }
       if(order_type === 'pickup'){
-         alert($("#aioConceptPickup").find(':selected').data("id"));
          window.location.href = $("#aioConceptPickup").find(':selected').data("id");
          return false;
       }
-      alert(search_query);
-      alert(getCookie('order_type'));
 
-   	//alert(order_type);
-   	//return false;
    	$.ajax({
    		url: js_site_url('local_module/local_module/search'),
    		type: 'POST',

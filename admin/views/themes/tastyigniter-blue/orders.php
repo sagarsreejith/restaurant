@@ -129,7 +129,7 @@
 							<?php } ?>
 							<td><?php echo $order['first_name'] .' '. $order['last_name']; ?></td>
                             <td><span class="label label-default" style="background-color: <?php echo $order['status_color']; ?>;"><?php echo $order['order_status']; ?></span></td>
-							<td><?php echo ($order['order_type'] === '1') ? lang('text_delivery') : lang('text_collection'); ?></td>
+							<td><?php echo ($order['order_type'] === 'Delivery') ? lang('text_delivery') : lang('text_collection'); ?></td>
 							<td><?php echo $order['payment']; ?></td>
 							<td><?php echo $order['order_total']; ?></td>
 							<td class="text-center"><?php echo $order['order_time']; ?> - <?php echo $order['order_date']; ?></td>
