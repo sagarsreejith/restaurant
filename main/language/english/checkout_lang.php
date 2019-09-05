@@ -30,8 +30,8 @@ $lang['text_success_message']           = 'Your order  %s has been received and 
 $lang['text_order_info']                = '<table class="table table-hover table-dark_cust">
 													<tbody>
 														<tr>
-															<th scope="row"> Order</th>
-													        <th scope="row"> Order Date</th>
+															<th scope="row"> Order Date</th>
+													        <th scope="row"> Order Type</th>
                                                             <th scope="row">%s Time </th>
                                                             <th scope="row">Payment Method </th>
 														</tr>

@@ -5,7 +5,7 @@
 	<?php $order_type =  $_COOKIE['order_type'];?>
 		<div class="panel panel-default panel-cart <?php echo ($is_checkout) ? 'hidden-xs' : ''; ?>">
 			<div class="panel-heading head_checkout">
-				<h3 class="panel-title"><?php echo lang('text_heading'); ?></h3>
+				<h3 class="panel-title"><?php echo lang('text_heading_cart'); ?></h3>
 				<?php if (!in_array($rsegment, array('local', 'locations'))) { ?>
                           
                               <a class="btn btn-primary btn-menus" href="<?php echo site_url('local?location_id='.$location_id).'#local-menus'; ?>"><i class="fa fa-cutlery"></i>
@@ -168,7 +168,7 @@
 										</span></td>
 										<td class="text-right">
 											<?php if ($name === 'coupon') { ?>
-											-<?php echo $total['amount']; ?>
+											<?php echo $total['amount']; ?>
 											<?php } else if ($name === 'order_total') { ?>
 											<b><span class="order-total"><?php echo $total['amount']; ?></span></b>
 											<?php } else { ?>

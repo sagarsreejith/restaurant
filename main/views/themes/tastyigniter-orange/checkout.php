@@ -338,7 +338,7 @@
 									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
-				<!--prob-->		</div>
+				<!--prob-->		<?php if (!$this->customer->isLogged()) { ?></div><?php } ?>
 					
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
@@ -430,7 +430,7 @@
 																		<?php } ?>
 																	<?php } ?>
 																</div>
-																<?php echo form_error('payment', '<span class="text-danger">', '</span>'); ?>
+																<?php echo form_error('payment', '<span class="text-danger err_payment">', '</span>'); ?>
 															</td>
 														</tr>
 													
@@ -480,10 +480,10 @@
 									<?php } ?>
 
 
-									<div class="col-sm-12 form-group">
+									<!-- <div class="col-sm-12 form-group">
 										<label for=""><?php echo lang('label_ip'); ?></label>
 										<?php echo $ip_address; ?><br /><small><?php echo lang('text_ip_warning'); ?></small>
-									</div>
+									</div> -->
 								</div>
 								</div>
 						

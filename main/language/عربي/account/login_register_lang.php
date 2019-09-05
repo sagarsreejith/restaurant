@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct access allowed');
 
-$lang['text_heading'] 			= 'Login';
+// $lang['text_heading'] 			= 'Login';
 $lang['text_register_heading'] 	= 'Register';
 $lang['text_logout_heading'] 	= 'Logged Out';
 $lang['text_login'] 			= 'Log In';
@@ -29,7 +29,7 @@ $lang['label_subscribe'] 	    = 'Subscribe';
 
 $lang['button_terms_agree']     = 'I Agree';
 $lang['button_subscribe'] 		= 'Subscribe';
-$lang['button_login'] 			= 'Login';
+// $lang['button_login'] 			= 'Login';
 $lang['button_register'] 		= 'Register';
 
 $lang['error_email_exist'] 		= 'The Email address already has an account, please log in';

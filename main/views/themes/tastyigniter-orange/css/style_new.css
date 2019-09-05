@@ -3568,7 +3568,7 @@ input[type=radio]:checked + label {
 }
 
 .checkmark{
-	margin: 5px;
+	margin:15px;
 }
 
 .radio-group_add {
@@ -4848,72 +4848,16 @@ margin-bottom: 0px;
 .popup {
   box-shadow: 0 27px 24px 0 rgba(0,0,0,.2),0 40px 77px 0 rgba(0,0,0,.22)!important;
 }
-
-.popup .modal-body{
-  float: left;
-  width: 100%;
-  background: #fff !important;
-  padding: 0px 0;
-  height: 326px;
-}
-.popup fieldset{ 
-  padding: 20px;
-
-}
-.popup fieldset h2 span {    display: table;
-  margin: 16px auto;}
-
-
-.popup .modal-content{
-  box-shadow:none;
-  border:none;
-}
-.popup .object-right:before{
-  background: linear-gradient(to right, #e28631 0%, #6c182a 100%);
-  opacity: 0.7;
-  z-index: 5;
-  clip-path: circle(99% at 89.53% 0.85%);
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 .popup .close{
   position: absolute;
   z-index: 9999999;
   right: 0;
   top: 0px;
-  background: #ccc;
+  /* background: #ccc; */
   border-radius: 50%;
   padding: 3px 7px;
   opacity:0.7;
  }
-.popup .object-right img{
-  height:326px;
-  clip-path: circle(99% at 89.53% 0.85%);
-}
-#register .object-right img{
-height:440px;
-clip-path: circle(135% at 89.53% 0.85%);
-
-}
-#register .modal-body{
-  float: left;
-  width: 100%;
-  background: #fff !important;
-  padding: 0px 0;
-  height: 440px;
-}
-#register .object-right:before{
-
-  clip-path: circle(135% at 89.53% 0.85%);
-  opacity: 0.7;
-
-}
-
-#register h2  { text-align:center;}
 @media only screen and (max-width: 1200px) {
 #cart-box-affix.affix{
   top: 111px !important;
@@ -4965,4 +4909,10 @@ clip-path: circle(135% at 89.53% 0.85%);
   .map_icon_bg{
   left: 21px;
   top: 0;
-  }}
+  }
+}
+}
+.alert_payment{
+  float:left;
+  width:100%;
+}

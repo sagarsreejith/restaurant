@@ -3,6 +3,6 @@
 $lang['label_email'] 		            = 'Email';
 $lang['label_password'] 		        = 'Password';
 $lang['label_confirm_password'] 		= 'Confirm Password';
-$lang['button_login1'] 			= 'Login';
+$lang['button_login1'] 			        = 'Login';
 
 

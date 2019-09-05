@@ -155,6 +155,7 @@
                         </div>
                      </div>
                      <?php } ?>
+
                <?php if($_COOKIE['order_type'] === '2') { ?>     
                  <div class="panel-body" id="panel-body">
                         <div class="row boxes">
@@ -306,7 +307,7 @@
                                  </div>
                      
                                </div>                  
-               </div>
+                           </div>
                <?php }?>                                      
                <?php } ?>
             </div>

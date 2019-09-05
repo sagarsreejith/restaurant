@@ -200,8 +200,8 @@
 </div>
 </div>
 
-<div class="content-wrap cont_clr  cont_clr_contact col-md-12">
-                                                                                                    <div class="">
+													<div class="content-wrap cont_clr  cont_clr_contact col-md-12">
+                                                      <div class="">
                                                         <div class="col-md-12">
 
                                                             <div class="col-md-12  bottom-spacing">
@@ -224,7 +224,8 @@
                                                                             <div class="cnt_div">
                                                                             <h4>   <i class="fa fa-phone"></i> Phone</h4>
                                                                             <p>
-                                                                                +965 50392340                                                                            </p>
+                                                                                +965 50392340   
+																			</p>                                                                         </p>
                                                                         </div>
                                                                         </div>
                                                                     </div>

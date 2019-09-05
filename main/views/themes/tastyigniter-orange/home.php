@@ -176,7 +176,7 @@ transform:translate(-50%,-50%)
                                     <button data-filter=".Manakeesh">Manakeesh</button>
                                     <button data-filter=".Sandwiches">Sandwiches</button>
                                     <button data-filter=".Appetizer"> Appetizer</button>
-                                    <button data-filter=".emb"> Embains</button>
+                                    <button data-filter=".emb"> Ambiance</button>
 
                                  
                                 </div>
