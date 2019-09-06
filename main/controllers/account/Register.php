@@ -11,20 +11,26 @@ class Register extends Main_Controller {
 
 	public function index() {
 		if ($this->input->post() AND $this->_addCustomer() === TRUE) {							// checks if $_POST data is set and if registration validation was successful
-			$this->alert->set('alert', $this->lang->line('alert_account_created'));	// display success message and redirect to account login page
-
-			if ($redirect_url = $this->input->get('redirect')) {
-				redirect($redirect_url);
+				
+			if ($this->input->is_ajax_request()) {
+				$success['success'] = TRUE;
+				return $this->output->set_output(json_encode($success));											// encode the json array and set final out to be sent to jQuery AJAX
+			} else {
+				// display success message and redirect to account login page
+				$this->alert->set('alert', $this->lang->line('alert_account_created'));
+				if ($redirect_url = $this->input->get('redirect')) {
+					redirect($redirect_url);
+				}
+				redirect('account/login');
 			}
-
-			redirect('account/login');
 		}
 
 		$this->template->setTitle($this->lang->line('text_register_heading'));
 
 		$data['login_url'] 				        = site_url('account/login');
 
-		if ($this->config->item('registration_terms') > 0) {
+		if ($this->config->item('+
+		') > 0) {
 			$data['registration_terms'] = str_replace(root_url(), '/', site_url('pages?popup=1&page_id='.$this->config->item('registration_terms')));
 		} else {
 			$data['registration_terms'] = FALSE;
@@ -41,8 +47,13 @@ class Register extends Main_Controller {
 		}
 
 		$data['captcha'] = $this->createCaptcha();
-
-		$this->template->render('account/register', $data);
+		if ($this->input->is_ajax_request()) {
+			$data['success'] = FALSE;
+			$data['errors'] = validation_errors();
+			return $this->output->set_output(json_encode($data));											// encode the json array and set final out to be sent to jQuery AJAX
+		} else {
+			$this->template->render('account/register', $data);
+		}
 	}
 
 	private function _addCustomer() {

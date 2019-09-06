@@ -338,7 +338,7 @@
 									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
-				<!--prob-->		</div>
+				<!--prob-->		<?php if (!$this->customer->isLogged()) { ?></div><?php } ?>
 					
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
@@ -430,7 +430,7 @@
 																		<?php } ?>
 																	<?php } ?>
 																</div>
-																<?php echo form_error('payment', '<span class="text-danger">', '</span>'); ?>
+																<?php echo form_error('payment', '<span class="text-danger err_payment">', '</span>'); ?>
 															</td>
 														</tr>
 													
@@ -457,6 +457,22 @@
 										<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog">
 												<div class="modal-content">
+													
+													<div class="modal-header">
+
+														<div class="section-title text-center">
+															<div class="title-separator">
+																<!-- <img src="assets/images/food_icon.png"> -->
+																<h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('terms_condition'); ?></span></h2>
+																<span class="under-heading"></span>
+															</div>
+
+														</div>
+
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
 													<div class="modal-body">
 
 														<h4>	Introduction</h4>
@@ -480,10 +496,10 @@
 									<?php } ?>
 
 
-									<div class="col-sm-12 form-group">
+									<!-- <div class="col-sm-12 form-group">
 										<label for=""><?php echo lang('label_ip'); ?></label>
 										<?php echo $ip_address; ?><br /><small><?php echo lang('text_ip_warning'); ?></small>
-									</div>
+									</div> -->
 								</div>
 								</div>
 						

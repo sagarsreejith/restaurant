@@ -1,5 +1,6 @@
 <?php echo get_header(); ?>
 <div class="row content dashboard">
+    
 	<div class="col-md-12">
         <div class="row mini-statistics">
             <div class="col-xs-12 col-sm-6 col-lg-3">
@@ -63,8 +64,43 @@
                 </div>
             </div>
         </div>
-
-        <div class="row statistics">
+        <?php if ($orders) { ?>
+            <div class="panel panel-default panel-orders">
+                <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;<?php echo lang('text_latest_order'); ?></h3></div>
+                <div class="table-responsive">
+                    <table border="0" class="table table-striped table-no-spacing">
+                        <thead>
+                        <tr>
+                            <th class="action action-one"></th>
+                            <th><?php echo lang('column_id'); ?></th>
+                            <th><?php echo lang('column_location'); ?></th>
+                            <th><?php echo lang('column_name'); ?></th>
+                            <th class="text-center"><?php echo lang('column_status'); ?></th>
+                            <th class="text-center"><?php echo lang('column_type'); ?></th>
+                            <th class="text-center"><?php echo lang('column_ready_type'); ?></th>
+                            <th class="text-center"><?php echo lang('column_date_added'); ?></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach ($orders as $order) { ?>
+                            <tr>
+                                <td class="action action-one"><a class="btn btn-edit" title="<?php echo lang('text_edit'); ?>" href="<?php echo $order['edit']; ?>"><i class="fa fa-pencil"></i></a></td>
+                                <td><?php echo $order['order_id']; ?></td>
+                                <td><?php echo $order['location_name']; ?></td>
+                                <td><?php echo $order['first_name']; ?> <?php echo $order['last_name']; ?></td>
+                                <td class="text-center"><span class="label label-default" style="background-color: <?php echo $order['status_color']; ?>;"><?php echo $order['order_status']; ?></span></td>
+                                <td class="text-center"><?php echo $order['order_type']; ?></td>
+                                <td class="text-center"><?php echo $order['order_time']; ?></td>
+                                <td class="text-center"><?php echo $order['date_added']; ?></td>
+                            </tr>
+                        <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer text-right">
+                    <a href="<?php echo site_url('orders'); ?>"><?php echo lang('text_see_all_orders'); ?>&nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+        <!-- <div class="row statistics">
         	<div class="col-sm-12 col-md-8">
                 <div class="panel panel-default panel-chart">
                     <div class="panel-heading">
@@ -136,7 +172,7 @@
                     <div class="panel-footer"></div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <div>
@@ -191,7 +227,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6">
-                    <?php if ($news_feed) { ?>
+                    <!-- <?php if ($news_feed) { ?>
                         <div class="panel panel-default panel-news-feed">
                             <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-rss"></i>&nbsp;&nbsp;<?php echo lang('text_news'); ?></h3></div>
                             <div class="list-group">
@@ -204,7 +240,7 @@
                             </div>
                             <div class="panel-footer"></div>
                         </div>
-                    <?php } ?>
+                    <?php } ?> -->
 
                     <?php if ($top_customers) { ?>
                         <div class="panel panel-default panel-top-customers">
@@ -238,42 +274,8 @@
 			</div>
 		</div>
 
-        <?php if ($orders) { ?>
-            <div class="panel panel-default panel-orders">
-                <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;<?php echo lang('text_latest_order'); ?></h3></div>
-                <div class="table-responsive">
-                    <table border="0" class="table table-striped table-no-spacing">
-                        <thead>
-                        <tr>
-                            <th class="action action-one"></th>
-                            <th><?php echo lang('column_id'); ?></th>
-                            <th><?php echo lang('column_location'); ?></th>
-                            <th><?php echo lang('column_name'); ?></th>
-                            <th class="text-center"><?php echo lang('column_status'); ?></th>
-                            <th class="text-center"><?php echo lang('column_type'); ?></th>
-                            <th class="text-center"><?php echo lang('column_ready_type'); ?></th>
-                            <th class="text-center"><?php echo lang('column_date_added'); ?></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php foreach ($orders as $order) { ?>
-                            <tr>
-                                <td class="action action-one"><a class="btn btn-edit" title="<?php echo lang('text_edit'); ?>" href="<?php echo $order['edit']; ?>"><i class="fa fa-pencil"></i></a></td>
-                                <td><?php echo $order['order_id']; ?></td>
-                                <td><?php echo $order['location_name']; ?></td>
-                                <td><?php echo $order['first_name']; ?> <?php echo $order['last_name']; ?></td>
-                                <td class="text-center"><span class="label label-default" style="background-color: <?php echo $order['status_color']; ?>;"><?php echo $order['order_status']; ?></span></td>
-                                <td class="text-center"><?php echo $order['order_type']; ?></td>
-                                <td class="text-center"><?php echo $order['order_time']; ?></td>
-                                <td class="text-center"><?php echo $order['date_added']; ?></td>
-                            </tr>
-                        <?php } ?>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="panel-footer text-right">
-                    <a href="<?php echo site_url('orders'); ?>"><?php echo lang('text_see_all_orders'); ?>&nbsp;<i class="fa fa-arrow-right"></i></a>
-                </div>
+      
+             
             </div>
         <?php } ?>
     </div>

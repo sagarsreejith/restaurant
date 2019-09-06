@@ -176,7 +176,7 @@ transform:translate(-50%,-50%)
                                     <button data-filter=".Manakeesh">Manakeesh</button>
                                     <button data-filter=".Sandwiches">Sandwiches</button>
                                     <button data-filter=".Appetizer"> Appetizer</button>
-                                    <button data-filter=".emb"> Embains</button>
+                                    <button data-filter=".emb"> Ambiance</button>
 
                                  
                                 </div>
@@ -338,7 +338,7 @@ transform:translate(-50%,-50%)
         
            
                 <div class="clearfix"></div>
-
+    
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -444,9 +444,34 @@ transform:translate(-50%,-50%)
                         </div>
                     </div>
                     <div class="content-wrap">
-
-                        <div id="map_home" class="slideInUp" style="height:400px; width:100%"></div>
-                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                        
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <?php $count = 0; foreach ($restaurants as $restaurant){  ?>
+                                <div class="panel panel-default marker-link" data-markerid="<?php echo $count; ?>">
+                                    <div class="panel-heading" role="tab" id="headingOne<?php echo $count; ?>">
+                                        <h6 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne<?php echo $count; ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $count; ?>">
+                                            <?php echo $restaurant['location_name']; ?>
+                                        </a>
+                                    </h6>
+                                    </div>
+                                    <div id="collapseOne<?php echo $count; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne<?php echo $count; ?>">
+                                        <div class="panel-body">
+                                            <?php echo $restaurant['description']; ?> <br/> 
+                                            <?php //echo $restaurant['location_telephone']; ?>
+                                            <?php //print_r($restaurants); ?>
+                                            <i class="fa fa-building-o"></i>&nbsp;<?php echo $restaurant['location_address_1'].','.$restaurant['location_address_2'].','.$restaurant['location_city'].','.$restaurant['location_state']; ?>Kuwait<br>
+                                            <i class="fa fa-envelope"></i>&nbsp;<?php echo $restaurant['location_email']; ?><br>
+                                            <i class="fa fa-phone"></i>&nbsp;<?php echo $restaurant['location_telephone']; ?><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php $count++; } ?>
+                            </div>
+                        </div>
+                        <div class="col-sm-8"><div id="map_home" class="slideInUp" style="height:400px; width:100%"></div></div>
                     <div class="clearfix"></div>
                  
                  </div>
@@ -631,36 +656,6 @@ transform:translate(-50%,-50%)
                 <?php echo get_footer(); ?>
                     <div class="clearfix"></div>
                     <script>
-                  
-                        $(document).ready(function() {
-                            if(getCookie('order_type') === ""){
-                                document.cookie = "order_type=1; path=/";
-                            }
-                            $('#main-header .navbar-nav a').on('click', function() {
-                                $('#main-header .navbar-nav').find('li.active').removeClass('active');
-                                $(this).parent('li').addClass('active');
-                            });
-
-                            initMapHome();
-                            $("#order_now").click(function() {
-                                $("body").css("padding-right:0");
-                            });
-                            $('#order_now').on('shown.bs.modal', function() {
-                                $("body.modal-open").removeAttr("style");
-                            });
-
-                            $("#testimonial-slider").owlCarousel({
-                                items: 1,
-                                itemsDesktop: [1000, 1],
-                                itemsDesktopSmall: [979, 1],
-                                itemsTablet: [768, 1],
-                                pagination: true,
-                                transitionStyle: "backSlide",
-                                autoPlay: true
-                            });
-                        });
-                    </script>
-                    <script>
                         /* When the user clicks on the button,
                         toggle between hiding and showing the dropdown content */
                         function myFunction() {
@@ -687,72 +682,65 @@ transform:translate(-50%,-50%)
                         $("#order_now").click(function() {
                             $(".js-example-templating").select2("close");
                         });
+                        function initialize() {
+                        var markers = new Array();
 
-                        function initMapHome() {
-                            var broadway = {
-                                info: '<strong>Zalatimo Sweets</strong><br>\
-                                Sharq, KIPCO Tower<br> Kuwait City<br>\
-    	<a href="https://www.google.com/maps/dir//KIPCO+Tower,+Al+Kuwayt/@29.3757712,47.9436413,12.7z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3fcf84966d43bf01:0xb0f7d549868e3803!2m2!1d47.9868396!2d29.3757397" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
-                                lat: 29.3757,
-                                long: 47.9868,
-                            }
+var mapOptions = {
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    gestureHandling: 'greedy',
+    center: new google.maps.LatLng(29.3757712, 47.9436413)
+};
+var resta= <?php echo json_encode($restaurants) ?>;
+var local_res = [];
+resta.forEach(value => {
+    var map = [new google.maps.LatLng(value['location_lat'], value['location_lng']), 'Marker 1', '<strong>'+value['location_name']+'</strong><br>\
+                                <i class="fa fa-building-o"></i>&nbsp;'+value['location_address_1']+','+value['location_address_2']+','+value['location_city']+','+value['location_state']+ ',Kuwait<br>\
+                                <i class="fa fa-envelope"></i>&nbsp;'+value['location_email']+'<br>\
+                                <i class="fa fa-phone"></i>&nbsp; '+value['location_telephone']+'<br>\
+    	<a href="https://www.google.com/maps/place/'+value['location_name']+'/@'+value['location_lat']+','+value['location_lng']+',16.15z" target="_blank">Get Directions</a>'];
+    local_res.push(map);
+});
+var locations =local_res;
 
-                            var belmont = {
-                                info: '<strong>Zalatimo Sweets</strong><br>\
-                                Ground Floor, Building 25, Marina Crescent<br> Salmiya<br>\
-    	<a href="https://www.google.com/maps/place/Marina+Crescent/@29.3439534,48.0604649,16.15z/data=!4m8!1m2!2m1!1sGround+Floor,+Building+25,+Marina+Crescent,+kuwait!3m4!1s0x3fcf9d9950d2a1c1:0xb80aaf80bf2223b4!8m2!3d29.3411726!4d48.0655611" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
-                                lat: 29.3439534,
-                                long: 48.0633999,
-                            }
+var map = new google.maps.Map(document.getElementById('map_home'), mapOptions);
 
-        //                     var sheridan = {
-        //                         info: '<strong>Chipotle on Sheridan</strong><br>\r\
-    	// 6600 N Sheridan Rd<br> Chicago, IL 60626<br>\
-    	// <a href="https://goo.gl/maps/QGUrqZPsYp92" target="_blank">Get Directions<img src="assets/images/directions.png" width="15"></a>',
-        //                         lat: 29.14583,
-        //                         long: 48.09472,
-        //                     }
+var infowindow = new google.maps.InfoWindow();
 
-                            var locations = [
-                                [broadway.info, broadway.lat, broadway.long, 0],
-                                [belmont.info, belmont.lat, belmont.long, 1],
-                                // [sheridan.info, sheridan.lat, sheridan.long, 2],
-                            ]
+for (var i = 0; i < locations.length; i++) {
 
-                            var map = new google.maps.Map(document.getElementById('map_home'), {
-                                zoom: 12,
-                                center: new google.maps.LatLng(29.3759, 47.9774),
-                                mapTypeControlOptions: {
-                                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID]
-                                }, // here´s the array of controls
-                                //disableDefaultUI: true, // a way to quickly hide all controls
-                                mapTypeControl: false,
-                                scaleControl: true,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                            })
+    // Append a link to the markers DIV for each marker
+    $('#markers').append('<a class="marker-link" data-markerid="' + i + '" href="#">' + locations[i][1] + '</a> ');
 
-                            var infowindow = new google.maps.InfoWindow({})
+    var marker = new google.maps.Marker({
+        position: locations[i][0],
+	    icon: "assets/images/restaurant_mapmarker13.png",
+        map: map,
+        title: locations[i][1],
+    });
 
-                            var marker, i
+    // Register a click event listener on the marker to display the corresponding infowindow content
+    google.maps.event.addListener(marker, 'click', (function (marker, i) {
 
-                            for (i = 0; i < locations.length; i++) {
-                                marker = new google.maps.Marker({
-                                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                                    icon: "assets/images/restaurant_mapmarker13.png",
-                                    map: map,
-                                })
+        return function () {
+            infowindow.setContent(locations[i][2]);
+            infowindow.open(map, marker);
+        }
 
-                                google.maps.event.addListener(
-                                    marker,
-                                    'click', (function(marker, i) {
-                                        return function() {
-                                            infowindow.setContent(locations[i][0])
-                                            infowindow.open(map, marker)
-                                        }
-                                    })(marker, i)
-                                )
-                            }
-                        }
+    })(marker, i));
+
+    // Add marker to markers array
+    markers.push(marker);
+}
+
+// Trigger a click event on each marker when the corresponding marker link is clicked
+$('.marker-link').on('click', function () {
+
+    google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
+});
+}
+
+initialize();
                     </script>
                
 
@@ -814,6 +802,35 @@ $(window).scroll(function () {
 </script>
 <script>
     $(document).ready(function() {
+        // document.querySelectorAll('.collapsible').forEach(el => el.addEventListener('click', e => {
+        //                 e.currentTarget.classList.toggle('collapsible--open')
+        //             }))
+                    $('.panel-collapse').collapse('hide');
+                            if(getCookie('order_type') === ""){
+                                document.cookie = "order_type=1; path=/";
+                            }
+                            $('#main-header .navbar-nav a').on('click', function() {
+                                $('#main-header .navbar-nav').find('li.active').removeClass('active');
+                                $(this).parent('li').addClass('active');
+                            });
+
+                            initMapHome();
+                            $("#order_now").click(function() {
+                                $("body").css("padding-right:0");
+                            });
+                            $('#order_now').on('shown.bs.modal', function() {
+                                $("body.modal-open").removeAttr("style");
+                            });
+
+                            $("#testimonial-slider").owlCarousel({
+                                items: 1,
+                                itemsDesktop: [1000, 1],
+                                itemsDesktopSmall: [979, 1],
+                                itemsTablet: [768, 1],
+                                pagination: true,
+                                transitionStyle: "backSlide",
+                                autoPlay: true
+                            });
 	const $app = $('.app');
 	const $img = $('.app__img');
 	const $pageNav1 = $('.pages__item--1');

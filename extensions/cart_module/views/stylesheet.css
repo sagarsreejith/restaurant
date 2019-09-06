@@ -3,7 +3,7 @@
     }
     #cart-box-affix.affix {
     position: fixed !important;
-    top:160px;
+    top:110px;
     z-index: 999;
     }
     #cart-box-affix .panel-cart {
@@ -46,10 +46,12 @@
     }
     }
     .cart-alert-wrap .alert {
-    padding: 0;
-    position: relative;
-    border: 0;
-    float: left;
+        padding: 0;
+        position: relative;
+        border: 0;
+        float: left;
+        width: 100%;
+        text-align: center;
     }
     .cart-alert-wrap .alert > p {
     padding: 10px 15px;

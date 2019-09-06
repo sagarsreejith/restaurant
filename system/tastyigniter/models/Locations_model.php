@@ -70,6 +70,7 @@ class Locations_model extends TI_Model {
 				$this->db->where('offer_collection', $this->input->get('offer_collection'));
 				
 			}
+			$this->db->where('location_status', '1');
 			$query = $this->db->get();
 			$result = array();
 

@@ -13,9 +13,9 @@ class Track extends Main_Controller {
         
         //print_r(json_encode($this->Orders_model->getOrder(44444)));
         $data = array();
-        $input_value = $this->input->get('ordernumber');
+        $input_value = $this->input->post('ordernumber');
         if(isset($input_value)){
-            $result = $this->Orders_model->getOrder($this->input->get('ordernumber'));
+            $result = $this->Orders_model->getOrder($input_value);
             if($input_value === $result){
                 $data['status'] = false;
                 $data['order_number'] = $input_value;
@@ -26,8 +26,11 @@ class Track extends Main_Controller {
                 $data['result'] = $result;
             }
         }
-        
-        $this->template->render('track-my-order', $data);
+        if ($this->input->is_ajax_request()) {
+            $this->output->set_output(json_encode($data));											// encode the json array and set final out to be sent to jQuery AJAX
+        } else {
+            $this->template->render('track-my-order', $data);
+        }
 
 	}
 }

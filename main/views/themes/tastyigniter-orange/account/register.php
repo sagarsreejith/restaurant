@@ -56,7 +56,7 @@
 						</div>
 						<div class="form-group">
 						
-							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?> -->
+							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					
 					
