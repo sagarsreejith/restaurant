@@ -814,7 +814,7 @@ $(window).scroll(function () {
                                 $(this).parent('li').addClass('active');
                             });
 
-                            initMapHome();
+                            //initMapHome();
                             $("#order_now").click(function() {
                                 $("body").css("padding-right:0");
                             });

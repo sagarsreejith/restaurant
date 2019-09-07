@@ -525,8 +525,8 @@ NOTE:
           POTENZA.preloader(),
           POTENZA.Isotope(),
           POTENZA.masonry(),
-          POTENZA.caldatapicker(),
-          POTENZA.progressBar();
+          POTENZA.caldatapicker();
+          //POTENZA.progressBar();
       }
   
     //Document ready functions
