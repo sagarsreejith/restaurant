@@ -169,6 +169,26 @@ class Menus_model extends TI_Model {
 		}
 	}
 
+	public function getAllMenu() {
+		//$this->db->select('menus.menu_id, *');special_id, start_date,
+			//end_date, special_price, special_status, menus.mealtime_id, mealtimes.mealtime_name, mealtimes.start_time, mealtimes.end_time, mealtime_status'
+		$this->db->select('menus.menu_id, menu_name, menu_description, menu_price, menu_photo, menu_category_id, stock_qty,
+			minimum_qty, subtract_stock, menu_status, menu_priority, category_id, categories.name, description');
+		$this->db->from('menus');
+		$this->db->join('categories', 'categories.category_id = menus.menu_category_id', 'left');
+		// $this->db->join('menus_specials', 'menus_specials.menu_id = menus.menu_id', 'left');
+		// $this->db->join('mealtimes', 'mealtimes.mealtime_id = menus.mealtime_id', 'left');
+		$this->db->where('menus.menu_photo !=', '');
+		$this->db->where('menus.menu_status', '1');
+
+		$query = $this->db->get();
+
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}
+	}
+
+
 	public function updateStock($menu_id, $quantity = 0, $action = 'subtract') {
 		$update = FALSE;
 

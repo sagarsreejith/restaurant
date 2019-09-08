@@ -27,6 +27,7 @@ class Location {
 	private $location_name;
 	private $location_email;
 	private $location_telephone;
+	private $location_whatsapp;
 	private $local_options;
 	private $local_info;
 	private $selected_city;
@@ -60,6 +61,7 @@ class Location {
     }
 
 	public function initialize($local_info = array()) {
+		
 		$local_info = empty($local_info) ? $this->CI->session->userdata('local_info') : $local_info;
 
 		if (!isset($local_info['location_id']) AND $this->CI->config->item('location_order') !== '1') {
@@ -88,6 +90,8 @@ class Location {
 				$this->location_name = $location['location_name'];
 				$this->location_email = $location['location_email'];
 				$this->location_telephone = $location['location_telephone'];
+				$this->location_whatsapp = $location['location_whatsapp'];
+				$this->location_email = $location['location_email'];
 				$this->local_options = (!empty($location['options'])) ? unserialize($location['options']) : array();
 				$this->local_info = $location;
 				$this->geocode = (isset($local_info['geocode']) AND is_array($local_info['geocode'])) ? $local_info['geocode'] : array();
@@ -107,6 +111,8 @@ class Location {
 				$this->setDeliveryArea($delivery_area);
 			}
 		}
+		// print_r($this->location_email);
+		// exit;
 	}
 
 	public function currentDate() {
@@ -235,6 +241,14 @@ class Location {
 
 	public function local() {
 		return $this->local_info;
+	}
+
+	public function contactInfo() {
+		$contact_info = array();
+		$contact_info['location_telephone'] = $this->location_telephone ? $this->location_telephone : '';
+		$contact_info['location_whatsapp'] = $this->location_whatsapp ? $this->location_whatsapp : '';
+		$contact_info['location_email'] = $this->location_email ? $this->location_email : '';
+		return $contact_info;
 	}
 
 	public function isOpened() {
