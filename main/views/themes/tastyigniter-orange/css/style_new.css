@@ -707,125 +707,6 @@ width: 100%;
 height: 48px;
 }
 
-/* Turning off input Spinners */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-/* Collapse */
-.collapsible {
-  min-width: 300px;
-  max-width: 700px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-}
-.collapsible > * {
-  border: 1px solid #DDDDDD;
-  background: linear-gradient(to right, #ffffff, #ffffff);
-}
-.collapsible__head {
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 35px;
-  z-index: 1;
-  cursor: pointer;
-}
-.collapsible__body {
-  border-top: none;
-  margin-top: -15px;
-  overflow: hidden;
-  height: 0;
-  padding: 0 20px;
-  transition: all 0.4s;
-}
-.collapsible__content {
-  opacity: 0;
-  transition: all 0.4s 0.4s;
-  display: flex;
-  justify-content: space-between;
-}
-.collapsible__icon {
-  transition: all 0.2s;
-  transform: rotate(0);
-}
-.collapsible--open .collapsible__icon {
-  transform: rotate(180deg);
-}
-.collapsible--open .collapsible__body {
-  padding: 20px 20px 5px;
-  height: 100%;
-}
-.collapsible--open .collapsible__content {
-  opacity: 1;
-}
-
-.image {
-  max-height: 100px;
-} 
-
-
-.panel-default>.panel-heading {
-  color: #333;
-  background-color: #fff;
-  border-color: #e4e5e7;
-  padding: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.panel-default>.panel-heading a {
-  display: block;
-  padding: 10px 15px;
-}
-
-.panel-default>.panel-heading a:after {
-  content: "";
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  float: right;
-  transition: transform .25s linear;
-  -webkit-transition: -webkit-transform .25s linear;
-}
-
-.panel-default>.panel-heading a[aria-expanded="true"] {
-  background-color: #6f1e30;
-  color: white;
-}
-
-.panel-default>.panel-heading a[aria-expanded="true"]:after {
-  font: normal normal normal 14px/1 FontAwesome;
-  content: "\f063";
-  transition: all 0.2s;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-}
-
-.panel-default>.panel-heading a[aria-expanded="false"]:after {
-  font: normal normal normal 14px/1 FontAwesome;
-  content: "\f063";
-  transition: all 0.2s;
-  transform: rotate(0);
-  -webkit-transform: rotate(0);
-}
-
-.panel-default>.panel-heading>.panel-title{
-  font-size: 12px;
-}
-
 /*--home search part*/
 
 .background_images{
@@ -5085,3 +4966,173 @@ margin:0;
   left: -200px;
   }
  
+  .map_st{
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  .map_st .panel-default>.panel-heading a{
+    padding:20px 30px;
+    font-size:13px;
+    text-decoration:none;
+  }
+  .map_st  .open_off{
+    position: absolute;
+    right:0;
+  }
+  .map_st .panel-body{
+    padding: 6px 10px;
+  }
+/* Turning off input Spinners */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Collapse */
+.collapsible {
+  min-width: 300px;
+  max-width: 700px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.collapsible > * {
+  border: 1px solid #DDDDDD;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+.collapsible__head {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  z-index: 1;
+  cursor: pointer;
+}
+.collapsible__body {
+  border-top: none;
+  margin-top: -15px;
+  overflow: hidden;
+  height: 0;
+  padding: 0 20px;
+  transition: all 0.4s;
+}
+.collapsible__content {
+  opacity: 0;
+  transition: all 0.4s 0.4s;
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__icon {
+  transition: all 0.2s;
+  transform: rotate(0);
+}
+.collapsible--open .collapsible__icon {
+  transform: rotate(180deg);
+}
+.collapsible--open .collapsible__body {
+  padding: 20px 20px 5px;
+  height: 100%;
+}
+.collapsible--open .collapsible__content {
+  opacity: 1;
+}
+
+.image {
+  max-height: 100px;
+} 
+
+
+.map_st .panel-default>.panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.map_st .panel-default>.panel-heading a {
+  display: block;
+  padding: 20px 30px;
+}
+
+.map_st .panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform .25s linear;
+  -webkit-transition: -webkit-transform .25s linear;
+}
+
+.map_st .panel-default>.panel-heading a[aria-expanded="true"] {
+  background-color: #6f1e30;
+  color: white;
+}
+
+.map_st .panel-default>.panel-heading a[aria-expanded="true"]:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f063";
+  transition: all 0.2s;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  font-size:12px;
+}
+
+.map_st .panel-default>.panel-heading a[aria-expanded="false"]:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f063";
+  transition: all 0.2s;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  font-size:12px;
+}
+
+.map_st .panel-default>.panel-heading>.panel-title{
+  font-size: 12px;
+}
+.map_head{
+  font-size: 14px;
+  color: #712132;
+  line-height: 30px;
+  padding:10px;
+  font-weight:600;
+}
+
+.map_head i{
+  padding-right:5px;
+}
+
+
+/* width */
+.map_st::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.map_st::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.map_st::-webkit-scrollbar-thumb {
+  background: #732334; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.map_st::-webkit-scrollbar-thumb:hover {
+  background: #732334; 
+}

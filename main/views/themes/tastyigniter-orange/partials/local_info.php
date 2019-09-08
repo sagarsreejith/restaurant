@@ -17,7 +17,7 @@
 			<div class="text-subline offset-top-15"></div>				
 	</div>
 
-	<!-- <div class="col-xs-12 col-sm-6">
+ <div class="col-xs-12 col-sm-6">
 		<?php if ($working_hours) { ?>
 			<div class="panel panel-default panel-nav-tabs">
 				<div class="panel-heading">
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 		<?php } ?>
-	</div> -->
+	</div> 
 
 	<div class="col-xs-12 col-sm-12">
 		<div class="panel panel-default">

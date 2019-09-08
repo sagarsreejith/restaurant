@@ -369,9 +369,9 @@ transform:translate(-50%,-50%)
                     </div>
                     <div class="content-wrap">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 nopad">
                         
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel-group map_st" id="accordion" role="tablist" aria-multiselectable="true">
                             <?php $count = 0; foreach ($restaurants as $restaurant){  ?>
                                 <div class="panel panel-default marker-link" data-markerid="<?php echo $count; ?>">
                                     <div class="panel-heading" role="tab" id="headingOne<?php echo $count; ?>">
@@ -383,19 +383,44 @@ transform:translate(-50%,-50%)
                                     </div>
                                     <div id="collapseOne<?php echo $count; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne<?php echo $count; ?>">
                                         <div class="panel-body">
-                                            <?php echo $restaurant['description']; ?> <br/> 
+                                            <div>
+                                            <div class="col-xs-12 col-sm-12">
+                                                <div class="open_off">
+                                                    <span class="text-success"> open</span>
+                                                </div>
+                                                <ul class="location_list">
+
+                                                    <li class="text-muted"><i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                                Offers delivery only, pick-up is not available.																												
+                                                    </li>
+                                                    <li class="text-muted"><i class="fa fa-motorcycle"></i>
+                                                            Delivery in <b>50</b> minutes
+                                                    </li>
+                                                    <li class="text-muted "><span class="li_class"></span>
+                                                                    Pick-up in <b>30</b> minutes
+                                                    </li>
+                                                     
+                                                </ul>
+                                           
+                                                </div>
+                                             
+                                                                                
+                                                            
+                                              
+                                            <!-- <?php echo $restaurant['description']; ?> <br/> 
                                             <?php //echo $restaurant['location_telephone']; ?>
                                             <?php //print_r($restaurants); ?>
                                             <i class="fa fa-building-o"></i>&nbsp;<?php echo $restaurant['location_address_1'].','.$restaurant['location_address_2'].','.$restaurant['location_city'].','.$restaurant['location_state']; ?>Kuwait<br>
                                             <i class="fa fa-envelope"></i>&nbsp;<?php echo $restaurant['location_email']; ?><br>
-                                            <i class="fa fa-phone"></i>&nbsp;<?php echo $restaurant['location_telephone']; ?><br>
+                                            <i class="fa fa-phone"></i>&nbsp;<?php echo $restaurant['location_telephone']; ?><br> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <?php $count++; } ?>
                             </div>
                         </div>
-                        <div class="col-sm-8"><div id="map_home" class="slideInUp" style="height:400px; width:100%"></div></div>
+                        <div class="col-sm-8 nopad"><div id="map_home" class="slideInUp map_head" style="height:400px; width:100%"></div></div>
                     <div class="clearfix"></div>
                  
                  </div>
@@ -610,7 +635,7 @@ transform:translate(-50%,-50%)
                         var markers = new Array();
 
 var mapOptions = {
-    zoom: 12,
+    zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     gestureHandling: 'greedy',
     center: new google.maps.LatLng(29.3757712, 47.9436413)
