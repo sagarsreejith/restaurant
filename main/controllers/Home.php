@@ -13,15 +13,30 @@ class Home extends Main_Controller {
         $this->GetAllRestaurans();
         $this->template->setScriptTag('https://maps.googleapis.com/maps/api/js?v=3' .$map_key.'&libraries=geometry,places', 'google-maps-js', '104330');
         $this->template->setTitle($this->lang->line('text_heading'));
-        $data['restaurants'] = $this->GetAllRestaurans();
+
+        $data['restaurants']            = $this->GetAllRestaurans();
+        $data['res_menu']               = $this->getAllMenus();
+        $data['menu_categories']        = $this->getAllMneuCategories();
+        
 		$this->template->render('home', $data);
     }
     
     public function GetAllRestaurans(){
-        //  calls the constructor
         $this->load->model('Locations_model');
         $locations = $this->Locations_model->getList(array());
         return $locations;
+    }
+
+    public function getAllMenus(){
+        $this->load->model('Menus_model');
+
+        return $this->Menus_model->getAllMenu();
+    }
+
+    public function getAllMneuCategories(){
+        $this->load->model('Categories_model');
+        $results = $this->Categories_model->getList(array());
+        return $results;
     }
 }
 

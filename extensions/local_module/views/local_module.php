@@ -264,7 +264,7 @@
                                                          <i class="fa fa-phone"></i>
                                                          <div class="cont_con">
                                                             
-                                                         <a href="tel:+965 67678956" target="_blank"><p>949200202</p></a> 
+                                                         <a href="tel:<?php echo $contact_info['location_telephone'];?>" target="_blank"><p><?php echo $contact_info['location_telephone'];?></p></a> 
                                                          </div>
                                                    </div>
                                              </div>
@@ -272,22 +272,24 @@
                                                 <div class="contact-box ">
                                                       <i class="fa fa-envelope-o"></i>
                                                       <div class="cont_con">
-                                                      <a href="mailto:support@website.com"  target="_blank"><p>support@website.com</p></a> 
+                                                      <a href="mailto:<?php echo $contact_info['location_email']; ?>"  target="_blank"><p><?php echo $contact_info['location_email']; ?></p></a> 
                                                         
                                                       </div>
                                                 </div>
                                              </div>
+                                             <?php if($contact_info['location_whatsapp'] != '') { ?>
                                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="contact-box ">
                                                       <i class="fa fa-whatsapp"></i>
                                                       <div class="cont_con">
                                                       
-                                                         <a  class="cont_link_app"  target="_blank" href="//api.whatsapp.com/send?phone=96597425684&text=WHATEVER_TEXT_YOU_WANT_TO_SEND" class="applyinfo-btn">
-                                                         <p>949200202</p>	</a>
+                                                         <a  class="cont_link_app"  target="_blank" href="//api.whatsapp.com/send?phone=<?php echo $contact_info['location_whatsapp']; ?>&text=WHATEVER_TEXT_YOU_WANT_TO_SEND" class="applyinfo-btn">
+                                                         <p><?php echo $contact_info['location_whatsapp']; ?></p>	</a>
                                                          
                                                       </div>
                                                 </div>
                                              </div>
+                                             <?php } ?>
                                        </div>
                                  </div>
                      

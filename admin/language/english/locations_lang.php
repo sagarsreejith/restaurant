@@ -72,6 +72,7 @@ $lang['label_latitude'] 		        = 'Latitude';
 $lang['label_longitude'] 		        = 'Longitude';
 $lang['label_email'] 		            = 'Email';
 $lang['label_telephone'] 		        = 'Telephone';
+$lang['label_whatsapp'] 		        = 'WhatsApp';
 $lang['label_description'] 		        = 'Description';
 $lang['label_permalink_id'] 		    = 'Permalink ID';
 $lang['label_permalink_slug'] 		    = 'Permalink Slug';

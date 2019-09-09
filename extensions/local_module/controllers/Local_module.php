@@ -64,7 +64,8 @@ class Local_module extends Main_Controller {
 		$cart_total = $this->cart->total();
 
 		$data['info_url'] 				= site_url('local');
-		$data['local_info'] 			= $this->location->local(); 										// retrieve local location data
+		$data['local_info'] 			= $this->location->local();
+		$data['contact_info'] 			= $this->location->contactInfo();										// retrieve local location data
 		$data['location_id'] 			= $this->location->getId(); 										// retrieve local location data
 		$data['location_name'] 			= $this->location->getName(); 										// retrieve local location data
 		$data['location_address'] 		= $this->location->getAddress();

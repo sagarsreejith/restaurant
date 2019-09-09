@@ -168,115 +168,39 @@ transform:translate(-50%,-50%)
                         </div>
                     </div>
                             <div class="col-lg-12 col-md-12">
-                                <div class="isotope-filters">
-                                    <button data-filter="" class="active">All</button>
-                                    <button data-filter=".Arabic"> Arabic Sweets</button>
-                                    <button data-filter=".Mamoul">Mamoul</button>
+                                <div class="isotope-filters"> 
+                                
+                                <button data-filter="" class="active">All</button>
+                                <?php $count=0; foreach ($menu_categories as $category){  if($count < 7) {?> 
+                                    
+                                    <button data-filter='.<?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $category['name']))?>'><?php echo $category['name']; ?></button>
+                                    <!--<button data-filter=".Mamoul">Mamoul</button>
                                     <button data-filter=".Fresh">Fresh Sweets</button>
                                     <button data-filter=".Manakeesh">Manakeesh</button>
                                     <button data-filter=".Sandwiches">Sandwiches</button>
                                     <button data-filter=".Appetizer"> Appetizer</button>
-                                    <button data-filter=".emb"> Ambiance</button>
-
-                                 
+                                    <button data-filter=".emb"> Ambiance</button> -->
+                                <?php $count++; } }?>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container">
+                    
                         <div class="isotope popup-gallery columns-4">
-                        <div class="grid-item fresh">
+                        <?php foreach ($res_menu as $menu){  ?>
+                        <div class='grid-item <?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $menu->name))?>'>
                                 <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
+                                    <span><img class="img-responsive" src="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
+                                            <h3><a href="#"> <?php echo $menu->menu_name; ?></a> </h3>
+                                            <a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item Arabic mexican">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item Mamoul">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#">Diamond</a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/02.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item   Mamoul">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#">Mann Wa Salwa</a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item mexican">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/04.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item  Mamoul ">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/05.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item Sandwiches ">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Bassma </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/06.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       
-                            <div class="grid-item Appetizer">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/10.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       
-                          
-                        </div>
+                        <?php } ?>
                     </div>
                 </section>
 

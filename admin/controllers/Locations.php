@@ -204,6 +204,7 @@ class Locations extends Admin_Controller {
 		$data['location_postcode'] 		= $location_info['location_postcode'];
 		$data['location_email'] 		= !empty($location_info['location_email']) ? $location_info['location_email'] : $this->config->item('site_email');
 		$data['location_telephone'] 	= $location_info['location_telephone'];
+		$data['location_whatsapp'] 		= $location_info['location_whatsapp'];
 		$data['description'] 			= $location_info['description'];
 		$data['location_lat'] 			= $location_info['location_lat'];
 		$data['location_lng'] 			= $location_info['location_lng'];

@@ -39,7 +39,13 @@
 							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
-
+					<div class="form-group">
+						<label for="input-whatsapp" class="col-sm-3 control-label"><?php echo lang('label_whatsapp'); ?></label>
+						<div class="col-sm-5">
+							<input type="text" name="location_whatsapp" id="input-whatsapp" class="form-control" value="<?php echo set_value('location_whatsapp', $location_whatsapp); ?>" />
+							<?php echo form_error('location_whatsapp', '<span class="text-danger">', '</span>'); ?>
+						</div>
+					</div>
 					<h4 class="tab-pane-title"><?php echo lang('text_tab_title_address'); ?></h4>
 					<div class="form-group">
 						<label for="input-address-1" class="col-sm-3 control-label"><?php echo lang('label_address_1'); ?></label>

@@ -318,7 +318,6 @@ class Locations_model extends TI_Model {
 		if (isset($address['location_lng'])) {
 			$this->db->set('location_lng', $address['location_lng']);
 		}
-
 		$this->db->set('location_status', '1');
 
 		$location_id = (isset($address['location_id']) AND is_numeric($address['location_id'])) ? (int) $address['location_id'] : $this->config->item('default_location_id');
@@ -386,7 +385,9 @@ class Locations_model extends TI_Model {
 		if (isset($save['telephone'])) {
 			$this->db->set('location_telephone', $save['telephone']);
 		}
-
+		if (isset($save['location_whatsapp'])) {
+			$this->db->set('location_whatsapp', $save['location_whatsapp']);
+		}
 		if (isset($save['description'])) {
 			$this->db->set('description', $save['description']);
 		}
