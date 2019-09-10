@@ -84,12 +84,14 @@ class Checkout extends Main_Controller
 
 		if (isset($order_data['location_id']) AND $order_data['location_id'] !== $this->location->getId()) {
 			$order_data['checkout_step'] = 'one';
+			$order_data['location_permalink']    = 'hello';
 		}
 
 		if (isset($order_data['order_type']) AND $order_data['order_type'] !== $this->location->orderType()) {
 			$order_data['checkout_step'] = 'one';
+			$order_data['location_permalink']    ='hi';
 		}
-
+		$order_data['location_permalink']    = 'hello';
 		$data = $this->getFormData($order_data, $data);
 
 		$this->template->render('checkout', $data);

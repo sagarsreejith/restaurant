@@ -1,7 +1,7 @@
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <div class="responsive_cart">
-    <!-- <div class="cart-buttons wrap-bottom">
+     <!-- <div class="cart-buttons wrap-bottom">
         <div class="center-block">
             <a class="btn btn-default btn-block btn-md" href="<?php echo restaurant_url().'/#local-menus'; ?>"><?php echo lang('button_go_back') ?></a>
         </div>

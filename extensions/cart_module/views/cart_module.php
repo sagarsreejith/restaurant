@@ -7,7 +7,7 @@
 			<div class="panel-heading head_checkout">
 				<h3 class="panel-title"><?php echo lang('text_heading_cart'); ?></h3>
 				<?php if (!in_array($rsegment, array('local', 'locations'))) { ?>
-                          
+							<?php echo $location_permalink;?>
                               <a class="btn btn-primary btn-menus" href="<?php echo site_url('local?location_id='.$location_id).'#local-menus'; ?>"><i class="fa fa-cutlery"></i>
                               <span>&nbsp;&nbsp;<?php echo lang('text_goto_menus'); ?></span>
                               </a>
@@ -194,7 +194,7 @@
 			<div class="center-block">
 				<?php echo $button_order; ?>
 				<?php if (!$is_mobile) { ?>
-				<a class="btn btn-link btn-block visible-xs" href="<?php echo site_url('cart') ?>"><?php echo lang('button_view_cart'); ?></a>
+				<!-- <a class="btn btn-link btn-block visible-xs" href="<?php echo site_url('cart') ?>"><?php echo lang('button_view_cart'); ?></a> -->
 				<?php } ?>
 			</div>
 			<div class="clearfix"></div>

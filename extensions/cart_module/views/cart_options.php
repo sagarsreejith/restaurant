@@ -1,9 +1,21 @@
 <div class="modal-dialog modal-menu-options">
 	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-			<h4 class="modal-title"><?php echo $text_heading; ?></h4>
-		</div>
+          
+                    <div class="modal-header">
+
+                        <div class="section-title text-center">
+                            <div class="title-separator">
+                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo $text_heading; ?></span></h2>
+                                <span class="under-heading"></span>
+                            </div>
+                        </div>
+                      
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+            
+		
 
 		<div class="modal-body" id="menu-options<?php echo $menu_id; ?>">
 			<div class="row">
@@ -134,7 +146,7 @@
                     </div>
 
                     <div class="form-group clearfix">
-                        <div class="col-sm-10 wrap-none wrap-top">
+                        <div class="col-sm-12 wrap-none wrap-top">
                             <label for="comment"><?php echo lang('label_add_comment'); ?></label>
                             <textarea name="comment" class="form-control" rows="3"><?php echo $comment; ?></textarea>
                         </div>
@@ -142,12 +154,12 @@
                     <div class="clearfix"></div>
 
                     <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <br />
+                        <div class="col-xs-12 col-md-4">
+                          
                             <?php if ($row_id) { ?>
-                                <a class="btn btn-primary  btn-block" onclick="addToCart('<?php echo $menu_id; ?>');" title="<?php echo lang('text_update'); ?>"><?php echo lang('button_update'); ?></a>
+                                <a class="btn btn-primary btn-order btn-block" onclick="addToCart('<?php echo $menu_id; ?>');" title="<?php echo lang('text_update'); ?>"><?php echo lang('button_update'); ?></a>
                             <?php } else { ?>
-                                <a class="btn btn-primary btn-block" onclick="addToCart('<?php echo $menu_id; ?>');" title="<?php echo lang('text_add_to_order'); ?>"><?php echo lang('button_add_to_order'); ?></a>
+                                <a class="btn btn-primary btn-order btn-block" onclick="addToCart('<?php echo $menu_id; ?>');" title="<?php echo lang('text_add_to_order'); ?>"><?php echo lang('button_add_to_order'); ?></a>
                             <?php } ?>
                         </div>
                     </div>

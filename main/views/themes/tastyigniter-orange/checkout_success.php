@@ -63,7 +63,7 @@
 			                <div class="panel-body">
 								
 							
-			                    <div class="col-sm-12 clr_prog">
+			                    <div class="col-sm-12 clr_prog nopad">
 								
 			                        <p class="st_res"><?php echo $order_details; ?></p>
 			                    </div>
