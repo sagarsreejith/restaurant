@@ -7,7 +7,7 @@
 				<li><a href="#data" data-toggle="tab"><?php echo lang('text_tab_data'); ?></a></li>
 				<li><a href="#opening-hours" data-toggle="tab"><?php echo lang('text_tab_opening_hours'); ?></a></li>
 				<li><a href="#order" data-toggle="tab"><?php echo lang('text_tab_order'); ?></a></li>
-				<li><a href="#reservation" data-toggle="tab"><?php echo lang('text_tab_reservation'); ?></a></li>
+				<!-- <li><a href="#reservation" data-toggle="tab"><?php echo lang('text_tab_reservation'); ?></a></li> -->
 				<li><a id="open-map" href="#delivery" data-toggle="tab"><?php echo lang('text_tab_delivery'); ?></a></li>
 				<li><a href="#gallery" data-toggle="tab"><?php echo lang('text_tab_gallery'); ?></a></li>
 				<!--<li><a href="#options" data-toggle="tab"><?php echo lang('text_tab_options'); ?></a></li>-->
@@ -554,7 +554,7 @@
 					</div>
 				</div>
 
-				<div id="reservation" class="tab-pane row wrap-all">
+				<!-- <div id="reservation" class="tab-pane row wrap-all">
 					<div class="form-group">
 						<label for="input-reserve-interval" class="col-sm-3 control-label"><?php echo lang('label_reservation_time_interval'); ?>
 							<span class="help-block"><?php echo lang('help_reservation_time_interval'); ?></span>
@@ -614,7 +614,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<div id="delivery" class="tab-pane row wrap-none">
 					<?php if ($has_lat_lng) { ?>
