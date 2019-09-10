@@ -238,7 +238,8 @@ class Cart_module extends Main_Controller {
 		}
 
 		$this->template->setStyleTag(extension_url('cart_module/views/stylesheet.css'), 'cart-module-css', '144000');
-
+		
+		$data['location_id']                = $this->location->getId();
 		$data['is_opened']                  = $this->location->isOpened();
 		$data['order_type']                 = $this->location->orderType();
 		$data['search_query'] 		        = $this->location->searchQuery();
