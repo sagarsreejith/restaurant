@@ -107,6 +107,8 @@ class Menus_model extends TI_Model {
 				if ($show_menu_images === '1') {
 					if ( ! empty($row['menu_photo'])) {
 						$menu_photo_src = $this->Image_tool_model->resize($row['menu_photo'], $menu_images_w, $menu_images_h);
+						$menu_photo_src_act = $row['menu_photo'];
+
 					}
 				}
 
@@ -144,6 +146,8 @@ class Menus_model extends TI_Model {
 					'end_days'         => $end_days,
 					'menu_price'       => $this->currency->format($price),        //add currency symbol and format price to two decimal places
 					'menu_photo'       => $menu_photo_src,
+					'menu_photo_act'   => $menu_photo_src_act,
+					
 				);
 			}
 

@@ -17,10 +17,10 @@
 			<div class="text-subline offset-top-15"></div>				
 	</div>
 
- <div class="col-xs-12 col-sm-6">
-		<?php if ($working_hours) { ?>
+ 	<!--<div class="col-xs-12 col-sm-6">
+		//<?php if ($working_hours) { ?>
 			<div class="panel panel-default panel-nav-tabs">
-				<div class="panel-heading">
+			 <div class="panel-heading">
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#opening-hours" data-toggle="tab"><?php echo lang('text_opening_hours'); ?></a></li>
 						<?php if ($has_delivery) { ?>
@@ -59,8 +59,8 @@
 					</div>
 				</div>
 			</div>
-		<?php } ?>
-	</div> 
+		//<?php } ?>
+	</div>  -->
 
 	<div class="col-xs-12 col-sm-12">
 		<div class="panel panel-default">

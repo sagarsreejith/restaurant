@@ -187,16 +187,17 @@
 							<?php foreach ($menus[$category_id] as $menu) { ?>
 
 
-     
+								<?php //print_r($menu); ?>
  
 								<div id="menu<?php echo $menu['menu_id']; ?>" class="menu-item">
+								<?php //echo site_url('assets/images/'.$menu['menu_photo_act']) ?>
 									<div class="menu-item-wrapper row">
 										<?php if ($show_menu_images === '1' AND !empty($menu['menu_photo'])) { ?>
 			
 
 											<div class="menu-thumb col-xs-12 col-sm-3 col-md-3 wrap-none wrap-right menu_img enlarge">
 											<ul class="enlarge">
-												<li><img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo $menu['menu_photo']; ?>"><span><img src="<?php echo $menu['menu_photo']; ?>" alt="Deckchairs" /></span></li>
+												<li><img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><span><img src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>" alt="Deckchairs" /></span></li>
 											</ul>
 											</div>
 										<?php } ?>

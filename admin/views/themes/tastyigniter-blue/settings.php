@@ -7,7 +7,7 @@
 				<li><a href="#restaurant" data-toggle="tab"><?php echo lang('text_tab_restaurant'); ?></a></li>
 				<li><a href="#option" data-toggle="tab"><?php echo lang('text_tab_options'); ?></a></li>
 				<li><a href="#order" data-toggle="tab"><?php echo lang('text_tab_order'); ?></a></li>
-				<li><a href="#reservation" data-toggle="tab"><?php echo lang('text_tab_reservation'); ?></a></li>
+			 	 <li><a href="#reservation" data-toggle="tab"><?php echo lang('text_tab_reservation'); ?></a></li> 
 				<li><a href="#image-manager" data-toggle="tab"><?php echo lang('text_tab_media_manager'); ?></a></li>
 				<li><a href="#mail" data-toggle="tab"><?php echo lang('text_tab_mail'); ?></a></li>
 				<li><a href="#system" data-toggle="tab"><?php echo lang('text_tab_server'); ?></a></li>

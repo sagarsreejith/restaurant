@@ -166,12 +166,12 @@
                                                             </li>
 
                                                             <li>
-                                                                <a class="log" data-toggle="modal" data-target="#login"> login</a>
+                                                                <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> login</a>
 
                                                             </li>
 
                                                             <li class="">
-                                                                <a  data-toggle="modal" data-target="#track-modal">
+                                                                <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
                                                                     <?php echo lang( 'track_recent_order'); ?>
                                                                 </a>
                                                             </li>
@@ -196,8 +196,7 @@
 
                             <div class="section-title text-center">
                                 <div class="title-separator">
-                                    <!-- <img src="assets/images/food_icon.png"> -->
-                                    
+                                
                                     <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_modal_login'); ?></span></h2>
                                     <span class="under-heading"></span>
                                 </div>
@@ -205,7 +204,7 @@
                             </div>
 
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                              <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         
@@ -220,15 +219,17 @@
                                        
                                         <div class="form-group">
                                             <div class="input-group">
+                                                <i class="fa fa-envelope prefix"></i>
                                                 <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('emailid'); ?>" autofocus="" />
-                                                <span class="input-group-addon">@</span>
+                                                <!-- <span class="input-group-addon">@</span> -->
                                             </div>
                                             <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
                                         </div>
                                         <div class="form-group">
                                             <div class="input-group">
+                                                 <i class="fa fa-lock"></i>
                                                 <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
-                                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                             
                                             </div>
                                             <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
                                                 <span class="text-danger" id="login-error"></span>
@@ -265,7 +266,7 @@
                 <div class="modal-dialog " role="document">
                     <div class="modal-content">
 
-                         <div class="modal-header">
+                        <div class="modal-header">
 
                             <div class="section-title text-center">
                                 <div class="title-separator">
@@ -281,12 +282,8 @@
                             </button>
                         </div>
 
-                        <div class="modal-body">
-
-                            
-                                       
-
-                                    <div id="register-form" class="content-wrap col-sm-12 center-block">
+                         <div class="modal-body">
+                                <div id="register-form" class="content-wrap col-sm-12 center-block">
                                     <div id="registration-notification" > </div>
                                       
                                         <form id="register_form" accept-charset="utf-8" action="" role="form" class="">
@@ -294,18 +291,18 @@
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
                                                         <div class="input-group">
+                                                            <i class="fa fa-user prefix" aria-hidden="true"></i>
                                                             <input type="text" id="fullname" class="form-control input-lg" value="<?php echo set_value('fullname'); ?>" name="first_name" placeholder="<?php echo lang('label_first_name'); ?>" autofocus="">
                                                             <?php echo form_error('first-name', '<span class="text-danger">', '</span>'); ?>
-                                                                <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
                                                         <div class="input-group">
+                                                            <i class="fa fa-phone prefix" aria-hidden="true"></i>
                                                             <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
-                                                            <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
-                                                                <span class="input-group-addon">   <i class="fa fa-phone" aria-hidden="true"></i> </span>
+                                                            <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>      
                                                         </div>
                                                     </div>
                                                 </div>
@@ -313,58 +310,48 @@
 
                                             <div class="form-group">
                                                 <div class="input-group">
+                                                    <i class="fa fa-envelope  prefix" aria-hidden="true"></i>
                                                     <input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
                                                     <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-                                                        <span class="input-group-addon">@</span>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
                                                         <div class="input-group">
+                                                            <i class="fa fa-key prefix" aria-hidden="true"></i>
                                                             <input type="password" id="password" class="form-control input-lg" value="" name="password" placeholder="<?php echo lang('label_password'); ?>">
-                                                            <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
-                                                                <span class="input-group-addon">  <i class="fa fa-key" aria-hidden="true"></i> </span>
+                                                            <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?> 
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
                                                         <div class="input-group">
+                                                            <i class="fa fa-key prefix" aria-hidden="true"></i>
                                                             <input type="password" id="password-confirm" class="form-control input-lg" name="password_confirm" value="" placeholder="<?php echo lang('label_password_confirm'); ?>">
-                                                            <?php echo form_error('password-confirm', '<span class="text-danger">', '</span>'); ?>
-                                                                <span class="input-group-addon">  <i class="fa fa-key" aria-hidden="true"></i> </span>
+                                                            <?php echo form_error('password-confirm', '<span class="text-danger">', '</span>'); ?> 
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                                <div class="row">
-                                                    <div class="col-xs-8 col-sm-9 col-md-12 connt_clr">
-                                                        <span class="button-checkbox" id="button-checkbox">
-                                                        <button id="terms-condition" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_terms_agree'); ?></button>
-                                                        <input type="checkbox" name="terms_condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
-                                                    </span>
-                                                        <?php echo sprintf(lang('label_terms'), $registration_terms); ?>
-                                                    </div>
-                                                    <?php echo form_error('terms_condition', '<span class="text-danger">', '</span>'); ?>
-                                                </div>
-                                                <div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-body">
-
-                                                                <h4>	Introduction</h4>
-                                                                <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. Minors or people below 18 years old are not allowed to use this Website.</p>
-
-                                                                <h4> Intellectual Property Rights</h4>
-                                                                <p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+                                            <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="col-xs-8 col-sm-9 col-md-12 connt_clr">
+                                                                <span class="button-checkbox" id="button-checkbox">
+                                                                    <button id="terms-condition" type="button" class="btn_box" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_terms_agree'); ?></button>
+                                                                    <input type="checkbox" name="terms_condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
+                                                                 </span>
+                                                                <?php echo sprintf(lang('label_terms'), $registration_terms); ?>
                                                             </div>
+                                                             <?php echo form_error('terms_condition', '<span class="text-danger">', '</span>'); ?>
                                                         </div>
                                                     </div>
-                                                </div>
-
-                                                    <div class="row">
+                                            </div>
+                                               
+                                            <div class="row">
                                                         <div class="col-xs-12 col-md-6">
                                                             <button type="submit" class="btn btn-primary btn-block btn-lg">
                                                                 <?php echo lang('button_register'); ?>
@@ -375,26 +362,47 @@
                                                                 <?php echo lang('button_login'); ?>
                                                             </a>
                                                         </div>
-                                                    </div>
+                                            </div>
 
-                                                    <div class="row">
-                                                        <div class="col-xs-8 col-sm-12 col-md-12  col-md-12 connt_clr subscribe nopad">
-                                                            <span class="button-checkbox">
-                                                                <button id="newsletter" type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp<?php echo lang('button_subscribe'); ?></button>
-                                                                <input type="checkbox" name="newsletter" class="hidden" value="1" <?php echo set_checkbox('newsletter', '1'); ?>>
-                                                         </span>
-                                                            <?php echo lang('label_newsletter'); ?>
-                                                        </div>
-                                                        <?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
-                                                    </div>
+                                                  
                                         </form>
-                                    </div>
+                                </div>
+                        </div>
+                           
 
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="terms-modal" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <div class="section-title text-center">
+                                <div class="title-separator">
+                                    <!-- <img src="assets/images/food_icon.png"> -->
+                                    <h2 class="reg_st"> <span class="text-orange forgot">Terms and Condition</span></h2>
+                                    <span class="under-heading"></span>
+                                </div>
+
+                            </div>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                                                                <h4>	Introduction</h4>
+                                                                <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. Minors or people below 18 years old are not allowed to use this Website.</p>
+
+                                                                <h4> Intellectual Property Rights</h4>
+                                                                <p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
+           
 
             <div class="modal fade" id="reset" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -474,11 +482,11 @@
                     <div class="modal-body">
                                 
                             <form action="" id="tract_sec">
-                                <div class=" col-md-12 div_part">
-                                    <div class="col-md-7 col-sm-9 col-xs-10 nopad">
+                                <div class=" col-md-12 nopad div_part">
+                                    <div class="col-md-7 col-sm-9 col-xs-9 nopad">
                                         <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
                                     </div>
-                                    <div class="col-md-5 col-sm-3 col-xs-2 nopad">
+                                    <div class="col-md-5 col-sm-3 col-xs-3 nopad">
                                         <!-- <label class="head_name" for="fname">Order Number</label> -->
                                         <button type="submit" value="Submit" class="track_btn" >Submit </button>
                                     </div>
@@ -654,6 +662,8 @@
 
     //User Registration
   $(function() {
+ 
+
     $("form#register_form").submit(function(event) {
     event.preventDefault();
     var datastring = $("form#register_form").serialize();
@@ -674,10 +684,10 @@
         success: function(json) {
             alert(JSON.stringify(json));
             if(json['success'] == true){
-                $('#registration-notification').html("<div style='border: 2px solid #bdadad;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;'>User Created Succesfully</div>");
+                $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'>User Created Succesfully</div>");
             }
             if(json['success'] == false){
-                $('#registration-notification').html("<div style='border: 2px solid #bdadad;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;'>User Email Already Exist!</div>");
+                $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'>User Email Already Exist!</div>");
             }
         }
        });

@@ -131,7 +131,11 @@
                         <div class="row local-change" style="display: <?php echo (!empty($search_query) OR (empty($search_query) AND $location_order !== '1')) ? 'block' : 'none'; ?>">
                            <div class="col-xs-12 col-sm-12 col-md-12 place_st">
                               <div class="text-center">
-                                 
+                                 <?php 
+                                   // echo $_COOKIE['del_search'];
+                                    if($_COOKIE['order_type']==1){  ?>
+                                         <span class="cookie_del_search">Your Location is : <?php echo $_COOKIE['del_search']; ?></span>
+                                  <?php } ?>
                                  <a data-toggle="modal" data-target="#order_now" class="clickable map_A btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                                  <div class="map_icon_bg "> </div>  <?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                                  </a>
@@ -158,8 +162,10 @@
                                  
                                     <dd><span class="text-muted add_b"><?php echo str_replace('<br />', ', ', $location_address); ?></span></dd>
                                  </dl>
+                              
                                  </div>
                               </div>
+                          
                         
                               <div class="box-two col-xs-12 col-sm-6 col-md-6 right_sec">
                                  <ul class="location_list1">
@@ -251,6 +257,7 @@
                                                                            
                                     </ul>
                               </div>
+                          
                          
                         </div>
                      </div> 
@@ -259,7 +266,7 @@
                                 <div class="col-md-12 nopad">
 
                                        <div class="contact cnt">
-                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
                                                    <div class="contact-box ">
                                                          <i class="fa fa-phone"></i>
                                                          <div class="cont_con">
@@ -268,7 +275,7 @@
                                                          </div>
                                                    </div>
                                              </div>
-                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="contact-box ">
                                                       <i class="fa fa-envelope-o"></i>
                                                       <div class="cont_con">

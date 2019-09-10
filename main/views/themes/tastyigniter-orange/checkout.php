@@ -343,14 +343,14 @@
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">
-											<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
+											<div class="col-md-12 col-sm-12 col-xs-12 nopad main_head_addr">		
 												<!-- <label for=""><?php echo lang('label_customer'); ?> </label> -->
 												<label for="" class="">Customer Details </label>
 												<div class="text-subline offset-top-15"></div>
 											</div>
 
 
-											<div class="col-md-12">
+											<div class="col-md-12 nopad">
 												<table class="table table-hover table-dark_cust">
 													<tbody>
 														<tr>
@@ -379,7 +379,7 @@
 
 											<?php if ($order_type === '1' AND $addresses) { ?>
 											<div class="form-group">
-												<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
+												<div class="col-md-12 col-sm-12 col-xs-12 nopad main_head_addr">		
 												<label for=""><?php echo lang('label_address'); ?>: </label>
 												<div class="text-subline offset-top-15"></div>
 												</div>
@@ -398,7 +398,7 @@
 											
 
 
-									<div class="col-sm-12">
+									<div class="col-sm-12 nopad">
 											<div class="col-md-12 col-sm-12 col-xs-12 main_head_addr">		
 												
 												<label for="" class="">Order Details </label>

@@ -7,11 +7,11 @@
     <div class="track_part">
         <div class="track_head"><img src="assets/images/icon/track_order.png"></div>
         <form action="" id="tract_sec">
-            <div class=" col-md-12 div_part">
-                 <div class="col-md-7 col-sm-9 col-xs-10 nopad">
+            <div class=" col-md-12 nopad div_part">
+                 <div class="col-md-7 col-sm-9 col-xs-9 nopad">
                     <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
                 </div>
-                <div class="col-md-5 col-sm-3 col-xs-2 nopad">
+                <div class="col-md-5 col-sm-3 col-xs-3 nopad">
                     <!-- <label class="head_name" for="fname">Order Number</label> -->
                     <button type="submit" value="Submit" class="track_btn" >Submit </button>
                 </div>

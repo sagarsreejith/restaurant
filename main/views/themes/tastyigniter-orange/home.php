@@ -148,17 +148,57 @@ transform:translate(-50%,-50%)
                              
                 </section>
                 <div class="clearfix"></div>
-                <section class="gallery white-bg page-section-ptb" id="gallery">
-                <div class="obj_right">
+                <!-- <section class="gallery white-bg page-section-ptb" id="gallery">
+                        <div class="obj_right">
                             <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-1.png" alt="">
                         </div>
                         <div class="obj_left" >
                             <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-2.png" >
                          </div>
                 
-                    <div class="container">
-                        <div class="row">
-                        <div class="col-lg-12 col-md-12">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="section-title text-center">
+                                        <div class="title-separator">
+                                        
+                                            <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Gallery</h2>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="isotope-filters"> 
+                                    
+                                    <button data-filter="" class="active">All</button>
+                                    <?php $count=0; foreach ($menu_categories as $category){  if($count < 7) {?> 
+                                        
+                                        <button data-filter='.<?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $category['name']))?>'><?php echo $category['name']; ?></button>
+                                    
+                                    <?php $count++; } }?>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                            <div class="isotope popup-gallery columns-4">
+                                <?php foreach ($res_menu as $menu){  ?>
+                                <div class='grid-item <?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $menu->name))?>'>
+                                        <div class="galllery-item gal_img">
+                                            <span><img class="img-responsive" src="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>" alt=""></span>
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <h3><a href="#"> <?php echo $menu->menu_name; ?></a> </h3>
+                                                    <a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>"><i class="fa fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                </section> -->
+                <section class="gallery white-bg page-section-ptb" id="gallery">
+                    <div class="col-lg-12 col-md-12">
                         <div class="section-title text-center">
                             <div class="title-separator">
                                 <!-- <img src="assets/images/food_icon.png"> -->
@@ -167,42 +207,122 @@ transform:translate(-50%,-50%)
 
                         </div>
                     </div>
+                    <div class="container">
+                        <div class="row">
                             <div class="col-lg-12 col-md-12">
-                                <div class="isotope-filters"> 
-                                
-                                <button data-filter="" class="active">All</button>
-                                <?php $count=0; foreach ($menu_categories as $category){  if($count < 7) {?> 
-                                    
-                                    <button data-filter='.<?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $category['name']))?>'><?php echo $category['name']; ?></button>
-                                    <!--<button data-filter=".Mamoul">Mamoul</button>
+                                <div class="isotope-filters">
+                                    <button data-filter="" class="active">All</button>
+                                    <button data-filter=".Arabic"> Arabic Sweets</button>
+                                    <button data-filter=".Mamoul">Mamoul</button>
                                     <button data-filter=".Fresh">Fresh Sweets</button>
                                     <button data-filter=".Manakeesh">Manakeesh</button>
                                     <button data-filter=".Sandwiches">Sandwiches</button>
                                     <button data-filter=".Appetizer"> Appetizer</button>
-                                    <button data-filter=".emb"> Ambiance</button> -->
-                                <?php $count++; } }?>
+                                    <button data-filter=".emb"> Embains</button>
+
+                                 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container">
-                    
                         <div class="isotope popup-gallery columns-4">
-                        <?php foreach ($res_menu as $menu){  ?>
-                        <div class='grid-item <?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $menu->name))?>'>
+                        <div class="grid-item fresh">
                                 <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>" alt=""></span>
+                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
                                     <div class="overlay">
                                         <div class="overlay-content">
-                                            <h3><a href="#"> <?php echo $menu->menu_name; ?></a> </h3>
-                                            <a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>"><i class="fa fa-expand"></i></a>
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        <?php } ?>
+                            <div class="grid-item Arabic mexican">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item Mamoul">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#">Diamond</a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/02.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item   Mamoul">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#">Mann Wa Salwa</a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item mexican">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/04.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item  Mamoul ">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/05.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item Sandwiches ">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Bassma </a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/06.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="grid-item Appetizer">
+                                <div class="galllery-item gal_img">
+                                    <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <h3><a href="#"> Cheese Pasta </a> </h3>
+                                            <a class="portfolio-img" href="assets/images/gallery/10.png"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                          
+                        </div>
                     </div>
                 </section>
+
+                <div claass="clearfix"></div>
 
                 <div claass="clearfix"></div>
 
@@ -370,7 +490,6 @@ transform:translate(-50%,-50%)
                     <div class="content-wrap">
                     <div class="row">
                         <div class="col-sm-4 nopad">
-                        
                             <div class="panel-group map_st" id="accordion" role="tablist" aria-multiselectable="true">
                             <?php $count = 0; foreach ($restaurants as $restaurant){  ?>
                                 <div class="panel panel-default marker-link" data-markerid="<?php echo $count; ?>">
@@ -643,7 +762,7 @@ var mapOptions = {
 var resta= <?php echo json_encode($restaurants) ?>;
 var local_res = [];
 resta.forEach(value => {
-    var map = [new google.maps.LatLng(value['location_lat'], value['location_lng']), 'Marker 1', '<strong>'+value['location_name']+'</strong><br>\
+    var map = [new google.maps.LatLng(value['location_lat'], value['location_lng']), 'Marker 1','<div><strong>'+value['location_name']+'</strong></div><br>\
                                 <i class="fa fa-building-o"></i>&nbsp;'+value['location_address_1']+','+value['location_address_2']+','+value['location_city']+','+value['location_state']+ ',Kuwait<br>\
                                 <i class="fa fa-envelope"></i>&nbsp;'+value['location_email']+'<br>\
                                 <i class="fa fa-phone"></i>&nbsp; '+value['location_telephone']+'<br>\
