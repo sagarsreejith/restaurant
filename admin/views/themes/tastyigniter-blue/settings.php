@@ -7,7 +7,7 @@
 				<li><a href="#restaurant" data-toggle="tab"><?php echo lang('text_tab_restaurant'); ?></a></li>
 				<li><a href="#option" data-toggle="tab"><?php echo lang('text_tab_options'); ?></a></li>
 				<li><a href="#order" data-toggle="tab"><?php echo lang('text_tab_order'); ?></a></li>
-				<!-- <li><a href="#reservation" data-toggle="tab"><?php echo lang('text_tab_reservation'); ?></a></li> -->
+			 	 <li><a href="#reservation" data-toggle="tab"><?php echo lang('text_tab_reservation'); ?></a></li> 
 				<li><a href="#image-manager" data-toggle="tab"><?php echo lang('text_tab_media_manager'); ?></a></li>
 				<li><a href="#mail" data-toggle="tab"><?php echo lang('text_tab_mail'); ?></a></li>
 				<li><a href="#system" data-toggle="tab"><?php echo lang('text_tab_server'); ?></a></li>
@@ -769,7 +769,7 @@
 					</div>
 				</div>
 
-				<!-- <div id="reservation" class="tab-pane">
+				<div id="reservation" class="tab-pane">
 					<div class="form-group">
 						<label for="input-reserve-mode" class="col-sm-3 control-label"><?php echo lang('label_reservation_mode'); ?>
 							<span class="help-block"><?php echo lang('help_reservation_mode'); ?></span>
@@ -874,7 +874,7 @@
 							<?php echo form_error('reservation_stay_time', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<div id="image-manager" class="tab-pane">
 					<div class="form-group">

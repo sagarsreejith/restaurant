@@ -43,7 +43,7 @@ $theme['nav_menu'] = array(
 		'child' => array(
 			'orders' => array('priority' => '1', 'class' => 'orders', 'href' => site_url('orders'), 'title' => lang('menu_order'), 'permission' => 'Admin.Orders'),
 		//	'reservations' => array('priority' => '2', 'class' => 'reservations', 'href' => site_url('reservations'), 'title' => lang('menu_reservation'), 'permission' => 'Admin.Reservations'),
-			'coupons' => array('priority' => '3', 'class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
+			//'coupons' => array('priority' => '3', 'class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
 		)
 	),
 	// 'marketing' => array(
@@ -66,7 +66,7 @@ $theme['nav_menu'] = array(
 		'permission' => 'Admin.Locations|Admin.Tables',
 		'child' => array(
 			'locations' => array('priority' => '1', 'class' => 'locations', 'href' => site_url('locations'), 'title' => lang('menu_location'), 'permission' => 'Admin.Locations'),
-			//'tables' => array('priority' => '2', 'class' => 'tables', 'href' => site_url('tables'), 'title' => lang('menu_table'), 'permission' => 'Admin.Tables'),
+			'tables' => array('priority' => '2', 'class' => 'tables', 'href' => site_url('tables'), 'title' => lang('menu_table'), 'permission' => 'Admin.Tables'),
 		)
 	),
 	'users' => array(

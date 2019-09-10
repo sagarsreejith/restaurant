@@ -39,13 +39,7 @@
 							<?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>
 						</div>
 					</div>
-					<div class="form-group">
-						<label for="input-whatsapp" class="col-sm-3 control-label"><?php echo lang('label_whatsapp'); ?></label>
-						<div class="col-sm-5">
-							<input type="text" name="location_whatsapp" id="input-whatsapp" class="form-control" value="<?php echo set_value('location_whatsapp', $location_whatsapp); ?>" />
-							<?php echo form_error('location_whatsapp', '<span class="text-danger">', '</span>'); ?>
-						</div>
-					</div>
+
 					<h4 class="tab-pane-title"><?php echo lang('text_tab_title_address'); ?></h4>
 					<div class="form-group">
 						<label for="input-address-1" class="col-sm-3 control-label"><?php echo lang('label_address_1'); ?></label>
@@ -837,87 +831,68 @@ $(document).ready(function() {
 	$('textarea#input-description').summernote({
 		height: 100,
 	});
-
 	$('#delivery-areas select.form-control').select2({
 		minimumResultsForSearch: Infinity
 	});
-
 	$('.timepicker').timepicker({
 		defaultTime: '11:45 AM',
 	});
-
 	$('input[name="auto_lat_lng"]').on('change', function() {
 		$('#lat-lng').slideDown('fast');
-
 		if (this.value == '1') {
 			$('#lat-lng').slideUp('fast');
 		}
 	});
-
 	$('input[name="opening_type"]').on('change', function() {
 		if (this.value == '24_7') {
 			$('#opening-daily').slideUp('fast');
 			$('#opening-flexible').slideUp('fast');
 		}
-
 		if (this.value == 'daily') {
 			$('#opening-flexible').slideUp('fast');
 			$('#opening-daily').slideDown('fast');
 		}
-
 		if (this.value == 'flexible') {
 			$('#opening-daily').slideUp('fast');
 			$('#opening-flexible').slideDown('fast');
 		}
 	});
-
 	$('input[name="delivery_type"]').on('change', function() {
 		if (this.value == '0') {
 			$('#delivery-hours-daily').slideUp('fast');
 		}
-
 		if (this.value == '1') {
 			$('#delivery-hours-daily').slideDown('fast');
 		}
 	});
-
 	$('input[name="collection_type"]').on('change', function() {
 		if (this.value == '0') {
 			$('#collection-hours-daily').slideUp('fast');
 		}
-
 		if (this.value == '1') {
 			$('#collection-hours-daily').slideDown('fast');
 		}
 	});
-
 	$('input[name="future_orders"]').on('change', function() {
 		$('#future-orders-days').slideUp('fast');
-
 		if (this.value == '1') {
 			$('#future-orders-days').slideDown('fast');
 		}
 	});
-
 	$(document).on('click', '.btn-add-condition', function() {
 		var panelRow = $(this).attr('data-panel-row');
 		var tableRow = $(this).attr('data-table-row');
-
 		tableRow++;
 		addDeliveryCondition(panelRow, tableRow);
-
 		$(this).attr('data-table-row', tableRow);
 	});
-
 	$(document).on('change', '#delivery-areas select.form-control', function() {
 		$(this).parent().parent().find('input.total').attr('disabled', false);
-
 		if (this.value == 'all') {
 			$(this).parent().parent().find('input.total').val('0');
 			$(this).parent().parent().find('input.total').attr('disabled', true);
 		}
 	});
-
 	$('#delivery-areas select.form-control').trigger('change');
 });
 //--></script>
@@ -940,7 +915,6 @@ $('input[name=\'table\']').select2({
 		}
 	}
 });
-
 $('input[name=\'table\']').on('select2-selecting', function(e) {
 	$('#table-box' + e.choice.id).remove();
 	$('#table-box table tbody').append('<tr id="table-box' + e.choice.id + '"><td class="name">' + e.choice.text + '</td><td>' + e.choice.min + '</td><td>' + e.choice.max + '</td><td class="img">' + '<a class="btn btn-danger btn-xs" onclick="confirm(\'<?php echo lang('alert_warning_confirm'); ?>\') ? $(this).parent().parent().remove() : false;"><i class="fa fa-times-circle"></i></a>' + '<input type="hidden" name="tables[]" value="' + e.choice.id + '" /></td></tr>');
@@ -956,7 +930,6 @@ $(document).on('change', '.area-types input[type="radio"]', function () {
 		color_icon.removeClass('fa-stop').addClass('fa-circle');
 	}
 });
-
 //--></script>
 <script type="text/javascript">//<![CDATA[
 var map = null,
@@ -967,13 +940,11 @@ centerLatLng = new google.maps.LatLng(
 	parseFloat(<?php echo json_encode($location_lat); ?>),
 	parseFloat(<?php echo json_encode($location_lng); ?>)
 );
-
 jQuery('#open-map').click(function() {
     if (map === null) {
 	    initializeMap();
     }
 });
-
 if (!google.maps.Polygon.prototype.getBounds) {
 	google.maps.Polygon.prototype.getBounds = function() {
 		var bounds = new google.maps.LatLngBounds();
@@ -988,28 +959,22 @@ if (!google.maps.Polygon.prototype.getBounds) {
 		return bounds;
 	}
 }
-
 function initializeMap() {
 	var mapOptions = {
 		zoom: 14,
 		center: centerLatLng,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
-
 	map = new google.maps.Map(
 		document.getElementById('map-holder'), mapOptions);
-
 	var marker = new google.maps.Marker({
 		position: centerLatLng,
 		map: map
 	});
-
 	$('#edit-form').on('submit', saveDeliveryAreas);
-
 	clearMapAreas();
 	createSavedArea(panel_row);
 }
-
 function defaultAreaOptions() {
 	return {
 		visible: false,
@@ -1019,7 +984,6 @@ function defaultAreaOptions() {
 		fillOpacity: 0.15
 	};
 }
-
 function saveDeliveryAreas() {
 	try {
 		serializeAreas();
@@ -1030,13 +994,11 @@ function saveDeliveryAreas() {
 		return false;
 	}
 }
-
 function addMapArea(deliveryArea) {
 	deliveryArea.setMap(map);
 	deliveryAreas.push(deliveryArea);
 	setMapAreaEvents(deliveryArea);
 }
-
 function deleteMapArea(deliveryArea) {
 	for (var i = deliveryAreas.length -1; i >= 0 ; i--) {
 		if (deliveryAreas[i].row == deliveryArea.row) {
@@ -1045,14 +1007,12 @@ function deleteMapArea(deliveryArea) {
 		}
 	}
 }
-
 function clearMapAreas() {
 	deliveryAreas.forEach(function(area) {
 		area.setMap(null);
 		deleteMapArea(area);
 	});
 }
-
 function toggleMapArea(deliveryArea, type) {
 	deliveryAreas.forEach(function(area) {
 		area.setOptions({ strokeWeight: 3, zIndex: 2, editable: false });
@@ -1063,7 +1023,6 @@ function toggleMapArea(deliveryArea, type) {
 		}
 	});
 }
-
 function toggleMapAreaType(deliveryArea, type) {
 	deliveryAreas.forEach(function(area) {
 		area.setOptions({ strokeWeight: 3, zIndex: 2, editable: false });
@@ -1075,7 +1034,6 @@ function toggleMapAreaType(deliveryArea, type) {
 		}
 	});
 }
-
 function toggleVisibleMapArea(deliveryArea, type) {
 	deliveryAreas.forEach(function(area) {
 		if (area.row == deliveryArea.row) {
@@ -1086,7 +1044,6 @@ function toggleVisibleMapArea(deliveryArea, type) {
 		}
 	});
 }
-
 function toggleHoverMapArea(deliveryArea, type, event) {
 	deliveryAreas.forEach(function(area) {
 		if (area.row == deliveryArea.row) {
@@ -1097,7 +1054,6 @@ function toggleHoverMapArea(deliveryArea, type, event) {
 		}
 	});
 }
-
 function setMapAreaEvents(deliveryArea) {
 	google.maps.event.addDomListener(deliveryArea, 'click', function(event) {
 		type = $(deliveryArea.div + ' .area-types input[type="radio"]:checked').val();
@@ -1108,18 +1064,15 @@ function setMapAreaEvents(deliveryArea) {
 	   		toggleMapArea(deliveryArea);
 		}
 	});
-
 	google.maps.event.addDomListener(deliveryArea, 'mouseover', function(event) {
 		type = $(deliveryArea.div + ' .area-types input[type="radio"]:checked').val();
    		toggleHoverMapArea(deliveryArea, type, 'mouseover');
 	});
-
 	google.maps.event.addDomListener(deliveryArea, 'mouseout', function(event) {
 		type = $(deliveryArea.div + ' .area-types input[type="radio"]:checked').val();
    		toggleHoverMapArea(deliveryArea, type, 'mouseout');
 	});
 }
-
 function setDeliveryAreaEvents(deliveryArea) {
 	google.maps.event.addDomListener($(deliveryArea.div + ' .panel-heading')[0], 'click', function(event) {
 		type = $(deliveryArea.div + ' .area-types input[type="radio"]:checked').val();
@@ -1129,70 +1082,55 @@ function setDeliveryAreaEvents(deliveryArea) {
 	   		toggleMapArea(deliveryArea);
 		}
 	});
-
 	google.maps.event.addDomListener($(deliveryArea.div + ' .area-type-shape')[0], 'click', function(event) {
    		toggleMapAreaType(deliveryArea, 'shape');
 	});
-
 	google.maps.event.addDomListener($(deliveryArea.div + ' .area-type-circle')[0], 'click', function(event) {
    		toggleMapAreaType(deliveryArea, 'circle');
 	});
-
 	google.maps.event.addDomListener($(deliveryArea.div + ' .panel-heading .area-remove')[0], 'click', function(event) {
    		deleteMapArea(deliveryArea);
 	});
-
 	google.maps.event.addDomListener($(deliveryArea.div + ' .panel-heading')[0], 'mouseover', function(event) {
 		type = $(deliveryArea.div + ' .area-types input[type="radio"]:checked').val();
    		toggleHoverMapArea(deliveryArea, type, 'mouseover');
 	});
-
 	google.maps.event.addDomListener($(deliveryArea.div + ' .panel-heading')[0], 'mouseout', function(event) {
 		type = $(deliveryArea.div + ' .area-types input[type="radio"]:checked').val();
    		toggleHoverMapArea(deliveryArea, type, 'mouseout');
 	});
 }
-
 function resizeMap() {
 	var allAreasBounds;
-
 	if (!deliveryAreas.length){
 		return;
 	}
-
 	allAreasBounds = deliveryAreas[0].getBounds();
 	deliveryAreas.forEach(function(area) {
 		var bounds = area.getBounds();
 		allAreasBounds.union(bounds);
 	});
-
 	map.fitBounds(allAreasBounds);
 }
-
 function drawShapeArea(row, shape) {
 	var options, shapeArea,
 	color = (colors[row-1] == undefined) ? '#F16745' : colors[row-1];
-
 	options = defaultAreaOptions();
 	options.paths = shape;
 	options.strokeColor = color;
 	options.fillColor = color;
 	shapeArea = new google.maps.Polygon(options);
 	addMapArea(shapeArea);
-
     shapeArea.div = '#delivery-area' + row;
     shapeArea.row = row;
     shapeArea.name = 'Area ' + row;
     shapeArea.color = color;
     shapeArea.type = 'shape';
-
 	return shapeArea;
 }
-
 function drawCircleArea(row, center, radius) {
 	var options, circleArea,
 	color = (colors[row-1] == undefined) ? '#F16745' : colors[row-1];
-
 	options = defaultAreaOptions();
 	options.strokeColor = color;
 	options.fillColor = color;
@@ -1200,29 +1138,24 @@ function drawCircleArea(row, center, radius) {
 	options.radius = radius;
 	circleArea = new google.maps.Circle(options);
 	addMapArea(circleArea);
-
     circleArea.div = '#delivery-area' + row;
     circleArea.row = row;
     circleArea.name = 'Area ' + row;
     circleArea.color = color;
     circleArea.type = 'circle';
-
 	return circleArea;
 }
-
 function serializeAreas() {
 	deliveryAreas.forEach(function(area) {
 		var outputPath = [],
 		outputVertices = [],
 		outputCircle = [],
 		shape, encodedPath;
-
 		if (area.type == 'shape') {
 			var vertices = area.getPath();
 			shape = google.maps.geometry.encoding.encodePath(vertices);
 			encodedPath = shape.replace(/\\/g,',').replace(/\//g,'-');
 			outputPath.push({shape: encodedPath});
-
 			for (var i = 0; i < vertices.getLength(); i++) {
 				var xy = vertices.getAt(i);
 				outputVertices.push({
@@ -1230,38 +1163,31 @@ function serializeAreas() {
 					lng: xy.lng()
 				});
 			}
-
 			outputPath = JSON.stringify(outputPath);
 			outputVertices = JSON.stringify(outputVertices);
 			$('input[name="delivery_areas[' + area.row + '][shape]"]').val(outputPath);
 			$('input[name="delivery_areas[' + area.row + '][vertices]"]').val(outputVertices);
 		}
-
 		if (area.type == 'circle') {
 			outputCircle.push({center: {lat: area.getCenter().lat(), lng: area.getCenter().lng()}});
 			outputCircle.push({radius: area.getRadius()});
-
 			outputCircle = JSON.stringify(outputCircle);
 			$('input[name="delivery_areas[' + area.row + '][circle]"]').val(outputCircle);
 		}
 	});
 }
-
 function unserializedAreas(row) {
 	var savedAreas = [];
-
 	for (i = 1; i < row; i++) {
 		var shape = $('input[name="delivery_areas[' + i + '][shape]"]').val();
 		var circle = $('input[name="delivery_areas[' + i + '][circle]"]').val();
 		var type = $('input[name="delivery_areas[' + i + '][type]"]:checked').val();
-
 		try {
 			shape = JSON.parse(shape);
 			circle = JSON.parse(circle);
 		} catch (e){
 			console.log(e);
 		}
-
 		savedAreas.push({
 			shape: shape[0].shape,
 			center: circle[0].center,
@@ -1270,29 +1196,22 @@ function unserializedAreas(row) {
 			row: i
 		});
 	}
-
 	return savedAreas;
 }
-
 function createSavedArea(row) {
 	var savedAreas = unserializedAreas(row);
-
 	savedAreas.forEach(function(area) {
 		var shapeArea, circleArea,
 		shape, decodedPath;
-
 		if (area.center != undefined && area.radius != undefined) {
 			center = new google.maps.LatLng(area.center.lat, area.center.lng);
 			circleArea = drawCircleArea(area.row, center, area.radius);
 		}
-
 		if (area.shape != undefined) {
 			shape = area.shape.replace(/,/g,'\\').replace(/-/g,'\/');
 			decodedPath = google.maps.geometry.encoding.decodePath(shape);
-
 			shapeArea = drawShapeArea(area.row, decodedPath);
 		}
-
 		if (area.type == 'circle') {
 	   		toggleVisibleMapArea(circleArea, 'circle');
 			setDeliveryAreaEvents(circleArea);
@@ -1301,14 +1220,11 @@ function createSavedArea(row) {
 			setDeliveryAreaEvents(shapeArea);
 		}
 	});
-
     resizeMap();
 }
-
 function createDeliveryArea(row) {
 	var circleArea, shapeArea, radius = 1000 * (row / 2), ne, sw, scale = 0.15, windowWidth, windowHeight,
 	widthMargin, heightMargin, top, bottom, left, right;
-
 	circleArea = drawCircleArea(row, centerLatLng, radius);
 	ne = circleArea.getBounds().getNorthEast();
 	sw = circleArea.getBounds().getSouthWest();
@@ -1327,18 +1243,14 @@ function createDeliveryArea(row) {
 		new google.maps.LatLng(bottom, left),
 		new google.maps.LatLng(top, left)
 	];
-
 	shapeArea = drawShapeArea(row, shape);
 	toggleVisibleMapArea(shapeArea, 'shape');
-
     resizeMap();
 	return shapeArea
 }
-
 function addDeliveryArea() {
 	deliveryArea = createDeliveryArea(panel_row);
 	var table_row = '1';
-
 	html  = '<div id="delivery-area' + panel_row + '" class="panel panel-default">';
 	html += '	<input type="hidden" name="delivery_areas[' + panel_row + '][shape]" value="" />';
 	html += '	<input type="hidden" name="delivery_areas[' + panel_row + '][vertices]" value="" />';
@@ -1421,17 +1333,13 @@ function addDeliveryArea() {
 	html += '	</div>';
 	html += '	</div>';
 	html += '</div>';
-
 	$('#delivery-areas').append(html);
-
 	$('#panel-row-' + panel_row + '-table-row-' + table_row + ' select.form-control').select2({
 		minimumResultsForSearch: Infinity
 	});
-
 	panel_row++;
 	setDeliveryAreaEvents(deliveryArea);
 }
-
 function addDeliveryCondition(panelRow, tableRow) {
 	html = '<tr id="panel-row-' + panelRow + '-table-row-' + tableRow + '">';
 	html += '	<td class="action action-one handle">';
@@ -1453,9 +1361,7 @@ function addDeliveryCondition(panelRow, tableRow) {
 	html += '		<input type="text" name="delivery_areas[' + panelRow + '][charge][' + tableRow + '][total]" class="form-control input-sm total" disabled="disabled" value="0" />';
 	html += '	</td>';
 	html += '</tr>';
-
 	$('#delivery-area' + panelRow + ' .table-sortable tbody').append(html);
-
 	$('#panel-row-' + panelRow + '-table-row-' + tableRow + ' select.form-control').select2({
 		minimumResultsForSearch: Infinity
 	});
@@ -1472,19 +1378,15 @@ function addDeliveryCondition(panelRow, tableRow) {
 			handle: '.handle'
 		})
 	});
-
 	var gallery_image_row = <?php echo (int)$gallery_image_row; ?>;
-
 	function addImageToGallery(image_row = null) {
 		var height = (this.window.innerHeight > 0) ? this.window.innerHeight-100 : this.screen.height-100;
 		$(window).bind("load resize", function() {
 			var height = (this.window.innerHeight > 0) ? this.window.innerHeight-100 : this.screen.height-100;
 			$('#media-manager > iframe').css("height", (height) + "px");
 		});
-
 		if (null == image_row) {
 			image_row = gallery_image_row;
-
 			html = '<tr id="gallery-image' + image_row + '">';
 			html += '	<td class="action action-one"><i class="fa fa-sort handle"></i>&nbsp;&nbsp;&nbsp;<a class="btn btn-danger" onclick="confirm(\'<?php echo lang('alert_warning_confirm'); ?>\') ? $(this).parent().parent().remove() : false;"><i class="fa fa-times-circle"></i></a></td>';
 			html += '	<td><img src="" class="image-thumb img-responsive" />'
@@ -1496,17 +1398,13 @@ function addDeliveryCondition(panelRow, tableRow) {
 			html += '		<label class="btn btn-danger"><input type="radio" name="gallery[images][' + image_row + '][status]" value="1"><?php echo lang('text_excluded'); ?></label>';
 			html += '	</div></td>';
 			html += '</tr>';
-
 			$('#gallery-images .table-sortable tbody').append(html);
 			$('#gallery-image' + image_row + ' select.form-control').select2();
-
 			gallery_image_row++;
 		}
-
 		var field = 'image-thumb' + image_row;
 		$('#media-manager').remove();
 		var iframe_url = js_site_url('image_manager?popup=iframe&field_id=' + field);
-
         $('body').append('<div id="media-manager" class="modal" tabindex="-1" data-parent="note-editor" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">'
             + '<div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header">'
             + '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'
@@ -1514,9 +1412,7 @@ function addDeliveryCondition(panelRow, tableRow) {
             + '</div><div class="modal-body wrap-none">'
             + '<iframe name="media_manager" src="'+ iframe_url +'" width="100%" height="' + height + 'px" frameborder="0"></iframe>'
             + '</div></div></div></div>');
-
         $('#media-manager').modal('show');
-
 		$('#media-manager').on('hide.bs.modal', function (e) {
 			if ($('#' + field).attr('value')) {
 				$.ajax({
