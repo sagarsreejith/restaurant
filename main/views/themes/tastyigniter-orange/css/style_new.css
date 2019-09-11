@@ -2165,7 +2165,8 @@ margin: 30px 0;
 
 
 /* .h2_col{    padding: 35px 0;} */
-.bg_before{ padding: 50px 0!important;}
+.bg_before{ padding: 0 0 50px 0!important;}
+.h2_col{padding:0 !important}
 .h2_sttt{    font-size:35px;}
 .about-content p, .section-title p{ font-size: 11px; font-weight: bold;}
 
@@ -2188,6 +2189,23 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  .menu_img img, .menu_name .menu-name{
+    margin: 5px auto !important;
+    display: table !important;
+    font-size: 11px !important;
+    font-weight:600 !important;
+  }
+  .menu-right{
+    margin: 6px 0 0 !important;
+  }
+  .navbar-collapse.in{
+   overflow-y:unset !important;
+  }
+  #local-alert .alert button{
+    margin:-5px 0 !important; 
+  }
+
+
   .header .slicknav_nav{
     margin: 0px -15px;
   }
@@ -2346,9 +2364,49 @@ margin: 30px 0;
 
 .table-dark_cust>tbody>tr>th{
   padding:8px 0 !important;
-  text-align:left;
+  text-align:center;
+  
+  font-size: 13px;
+  font-weight:600;
 }
-
+.table-dark_addr>tbody>tr>th{
+  width: 55% !important;
+  font-size: 13px !important;
+}
+.table-dark_addr>tbody>tr>td{
+  font-size: 12px !important;
+}
+.table-dark_cust>tbody>tr>th{
+  font-size: 11px !important;
+}
+.option-input{
+  height: 15px !important;
+  width: 15px !important;
+}
+.checkmark{
+  font-weight: 700 !important;
+  font-size:12px !important;
+}
+.option-input:checked::before{
+  height: 15px !important;
+  width: 15px !important;
+  line-height: 15px !important;
+}
+ .radio label{
+  font-size: 11px !important;
+}
+.btn_chk .ft_stt{
+  color: #333;
+  box-shadow: none;
+  font-size: 10px;
+}
+.recive_msg{
+  display:none;
+}
+#myDIV .progressbar li{
+  font-size: 9px !important;
+  text-align: center !important;
+}
 }
 
 @media only screen and (max-width: 450px) {
@@ -2455,7 +2513,7 @@ margin: 30px 0;
 }
 @media only screen and (max-width: 400px){
   #checkout_progress .progressbar .list-group-item-heading {
-    left: 45px;
+    left: 43px;
 }
 #checkout_progress .progressbar li:after {
   width: 50%;
@@ -2742,6 +2800,36 @@ Toggle Changes
 }
 
  @media only screen and (max-width: 524px) {
+  ul.enlarge span img{
+    min-height: 300px !important;
+    min-width:  290px !important;
+    max-height: 300px !important;
+    max-width: 290px !important;
+    margin:0 !important;
+  }
+  ul.enlarge span{
+    padding:0 !important;
+  }
+  .cookie_del_search{
+    font-size: 12px !important;
+  }
+  
+  #local-info a{
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+  .map_icon_bg {
+    left: 75px !important;
+    top: 23px !important;
+    position: absolute !important;
+    background-size: 18px !important;
+}
+.fa-2x{
+  font-size: 17px !important;
+}
+.form-control-feedback{
+  top: 10px !important;
+}
   .toggle_radio img{
     left: 120px !important;
   }
@@ -2790,9 +2878,10 @@ Toggle Changes
     left: 30px !important;
 }
   #myDIV .progressbar li{
-    font-size: 10px !important;
+    font-size: 8px !important;
+    
   }
- 
+  
   #local-box{
     margin: 42% 0 !important;
   }
@@ -3989,7 +4078,6 @@ width: 100%;
 }
 #myDIV .progressbar li{
   font-weight: 600;
-  font-size: 11px !important;
 }
 /* #myDIV .progressbar li.active .list-group-item-heading{
   left: 137px;
@@ -5296,8 +5384,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #local-alert .alert button{
   padding:0 !important;
+  margin:0px 0;
 }
 
 .termsncondition{
   font-size:12px !important;
+}
+.ft_stt{
+  cursor: pointer !important;
+}
+#myDIV .progressbar li.active{
+  font-weight: 900 !important;
+  color: #8e2d42;
 }
