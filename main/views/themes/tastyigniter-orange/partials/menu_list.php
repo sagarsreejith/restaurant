@@ -164,13 +164,14 @@
 		<?php foreach ($categories as $category_id => $category) { ?>
 			<?php $catname_replace = array("&", ",", "'"); $category_name = strtolower(str_replace(' ', '-', str_replace($catname_replace, '_', $category['name']))); ?>
 			<div class="menu-container mix <?php echo $category_name; ?>">
-			
-				<a class="menu-toggle visible-xs visible-sm collapsed" href="#<?php echo $category_name; ?>" role="button" data-toggle="collapse" data-parent=".menu-list" aria-expanded="<?php echo ($category_count === 1) ? 'true' : 'false'; ?>" aria-controls="<?php echo $category_name; ?>">
+			<?php //echo ($category_count === 1) ? 'true' : 'false'; ?>
+				<a class="menu-toggle visible-xs visible-sm collapsed" href="#<?php echo $category_name; ?>" role="button" data-toggle="collapse" data-parent=".menu-list" aria-expanded="false" aria-controls="<?php echo $category_name; ?>">
 					<?php echo $category['name']; ?>
 					<i class="fa fa-angle-down fa-2x fa-pull-right text-muted"></i>
 					<i class="fa fa-angle-up fa-2x fa-pull-right text-muted"></i>
 				</a>
-				<div id="<?php echo $category_name; ?>" class="navbar-collapse collapse <?php echo ($category_count === 1) ? 'in' : ''; ?> wrap-none">
+				<?php //echo ($category_count === 1) ? 'in' : ''; ?>
+				<div id="<?php echo $category_name; ?>" class="navbar-collapse collapse wrap-none">
 				
 		
 					<div class="menu-category">

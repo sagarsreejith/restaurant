@@ -3,7 +3,7 @@
 $lang['text_heading']                   = 'Checkout';
 $lang['text_checkout']                  = 'Almost there, Please confirm your details and proceed to payment.';
 $lang['text_payments']                  = 'Please choose your payment method.';
-$lang['text_registered']                = 'Already have an account? <a href="%s">Login Here</a>';
+$lang['text_registered']                = 'Already have an account? <a class="log" data-toggle="modal" data-dismiss="modal" data-target="#login">Login Here</a>';
 $lang['text_logout']                    = 'Welcome Back %s, Not You? <a href="%s">Logout</a>';
 $lang['text_asap']                      = 'As soon as possible';
 $lang['text_later']                     = 'Later';
