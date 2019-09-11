@@ -495,10 +495,10 @@ background-color: #11a2dc;
 .form-control {
 border-radius:0;
 border: 1px solid #e2e2e2;
-color: #686868;
+color: #333;
 box-shadow: none;
 font-size: 13px;
-font-weight: 300;
+
 }
 .form-control:focus {
 border-color: #6f1e30;
@@ -598,7 +598,7 @@ position: relative;
 }
 .nav-tabs.nav-tabs-line > li.active > a:hover{
 border: 0 none;
-background-color: #ccc;
+background-color: #751a2e;
 color:#fff;
 outline: 0 none;
 }
@@ -606,7 +606,7 @@ outline: 0 none;
 .nav-tabs-line > li:hover > a,
 .nav-tabs-line > li:focus > a {
 border: 0 none;
-background-color: #ccc;
+background-color: #751a2e;
 color:#fff;
 
 }

@@ -29,6 +29,14 @@ switch ($rsegment) {
 <div id="page-content">
     <div class="container top-spacing">
     <div class="row  margin_st2">
+
+                    <div class="col-md-12">
+                        <div class="buttons col-xs-12 wrap-none">
+                            <a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
+                            <a class="btn_add" href="<?php echo $new_order_url; ?>"><?php echo lang('button_order'); ?></a>
+                        </div>
+                    </div>
+                    
 			<div class="out_div">
             <?php echo get_partial('content_left'); ?>
             <?php

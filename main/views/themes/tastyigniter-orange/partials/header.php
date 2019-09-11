@@ -93,16 +93,16 @@
                                     </a>
                                 </div>
                                 <!--/ End Logo -->
-                                <div class="mobile-nav"></div>
+                                <div class="mobile-nav" ></div>
                             </div>
                             <div class="col-md-9 col-sm-9">
                                 <nav class="navbar menu navbar-default">
                                     <div class="collapse navbar-collapse">
 
-                                        <ul class="nav navbar-nav mobile-menu navbar-right">
-                                            <li class=""><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a>
+                                        <ul class="nav navbar-nav mobile-menu navbar-right" id="mobile_nav_id">
+                                            <li class="header_li"><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a>
                                             </li>
-                                            <li class=""><a href="<?php echo site_url('#about'); ?>">About</a>
+                                            <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a>
                                             </li>
                                             <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
                                             </li>
@@ -159,24 +159,25 @@
                                                         </li>
                                                         <?php } else { ?>
 
-                                                            <!-- <li class="">
-                                                                <a href="<?php echo site_url('local/all'); ?>">
+                                                            <li class="">
+                                                                <a href="<?php echo site_url('#locations'); ?>">
                                                                     <?php echo lang( 'menu_locations'); ?>
                                                                 </a>
-                                                            </li> -->
+                                                            </li> 
 
                                                             <li>
                                                                 <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> login</a>
 
                                                             </li>
 
+                                                           
+
+                                                            <?php } ?>
                                                             <li class="">
                                                                 <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
                                                                     <?php echo lang( 'track_recent_order'); ?>
                                                                 </a>
                                                             </li>
-
-                                                            <?php } ?>
 
                                         </ul>
                                     </div>
@@ -551,7 +552,10 @@
 
             <script>
                 $(document).ready(function() {
-                    
+                    $("header_li").click(function(){
+      //  $(".slicknav_nav").collapse('hide');
+      alert();
+    });
                 $("#track-msg").hide();
                     $(document).on('click', function(e) {
                         /* bootstrap collapse js adds "in" class to your collapsible element*/
@@ -684,10 +688,10 @@
         success: function(json) {
             alert(JSON.stringify(json));
             if(json['success'] == true){
-                $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'>User Created Succesfully</div>");
+                $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'>Registered Succesfully</div>");
             }
             if(json['success'] == false){
-                $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'>User Email Already Exist!</div>");
+                $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'> Email Already Exist!</div>");
             }
         }
        });
@@ -753,10 +757,13 @@ $(function() {
             data: 'ordernumber=' + order_number,
             dataType: 'json',
             success: function(json) {
+                console.log(json);
                 if (json['status'] == true) {
                     $("#track-msg").show("slow");
                     $( ".progressbar li" ).removeClass( "active" );
-                    console.log(json['result']['status_id']);
+                    
+                        
+
                     switch (json['result']['status_id']) {
                         case '11':
                             $("#order-placed-bar").addClass("active");
@@ -791,7 +798,5 @@ $(function() {
 });
 </script>
 <script>
-    $(".slicknav_nav li").click(function(){
-        $(".slicknav_nav").collapse('hide');
-    });
+    
 </script>

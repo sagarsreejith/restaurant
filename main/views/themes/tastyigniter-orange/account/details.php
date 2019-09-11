@@ -83,7 +83,7 @@
                                    </div>
                                 </div>
                             </div> -->
-                            <div class="row">
+                            <!-- <div class="row">
 								<div class="col-xs-9 col-sm-10 col-md-10">
 									<span class="button-checkbox chk_bx">
 										<button type="button" class="btn" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_subscribe'); ?></button>
@@ -96,7 +96,7 @@
                                     <label for="newsletter" class="control-label text-muted"><?php echo lang('label_newsletter'); ?></label>
 								</div>
 								<?php echo form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
-							</div>
+							</div> -->
 
 							<div class="row top-spacing-20 margin_20">
                                 <div class="col-xs-12 nopad">
