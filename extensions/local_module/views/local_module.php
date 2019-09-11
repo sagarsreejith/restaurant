@@ -32,7 +32,7 @@
                <div class="panel-body h2_col">
                   
                   <!--<h2 style="color:#fff;font-size: 35px;font-weight: 800;"><?php echo lang('text_order_summary'); ?></h2>-->
-                  <div class="col-xs-12 col-sm-12 col-md-12 center-block">
+                  <div class="col-xs-12 col-sm-12 col-md-12 center-block nopad">
                      <?php if ($location_search_mode === 'multi') { ?>
                      <form id="location-form" method="POST" action="<?php echo $local_action; ?>" role="form">
                         <div class="col-md-7 col-sm-7 col-xs-12 nopad">
@@ -135,6 +135,11 @@
                                    // echo $_COOKIE['del_search'];
                                     if($_COOKIE['order_type']==1){  ?>
                                          <span class="cookie_del_search">Your Location is : <?php echo $_COOKIE['del_search']; ?></span>
+                                  <?php } ?>
+                                  <?php 
+                                   // echo $_COOKIE['del_search'];
+                                    if($_COOKIE['order_type']==2){  ?>
+                                         <span class="cookie_del_search">You Selected <?php echo $_COOKIE['pic_search']; ?> Branch </span>
                                   <?php } ?>
                                  <a data-toggle="modal" data-target="#order_now" class="clickable map_A btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                                  <div class="map_icon_bg "> </div>  <?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
@@ -266,7 +271,7 @@
                                 <div class="col-md-12 nopad">
 
                                        <div class="contact cnt">
-                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
                                                    <div class="contact-box ">
                                                          <i class="fa fa-phone"></i>
                                                          <div class="cont_con">
@@ -275,7 +280,7 @@
                                                          </div>
                                                    </div>
                                              </div>
-                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="contact-box ">
                                                       <i class="fa fa-envelope-o"></i>
                                                       <div class="cont_con">
@@ -347,7 +352,7 @@
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
       if(search_query === ''){
-         updateLocalBox({error: 'Please select an input'});
+         updateLocalBox({error: 'Please select an Area'});
          return false;
       }
       if(order_type === 'pickup'){

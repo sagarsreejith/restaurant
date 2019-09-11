@@ -463,12 +463,18 @@ display:none;
         float: left;
     }
     .slicknav_nav{
-        text-align: center;
+        text-align: left;
     }
   
     .slicknav_nav li a{
-        font-size: 14px;
+        font-size: 15px;
         color: #792b3c;
+        padding: 10px;
+        color: #333;
+    }
+    .slicknav_nav li a:hover{
+        color: #792b3c;
+        font-weight:600;
     }
     .slicknav_nav, .slicknav_nav ul{
         overflow:visible !important;

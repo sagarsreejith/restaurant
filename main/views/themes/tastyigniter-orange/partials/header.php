@@ -73,7 +73,7 @@
                 <div class="main-menu">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="col-md-3 col-sm-3 col-xs-12 ">
                                 <!-- Logo -->
                                 <!-- <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
 							<i class="fa fa-align-justify"></i>
@@ -150,20 +150,20 @@
                                                                     </li>
                                                                     <?php } ?>
 
-                                                                        <li>
-                                                                            <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
-                                                                                <?php echo lang( 'menu_logout'); ?>
-                                                                            </a>
-                                                                        </li>
+                                                                <li>
+                                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
+                                                                        <?php echo lang( 'menu_logout'); ?>
+                                                                    </a>
+                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <?php } else { ?>
 
-                                                            <li class="">
+                                                            <!-- <li class="">
                                                                 <a href="<?php echo site_url('local/all'); ?>">
                                                                     <?php echo lang( 'menu_locations'); ?>
                                                                 </a>
-                                                            </li>
+                                                            </li> -->
 
                                                             <li>
                                                                 <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> login</a>
@@ -414,7 +414,7 @@
                             <div class="section-title text-center">
                                 <div class="title-separator">
                                     <!-- <img src="assets/images/food_icon.png"> -->
-                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_heading'); ?></span></h2>
+                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_reset'); ?></span></h2>
                                     <span class="under-heading"></span>
                                 </div>
 
@@ -511,7 +511,7 @@
                         </div>
                  
                     <div class="modal-footer">
-                    <p class="tq">We hope to see you again soon</p>
+                    <!-- <p class="tq">We hope to see you again soon</p> -->
                     </div>
                     </div>
                 </div>
@@ -789,4 +789,9 @@ $(function() {
         });
     });
 });
+</script>
+<script>
+    $(".slicknav_nav li").click(function(){
+        $(".slicknav_nav").collapse('hide');
+    });
 </script>

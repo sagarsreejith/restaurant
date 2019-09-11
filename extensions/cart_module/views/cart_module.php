@@ -117,6 +117,7 @@
 						<ul>
 							<?php foreach ($cart_items as $cart_item) { ?>
 							<li>
+								
 								<a class="cart-btn remove text-muted small" onClick="removeCart('<?php echo $cart_item['menu_id']; ?>', '<?php echo $cart_item['rowid']; ?>', '0');"><i class="fa fa-minus-circle"></i></a>
 								<a class="name-image" onClick="openMenuOptions('<?php echo $cart_item['menu_id']; ?>', '<?php echo $cart_item['rowid']; ?>');">
 									<?php if (!empty($cart_item['image'])) { ?>
