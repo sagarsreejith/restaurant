@@ -136,6 +136,11 @@
                                     if($_COOKIE['order_type']==1){  ?>
                                          <span class="cookie_del_search">Your Location is : <?php echo $_COOKIE['del_search']; ?></span>
                                   <?php } ?>
+                                  <?php 
+                                   // echo $_COOKIE['del_search'];
+                                    if($_COOKIE['order_type']==2){  ?>
+                                         <span class="cookie_del_search">You Selected <?php echo $_COOKIE['pic_search']; ?> Branch </span>
+                                  <?php } ?>
                                  <a data-toggle="modal" data-target="#order_now" class="clickable map_A btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                                  <div class="map_icon_bg "> </div>  <?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                                  </a>
@@ -347,7 +352,7 @@
       order_type == false ? document.cookie = "order_type=1; path=/" : document.cookie = "order_type=2; path=/";
       order_type == false ? order_type = 'delivery' : order_type = 'pickup';
       if(search_query === ''){
-         updateLocalBox({error: 'Please select an input'});
+         updateLocalBox({error: 'Please select an Area'});
          return false;
       }
       if(order_type === 'pickup'){

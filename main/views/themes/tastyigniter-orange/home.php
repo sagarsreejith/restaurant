@@ -182,7 +182,7 @@ transform:translate(-50%,-50%)
                      
                             <div class="isotope popup-gallery columns-4">
                                 <?php foreach ($res_menu as $menu){  ?>
-                                <div class='grid-item <?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $menu->name))?>'>
+                                <div class='col-md-3 grid-item<?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $menu->name))?>'>
                                         <div class="galllery-item gal_img">
                                             <span><img class="img-responsive" src="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>" alt=""></span>
                                             <div class="overlay">
@@ -227,7 +227,7 @@ transform:translate(-50%,-50%)
                     </div>
                     <div class="container">
                         <div class="isotope popup-gallery columns-4">
-                        <div class="grid-item fresh">
+                            <div class="col-md-3 nopad grid-item fresh">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
                                     <div class="overlay">
@@ -238,7 +238,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item Arabic mexican">
+                            <div class="col-md-3 nopad grid-item Arabic mexican">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
                                     <div class="overlay">
@@ -249,7 +249,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item Mamoul">
+                            <div class="col-md-3 nopad grid-item Mamoul">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
                                     <div class="overlay">
@@ -260,7 +260,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item   Mamoul">
+                            <div class="col-md-3 nopad grid-item  Mamoul">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
                                     <div class="overlay">
@@ -271,7 +271,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item mexican">
+                            <div class="col-md-3 nopad grid-item mexican">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
                                     <div class="overlay">
@@ -282,7 +282,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item  Mamoul ">
+                            <div class="col-md-3 nopad grid-item Mamoul ">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
                                     <div class="overlay">
@@ -293,7 +293,7 @@ transform:translate(-50%,-50%)
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item Sandwiches ">
+                            <div class="col-md-3 nopad grid-item Sandwiches ">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
                                     <div class="overlay">
@@ -305,7 +305,7 @@ transform:translate(-50%,-50%)
                                 </div>
                             </div>
                        
-                            <div class="grid-item Appetizer">
+                            <div class="col-md-3 nopad grid-item Appetizer">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
                                     <div class="overlay">

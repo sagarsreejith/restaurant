@@ -156,6 +156,10 @@
     border-radius: 10px;
     position: relative;
     font-weight: normal;
+    font-weight:600;
+    }
+    .cart-items ul li:hover{
+        background:000;
     }
     .cart-items ul li .amount {
     color: #333;

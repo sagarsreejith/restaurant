@@ -71,6 +71,7 @@ $lang['label_terms'] 			= 'By clicking <strong class="label label-primary">Regis
 $lang['label_captcha'] 			= 'Type the code shown';
 $lang['label_i_agree'] 	        = 'I Agree';
 $lang['label_subscribe'] 	    = 'Subscribe';
+$lang['text_reset'] 	        = 'Reset Your Password';
 
 $lang['button_terms_agree']     = 'I Agree';
 $lang['text_heading_cart']      = 'Cart';
