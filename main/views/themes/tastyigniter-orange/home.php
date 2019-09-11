@@ -851,11 +851,6 @@ $(window).scroll(function () {
     $('.gal_img').each(_checkOffset('animated fadeIn'));
 	$('.contact-form').each(_checkOffset('animated fadeInLeft'));
   $('.contact-map').each(_checkOffset('animated fadeInRight'));
-  
-
-
-
-	
 	
 	jQuery(window).on('scroll', function() {
 		if ($(this).scrollTop() > 100) {
