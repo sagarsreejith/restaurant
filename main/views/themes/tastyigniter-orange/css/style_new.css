@@ -685,10 +685,12 @@ color:#fff !important;
 
 .btn_add{
 background:#6f1e30;
-padding: 8px !important;
+padding:0 8px !important;
 color:#fff !important;
 border-radius:3PX;
 border:none;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
 }
 .btn_add:hover{
   color:#ccc;
@@ -1962,10 +1964,7 @@ left: -37%;
     left: 14px !important;
   }
   #top_head{display:none;}
-  .contact .contact-box {
-    display: block;
-    margin:0;
-  }
+ 
   .object_right_img{display:none;}
   .book-menu p{margin:10px 0;}
   #order_now .modal_order_now{
@@ -2189,6 +2188,11 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  /* .open_off{
+    position: absolute;
+    top: -129px;
+    right: 4px;
+  } */
   .menu_img img, .menu_name .menu-name{
     margin: 5px auto !important;
     display: table !important;
@@ -2344,7 +2348,7 @@ margin: 30px 0;
     .galllery-item:hover .overlay:before, .galllery-item:hover .overlay:after{display:none}
     .galllery-item:hover .overlay:before, .galllery-item:hover .overlay:after{ display:none; }
     .isotope-filters button{     margin-right: 2px;
-      padding: 10px 10px;}
+      padding: 10px 10px; width:48%}
     /* .columns-4 .grid-item { width: 33.3%; padding: 0px; } */
     #checkout_progress .progressbar .list-group-item-heading {
       left: 60px;
@@ -2410,6 +2414,14 @@ margin: 30px 0;
 }
 
 @media only screen and (max-width: 450px) {
+  .tabs_st li{
+    width:50%;
+    border:none !important;
+    text-align:center !important;
+  }
+  .tabs_st>li>a{
+    padding: 10px 13px !important;
+  }
   #myDIV .progressbar .list-group-item-heading {
     left: 38px !important;
 }
@@ -2473,10 +2485,21 @@ margin: 30px 0;
   float: left;  
   font-size: 12px;
 }
+.location_list1{
+  text-align: center !important;;
+  padding: 0 !important;;
+}
+.contact .contact-box{
+  text-align: center!important;
+  float: none !important;
+  display: table !important;
+  width:auto !important;
+}
  .open_off{
 
-    float:left;
+  text-align: center !important;;
     margin: 10px 0 !important;
+    padding:0 !important;
 }
 .location_address_top .rating{
   padding: 0px 10px;
@@ -2819,9 +2842,7 @@ Toggle Changes
     font-size: 12px !important;
   }
   .map_icon_bg {
-    left: 75px !important;
-    top: 23px !important;
-    position: absolute !important;
+    left:57px !important;
     background-size: 18px !important;
 }
 .fa-2x{
@@ -3460,7 +3481,7 @@ font-weight:normal;
 
 }
 .out_div_mar{
-  margin:0 -30px;
+  margin:0 -30px 25px;;
 }
 
 .full_out{
@@ -5333,6 +5354,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .popup .modal-body .input-group .form-control{
   padding: 0 30px;
+  color:#000 !important;
 }
 .popup .modal-body .input-group:focus{
   color:#6f1e30!important;
@@ -5396,4 +5418,30 @@ input[type=number]::-webkit-outer-spin-button {
 #myDIV .progressbar li.active{
   font-weight: 900 !important;
   color: #8e2d42;
+}
+
+.mfp-arrow-left:before {
+  margin-left: 25px;
+  border-right: 27px solid #762738;
+}
+/* .list-group-alert{
+  margin-top: 120px !important;
+  margin-bottom: -141px !important;
+  text-align: center !important;
+} */
+
+#reset p{
+  font-size: 13px;
+    font-weight: normal;
+    color: #000000;
+}
+.pad_stt label{
+  color: #333;
+}
+.buttons a{
+  line-height: 2.428571 !important;
+  color: #772839 !important;
+}
+.buttons .btn_add{
+color:#fff !important;
 }

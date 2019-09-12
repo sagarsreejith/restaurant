@@ -136,11 +136,7 @@
                                     if($_COOKIE['order_type']==1){  ?>
                                          <span class="cookie_del_search">Your Location is : <?php echo $_COOKIE['del_search']; ?></span>
                                   <?php } ?>
-                                  <?php 
-                                   // echo $_COOKIE['del_search'];
-                                    if($_COOKIE['order_type']==2){  ?>
-                                         <span class="cookie_del_search">You Selected <?php echo $_COOKIE['pic_search']; ?> Branch </span>
-                                  <?php } ?>
+                               
                                  <a data-toggle="modal" data-target="#order_now" class="clickable map_A btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                                  <div class="map_icon_bg "> </div>  <?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                                  </a>
@@ -179,7 +175,7 @@
                                <?php if ($opening_status !== 'closed') { ?>
 
                                  <?php if ($opening_status === 'open') { ?>
-                                          <span class="open_off"><?php echo lang('text_is_opened'); ?></span>
+                                    <li class="">  <span class="open_off"><?php echo lang('text_is_opened'); ?></span></li>
                                           <?php } else if ($opening_status === 'opening') { ?>
                                           <span class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></span>
                                           <?php } else { ?>

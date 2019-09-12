@@ -337,9 +337,7 @@
 									<!-- <label for=""><?php //echo lang('label_comment'); ?></label> -->
 									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
-								</div>
-				<!--prob-->		<?php if (!$this->customer->isLogged()) { ?></div><?php } ?>
-					
+								</div></div>
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">

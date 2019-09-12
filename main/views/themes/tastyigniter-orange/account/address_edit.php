@@ -125,7 +125,7 @@
 						<div class="col-md-12">
 							<div class="buttons">
 								<a class="btn btn-default" href="<?php echo $back_url; ?>"><?php echo lang('button_back'); ?></a>
-								<button type="submit" class="btn btn-primary btn-lg"><?php echo $button_update; ?></button>
+								<button type="submit" class="btn btn-primary"><?php echo $button_update; ?></button>
 							</div>
 						</div>
 					</form>

@@ -16,7 +16,10 @@
 <div id="page-content">
 	<div class="container">
 		<div class="row top-spacing margin_st2">
+
+			
 			<div class="out_div">
+				
 			<?php echo get_partial('content_left'); ?>
 			<?php
 				if (partial_exists('content_left') AND partial_exists('content_right')) {
