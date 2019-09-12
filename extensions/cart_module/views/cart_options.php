@@ -26,7 +26,7 @@
                         <?php } ?>
                     </div>
 
-                    <div class="media">
+                    <div class="media" id="menu_cart">
                         <div class="media-left">
                             <a href="#">
                                 <img class="media-object" src="<?php echo $menu_image; ?>">

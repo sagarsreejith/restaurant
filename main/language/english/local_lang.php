@@ -14,7 +14,7 @@ $lang['text_collection_hours'] 	            = 'Pick-up Hours';
 $lang['text_opens_24_7'] 			        = '<strong>Opens:</strong> 24 hours a day & 7 days a week';
 $lang['text_closed'] 			            = 'CLOSE';
 $lang['text_24h'] 				            = '24 hours a day';
-$lang['text_is_opened'] 			        = '<span class="text-success"> open</span>';
+$lang['text_is_opened'] 			        = '<span class="text-open"> open</span>';
 $lang['text_closed'] 			            = '<span class="text-close text-danger">CLOSE</span>';
 $lang['text_is_closed'] 			        = '<span class="text-close text-danger">CLOSE</span>';
 $lang['text_opening_time'] 			        = '<span class="text-close text-danger">Opening %s</span>';

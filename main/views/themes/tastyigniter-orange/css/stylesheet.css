@@ -659,6 +659,16 @@ padding: 0;
   font-size:16px;
 }
 @media (max-width:767px) {
+  .wrap-right {
+    padding-right: 0 !important;
+    
+    }
+    .menu-name{
+      padding:0 !important;
+    }
+    .menu_item_name{
+      padding-left:30px !important;
+    }
   #main-header .navbar-nav > li > a{
     padding: 10px 15px !important;
   }#main-header .navbar-nav > li > a:hover{
@@ -1513,6 +1523,7 @@ padding-right:0 !important;
     right: initial;
     right: 0;
     color: #6f1e31;
+    cursor: pointer;
 }
 .fa-2x{
   font-size: 20px;
@@ -1795,8 +1806,7 @@ padding-right:0 !important;
 .menu-list img{
   min-height:60px;
   max-height:60px;
-  min-width:80px;
-  max-width:80px;
+ 
 }
 .menu-item-wrapper:hover{
 background:#f8f8f8;

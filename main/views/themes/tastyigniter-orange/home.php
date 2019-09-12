@@ -218,7 +218,7 @@ transform:translate(-50%,-50%)
                                     <button data-filter=".Manakeesh">Manakeesh</button>
                                     <button data-filter=".Sandwiches">Sandwiches</button>
                                     <button data-filter=".Appetizer"> Appetizer</button>
-                                    <button data-filter=".emb"> Embains</button>
+                                    <button data-filter=".emb"> Ambience</button>
 
                                  
                                 </div>
@@ -505,7 +505,7 @@ transform:translate(-50%,-50%)
                                             <div>
                                             <div class="col-xs-12 col-sm-12">
                                                 <div class="open_off">
-                                                    <span class="text-success"> open</span>
+                                                    <span class="text-open"> open</span>
                                                 </div>
                                                 <ul class="location_list">
 

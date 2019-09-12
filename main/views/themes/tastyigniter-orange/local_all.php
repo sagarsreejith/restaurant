@@ -46,7 +46,7 @@
 											<div class=" col-xs-12 col-sm-2 col-md-2">
 
 											<div class="open_off">
-														<?php if ($location['opening_status'] === 'open') { ?>
+													<?php if ($location['opening_status'] === 'open') { ?>
 													<?php echo lang('text_is_opened'); ?>
 													<?php } else if ($location['opening_status'] === 'opening') { ?>
 														<span class="text-muted open_btn"><?php echo sprintf(lang('text_opening_time'), $location['opening_time']); ?></span>

@@ -175,7 +175,7 @@
                                <?php if ($opening_status !== 'closed') { ?>
 
                                  <?php if ($opening_status === 'open') { ?>
-                                    <li class="">  <span class="open_off"><?php echo lang('text_is_opened'); ?></span></li>
+                                    <li class=""> <?php echo lang('text_is_opened'); ?></li>
                                           <?php } else if ($opening_status === 'opening') { ?>
                                           <span class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></span>
                                           <?php } else { ?>

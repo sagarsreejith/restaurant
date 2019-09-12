@@ -202,15 +202,25 @@
 										<?php if ($show_menu_images === '1' AND !empty($menu['menu_photo'])) { ?>
 			
 
-											<div class="menu-thumb col-xs-12 col-sm-3 col-md-3 wrap-none wrap-right menu_img enlarge">
-											<ul class="enlarge">
-												<li><img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><span><img src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>" alt="Deckchairs" /></span></li>
-											</ul>
+											<div class="menu-thumb col-xs-3 col-sm-3 col-md-3 wrap-none wrap-right menu_img popup-gallery">
+												<!-- <ul class="enlarge">
+													<li><img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><span><img src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>" alt="Deckchairs" /></span></li>
+												</ul> -->
+
+												<div class="food_image galllery-item">
+													<img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>">
+														
+														<div class="overlay">
+															<div class="overlay-content">
+																<a class="portfolio-img" href="../assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>               
+															</div>
+														</div>
+												</div>
 											</div>
 										<?php } ?>
 
-										<div class="menu-content menu_name <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-12 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
-											<span class="menu-name"><b><?php echo character_limiter($menu['menu_name'], 80); ?></b></span>
+										<div class="menu-content menu_name <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-9 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
+											<span class="menu-name menu_item_name"><b><?php echo character_limiter($menu['menu_name'], 80); ?></b></span>
 											<span class="menu-desc small">
 												<?php echo character_limiter($menu['menu_description'], 120); ?>
 											</span>
