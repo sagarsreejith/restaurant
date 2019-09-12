@@ -1,3 +1,9 @@
+<style>
+.form-control-feedback{
+	pointer-events: auto;
+}
+</style>
+
 <?php if ($categories) { ?>
 	<div id="searchText" class="form-group has-feedback has-search has-clear">
                 <input type="text" name="catsearch" id="catsearch" class="form-control search" placeholder="Search" >

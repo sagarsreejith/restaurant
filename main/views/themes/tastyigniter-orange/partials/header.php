@@ -795,7 +795,5 @@ $(function() {
         });
     });
 });
-</script>
-<script>
-    
+
 </script>

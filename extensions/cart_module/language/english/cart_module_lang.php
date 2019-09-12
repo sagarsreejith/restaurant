@@ -28,7 +28,7 @@ $lang['text_in_minutes'] 			        = 'in %s min';
 $lang['text_empty'] 		                = 'There are no cart totals available.';
 
 $lang['button_add_to_order'] 			    = 'ADD TO ORDER';
-$lang['button_update'] 			            = 'UPDATE';
+$lang['button_update'] 			            = 'Add';
 $lang['button_order'] 			            = 'Checkout';
 $lang['button_payment'] 			        = 'Payment';
 $lang['button_confirm'] 			        = 'Confirm';
