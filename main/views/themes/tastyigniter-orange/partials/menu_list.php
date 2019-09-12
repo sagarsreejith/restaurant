@@ -219,7 +219,8 @@
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } else { ?>
-													<a class="btn btn-primary btn-cart add_cart" onClick="addToCart('<?php echo $menu['menu_id']; ?>', '<?php echo $menu['minimum_qty']; ?>');">
+													<!-- addToCart -->
+													<a class="btn btn-primary btn-cart add_cart" onClick="openMenuOptions('<?php echo $menu['menu_id']; ?>', '<?php echo $menu['minimum_qty']; ?>');">
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } ?>

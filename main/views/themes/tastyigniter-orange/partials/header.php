@@ -686,7 +686,6 @@
    		data: 'first_name=' + fullname + '&telephone=' + telephone + '&email=' + email + '&password=' + password + '&password_confirm=' + confirmpassword +'&terms_condition=1' ,
    		dataType: 'json',
         success: function(json) {
-            alert(JSON.stringify(json));
             if(json['success'] == true){
                 $('#registration-notification').html("<div style='border: 1px solid #712133;border-radius: 3px;padding: 5px;margin-bottom: 15px;text-align: center;background:#ffebeb;color: #712133;font-weight: 900;'>Registered Succesfully</div>");
             }
