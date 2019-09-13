@@ -3058,10 +3058,13 @@ Toggle Changes
 
 .box-one img {
 
-  border: 1px solid #6f1e31;
+  /* border: 1px solid #6f1e31;
   border-radius: 0;
   padding: 3px;
+  margin: 5px 0; */
   margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px grey;
 }
 .box_st .box-one img {
   margin: 20px 0;

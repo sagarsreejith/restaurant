@@ -323,9 +323,11 @@
     }
 
     #menu_cart .media-object{
-        border: 1px solid #6f1e31;
+        /* border: 1px solid #6f1e31;
         border-radius: 0;
-        padding: 5px;
+        padding: 5px; */
+        border-radius: 5px;
+        box-shadow: 0 0 10px grey;
     }
     #menu_cart .media-body{
         padding: 0 20px;
