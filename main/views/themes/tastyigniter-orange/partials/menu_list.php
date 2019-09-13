@@ -212,14 +212,14 @@
 														
 														<div class="overlay">
 															<div class="overlay-content">
-																<a class="portfolio-img" href="../assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>               
+																<a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><i class="fa fa-expand"></i></a>               
 															</div>
 														</div>
 												</div>
 											</div>
 										<?php } ?>
 
-										<div class="menu-content menu_name <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-9 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
+										<div class="menu-content <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-9 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
 											<span class="menu-name menu_item_name"><b><?php echo character_limiter($menu['menu_name'], 80); ?></b></span>
 											<span class="menu-desc small">
 												<?php echo character_limiter($menu['menu_description'], 120); ?>
