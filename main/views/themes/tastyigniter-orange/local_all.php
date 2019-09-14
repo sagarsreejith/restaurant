@@ -45,7 +45,7 @@
 											</div>
 											<div class=" col-xs-12 col-sm-2 col-md-2">
 
-											<div class="open_off">
+											<!-- <div class="open_off">
 													<?php if ($location['opening_status'] === 'open') { ?>
 													<?php echo lang('text_is_opened'); ?>
 													<?php } else if ($location['opening_status'] === 'opening') { ?>
@@ -56,7 +56,7 @@
 													<?php if (config_item('allow_reviews') !== '1') { ?>
 												
 														
-													</div>
+											</div> -->
 													<?php } ?>
 
 														<!-- <div class="rating rating-sm text-muted">

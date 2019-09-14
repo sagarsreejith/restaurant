@@ -33,8 +33,7 @@
                             <div class="hero-content typed-strings">
                                <h1>Welcome to Zalatimo Sweets <span class="typed"></span></h1>
                                  
-                               <p>Our software platform and custom development allow healthcare institutions to create
-                                    comprehensive cross-platform solutions that ensure positive patient experiences.</p>
+                               <p>We always strive to bring our customers only the very best delicacies made from fresh ingredients with special care.</p>
                                 
                             </div>
                               <div class="slider-action-btn">

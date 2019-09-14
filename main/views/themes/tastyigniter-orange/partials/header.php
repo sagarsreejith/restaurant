@@ -166,7 +166,7 @@
                                                             </li> 
 
                                                             <li>
-                                                                <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> login</a>
+                                                                <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> Login</a>
 
                                                             </li>
 
