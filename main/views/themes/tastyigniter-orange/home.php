@@ -510,7 +510,7 @@ transform:translate(-50%,-50%)
                                                                 Offers delivery only, pick-up is not available.																												
                                                     </li>
                                                     <li class="text-muted"><i class="fa fa-motorcycle"></i>
-                                                            Delivery in <b>50</b> minutes
+                                                            Delivery in <b><?php echo $restaurant['delivery_time']; ?></b> minutes
                                                     </li>
                                                     <li class="text-muted "><span class="fa fa-suitcase" aria-hidden="true"></span>
                                                                     Pick-up in <b>30</b> minutes
@@ -521,9 +521,11 @@ transform:translate(-50%,-50%)
                                                 </div>
                                              
                                                                                 
-                                                            
+                                                <?php 
+                                            
+                                            print_r($restaurant); ?>         
                                               
-                                            <!-- <?php echo $restaurant['description']; ?> <br/> 
+                                            <!--  <br/> 
                                             <?php //echo $restaurant['location_telephone']; ?>
                                             <?php //print_r($restaurants); ?>
                                             <i class="fa fa-building-o"></i>&nbsp;<?php echo $restaurant['location_address_1'].','.$restaurant['location_address_2'].','.$restaurant['location_city'].','.$restaurant['location_state']; ?>Kuwait<br>
@@ -782,4 +784,4 @@ $(window).scroll(function () {
 		curSlide = target;
 	});
 });
-    </script>
+</script>
