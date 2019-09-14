@@ -523,7 +523,7 @@ transform:translate(-50%,-50%)
                                                                                 
                                                 <?php 
                                             
-                                            print_r($restaurant); ?>         
+                                           // print_r($restaurant); ?>         
                                               
                                             <!--  <br/> 
                                             <?php //echo $restaurant['location_telephone']; ?>
