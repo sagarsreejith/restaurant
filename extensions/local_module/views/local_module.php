@@ -174,7 +174,7 @@
                                             
                                <?php if ($opening_status !== 'closed') { ?>
 
-                                 <?php if ($opening_status === 'open') { ?>
+                                 <!-- <?php if ($opening_status === 'open') { ?>
                                     <li class=""> <?php echo lang('text_is_opened'); ?></li>
                                           <?php } else if ($opening_status === 'opening') { ?>
                                           <span class="text-muted"><?php echo sprintf(lang('text_opening_time'), $opening_time); ?></span>
@@ -183,6 +183,7 @@
                                           <span class="text-muted"><?php echo lang('text_closed'); ?></span>
                                           <?php } ?>
                                           <?php if ($opening_status !== 'closed') { ?>
+                                              -->
                                     <li class="">
                                        <?php if (!empty($opening_type) AND $opening_type == '24_7') { ?>
                                        <span class="fa fa-clock-o"></span>&nbsp;&nbsp;<span><?php echo lang('text_24_7_hour'); ?></span>
@@ -219,10 +220,10 @@
                                        <?php } ?>
                                  </li>  -->
 
-                                    <li class="text-muted li_class">
+                                    <li class="text-muted">
                                        <?php if ($has_collection) { ?>
                                        <?php if ($collection_status === 'open') { ?>
-                                          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                          <i class="fa fa-suitcase" aria-hidden="true"></i>
                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $collection_time)); ?>
                                        <?php } else if ($collection_status === 'opening') { ?>
                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $collection_time)); ?>

@@ -100,7 +100,7 @@
                 <div class="panel-footer text-right">
                     <a href="<?php echo site_url('orders'); ?>"><?php echo lang('text_see_all_orders'); ?>&nbsp;<i class="fa fa-arrow-right"></i></a>
                 </div>
-        <!-- <div class="row statistics">
+        <div class="row statistics">
         	<div class="col-sm-12 col-md-8">
                 <div class="panel panel-default panel-chart">
                     <div class="panel-heading">
@@ -172,7 +172,7 @@
                     <div class="panel-footer"></div>
                 </div>
             </div>
-        </div> -->
+        </div> 
 
 
         <div>

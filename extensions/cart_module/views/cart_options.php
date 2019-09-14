@@ -45,7 +45,7 @@
                         <div class="col-sm-3 wrap-none">
                             <label for="quantity"><?php echo lang('label_menu_quantity'); ?></label>
                         </div>
-                        <div class="col-sm-3 wrap-none">
+                        <div class="col-xs-6 col-xs-offset-right-6 col-sm-3 wrap-none">
                             <div class="input-group quantity-control">
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" data-dir="dwn" type="button"><i class="fa fa-minus"></i></button>

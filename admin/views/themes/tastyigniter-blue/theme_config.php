@@ -30,7 +30,7 @@ $theme['nav_menu'] = array(
 		'permission' => 'Admin.Menus|Admin.MenuOptions|Admin.Categories',
 		'child' => array(
 			'menus' => array('priority' => '1', 'class' => 'menus', 'href' => site_url('menus'), 'title' => lang('menu_menu'), 'permission' => 'Admin.Menus'),
-			// 'menu_options' => array('priority' => '2', 'class' => 'menu_options', 'href' => site_url('menu_options'), 'title' => lang('menu_option'), 'permission' => 'Admin.MenuOptions'),
+			'menu_options' => array('priority' => '2', 'class' => 'menu_options', 'href' => site_url('menu_options'), 'title' => lang('menu_option'), 'permission' => 'Admin.MenuOptions'),
 			'categories' => array('priority' => '3', 'class' => 'categories', 'href' => site_url('categories'), 'title' => lang('menu_category'), 'permission' => 'Admin.Categories'),
 		)
 	),
@@ -43,7 +43,7 @@ $theme['nav_menu'] = array(
 		'child' => array(
 			'orders' => array('priority' => '1', 'class' => 'orders', 'href' => site_url('orders'), 'title' => lang('menu_order'), 'permission' => 'Admin.Orders'),
 		//	'reservations' => array('priority' => '2', 'class' => 'reservations', 'href' => site_url('reservations'), 'title' => lang('menu_reservation'), 'permission' => 'Admin.Reservations'),
-			//'coupons' => array('priority' => '3', 'class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
+			'coupons' => array('priority' => '3', 'class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
 		)
 	),
 	// 'marketing' => array(
@@ -77,8 +77,8 @@ $theme['nav_menu'] = array(
 		'permission' => 'Admin.Customers|Admin.CustomerGroups|Admin.CustomersOnline|Admin.Staffs|Admin.StaffGroups',
 		'child' => array(
 			'customers' => array('priority' => '1', 'class' => 'customers', 'href' => site_url('customers'), 'title' => lang('menu_customer'), 'permission' => 'Admin.Customers'),
-			//'customer_groups' => array('priority' => '2', 'class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
-			//'customers_online' => array('priority' => '3', 'class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'),
+			'customer_groups' => array('priority' => '2', 'class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
+			'customers_online' => array('priority' => '3', 'class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'),
 			'staffs' => array('priority' => '4', 'class' => 'staffs', 'href' => site_url('staffs'), 'title' => lang('menu_staff'), 'permission' => 'Admin.Staffs'),
 			'staff_groups' => array('priority' => '5', 'class' => 'staff_groups', 'href' => site_url('staff_groups'), 'title' => lang('menu_staff_group'), 'permission' => 'Admin.StaffGroups'),
 			'activities' => array('priority' => '6', 'class' => 'activities', 'href' => site_url('activities'), 'title' => lang('menu_activities'), 'permission' => 'Admin.Activities'),
@@ -102,7 +102,7 @@ $theme['nav_menu'] = array(
 			'pages' => array('priority' => '1', 'class' => 'pages', 'href' => site_url('pages'), 'title' => lang('menu_page'), 'permission' => 'Site.Pages'),
 			'layouts' => array('priority' => '2', 'class' => 'layouts', 'href' => site_url('layouts'), 'title' => lang('menu_layout'), 'permission' => 'Site.Layouts'),
 			//'themes' => array('priority' => '3', 'class' => 'themes', 'href' => site_url('themes'), 'title' => lang('menu_theme'), 'permission' => 'Site.Themes'),
-			//'mail_templates' => array('priority' => '4', 'class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
+			'mail_templates' => array('priority' => '4', 'class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
 		)
 	),
 	// 'localisation' => array(

@@ -136,13 +136,10 @@ transform:translate(-50%,-50%)
                                             <h2 class="h2_sttt"> <span class="text-orange  padin_rt">About</span>Us</h2>
                                         </div>
 
-                                        <span style="color: #7e3545;font-weight: 800; font-size: 15px;">Whatever your occasion, We makes it one to remember!</span>
+                                        <span style="color: #7e3545;font-weight: 800; font-size: 15px;">To create and sell high quality gourmet products!
+!</span>
                                         </div>
-                                            <p>
-
-                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. We provide you with daily self-made bread, sourdough pizza, roasted fish-meat-vegetables and many more. Lorem ipsum dolor sit amet, 
-
-                                            </p>
+                                            <p> Zalatimo Sweets Company established itself in Amman, Jordan in 1986 and has since, been expanding both locally and regionally. Currently, there are twelve retail outlets in Jordan, in addition to a branch in Kuwait. </p>
                                       
                                  
                              
@@ -504,9 +501,9 @@ transform:translate(-50%,-50%)
                                         <div class="panel-body">
                                             <div>
                                             <div class="col-xs-12 col-sm-12">
-                                                <div class="open_off">
+                                                <!-- <div class="open_off">
                                                     <span class="text-open"> open</span>
-                                                </div>
+                                                </div> -->
                                                 <ul class="location_list">
 
                                                     <li class="text-muted"><i class="fa fa-hand-o-right" aria-hidden="true"></i>
@@ -515,7 +512,7 @@ transform:translate(-50%,-50%)
                                                     <li class="text-muted"><i class="fa fa-motorcycle"></i>
                                                             Delivery in <b><?php echo $restaurant['delivery_time']; ?></b> minutes
                                                     </li>
-                                                    <li class="text-muted "><span class="li_class"></span>
+                                                    <li class="text-muted "><span class="fa fa-suitcase" aria-hidden="true"></span>
                                                                     Pick-up in <b>30</b> minutes
                                                     </li>
                                                      
@@ -526,7 +523,7 @@ transform:translate(-50%,-50%)
                                                                                 
                                                 <?php 
                                             
-                                            print_r($restaurant); ?>         
+                                           // print_r($restaurant); ?>         
                                               
                                             <!--  <br/> 
                                             <?php //echo $restaurant['location_telephone']; ?>

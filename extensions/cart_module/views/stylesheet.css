@@ -135,8 +135,8 @@
     max-width: 70px !important;
     width: 100% !important;
     max-height: 40px;
-    border: 1px solid #6f1e30;
-    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
     }
     .cart-items ul li .cart-btn {
     float: left;
