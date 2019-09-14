@@ -809,6 +809,6 @@ $('.mobile-nav').on('click', 'li', function(){
     $( ".slicknav_nav" ).addClass( "slicknav_hidden");
     $( ".slicknav_nav" ).addClass( "slicknav_hidden");
     $(".slicknav_nav").css("display", "none");
-    $(".modal .close").click()
+    $(".modal .close").click();
 });
 </script>
