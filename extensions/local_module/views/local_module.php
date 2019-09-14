@@ -136,7 +136,9 @@
                                     if($_COOKIE['order_type']==1){  ?>
                                          <span class="cookie_del_search">Your Location is : <?php echo $_COOKIE['del_search']; ?></span>
                                   <?php } ?>
-                               
+                                  <a class="btn btn-primary" data-toggle="collapse" href="#panel-body" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
                                  <a data-toggle="modal" data-target="#order_now" class="clickable map_A btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                                  <div class="map_icon_bg "> </div>  <?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                                  </a>
@@ -147,7 +149,7 @@
                      <?php } ?>
 
                <?php if($_COOKIE['order_type'] === '2') { ?>     
-                 <div class="panel-body" id="panel-body">
+                 <div class="panel-body collapse" id="panel-body">
                         <div class="row boxes">
                               <div class="box-one col-xs-12 col-sm-6 col-md-6">
                                  <div class="col-xs-12 col-sm-4 col-md-4">
