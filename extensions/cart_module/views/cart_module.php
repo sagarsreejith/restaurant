@@ -255,7 +255,7 @@ $('#order-switcher').click(function(event) {
    //event.preventDefault();
    //alert($("input[name='order_type']:checked").val());
    if( $("input[name='order_type']:checked").val() != getCookie('order_type')) {
-	   	alert('not-same');
+	   	//alert('not-same');
 		   $(".theme-switch").trigger('click');
 		   location.reload();
    }
