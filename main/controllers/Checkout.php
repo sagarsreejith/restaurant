@@ -386,7 +386,7 @@ class Checkout extends Main_Controller
 		} else {
 			$data['payment'] = '';
 		}
-
+		
 		if ($this->config->item('checkout_terms') > 0) {
 			$data['checkout_terms'] = str_replace(root_url(), '/', site_url('pages?popup=1&page_id=' . $this->config->item('checkout_terms')));
 		} else {
