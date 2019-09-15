@@ -22,11 +22,32 @@ left:50%;
 top:50%;
 transform:translate(-50%,-50%)
 }
+.mobile-slider{
+    border-radius: 34px;
+    overflow: hidden;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .phone{
+    height: 370px;
+    width: 100%;
+  }
+  .phone .owl-carousel .owl-item{
+    background: #f1f1f1;
+    height: 360px;
+    border-radius: 30px;
+ 
+  }  
+  .phone .owl-carousel .owl-item img{
+    min-height: 360px !important;
+  }
 </style>
-<?php echo get_header(); ?>
 
+<?php echo get_header(); ?>
     <?php echo get_partial('content_top'); ?>
-            
         <?php if ($this->alert->get()) { ?>
             <div id="notification">
                 <div class="container">
@@ -37,444 +58,307 @@ transform:translate(-50%,-50%)
                     </div>
                 </div>
             </div>
-            <?php } ?>
-                <div class="main_bg">
-                    <div id="page-content" class="icon_sec">
-                        <div class="container top-spacing-10">
-                            
-                                            
-                            <div class="col-md-3 col-sm-3 col-xs-6 icon-box">
-                            
-                                <div class="box-icon-svg">
-                                    <div class="box-icon-svg-inner">
-                                        <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                        <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
-                                        </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-search"></i></span>
-                                    </div>
-                                    <div class="box-icon-svg-caption">
-                                        <h4><?php echo lang('text_step_one'); ?></h4>
-                                    
-                                    </div>
-                                  
-                                </div>
-                            
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
-                            
-                                <div class="box-icon-svg">
-                                <div class="box-icon-svg-inner">
-                                    <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
-                                    </svg><span class="icon-lg-2 icon-inner icon-white">  <i class="fa fa-mouse-pointer"></i></span>
-                                </div>
-                                <div class="box-icon-svg-caption">
-                                    <h4><?php echo lang('text_step_two'); ?></h4>
-                                
-                                </div>
-                                </div>
-                        
-                            </div>
-                                <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
-                                
-                                    <div class="box-icon-svg">
-                                    <div class="box-icon-svg-inner">
-                                        <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                        <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
-                                        </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-credit-card"></i></span>
-                                    </div>
-                                    <div class="box-icon-svg-caption">
-                                        <h4><?php echo lang('text_step_three'); ?></h4>
-                                       
-                                    </div>
-                                    </div>
-                                
-                                </div>
-                                <div class="col-md-3 col-sm-3 col-xs-6">
-                                
-                                    <div class="box-icon-svg">
-                                    <div class="box-icon-svg-inner">
-                                        <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                        <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
-                                        </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-heart"></i></span>
-                                    </div>
-                                    <div class="box-icon-svg-caption">
-                                        <h4><?php echo lang('text_step_four'); ?></h4>
-                                        
-                                    </div>
-                                    </div>
-                                
-                                </div>
-                              
-                            </div>
-                     
-                        </div>
-                    </div>
-
-                </div>
-
-
-       
-                <section class="about" id="about">
-                        <div class="object-right object_right_img animated fadeIn ">
-                            <img class="img-responsive img1 " src="assets/images/icon/swt1.png" alt="">
-                        </div>
-                        <!-- <div class=" " >
-                            <img class="img-responsive book-menu_img " src="assets/images/icon/swt2.png" style="position:absolute;opacity: 0.9;">
-                         </div> -->
-                        <div class="">
-                        
-                            <div class="book-menu">
-
-                                <div class="">
-                                    <div class="row">
-                                        
-                                        <div class=" col-md-7 col-sm-12 col-md-offset-right-4 col-sm-10 ">
-                                        <div class="section-title1 text-center">
-                                        <div class="title-separator">
-                                            <!-- <img src="assets/images/food_icon.png"> -->
-                                            <h2 class="h2_sttt"> <span class="text-orange  padin_rt">About</span>Us</h2>
-                                        </div>
-
-                                        <span style="color: #7e3545;font-weight: 800; font-size: 15px;">To create and sell high quality gourmet products!
-!</span>
-                                        </div>
-                                            <p> Zalatimo Sweets Company established itself in Amman, Jordan in 1986 and has since, been expanding both locally and regionally. Currently, there are twelve retail outlets in Jordan, in addition to a branch in Kuwait. </p>
-                                      
+        <?php } ?>
+<section class="full_secton">
+<section id="hero-area" class="section-hero2 section overlay1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="hero-content-wrap">
+                            <div class="hero-content">
+                            <div class="hero-content typed-strings">
+                               <h1>Welcome to Zalatimo Sweets <span class="typed"></span></h1>
                                  
-                             
-                </section>
-                <div class="clearfix"></div>
-                <!-- <section class="gallery white-bg page-section-ptb" id="gallery">
-                        <div class="obj_right">
-                            <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-1.png" alt="">
-                        </div>
-                        <div class="obj_left" >
-                            <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-2.png" >
-                         </div>
-                
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="section-title text-center">
-                                        <div class="title-separator">
-                                        
-                                            <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Gallery</h2>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="isotope-filters"> 
-                                    
-                                    <button data-filter="" class="active">All</button>
-                                    <?php $count=0; foreach ($menu_categories as $category){  if($count < 7) {?> 
-                                        
-                                        <button data-filter='.<?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $category['name']))?>'><?php echo $category['name']; ?></button>
-                                    
-                                    <?php $count++; } }?>
-                                    </div>
-                                </div>
+                               <p>We always strive to bring our customers only the very best delicacies made from fresh ingredients with special care.</p>
+                                
                             </div>
-                     
-                            <div class="isotope popup-gallery columns-4">
-                                <?php foreach ($res_menu as $menu){  ?>
-                                <div class='col-md-3 grid-item<?php echo strtolower(preg_replace("/[^a-zA-Z]/", "", $menu->name))?>'>
-                                        <div class="galllery-item gal_img">
-                                            <span><img class="img-responsive" src="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>" alt=""></span>
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <h3><a href="#"> <?php echo $menu->menu_name; ?></a> </h3>
-                                                    <a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu->menu_photo); ?>"><i class="fa fa-expand"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php } ?>
+                              <div class="slider-action-btn">
+                                  <a href="#" class="btn order_btn" data-toggle="modal" data-target="#order_now">Order Now</a>    
+                              </div> 
                             </div>
-                        </div>
-                </section> -->
-                <section class="gallery white-bg page-section-ptb" id="gallery">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="section-title text-center">
-                            <div class="title-separator">
-                                <!-- <img src="assets/images/food_icon.png"> -->
-                                <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Gallery</h2>
-                            </div>
-
-                        </div>
+					        	    </div>
+						
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="isotope-filters">
-                                    <button data-filter="" class="active">All</button>
-                                    <button data-filter=".Arabic"> Arabic Sweets</button>
-                                    <button data-filter=".Mamoul">Mamoul</button>
-                                    <button data-filter=".Fresh">Fresh Sweets</button>
-                                    <button data-filter=".Manakeesh">Manakeesh</button>
-                                    <button data-filter=".Sandwiches">Sandwiches</button>
-                                    <button data-filter=".Appetizer"> Appetizer</button>
-                                    <button data-filter=".emb"> Ambience</button>
-
+                 
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="mobile-slider-area">
+                        
+                            <div class="phone">
+                           
+                                <div class="mobile-slider owl-carousel owl-theme">
+                                    <?php if (!empty($slides)) { ?>
+                                      <?php foreach ($slides as $slide) { ?>
+                                        <?php if (isset($slide['image_src'])) { ?>
+                                            <img src="<?php echo $slide['image_src']; ?>" />
+                                        <?php } ?>
+                                      <?php } ?>
+                                    <?php } ?>
+                               </div>
                                  
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="isotope popup-gallery columns-4">
-                            <div class="col-md-3 nopad grid-item fresh">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="slider-indicator" style="position:absoulte">
+                                    <ul>
+                                      <li id="prev">
+                                        <i class="fa fa-angle-left" style="color:#fff"></i>
+                                      </li>
+                                      <li id="next">
+                                        <i class="fa fa-angle-right"></i>
+                                      </li>
+                                    </ul>
                             </div>
-                            <div class="col-md-3 nopad grid-item Arabic mexican">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 nopad grid-item Mamoul">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#">Diamond</a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/02.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 nopad grid-item  Mamoul">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#">Mann Wa Salwa</a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 nopad grid-item mexican">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/04.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 nopad grid-item Mamoul ">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/05.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 nopad grid-item Sandwiches ">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Bassma </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/06.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       
-                            <div class="col-md-3 nopad grid-item Appetizer">
-                                <div class="galllery-item gal_img">
-                                    <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
-                                    <div class="overlay">
-                                        <div class="overlay-content">
-                                            <h3><a href="#"> Cheese Pasta </a> </h3>
-                                            <a class="portfolio-img" href="assets/images/gallery/10.png"><i class="fa fa-expand"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                       
-                          
-                        </div>
-                    </div>
-                </section>
-
-                <div claass="clearfix"></div>
-
-                <div claass="clearfix"></div>
-
-                <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 ">
-
-                    <div class=" parallax bg-overlay-black-70 hg_bg" style="background: url(assets/images/icon/slider_image1.jpg) !important;background-size: cover;background-repeat:no-repeat;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12">
-
-                                <div class="cont">
-                                                 
-                                                    <div class="app">
-                                                        <div class="app__bgimg">
-                                                            <div class="app__bgimg-image app__bgimg-image--1">
-                                                            <div class="app__img">
-                                                                <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
-                                                             </div>
-                                                             <div class="app__text app__text--1">
-                                                                <div class="app__text-line app__text-line--4">Eid Special </div>
-                                                                <div class="app__text-line app__text-line--3">25% offer</div>
-                                                             </div>
-                                                            </div>
-                                                            <div class="app__bgimg-image app__bgimg-image--2">
-
-                                                                <div class="app__img">
-                                                                    <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
-                                                                </div>
-                                                                <div class="app__text app__text--2">
-                                                                    <div class="app__text-line app__text-line--4">Best Offer</div>
-                                                                    <div class="app__text-line app__text-line--3">Get free </div>
-                                                                </div>
-                                                        
-                                                            </div>
-                                                          
-                                                        </div>
-                                                      
-                                                       
-                                                        
-                                                       
-                                                        
-                                                    </div>
-                                                    <div class="pages">
-                                                        <ul class='pages__list'>
-                                                            <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
-                                                            <li data-target='2' class='pages__item pages__item--2'></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                            
+					            	</div>
+					          </div>
+				        </div>
+            </div>
+		      	<div class="section-shape">
+                <div class="river-wave"></div>
+                <div class="river-wave"></div>
+            </div>
+        </section>
 
         
-           
-                <div class="clearfix"></div>
-    
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-      <div id="login-form" class="content-wrap col-sm-4 center-block">
-
-					
-<!-- <div class="img_log">
-    <img src="assets/images/bg10.jpg" class="" style="width:100%">
-</div> -->
-
-<div id="login-form" class="content-wrap col-sm-4 center-block">
-
-					
-<!-- <div class="img_log">
-    <img src="assets/images/bg10.jpg" class="" style="width:100%">
-</div> -->
-
-<div class="section-title text-center">
-    <div class="title-separator">
-
-    </div>
-    <h2> <span class="text-orange">	<?php echo lang('text_login'); ?></h2>
-    <span class="under-heading"></span>
-</div>
-<?php if ($this->alert->get('', 'alert')) { ?>
-    <div id="notification">
-        <?php echo $this->alert->display('', 'alert'); ?>
-    </div>
-    <?php } ?>
-        <form method="POST" accept-charset="utf-8" action="<?php echo current_url(); ?>" role="form">
-            <fieldset>
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('label_email'); ?>" autofocus="" />
-                        <span class="input-group-addon">@</span>
+        <div class="main_bg">
+            <div id="page-content" class="icon_sec">
+                <div class="container top-spacing-10">
+                    <div class="col-md-3 col-sm-3 col-xs-6 icon-box">
+                        <div class="box-icon-svg">
+                            <div class="box-icon-svg-inner">
+                                <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-search"></i></span>
+                            </div>       
+                            <div class="box-icon-svg-caption">
+                                <h4><?php echo lang('text_step_one'); ?></h4>
+                            </div>
+                        </div>
                     </div>
-                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-                </div>
-
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
+                        <div class="box-icon-svg">
+                            <div class="box-icon-svg-inner">
+                                <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                </svg><span class="icon-lg-2 icon-inner icon-white">  <i class="fa fa-mouse-pointer"></i></span>
+                            </div>
+                            <div class="box-icon-svg-caption">
+                                <h4><?php echo lang('text_step_two'); ?></h4>
+                            </div>
+                        </div>
                     </div>
-                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                    <div class="col-md-3 col-sm-3 col-xs-6 wow-outer">
+                        <div class="box-icon-svg">
+                            <div class="box-icon-svg-inner">
+                                <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                </svg>
+                                <span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <div class="box-icon-svg-caption">
+                                <h4><?php echo lang('text_step_three'); ?></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="box-icon-svg">
+                            <div class="box-icon-svg-inner">
+                                <svg width="60" height="60" viewBox="0 0 93 93" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                    <path d="M90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45C0 20.1472 22.5 19 45 4.00001C67.5 -11 90 20.1472 90 45Z" fill="#6f1e31"></path>
+                                </svg><span class="icon-lg-2 icon-inner icon-white"><i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="box-icon-svg-caption">
+                                <h4><?php echo lang('text_step_four'); ?></h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+           </div>
+        </div>
 
-                <div class="form-group">
+        <section class="about" id="about">
+            <div class="object-right object_right_img animated fadeIn ">
+                <img class="img-responsive img1 " src="assets/images/icon/swt1.png" alt="">
+            </div>
+            <div class="book-menu">
+                <div class="row">
+                    <div class=" col-md-7 col-sm-12 col-md-offset-right-4 col-sm-10 ">
+                        <div class="section-title1 text-center">
+                            <div class="title-separator">
+                                <h2 class="h2_sttt"> <span class="text-orange  padin_rt">About</span>Us</h2>
+                            </div>
+                            <span style="color: #7e3545;font-weight: 800; font-size: 15px;">
+                                To create and sell high quality gourmet products!!
+                            </span>
+                            <p> Zalatimo Sweets Company established itself in Amman, Jordan in 1986 and has since, been expanding both locally and regionally. Currently, there are twelve retail outlets in Jordan, in addition to a branch in Kuwait. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="clearfix"></div>
+            
+        <section class="gallery white-bg page-section-ptb" id="gallery">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title text-center">
+                    <div class="title-separator">
+                        <h2 class="h2_sttt"> <span class="text-orange  padin_rt">Our</span>Gallery</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="isotope-filters">
+                            <button data-filter="" class="active">All</button>
+                            <button data-filter=".Arabic"> Arabic Sweets</button>
+                            <button data-filter=".Mamoul">Mamoul</button>
+                            <button data-filter=".Fresh">Fresh Sweets</button>
+                            <button data-filter=".Manakeesh">Manakeesh</button>
+                            <button data-filter=".Sandwiches">Sandwiches</button>
+                            <button data-filter=".Appetizer"> Appetizer</button>
+                            <button data-filter=".emb"> Ambience</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="isotope popup-gallery columns-4">
+                    <div class="col-md-3 nopad grid-item fresh">
+                        <div class="galllery-item gal_img">
+                                <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <h3><a href="#"> Cheese Pasta </a> </h3>
+                                        <a class="portfolio-img" href="assets/images/gallery/07.png"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>       
+                    <div class="col-md-3 nopad grid-item Arabic mexican">
+                        <div class="galllery-item gal_img">
+                                <span><img class="img-responsive" src="assets/images/gallery/08.png" alt=""></span>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <h3><a href="#"> Cheese Pasta </a> </h3>
+                                        <a class="portfolio-img" href="assets/images/gallery/08.png"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-3 nopad grid-item Mamoul">
+                        <div class="galllery-item gal_img">
+                                <span><img class="img-responsive" src="assets/images/gallery/02.png" alt=""></span>
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        <h3><a href="#">Diamond</a> </h3>
+                                        <a class="portfolio-img" href="assets/images/gallery/02.png"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                       </div>
+                    </div>
+                    <div class="col-md-3 nopad grid-item  Mamoul">
+                        <div class="galllery-item gal_img">
+                            <span><img class="img-responsive" src="assets/images/gallery/09.png" alt=""></span>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3><a href="#">Mann Wa Salwa</a> </h3>
+                                    <a class="portfolio-img" href="assets/images/gallery/09.png"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 nopad grid-item mexican">
+                        <div class="galllery-item gal_img">
+                            <span><img class="img-responsive" src="assets/images/gallery/04.png" alt=""></span>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3><a href="#"> Cheese Pasta </a> </h3>
+                                    <a class="portfolio-img" href="assets/images/gallery/04.png"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 nopad grid-item Mamoul ">
+                        <div class="galllery-item gal_img">
+                            <span><img class="img-responsive" src="assets/images/gallery/05.png" alt=""></span>
+                             <div class="overlay">
+                                 <div class="overlay-content">
+                                    <h3><a href="#"> Cheese Pasta </a> </h3>
+                                    <a class="portfolio-img" href="assets/images/gallery/05.png"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 nopad grid-item Sandwiches ">
+                        <div class="galllery-item gal_img">
+                            <span><img class="img-responsive" src="assets/images/gallery/06.png" alt=""></span>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3><a href="#"> Bassma </a> </h3>
+                                    <a class="portfolio-img" href="assets/images/gallery/06.png"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3 nopad grid-item Appetizer">
+                        <div class="galllery-item gal_img">
+                            <span><img class="img-responsive" src="assets/images/gallery/10.png" alt=""></span>
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3><a href="#"> Cheese Pasta </a> </h3>
+                                    <a class="portfolio-img" href="assets/images/gallery/10.png"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <div claass="clearfix"></div>
+
+        <section class="our-menu2 page-section-pt parallax pb-30 bg-overlay-black-70 ">
+            <div class=" parallax bg-overlay-black-70 hg_bg" style="background: url(assets/images/icon/slider_image1.jpg) !important;background-size: cover;background-repeat:no-repeat;">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">
-                                <?php echo lang('button_login'); ?>
-                            </button>
+                        <div class="col-sm-12">
+                            <div class="cont">
+                                <div class="app">
+                                    <div class="app__bgimg">
+                                        <div class="app__bgimg-image app__bgimg-image--1">
+                                            <div class="app__img">
+                                                <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+                                            </div>
+                                            <div class="app__text app__text--1">
+                                                <div class="app__text-line app__text-line--4">Eid Special </div>
+                                            <div class="app__text-line app__text-line--3">25% offer</div>
+                                        </div>
+                                    </div>
+                                <div class="app__bgimg-image app__bgimg-image--2">
+                                    <div class="app__img">
+                                        <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+                                    </div>
+                                <div class="app__text app__text--2">
+                                    <div class="app__text-line app__text-line--4">Best Offer</div>
+                                    <div class="app__text-line app__text-line--3">Get free </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <a class="forgot_btn1  " href="<?php echo $reset_url; ?>">
-                                <?php echo lang('text_forgot'); ?>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <a class=" reg_btn1 text-right" style="" href="<?php echo $register_url; ?>">
-                                <?php echo lang('button_register'); ?>
-                            </a>
-                        </div>
+                    <div class="pages">
+                        <ul class='pages__list'>
+                            <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+                            <li data-target='2' class='pages__item pages__item--2'></li>
+                        </ul>           
                     </div>
                 </div>
+            </div>
+        </section>
 
-            </fieldset>
-        </form>
-</div>
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="clearfix"></div>
 
-
-                <section class="map_sec" id="locations">
+    <section class="map_sec" id="locations">
                     <div class="col-lg-12 col-md-12">
                         <div class="section-title text-center">
                             <div class="title-separator">
@@ -545,10 +429,12 @@ transform:translate(-50%,-50%)
                 </section>
 
                 <div claass="clearfix"></div>
-
+</div>
+</section>
 
                 <?php echo get_footer(); ?>
                     <div class="clearfix"></div>
+
                     <script>
                         /* When the user clicks on the button,
                         toggle between hiding and showing the dropdown content */

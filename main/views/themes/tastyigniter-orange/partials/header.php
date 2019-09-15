@@ -803,12 +803,16 @@ $(function() {
 //Ham Berger menu
 //$("#modal .close").click()
 // $('#modal').modal('hide');
+
+$('.main-menu').on('click', 'li', function(){
+    $(".modal .close").click();
+});
 $('.mobile-nav').on('click', 'li', function(){
     $( ".slicknav_btn" ).removeClass( "slicknav_open");
     $( ".slicknav_btn" ).addClass( "slicknav_collapse slicknav_collapsed" );
     $( ".slicknav_nav" ).addClass( "slicknav_hidden");
     $( ".slicknav_nav" ).addClass( "slicknav_hidden");
     $(".slicknav_nav").css("display", "none");
-    $(".modal .close").click()
+    $(".modal .close").click();
 });
 </script>

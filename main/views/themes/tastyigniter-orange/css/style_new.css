@@ -2510,10 +2510,6 @@ padding-right:0 !important;
 .box_st .pull-left{
   float:none !important;
 }
-.location_list{
-  margin: 0 auto;
-  display: table;
-}
 .goto_menu {
   margin: 20px auto !important;
 
@@ -3858,7 +3854,7 @@ input[type=radio]:checked + label {
     padding: 5px 0;
   }
   .location_list{
-    padding:12px 0;
+    padding:2px 0;
   }
   .open_off{text-align: right;
     margin: 7px 0;
