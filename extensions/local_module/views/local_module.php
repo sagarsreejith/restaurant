@@ -3,7 +3,7 @@
 <div class="modal-dialog  modal-dialog-centered modal_order_now">
    <div class="modal-content">
       <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <button type="button" class="close" data-dismiss="modal" id="order-switcher">&times;</button>
          <div class="section-title text-center">
             <div class="title-separator">
                <h2 class="h2_sttt_order"> <span class="text-orange  padin_rt">Order 	</span>Sweets</h2>
