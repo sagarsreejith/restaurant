@@ -227,24 +227,40 @@ $(document).on('ready', function() {
 	});
 });
 
-$(document).on('change', 'input[name="order_type"]', function() {
-	if (typeof this.value !== 'undefined') {
-		var order_type = this.value;
-		document.cookie = "order_type =" + this.value + "; path=/";
-		$.ajax({
-			url: js_site_url('cart_module/cart_module/order_type'),
-			type: 'post',
-			data: 'order_type=' + order_type,
-			dataType: 'json',
-			success: function (json) {
-				if (json['redirect'] && json['order_type'] == order_type) {
-					window.location.href = json['redirect'];
-				}
-			}
-		});
+$(document).on('change', 'input[name="order_type"]', function(event) {
+	//event.preventDefault();
+	$(".map_icon_bg").click();
+	if( $("input[name='order_type']:checked").val() != getCookie('order_type')) {
+		$("#theme-switch").trigger('click');
 	}
+	
+	// if (typeof this.value !== 'undefined') {
+	// 	var order_type = this.value;
+	// 	document.cookie = "order_type =" + this.value + "; path=/";
+	// 	$.ajax({
+	// 		url: js_site_url('cart_module/cart_module/order_type'),
+	// 		type: 'post',
+	// 		data: 'order_type=' + order_type,
+	// 		dataType: 'json',
+	// 		success: function (json) {
+	// 			if (json['redirect'] && json['order_type'] == order_type) {
+	// 				window.location.href = json['redirect'];
+	// 			}
+	// 		}
+	// 	});
+	// }
 });
-
+$('#order-switcher').click(function(event) {
+   //your code to run on dialog close
+   //event.preventDefault();
+   //alert($("input[name='order_type']:checked").val());
+   if( $("input[name='order_type']:checked").val() != getCookie('order_type')) {
+	   	//alert('not-same');
+		   $(".theme-switch").trigger('click');
+		   location.reload();
+   }
+   //alert(getCookie('order_type'));
+});
 $(document).ready(function(){
 	updateOderType();
 	$('#delivery').trigger('click');
