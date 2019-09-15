@@ -124,7 +124,7 @@ class Checkout extends Main_Controller
 
 		// checks if order type is delivery or collection
 		$order_type = ($order_info['order_type'] === '1') ? 'delivery' : 'collection';
-
+		$order_type_text = ($order_info['order_type'] === '1') ? 'Delivery' : 'Pickup';
 		if ($payment = $this->extension->getPayment($order_info['payment'])) {
 			$payment_method = !empty($payment['ext_data']['title']) ? $payment['ext_data']['title'] : $payment['title'];
 		} else {
@@ -133,7 +133,7 @@ class Checkout extends Main_Controller
 
 		$date_format = ($this->config->item('date_format')) ? $this->config->item('date_format') : '%d %M %y';
 		$time_format = ($this->config->item('time_format')) ? $this->config->item('time_format') : '%h:%i %a';
-		$data['order_details'] = sprintf($this->lang->line('text_order_info'), $order_type, mdate($date_format, strtotime($order_info['date_added'])), ucwords($order_type), mdate(lang('text_date_format') . " {$time_format}", strtotime("{$order_info['order_date']} {$order_info['order_time']}")), $payment_method);
+		$data['order_details'] = sprintf($this->lang->line('text_order_info'), $order_type_text, mdate($date_format, strtotime($order_info['date_added'])), ucwords($order_type_text), mdate(lang('text_date_format') . " {$time_format}", strtotime("{$order_info['order_date']} {$order_info['order_time']}")), $payment_method);
 
 		$data['menus'] = array();
 		$menus = $this->Orders_model->getOrderMenus($order_info['order_id']);
