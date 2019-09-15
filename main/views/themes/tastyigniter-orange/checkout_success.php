@@ -20,12 +20,12 @@
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
 								</a>
 							</li>
-							<li class="disabled">
+							<!-- <li class="disabled">
 								<a  href="#payment">
 								<span class="list-group-item-heading"><i class="fa fa-money"></i></span>
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
 								</a>
-							</li>
+							</li> -->
 							<li class="step-three active">
 								<a href="#confirmation">
 								<span class="list-group-item-heading"><i class="fa fa-check"></i></span>

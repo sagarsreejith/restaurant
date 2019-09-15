@@ -26,12 +26,12 @@
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
 								</a>
 							</li>
-							<li class="step-two <?php echo ($checkout_step === 'two') ? 'active' : 'disabled'; ?>">
+							<!-- <li class="step-two <?php echo ($checkout_step === 'two') ? 'active' : 'disabled'; ?>">
 								<a>
 								<span class="list-group-item-heading"><i class="fa fa-money"></i></span>
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
 								</a>
-							</li>
+							</li> -->
 							<li class="step-three disabled">
 								<a>
 								<span class="list-group-item-heading"><i class="fa fa-check"></i></span>
@@ -337,7 +337,20 @@
 									<!-- <label for=""><?php //echo lang('label_comment'); ?></label> -->
 									<textarea name="comment" id="comment" rows="5" class="form-control" placeholder="<?php echo lang('label_comment'); ?>"><?php echo set_value('comment', $comment); ?></textarea>
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
-								</div></div>
+								</div>
+
+								<div class="list-group">
+									<?php foreach ($payments as $payment) { ?>
+										<?php if (!empty($payment['data'])) { ?>
+											<div class="list-group-item list_itemm">
+												<?php echo $payment['data']; ?>
+											</div>
+										<?php } ?>
+									<?php } ?>
+								</div>
+								<?php echo form_error('payment', '<span class="text-danger err_payment">', '</span>'); ?>
+							
+							</div>
 							<div id="payment" class="content-wrap" style="display: <?php echo ($checkout_step === 'two') ? 'block' : 'none'; ?>">
 								<div class="row">
 									<div class="col-sm-12">

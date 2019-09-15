@@ -198,36 +198,30 @@
  
 								<div id="menu<?php echo $menu['menu_id']; ?>" class="menu-item">
 								<?php //echo site_url('assets/images/'.$menu['menu_photo_act']) ?>
-									<div class="menu-item-wrapper row">
+									<div class="menu-item-wrapper row" id="popup_menu" onClick="openMenuOptions('<?php echo $menu['menu_id']; ?>', '<?php echo $menu['minimum_qty']; ?>');">
 										<?php if ($show_menu_images === '1' AND !empty($menu['menu_photo'])) { ?>
 			
 
-											<div class="menu-thumb col-xs-3 col-sm-3 col-md-3 wrap-none wrap-right menu_img popup-gallery">
+											<div class="menu-thumb col-xs-3 col-sm-3 col-md-3 wrap-none wrap-right menu_img ">
 												<!-- <ul class="enlarge">
 													<li><img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><span><img src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>" alt="Deckchairs" /></span></li>
 												</ul> -->
 
-												<div class="food_image galllery-item">
-													<img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>">
-														
-														<div class="overlay">
-															<div class="overlay-content">
-																<a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><i class="fa fa-expand"></i></a>               
-															</div>
-														</div>
+												<div class="food_image">
+													<img class="img-responsive img-thumbnail " alt="<?php echo $menu['menu_name']; ?>" src="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>">	
 												</div>
 											</div>
 										<?php } ?>
 
-										<div class="menu-content <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-9 col-sm-9 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
+										<div class="menu-content <?php echo ($show_menu_images === '1' AND !empty($menu['menu_photo'])) ? 'col-xs-7 col-sm-6 col-md-6' : 'col-xs-8'; ?> wrap-none wrap-right">
 											<span class="menu-name menu_item_name"><b><?php echo character_limiter($menu['menu_name'], 80); ?></b></span>
 											<span class="menu-desc small">
 												<?php echo character_limiter($menu['menu_description'], 120); ?>
 											</span>
 										</div>
-										<div class="menu-right col-xs-12 col-sm-12 col-md-3   wrap-none">
+										<div class="menu-right col-xs-2 col-sm-3 col-md-3   wrap-none">
 											<span class="menu-price"><?php echo $menu['menu_price']; ?></span>
-											<span class="menu-button">
+											<!-- <span class="menu-button">
 												<?php if ($menu['mealtime_status'] === '1' AND empty($menu['is_mealtime'])) { ?>
 													<a class="btn btn-primary btn-cart add_cart disabled"><span class="fa fa-plus"></span></a>
 												<?php } else if (isset($menu_options[$menu['menu_id']])) { ?>
@@ -235,12 +229,12 @@
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } else { ?>
-													<!-- addToCart -->
+													
 													<a class="btn btn-primary btn-cart add_cart" onClick="openMenuOptions('<?php echo $menu['menu_id']; ?>', '<?php echo $menu['minimum_qty']; ?>');">
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } ?>
-											</span>
+											</span> -->
 											<?php if ($menu['mealtime_status'] === '1' AND empty($menu['is_mealtime'])) { ?>
 												<div class="menu-mealtime text-danger"><?php echo sprintf(lang('text_mealtime'), $menu['mealtime_name'], $menu['start_time'], $menu['end_time']); ?></div>
 											<?php }?>

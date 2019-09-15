@@ -5,7 +5,7 @@
 
                         <div class="section-title text-center">
                             <div class="title-separator">
-                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo $text_heading; ?></span></h2>
+                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo $menu_name; ?></span></h2>
                                 <span class="under-heading"></span>
                             </div>
                         </div>
@@ -26,14 +26,17 @@
                         <?php } ?>
                     </div>
 
-                    <div class="media" id="menu_cart">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="<?php echo $menu_image; ?>">
-                            </a>
+                    <div class="media popup-gallery" id="menu_cart" >
+                        <div class="media-left galllery-item" >
+                            <img class="media-object" src="<?php echo $menu_image; ?>">
+                            <div class="overlay">
+								<div class="overlay-content">
+									<a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><i class="fa fa-expand"></i></a>               
+								</div>
+							</div>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading" id="media-heading"><?php echo $menu_name; ?></h4>
+                            <!-- <h4 class="media-heading" id="media-heading"><?php echo $menu_name; ?></h4> -->
                             <?php if ($description) { ?>
                                 <p class="description"><?php echo $description; ?></p>
                                 <p class="price"><?php echo $menu_price; ?></p>

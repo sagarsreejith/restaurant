@@ -145,6 +145,7 @@
     margin-top: 2px;
     cursor: pointer;
     text-decoration: none;
+    
     }
     .cart-items ul li .options {
     display: block;
@@ -314,7 +315,7 @@
         padding-left:30px !important;
     }
     .menu-item-wrapper{
-        padding: 5px 10px !important;
+        padding: 5px 5px !important;
     }
 
    .wrap-right{
@@ -337,5 +338,5 @@
         font-weight: 600;
     }
     #menu_cart .media-body p{
-        color: #564f4f;
+        color: #000;
     }

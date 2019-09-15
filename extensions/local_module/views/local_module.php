@@ -136,9 +136,12 @@
                                     if($_COOKIE['order_type']==1){  ?>
                                          <span class="cookie_del_search">Your Location is : <?php echo $_COOKIE['del_search']; ?></span>
                                   <?php } ?>
-                                  <a class="btn btn-primary" data-toggle="collapse" href="#panel-body" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
+                                  <?php 
+                                   if($_COOKIE['order_type']==2){  ?>
+                                    <a class="btn details_btn" data-toggle="collapse" href="#panel-body" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                             Our Details
+                                    </a>
+                                    <?php } ?>
                                  <a data-toggle="modal" data-target="#order_now" class="clickable map_A btn-link visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="">
                                  <div class="map_icon_bg "> </div>  <?php echo empty($search_query) ? lang('button_enter_location') : lang('button_change_location'); ?>
                                  </a>
@@ -149,12 +152,13 @@
                      <?php } ?>
 
                <?php if($_COOKIE['order_type'] === '2') { ?>     
-                 <div class="panel-body collapse" id="panel-body">
+                 <div class="panel-body padding-bottom-none collapse" id="panel-body">
                         <div class="row boxes">
                               <div class="box-one col-xs-12 col-sm-6 col-md-6">
                                  <div class="col-xs-12 col-sm-4 col-md-4">
                                     <?php if (!empty($location_image)) { ?>
-                                    <img class="img-responsive pull-left" src="<?php echo $location_image; ?>">
+                                    <!-- <img class="img-responsive pull-left" src="<?php echo $location_image; ?>"> -->
+                                    <img class="img-responsive pull-left" src="../assets/images/Horeca.jpg">
                                     <?php } ?>
                                  </div>
                                  <div class="col-xs-12 col-sm-8 col-md-8">
@@ -261,51 +265,52 @@
                                                                            
                                     </ul>
                               </div>
+                              <div class="full_out">
+                     
+                                    <div class="col-md-12 nopad">
+
+                                             <div class="contact cnt">
+                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                                                         <div class="contact-box ">
+                                                               <i class="fa fa-phone"></i>
+                                                               <div class="cont_con">
+                                                                  
+                                                               <a href="tel:<?php echo $contact_info['location_telephone'];?>" target="_blank"><p><?php echo $contact_info['location_telephone'];?></p></a> 
+                                                               </div>
+                                                         </div>
+                                                   </div>
+                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                      <div class="contact-box ">
+                                                            <i class="fa fa-envelope-o"></i>
+                                                            <div class="cont_con">
+                                                            <a href="mailto:<?php echo $contact_info['location_email']; ?>"  target="_blank"><p><?php echo $contact_info['location_email']; ?></p></a> 
+                                                            
+                                                            </div>
+                                                      </div>
+                                                   </div>
+                                                   <?php if($contact_info['location_whatsapp'] != '') { ?>
+                                                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                      <div class="contact-box ">
+                                                            <i class="fa fa-whatsapp"></i>
+                                                            <div class="cont_con">
+                                                            
+                                                               <a  class="cont_link_app"  target="_blank" href="//api.whatsapp.com/send?phone=<?php echo $contact_info['location_whatsapp']; ?>&text=WHATEVER_TEXT_YOU_WANT_TO_SEND" class="applyinfo-btn">
+                                                               <p><?php echo $contact_info['location_whatsapp']; ?></p>	</a>
+                                                               
+                                                            </div>
+                                                      </div>
+                                                   </div>
+                                                   <?php } ?>
+                                             </div>
+                                       </div>
+                           
+                                    </div>                  
+                              </div>
                           
                          
                         </div>
                      </div> 
-                           <div class="full_out">
-                     
-                                <div class="col-md-12 nopad">
-
-                                       <div class="contact cnt">
-                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-                                                   <div class="contact-box ">
-                                                         <i class="fa fa-phone"></i>
-                                                         <div class="cont_con">
-                                                            
-                                                         <a href="tel:<?php echo $contact_info['location_telephone'];?>" target="_blank"><p><?php echo $contact_info['location_telephone'];?></p></a> 
-                                                         </div>
-                                                   </div>
-                                             </div>
-                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                <div class="contact-box ">
-                                                      <i class="fa fa-envelope-o"></i>
-                                                      <div class="cont_con">
-                                                      <a href="mailto:<?php echo $contact_info['location_email']; ?>"  target="_blank"><p><?php echo $contact_info['location_email']; ?></p></a> 
-                                                        
-                                                      </div>
-                                                </div>
-                                             </div>
-                                             <?php if($contact_info['location_whatsapp'] != '') { ?>
-                                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                <div class="contact-box ">
-                                                      <i class="fa fa-whatsapp"></i>
-                                                      <div class="cont_con">
-                                                      
-                                                         <a  class="cont_link_app"  target="_blank" href="//api.whatsapp.com/send?phone=<?php echo $contact_info['location_whatsapp']; ?>&text=WHATEVER_TEXT_YOU_WANT_TO_SEND" class="applyinfo-btn">
-                                                         <p><?php echo $contact_info['location_whatsapp']; ?></p>	</a>
-                                                         
-                                                      </div>
-                                                </div>
-                                             </div>
-                                             <?php } ?>
-                                       </div>
-                                 </div>
-                     
-                               </div>                  
-                           </div>
+                           
                <?php }?>                                      
                <?php } ?>
             </div>
