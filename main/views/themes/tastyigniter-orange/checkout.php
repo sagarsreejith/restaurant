@@ -356,7 +356,7 @@
 									<div class="col-sm-12">
 											<div class="col-md-12 col-sm-12 col-xs-12 nopad main_head_addr">		
 												<!-- <label for=""><?php echo lang('label_customer'); ?> </label> -->
-												<label for="" class="">Customer Details </label>
+												<label for="" class="">  Details </label>
 												<div class="text-subline offset-top-15"></div>
 											</div>
 
@@ -529,6 +529,8 @@
 </div>
 
 <script type="text/javascript"><!--
+$("input[name='payment']").trigger('click');
+$("input[name='terms_condition']").trigger('click');
 $(".office").hide();
 $(document).ready(function() {
 	$("#choose-order-time select.form-control").select2({

@@ -78,6 +78,7 @@
 			$("#list-form td:contains('<?php echo lang('text_disabled'); ?>')").addClass('red');
 		});
 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin&amp;display=swap" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
