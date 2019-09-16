@@ -29,6 +29,7 @@
                     <div class="media popup-gallery" id="menu_cart" >
                         <div class="media-left galllery-item" >
                             <img class="media-object" src="<?php echo $menu_image; ?>">
+                            <?php echo $menu_image; ?>
                             <div class="overlay">
 								<div class="overlay-content">
 									<a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><i class="fa fa-expand"></i></a>               

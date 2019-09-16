@@ -221,7 +221,7 @@
 										</div>
 										<div class="menu-right col-xs-2 col-sm-3 col-md-3   wrap-none">
 											<span class="menu-price"><?php echo $menu['menu_price']; ?></span>
-											<!-- <span class="menu-button">
+										 <span class="menu-button">
 												<?php if ($menu['mealtime_status'] === '1' AND empty($menu['is_mealtime'])) { ?>
 													<a class="btn btn-primary btn-cart add_cart disabled"><span class="fa fa-plus"></span></a>
 												<?php } else if (isset($menu_options[$menu['menu_id']])) { ?>
@@ -234,7 +234,7 @@
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } ?>
-											</span> -->
+											</span>
 											<?php if ($menu['mealtime_status'] === '1' AND empty($menu['is_mealtime'])) { ?>
 												<div class="menu-mealtime text-danger"><?php echo sprintf(lang('text_mealtime'), $menu['mealtime_name'], $menu['start_time'], $menu['end_time']); ?></div>
 											<?php }?>

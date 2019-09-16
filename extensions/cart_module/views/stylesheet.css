@@ -258,7 +258,13 @@
     right:0;
     left:0;
     z-index: 9; */
+    z-index: 9999999;
+    background: red;
+    width: 100%;
     
+    }
+    #cart-buttons a{
+    background: #fff;
     }
     #cart-buttons .btn {
         padding: 12px 15px;

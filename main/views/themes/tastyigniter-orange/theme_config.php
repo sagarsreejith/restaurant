@@ -49,6 +49,7 @@ $theme['head_tags'] = array(
 		array(theme_url('tastyigniter-orange/slide/css/style.css'), 'style', '28'),
 		array(theme_url('tastyigniter-orange/slide/css/responsive.css'), 'responsive', '29'),
 		array(theme_url('tastyigniter-orange/slide/css/slicknav.min.css'), 'slicknav', '30'),
+		//array(theme_url('tastyigniter-orange/css/track.css'), 'track', '26'),	
 	),
 	'script' => array(
 		
@@ -70,6 +71,8 @@ $theme['head_tags'] = array(
 		array(theme_url('tastyigniter-orange/slide/js/main.js'), 'main', '14'),
 		array(theme_url('tastyigniter-orange/js/fontawesome.min.js'), 'fontawesome-js', '38'),
 		array(theme_url('tastyigniter-orange/js/common.js'), 'common-js', '39'),
+		array(theme_url('tastyigniter-orange/js/track.js'), 'track', '40'),
+
 	),
 );
 
