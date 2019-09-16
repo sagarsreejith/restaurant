@@ -2203,6 +2203,9 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  .prob_part{
+    margin-top:200px;
+  }
   /* #local-menus{
     display:none;
   } */
@@ -5915,3 +5918,4 @@ color: #fff;
     left: 44%;
   }
   }
+ 

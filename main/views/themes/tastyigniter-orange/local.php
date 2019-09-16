@@ -33,7 +33,7 @@
 
             <div class="<?php echo $class; ?>">
 
-                <div class="row wrap-vertical">
+                <div class="row wrap-vertical prob_part">
                     <ul id="nav-tabs" class="nav nav-tabs nav-tabs-line nav-menus menu_tabs">
                         <li class="active" id="menu"><a href="#local-menus" data-toggle="tab"><span class="icon_cl1" ></span><?php echo lang('text_tab_menu'); ?></a></li>
                         <!-- <?php if (config_item('allow_reviews') !== '1') { ?>
