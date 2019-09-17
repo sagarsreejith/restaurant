@@ -1497,7 +1497,7 @@ box-shadow:none;
     text-decoration:none;
   }
   .modal {
-    z-index:9999;
+    z-index:99999;
   }
 
   .partial .text-muted i{
@@ -1897,7 +1897,7 @@ font-size:13px;
     left: 64px !important;
   }
   .bg_payment .progressbar span.list-group-item-heading{
-    left: 110px !important;
+    left: 167px !important;
   }
  
   .about{background-position: -498px 546px !important}
@@ -1963,7 +1963,7 @@ padding: 0 30px;
   font-size: 10px !important;
 }
 #checkout_progress .progressbar .list-group-item-heading{
-  left: 97px;
+  left: 148px;
 }
 #checkout_progress  .progressbar li:after {
 
@@ -2067,7 +2067,7 @@ left: -37%;
     font-size: 13px;
   }
   .bg_payment .progressbar span.list-group-item-heading{
-    left: 86px !important;
+    left: 132px !important;
   }
   .bg_payment .progressbar li:after {
     width: 70%;
@@ -2081,7 +2081,7 @@ left: -37%;
     
   }
   #checkout_progress .progressbar .list-group-item-heading{
-    left: 75px;
+    left: 115px ;
   }
   #checkout_progress .progressbar li:after {
     width: 67%;
@@ -2205,8 +2205,12 @@ margin: 30px 0;
 .grid-item{
   width:100% !important;
 }
+.list_itemm{
+  padding:0 !important;
+}
 }
 @media only screen and (max-width: 767px) {
+
   .menu-options .checkbox {
     padding: 0 22px;
 }
@@ -2408,9 +2412,9 @@ padding-right:0 !important;
 .table-dark_cust td{
   font-size: 12px !important;
 }
-.option-input{
-  left: -7px !important;
-  top: 0;
+.option-input {
+  left: 1px !important;
+  top: 3px !important;
 }
 .checkbox label, .radio label{ padding-left: 0px;}
 
@@ -2445,7 +2449,8 @@ padding-right:0 !important;
   line-height: 15px !important;
 }
  .radio label{
-  font-size: 11px !important;
+  font-size: 14px !important;
+  padding-left: 11px !important;
 }
 .btn_chk .ft_stt{
   color: #333;
@@ -2513,14 +2518,14 @@ padding-right:0 !important;
     font-size: 13px;
   }
   .bg_payment .progressbar span.list-group-item-heading {
-    left: 60px !important;
+    left: 81px !important;
 }
 .bg_payment .progressbar li:after {
   width: 48%;
   left: -24%;
 }
   #checkout_progress .progressbar .list-group-item-heading{
-    left: 60px;
+    left: 96px;
   }
   #checkout_progress .progressbar li:after {
     width: 59%;
@@ -2610,7 +2615,7 @@ padding-right:0 !important;
 @media only screen and (max-width: 400px){
 
   #checkout_progress .progressbar .list-group-item-heading {
-    left: 43px;
+    left: 84px;
 }
 #checkout_progress .progressbar li:after {
   width: 50%;
@@ -2985,8 +2990,14 @@ Toggle Changes
 #fun:checked ~ .smile-rating-toggle {
   left: 171px;
 }
+#checkout_progress .progressbar .list-group-item-heading {
+  left: 69px;
+}
 }
 @media only screen and (max-width: 320px){
+  #checkout_progress .progressbar .list-group-item-heading {
+    left: 69px;
+}
  .comment-amount span{
 font-size:12px;
  }
@@ -3017,7 +3028,7 @@ font-size:12px;
     right:0 !important;
   }
   .bg_payment .progressbar span.list-group-item-heading {
-    left: 41px !important;
+    left: 67px !important;
 }
   .toggle_radio img {
     left: 54px !important;
@@ -3790,7 +3801,7 @@ font-size: 25px;
   margin-right: 0.5rem;
   outline: none;
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 }
 .option-input:hover {
   background: #9faab7;
@@ -4134,9 +4145,7 @@ float: left;
 width:100%;
 height:40px;
 }
-.track_btn:hover{
-  background-color: #ccc;
-}
+
 
 .modal-body{
   position: relative;
@@ -5616,20 +5625,23 @@ color: #fff;
 }
  
 .list_itemm{
-  padding: 0px 21px;
+ 
   FONT-SIZE: 15PX !important;
 }
  
 .list_itemm .option-input{
   float: left;
     position: relative;
-    margin: 0;
+    margin: 0 !important;
     Left:0;
 }
 .radio label{
-  min-height: 0;
-  padding-left: 0;
+  
+    min-height: 0;
+    padding-left: 15px;
+    line-height: 15px;
 }
+
 
 
 
