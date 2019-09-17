@@ -158,7 +158,7 @@
                                  <div class="col-xs-12 col-sm-4 col-md-4">
                                     <?php if (!empty($location_image)) { ?>
                                     <!-- <img class="img-responsive pull-left" src="<?php echo $location_image; ?>"> -->
-                                    <img class="img-responsive pull-left" src="../assets/images/Horeca.jpg">
+                                    <img class="img-responsive pull-left" src="assets/images/Horeca.jpg">
                                     <?php } ?>
                                  </div>
                                  <div class="col-xs-12 col-sm-8 col-md-8">

@@ -148,7 +148,8 @@
     
     }
     .cart-items ul li .options {
-    display: block;
+        display: inline-block;
+        width: 100%;
     }
     .option-amount {
     padding-right: 10px;
