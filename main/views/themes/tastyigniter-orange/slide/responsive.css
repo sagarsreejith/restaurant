@@ -1,0 +1,43 @@
+
+
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 992px) {
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+	}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+
+		}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.search{display:none;}
+		.nav-collapse li {
+    text-align: center;
+}
+header.sticky {
+    padding: 5px 0;
+}
+.logo h1 a img {
+    padding-top: 5px;
+}
+    }
+

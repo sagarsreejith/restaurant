@@ -68,16 +68,13 @@
         <body class="<?php echo $body_class; ?>">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
 
-            <header class="header">
-                <!-- Header Inner -->
+      <header class="header">
+            
                 <div class="main-menu">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3 col-sm-3 col-xs-12 ">
-                                <!-- Logo -->
-                                <!-- <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#main-header-menu-collapse">
-							<i class="fa fa-align-justify"></i>
-						</button> -->
+                               
                                 <div class="logo">
                                     <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
                                         <?php if (get_theme_options( 'logo_image')) { ?>
@@ -92,7 +89,7 @@
                                                                 <?php } ?>
                                     </a>
                                 </div>
-                                <!--/ End Logo -->
+                             
                                 <div class="mobile-nav" ></div>
                             </div>
                             <div class="col-md-9 col-sm-9">
@@ -186,9 +183,8 @@
                         </div>
                     </div>
                 </div>
-                <!--/ End Header Inner -->
-            </header>
-
+               
+            </header> 
             <div class="modal fade popup" id="login" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -552,10 +548,7 @@
 
             <script>
                 $(document).ready(function() {
-                    $("header_li").click(function(){
-      //  $(".slicknav_nav").collapse('hide');
-      alert();
-    });
+             
                 $("#track-msg").hide();
                     $(document).on('click', function(e) {
                         /* bootstrap collapse js adds "in" class to your collapsible element*/

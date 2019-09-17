@@ -96,7 +96,7 @@ transform:translate(-50%,-50%)
 
     .galy .tab-content {
         background-color: #fff;
-    padding: 20px 0;
+
     float: left;
     width: 100%;
     }
@@ -211,8 +211,8 @@ transform:translate(-50%,-50%)
                             <div class="galy">
                                 <ul class="nav nav-tabs">
                                     <div class="owl_1 owl-carousel owl-theme">
-                                        <div class="item"> 
-                                            <li><button data-toggle="tab"  href="#all" class="active">All</button></li>
+                                        <div class="item active"> 
+                                            <li><button data-toggle="tab"  href="#all">All</button></li>
                                         </div>
                                         <div class="item">
                                             <li> <button  data-toggle="tab"  href="#Arabic"> Arabic Sweets</button></li>
@@ -238,7 +238,7 @@ transform:translate(-50%,-50%)
                                     
                                     </div>
                                 </ul>
-                                <div class="tab-content">
+                                <div class="tab-content popup-gallery">
                                     <div id="all" class="tab-pane fade in active">
                                         <div class="col-md-3 nopad grid-item ">
                                             <div class="galllery-item gal_img">
@@ -638,15 +638,48 @@ transform:translate(-50%,-50%)
                                                 </div> -->
                                                 <ul class="location_list">
 
-                                                    <li class="text-muted"><i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                                                Offers delivery only, pick-up is not available.																												
-                                                    </li>
-                                                    <li class="text-muted"><i class="fa fa-motorcycle"></i>
-                                                            Delivery in <b><?php echo $restaurant['delivery_time']; ?></b> minutes
-                                                    </li>
-                                                    <li class="text-muted "><span class="fa fa-suitcase" aria-hidden="true"></span>
-                                                                    Pick-up in <b>30</b> minutes
-                                                    </li>
+                                                    <li class="text-muted">
+                                                            <?php if (!$has_delivery AND $has_collection) { ?>
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            <?php echo lang('text_collection_only'); ?>
+                                                            <?php } else if ($has_delivery AND !$has_collection) { ?>
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            <?php echo lang('text_delivery_only'); ?>
+                                                            <?php } else if ($has_delivery AND $has_collection) { ?>
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            <?php echo lang('text_both_types'); ?>
+                                                            <?php } else { ?>
+                                                            <?php echo lang('text_no_types'); ?>
+                                                            <?php } ?>
+                                                     </li> 
+                                                     <li class="text-muted">
+                                                        <?php if ($has_delivery) { ?>
+                                                        <?php if ($delivery_status === 'open') { ?>
+                                                            <i class="fa fa-motorcycle ic_size"></i>
+                                                        <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_in_minutes'), $delivery_time)); ?>
+                                                        <?php } else if ($delivery_status === 'opening') { ?>
+                                                            <i class="fa fa-motorcycle ic_size"></i>
+                                                        <?php echo sprintf(lang('text_delivery_time_info'), sprintf(lang('text_starts'), $delivery_time)); ?>
+                                                        <?php } else { ?>
+                                                            <i class="fa fa-motorcycle ic_size"></i>
+                                                        <?php echo sprintf(lang('text_delivery_time_info'), lang('text_is_closed')); ?>
+                                                        <?php } ?>
+                                                        <?php } ?>
+                                                    </li> 
+                                                    <li class="text-muted">
+                                                        <?php if ($has_collection) { ?>
+                                                        <?php if ($collection_status === 'open') { ?>
+                                                            <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_in_minutes'), $collection_time)); ?>
+                                                        <?php } else if ($collection_status === 'opening') { ?>
+                                                            <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        <?php echo sprintf(lang('text_collection_time_info'), sprintf(lang('text_starts'), $collection_time)); ?>
+                                                        <?php } else { ?>
+                                                            <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                                        <?php echo sprintf(lang('text_collection_time_info'), lang('text_is_closed')); ?>
+                                                        <?php } ?>
+                                                        <?php } ?>
+                                                    </li> 
                                                      
                                                 </ul>
                                            

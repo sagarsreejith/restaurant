@@ -22,29 +22,29 @@
 			    <div class="col-md-12">
                     <div id="cart-options-alert">
                         <?php if ($cart_option_alert) { ?>
-                            <?php echo $cart_option_alert; ?>
+                            <?php //echo $cart_option_alert; ?>
                         <?php } ?>
                     </div>
 
                     <div class="media popup-gallery" id="menu_cart" >
                         <div class="media-left galllery-item" >
                             <img class="media-object" src="<?php echo $menu_image; ?>">
-                            <?php echo $menu_image; ?>
+                            <?php //echo $menu_image; ?>
                             <div class="overlay">
 								<div class="overlay-content">
 									<a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><i class="fa fa-expand"></i></a>               
 								</div>
 							</div>
                         </div>
+
                         <div class="media-body">
-                            <!-- <h4 class="media-heading" id="media-heading"><?php echo $menu_name; ?></h4> -->
+                           
                             <?php if ($description) { ?>
                                 <p class="description"><?php echo $description; ?></p>
                                 <p class="price"><?php echo $menu_price; ?></p>
                             <?php } ?>
                         </div>
                     </div>
-
                     <div class="menu-quantity form-group clearfix">
                         <div class="col-sm-3 wrap-none">
                             <label for="quantity"><?php echo lang('label_menu_quantity'); ?></label>

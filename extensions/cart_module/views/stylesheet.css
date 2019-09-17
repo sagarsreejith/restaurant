@@ -250,21 +250,13 @@
     font-size: 75%;
     }
     #cart-buttons {
-    /* background-color: #fff;
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    position: fixed;
-    bottom: 0;
-    right:0;
-    left:0;
-    z-index: 9; */
     z-index: 9999999;
     background: red;
     width: 100%;
     
     }
     #cart-buttons a{
-    background: #fff;
+    background: #fff !important;
     }
     #cart-buttons .btn {
         padding: 12px 15px;
@@ -278,7 +270,7 @@
         color: #5c0f22;
         position: absolute;
         background: none;
-        border: 2px solid #6f1e30;
+        border: 1px solid #6f1e30;
         color: #6f1e30;
         font-size: 25px;
         right: 11px;

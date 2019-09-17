@@ -23,7 +23,7 @@ padding:0;
 
 .owl-item { transform: translateZ(0); -webkit-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); -moz-transform: translateZ(0); -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
 .owl-carousel .owl-item img { width: auto; }
-.owl-carousel .owl-nav { display: block; position: absolute; text-indent: inherit; top: 45%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); left: 0; width: 100%; cursor: pointer; z-index: 999; opacity: 0; }
+.owl-carousel .owl-nav { display: block; position: absolute; text-indent: inherit; top: -36%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); left: 0; width: 100%; cursor: pointer; z-index: 999; opacity: 0; }
 .owl-carousel .owl-nav .owl-prev { display: block; position: absolute; text-indent: inherit; left: 0px; width: auto; cursor: pointer; -webkit-transition: opacity 0.3s ease 0s, left 0.3s ease 0s; -moz-transition: opacity 0.3s ease 0s, left 0.3s ease 0s; -ms-transition: opacity 0.3s ease 0s, left 0.3s ease 0s; -o-transition: opacity 0.3s ease 0s, left 0.3s ease 0s; transition: opacity 0.3s ease 0s, left 0.3s ease 0s; }
 .owl-carousel .owl-nav .owl-next { display: block; position: absolute; text-indent: inherit; right: 0px; width: auto; cursor: pointer; -webkit-transition: opacity 0.3s ease 0s, right 0.3s ease 0s; -moz-transition: opacity 0.3s ease 0s, right 0.3s ease 0s; -ms-transition: opacity 0.3s ease 0s, right 0.3s ease 0s; -o-transition: opacity 0.3s ease 0s, right 0.3s ease 0s; transition: opacity 0.3s ease 0s, right 0.3s ease 0s; }
 .owl-carousel .owl-nav .owl-prev i { padding-left: 0px; }
@@ -33,6 +33,10 @@ padding:0;
 .owl-carousel:hover .owl-nav .owl-prev { left: -4%; }
 .owl-carousel:hover .owl-nav .owl-next { right: -4%; }
 .owl-theme .owl-controls { margin-top: 0px; }
+.owl-nav span{
+  font-size: 22px;
+line-height: 11px;
+}
 /* .owl-carousel .owl-controls .owl-dot { display: inline-block; }
 .owl-carousel .owl-dots { display: inline-block; position: relative; text-indent: inherit; width: 100%; cursor: pointer; text-align: center; margin-top: 20px; }
 .owl-carousel.owl-theme .owl-dots .owl-dot span { background: #1e2327; border-radius: 30px; display: inline-block; width: 10px; height: 10px; margin: 0px 3px; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; cursor: pointer; }
@@ -871,12 +875,12 @@ background:#601025 !important;
   margin-right: 10px;
   width: 100%; }
 .isotope-filters  button:focus { outline: none; outline-style: none; outline-offset: 0; }
-.isotope-filters ul li button.active, .isotope-filters ul li button:hover { background: #6f1e30; color: #ffffff; }
+
 .gallery .container-fluid { padding-left: 0; padding-right: 0; position: relative; }
 /* .grid-item {position: relative !important} */
 .grid-item img { -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; width: 100%;  border-radius: 5px !important; }
 .full-screen .grid-item { padding: 0; width: 20%; }
-
+.owl_1  .owl-item .active button, .owl_1  .owl-item .active button:hover { background: #6f1e30; color: #ffffff; }
 /*img hover*/
 .galllery-item { 
   position: relative; 
@@ -2203,6 +2207,15 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  .cookie_del_search{
+    float: left;
+    line-height: 27px;
+ 
+    padding-right: 16px;
+  }
+  .map_st .panel-default>.panel-heading a{
+    padding: 15px 30px !important;
+  }
   .prob_part{
     margin-top:200px;
   }
@@ -2463,7 +2476,7 @@ padding-right:0 !important;
   #cart-buttons .btn{
   padding: 12px 15px;
   position: absolute;
-  top:257px !important;
+  top:224px !important;
   padding: 0px 10px;
   margin: 0px 0 !important;
   display: table;
@@ -3227,6 +3240,7 @@ font-size:12px;
   background: #fff;
   /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2); */
   box-shadow: -4px 0px 2px 0px #6f1e30;
+  z-index:99;
 }
 
 .switch-container .switch-label .switch-slider .theme-icon {
@@ -3934,8 +3948,15 @@ input[type=radio]:checked + label {
   .location_list li .fa{
   color: #6f1e30;
   font-size: 16px; 
+  padding-right:7px;
   }
-  
+  .ic_size{
+    padding-right:2px !important;
+  }
+  .location_list .text-success {
+    color: #6f1e30;
+    font-weight: 600;
+  }
   .goto_menu{       margin: 34px 0px;
     float: left;}
   .goto_menu a{
@@ -4680,7 +4701,7 @@ height:auto !important;
   display:none;
 }
 .hg_bg{
-height:auto !important;
+height:350px !important;
 }
 }
 
@@ -5488,6 +5509,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 10px !important;
   color: #6f1e30;
   border: 1px solid #6f1e30 !important;
+  font-size:14px;
 }
 #local-alert .alert button{
   padding:0 !important;
@@ -5568,11 +5590,6 @@ color: #fff;
   color:#fff;
   background:000;
 }
-
- /* #popup_menu .mfp-zoom-out-cur .mfp-arrow{
-  display:none !important;
-}
- */
 
  .menu_tabs{
    float: left;
@@ -5744,7 +5761,8 @@ color: #fff;
 }
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
-    background-color: rgba(233, 156, 126, 0.8);
+    background-color:#712133;
+    opacity: 0.7;
   }
 }
 .slide:nth-child(2) {
@@ -5759,7 +5777,8 @@ color: #fff;
 }
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
-    background-color: rgba(225, 204, 174, 0.8);
+    background-color:#712133;
+    opacity: 0.7;
   }
 }
 .slide:nth-child(3) {
@@ -5774,7 +5793,8 @@ color: #fff;
 }
 @media (max-width: 991px) {
   .slide:nth-child(3) .slide__text {
-    background-color: rgba(173, 197, 205, 0.8);
+    background-color:#712133;
+    opacity: 0.7;
   }
 }
 .slide:nth-child(4) {
@@ -5789,7 +5809,9 @@ color: #fff;
 }
 @media (max-width: 991px) {
   .slide:nth-child(4) .slide__text {
-    background-color: rgba(203, 198, 195, 0.8);
+    background-color:#712133;
+    opacity: 0.7;
+
   }
 }
 .slide__content {
@@ -5918,4 +5940,5 @@ color: #fff;
     left: 44%;
   }
   }
- 
+
+  
