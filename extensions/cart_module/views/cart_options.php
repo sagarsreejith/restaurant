@@ -1,3 +1,21 @@
+
+<style>
+
+ #menu_cart a img{ border-radius: 5px;
+    box-shadow: 0 0 10px grey;  
+}
+#lightbox .close {
+    opacity: 1;
+    color: rgb(114, 34, 51);
+
+    padding: 0px 7px;
+
+    position: absolute;
+    top: -1px;
+    right: 4px;
+    z-index: 1032;
+}
+    </style>
 <div class="modal-dialog modal-menu-options">
 	<div class="modal-content">
           
@@ -22,29 +40,41 @@
 			    <div class="col-md-12">
                     <div id="cart-options-alert">
                         <?php if ($cart_option_alert) { ?>
-                            <?php //echo $cart_option_alert; ?>
+                            <?php echo $cart_option_alert; ?>
                         <?php } ?>
                     </div>
 
-                    <div class="media popup-gallery" id="menu_cart" >
-                        <div class="media-left galllery-item" >
-                            <img class="media-object" src="<?php echo $menu_image; ?>">
+                    <div class="media col-md-12 col-sm-12 col-xs-12 nopad" id="menu_cart" >
+                        <div class="col-md-3 col-sm-3 col-xs-12 nopad" >
+                        <a href="#" class="" data-toggle="modal" data-target="#lightbox"> 
+                            <img class="" src="<?php echo $menu_image; ?>">
                             <?php //echo $menu_image; ?>
-                            <div class="overlay">
-								<div class="overlay-content">
-									<a class="portfolio-img" href="<?php echo site_url('assets/images/'.$menu['menu_photo_act']); ?>"><i class="fa fa-expand"></i></a>               
-								</div>
-							</div>
+                        </a>   
+                                                    
                         </div>
-
-                        <div class="media-body">
-                           
+                  
+                       
+                        <div class="col-md-9 col-sm-9 col-xs-12 nopad">
+                            <!-- <h4 class="media-heading" id="media-heading"><?php echo $menu_name; ?></h4> -->
                             <?php if ($description) { ?>
                                 <p class="description"><?php echo $description; ?></p>
                                 <p class="price"><?php echo $menu_price; ?></p>
                             <?php } ?>
                         </div>
                     </div>
+                 
+                   
+                    <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
                     <div class="menu-quantity form-group clearfix">
                         <div class="col-sm-3 wrap-none">
                             <label for="quantity"><?php echo lang('label_menu_quantity'); ?></label>
@@ -172,6 +202,31 @@
 		</div>
 	</div>
 </div>
+
+<script>
+    $(document).ready(function() {
+      var $lightbox = $('#lightbox');
+    
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'), 
+            src = $img.attr('src'),
+            alt = $img.attr('alt')
+         
+    
+        $lightbox.find('.close').addClass('hidden');
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+      
+    });
+    
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+            
+       // $lightbox.find('.modal-dialog').css({'width': $img.width()});
+        $lightbox.find('.close').removeClass('hidden');
+    });
+});
+    </script>
 <script type="text/javascript">
 $(document).ready(function() {
 	//$('.option-select select.form-control').selectpicker({showSubtext:true});
@@ -187,6 +242,7 @@ $(document).ready(function() {
 		}
 
 		$button.parent().parent().find('#quantity').val(newVal);
-	});
+    });
+    
 });
 //--></script>

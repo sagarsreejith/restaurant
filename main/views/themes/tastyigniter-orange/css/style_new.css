@@ -2207,6 +2207,9 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  .menu-options .checkbox {
+    padding: 0 22px;
+}
   .cookie_del_search{
     float: left;
     line-height: 27px;
@@ -4238,7 +4241,7 @@ width: 100%;
 background-color: #45a049;
 }
 .responsive_cart{
-  padding: 110px 15px !important;
+  padding: 130px 15px !important;
 }
 .contact_page .contact-box .cnt_div i{
  padding: 4px 7px;
@@ -5941,4 +5944,19 @@ color: #fff;
   }
   }
 
-  
+  .description{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    /* padding: 10px; */
+    padding-top: 10px;
+    margin: 0;
+  }
+  .price{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    /* padding: 10px; */
+    padding-top: 10px;
+    margin: 0;
+  }

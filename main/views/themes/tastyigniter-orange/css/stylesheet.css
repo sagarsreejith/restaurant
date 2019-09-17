@@ -638,13 +638,7 @@ color:#fff;
   transition: width .5s ease,background-color .5s ease;
 }
 
-.nav-tabs-line > li.open a,
-.nav-tabs-line > li:hover,
-.nav-tabs-line > li:focus {
-background-color: #ddd;
-border-bottom: 4px solid #6f1e30;
-border-radius: 3px 3px 0 0;
-}
+
 .tab-content-line {
 /*border-top: 1px solid #eee;*/
 border-radius: 4px;
