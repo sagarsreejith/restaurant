@@ -5972,3 +5972,7 @@ color: #fff;
     padding-top: 10px;
     margin: 0;
   }
+  #local-info{
+    display: block;
+    z-index: 999999;
+  }
