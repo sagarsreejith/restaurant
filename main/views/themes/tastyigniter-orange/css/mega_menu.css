@@ -1398,8 +1398,9 @@
     right: 0;
     max-width: 100%;
     padding: 0px 10px;
-    background: #fff;
-    color: #333 ;
+    background: #6f1e30 !important ;
+    color: #fff  !important ;
+  }
   }
   .mega-menu.desktopTopFixed .menu-list-items .drop-down.grid-col-12,
   .mega-menu.desktopTopFixed .menu-list-items .drop-down-tab-bar.grid-col-12 {
@@ -1420,11 +1421,11 @@
    }
    .mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a { 
     line-height: 71px;
-    color:#333;
+   
   }
    .mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a:hover { 
  
-    color:red;
+   
   }
   .mega-menu:after  {   
  
