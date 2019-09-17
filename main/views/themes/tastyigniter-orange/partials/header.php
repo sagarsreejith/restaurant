@@ -67,8 +67,8 @@
 
         <body class="<?php echo $body_class; ?>">
             <div id="opaclayer" onclick="closeReviewBox();"></div>
-
-      <header class="header">
+<!-- 
+    <header class="header">
             
                 <div class="main-menu">
                     <div class="container">
@@ -184,7 +184,135 @@
                     </div>
                 </div>
                
-            </header> 
+    </header>  -->
+                <header id="header" class="header-2">
+
+
+                    <div class="menu">
+                
+                    <nav id="menu-1" class="mega-menu dark">
+                    
+                        <section class="menu-list-items">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                            
+                                <ul class="menu-logo">
+                                <li class="head-info">
+                                <div class="logo">
+                                    <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
+                                        <?php if (get_theme_options( 'logo_image')) { ?>
+                                            <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>">
+
+                                            <?php } else if (get_theme_options( 'logo_text')) { ?>
+                                                <?php echo get_theme_options( 'logo_text'); ?>
+                                                    <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
+                                                        <?php echo $this->config->item('site_name'); ?>
+                                                            <?php } else { ?>
+                                                                <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>">
+                                                                <?php } ?>
+                                    </a>
+                                </div>
+                                
+                                </li>
+                                </ul>
+
+                              
+                                
+                               
+                            
+                                <ul class=" menu-links nav navbar-nav mobile-menu navbar-right" id="mobile_nav_id">
+                                            <li class="header_li"><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a>
+                                            </li>
+                                            <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a>
+                                            </li>
+                                            <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
+                                            </li>
+
+                                            <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                                <li class="">
+                                                    <a href="<?php echo site_url('reservation'); ?>">
+                                                        <?php echo lang( 'menu_reservation'); ?>
+                                                    </a>
+                                                </li>
+                                                <?php } ?>
+
+                                                    <?php if ($this->customer->isLogged()) { ?>
+
+                                                        <li class="dropdown">
+                                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
+                                                                <?php echo lang( 'menu_my_account'); ?>
+                                                            </a>
+                                                            <ul class="dropdown-menu header_drp " role="menu" aria-labelledby="dropdownLabel1">
+                                                                <div class="top-arrow"></div>
+                                                                <li class="hidden">
+                                                                    <a href="#page-top"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
+                                                                        <?php echo lang( 'menu_recent_order1'); ?>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
+                                                                        <?php echo lang( 'menu_my_account'); ?>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
+                                                                        <?php echo lang( 'menu_address'); ?>
+                                                                    </a>
+                                                                </li>
+
+                                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                                                    <li>
+                                                                        <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
+                                                                            <?php echo lang( 'menu_recent_reservation'); ?>
+                                                                        </a>
+                                                                    </li>
+                                                                    <?php } ?>
+
+                                                                <li>
+                                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
+                                                                        <?php echo lang( 'menu_logout'); ?>
+                                                                    </a>
+                                                                 </li>
+                                                            </ul>
+                                                        </li>
+                                                        <?php } else { ?>
+
+                                                            <li class="">
+                                                                <a href="<?php echo site_url('#locations'); ?>">
+                                                                    <?php echo lang( 'menu_locations'); ?>
+                                                                </a>
+                                                            </li> 
+
+                                                            <li>
+                                                                <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> Login</a>
+
+                                                            </li>
+
+                                                           
+
+                                                            <?php } ?>
+                                                            <li class="">
+                                                                <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
+                                                                    <?php echo lang( 'track_recent_order'); ?>
+                                                                </a>
+                                                            </li>
+
+                                        </ul>
+                            
+                        
+                        </div>
+                        </div> 
+                        </div>
+                    </section>
+                    </nav>
+                
+                    </div>
+                    </header>
+
             <div class="modal fade popup" id="login" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">

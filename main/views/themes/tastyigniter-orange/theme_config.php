@@ -38,7 +38,7 @@ $theme['head_tags'] = array(
 	
 		array(theme_url('tastyigniter-orange/css/footer.css'), 'footer-css', '17'),
 		array(theme_url('tastyigniter-orange/css/style_new.css'), 'style_new-css', '18'),
-		//array(theme_url('tastyigniter-orange/css/mega_menu.css'), 'mega_menu-css', '19'),
+		array(theme_url('tastyigniter-orange/css/mega_menu.css'), 'mega_menu-css', '19'),
 	
 		array(theme_url('tastyigniter-orange/css/compose.css'), 'compose', '22'),
 		array(theme_url('tastyigniter-orange/css/magnific_popup.css'), 'magnific', '23'),
