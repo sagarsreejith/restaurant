@@ -1,8 +1,6 @@
 
 <style>
-.header-2 .mega-menu section.menu-list-items{
-    background:transparent !important;
-}
+
   .mega-menu.desktopTopFixed .menu-list-items {
   /*--------------------------------------------------------- TOP FIXED FOR DESKTOP */
   position: fixed !important;
@@ -17,7 +15,7 @@
 .mega-menu.desktopTopFixed{
     background: #6f1e30 !important ;
 }
-/* 
+
 .header .main-menu {
 	background:#6f1e30;
 	z-index:999;
@@ -33,7 +31,7 @@ width: 100%;
 top: 0;
 animation: fadeInDown 0.8s both 0s;
 background: linear-gradient(5deg,#7a2c3d,#6f1e30) !important;
-} */
+}
 .box-icon-svg .icon-inner{
 position:absolute;
 left:50%;
@@ -212,7 +210,7 @@ transform:translate(-50%,-50%)
         
         <div class="clearfix"></div>
         
-        <div class="clearfix"></div>
+            <div class="clearfix"></div>
                 <section class="gallery white-bg page-section-ptb" id="gallery">
                 <div class="obj_right">
                             <img class="img-responsive book-menu_img " src="assets/images/icon/sec-img-1.png" alt="">
@@ -234,46 +232,41 @@ transform:translate(-50%,-50%)
                     </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="isotope-filters">
-                                    <div class="galy">
-                                        <ul class="nav nav-tabs">
-                                            <div class="owl_1 owl-carousel owl-theme">
-                                                <div class="item active"> 
-                                                    <li><button data-toggle="tab"  href="#all">All</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button  data-toggle="tab"  href="#Arabic"> Arabic Sweets</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button  data-toggle="tab"  href="#Mamoul">Mamoul</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button  data-toggle="tab"  href="#Fresh">Fresh Sweets</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button data-toggle="tab"  href="#Manakeesh">Manakeesh</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button data-toggle="tab"  href="#Sandwiches">Sandwiches</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button   data-toggle="tab"  href="#Appetizer"> Appetizer</button></li>
-                                                </div>
-                                                <div class="item">
-                                                    <li> <button  data-toggle="tab"  href="#emb"> Ambience</button></li>
-                                                </div>
-                                            
-                                            </div>
-                                        </ul>
+                                    
+                                <div class="owl_1 owl-carousel owl-theme"> 
+                                    <div class="item">
+                                        <button data-filter="" class="active">All</button>
                                     </div>
+                                    <div class="item">
+                                         <button data-filter=".Arabic"> Arabic Sweets</button>
+                                    </div>
+                                    <div class="item">
+                                        <button data-filter=".Mamoul">Mamoul</button>
+                                    </div>
+                                    <div class="item">
+                                        <button data-filter=".Fresh">Fresh Sweets</button>
+                                    </div>
+                                    <div class="item">
+                                        <button data-filter=".Manakeesh">Manakeesh</button>
+                                    </div>
+                                    <div class="item">
+                                         <button data-filter=".Sandwiches">Sandwiches</button>
+                                    </div>
+                                    <div class="item">
+                                        <button data-filter=".Appetizer"> Appetizer</button>
+                                    </div>
+                                    <div class="item">
+                                        <button data-filter=".emb"> Ambiance</button>
+                                    </div>
+                                </div>
                                  
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                     <div class="container">
                         <div class="isotope popup-gallery columns-4">
-                        <div class="grid-item " id="fresh">
+                        <div class="grid-item fresh">
                                 <div class="galllery-item gal_img">
                                     <span><img class="img-responsive" src="assets/images/gallery/07.png" alt=""></span>
                                     <div class="overlay">
