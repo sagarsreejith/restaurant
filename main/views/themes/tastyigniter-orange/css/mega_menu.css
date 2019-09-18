@@ -33,6 +33,9 @@
   /*----------------------------- FONT AWESOME ICONS */
   font-family: "FontAwesome";
 }
+.mega-menu .menu-links > li > a:focus{
+  background:none !important;
+}
 .mega-menu img {
   /*------------------------------- IMAGE */
   margin: 0;
@@ -426,7 +429,7 @@
   padding: 0;
   height: 42PX;
   width: 35px;
-  background: #FFF;
+  background: #FFF !important;
   display: none;
   BORDER-RADIUS: 6PX;
   position: absolute;

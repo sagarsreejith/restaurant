@@ -2,6 +2,7 @@
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <div id="page-content" class="mt_st">
+	<div class="clearfix"></div>
 	<div class="container">
 		<div class="row out_div_mar">
 			<?php echo get_partial('content_left'); ?>
@@ -26,12 +27,12 @@
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_one_summary'); ?></p>
 								</a>
 							</li>
-							<!-- <li class="step-two <?php echo ($checkout_step === 'two') ? 'active' : 'disabled'; ?>">
+					 <li class="step-two <?php echo ($checkout_step === 'two') ? 'active' : 'disabled'; ?>">
 								<a>
 								<span class="list-group-item-heading"><i class="fa fa-money"></i></span>
 									<p class="list-group-item-text hidden-xs"><?php echo lang('text_step_two_summary'); ?></p>
 								</a>
-							</li> -->
+							</li>
 							<li class="step-three disabled">
 								<a>
 								<span class="list-group-item-heading"><i class="fa fa-check"></i></span>

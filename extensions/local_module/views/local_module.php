@@ -1,4 +1,5 @@
 <div class="">
+
 <div class="modal fade" id="order_now" role="dialog">
 <div class="modal-dialog  modal-dialog-centered modal_order_now">
    <div class="modal-content">
@@ -475,6 +476,9 @@
       }
       
    $(document).ready(function() {
+      setTimeout(function(){
+         $("#notification").show()
+   }, 5000);
       if(getCookie('order_type') === '2' ){
          $("input[name='odrer_option']").prop("checked", true);
       }
