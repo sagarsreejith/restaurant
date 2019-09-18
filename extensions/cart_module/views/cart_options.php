@@ -222,7 +222,7 @@
     $lightbox.on('shown.bs.modal', function (e) {
         var $img = $lightbox.find('img');
             
-       // $lightbox.find('.modal-dialog').css({'width': $img.width()});
+      
         $lightbox.find('.close').removeClass('hidden');
     });
 });

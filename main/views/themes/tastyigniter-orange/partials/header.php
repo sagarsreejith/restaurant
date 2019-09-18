@@ -929,11 +929,14 @@ $('.main-menu').on('click', 'li', function(){
     $(".modal .close").click();
 });
 $('.mobile-nav').on('click', 'li', function(){
-    $( ".slicknav_btn" ).removeClass( "slicknav_open");
-    $( ".slicknav_btn" ).addClass( "slicknav_collapse slicknav_collapsed" );
-    $( ".slicknav_nav" ).addClass( "slicknav_hidden");
-    $( ".slicknav_nav" ).addClass( "slicknav_hidden");
-    $(".slicknav_nav").css("display", "none");
+    $( "#mobile_nav_id li a" ).removeClass( "#mobile_nav_id_open");
+    $( "#mobile_nav_id li a" ).addClass( "#mobile_nav_id_collapse #mobile_nav_id_collapsed" );
+    $( "#mobile_nav_id" ).addClass( "slicknav_hidden");
+    $( "#mobile_nav_id" ).addClass( "slicknav_hidden");
+    $("#mobile_nav_id").css("display", "none");
     $(".modal .close").click();
+});
+$('#header .mega-menu-item .dropdown-toggle').on('click', function() {
+	$(this).parent().toggleClass('close');
 });
 </script>
