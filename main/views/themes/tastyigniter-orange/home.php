@@ -745,7 +745,7 @@ transform:translate(-50%,-50%)
 var mapOptions = {
     zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    gestureHandling: 'greedy',
+    //gestureHandling: 'greedy',
     center: new google.maps.LatLng(29.3757712, 47.9436413)
 };
 var resta= <?php echo json_encode($restaurants) ?>;

@@ -2,6 +2,7 @@
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 <div id="page-content" class="mt_st">
+	<div class="clearfix"></div>
 	<div class="container">
 		<div class="row out_div_mar">
 			<?php echo get_partial('content_left'); ?>

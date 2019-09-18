@@ -13,6 +13,7 @@
 <?php } ?>
 
 <div >
+<div class="clearfix"></div>
     <div class="container">
         <div class="row out_div_mar">
 
