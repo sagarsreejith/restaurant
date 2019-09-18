@@ -1,8 +1,8 @@
 
 <style>
-/* .header-2 .mega-menu section.menu-list-items{
-    background:transparent !important;
-} */
+.header-2 .mega-menu section.menu-list-items{
+    background:transparent;
+}
 
   /*--------------------------------------------------------- TOP FIXED FOR DESKTOP */
   /* .mega-menu.desktopTopFixed .menu-list-items {

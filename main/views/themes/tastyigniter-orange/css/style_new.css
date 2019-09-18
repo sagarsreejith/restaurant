@@ -1,3 +1,7 @@
+
+
+.header-2 .mega-menu section.menu-list-items { background:#6f1e30; padding: 0; float: none; }
+
 .icon_sec{
 
   display: block;
@@ -2207,6 +2211,10 @@ margin: 30px 0;
   
     margin: 5px 0 !important;
 
+  }
+  .popup-gallery {
+    height:408px !important;
+    overflow: hidden;
   }
   .cart-alert-wrap .alert{
     position:absolute;
@@ -6042,7 +6050,6 @@ color: #fff;
 /*Header 2*/
 .header-2 .topbar { background: #1e2327; padding: 15px 0px; }
 .header-2 .head-info-content { top: 66px; }
-.header-2 .mega-menu section.menu-list-items { background:transparent; padding: 0; float: none; }
 .header-2 .mega-menu img { margin: 15px 0; }
 
 .header-2 .mega-menu .menu-links > li > a.active { color: #ffffff; }
