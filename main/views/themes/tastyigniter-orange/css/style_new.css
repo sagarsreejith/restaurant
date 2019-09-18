@@ -6035,14 +6035,5 @@ color: #fff;
 .header-2 .mega-menu .menu-links > li.active > a, .header-2 .mega-menu .menu-links > li > a:hover { color: #fff;background: none;
   font-weight: 900; }
 .header-2 .mega-menu.desktopTopFixed .head-info-content, .header-3 .mega-menu.desktopTopFixed .head-info-content, .header-4 .mega-menu.desktopTopFixed .head-info-content { top: 46px; }
-.nav>li>a:focus, .nav>li>a:hover{
-      background-color:none !important;
-}
 
-#local-info{
-z-index:9;
-}
-.text-success {
-  color: #6f1e30;
-  font-weight: 600;
-}
+

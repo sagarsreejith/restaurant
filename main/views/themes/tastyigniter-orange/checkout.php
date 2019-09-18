@@ -339,7 +339,7 @@
 									<?php echo form_error('comment', '<span class="text-danger">', '</span>'); ?>
 								</div>
 
-								<div class="list-group">
+								<!-- <div class="list-group">
 									<?php foreach ($payments as $payment) { ?>
 										<?php if (!empty($payment['data'])) { ?>
 											<div class="list-group-item list_itemm">
@@ -347,7 +347,7 @@
 											</div>
 										<?php } ?>
 									<?php } ?>
-								</div>
+								</div> -->
 								<?php echo form_error('payment', '<span class="text-danger err_payment">', '</span>'); ?>
 							
 							</div>
