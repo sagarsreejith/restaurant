@@ -2203,6 +2203,20 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  .cart-alert-wrap .alert > p{
+  
+    margin: 5px 0 !important;
+
+  }
+  .cart-alert-wrap .alert{
+    position:absolute;
+    top:115px;
+  }
+  .grid-item img{
+    max-height:100px !important;
+    min-height:100px !important;
+  }
+  
   .header-2 .mega-menu .menu-links > li.active > a, .header-2 .mega-menu .menu-links > li > a:hover{
     color: #6f1e30 !important;
   }
@@ -2530,7 +2544,7 @@ padding-right:0 !important;
     font-size: 13px;
   }
   .bg_payment .progressbar span.list-group-item-heading {
-    left: 58px !important;
+    left: 50px !important;
 }
 .bg_payment .progressbar li:after {
   width: 48%;
@@ -6028,7 +6042,7 @@ color: #fff;
 /*Header 2*/
 .header-2 .topbar { background: #1e2327; padding: 15px 0px; }
 .header-2 .head-info-content { top: 66px; }
-.header-2 .mega-menu section.menu-list-items { background:#6f1e30; padding: 0; float: none; }
+.header-2 .mega-menu section.menu-list-items { background:transparent; padding: 0; float: none; }
 .header-2 .mega-menu img { margin: 15px 0; }
 
 .header-2 .mega-menu .menu-links > li > a.active { color: #ffffff; }
@@ -6036,27 +6050,19 @@ color: #fff;
   font-weight: 900; }
 .header-2 .mega-menu.desktopTopFixed .head-info-content, .header-3 .mega-menu.desktopTopFixed .head-info-content, .header-4 .mega-menu.desktopTopFixed .head-info-content { top: 46px; }
 
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-  /* header, .nav-tabs, .fa-expand{
-    display:none;
-  } */
-  /* .portfolio-img, .overlay-content,.gal_img, .img-responsive{
-    width: 100px;
-  } */
-  /* .popup-gallery{
-    height:500px;
-    overflow: hidden;
-  } */
-
-  .grid-item, .galllery-item .overlay, .overlay-content{
-    width: 33% !important;
-    float: left;
-  }
-  .galllery-item .overlay, .overlay-content{
-    width: 100% !important;
-  }
-
+.owl_1 .owl-dots {
+display:none !important;
 }
+.owl_1 button.active{
+  background: #6f1e30;
+  color: #fff;
+} 
+
+.grid-item img{
+  max-height:250px;
+  min-height:250px;
+}
+.popup-gallery{
+  margin-top: 20px;
+}
+/*--*/

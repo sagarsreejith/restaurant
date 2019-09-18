@@ -311,9 +311,9 @@
                                     // check if flag true
                                     if (scrollFlag === true) {
                                         // fade out
-                                        $this.fadeOut(20, function () {
+                                        $this.fadeOut(2, function () {
                                             // add class and fade in
-                                            $(this).addClass(desktopTopFixed).fadeIn(200);
+                                            $(this).addClass(desktopTopFixed).fadeIn(2);
                                         });
                                         // scroll flag false
                                         scrollFlag = false;
@@ -322,9 +322,9 @@
                                     // check if flag false
                                     if (scrollFlag === false) {
                                         // fade out
-                                        $this.fadeOut(20, function () {
+                                        $this.fadeOut(2, function () {
                                             // add class and fade in
-                                            $(this).removeClass(desktopTopFixed).fadeIn(200);
+                                            $(this).removeClass(desktopTopFixed).fadeIn(2);
                                         });
                                         // scroll flag true
                                         scrollFlag = true;

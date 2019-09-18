@@ -66,7 +66,7 @@
                    
                     <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <button type="button"  id="cart_options" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
                                     <div class="modal-content">
                                         <div class="modal-body">
                                             <img src="" alt="" />
@@ -244,5 +244,9 @@ $(document).ready(function() {
 		$button.parent().parent().find('#quantity').val(newVal);
     });
     
+    $("#cart_options").click(function(){
+        
+        $('#lightbox').modal('hide');
+    });
 });
 //--></script>
