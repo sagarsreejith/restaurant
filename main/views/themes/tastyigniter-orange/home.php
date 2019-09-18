@@ -1016,12 +1016,9 @@ $(window).scroll(function () {
         //                 e.currentTarget.classList.toggle('collapsible--open')
         //             }))
         $(".header-2 .mega-menu section.menu-list-items").attr("style", "background:transparent !important");
-
         window.addEventListener("scroll", function (event) {
             var scroll = this.scrollY;
             if(scroll < 50 ) {
-//  $("img").attr("width","500");
-
                 $(".header-2 .mega-menu section.menu-list-items").attr("style", "background:transparent !important");
             } else {
                 $(".header-2 .mega-menu section.menu-list-items").removeAttr("style");
