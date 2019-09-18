@@ -2203,6 +2203,9 @@ margin: 30px 0;
 }
 }
 @media only screen and (max-width: 767px) {
+  .header-2 .mega-menu .menu-links > li.active > a, .header-2 .mega-menu .menu-links > li > a:hover{
+    color: #6f1e30 !important;
+  }
   .columns-4 .grid-item { width: 33.33%; padding: 0px; }
   .galllery-item{
     margin: 1px;
