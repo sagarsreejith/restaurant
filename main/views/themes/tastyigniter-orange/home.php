@@ -1,6 +1,8 @@
 
 <style>
-
+.header-2 .mega-menu section.menu-list-items{
+    background:transparent !important;
+}
   .mega-menu.desktopTopFixed .menu-list-items {
   /*--------------------------------------------------------- TOP FIXED FOR DESKTOP */
   position: fixed !important;
@@ -15,7 +17,7 @@
 .mega-menu.desktopTopFixed{
     background: #6f1e30 !important ;
 }
-
+/* 
 .header .main-menu {
 	background:#6f1e30;
 	z-index:999;
@@ -31,7 +33,7 @@ width: 100%;
 top: 0;
 animation: fadeInDown 0.8s both 0s;
 background: linear-gradient(5deg,#7a2c3d,#6f1e30) !important;
-}
+} */
 .box-icon-svg .icon-inner{
 position:absolute;
 left:50%;
