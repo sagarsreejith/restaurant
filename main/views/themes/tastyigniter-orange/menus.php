@@ -1,3 +1,9 @@
+
+<style>
+	#local-info{
+		z-index: 9999 !important;
+	}
+	</style>
 <?php echo get_header(); ?>
 <?php echo get_partial('content_top'); ?>
 

@@ -11,7 +11,7 @@
 /*  max-width: 1280px;
   width: 100%;*/
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+
   min-height: 50px;
   clear: both;
   box-sizing: border-box;
@@ -22,16 +22,6 @@
     margin: 0;
     /*min-width: 200px;*/
   }
-}
-.mega-menu * {
-  outline: none;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box !important;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  -webkit-tap-highlight-color: transparent;
-  text-align: left;
 }
 
 @media screen and (max-width: 992px) {
@@ -48,7 +38,7 @@
   margin: 0;
   padding: 0;
   display: block;
-  max-width: 100% !important;
+  max-width: 79% !important;
   float: left;
   /*height: 49px;*/
 }
@@ -217,7 +207,7 @@
   width: 100%;
   color: #ffffff;
   font-size: 0.933em;
-  line-height: 64px;
+  line-height: 94px;
   position: relative;
   text-transform: capitalize;
 }
@@ -434,12 +424,13 @@
   /*------------------------------------------------------ MOBILE COLLAPSE TRIGGER BUTTON */
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: 42PX;
   width: 35px;
-  background: transparent;
+  background: #FFF;
   display: none;
+  BORDER-RADIUS: 6PX;
   position: absolute;
-  top: 0;
+  top: 26px;
   right: 0;
   z-index: 100;
   float: right;
@@ -457,7 +448,7 @@
   display: block;
   height: 2px;
   width: 26px;
-  background: #ffffff;
+  background: #6f1e30;
   position: absolute;
   top: 13px;
   border-radius: 3px;
@@ -1385,44 +1376,16 @@
 
 @media screen and (max-width: 992px) {
   .mega-menu .desktopTriggerButton {
-    display: none;
+    display: block;
   }
 }
 
-@media screen and (min-width: 993px) {
-  .mega-menu.desktopTopFixed .menu-list-items {
-    /*--------------------------------------------------------- TOP FIXED FOR DESKTOP */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-    padding: 0px 10px;
-    background: #6f1e30 !important ;
-    color: #fff  !important ;
-  }
-  }
-  .mega-menu.desktopTopFixed .menu-list-items .drop-down.grid-col-12,
-  .mega-menu.desktopTopFixed .menu-list-items .drop-down-tab-bar.grid-col-12 {
-    width: 100%;
-    margin: 0px;
-  }
-  .mega-menu.desktopTopFixed .menu-list-items .menu-logo > li > a img {
-    height: 41px;
-    padding-top: 0px;
-    margin: 15px 0px;
-    /*width: 75%;*/
-   }
-   .mega-menu.desktopTopFixed .menu-list-items .menu-logo > li > .hide_logo{
-    display:none;
-   }
+
+  
    .mega-menu.desktopTopFixed .menu-list-items .menu-logo > li > .hide_logon{
     display:block !important;
    }
-   .mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a { 
-    line-height: 71px;
-   
-  }
+ 
    .mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a:hover { 
  
    
@@ -1843,4 +1806,16 @@
     /*--------------------------------------------------- make menu full width */
     max-width: 100%;
   }
+}
+
+.mega-menu.desktopTopFixed .menu-list-items {
+  /*--------------------------------------------------------- TOP FIXED FOR DESKTOP */
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  padding: 0px 10px;
+  background: #6f1e30 !important ;
+  color: #fff  !important ;
 }

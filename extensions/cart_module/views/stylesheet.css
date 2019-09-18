@@ -3,7 +3,7 @@
     }
     #cart-box-affix.affix {
     position: fixed !important;
-    top:110px;
+    top:130px;
     z-index: 999;
     }
     #cart-box-affix .panel-cart {
@@ -251,7 +251,7 @@
     font-size: 75%;
     }
     #cart-buttons {
-    z-index: 9999 !important;
+    z-index: 99!important;
     background: red;
     width: 100%;
     

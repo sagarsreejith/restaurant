@@ -601,6 +601,17 @@ background-color: #751a2e;
 color:#fff;
 outline: 0 none;
 }
+.menu_tabs  > li.active > a:hover{
+  border: 0 none;
+background-color: #751a2e !important;
+color:#fff !important;
+outline: 0 none;
+font-weight:900;
+}
+.menu-list  a{
+text-decoration:none;
+}
+
 .nav-tabs-line > li.open > a,
 .nav-tabs-line > li:hover > a,
 .nav-tabs-line > li:focus > a {
@@ -1627,9 +1638,10 @@ padding-right:0 !important;
     background: linear-gradient(5deg, #851c34, #741a2e);
     width: 100%;
     position: fixed;
-    margin-top: 72px;
+    margin-top: 90px;
     float: left;
     z-index: 99;
+    box-shadow: 0 0 10px 0 #000;
   }
   #local-info {
     display: block;
@@ -1723,7 +1735,7 @@ padding-right:0 !important;
         font-size: 13px;
       }
       #breadcrumb{
-        margin-top: 73px !important;
+        margin-top: 93px !important;
       }
       #heading h2{
         padding: 46px 0!important;
@@ -1750,7 +1762,7 @@ padding-right:0 !important;
   }
  
   #breadcrumb{
-    margin-top: 67px !important;
+    margin-top: 87px !important;
   }
   #heading h2{
     padding: 46px 0!important;
@@ -1763,7 +1775,7 @@ padding-right:0 !important;
     padding:0 1px !important;
   }
   #breadcrumb{
-    margin-top: 67px !important;
+    margin-top: 87px !important;
   }
   #heading h2{
     padding: 46px 0!important;
@@ -1821,7 +1833,7 @@ background:#f8f8f8;
 
 @media only screen and (max-width: 550px) {
   #breadcrumb{
-    margin-top: 67px !important;
+    margin-top: 85px !important;
   }
   #heading h2{
     padding: 0px 0!important;
