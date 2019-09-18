@@ -1,10 +1,11 @@
 
 <style>
-.header-2 .mega-menu section.menu-list-items{
+/* .header-2 .mega-menu section.menu-list-items{
     background:transparent !important;
-}
-  .mega-menu.desktopTopFixed .menu-list-items {
+} */
+
   /*--------------------------------------------------------- TOP FIXED FOR DESKTOP */
+  /* .mega-menu.desktopTopFixed .menu-list-items {
   position: fixed !important;
   top: 0;
   left: 0;
@@ -16,7 +17,7 @@
 }
 .mega-menu.desktopTopFixed{
     background: #6f1e30 !important ;
-}
+} */
 /* 
 .header .main-menu {
 	background:#6f1e30;
@@ -1000,13 +1001,13 @@ $(window).scroll(function () {
 	$('.contact-form').each(_checkOffset('animated fadeInLeft'));
   $('.contact-map').each(_checkOffset('animated fadeInRight'));
 	
-	jQuery(window).on('scroll', function() {
-		if ($(this).scrollTop() > 100) {
-			$('.header .main-menu').addClass("sticky");
-		} else {
-			$('.header .main-menu').removeClass("sticky");
-		}
-		});
+	// jQuery(window).on('scroll', function() {
+	// 	if ($(this).scrollTop() > 100) {
+	// 		$('.header .main-menu').addClass("sticky");
+	// 	} else {
+	// 		$('.header .main-menu').removeClass("sticky");
+	// 	}
+	// 	});
 });
 </script>
 <script>
@@ -1014,6 +1015,19 @@ $(window).scroll(function () {
         // document.querySelectorAll('.collapsible').forEach(el => el.addEventListener('click', e => {
         //                 e.currentTarget.classList.toggle('collapsible--open')
         //             }))
+        $(".header-2 .mega-menu section.menu-list-items").attr("style", "background:transparent !important");
+
+        window.addEventListener("scroll", function (event) {
+            var scroll = this.scrollY;
+            if(scroll < 50 ) {
+//  $("img").attr("width","500");
+
+                $(".header-2 .mega-menu section.menu-list-items").attr("style", "background:transparent !important");
+            } else {
+                $(".header-2 .mega-menu section.menu-list-items").removeAttr("style");
+            }
+           
+        });
                     $('.panel-collapse').collapse('hide');
                             if(getCookie('order_type') === ""){
                                 document.cookie = "order_type=1; path=/";

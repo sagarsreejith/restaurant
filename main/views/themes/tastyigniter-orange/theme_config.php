@@ -64,7 +64,7 @@ $theme['head_tags'] = array(
 		array(theme_url('tastyigniter-orange/js/select2.js'), 'select-2-js', '7'),
 		array(theme_url('tastyigniter-orange/js/jquery.raty.js'), 'jquery-raty-js', '8'),
 		array(theme_url('tastyigniter-orange/slide/js/jquery.slicknav.min.js'), 'slicknav-min', '9'),
-		array(theme_url('tastyigniter-orange/slide/js/jquery.scrollUp.min.js'), 'scrollUp-min', '10'),
+		// array(theme_url('tastyigniter-orange/slide/js/jquery.scrollUp.min.js'), 'scrollUp-min', '10'),
 		array(theme_url('tastyigniter-orange/slide/js/jquery.stellar.min.js'), 'stellar.min-js', '12'),
 		array(theme_url('tastyigniter-orange/slide/js/onepage-nav.min.js'), 'onepage-js', '13'),
 		array(theme_url('tastyigniter-orange/slide/js/typed.min.js'), 'typed-js', '11'),
