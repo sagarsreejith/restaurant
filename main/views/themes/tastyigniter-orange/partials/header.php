@@ -65,539 +65,337 @@
 
         </head>
 
-        <body class="<?php echo $body_class; ?>">
-            <div id="opaclayer" onclick="closeReviewBox();"></div>
-<!-- 
-    <header class="header">
-            
-                <div class="main-menu">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-12 ">
-                               
-                                <div class="logo">
-                                    <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
-                                        <?php if (get_theme_options( 'logo_image')) { ?>
-                                            <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>">
-
-                                            <?php } else if (get_theme_options( 'logo_text')) { ?>
-                                                <?php echo get_theme_options( 'logo_text'); ?>
-                                                    <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
-                                                        <?php echo $this->config->item('site_name'); ?>
-                                                            <?php } else { ?>
-                                                                <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>">
-                                                                <?php } ?>
-                                    </a>
-                                </div>
-                             
-                                <div class="mobile-nav" ></div>
-                            </div>
-                            <div class="col-md-9 col-sm-9">
-                                <nav class="navbar menu navbar-default">
-                                    <div class="collapse navbar-collapse">
-
-                                        <ul class="nav navbar-nav mobile-menu navbar-right" id="mobile_nav_id">
-                                            <li class="header_li"><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a>
-                                            </li>
-                                            <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a>
-                                            </li>
-                                            <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
-                                            </li>
-
-                                            <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                <li class="">
-                                                    <a href="<?php echo site_url('reservation'); ?>">
-                                                        <?php echo lang( 'menu_reservation'); ?>
-                                                    </a>
-                                                </li>
-                                                <?php } ?>
-
-                                                    <?php if ($this->customer->isLogged()) { ?>
-
-                                                        <li class="dropdown">
-                                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
-                                                                <?php echo lang( 'menu_my_account'); ?>
-                                                            </a>
-                                                            <ul class="dropdown-menu header_drp " role="menu" aria-labelledby="dropdownLabel1">
-                                                                <div class="top-arrow"></div>
-                                                                <li class="hidden">
-                                                                    <a href="#page-top"></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
-                                                                        <?php echo lang( 'menu_recent_order1'); ?>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
-                                                                        <?php echo lang( 'menu_my_account'); ?>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
-                                                                        <?php echo lang( 'menu_address'); ?>
-                                                                    </a>
-                                                                </li>
-
-                                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                                    <li>
-                                                                        <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
-                                                                            <?php echo lang( 'menu_recent_reservation'); ?>
-                                                                        </a>
-                                                                    </li>
-                                                                    <?php } ?>
-
-                                                                <li>
-                                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
-                                                                        <?php echo lang( 'menu_logout'); ?>
-                                                                    </a>
-                                                                 </li>
-                                                            </ul>
-                                                        </li>
-                                                        <?php } else { ?>
-
-                                                            <li class="">
-                                                                <a href="<?php echo site_url('#locations'); ?>">
-                                                                    <?php echo lang( 'menu_locations'); ?>
-                                                                </a>
-                                                            </li> 
-
-                                                            <li>
-                                                                <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> Login</a>
-
-                                                            </li>
-
-                                                           
-
-                                                            <?php } ?>
-                                                            <li class="">
-                                                                <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
-                                                                    <?php echo lang( 'track_recent_order'); ?>
-                                                                </a>
-                                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-    </header>  -->
-                <header id="header" class="header-2">
-
-
-                    <div class="menu">
-                
-                    <nav id="menu-1" class="mega-menu dark">
-                    
+<body class="<?php echo $body_class; ?>">
+    <div id="opaclayer" onclick="closeReviewBox();"></div>
+        <header id="header" class="header-2">
+            <div class="menu">
+                <nav id="menu-1" class="mega-menu dark">
                     <section class="menu-list-items">
                         <div class="container">
                             <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                            
-                                <ul class="menu-logo">
-                                <li class="head-info">
-                                <div class="logo">
-                                    <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
-                                        <?php if (get_theme_options( 'logo_image')) { ?>
-                                            <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>">
+                                <div class="col-lg-12 col-md-12">
+                                    <ul class="menu-logo">
+                                        <li class="head-info">
+                                            <div class="logo">
+                                                <a class="" href="<?php echo rtrim(site_url(), '/').'/'; ?>">
 
-                                            <?php } else if (get_theme_options( 'logo_text')) { ?>
-                                                <?php echo get_theme_options( 'logo_text'); ?>
-                                                    <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
-                                                        <?php echo $this->config->item('site_name'); ?>
-                                                            <?php } else { ?>
-                                                                <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>">
-                                                                <?php } ?>
-                                    </a>
-                                </div>
+                                                    <?php if (get_theme_options( 'logo_image')) { ?>
+                                                        <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url(get_theme_options('logo_image')) ?>">
+
+                                                        <?php } else if (get_theme_options( 'logo_text')) { ?>
+                                                            <?php echo get_theme_options( 'logo_text'); ?>
+                                                                <?php } else if ($this->config->item('site_logo') === 'data/no_photo.png') { ?>
+                                                                    <?php echo $this->config->item('site_name'); ?>
+                                                                        <?php } else { ?>
+                                                                            <img alt="<?php echo $this->config->item('site_name'); ?>" src="<?php echo image_url($this->config->item('site_logo')) ?>">
+                                                                            <?php } ?>
+                                                </a>
+                                            </div>
                                 
-                                </li>
-                                </ul>
-
-                              
-                                
-                               
-                            
-                                <ul class=" menu-links nav navbar-nav mobile-menu navbar-right" id="mobile_nav_id">
-                                            <li class="header_li"><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a>
-                                            </li>
-                                            <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a>
-                                            </li>
-                                            <li class="header_li"><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
-                                            </li>
-
-                                            <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                <li class="">
-                                                    <a href="<?php echo site_url('reservation'); ?>">
-                                                        <?php echo lang( 'menu_reservation'); ?>
+                                        </li>
+                                    </ul>
+                                    <ul class=" menu-links nav navbar-nav mobile-menu navbar-right" id="mobile_nav_id">
+                                        <li class="header_li"><a role="presentation" href="<?php echo site_url(''); ?>" active>Home</a></li>
+                                        <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a></li>
+                                        <li class="header_li"><a href="<?php echo site_url('#gallery'); ?>">Gallery</a></li>
+                                        <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                            <li class=""><a href="<?php echo site_url('reservation'); ?>"><?php echo lang( 'menu_reservation'); ?></a></li>
+                                        <?php } ?>
+                                        <?php if ($this->customer->isLogged()) { ?>
+                                        <li class="dropdown header_li ">
+                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
+                                                <?php echo lang( 'menu_my_account'); ?>
+                                            </a>             
+                                            <ul class="dropdown-menu header_drp " role="menu" aria-labelledby="dropdownLabel1">
+                                                <div class="top-arrow"></div>
+                                                <li class="hidden"><a href="#page-top"></a></li>
+                                                <li class="header_li">
+                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
+                                                        <?php echo lang( 'menu_recent_order1'); ?>
                                                     </a>
                                                 </li>
+                                                <li class="header_li">
+                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
+                                                        <?php echo lang( 'menu_my_account'); ?>
+                                                    </a>
+                                                </li>
+                                                <li class="header_li">
+                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
+                                                        <?php echo lang( 'menu_address'); ?>
+                                                    </a>
+                                                </li>
+                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
+                                                    <li class="header_li">
+                                                        <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
+                                                            <?php echo lang( 'menu_recent_reservation'); ?>
+                                                        </a>
+                                                    </li>
                                                 <?php } ?>
-
-                                                    <?php if ($this->customer->isLogged()) { ?>
-
-                                                        <li class="dropdown header_li ">
-                                                            <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
-                                                                <?php echo lang( 'menu_my_account'); ?>
-                                                            </a>
-                                                            <ul class="dropdown-menu header_drp " role="menu" aria-labelledby="dropdownLabel1">
-                                                                <div class="top-arrow"></div>
-                                                                <li class="hidden">
-                                                                    <a href="#page-top"></a>
-                                                                </li>
-                                                                <li class="header_li">
-                                                                    <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
-                                                                        <?php echo lang( 'menu_recent_order1'); ?>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="header_li">
-                                                                    <a role="presentation" href="<?php echo site_url('account/account'); ?>">
-                                                                        <?php echo lang( 'menu_my_account'); ?>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="header_li">
-                                                                    <a role="presentation" href="<?php echo site_url('account/address'); ?>">
-                                                                        <?php echo lang( 'menu_address'); ?>
-                                                                    </a>
-                                                                </li>
-
-                                                                <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                                    <li class="header_li">
-                                                                        <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
-                                                                            <?php echo lang( 'menu_recent_reservation'); ?>
-                                                                        </a>
-                                                                    </li>
-                                                                    <?php } ?>
-
-                                                                <li class="header_li">
-                                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
-                                                                        <?php echo lang( 'menu_logout'); ?>
-                                                                    </a>
-                                                                 </li>
-                                                            </ul>
-                                                        </li>
-                                                        <?php } else { ?>
-
-                                                            <li class="header_li">
-                                                                <a href="<?php echo site_url('#locations'); ?>">
-                                                                    <?php echo lang( 'menu_locations'); ?>
-                                                                </a>
-                                                            </li> 
-
-                                                            <li class="header_li">
-                                                                <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> Login</a>
-
-                                                            </li>
-
-                                                           
-
-                                                            <?php } ?>
-                                                            <li class="header_li">
-                                                                <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
-                                                                    <?php echo lang( 'track_recent_order'); ?>
-                                                                </a>
-                                                            </li>
-
-                                        </ul>
-                            
-                        
-                        </div>
-                        </div> 
+                                                <li class="header_li">
+                                                    <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
+                                                        <?php echo lang( 'menu_logout'); ?>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <?php } else { ?>
+                                        <li class="header_li">
+                                            <a href="<?php echo site_url('#locations'); ?>">
+                                                <?php echo lang( 'menu_locations'); ?>
+                                            </a>
+                                        </li> 
+                                        <li class="header_li">
+                                            <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> Login</a>
+                                        </li>
+                                        <?php } ?>
+                                        <li class="header_li">
+                                            <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
+                                                <?php echo lang( 'track_recent_order'); ?>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
                         </div>
                     </section>
-                    </nav>
-                
-                    </div>
-                    </header>
-
-            <div class="modal fade popup" id="login" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-
-                            <div class="section-title text-center">
-                                <div class="title-separator">
-                                
-                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_modal_login'); ?></span></h2>
-                                    <span class="under-heading"></span>
-                                </div>
-
+                </nav>
+            </div>
+        </header>
+        <div class="modal fade popup" id="login" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="section-title text-center">
+                            <div class="title-separator">
+                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_modal_login'); ?></span></h2>
+                                <span class="under-heading"></span>
                             </div>
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
                         </div>
-                        
-                        <div class="modal-body">
-
-                            <?php if ($this->alert->get('', 'alert')) { ?>
-                                <div id="notification">
-                                    <?php echo $this->alert->display('', 'alert'); ?>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <?php if ($this->alert->get('', 'alert')) { ?>
+                            <div id="notification">
+                                <?php echo $this->alert->display('', 'alert'); ?>
+                            </div>
+                        <?php } ?>
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('emailid'); ?>" autofocus="" />
                                 </div>
-                                <?php } ?>
-                                    <fieldset>
-                                       
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <i class="fa fa-envelope prefix"></i>
-                                                <input type="text" name="email" id="login-email" class="form-control input-lg" placeholder="<?php echo lang('emailid'); ?>" autofocus="" />
-                                                <!-- <span class="input-group-addon">@</span> -->
-                                            </div>
-                                            <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                 <i class="fa fa-lock"></i>
-                                                <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
-                                             
-                                            </div>
-                                            <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
-                                                <span class="text-danger" id="login-error"></span>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <button class="btn btn-primary btn-block btn-lg" onclick="login()">
-                                                        Login
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                                    <a class="forgot_btn1  " data-dismiss="modal" data-toggle="modal" data-target="#reset">
-                                                Forgot Passowrd?
-                                            </a>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                                    <a class=" reg_btn1 text-right" data-dismiss="modal" data-toggle="modal" data-target="#register"> Register</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
+                                <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <i class="fa fa-lock"></i>
+                                    <input type="password" name="password" id="login-password" class="form-control input-lg" placeholder="<?php echo lang('label_password'); ?>" />
+                                </div>
+                                <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?>
+                                    <span class="text-danger" id="login-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary btn-block btn-lg" onclick="login()">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a class="forgot_btn1  " data-dismiss="modal" data-toggle="modal" data-target="#reset">
+                                            Forgot Passowrd?
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a class=" reg_btn1 text-right" data-dismiss="modal" data-toggle="modal" data-target="#register"> Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
 
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="modal fade popup" id="register" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog " role="document">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-
-                            <div class="section-title text-center">
-                                <div class="title-separator">
-                                    <!-- <img src="assets/images/food_icon.png"> -->
-                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_register'); ?></span></h2>
-                                    <span class="under-heading"></span>
-                                </div>
-
+        </div>
+        <div class="modal fade popup" id="register" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <div class="section-title text-center">
+                            <div class="title-separator">
+                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_register'); ?></span></h2>
+                                <span class="under-heading"></span>
                             </div>
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
-                         <div class="modal-body">
-                                <div id="register-form" class="content-wrap col-sm-12 center-block">
-                                    <div id="registration-notification" > </div>
-                                      
-                                        <form id="register_form" accept-charset="utf-8" action="" role="form" class="">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <i class="fa fa-user prefix" aria-hidden="true"></i>
-                                                            <input type="text" id="fullname" class="form-control input-lg" value="<?php echo set_value('fullname'); ?>" name="first_name" placeholder="<?php echo lang('label_first_name'); ?>" autofocus="">
-                                                            <?php echo form_error('first-name', '<span class="text-danger">', '</span>'); ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <i class="fa fa-phone prefix" aria-hidden="true"></i>
-                                                            <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
-                                                            <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>      
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                         </div>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="register-form" class="content-wrap col-sm-12 center-block">
+                            <div id="registration-notification" > </div>
+                                <form id="register_form" accept-charset="utf-8" action="" role="form" class="">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <i class="fa fa-envelope  prefix" aria-hidden="true"></i>
-                                                    <input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
-                                                    <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                                                    <i class="fa fa-user prefix" aria-hidden="true"></i>
+                                                    <input type="text" id="fullname" class="form-control input-lg" value="<?php echo set_value('fullname'); ?>" name="first_name" placeholder="<?php echo lang('label_first_name'); ?>" autofocus="">
+                                                    <?php echo form_error('first-name', '<span class="text-danger">', '</span>'); ?>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <i class="fa fa-key prefix" aria-hidden="true"></i>
-                                                            <input type="password" id="password" class="form-control input-lg" value="" name="password" placeholder="<?php echo lang('label_password'); ?>">
-                                                            <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <i class="fa fa-key prefix" aria-hidden="true"></i>
-                                                            <input type="password" id="password-confirm" class="form-control input-lg" name="password_confirm" value="" placeholder="<?php echo lang('label_password_confirm'); ?>">
-                                                            <?php echo form_error('password-confirm', '<span class="text-danger">', '</span>'); ?> 
-                                                        </div>
-                                                    </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <i class="fa fa-phone prefix" aria-hidden="true"></i>
+                                                    <input type="text" id="telephone" class="form-control input-lg" value="<?php echo set_value('telephone'); ?>" name="telephone" placeholder="<?php echo lang('label_telephone'); ?>">
+                                                    <?php echo form_error('telephone', '<span class="text-danger">', '</span>'); ?>      
                                                 </div>
                                             </div>
-
-                                            <div class="row">
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <div class="col-xs-8 col-sm-9 col-md-12 connt_clr">
-                                                                <span class="button-checkbox" id="button-checkbox">
-                                                                    <button id="terms-condition" type="button" class="btn_box" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_terms_agree'); ?></button>
-                                                                    <input type="checkbox" name="terms_condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
-                                                                 </span>
-                                                                <?php echo sprintf(lang('label_terms'), $registration_terms); ?>
-                                                            </div>
-                                                             <?php echo form_error('terms_condition', '<span class="text-danger">', '</span>'); ?>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                               
-                                            <div class="row">
-                                                        <div class="col-xs-12 col-md-6">
-                                                            <button type="submit" class="btn btn-primary btn-block btn-lg">
-                                                                <?php echo lang('button_register'); ?>
-                                                            </button>
-                                                        </div>
-                                                        <div class="col-xs-12 col-md-6">
-                                                            <a href="" data-toggle="modal" data-target="#login" data-dismiss="modal" class="btn btn-default btn-block btn-lg">
-                                                                <?php echo lang('button_login'); ?>
-                                                            </a>
-                                                        </div>
-                                            </div>
-
-                                                  
-                                        </form>
-                                </div>
-                        </div>
-                           
-
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="terms-modal" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <div class="section-title text-center">
-                                <div class="title-separator">
-                                    <!-- <img src="assets/images/food_icon.png"> -->
-                                    <h2 class="reg_st"> <span class="text-orange forgot">Terms and Condition</span></h2>
-                                    <span class="under-heading"></span>
-                                </div>
-
-                            </div>
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                                                                <h4>	Introduction</h4>
-                                                                <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. Minors or people below 18 years old are not allowed to use this Website.</p>
-
-                                                                <h4> Intellectual Property Rights</h4>
-                                                                <p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-
-            <div class="modal fade" id="reset" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      
-
-                        <div class="modal-header">
-
-                            <div class="section-title text-center">
-                                <div class="title-separator">
-                                    <!-- <img src="assets/images/food_icon.png"> -->
-                                    <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_reset'); ?></span></h2>
-                                    <span class="under-heading"></span>
-                                </div>
-
-                            </div>
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <?php if ($this->alert->get('', 'alert')) { ?>
-                                <div id="notification">
-                                    <?php echo $this->alert->display('', 'alert'); ?>
-                                </div>
-                                <?php } ?>
-                                    <p class="text-center">
-                                        <?php echo lang('text_summary'); ?>
-                                    </p>
-                                    <div class="form-group">
-                                        <input name="email" type="text" id="reset-email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
-                                        <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?></td>
+                                        </div>
                                     </div>
-                                    <div class="row text-center" id="rest-msg"></div>
-                                    <div class="row text-center">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <i class="fa fa-envelope  prefix" aria-hidden="true"></i>
+                                            <input type="text" id="email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" name="email" placeholder="<?php echo lang('label_email'); ?>">
+                                            <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <i class="fa fa-key prefix" aria-hidden="true"></i>
+                                                    <input type="password" id="password" class="form-control input-lg" value="" name="password" placeholder="<?php echo lang('label_password'); ?>">
+                                                    <?php echo form_error('password', '<span class="text-danger">', '</span>'); ?> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <i class="fa fa-key prefix" aria-hidden="true"></i>
+                                                    <input type="password" id="password-confirm" class="form-control input-lg" name="password_confirm" value="" placeholder="<?php echo lang('label_password_confirm'); ?>">
+                                                    <?php echo form_error('password-confirm', '<span class="text-danger">', '</span>'); ?> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="col-xs-8 col-sm-9 col-md-12 connt_clr">
+                                                    <span class="button-checkbox" id="button-checkbox">
+                                                        <button id="terms-condition" type="button" class="btn_box" data-color="info" tabindex="7">&nbsp;&nbsp;<?php echo lang('button_terms_agree'); ?></button>
+                                                        <input type="checkbox" name="terms_condition" class="hidden" value="1" <?php echo set_checkbox('terms_condition', '1'); ?>>
+                                                    </span>
+                                                    <?php echo sprintf(lang('label_terms'), $registration_terms); ?>
+                                                </div>
+                                                <?php echo form_error('terms_condition', '<span class="text-danger">', '</span>'); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-xs-12 col-md-6">
-                                            <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="rest_password()">
-                                                <?php echo lang('button_reset'); ?>
+                                            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                                                <?php echo lang('button_register'); ?>
                                             </button>
                                         </div>
                                         <div class="col-xs-12 col-md-6">
-                                            <a class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#login" data-dismiss="modal">
+                                            <a href="" data-toggle="modal" data-target="#login" data-dismiss="modal" class="btn btn-default btn-block btn-lg">
                                                 <?php echo lang('button_login'); ?>
                                             </a>
                                         </div>
                                     </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Button trigger modal -->
-              
-
-                <!-- Modal -->
-                <div class="modal fade" id="track-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+        </div>
+        <div class="modal fade" id="terms-modal" data-dismiss="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
                     <div class="modal-header">
-
                         <div class="section-title text-center">
                             <div class="title-separator">
-                                <!-- <img src="assets/images/food_icon.png"> -->
+                                <h2 class="reg_st"> <span class="text-orange forgot">Terms and Condition</span></h2>
+                                <span class="under-heading"></span>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Introduction</h4>
+                        <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. Minors or people below 18 years old are not allowed to use this Website.</p>
+                        <h4> Intellectual Property Rights</h4>
+                        <p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="reset" tabindex="-1" data-dismiss="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"> 
+                        <div class="section-title text-center">
+                            <div class="title-separator">
+                                <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_reset'); ?></span></h2>
+                                <span class="under-heading"></span>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <?php if ($this->alert->get('', 'alert')) { ?>
+                            <div id="notification">
+                                <?php echo $this->alert->display('', 'alert'); ?>
+                            </div>
+                        <?php } ?>
+                        <p class="text-center">
+                            <?php echo lang('text_summary'); ?>
+                        </p>
+                        <div class="form-group">
+                            <input name="email" type="text" id="reset-email" class="form-control input-lg" value="<?php echo set_value('email'); ?>" placeholder="<?php echo lang('label_email'); ?>" />
+                            <?php echo form_error('email', '<span class="text-danger">', '</span>'); ?></td>
+                        </div>
+                        <div class="row text-center" id="rest-msg"></div>
+                            <div class="row text-center">
+                                <div class="col-xs-12 col-md-6">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="rest_password()">
+                                        <?php echo lang('button_reset'); ?>
+                                    </button>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#login" data-dismiss="modal">
+                                        <?php echo lang('button_login'); ?>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="track-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="section-title text-center">
+                            <div class="title-separator">
                                 <h2 class="reg_st"> <span class="text-orange forgot"><?php echo lang('text_track'); ?></span></h2>
                                 <span class="under-heading"></span>
                             </div>
-
                         </div>
                       
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -605,86 +403,71 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                                
-                            <form action="" id="tract_sec">
-                                <div class=" col-md-12 nopad div_part">
-                                    <div class="col-md-7 col-sm-9 col-xs-9 nopad">
-                                        <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
-                                    </div>
-                                    <div class="col-md-5 col-sm-3 col-xs-3 nopad">
-                                        <!-- <label class="head_name" for="fname">Order Number</label> -->
-                                        <button type="submit" value="Submit" class="track_btn" >Submit </button>
-                                    </div>
-
+                        <form action="" id="tract_sec">
+                            <div class=" col-md-12 nopad div_part">
+                                <div class="col-md-7 col-sm-9 col-xs-9 nopad">
+                                    <input type="number" id="ordernum" name="ordernumber" placeholder="Enter Order Number.." value="<?php if(isset($order_number)) { echo $order_number; }?>">
                                 </div>
-                            
-                                <div id="track-msg">
-                                    <div class="track_part">
-                                        <div id="myDIV">
-                                            <ul class="progressbar">
-                                                <li id="order-placed-bar" class="" <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-forward"></i></span> Order Placed</li>
-                                                <li id="preperation-bar" class="" <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
-                                                <li id="delivery-bar" class=""<?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
-                                                <li id="completed-bar"<?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Completed</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 id="notification_track" style="text-align: center;"></h1>
-                            </form>
-                           
-                        </div>
-                 
-                    <div class="modal-footer">
-                    <!-- <p class="tq">We hope to see you again soon</p> -->
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-            <div id="page-wrapper" class="content-area">
-                <?php if (get_theme_options('display_crumbs') === '1' AND ($breadcrumbs = get_breadcrumbs()) !== '') { ?>
-                    <div id="breadcrumb">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <?php echo $breadcrumbs; ?>
+                                <div class="col-md-5 col-sm-3 col-xs-3 nopad">
+                                    <button type="submit" value="Submit" class="track_btn" >Submit </button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <?php } ?>
-
-                        <?php if ($page_heading = get_heading()) { ?>
-                            <div id="heading">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="heading-content">
-                                                <h2><?php echo $page_heading; ?></h2>
-                                            </div>
-                                        </div>
+                            <div id="track-msg">
+                                <div class="track_part">
+                                    <div id="myDIV">
+                                        <ul class="progressbar">
+                                            <li id="order-placed-bar" class="" <?php if(($result['status_id'] === '11') OR ($result['status_id'] === '12')) { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-forward"></i></span> Order Placed</li>
+                                            <li id="preperation-bar" class="" <?php if($result['status_id'] === '13') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-cutlery"></i></span> Preparation</li>
+                                            <li id="delivery-bar" class=""<?php if($result['status_id'] === '14') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-motorcycle"></i></span> Delivery</li>
+                                            <li id="completed-bar"<?php if($result['status_id'] === '15') { ?>  class="active"  <?php } ?>> <span class="list-group-item-heading"><i class="fa fa-check"></i></span> Completed</li>
+                                        </ul>
                                     </div>
-
-                                </div>
-                                <div class="pattern">
-                                    <img alt="" src="assets/images/white-pattern.png">
                                 </div>
                             </div>
-                            <?php } ?>
+                            <h4 id="notification_track" style="text-align: center;"></h1>
+                        </form>
+                    </div>
+                    <div class="modal-footer"> </div>
+                </div>
             </div>
-
-            <script>
-                $(document).ready(function() {
-                    //display: none; max-height: 400px; overflow: auto;
+        </div>
+        <div id="page-wrapper" class="content-area">
+            <?php if (get_theme_options('display_crumbs') === '1' AND ($breadcrumbs = get_breadcrumbs()) !== '') { ?>
+                <div id="breadcrumb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <?php echo $breadcrumbs; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+            <?php if ($page_heading = get_heading()) { ?>
+                <div id="heading">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="heading-content">
+                                    <h2><?php echo $page_heading; ?></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pattern">
+                        <img alt="" src="assets/images/white-pattern.png">
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+        <script>
+            $(document).ready(function() {
                     $('.header_li > a').on('click', function(e) {
                         $("#mobile_nav_id").css("display", "none");
                         $('.menu-mobile-collapse-trigger').removeClass('active');
                     });
-             
-                $("#track-msg").hide();
+                    $("#track-msg").hide();
                     $(document).on('click', function(e) {
-                        /* bootstrap collapse js adds "in" class to your collapsible element*/
                         var menu_opened = $('#main-header-menu-collapse').hasClass('in');
                         if (!$(e.target).closest('main-header-menu-collapse').length &&
                             !$(e.target).is('#main-header-menu-collapse') &&
@@ -693,19 +476,18 @@
                         }
                     });
                 });
-                $(function() {
-                    $('#main-header-menu-collapse a').filter(function() {
-                        return this.href == location.href
-                    }).parent().addClass('active').siblings().removeClass('active');
-                    $('#main-header-menu-collapse a').click(function() {
-                        $(this).parent().addClass('active').siblings().removeClass('active')
-                    });
+            $(function() {
+                $('#main-header-menu-collapse a').filter(function() {
+                    return this.href == location.href
+                }).parent().addClass('active').siblings().removeClass('active');
+                $('#main-header-menu-collapse a').click(function() {
+                    $(this).parent().addClass('active').siblings().removeClass('active')
                 });
-
-                $(function() {
-                    $('.navbar-nav li a').click(function() {
-                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                            var target = $(this.hash);
+            });
+            $(function() {
+                $('.navbar-nav li a').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
                             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                             if (target.length) {
                                 $('html,body').animate({
@@ -713,19 +495,16 @@
                                 }, 1500);
                                 return false;
                             }
-                        }
-                    });
-
+                    }
                 });
-
-                //Login Ajax call
-                function login() {
-                    var password = $("#login-password").val();
-                    var email = $("#login-email").val();
+            });
+            function login() {
+                var password = $("#login-password").val();
+                var email = $("#login-email").val();
                     if (loginValidate(email, password) === false) {
                         return false;
                     }
-                    $.ajax({
+                $.ajax({
                         url: js_site_url('login'),
                         type: 'POST',
                         data: 'email=' + email + '&password=' + password,
@@ -739,19 +518,16 @@
                             }
                         }
                     });
+            }
+           //Reset Password Ajax call
+            function rest_password() {
+                $("#reset-email").removeAttr('style');
+                var email = $("#reset-email").val();
+                if (validateEmail(email) === false) {
+                    $("#reset-email").css("border", "1px solid #f47d59");
+                    return false;
                 }
-
-                //Reset Password Ajax call
-                function rest_password() {
-                    $("#reset-email").removeAttr('style');
-                    var email = $("#reset-email").val();
-
-                    if (validateEmail(email) === false) {
-                        $("#reset-email").css("border", "1px solid #f47d59");
-                        return false;
-                    }
-
-                    $.ajax({
+                $.ajax({
                         url: js_site_url('forgot-password'),
                         type: 'POST',
                         data: 'email=' + email,
@@ -767,9 +543,6 @@
                         }
                     });
                 }
-
-               
-
                 function loginValidate(email, password) {
                     var isValid = true;
                     $("#login-email").removeAttr('style');
@@ -789,8 +562,6 @@
                     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                     return re.test(String(email).toLowerCase());
                 }
-
-    //User Registration
   $(function() {
  
 
@@ -822,7 +593,8 @@
        });
     });
 });
-  function registerFormValidate(fullname,telephone,email,password,confirmpassword,terms){
+
+function registerFormValidate(fullname,telephone,email,password,confirmpassword,terms){
     var isValid = true;
     $("#fullname").removeAttr( 'style' );
     $("#telephone").removeAttr( 'style' );
@@ -922,24 +694,6 @@ $(function() {
     });
 });
 
-// $('.mobile-nav ul li').click(function(){
-// alert();
-// event.preventDefault();
-// })
-//Ham Berger menu
-//$("#modal .close").click()
-// $('#modal').modal('hide');
-
-
-// $('.mobile-nav').on('click', 'li', function(){
-//     $( ".mega-menu.desktopTopFixed " ).removeClass( "#mobile_nav_id_open");
-//     $( ".mega-menu.desktopTopFixed " ).addClass( "#mobile_nav_id_collapse #mobile_nav_id_collapsed" );
-//     $( ".mega-menu.desktopTopFixed" ).addClass( "slicknav_hidden");
-//     $( ".mega-menu.desktopTopFixed " ).addClass( "slicknav_hidden");
-//     $(".mega-menu.desktopTopFixed ").css("display", "none");
-//     $(".modal .close").click();
-// });
-
 $('.header_li a').click(function(e) {
  // alert();
     $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
@@ -951,6 +705,5 @@ $('body').click(function(e) {
     $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
     $(".mobile-menu ").css("display", "none");
 });
-
 
 </script>

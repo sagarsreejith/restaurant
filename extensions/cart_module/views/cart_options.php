@@ -1,20 +1,7 @@
 
 <style>
 
- #menu_cart a img{ border-radius: 5px;
-    box-shadow: 0 0 10px grey;  
-}
-#lightbox .close {
-    opacity: 1;
-    color: rgb(114, 34, 51);
 
-    padding: 0px 7px;
-
-    position: absolute;
-    top: -1px;
-    right: 4px;
-    z-index: 1032;
-}
 .modal-open .modal{
       overflow-y: hidden; 
 }
