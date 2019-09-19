@@ -226,7 +226,7 @@
                                             </li>
                                             <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a>
                                             </li>
-                                            <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
+                                            <li class="header_li"><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
                                             </li>
 
                                             <?php if ($this->config->item('reservation_mode') === '1') { ?>
@@ -248,31 +248,31 @@
                                                                 <li class="hidden">
                                                                     <a href="#page-top"></a>
                                                                 </li>
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
                                                                         <?php echo lang( 'menu_recent_order1'); ?>
                                                                     </a>
                                                                 </li>
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/account'); ?>">
                                                                         <?php echo lang( 'menu_my_account'); ?>
                                                                     </a>
                                                                 </li>
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/address'); ?>">
                                                                         <?php echo lang( 'menu_address'); ?>
                                                                     </a>
                                                                 </li>
 
                                                                 <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                                    <li>
+                                                                    <li class="header_li">
                                                                         <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
                                                                             <?php echo lang( 'menu_recent_reservation'); ?>
                                                                         </a>
                                                                     </li>
                                                                     <?php } ?>
 
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
                                                                         <?php echo lang( 'menu_logout'); ?>
                                                                     </a>
@@ -295,7 +295,7 @@
                                                            
 
                                                             <?php } ?>
-                                                            <li class="">
+                                                            <li class="header_li">
                                                                 <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
                                                                     <?php echo lang( 'track_recent_order'); ?>
                                                                 </a>
@@ -676,7 +676,11 @@
 
             <script>
                 $(document).ready(function() {
-                    
+                    //display: none; max-height: 400px; overflow: auto;
+                    $('.header_li > a').on('click', function(e) {
+                        $("#mobile_nav_id").css("display", "none");
+                        $('.menu-mobile-collapse-trigger').removeClass('active');
+                    });
              
                 $("#track-msg").hide();
                     $(document).on('click', function(e) {
