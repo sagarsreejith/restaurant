@@ -676,7 +676,11 @@
 
             <script>
                 $(document).ready(function() {
-                    
+                    //display: none; max-height: 400px; overflow: auto;
+                    $('.header_li > a').on('click', function(e) {
+                        $("#mobile_nav_id").css("display", "none");
+                        $('.menu-mobile-collapse-trigger').removeClass('active');
+                    });
              
                 $("#track-msg").hide();
                     $(document).on('click', function(e) {
