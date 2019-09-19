@@ -13,159 +13,7 @@
 	
 	<div id="Container" class="menu-list">
 		
-					
-	<!-- <h1><?php //print_r(json_encode($menus)); ?></h1> -->
-	 
-        
-      <!-- <div class="item_sec" id="food_list">
-		<div class="col-md-12  popup-gallery">
-			<div class="fullout_div">
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-			</div>	
-			<div class="fullout_div">
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-			</div>	
-			<div class="fullout_div">
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-			</div>	
-				
-
-			<div class="fullout_div">
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-			</div>	
-			<div class="fullout_div">
-					<div class="food_image galllery-item">
-						<img class="img-responsive" alt="" src="../assets/images/gallery/01.jpg">
-							<div class="food_price">
-								3<span>Kwd</span>
-							</div>
-							<div class="overlay">
-						<div class="overlay-content">
-							
-							
-							<a class="portfolio-img" href="../assets/images/gallery/01.jpg"><i class="fa fa-expand"></i></a>               
-							</div>
-						</div>
-					</div>
-					<div class="food_content">
-						<div class="food_title">
-							<h4>Rice</h4>
-						</div>
-				
-						<div class="food_description">
-							<span class="menu-button">
-								<a class=" btn btn-cart add_cart" onclick="addToCart('77', '1');"><span class="fa fa-plus"></span></a>
-							</span>
-							<p>Boiled egg wrapped in a ground meat mixture, coated in breadcrumbs, and deep-fried.</p> 
-						</div>
-					</div>
-			</div>	
-
-
-		</div>
-		
-				  
-		
-			  
-		</div> -->
-       
-     
+	
 		<?php $category_count = 1; ?>
 		<?php foreach ($categories as $category_id => $category) { ?>
 			<?php $catname_replace = array("&", ",", "'"); $category_name = strtolower(str_replace(' ', '-', str_replace($catname_replace, '_', $category['name']))); ?>
@@ -225,12 +73,12 @@
 												<?php if ($menu['mealtime_status'] === '1' AND empty($menu['is_mealtime'])) { ?>
 													<a class="btn btn-primary btn-cart add_cart disabled"><span class="fa fa-plus"></span></a>
 												<?php } else if (isset($menu_options[$menu['menu_id']])) { ?>
-													<a class="btn btn-primary btn-cart add_cart" onClick="openMenuOptions('<?php echo $menu['menu_id']; ?>', '<?php echo $menu['minimum_qty']; ?>');">
+													<a class="btn btn-primary btn-cart add_cart">
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } else { ?>
 													
-													<a class="btn btn-primary btn-cart add_cart" onClick="openMenuOptions('<?php echo $menu['menu_id']; ?>', '<?php echo $menu['minimum_qty']; ?>');">
+													<a class="btn btn-primary btn-cart add_cart" >
 														<span class="fa fa-plus"></span>
 													</a>
 												<?php } ?>

@@ -192,7 +192,7 @@
                 
                     <nav id="menu-1" class="mega-menu dark">
                     
-                        <section class="menu-list-items">
+                    <section class="menu-list-items">
                         <div class="container">
                             <div class="row">
                             <div class="col-lg-12 col-md-12">
@@ -226,7 +226,7 @@
                                             </li>
                                             <li class="header_li"><a href="<?php echo site_url('#about'); ?>">About</a>
                                             </li>
-                                            <li><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
+                                            <li class="header_li"><a href="<?php echo site_url('#gallery'); ?>">Gallery</a>
                                             </li>
 
                                             <?php if ($this->config->item('reservation_mode') === '1') { ?>
@@ -239,7 +239,7 @@
 
                                                     <?php if ($this->customer->isLogged()) { ?>
 
-                                                        <li class="dropdown">
+                                                        <li class="dropdown header_li ">
                                                             <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
                                                                 <?php echo lang( 'menu_my_account'); ?>
                                                             </a>
@@ -248,31 +248,31 @@
                                                                 <li class="hidden">
                                                                     <a href="#page-top"></a>
                                                                 </li>
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/orders'); ?>">
                                                                         <?php echo lang( 'menu_recent_order1'); ?>
                                                                     </a>
                                                                 </li>
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/account'); ?>">
                                                                         <?php echo lang( 'menu_my_account'); ?>
                                                                     </a>
                                                                 </li>
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/address'); ?>">
                                                                         <?php echo lang( 'menu_address'); ?>
                                                                     </a>
                                                                 </li>
 
                                                                 <?php if ($this->config->item('reservation_mode') === '1') { ?>
-                                                                    <li>
+                                                                    <li class="header_li">
                                                                         <a role="presentation" href="<?php echo site_url('account/reservations'); ?>">
                                                                             <?php echo lang( 'menu_recent_reservation'); ?>
                                                                         </a>
                                                                     </li>
                                                                     <?php } ?>
 
-                                                                <li>
+                                                                <li class="header_li">
                                                                     <a role="presentation" href="<?php echo site_url('account/logout'); ?>">
                                                                         <?php echo lang( 'menu_logout'); ?>
                                                                     </a>
@@ -281,13 +281,13 @@
                                                         </li>
                                                         <?php } else { ?>
 
-                                                            <li class="">
+                                                            <li class="header_li">
                                                                 <a href="<?php echo site_url('#locations'); ?>">
                                                                     <?php echo lang( 'menu_locations'); ?>
                                                                 </a>
                                                             </li> 
 
-                                                            <li>
+                                                            <li class="header_li">
                                                                 <a class="log" data-toggle="modal" data-dismiss="modal"  data-target="#login"> Login</a>
 
                                                             </li>
@@ -295,7 +295,7 @@
                                                            
 
                                                             <?php } ?>
-                                                            <li class="">
+                                                            <li class="header_li">
                                                                 <a  data-toggle="modal" id="tract_modal"data-dismiss="modal"  data-target="#track-modal">
                                                                     <?php echo lang( 'track_recent_order'); ?>
                                                                 </a>
@@ -926,19 +926,26 @@ $(function() {
 //$("#modal .close").click()
 // $('#modal').modal('hide');
 
-$('.main-menu').on('click', 'li', function(){
-    $(".modal .close").click();
+
+// $('.mobile-nav').on('click', 'li', function(){
+//     $( ".mega-menu.desktopTopFixed " ).removeClass( "#mobile_nav_id_open");
+//     $( ".mega-menu.desktopTopFixed " ).addClass( "#mobile_nav_id_collapse #mobile_nav_id_collapsed" );
+//     $( ".mega-menu.desktopTopFixed" ).addClass( "slicknav_hidden");
+//     $( ".mega-menu.desktopTopFixed " ).addClass( "slicknav_hidden");
+//     $(".mega-menu.desktopTopFixed ").css("display", "none");
+//     $(".modal .close").click();
+// });
+
+$('.header_li a').click(function(e) {
+ // alert();
+    $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
+    $(".mobile-menu ").css("display", "none");
 });
-$('.mobile-nav').on('click', 'li', function(){
-    $( ".mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a" ).removeClass( "#mobile_nav_id_open");
-    $( ".mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a" ).addClass( "#mobile_nav_id_collapse #mobile_nav_id_collapsed" );
-    $( ".mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a" ).addClass( "slicknav_hidden");
-    $( ".mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a" ).addClass( "slicknav_hidden");
-    $(".mega-menu.desktopTopFixed .menu-list-items .menu-links > li > a").css("display", "none");
-    $(".modal .close").click();
-});
-$('#header .mega-menu-item .dropdown-toggle').on('click', function() {
-	$(this).parent().toggleClass('close');
+
+$('body').click(function(e) {
+ // alert();
+    $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
+    $(".mobile-menu ").css("display", "none");
 });
 
 

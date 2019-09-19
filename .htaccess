@@ -10,7 +10,7 @@ Options -Indexes
 
 	# !IMPORTANT! Set your RewriteBase here and don't forget trailing and leading slashes.
 	# If your page resides at http://www.example.com/mypage then use
-	 RewriteBase /srividya
+	 RewriteBase /out-rest
 
 	 
     RewriteRule ^assets/downloads/(.*) not_found [L]

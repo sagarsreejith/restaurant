@@ -73,8 +73,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="clearfix"></div>
+                    </div>
+
+                    
+                    <div class="clearfix"></div>
+
                     <div class="menu-quantity form-group clearfix">
                         <div class="col-sm-3 wrap-none">
                             <label for="quantity"><?php echo lang('label_menu_quantity'); ?></label>
@@ -84,7 +87,7 @@
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" data-dir="dwn" type="button"><i class="fa fa-minus"></i></button>
                                     </span>
-                                <input type="text" name="quantity" id="quantity" class="form-control text-center" value="<?php echo $quantity; ?>">
+                                    <input type="text" name="quantity" id="quantity" class="form-control text-center" value="<?php echo $quantity; ?>">
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" data-dir="up" type="button"><i class="fa fa-plus"></i></button>
                                     </span>
