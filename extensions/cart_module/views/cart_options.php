@@ -15,6 +15,9 @@
     right: 4px;
     z-index: 1032;
 }
+.modal-open .modal{
+      overflow-y: hidden; 
+}
     </style>
 <div class="modal-dialog modal-menu-options">
 	<div class="modal-content">
@@ -64,16 +67,7 @@
                     </div>
                  
                    
-                    <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <button type="button"  id="cart_options" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <img src="" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                    </div>
+                  
 
                     
                     <div class="clearfix"></div>
@@ -205,6 +199,16 @@
 		</div>
 	</div>
 </div>
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <button type="button"  id="cart_options" class="close hidden closeChild" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
 
 <script>
     $(document).ready(function() {
@@ -246,10 +250,13 @@ $(document).ready(function() {
 
 		$button.parent().parent().find('#quantity').val(newVal);
     });
-    
-    $("#cart_options").click(function(){
-        
-        $('#lightbox').modal('hide');
-    });
+
+ 
+
 });
 //--></script>
+   <!--   <script>
+    jQuery(document).on("click", "button.closeChild", function (e) {
+        jQuery('#lightbox').modal('hide');
+    });
+</script> -->
