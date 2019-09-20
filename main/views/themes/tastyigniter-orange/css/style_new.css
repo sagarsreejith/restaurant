@@ -6075,4 +6075,128 @@ display:none !important;
     max-height: 525px;
     overflow: hidden;
 }
-/*--*/
+/*-home-*/
+.header .main-menu {
+	background:#6f1e30;
+	z-index:999;
+	position:absolute !important;
+	width:100%;
+}
+.header .main-menu{
+    background:transparent !important;
+}
+.header .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    animation: fadeInDown 0.8s both 0s;
+    background: linear-gradient(5deg,#7a2c3d,#6f1e30) !important;
+}
+.box-icon-svg .icon-inner{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
+
+.galy h3 {
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .galy {
+      position: relative;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        background-color: #525252 !important;
+      color: #fff !important;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      line-height: 20px;
+      position: absolute;
+      right: 0px;
+      top: 12px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      background-color: #525252 !important;
+      color: #fff !important;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      line-height: 20px;
+      position: absolute;
+      left: 0px;
+      top: 12px;
+    }
+
+
+    .galy ul.nav.nav-tabs li a span {
+      display: block;
+      text-transform: capitalize;
+    }
+
+    .galy ul.nav.nav-tabs {
+      margin-bottom: 20px;
+    }
+
+
+    .galy .owl-dots {
+      display: none !important;
+    }
+
+
+
+    .galy ul.nav.nav-tabs li a strong {
+      display: block;
+    }
+
+    .galy ul.nav.nav-tabs {
+      border: none;
+    }
+
+    .galy ul.nav.nav-tabs li.active a {
+      background-color: #03a9f4 !important;
+      color: #fff;
+      text-decoration: none !important;
+    }
+
+    .galy ul.nav.nav-tabs li a {
+
+      text-decoration: none !important;
+    }
+
+    .galy .tab-content {
+        background-color: #fff;
+
+    float: left;
+    width: 100%;
+    }
+
+/*--slideshow page*/
+    .mobile-slider{
+      border-radius: 34px;
+      overflow: hidden;
+      position: absolute;
+      left: 0%;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .phone{
+      height: 370px;
+      width: 100%;
+    }
+    .phone .owl-carousel .owl-item{
+      background: #f1f1f1;
+      height: 360px;
+      border-radius: 30px;
+   
+    }  
+    .phone .owl-carousel .owl-item img{
+      min-height: 360px !important;
+    }
+
+    /*--*/

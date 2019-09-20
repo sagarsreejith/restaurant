@@ -95,17 +95,9 @@
       <div class="row">
          <?php if( $rsegment ==="home") { ?>
          <div class="order_now">
-           <!-- <div class="banner_img_st">  
-           
-               <h4 class="Banner_header animated"><span class="wel_hd">Welcome to Zalatimo Sweets</span></h4>
-            <span class="line_banner"></span> 
-              <img src="assets/images/icon/lin-img.png">
-              
-         </div> -->
+         
             <div class="btn_sec animated bounceIn">
-                  <!-- <a type="button" class="order_btn" data-toggle="modal" data-target="#order_now"><span> </span>
-                  <span class="order_btn-label">  Order Now</span>
-               </a> -->
+                
 			   <?php if ($this->config->item('reservation_mode') === '1') { ?>
 			   <a  href="<?php echo site_url('reservation'); ?>" type="button" class="order_btn">Reserve Now</a>
 			   <?php } ?>

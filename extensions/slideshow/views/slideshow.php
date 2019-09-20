@@ -49,7 +49,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="mobile-slider-area">
 
-                            <div class="phone">
+                          <div class="phone">
 
                                 <div class="mobile-slider owl-carousel owl-theme">
                                     <?php if (!empty($slides)) { ?>
@@ -61,8 +61,8 @@
                                     <?php } ?>
                                </div>
 
-                            </div>
-                            <div class="slider-indicator" style="position:absoulte">
+                          </div>
+                          <div class="slider-indicator" style="position:absoulte">
                                     <ul>
                                       <li id="prev">
                                         <i class="fa fa-angle-left" style="color:#fff"></i>
@@ -71,7 +71,7 @@
                                         <i class="fa fa-angle-right"></i>
                                       </li>
                                     </ul>
-                            </div>
+                          </div>
 
 					            	</div>
 					          </div>
@@ -81,4 +81,4 @@
                 <div class="river-wave"></div>
                 <div class="river-wave"></div>
             </div>
-        </section>
+</section>

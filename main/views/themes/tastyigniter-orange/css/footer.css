@@ -8,6 +8,7 @@
   width: 100%;
   background: url(../../../../../assets/images/abstract.png) no-repeat scroll center bottom #611124;
   border-top: #6f2e3e 2px solid;
+  z-index:99999;
 }
 
 footer:before {
