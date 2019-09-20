@@ -239,7 +239,7 @@
 
                                                     <?php if ($this->customer->isLogged()) { ?>
 
-                                                        <li class="dropdown header_li ">
+                                                        <li class="dropdown">
                                                             <a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1">
                                                                 <?php echo lang( 'menu_my_account'); ?>
                                                             </a>
@@ -940,15 +940,15 @@ $(function() {
 //     $(".modal .close").click();
 // });
 
-$('.header_li a').click(function(e) {
- // alert();
-    $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
-    $(".mobile-menu ").css("display", "none");
-});
+// $('.header_li a').click(function(e) {
+//  // alert();
+//     $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
+//     $(".mobile-menu ").css("display", "none");
+// });
 
 $('body').click(function(e) {
  // alert();
-    $( ".mobile-menu" ).addClass( "mobile-menu_hidden");
+    $('.menu-mobile-collapse-trigger').removeClass('active');
     $(".mobile-menu ").css("display", "none");
 });
 
